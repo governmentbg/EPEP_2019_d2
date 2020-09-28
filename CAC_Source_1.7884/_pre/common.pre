@@ -1,0 +1,1267 @@
+INSERT INTO T_TYPE VALUES ('Z', 0001, '', '', NULL);
+INSERT INTO T_TYPE VALUES ('I', 0010, 'Документ от входящ дневник', 'Док.Вх.днев.',NULL);
+INSERT INTO T_TYPE VALUES ('r', 0011, 'Входящ документ', 'Вх.док.', NULL);
+INSERT INTO T_TYPE VALUES ('V', 0030, 'Върнат документ', 'Върнат док.', NULL);
+INSERT INTO T_TYPE VALUES ('O', 0040, 'Други', 'Други', NULL);
+
+INSERT INTO T_TYPE VALUES ('i', 0020, 'Документ от Входящ регистър', 'Док.Вх.рег.', NULL);
+INSERT INTO T_TYPE VALUES ('o', 0021, 'Документ от Изходящ регистър', 'Док.Изх.рег.', NULL);
+INSERT INTO T_TYPE VALUES ('s', 0015, 'Съпровождащ документ', 'Съпр.док.', NULL);
+INSERT INTO T_TYPE VALUES ('x', 0009, 'Обща администрация', 'Обща админ.', NULL);  /* 2008:042 */
+INSERT INTO T_TYPE VALUES ('X', 0001, 'Електронен обмен', 'Е-обмен', NULL);
+INSERT INTO T_TYPE VALUES ('U', 0009, 'Изпълнително дело', 'ИзпД', NULL);  /* 2018-06-12 */
+
+INSERT INTO T_RESOLUTION VALUES ('n', NULL, 'Новопостъпил');
+INSERT INTO T_RESOLUTION VALUES ('h', 0001, 'Без движение');
+INSERT INTO T_RESOLUTION VALUES ('r', 0002, 'Върнат');
+INSERT INTO T_RESOLUTION VALUES ('l', NULL, 'Образуване в дело');
+INSERT INTO T_RESOLUTION VALUES ('s', 0003, 'Изпратен');
+INSERT INTO T_RESOLUTION VALUES ('a', 0004, 'С разпореждане');
+INSERT INTO T_RESOLUTION VALUES ('z', 0010, '');
+/* 2009:146 virtual/reserved */
+INSERT INTO T_RESOLUTION VALUES ('Џ', NULL, 'Има движение');
+INSERT INTO T_RESOLUTION VALUES ('ў', NULL, 'Приложен');
+INSERT INTO T_RESOLUTION VALUES ('е', NULL, 'Новопостъпил');
+INSERT INTO T_RESOLUTION VALUES ('Б', 0001, 'Наложена мярка "задържане под стража"');
+INSERT INTO T_RESOLUTION VALUES ('Г', 0005, 'Наложена мярка "домашен арест"');
+INSERT INTO T_RESOLUTION VALUES ('Ж', 0010, 'Наложена мярка "парична гаранция"');
+INSERT INTO T_RESOLUTION VALUES ('Л', 0015, 'Наложена мярка "други"');
+INSERT INTO T_RESOLUTION VALUES ('б', 0001, 'Отказва да измени мярката');
+INSERT INTO T_RESOLUTION VALUES ('г', 0005, 'Изменя мярката в "домашен арест"');
+INSERT INTO T_RESOLUTION VALUES ('ж', 0010, 'Изменя мярката в "парична гаранция"');
+INSERT INTO T_RESOLUTION VALUES ('л', 0015, 'Изменя мярката в "други"');
+/* 2005:343 prove actions; 2006:013 LRQ: reordered */
+INSERT INTO T_RESOLUTION VALUES ('И', 0003, 'Връщане');
+INSERT INTO T_RESOLUTION VALUES ('Й', 0001, 'Изпращане');
+INSERT INTO T_RESOLUTION VALUES ('и', 0004, 'Унищожаване');
+INSERT INTO T_RESOLUTION VALUES ('й', 0002, 'Получаване');
+/* 2007:170 distribution */
+INSERT INTO T_RESOLUTION VALUES ('з', NULL, 'За разпределение');
+INSERT INTO T_RESOLUTION VALUES ('р', NULL, 'Разпределен');
+/* 2010:027 */
+INSERT INTO T_RESOLUTION VALUES ('А', 0940, 'Не допуска касационно обжалване');
+
+/* start */
+INSERT INTO T_RESULT VALUES ('n', NULL, 'Новообразувано', NULL);
+INSERT INTO T_RESULT VALUES ('f', 0100, 'Насрочено', 11004);  /* 2017:068 NULL -> 0100 */
+INSERT INTO T_RESULT VALUES ('i', 0110, 'Проведено', NULL);   /* 2017:068 */
+
+/* process; 2010:243 -i */
+INSERT INTO T_RESULT VALUES ('o', 0002, 'Внася в О.С.З', NULL);
+INSERT INTO T_RESULT VALUES ('I', 0101, 'Отложено във II-ро заседание', 11005);
+INSERT INTO T_RESULT VALUES ('N', 0002, 'Отложено за ново помирително заседание', NULL);
+INSERT INTO T_RESULT VALUES ('m', 0003, 'Отложено в помир. зас. месечен срок', NULL);
+INSERT INTO T_RESULT VALUES ('M', 0004, 'Отложено в помир. зас. без месечен срок', NULL);
+INSERT INTO T_RESULT VALUES ('L', 0100, 'Отложено в I-во заседание', 11005);  /* 2010:243 005 -> 100 */
+INSERT INTO T_RESULT VALUES ('б', 0006, 'Отложено с вписване на споразумение', NULL);
+/* 2006:191; 2007:031 comout */
+/*INSERT INTO T_RESULT VALUES ('Ђ', 0007, 'Отложено с частично прекратяване');*/
+INSERT INTO T_RESULT VALUES ('Џ', NULL, 'Има движение', NULL);  /* 2009:146 virtual */
+
+/* punishment */
+INSERT INTO T_RESULT VALUES ('j', 0100, 'С присъда', NULL);
+INSERT INTO T_RESULT VALUES ('d', 9990, 'С определение, приключващо делото', 11002);
+INSERT INTO T_RESULT VALUES ('Ѕ', 8142, 'С определение за отвод', 11002);   /* 2013:063 */
+INSERT INTO T_RESULT VALUES ('І', 8144, 'С разпореждане за отвод', 11002);  /* 2013:063 */
+INSERT INTO T_RESULT VALUES ('s', 0102, 'Изпратено по подсъдност', 11002);  
+INSERT INTO T_RESULT VALUES ('Z', 0100, 'С решение', 11002);
+INSERT INTO T_RESULT VALUES ('0', 0100, 'С протокол', NULL);
+
+/* punishment decisions */
+INSERT INTO T_RESULT VALUES ('t', 0011, 'НП-потвърдено', NULL);
+INSERT INTO T_RESULT VALUES ('x', 0012, 'НП-изменено', NULL);
+INSERT INTO T_RESULT VALUES ('X', 0014, 'НП-отменено', NULL);
+
+/* std */
+INSERT INTO T_RESULT VALUES ('l', 0001, 'Отложено', 11005);
+INSERT INTO T_RESULT VALUES ('p', 9995, 'Обявено за решаване', 11006);
+INSERT INTO T_RESULT VALUES ('h', 9996, 'Без движение - с определение', 11001);
+INSERT INTO T_RESULT VALUES ('D', 9997, 'Без движение - с разпореждане', 11001);
+INSERT INTO T_RESULT VALUES ('S', 9998, 'Спряно', 11002);
+INSERT INTO T_RESULT VALUES (']', 9993, 'Възобновяване на производството', 11002);  /* 2017:345 */
+INSERT INTO T_RESULT VALUES ('c', 9999, 'Прекратено', 11002);
+INSERT INTO T_RESULT VALUES ('А', 0001, 'Отложено без ново насрочване', NULL);
+INSERT INTO T_RESULT VALUES ('З', 9900, 'С разпореждане', 11002);
+INSERT INTO T_RESULT VALUES ('н', 9901, 'С постановление', 11002);
+INSERT INTO T_RESULT VALUES ('Є', 9994, 'Отменено', NULL);                          /* 2018-05-11: was 0001 */
+INSERT INTO T_RESULT VALUES ('ј', 8140, 'С определение (извън протокола)', 11002);  /* 2010:336 */
+/* 2010:078 per-court; 2013:119 re-unified */
+INSERT INTO T_RESULT VALUES ('Б', 0100, 'Със споразумение', NULL);
+INSERT INTO T_RESULT VALUES ('†', 9000, 'Присъединено към друго дело', 11002);
+
+/* end; 2012:034 order 81xx for all */
+INSERT INTO T_RESULT VALUES ('y', 8121, 'С готово решение', NULL);
+INSERT INTO T_RESULT VALUES ('T', 8122, 'С готово определение', NULL);
+INSERT INTO T_RESULT VALUES ('W', 8123, 'С готова присъда', NULL);
+INSERT INTO T_RESULT VALUES ('і', 8127, 'С готово постановление', NULL);      /* 2011:257 */
+INSERT INTO T_RESULT VALUES ('є', 8128, 'С готова заповед', NULL);            /* 2008:075 */
+
+/* 2016:025 2nd decision result, common for all except PC */
+INSERT INTO T_RESULT VALUES ('К', 8125, 'Оставя без разглеждане', NULL);
+
+INSERT INTO T_RESULT VALUES ('g', 8100, 'С отменен ход по същество', 11007);
+INSERT INTO T_RESULT VALUES ('[', 8105, 'Възобновяване на съдебното следствие', 11007);  /* 2017:306 */
+INSERT INTO T_RESULT VALUES ('O', 8130, 'Прекратено по други причини', NULL);
+INSERT INTO T_RESULT VALUES ('J', 8140, 'С определение', 11002);
+INSERT INTO T_RESULT VALUES ('R', 8150, 'Възобновено', NULL);
+INSERT INTO T_RESULT VALUES ('Y', 8160, 'С резолюция', NULL);
+INSERT INTO T_RESULT VALUES ('e', 0002, 'Отложено - неизготв. заключение на в.л. чл.86', 11005);
+INSERT INTO T_RESULT VALUES ('k', 0102, 'Отложено - несвоевр. поискани доп. док-ва чл.65(отм.)', 11005);
+INSERT INTO T_RESULT VALUES ('v', 0001, 'Потвърждава', NULL);
+INSERT INTO T_RESULT VALUES ('w', 0002, 'Изменя', NULL);
+INSERT INTO T_RESULT VALUES ('z', 0003, 'Отменя', NULL);
+INSERT INTO T_RESULT VALUES ('q', 0001, 'Уважава', NULL);
+INSERT INTO T_RESULT VALUES ('u', 0003, 'Оставя без уважение', NULL);
+INSERT INTO T_RESULT VALUES ('Я', 0001, '', NULL);
+INSERT INTO T_RESULT VALUES ('О', 8116, 'Отменя и връща за ново разглеждане', NULL);
+INSERT INTO T_RESULT VALUES ('Р', 0002, 'Отменя и прекратява наказателното производство', NULL);
+INSERT INTO T_RESULT VALUES ('С', 0001, 'Уважава', NULL);
+INSERT INTO T_RESULT VALUES ('Т', 0002, 'Без уважение', NULL);
+INSERT INTO T_RESULT VALUES ('љ', 8122, 'Друго', NULL);
+
+INSERT INTO T_RESULT VALUES ('Ж', NULL, 'Изпратен', NULL);
+INSERT INTO T_RESULT VALUES ('Н', NULL, 'Върнат', NULL);
+INSERT INTO T_RESULT VALUES ('Х', 0001, 'Върнат като просрочен', NULL);
+INSERT INTO T_RESULT VALUES ('Ь', 0002, 'Върнат като нередовен', NULL);
+INSERT INTO T_RESULT VALUES ('Ю', 0003, 'Върнат като недопустим', NULL);
+INSERT INTO T_RESULT VALUES ('а', 0004, 'В срок - без движение', NULL);
+INSERT INTO T_RESULT VALUES ('в', 0005, 'Върнат - оттеглен', NULL);
+INSERT INTO T_RESULT VALUES ('д', 0006, 'В срок - изпратени преписи', NULL);
+INSERT INTO T_RESULT VALUES ('е', NULL, 'Новопостъпил', NULL);
+INSERT INTO T_RESULT VALUES ('з', NULL, 'Върнат', NULL);
+INSERT INTO T_RESULT VALUES ('Э', NULL, 'Върнат за комплектоване', NULL);
+INSERT INTO T_RESULT VALUES ('э', NULL, 'Върнат за комплектоване', NULL);
+INSERT INTO T_RESULT VALUES ('и', NULL, 'Предоставено', NULL);
+INSERT INTO T_RESULT VALUES ('к', NULL, 'Върнато', NULL);
+INSERT INTO T_RESULT VALUES ('Ѓ', NULL, 'Върнат по други причини', NULL);
+INSERT INTO T_RESULT VALUES ('ѓ', NULL, 'Върнат по други причини', NULL);
+INSERT INTO T_RESULT VALUES ('Ќ', NULL, 'Върнат за процедура', NULL);
+INSERT INTO T_RESULT VALUES ('ќ', NULL, 'Върнат за процедура', NULL);
+INSERT INTO T_RESULT VALUES ('х', NULL, 'Разгледано в С.З.', NULL);
+INSERT INTO T_RESULT VALUES ('ы', NULL, 'С разпореждане', NULL);
+INSERT INTO T_RESULT VALUES ('ђ', NULL, 'С определение', NULL);
+INSERT INTO T_RESULT VALUES ('€', NULL, 'Със становище', NULL);  /* 2013:336 */
+INSERT INTO T_RESULT VALUES ('Њ', NULL, 'Архивирано', NULL);
+INSERT INTO T_RESULT VALUES ('њ', NULL, 'Унищожено', NULL);
+INSERT INTO T_RESULT VALUES ('Ў', 0002, 'Отложено с налагане на глоба', 11005);
+INSERT INTO T_RESULT VALUES ('ў', NULL, 'Приложен', NULL);
+
+/* SURROUENDOC RESULTS: Area/Appeal */
+INSERT INTO T_RESULT VALUES ('Е', 8100, 'Отложено', NULL);
+INSERT INTO T_RESULT VALUES ('Щ', 8200, 'Без движение - с определение', NULL);
+INSERT INTO T_RESULT VALUES ('Ъ', 8201, 'Спряно', NULL);
+INSERT INTO T_RESULT VALUES ('у', 8202, 'Прекратено', NULL);
+/* 2016:251 e-portal */
+INSERT INTO T_RESULT VALUES ('‹', 0010, 'Разрешава', NULL);
+INSERT INTO T_RESULT VALUES ('›', 0020, 'Отказва', NULL);
+
+INSERT INTO T_UXN_TYPE VALUES ('c', 0001, 'Физическо лице');
+INSERT INTO T_UXN_TYPE VALUES ('f', 0002, 'Юридическо лице');
+INSERT INTO T_UXN_TYPE VALUES ('a', 0003, 'Анонимно лице');
+INSERT INTO T_UXN_TYPE VALUES ('u', 0004, 'Неизвестно лице');
+INSERT INTO T_UXN_TYPE VALUES ('s', 0005, 'Адресант');
+INSERT INTO T_UXN_TYPE VALUES ('d', 0006, 'Фирма');
+
+/* 2004:167 LPR: 2-digits; 2004:169 lower first */
+INSERT INTO T_UCN_TYPE VALUES ('c', 0011, 'ЕГН', 'c');
+INSERT INTO T_UCN_TYPE VALUES ('C', 0021, 'КФЛ', 'c');
+
+INSERT INTO T_UCN_TYPE VALUES ('f', 0012, 'Д/Н', 'f');
+INSERT INTO T_UCN_TYPE VALUES ('F', 0022, 'КЮЛ', 'f');
+
+INSERT INTO T_UCN_TYPE VALUES ('d', 0001, 'EФН', 'd');
+INSERT INTO T_UCN_TYPE VALUES ('D', 0002, 'K/Ф', 'd');
+
+INSERT INTO T_UCN_TYPE VALUES ('a', NULL, 'АНО', 'a');
+INSERT INTO T_UCN_TYPE VALUES ('A', 0013, 'КАС', 'a');
+
+INSERT INTO T_UCN_TYPE VALUES ('u', NULL, 'НИЗ', 'u');
+INSERT INTO T_UCN_TYPE VALUES ('U', 0015, 'КНИ', 'u');
+
+INSERT INTO T_UCN_TYPE VALUES ('s', 0018, 'За обжалване',    's');
+INSERT INTO T_UCN_TYPE VALUES ('J', 0002, 'По подсъдност',   's');
+INSERT INTO T_UCN_TYPE VALUES ('p', 0004, 'Прокуратури',     's');
+INSERT INTO T_UCN_TYPE VALUES ('P', 0005, 'Следствия',       's');
+INSERT INTO T_UCN_TYPE VALUES ('z', NULL, 'Резервиран',      's');
+INSERT INTO T_UCN_TYPE VALUES ('Z', 0006, 'ОДП/РПУ',         's');
+INSERT INTO T_UCN_TYPE VALUES ('M', 0007, 'Досъдебни инст.', 's');  /* 2008:203 */
+/* 2006:278 */
+INSERT INTO T_UCN_TYPE VALUES ('t', 0009, 'Адм.наказ.oрган', 's');
+INSERT INTO T_UCN_TYPE VALUES ('T', 0010, 'ТД на НАП',       's');
+INSERT INTO T_UCN_TYPE VALUES ('v', 0011, 'Директор ОУИП',   's');
+/* 2006:325 */
+INSERT INTO T_UCN_TYPE VALUES ('b', 0001, 'Този съд', 's');
+INSERT INTO T_UCN_TYPE VALUES ('B', 0002, 'Версии',   's');
+
+INSERT INTO T_UCN_TYPE VALUES ('k', NULL, 'Низша инст.',     's');  /* 2009:206; 2009:258 renamed */
+INSERT INTO T_UCN_TYPE VALUES ('K', NULL, 'Висша инст.',     's');  /* 2009:208; 2009:258 renamed */
+INSERT INTO T_UCN_TYPE VALUES ('W', 0020, 'Призовки/съобщ.', 's');  /* 2009:345 */
+INSERT INTO T_UCN_TYPE VALUES ('I', 0024, 'За изпр.е-мейли', 's');  /* 2011:160 */
+INSERT INTO T_UCN_TYPE VALUES ('E', 0028, 'За изпълн. лист', 's');  /* 2014:244 */
+INSERT INTO T_UCN_TYPE VALUES ('N', 0029, 'ДСИ',             's');  /* 2016:270 */
+INSERT INTO T_UCN_TYPE VALUES ('O', 0030, 'Затвори',         's');  /* 2016:294 */
+
+INSERT INTO T_INVOLVEMENT VALUES ('2', 0115, 'Възложител', 9002);
+INSERT INTO T_INVOLVEMENT VALUES ('a', 0150, 'Жалбоподател', 9007);
+INSERT INTO T_INVOLVEMENT VALUES ('ш', 0151, 'Протестираща страна', 9012);               /* 2008:282 */
+INSERT INTO T_INVOLVEMENT VALUES ('o', 0120, 'Обвинител', 9003);
+INSERT INTO T_INVOLVEMENT VALUES ('b', 0170, 'Тъжител', 9014);
+INSERT INTO T_INVOLVEMENT VALUES ('r', 0130, 'Молител', 9005);
+INSERT INTO T_INVOLVEMENT VALUES ('m', 0110, 'Вносител', 9001);
+INSERT INTO T_INVOLVEMENT VALUES ('љ', 0111, 'Вносител-осъдено лице', 9001);             /* 2015:178 */
+INSERT INTO T_INVOLVEMENT VALUES ('s', 0130, 'Ищец', 9004);
+INSERT INTO T_INVOLVEMENT VALUES ('м', 0159, 'Оспорващ', 9007);                          /* 2010:333 */
+INSERT INTO T_INVOLVEMENT VALUES ('u', 0160, 'Въззивник', 9013);
+INSERT INTO T_INVOLVEMENT VALUES ('q', 0180, 'Кредитор', 9016);
+INSERT INTO T_INVOLVEMENT VALUES ('i', 0190, 'Касатор', 9023);
+INSERT INTO T_INVOLVEMENT VALUES ('9', 0195, 'Трето лице', 9031);                        /* 2007:040 */
+INSERT INTO T_INVOLVEMENT VALUES ('З', 0135, 'Заявител', 9006);                          /* 2007:213 */
+INSERT INTO T_INVOLVEMENT VALUES ('€', 0137, 'Заветник', 9105);                          /* 2017:213 */
+INSERT INTO T_INVOLVEMENT VALUES ('ы', 0153, 'Жалбоподател-синдик', 9008);               /* 2011:313 AppC */
+
+INSERT INTO T_INVOLVEMENT VALUES ('w', 0180, 'Собственик', 9015);
+INSERT INTO T_INVOLVEMENT VALUES ('j', 0182, 'Съдружник', 9017);
+INSERT INTO T_INVOLVEMENT VALUES ('n', 0184, 'Управител', 9018);
+INSERT INTO T_INVOLVEMENT VALUES ('ю', 0185, 'Прокурист', 9019);
+INSERT INTO T_INVOLVEMENT VALUES ('t', 0186, 'Търговски представител', 9020);
+INSERT INTO T_INVOLVEMENT VALUES ('с', 0187, 'Председател на СД', NULL);                 /* 2011:227 */
+INSERT INTO T_INVOLVEMENT VALUES ('f', 0188, 'Член на УС', 9021);
+INSERT INTO T_INVOLVEMENT VALUES ('g', 0189, 'Член на СД', 9022);
+/* 2003:182 +У-Ъ so upwards did a big mess */
+INSERT INTO T_INVOLVEMENT VALUES ('У', 0190, 'Пастор', 9024);
+INSERT INTO T_INVOLVEMENT VALUES ('Ф', 0191, 'Епископ', 9025);
+INSERT INTO T_INVOLVEMENT VALUES ('Х', 0192, 'Архиепископ', 9026);
+INSERT INTO T_INVOLVEMENT VALUES ('д', 0192, 'Архимандрит', NULL);                       /* 2011:172 */
+INSERT INTO T_INVOLVEMENT VALUES ('Ц', 0193, 'Пастир', 9027);
+INSERT INTO T_INVOLVEMENT VALUES ('Ч', 0194, 'Член на Духовен съвет', 9028);
+INSERT INTO T_INVOLVEMENT VALUES ('Ш', 0195, 'Член на Съвет на старейшините', 9030);
+INSERT INTO T_INVOLVEMENT VALUES ('е', 0195, 'Член на настоятелство', NULL);             /* 2011:172 */
+INSERT INTO T_INVOLVEMENT VALUES ('Щ', 0196, 'Член на Епархийски съвет', 9032);
+INSERT INTO T_INVOLVEMENT VALUES ('Ъ', 0197, 'Член на Брахмана съвет', 9034);
+INSERT INTO T_INVOLVEMENT VALUES ('h', 0198, 'Друго', 9035);
+
+INSERT INTO T_INVOLVEMENT VALUES ('б', 0194, 'Председател', 9029);
+INSERT INTO T_INVOLVEMENT VALUES ('г', 0196, 'Изпълнителен директор', 9033);
+INSERT INTO T_INVOLVEMENT VALUES ('з', 0197, 'Член на проверителна комисия', NULL);      /* 2011:172 */
+INSERT INTO T_INVOLVEMENT VALUES ('к', 1097, 'Член на контролна комисия', NULL);         /* 2011:172 */
+/* AppC */
+INSERT INTO T_INVOLVEMENT VALUES ('л', 0152, 'Жалбоподател-подсъдим', 9008);
+INSERT INTO T_INVOLVEMENT VALUES ('п', 0154, 'Жалбоподател-гр.ищец', 9009);
+INSERT INTO T_INVOLVEMENT VALUES ('ф', 0156, 'Жалбоподател-ч.обвинител', 9010);
+INSERT INTO T_INVOLVEMENT VALUES ('ц', 0158, 'Жалбоподател-ответник', 9011);
+INSERT INTO T_INVOLVEMENT VALUES ('ќ', 0158, 'Частен жалбоподател', 9098);               /* 2015:244 AppC-Var; 2016:264 was 9007 */
+INSERT INTO T_INVOLVEMENT VALUES ('Ѓ', 0157, 'Жалбоподател-гр.ищец-ч.обвинител', 9009);  /* 2014:303 AppC-Var */
+INSERT INTO T_INVOLVEMENT VALUES ('ѓ', 0157, 'Жалбоподател-ч.обвинител-гр.ищец', 9010);  /* 2014:303 AppC-Var */
+INSERT INTO T_INVOLVEMENT VALUES ('ћ', 0159, 'Жалбоподател-граждански ответник', 9011);  /* 2017:101 AppC-Var */
+
+INSERT INTO T_INVOLVEMENT VALUES ('c', 0210, 'Подсъдим', 9036);
+INSERT INTO T_INVOLVEMENT VALUES ('d', 0220, 'Ответник', 9037);
+INSERT INTO T_INVOLVEMENT VALUES ('e', 0230, 'Страна', 9038);
+INSERT INTO T_INVOLVEMENT VALUES ('џ', 0231, 'Искател', NULL);                           /* 2017:311 */
+INSERT INTO T_INVOLVEMENT VALUES ('k', 0240, 'Нарушител', 9040);
+INSERT INTO T_INVOLVEMENT VALUES ('й', 0245, 'Уличено лице', 9041);
+INSERT INTO T_INVOLVEMENT VALUES ('v', 0250, 'Въззиваема страна', 9042);
+INSERT INTO T_INVOLVEMENT VALUES ('y', 0280, 'Длъжник', 9047);
+INSERT INTO T_INVOLVEMENT VALUES ('о', 0285, 'Взискател', 9048);
+INSERT INTO T_INVOLVEMENT VALUES ('z', 0270, 'Освидетелстван', 9046);
+INSERT INTO T_INVOLVEMENT VALUES ('p', 0260, 'Админ.наказ.орган', 9044);
+INSERT INTO T_INVOLVEMENT VALUES ('8', 0265, 'Актосъставител', 9045);                    /* 2006:335 */
+INSERT INTO T_INVOLVEMENT VALUES ('x', 0290, 'Обвиняем', 9049);
+INSERT INTO T_INVOLVEMENT VALUES ('Л', 0291, 'Осъден', 9050);                            /* 2007:305 */
+INSERT INTO T_INVOLVEMENT VALUES ('њ', 0292, 'Оправдан', 9050);                          /* 2015:187 */
+INSERT INTO T_INVOLVEMENT VALUES ('щ', 0293, 'Засегнато лице', 9064);                    /* 2013:063 */
+INSERT INTO T_INVOLVEMENT VALUES ('х', 0294, 'Искано лице', 9089);                       /* 2016:088; 2016:264 9089 */
+INSERT INTO T_INVOLVEMENT VALUES ('l', 0295, 'Лице по принудително действие', 9051);
+INSERT INTO T_INVOLVEMENT VALUES ('0', 0253, 'Наследодател', 9043);
+INSERT INTO T_INVOLVEMENT VALUES ('Р', 0235, 'Насрещна страна', 9039);                   /* 2007:213 */
+INSERT INTO T_INVOLVEMENT VALUES ('ь', 0221, 'Ответник-синдик', 9037);                   /* 2011:313 AppC */
+INSERT INTO T_INVOLVEMENT VALUES ('э', 0231, 'Страна-синдик', 9038);                     /* 2011:313 AppC; 2014:168 order 155 in area.sql  */
+INSERT INTO T_INVOLVEMENT VALUES ('Ќ', 0222, 'Ответник по жалбата', 9037);               /* 2015:244 AppC */
+INSERT INTO T_INVOLVEMENT VALUES ('Ћ', 0223, 'Санкционирано ЮЛ', 9037);                  /* 2016:054 */
+
+INSERT INTO T_INVOLVEMENT VALUES ('Е', 0300, 'Страна', 9052);                            /* 2007:017 */
+INSERT INTO T_INVOLVEMENT VALUES ('3', 0310, 'Трето лице помагач', 9053);
+INSERT INTO T_INVOLVEMENT VALUES ('Т', 0315, 'Трето неучастващо лице', 9054);
+INSERT INTO T_INVOLVEMENT VALUES ('E', 0320, 'Главно встъпило лице', 9055);
+INSERT INTO T_INVOLVEMENT VALUES ('G', 0330, 'Контролираща страна', 9056);
+INSERT INTO T_INVOLVEMENT VALUES ('I', 0340, 'Заинтересована страна', 9057);
+INSERT INTO T_INVOLVEMENT VALUES ('Н', 0345, 'Заинтересовано лице', 9057);               /* 2009:344 */
+INSERT INTO T_INVOLVEMENT VALUES ('T', 0350, 'Служебно конституирана страна', 9058);
+INSERT INTO T_INVOLVEMENT VALUES ('Q', 0355, 'Необжалвал другар', 9059);
+INSERT INTO T_INVOLVEMENT VALUES ('н', 0356, 'Необходим другар', 9035);                  /* 2011:172 */
+INSERT INTO T_INVOLVEMENT VALUES ('S', 0360, 'Синдик', 9060);
+INSERT INTO T_INVOLVEMENT VALUES ('К', 0363, 'Временен синдик', 9060);                   /* 2009:344 */
+INSERT INTO T_INVOLVEMENT VALUES ('П', 0366, 'Помощник-синдик', 9061);
+INSERT INTO T_INVOLVEMENT VALUES ('Г', 0370, 'Ликвидатор', 9062);
+INSERT INTO T_INVOLVEMENT VALUES ('у', 0372, 'Надзорен орган', 9091);                    /* 2012:132; 2016:264 9091 */
+INSERT INTO T_INVOLVEMENT VALUES ('Ю', 0374, 'Одитор', 9063);                            /* 2008:060 */
+INSERT INTO T_INVOLVEMENT VALUES ('Њ', 0376, 'Ощетено юридическо лице', 9093);           /* 2015:071; 2016:264 was 9064 */
+INSERT INTO T_INVOLVEMENT VALUES ('O', 0378, 'Пострадал', 9064);
+INSERT INTO T_INVOLVEMENT VALUES ('О', 0378, 'Пострадал', 9064);                         /* 2002:108 _RQ */
+INSERT INTO T_INVOLVEMENT VALUES ('Я', 0380, 'Наследник', 9103);                         /* 2010:333 */
+INSERT INTO T_INVOLVEMENT VALUES ('Ђ', 0382, 'Изпълнител на завещание', 9106);           /* 2017:213 */
+INSERT INTO T_INVOLVEMENT VALUES ('…', 0384, 'Управител на наследство', 9104);           /* 2017:213 */
+INSERT INTO T_INVOLVEMENT VALUES ('1', 0388, 'Страна по първоинст.дело', 9065);
+INSERT INTO T_INVOLVEMENT VALUES ('Z', 0390, 'Граждански ищец', 9066);
+INSERT INTO T_INVOLVEMENT VALUES ('V', 0392, 'Частен обвинител', 9067);
+INSERT INTO T_INVOLVEMENT VALUES ('ч', 0394, 'Граждански ищец-Частен обвинител', 9087);  /* 2014:237 AppC; 2016:264 was 9066 */
+INSERT INTO T_INVOLVEMENT VALUES ('Љ', 0396, 'Частен обвинител-Граждански ищец', 9067);
+INSERT INTO T_INVOLVEMENT VALUES ('C', 0398, 'Граждански ответник', 9068);
+
+INSERT INTO T_INVOLVEMENT VALUES ('W', 0410, 'Свидетел', 9069);
+INSERT INTO T_INVOLVEMENT VALUES ('X', 0420, 'Вещо лице', 9070);
+INSERT INTO T_INVOLVEMENT VALUES ('6', 0426, 'Експерт', 9071);                           /* 2006:027 */
+INSERT INTO T_INVOLVEMENT VALUES ('7', 0424, 'Частен съдебен изпълнител', NULL);         /* 2006:278 */
+INSERT INTO T_INVOLVEMENT VALUES ('F', 0425, 'Нотариус', NULL);                          /* 2011:147 */
+INSERT INTO T_INVOLVEMENT VALUES ('Д', 0430, 'Поемно лице', 9072);
+INSERT INTO T_INVOLVEMENT VALUES ('N', 0450, 'Педагог', 9094);
+INSERT INTO T_INVOLVEMENT VALUES ('†', 0455, 'Психолог', 9103);                          /* 2016:264 */
+INSERT INTO T_INVOLVEMENT VALUES ('R', 0460, 'Родител', 9073);
+INSERT INTO T_INVOLVEMENT VALUES ('р', 0465, 'Приемен родител', 9073);
+INSERT INTO T_INVOLVEMENT VALUES ('P', 0470, 'Процесуален представител', 9074);
+INSERT INTO T_INVOLVEMENT VALUES ('M', 0480, 'Преводач', 9095);
+INSERT INTO T_INVOLVEMENT VALUES ('М', 0481, 'Тълковник', NULL);                         /* 2008:023 like 'M' */
+INSERT INTO T_INVOLVEMENT VALUES ('И', 0485, 'Защитник', 9075);                          /* 2007:026 like 'L' */
+INSERT INTO T_INVOLVEMENT VALUES ('т', 0487, 'Упълномощен защитник', 9075);              /* 2013:259 */
+INSERT INTO T_INVOLVEMENT VALUES ('и', 0489, 'Резервен защитник', 9075);                 /* 2011:018 like 'И' */
+INSERT INTO T_INVOLVEMENT VALUES ('A', 0490, 'Служебен защитник', 9076);
+INSERT INTO T_INVOLVEMENT VALUES ('А', 0495, 'Представител', 9077);
+
+INSERT INTO T_INVOLVEMENT VALUES ('B', 0510, 'Законен представител', 9078);
+INSERT INTO T_INVOLVEMENT VALUES ('U', 0514, 'Настойник', 9079);
+INSERT INTO T_INVOLVEMENT VALUES ('Y', 0517, 'Попечител', 9080);
+INSERT INTO T_INVOLVEMENT VALUES ('D', 0520, 'Особен представител', 9081);
+INSERT INTO T_INVOLVEMENT VALUES ('L', 0540, 'Адвокат', 9082);
+INSERT INTO T_INVOLVEMENT VALUES ('H', 0550, 'Пълномощник', 9083);
+INSERT INTO T_INVOLVEMENT VALUES ('J', 0560, 'Представляващ', 9084);
+INSERT INTO T_INVOLVEMENT VALUES ('В', 0565, 'Повереник', 9085);                         /* 2007:018 */
+INSERT INTO T_INVOLVEMENT VALUES ('‡', 0567, 'Юрисконсулт', 9102);                       /* 2016:264 */
+INSERT INTO T_INVOLVEMENT VALUES ('K', 0570, 'Лице за съдебен адрес', 9086);
+INSERT INTO T_INVOLVEMENT VALUES ('я', 0580, 'Съдебен заседател', NULL);
+
+INSERT INTO T_INVOLVEMENT VALUES ('Б', 0010, '', NULL);
+INSERT INTO T_INVOLVEMENT VALUES ('ж', 0020, 'Подател', NULL);
+INSERT INTO T_INVOLVEMENT VALUES ('Ж', 0020, 'Получател', NULL);
+INSERT INTO T_INVOLVEMENT VALUES ('Й', 0030, 'Присъда', NULL);
+/* 2010:064 */
+INSERT INTO T_INVOLVEMENT VALUES ('а', 0040, 'Първи', NULL);
+INSERT INTO T_INVOLVEMENT VALUES ('в', 0050, 'Втори', NULL);
+INSERT INTO T_INVOLVEMENT VALUES ('Ы', 0900, 'Председател на състав', NULL);
+INSERT INTO T_INVOLVEMENT VALUES ('С', 0910, 'Арбитър', NULL);
+INSERT INTO T_INVOLVEMENT VALUES ('Ь', 0920, 'Заместник-арбитър', NULL);
+/* 2004:237; 2005:083 +45 */
+INSERT INTO T_INVOLVEMENT VALUES ('5', 0020, 'Прокурор', NULL);
+INSERT INTO T_INVOLVEMENT VALUES ('4', 0030, 'Съдебен заседател', NULL);
+INSERT INTO T_INVOLVEMENT VALUES ('Э', 0040, 'Лице с юридическа правоспособност', NULL);
+
+INSERT INTO T_POST VALUES ('i', NULL, 'За вътрешно ползване');
+INSERT INTO T_POST VALUES ('r', 0001, 'Регистратор');
+INSERT INTO T_POST VALUES ('c', 0002, 'Деловодител');
+INSERT INTO T_POST VALUES ('s', 0003, 'Секретар');
+INSERT INTO T_POST VALUES ('y', 0005, 'Младши съдия');
+INSERT INTO T_POST VALUES ('h', 0006, 'Архивар');
+INSERT INTO T_POST VALUES ('a', 0007, 'Администратор');
+
+INSERT INTO T_POST VALUES ('p', 0010, 'Прокурор');
+INSERT INTO T_POST VALUES ('J', 0011, 'Заседател');
+INSERT INTO T_POST VALUES ('H', 0012, 'Заседател в закрито заседание');
+INSERT INTO T_POST VALUES ('o', 0014, 'Друга');
+INSERT INTO T_POST VALUES ('1', 0015, 'Председател');
+INSERT INTO T_POST VALUES ('2', 0016, 'Заместник-председател');
+INSERT INTO T_POST VALUES ('w', 0017, 'Призовкар');
+
+/* Attributes; order =+ 100 for proper sorting */
+INSERT INTO T_POST VALUES ('3', 0019, 'Дела с ограничен достъп');
+INSERT INTO T_POST VALUES ('b', 0101, 'Участва на отделен ред в отчета за МП');
+INSERT INTO T_POST VALUES ('I', 0102, 'Участва на отделен ред в описна рекап.');   /* 2010:167 */
+INSERT INTO T_POST VALUES ('e', 0103, 'РЕДАКТИРАН');
+INSERT INTO T_POST VALUES ('u', 0104, 'За отчета - съдени лица не се броят');
+INSERT INTO T_POST VALUES ('P', 0105, 'Индивидуални данни за съдени лица');
+INSERT INTO T_POST VALUES ('A', 0106, 'Няма степен на уважаване на иска');
+INSERT INTO T_POST VALUES ('C', 0107, 'Резултати потвърждава/изменя/отменя');
+INSERT INTO T_POST VALUES ('K', 0108, 'Резултати уважава/без уважение');
+INSERT INTO T_POST VALUES ('F', 0110, 'Резултати за КНАХД/чл.414Г НПК');
+INSERT INTO T_POST VALUES ('4', 0111, 'Активна дата на връщане');
+INSERT INTO T_POST VALUES ('v', 0112, 'Участва в отчета за ВСС');
+INSERT INTO T_POST VALUES ('D', 0114, 'Досъдебно производство');                   /* 2010:259 */
+INSERT INTO T_POST VALUES ('G', 0116, 'Архивиране без влизане в законна сила');    /* 2011:158 */
+INSERT INTO T_POST VALUES ('L', 0120, 'Добавяне на отделен ред в отчета за ВСС');
+INSERT INTO T_POST VALUES ('V', 0124, 'Инверсия на дата връщане/мотиви');          /* 2017:240 */
+
+/* 2008:042 */
+INSERT INTO T_COLLEGE VALUES ('x', 0009, 'Обща администрация', 'Обща администрация');
+
+INSERT INTO T_RIGHT VALUES ('R', 'Регистратор');
+INSERT INTO T_RIGHT VALUES ('C', 'Деловодител');
+INSERT INTO T_RIGHT VALUES ('S', 'Секретар');
+INSERT INTO T_RIGHT VALUES ('J', 'Съдия');
+INSERT INTO T_RIGHT VALUES ('A', 'Администратор');
+INSERT INTO T_RIGHT VALUES ('h', 'Архивар');
+/* 2008:025 function -> menu */
+INSERT INTO T_RIGHT VALUES ('q', 'Справки');
+INSERT INTO T_RIGHT VALUES ('b', 'Книги');
+INSERT INTO T_RIGHT VALUES ('3', 'Призовкар');  /* 2009:352 */
+
+INSERT INTO T_RIGHT VALUES ('n', 'Регистриране на входящи документи');
+INSERT INTO T_RIGHT VALUES ('e', 'Редактиране на входящи документи');
+INSERT INTO T_RIGHT VALUES ('r', 'Резолиране на входящи документи');
+INSERT INTO T_RIGHT VALUES ('N', 'Образуване на дела');
+INSERT INTO T_RIGHT VALUES ('E', 'Редактиране на дела');
+INSERT INTO T_RIGHT VALUES ('l', 'Вписване на резултат от ЗЗ/РЗ');
+INSERT INTO T_RIGHT VALUES ('F', 'Насрочване на дело');
+INSERT INTO T_RIGHT VALUES ('L', 'Списък на насрочените дела');
+INSERT INTO T_RIGHT VALUES ('W', 'Печат на призовки/съобщения/писма');
+INSERT INTO T_RIGHT VALUES ('o', 'Вписване на резултат от открито заседание');
+INSERT INTO T_RIGHT VALUES ('g', 'Вписване на решение/определение/присъда');
+INSERT INTO T_RIGHT VALUES ('G', 'Печат на обявления (СРГ)');
+INSERT INTO T_RIGHT VALUES ('M', 'Работа с номенклатури');
+INSERT INTO T_RIGHT VALUES ('9', 'Изтриване на входящи/изходящи документи');      /* 2005:081 */
+INSERT INTO T_RIGHT VALUES ('D', 'Изтриване на данни');
+INSERT INTO T_RIGHT VALUES ('O', 'Други администраторски функции');
+INSERT INTO T_RIGHT VALUES ('U', 'Преномериране');
+INSERT INTO T_RIGHT VALUES ('u', 'Директна работа с населени места');
+INSERT INTO T_RIGHT VALUES ('s', 'Директна работа с улици');
+INSERT INTO T_RIGHT VALUES ('V', 'Редактиране на започнали дела');
+INSERT INTO T_RIGHT VALUES ('I', 'Промяна на състава в заседание');
+INSERT INTO T_RIGHT VALUES ('Q', 'Справки за дела от цялото отделение');
+INSERT INTO T_RIGHT VALUES ('x', 'Регистриране на съпровождащи документи');
+INSERT INTO T_RIGHT VALUES ('X', 'Редактиране на съпровождащи документи');
+INSERT INTO T_RIGHT VALUES ('H', 'Входящ регистър');
+INSERT INTO T_RIGHT VALUES ('Y', 'Изходящ регистър');
+INSERT INTO T_RIGHT VALUES ('v', 'Предоставяне/връщане');
+INSERT INTO T_RIGHT VALUES ('y', 'Свободно номериране на съдебни актове');        /* 2008:113 */
+INSERT INTO T_RIGHT VALUES ('Z', 'Редактиране на входящи документи с движение');
+INSERT INTO T_RIGHT VALUES ('P', 'Промяна на параметрите за печат');
+INSERT INTO T_RIGHT VALUES ('K', 'Редактиране вида на входящи документи');
+INSERT INTO T_RIGHT VALUES ('i', 'Архивиране на дело');
+INSERT INTO T_RIGHT VALUES ('j', 'Вписване на веществено доказателство');
+INSERT INTO T_RIGHT VALUES ('k', 'Унищожаване на дело');
+INSERT INTO T_RIGHT VALUES ('f', 'Справки за дейността на съда');
+INSERT INTO T_RIGHT VALUES ('z', 'Справки за ненаписани съдебни актове');
+INSERT INTO T_RIGHT VALUES ('0', 'Справки за срочност');
+INSERT INTO T_RIGHT VALUES ('1', 'Редактиране на срокове');
+INSERT INTO T_RIGHT VALUES ('2', 'Дела от обществен интерес');
+INSERT INTO T_RIGHT VALUES ('4', 'Преименуване на страна');                       /* 2010:020 edit -> rename */
+INSERT INTO T_RIGHT VALUES ('5', 'Справки за дела от всички отделения');
+INSERT INTO T_RIGHT VALUES ('6', 'Подготовка списък на изходяща поща');
+INSERT INTO T_RIGHT VALUES ('7', 'Импорт/експорт на данни');                      /* 2008:042 was Export; 2008:114 combined */
+INSERT INTO T_RIGHT VALUES ('8', 'Работа с всички райони');
+INSERT INTO T_RIGHT VALUES ('w', 'Свободно номериране на дела');                  /* 2006:094 */
+INSERT INTO T_RIGHT VALUES ('B', 'Свободно номериране на документи');             /* 2007:208 */
+INSERT INTO T_RIGHT VALUES ('T', 'Изтриване на страни');                          /* 2007:208 */
+INSERT INTO T_RIGHT VALUES ('m', 'Работа с дела с ограничен достъп');             /* 2009:139 */
+INSERT INTO T_RIGHT VALUES ('t', 'Разпределение на съдебни заседатели');          /* 2009:139 */
+INSERT INTO T_RIGHT VALUES ('Ж', 'Журнал');                                       /* 2012:016 */
+INSERT INTO T_RIGHT VALUES ('З', 'Редактиране на резултат от ЗЗ/РЗ');             /* 2013:070 */
+INSERT INTO T_RIGHT VALUES ('Р', 'Редактиране на решение/определение/присъда');   /* 2013:070 */
+INSERT INTO T_RIGHT VALUES ('П', 'Превод на суми през ПОС-терминал');             /* 2013:150 */
+INSERT INTO T_RIGHT VALUES ('Л', 'Запис на електронна папка');                    /* 2013:199 */
+INSERT INTO T_RIGHT VALUES ('И', 'Редактиране на изпълнителни листи');            /* 2015:034 */
+INSERT INTO T_RIGHT VALUES ('У', 'Участници в съдебния процес');                  /* 2015:092 */
+INSERT INTO T_RIGHT VALUES ('Г', 'Работа с регистрирани съдебни актове');         /* 2015:292 */
+INSERT INTO T_RIGHT VALUES ('Д', 'Заседания по секретни дела');
+INSERT INTO T_RIGHT VALUES ('Е', 'Резолиране на заявление за регистрация в ЕПЕП');  /* 2018-11-16 */
+
+INSERT INTO T_AGE VALUES ('0', 0001, '');
+INSERT INTO T_AGE VALUES ('1', 0002, 'До 1 месец');
+INSERT INTO T_AGE VALUES ('2', 0003, '1-3 месеца');
+INSERT INTO T_AGE VALUES ('3', 0004, 'До 3 месеца');
+INSERT INTO T_AGE VALUES ('9', 0005, 'Над 3 месеца');
+INSERT INTO T_AGE VALUES ('6', 0006, '3-6 месеца');
+INSERT INTO T_AGE VALUES ('7', 0007, '6м.-1 година');
+INSERT INTO T_AGE VALUES ('8', 0008, 'Над 1 година');
+
+INSERT INTO T_GRANT VALUES ('n', 0001, '');
+INSERT INTO T_GRANT VALUES ('e', 0002, 'Уважен изцяло');
+INSERT INTO T_GRANT VALUES ('p', 0003, 'Уважен отчасти');
+INSERT INTO T_GRANT VALUES ('r', 0004, 'Отхвърлен');
+INSERT INTO T_GRANT VALUES ('z', 0005, 'Обявява за нищожно');
+
+INSERT INTO T_JUDGED VALUES ('n', 0001, '');
+INSERT INTO T_JUDGED VALUES ('j', 0002, 'Осъден');
+INSERT INTO T_JUDGED VALUES ('i', 0003, 'Оправдан');
+INSERT INTO T_JUDGED VALUES ('p', 0004, 'Осъден по споразумение');
+INSERT INTO T_JUDGED VALUES ('s', 0005, 'Прекратяване по чл.24 ал.1, т.1-11 НПК');
+INSERT INTO T_JUDGED VALUES ('r', 0006, 'Частично оправдателна присъда');
+INSERT INTO T_JUDGED VALUES ('7', 0007, 'Освобожд.от наказ.отгов.-чл.78а НК');
+INSERT INTO T_JUDGED VALUES ('6', 0008, 'Освобожд.от наказ.отгов.-чл.61 или 64 НК');
+INSERT INTO T_JUDGED VALUES ('o', 0009, 'Отпадане на наказуемостта др. основания');
+
+INSERT INTO T_RECIDIVE VALUES ('n', 0001, '');
+INSERT INTO T_RECIDIVE VALUES ('c', 0002, 'Общ рецидив');
+INSERT INTO T_RECIDIVE VALUES ('s', 0003, 'Спец. рецидив');
+INSERT INTO T_RECIDIVE VALUES ('d', 0004, 'Опасен рецидив');
+
+INSERT INTO T_SENDER VALUES ('0000000002', 'B', 'COMMON 1.7884', NULL, NULL, NULL);
+INSERT INTO T_SENDER VALUES ('0000000004', 's', 'Върховен касационен съд', 002, 2071, NULL);
+/* 2008:344 0000000005 s ВЪРХОВЕН АДМИНИСТРАТИВЕН СЪД: per-court */
+/* 2006:278 */
+INSERT INTO T_SENDER VALUES ('0000000001', 'v', 'Директор на Дирекция ОУИП при ЦУ на НАП', NULL, NULL, NULL);
+/*INSERT INTO T_SENDER VALUES ('0000000001', 'E', 'ЕИСПП', NULL, NULL);*/  /* 2012:354 comout */
+
+INSERT INTO T_INTERVAL VALUES ('0', 0001, '');
+INSERT INTO T_INTERVAL VALUES ('2', 0001, 'Работни дни');
+INSERT INTO T_INTERVAL VALUES ('3', 0003, 'до 3-дневен');
+INSERT INTO T_INTERVAL VALUES ('4', 0001, 'Дни');
+INSERT INTO T_INTERVAL VALUES ('5', 0002, 'Седмици');
+INSERT INTO T_INTERVAL VALUES ('6', 0003, 'Месеци');
+INSERT INTO T_INTERVAL VALUES ('7', 0007, 'до 7-дневен');
+INSERT INTO T_INTERVAL VALUES ('8', 0004, 'Години');
+INSERT INTO T_INTERVAL VALUES ('9', 0009, 'над 7-дневен');
+
+INSERT INTO T_CRIME_FORM VALUES ('n', NULL, '');
+INSERT INTO T_CRIME_FORM VALUES ('e', 0001, 'Извършител');
+INSERT INTO T_CRIME_FORM VALUES ('i', 0002, 'Подбудител');
+INSERT INTO T_CRIME_FORM VALUES ('s', 0003, 'Помагач');
+
+INSERT INTO T_CRIME_STAGE VALUES ('n', NULL, '');
+INSERT INTO T_CRIME_STAGE VALUES ('c', 0001, 'Довършено');
+INSERT INTO T_CRIME_STAGE VALUES ('a', 0002, 'Опит');
+INSERT INTO T_CRIME_STAGE VALUES ('p', 0003, 'Приготовление');
+
+INSERT INTO T_JAIL_MODE VALUES ('n', 0001, '');
+INSERT INTO T_JAIL_MODE VALUES ('l', 0002, 'Лек');
+INSERT INTO T_JAIL_MODE VALUES ('c', 0003, 'Общ');
+INSERT INTO T_JAIL_MODE VALUES ('h', 0004, 'Строг');      /* 2002:101 */
+INSERT INTO T_JAIL_MODE VALUES ('s', 0005, 'Специален');
+INSERT INTO T_JAIL_MODE VALUES ('H', 0006, 'Усилено строг');
+
+/* 2002:035 All accomplys except z renumbered +100 to make n first */
+/* 2003:171 LRQ: re#ed 'j', 'w' and 'B' to a complete mess */
+/* 2003:175 Swa#ed 'y' and 'g' */
+INSERT INTO T_ACCOMPLY VALUES ('x', 0101, 'Изпълнителен лист', NULL, 1, NULL);
+INSERT INTO T_ACCOMPLY VALUES ('c', 0102, 'Писмо до общината - служба Гражданско състояние', NULL, 1, NULL);
+INSERT INTO T_ACCOMPLY VALUES ('r', 0103, 'Писмо до общината - за попечителство', NULL, 1, NULL);
+INSERT INTO T_ACCOMPLY VALUES ('b', 0104, 'Писмо до ДВУИ за попечителство', NULL, 1, NULL);
+INSERT INTO T_ACCOMPLY VALUES ('g', 0101, 'Обезпечителна заповед', NULL, 1, NULL);
+INSERT INTO T_ACCOMPLY VALUES ('o', 0106, 'Писмо до ОССП', NULL, 1, NULL);
+INSERT INTO T_ACCOMPLY VALUES ('s', 0107, 'Писмо за изпращане на дело за послужване', NULL, 1, NULL);
+INSERT INTO T_ACCOMPLY VALUES ('a', 0108, 'Писмо за предоставяне на документи', NULL, 1, NULL);
+INSERT INTO T_ACCOMPLY VALUES ('p', 0109, 'Писмо за предоставяне на актуален адрес', NULL, 1, NULL);
+
+INSERT INTO T_ACCOMPLY VALUES ('j', 0121, 'Писмо до Бюро съдимост', NULL, 1, NULL);
+INSERT INTO T_ACCOMPLY VALUES ('e', 0111, 'Писмо до Бюро съдимост към дело за реабилитация', NULL, 1, NULL);
+INSERT INTO T_ACCOMPLY VALUES ('k', 0112, 'Писмо до Окръжна прокуратура към досъдебни дела', NULL, 1, NULL);
+INSERT INTO T_ACCOMPLY VALUES ('m', 0114, 'Писмо до Окръжна прокуратура към дела за МНО', NULL, 1, NULL);
+INSERT INTO T_ACCOMPLY VALUES ('h', 0115, 'Писмо до Н-ка на Затвора към дела по чл.422, 424, 426', NULL, 1, NULL);
+INSERT INTO T_ACCOMPLY VALUES ('v', 0120, 'Писмо за изпращане на дело за послужване', NULL, 1, NULL);
+INSERT INTO T_ACCOMPLY VALUES ('w', 0122, 'Писмо до Окръжна прокуратура към препис от присъда/споразумение', NULL, 1, NULL);
+INSERT INTO T_ACCOMPLY VALUES ('n', 0001, '', NULL, 1, NULL);
+INSERT INTO T_ACCOMPLY VALUES ('z', NULL, 'Придружително писмо за суми по сметка на съда', NULL, 1, NULL);
+INSERT INTO T_ACCOMPLY VALUES ('y', 0105, 'Придружително писмо - копие за съда', NULL, 1, NULL);  /* 2002:044 _ only */
+INSERT INTO T_ACCOMPLY VALUES ('B', 0110, 'Бюлетин за съдимост', NULL, 1, NULL);                  /* 2003:164 for _ */
+/* 2010:330 */
+INSERT INTO T_ACCOMPLY VALUES ('N', 0010, 'чл.404, т.1 и чл.405, ал.1 от Гражданския процесуален кодекс', NULL, NULL, NULL);
+INSERT INTO T_ACCOMPLY VALUES ('O', 0020, 'чл.416 във връзка с чл.410 от Гражданския процесуален кодекс', NULL, NULL, NULL);
+INSERT INTO T_ACCOMPLY VALUES ('P', 0030, 'чл.417 и чл.418, ал.2 от Гражданския процесуален кодекс', NULL, NULL, NULL);
+/* 2015:166 */
+INSERT INTO T_ACCOMPLY VALUES ('Y', 0020, 'чл.404-408 от ГПК и чл.412 от НПК', NULL, NULL, NULL);
+INSERT INTO T_ACCOMPLY VALUES ('Z', 0030, 'чл.190, ал.2 и чл.412 от НПК', NULL, NULL, NULL);
+
+/* 2012:004 +CLMQRSTUVWX, renamed DG2, reordered */
+INSERT INTO T_ACCOMPLY VALUES ('C', 0100, 'чл.118 ГПК – прекратяване по подсъдност', NULL, 1, '0');
+INSERT INTO T_ACCOMPLY VALUES ('L', 0103, 'чл.126, ал.1 ГПК – прекратяване (има друго дело)', NULL, 1, '0');
+INSERT INTO T_ACCOMPLY VALUES ('M', 0105, 'чл.129, ал.2 ГПК – прекратяване', NULL, 1, '0');
+INSERT INTO T_ACCOMPLY VALUES ('I', 0110, 'чл.129, ал.3 ГПК – прекратяване', NULL, 1, '0');
+INSERT INTO T_ACCOMPLY VALUES ('Q', 0113, 'чл.130 ГПК – връщане на молбата поради недопустимост на иска', NULL, 1, '0');
+INSERT INTO T_ACCOMPLY VALUES ('R', 0115, 'чл.231 ГПК – прекратяване поради невъзобновяване след спиране', NULL, 1, '0');
+INSERT INTO T_ACCOMPLY VALUES ('J', 0120, 'чл.232 ГПК – прекратяване поради оттегляне на иска', NULL, 1, '0');
+INSERT INTO T_ACCOMPLY VALUES ('K', 0130, 'чл.233 ГПК – прекратяване поради отказ от иска', NULL, 1, '0');
+INSERT INTO T_ACCOMPLY VALUES ('E', 0140, 'чл.630, ал.1 от ТЗ – откриване на производство по несъстоятелност', 12001, 3, '9');
+INSERT INTO T_ACCOMPLY VALUES ('F', 0150, 'чл.630, ал.2 от ТЗ – обявяване в несъстоятелност', 12002, 3, 'A');
+INSERT INTO T_ACCOMPLY VALUES ('0', 0160, 'чл.630, ал.1 и ал.2 от ТЗ', NULL, 2, NULL);
+INSERT INTO T_ACCOMPLY VALUES ('6', 0170, 'чл.631 от ТЗ - отхвърляне на молбата', 12003, 3, '0');
+INSERT INTO T_ACCOMPLY VALUES ('D', 0180, 'чл.632, ал.1 от ТЗ – обявяване в несъстоятелност и спиране на производството', 12004, 3, 'A');
+INSERT INTO T_ACCOMPLY VALUES ('G', 0190, 'чл.632, ал.2 от ТЗ – възобновяване на спряното производство', 12005, 3, 'A');
+INSERT INTO T_ACCOMPLY VALUES ('2', 0200, 'чл.632, ал.4 от ТЗ – прекратяване на производството и заличаване от ТР', 12006, 3, '3');
+INSERT INTO T_ACCOMPLY VALUES ('H', 0210, 'чл.632, ал.5 от ТЗ', 12007, 3, 'A');
+INSERT INTO T_ACCOMPLY VALUES ('9', 0220, 'чл.692, ал.1 от ТЗ - одобряване списъка на приети вземания', 12008, 3, NULL);
+INSERT INTO T_ACCOMPLY VALUES ('S', 0230, 'чл.705 ТЗ – утвърждаване на плана за оздравяване и прекратяване', 12016, 3, '0');
+INSERT INTO T_ACCOMPLY VALUES ('7', 0240, 'чл.707 от ТЗ - утвърждаване на оздравителен план', 12009, 3, '0');
+INSERT INTO T_ACCOMPLY VALUES ('T', 0250, 'чл.710 от ТЗ – обявяване в несъстоятелност', 12018, 3, 'A');
+INSERT INTO T_ACCOMPLY VALUES ('1', 0260, 'чл.711 от ТЗ - обявяване в несъстоятелност', 12010, 3, 'A');
+INSERT INTO T_ACCOMPLY VALUES ('U', 0270, 'чл.719 от ТЗ – обявяване в несъстоятелност', 12017, 3, 'A');
+INSERT INTO T_ACCOMPLY VALUES ('A', 0280, 'чл.729 от ТЗ - одобряване сметка за разпределение', 12011, 3, NULL);
+INSERT INTO T_ACCOMPLY VALUES ('V', 0290, 'чл.735, ал.1 т.1 – прекратяване (изплатени задължения)', 12012, 3, '0');
+INSERT INTO T_ACCOMPLY VALUES ('W', 0300, 'чл.735, ал.1 т.2 – прекратяване (масата на несъст. изчерпана)', 12012, 3, 'A');
+INSERT INTO T_ACCOMPLY VALUES ('X', 0310, 'чл.735, ал.2 – прекратяване и заличаване на търговеца', 12012, 3, '3');
+INSERT INTO T_ACCOMPLY VALUES ('3', 0320, 'чл.735 от ТЗ - прекратяване поради приключване', 12012, 2, NULL);
+INSERT INTO T_ACCOMPLY VALUES ('8', 0330, 'чл.740 от ТЗ - извънсъдебно споразумение с прекратяване', 12013, 3, '0');
+INSERT INTO T_ACCOMPLY VALUES ('4', 0340, 'чл.744 от ТЗ - възобновени производства', 12014, 3, NULL);
+INSERT INTO T_ACCOMPLY VALUES ('5', 0350, 'чл.755 от ТЗ - възстановяване правата на длъжника', 12015, 3, NULL);
+
+/* 2016:179 PRQ */
+INSERT INTO T_ACCOMPLY VALUES ('d', 0400, 'Чл.672, ал.1 от ТЗ', NULL, 1, NULL);
+INSERT INTO T_ACCOMPLY VALUES ('f', 0410, 'Чл.677, ал.1, т.3 и т.8 от ТЗ', NULL, 1, NULL);
+INSERT INTO T_ACCOMPLY VALUES ('i', 0420, 'Чл.734, ал.1 от ТЗ', NULL, 1, NULL);
+/* 2017:116 PRQ */
+INSERT INTO T_ACCOMPLY VALUES ('А', 0144, 'чл.629а от ТЗ – предварителни обезпечителни мерки', NULL, 3, '0');
+INSERT INTO T_ACCOMPLY VALUES ('Б', 0145, 'чл.629б от ТЗ – определяне на първоначални разноски', NULL, 3, '0');
+INSERT INTO T_ACCOMPLY VALUES ('В', 0211, 'чл.638, ал.3 от ТЗ – разрешение за продължаване на изпълнително производство', NULL, 3, '9');
+INSERT INTO T_ACCOMPLY VALUES ('Г', 0212, 'чл.656 от ТЗ – назначаване на синдик', NULL, 3, '9');
+INSERT INTO T_ACCOMPLY VALUES ('Д', 0213, 'чл.657 от ТЗ – освобождаване на синдик', NULL, 3, '9');
+INSERT INTO T_ACCOMPLY VALUES ('Е', 0215, 'чл.658, ал.2 от ТЗ – разрешение за разпореждане с паричните суми от банковите сметки на длъжника', NULL, 3, '9');
+INSERT INTO T_ACCOMPLY VALUES ('Ж', 0217, 'чл.661, ал.6 от ТЗ – служебно назначаване на синдик и определяне на възнаграждение', NULL, 3, '9');
+INSERT INTO T_ACCOMPLY VALUES ('З', 0222, 'чл.692, ал.3 от ТЗ – възражение срещу списъка на приети вземания', NULL, 3, '9');
+INSERT INTO T_ACCOMPLY VALUES ('И', 0224, 'чл.701 от ТЗ – допускане на оздравителен план', NULL, 3, '9');
+INSERT INTO T_ACCOMPLY VALUES ('Й', 0225, 'чл.704, ал.3 от ТЗ – разглеждане на възражения против приетия от СК оздравителен план', NULL, 3, '9');
+INSERT INTO T_ACCOMPLY VALUES ('К', 0245, 'чл.709, ал.1 от ТЗ – възобновяване на производството по несъстоятелност при неизпълнение на плана', NULL, 3, 'A');
+INSERT INTO T_ACCOMPLY VALUES ('Л', 0264, 'чл.717, ал.2 от ТЗ – разрешение за продажба на вещи и имуществени права', NULL, 3, 'A');
+INSERT INTO T_ACCOMPLY VALUES ('М', 0265, 'чл.717з от ТЗ – издаване на постановление за възлагане', NULL, 3, 'A');
+INSERT INTO T_ACCOMPLY VALUES ('Н', 0267, 'чл.718, ал.1 от ТЗ  – разрешаване на продажба чрез пряко договаряне', NULL, 3, 'A');
+INSERT INTO T_ACCOMPLY VALUES ('О', 0360, 'чл.759, ал.1 от ТЗ – откриване спомагателно пр-во по несъстоятелност за търговец, обявен в несъстоят от чуждестранен съд', NULL, 3, '9');
+
+INSERT INTO T_SUM_TYPE VALUES ('p', 0001, 'Глоба', 'Глоба', 'b', ', представляваща {F_SUM_TYPE} в полза на {F_RECIPIENT} по сметка на {F_SENDER_NAME}, банкова сметка {F_IBAN}, BIC код {F_BIC}, банка {F_BANK}', 3);
+INSERT INTO T_SUM_TYPE VALUES ('r', 0002, 'Възнаграждение', 'Възнаграждение', NULL, NULL, NULL);
+INSERT INTO T_SUM_TYPE VALUES ('t', 0003, 'Държавна такса', 'ДТ', 'b', ', представляваща {F_SUM_TYPE} в полза на {F_RECIPIENT} по сметка на {F_SENDER_NAME}, банкова сметка {F_IBAN}, BIC код {F_BIC}, банка {F_BANK}', 3);
+INSERT INTO T_SUM_TYPE VALUES ('c', 0004, 'Държавна такса за препис от документи', 'ДТ препис', 'b', NULL, NULL);
+INSERT INTO T_SUM_TYPE VALUES ('x', 0007, 'Депозит за вещо лице', 'Депозит в.л.', 'd', NULL, NULL);
+INSERT INTO T_SUM_TYPE VALUES ('e', 0008, 'Разноски', 'Разноски', 'd', ', представляваща {F_SUM_TYPE} в полза на {F_RECIPIENT} по сметка на {F_SENDER_NAME}, банкова сметка {F_IBAN}, BIC код {F_BIC}, банка {F_BANK}', 3);
+INSERT INTO T_SUM_TYPE VALUES ('o', 0020, 'Друга сума по сметка Бюджет', 'Друга-Бюджет', 'b', NULL, 4);
+INSERT INTO T_SUM_TYPE VALUES ('h', 0021, 'Друга сума по сметка Депозити', 'Друга-Депозити', 'd', NULL, 4);
+
+/* 2014:245 */
+INSERT INTO T_SUM_TYPE VALUES ('a', 0010, 'Депозит за правна помощ', 'Деп.правна пом.', 'd', NULL, NULL);
+INSERT INTO T_SUM_TYPE VALUES ('f', 0011, 'Наказание Глоба', 'Наказание Глоба', NULL, ', представляваща {F_SUM_TYPE} в полза на {F_RECIPIENT} по сметка на {F_SENDER_NAME}, банкова сметка {F_IBAN}, BIC код {F_BIC}, банка {F_BANK}', 3);
+INSERT INTO T_SUM_TYPE VALUES ('l', 0012, 'Държ. такса за издаване на изпълн. лист', 'ДТ за ИЛ', 'b', ', представляваща {F_SUM_TYPE} в полза на {F_RECIPIENT} по сметка на {F_SENDER_NAME}, банкова сметка {F_IBAN}, BIC код {F_BIC}, банка {F_BANK}', 3);
+INSERT INTO T_SUM_TYPE VALUES ('g', 0014, 'Държ. такса върху уважен граждански иск', 'ДТ уваж.гр.иск', NULL, ', представляваща {F_SUM_TYPE} в полза на {F_RECIPIENT} по сметка на {F_SENDER_NAME}, банкова сметка {F_IBAN}, BIC код {F_BIC}, банка {F_BANK}', 3);
+INSERT INTO T_SUM_TYPE VALUES ('v', 0015, 'Разноски за възнаграждение на вещо лице', 'Разноски в.л.', NULL, ', представляваща {F_SUM_TYPE} в полза на {F_RECIPIENT} по сметка на {F_SENDER_NAME}, банкова сметка {F_IBAN}, BIC код {F_BIC}, банка {F_BANK}', 3);
+INSERT INTO T_SUM_TYPE VALUES ('y', 0016, 'Разноски за възнагражд. за правна помощ', 'Разн.правна пом', NULL, ', представляваща {F_SUM_TYPE} в полза на {F_RECIPIENT} по сметка на {F_SENDER_NAME}, банкова сметка {F_IBAN}, BIC код {F_BIC}, банка {F_BANK}', 3);
+INSERT INTO T_SUM_TYPE VALUES ('k', 0019, 'Друга сума', 'Друга сума', NULL, ', представляваща {F_SUM_TYPE} в полза на {F_RECIPIENT} по сметка на {F_SENDER_NAME}, банкова сметка {F_IBAN}, BIC код {F_BIC}, банка {F_BANK}', 7);
+
+/* 2014:302 */
+INSERT INTO T_SUM_TYPE VALUES ('I', 0023, 'Главница', 'Главница', NULL, ', представляваща {F_SUM_TYPE} в полза на {F_RECIPIENT} по сметка на {F_SENDER_NAME}, банкова сметка {F_IBAN}, BIC код {F_BIC}, банка {F_BANK}', 3);
+INSERT INTO T_SUM_TYPE VALUES ('F', 0024, 'Лихви', 'Лихви', NULL, ', представляваща {F_SUM_TYPE} в полза на {F_RECIPIENT} по сметка на {F_SENDER_NAME}, банкова сметка {F_IBAN}, BIC код {F_BIC}, банка {F_BANK}', 3);
+INSERT INTO T_SUM_TYPE VALUES ('T', 0024, 'Издръжка', 'Издръжка', NULL, NULL, 1);
+INSERT INTO T_SUM_TYPE VALUES ('P', 0025, 'Предаване на владение', 'Предав.владение', NULL, 'за предаване на владение {F_SUM_TEXT}', 11);
+INSERT INTO T_SUM_TYPE VALUES ('R', 0026, 'Предоставяне на родителски права', 'Пред.род.права', NULL, 'за предоставяне на родителски права', 9);
+INSERT INTO T_SUM_TYPE VALUES ('M', 0027, 'Определяне местоживеенето на детето', 'Местожив.дете', NULL, 'за определяне местоживеенето на детето', 9);
+INSERT INTO T_SUM_TYPE VALUES ('L', 0017, 'Разноски за възнаграждение на адвокат', 'Разноски адвок.', NULL, ', представляваща {F_RECIPIENT} в полза на Държавата по сметка на {F_SENDER_NAME}, банкова сметка {F_IBAN}, BIC код {F_BIC}, банка {F_BANK}', NULL);
+INSERT INTO T_SUM_TYPE VALUES ('D', 0018, 'Обезщетения и неустойки', 'Обезщ. и неуст.', NULL, ', представляваща {F_RECIPIENT} в полза на Държавата по сметка на {F_SENDER_NAME}, банкова сметка {F_IBAN}, BIC код {F_BIC}, банка {F_BANK}', 3);
+INSERT INTO T_SUM_TYPE VALUES ('O', 0030, 'Друго задължение без сума', 'Друго задълж.', NULL, 'за {F_SUM_TYPE}', 15);
+INSERT INTO T_SUM_TYPE VALUES ('U', 0029, 'Имуществена санкция', 'Имущест.санкция', NULL, ', представляваща {F_SUM_TYPE} в полза на {F_RECIPIENT} по сметка на {F_SENDER_NAME}, банкова сметка {F_IBAN}, BIC код {F_BIC}, банка {F_BANK}', 3);
+
+INSERT INTO T_SUM_STATE VALUES ('r', 0001, 'Подготовка РКО');
+INSERT INTO T_SUM_STATE VALUES ('f', 0002, 'Наложена');
+INSERT INTO T_SUM_STATE VALUES ('c', 0003, 'Изменена');  /* 2005:363 */
+INSERT INTO T_SUM_STATE VALUES ('u', 0004, 'Отменена');
+INSERT INTO T_SUM_STATE VALUES ('p', 0005, 'Платена');
+INSERT INTO T_SUM_STATE VALUES ('n', 0006, 'За изплащане');
+
+INSERT INTO T_ACCOUNT_TYPE VALUES ('d', 0001, 'Депозити');
+INSERT INTO T_ACCOUNT_TYPE VALUES ('b', 0002, 'Бюджет');
+
+/* 2005:102 */
+INSERT INTO T_KNOWN_PERSON VALUES ('0000000000', 'c', 'Б', 1, NULL, NULL, NULL, NULL);
+
+/* 2004:321; 2004:323 */
+INSERT INTO T_COURT VALUES (001, '8', 68134, 110, 'Върховен административен съд',    2793, NULL);
+INSERT INTO T_COURT VALUES (002, '4', 68134, 110, 'Върховен касационен съд',         2071, NULL);
+
+INSERT INTO T_COURT VALUES (100, '3', 68134, 110, 'Апелативен съд - София',          2077, NULL);
+
+INSERT INTO T_COURT VALUES (110, '5', 68134, 110, 'Софийски градски съд',            2106, 1);
+INSERT INTO T_COURT VALUES (111, '7', 68134, 110, 'Софийски районен съд',            2201, NULL);
+
+INSERT INTO T_COURT VALUES (120, '5', 04279, 120, 'Окръжен съд - Благоевград',       2079, NULL);
+INSERT INTO T_COURT VALUES (121, '7', 04279, 120, 'Районен съд - Благоевград',       2114, NULL);
+INSERT INTO T_COURT VALUES (122, '7', 17395, 120, 'Районен съд - Гоце Делчев',       2129, NULL);
+INSERT INTO T_COURT VALUES (123, '7', 56126, 120, 'Районен съд - Петрич',            2177, NULL);
+INSERT INTO T_COURT VALUES (124, '7', 61813, 120, 'Районен съд - Разлог',            2189, NULL);
+INSERT INTO T_COURT VALUES (125, '7', 65334, 120, 'Районен съд - Сандански',         2192, NULL);
+
+INSERT INTO T_COURT VALUES (130, '5', 10971, 130, 'Окръжен съд - Видин',             2083, 1);
+INSERT INTO T_COURT VALUES (131, '7', 03616, 130, 'Районен съд - Белоградчик',       2112, 1);
+INSERT INTO T_COURT VALUES (132, '7', 10971, 130, 'Районен съд - Видин',             2124, 1);
+INSERT INTO T_COURT VALUES (133, '7', 40525, 130, 'Районен съд - Кула',              2155, 1);
+
+INSERT INTO T_COURT VALUES (140, '5', 12259, 140, 'Окръжен съд - Враца',             2084, 1);
+INSERT INTO T_COURT VALUES (141, '7', 07702, 140, 'Районен съд - Бяла Слатина',      2119, 1);
+INSERT INTO T_COURT VALUES (142, '7', 12259, 140, 'Районен съд - Враца',             2125, 1);
+INSERT INTO T_COURT VALUES (144, '7', 37798, 140, 'Районен съд - Козлодуй',          2150, 1);
+INSERT INTO T_COURT VALUES (145, '7', 47714, 140, 'Районен съд - Мездра',            2164, 1);
+INSERT INTO T_COURT VALUES (146, '7', 54020, 140, 'Районен съд - Оряхово',           2172, 1);
+
+INSERT INTO T_COURT VALUES (150, '5', 41112, 150, 'Окръжен съд - Кюстендил',         2088, 1);
+INSERT INTO T_COURT VALUES (151, '7', 68789, 150, 'Районен съд - Дупница',           2136, 1);
+INSERT INTO T_COURT VALUES (152, '7', 41112, 150, 'Районен съд - Кюстендил',         2157, 1);
+
+INSERT INTO T_COURT VALUES (160, '5', 48489, 160, 'Окръжен съд - Монтана',           2090, NULL);
+INSERT INTO T_COURT VALUES (161, '7', 03928, 160, 'Районен съд - Берковица',         2113, 1);
+INSERT INTO T_COURT VALUES (162, '7', 44238, 160, 'Районен съд - Лом',               2160, 1);
+INSERT INTO T_COURT VALUES (163, '7', 48489, 160, 'Районен съд - Монтана',           2166, 1);
+
+INSERT INTO T_COURT VALUES (170, '5', 55871, 170, 'Окръжен съд - Перник',            2092, 1);
+INSERT INTO T_COURT VALUES (171, '7', 06286, 170, 'Районен съд - Брезник',           2116, 1);
+INSERT INTO T_COURT VALUES (172, '7', 55871, 170, 'Районен съд - Перник',            2176, 1);
+INSERT INTO T_COURT VALUES (173, '7', 61577, 170, 'Районен съд - Радомир',           2187, 1);
+INSERT INTO T_COURT VALUES (174, '7', 73273, 170, 'Районен съд - Трън',              2208, 1);
+
+INSERT INTO T_COURT VALUES (180, '5', 68134, 180, 'Окръжен съд - София',             2100, NULL);
+INSERT INTO T_COURT VALUES (181, '7', 05815, 180, 'Районен съд - Ботевград',         2115, NULL);
+INSERT INTO T_COURT VALUES (182, '7', 27303, 180, 'Районен съд - Елин Пелин',        2138, NULL);
+INSERT INTO T_COURT VALUES (183, '7', 27632, 180, 'Районен съд - Етрополе',          2140, NULL);
+INSERT INTO T_COURT VALUES (184, '7', 32901, 180, 'Районен съд - Ихтиман',           2144, NULL);
+INSERT INTO T_COURT VALUES (185, '7', 38978, 180, 'Районен съд - Костинброд',        2151, NULL);
+INSERT INTO T_COURT VALUES (186, '7', 56407, 180, 'Районен съд - Пирдоп',            2179, NULL);
+INSERT INTO T_COURT VALUES (187, '7', 65231, 180, 'Районен съд - Самоков',           2191, NULL);
+INSERT INTO T_COURT VALUES (188, '7', 65869, 180, 'Районен съд - Своге',             2195, NULL);
+INSERT INTO T_COURT VALUES (189, '7', 67372, 180, 'Районен съд - Сливница',          2199, NULL);
+
+INSERT INTO T_COURT VALUES (200, '3', 07079, 210, 'Апелативен съд - Бургас',         2073, 1);  /* 2016:278 -> 1 */
+
+INSERT INTO T_COURT VALUES (210, '5', 07079, 210, 'Окръжен съд - Бургас',            2080, 1);
+INSERT INTO T_COURT VALUES (211, '7', 00151, 210, 'Районен съд - Айтос',             2108, 1);
+INSERT INTO T_COURT VALUES (212, '7', 07079, 210, 'Районен съд - Бургас',            2117, 1);
+INSERT INTO T_COURT VALUES (213, '7', 36525, 210, 'Районен съд - Карнобат',          2148, 1);
+INSERT INTO T_COURT VALUES (214, '7', 46663, 210, 'Районен съд - Малко Търново',     2163, 1);
+INSERT INTO T_COURT VALUES (215, '7', 51500, 210, 'Районен съд - Несебър',           2167, 1);
+INSERT INTO T_COURT VALUES (216, '7', 57491, 210, 'Районен съд - Поморие',           2182, 1);
+INSERT INTO T_COURT VALUES (217, '7', 17974, 210, 'Районен съд - Средец',            2202, 1);
+INSERT INTO T_COURT VALUES (218, '7', 48619, 210, 'Районен съд - Царево',            2214, 1);
+
+INSERT INTO T_COURT VALUES (220, '5', 67338, 220, 'Окръжен съд - Сливен',            2098, 1);
+INSERT INTO T_COURT VALUES (221, '7', 39030, 220, 'Районен съд - Котел',             2152, 1);
+INSERT INTO T_COURT VALUES (222, '7', 51809, 220, 'Районен съд - Нова Загора',       2169, 1);
+INSERT INTO T_COURT VALUES (223, '7', 67338, 220, 'Районен съд - Сливен',            2198, 1);
+
+INSERT INTO T_COURT VALUES (230, '5', 87374, 230, 'Окръжен съд - Ямбол',             2105, 1);
+INSERT INTO T_COURT VALUES (231, '7', 27382, 230, 'Районен съд - Елхово',            2139, 1);
+INSERT INTO T_COURT VALUES (232, '7', 72761, 230, 'Районен съд - Тополовград',       2206, 1);
+INSERT INTO T_COURT VALUES (233, '7', 87374, 230, 'Районен съд - Ямбол',             2219, 1);
+
+INSERT INTO T_COURT VALUES (300, '3', 10135, 310, 'Апелативен съд - Варна',          2074, 1);
+
+INSERT INTO T_COURT VALUES (310, '5', 10135, 310, 'Окръжен съд - Варна',             2081, 1);
+INSERT INTO T_COURT VALUES (311, '7', 10135, 310, 'Районен съд - Варна',             2120, 1);
+INSERT INTO T_COURT VALUES (312, '7', 20482, 310, 'Районен съд - Девня',             2131, 1);
+INSERT INTO T_COURT VALUES (313, '7', 58503, 310, 'Районен съд - Провадия',          2184, 1);
+
+INSERT INTO T_COURT VALUES (320, '5', 72624, 320, 'Окръжен съд - Добрич',            2086, 1);
+INSERT INTO T_COURT VALUES (321, '7', 02508, 320, 'Районен съд - Балчик',            2111, 1);
+INSERT INTO T_COURT VALUES (322, '7', 14711, 320, 'Районен съд - Генерал-Тошево',    2127, 1);
+INSERT INTO T_COURT VALUES (323, '7', 72624, 320, 'Районен съд - Добрич',            2133, 1);
+INSERT INTO T_COURT VALUES (324, '7', 35064, 320, 'Районен съд - Каварна',           2145, 1);
+INSERT INTO T_COURT VALUES (325, '7', 72271, 320, 'Районен съд - Тервел',            2204, 1);
+
+INSERT INTO T_COURT VALUES (330, '5', 61710, 330, 'Окръжен съд - Разград',           2095, 1);
+INSERT INTO T_COURT VALUES (331, '7', 32874, 330, 'Районен съд - Исперих',           2143, 1);
+INSERT INTO T_COURT VALUES (332, '7', 40422, 330, 'Районен съд - Кубрат',            2154, 1);
+INSERT INTO T_COURT VALUES (333, '7', 61710, 330, 'Районен съд - Разград',           2188, 1);
+
+INSERT INTO T_COURT VALUES (340, '5', 66425, 340, 'Окръжен съд - Силистра',          2097, 1);
+INSERT INTO T_COURT VALUES (341, '7', 24030, 340, 'Районен съд - Дулово',            2135, 1);
+INSERT INTO T_COURT VALUES (342, '7', 66425, 340, 'Районен съд - Силистра',          2197, 1);
+INSERT INTO T_COURT VALUES (343, '7', 73496, 340, 'Районен съд - Тутракан',          2210, 1);
+
+INSERT INTO T_COURT VALUES (350, '5', 73626, 350, 'Окръжен съд - Търговище',         2102, 1);
+INSERT INTO T_COURT VALUES (351, '7', 53535, 350, 'Районен съд - Омуртаг',           2171, 1);
+INSERT INTO T_COURT VALUES (352, '7', 57649, 350, 'Районен съд - Попово',            2183, 1);
+INSERT INTO T_COURT VALUES (353, '7', 73626, 350, 'Районен съд - Търговище',         2211, 1);
+
+INSERT INTO T_COURT VALUES (360, '5', 83510, 360, 'Окръжен съд - Шумен',             2104, 1);
+INSERT INTO T_COURT VALUES (361, '7', 58222, 360, 'Районен съд - Велики Преслав',    2121, 1);
+INSERT INTO T_COURT VALUES (362, '7', 52009, 360, 'Районен съд - Нови Пазар',        2170, 1);
+INSERT INTO T_COURT VALUES (363, '7', 83510, 360, 'Районен съд - Шумен',             2218, 1);
+
+INSERT INTO T_COURT VALUES (400, '3', 10447, 410, 'Апелативен съд - Велико Търново', 2075, NULL);
+
+INSERT INTO T_COURT VALUES (410, '5', 10447, 410, 'Окръжен съд - Велико Търново',    2082, NULL);
+INSERT INTO T_COURT VALUES (411, '7', 10447, 410, 'Районен съд - Велико Търново',    2122, 1);
+INSERT INTO T_COURT VALUES (412, '7', 16359, 410, 'Районен съд - Горна Оряховица',   2128, 1);
+INSERT INTO T_COURT VALUES (413, '7', 27190, 410, 'Районен съд - Елена',             2137, 1);
+INSERT INTO T_COURT VALUES (414, '7', 55052, 410, 'Районен съд - Павликени',         2173, 1);
+INSERT INTO T_COURT VALUES (415, '7', 65766, 410, 'Районен съд - Свищов',            2194, 1);
+
+INSERT INTO T_COURT VALUES (420, '5', 14218, 420, 'Окръжен съд - Габрово',           2085, 1);
+INSERT INTO T_COURT VALUES (421, '7', 14218, 420, 'Районен съд - Габрово',           2126, 1);
+INSERT INTO T_COURT VALUES (422, '7', 23947, 420, 'Районен съд - Дряново',           2134, 1);
+INSERT INTO T_COURT VALUES (423, '7', 65927, 420, 'Районен съд - Севлиево',          2196, 1);
+INSERT INTO T_COURT VALUES (424, '7', 73403, 420, 'Районен съд - Трявна',            2209, 1);
+
+INSERT INTO T_COURT VALUES (430, '5', 43952, 430, 'Окръжен съд - Ловеч',             2089, 1);
+INSERT INTO T_COURT VALUES (431, '7', 43952, 430, 'Районен съд - Ловеч',             2159, 1);
+INSERT INTO T_COURT VALUES (432, '7', 44327, 430, 'Районен съд - Луковит',           2161, 1);
+INSERT INTO T_COURT VALUES (433, '7', 72343, 430, 'Районен съд - Тетевен',           2205, 1);
+INSERT INTO T_COURT VALUES (434, '7', 73198, 430, 'Районен съд - Троян',             2207, 1);
+
+INSERT INTO T_COURT VALUES (440, '5', 56722, 440, 'Окръжен съд - Плевен',            2093, 1);
+INSERT INTO T_COURT VALUES (441, '7', 43236, 440, 'Районен съд - Левски',            2158, 1);
+INSERT INTO T_COURT VALUES (442, '7', 51723, 440, 'Районен съд - Никопол',           2168, 1);
+INSERT INTO T_COURT VALUES (443, '7', 56722, 440, 'Районен съд - Плевен',            2180, 1);
+INSERT INTO T_COURT VALUES (444, '7', 80501, 440, 'Районен съд - Червен Бряг',       2216, 1);
+INSERT INTO T_COURT VALUES (143, '7', 37376, 440, 'Районен съд - Кнежа',             2149, 1);  /* not 4xx - EIK */
+
+INSERT INTO T_COURT VALUES (450, '5', 63427, 450, 'Окръжен съд - Русе',              2096, 1);
+INSERT INTO T_COURT VALUES (451, '7', 07603, 450, 'Районен съд - Бяла',              2118, 1);  /* 07598 -> 07603 */
+INSERT INTO T_COURT VALUES (452, '7', 63427, 450, 'Районен съд - Русе',              2190, 1);
+
+INSERT INTO T_COURT VALUES (500, '3', 56784, 530, 'Апелативен съд - Пловдив',        2076, 1);
+
+INSERT INTO T_COURT VALUES (510, '5', 40909, 510, 'Окръжен съд - Кърджали',          2087, NULL);
+INSERT INTO T_COURT VALUES (511, '7', 00607, 510, 'Районен съд - Ардино',            2109, 1);
+INSERT INTO T_COURT VALUES (513, '7', 39970, 510, 'Районен съд - Крумовград',        2153, 1);
+INSERT INTO T_COURT VALUES (514, '7', 40909, 510, 'Районен съд - Кърджали',          2156, 1);
+INSERT INTO T_COURT VALUES (515, '7', 48996, 510, 'Районен съд - Момчилград',        2165, 1);
+
+INSERT INTO T_COURT VALUES (520, '5', 55155, 520, 'Окръжен съд - Пазарджик',         2091, 1);
+INSERT INTO T_COURT VALUES (521, '7', 10450, 520, 'Районен съд - Велинград',         2123, 1);
+INSERT INTO T_COURT VALUES (522, '7', 55155, 520, 'Районен съд - Пазарджик',         2174, 1);
+INSERT INTO T_COURT VALUES (523, '7', 55302, 520, 'Районен съд - Панагюрище',        2175, 1);
+INSERT INTO T_COURT VALUES (524, '7', 56277, 520, 'Районен съд - Пещера',            2178, 1);
+
+INSERT INTO T_COURT VALUES (530, '5', 56784, 530, 'Окръжен съд - Пловдив',           2094, 1);
+INSERT INTO T_COURT VALUES (531, '7', 00702, 530, 'Районен съд - Асеновград',        2110, 1);
+INSERT INTO T_COURT VALUES (532, '7', 36498, 530, 'Районен съд - Карлово',           2147, 1);
+INSERT INTO T_COURT VALUES (533, '7', 56784, 530, 'Районен съд - Пловдив',           2181, 1);
+INSERT INTO T_COURT VALUES (534, '7', 59080, 530, 'Районен съд - Първомай',          2185, 1);
+
+INSERT INTO T_COURT VALUES (540, '5', 67653, 540, 'Окръжен съд - Смолян',            2099, NULL);
+INSERT INTO T_COURT VALUES (541, '7', 20465, 540, 'Районен съд - Девин',             2130, NULL);
+INSERT INTO T_COURT VALUES (542, '7', 31111, 540, 'Районен съд - Златоград',         2141, NULL);
+INSERT INTO T_COURT VALUES (543, '7', 46045, 540, 'Районен съд - Мадан',             2162, NULL);
+INSERT INTO T_COURT VALUES (544, '7', 67653, 540, 'Районен съд - Смолян',            2200, NULL);
+INSERT INTO T_COURT VALUES (545, '7', 80371, 540, 'Районен съд - Чепеларе',          2215, NULL);
+
+INSERT INTO T_COURT VALUES (550, '5', 68850, 550, 'Окръжен съд - Стара Загора',      2101, 1);
+INSERT INTO T_COURT VALUES (551, '7', 35167, 550, 'Районен съд - Казанлък',          2146, 1);
+INSERT INTO T_COURT VALUES (552, '7', 61460, 550, 'Районен съд - Раднево',           2186, 1);
+INSERT INTO T_COURT VALUES (553, '7', 68850, 550, 'Районен съд - Стара Загора',      2203, 1);
+INSERT INTO T_COURT VALUES (554, '7', 81414, 550, 'Районен съд - Чирпан',            2217, 1);
+INSERT INTO T_COURT VALUES (555, '7', 18280, 550, 'Районен съд - Гълъбово',          14412, 1); /* 2008:263 */
+
+INSERT INTO T_COURT VALUES (560, '5', 77195, 560, 'Окръжен съд - Хасково',           2103, 1);
+INSERT INTO T_COURT VALUES (561, '7', 21052, 560, 'Районен съд - Димитровград',      2132, 1);
+INSERT INTO T_COURT VALUES (562, '7', 65677, 560, 'Районен съд - Свиленград',        2193, 1);
+INSERT INTO T_COURT VALUES (563, '7', 77181, 560, 'Районен съд - Харманли',          2212, 1);
+INSERT INTO T_COURT VALUES (564, '7', 77195, 560, 'Районен съд - Хасково',           2213, 1);
+INSERT INTO T_COURT VALUES (565, '7', 32024, 560, 'Районен съд - Ивайловград',       2142, 1);
+
+/* Military */
+INSERT INTO T_COURT VALUES (600, '9', 68134, 180, 'Военно-апелативен съд',           2221, NULL);
+INSERT INTO T_COURT VALUES (610, '6', 68134, 110, 'Военен съд - София',              2226, 1);
+INSERT INTO T_COURT VALUES (620, '6', 56784, 530, 'Военен съд - Пловдив',            2224, 1);
+INSERT INTO T_COURT VALUES (630, '6', 10135, 310, 'Военен съд - Варна',              2222, 1);
+INSERT INTO T_COURT VALUES (640, '6', 56722, 440, 'Военен съд - Плевен',             2223, 1);
+INSERT INTO T_COURT VALUES (650, '6', 67338, 220, 'Военен съд - Сливен',             2225, 1);
+
+/* Admin */
+INSERT INTO T_COURT VALUES (701, '2', 68134, 110, 'Административен съд - София град',     14869, NULL);
+INSERT INTO T_COURT VALUES (702, '2', 68134, 180, 'Административен съд - София област',   14871, NULL);
+INSERT INTO T_COURT VALUES (703, '2', 04279, 120, 'Административен съд - Благоевград',    14844, NULL);
+INSERT INTO T_COURT VALUES (704, '2', 07079, 210, 'Административен съд - Бургас',         14847, 1);
+INSERT INTO T_COURT VALUES (705, '2', 10135, 310, 'Административен съд - Варна',          14848, 1);
+INSERT INTO T_COURT VALUES (706, '2', 10447, 410, 'Административен съд - Велико Търново', 14849, 1);
+INSERT INTO T_COURT VALUES (707, '2', 10971, 130, 'Административен съд - Видин',          14850, 1);
+INSERT INTO T_COURT VALUES (708, '2', 12259, 140, 'Административен съд - Враца',          14852, 1);
+INSERT INTO T_COURT VALUES (709, '2', 14218, 420, 'Административен съд - Габрово',        14853, 1);
+INSERT INTO T_COURT VALUES (710, '2', 72624, 320, 'Административен съд - Добрич',         14854, 1);
+INSERT INTO T_COURT VALUES (711, '2', 41112, 150, 'Административен съд - Кюстендил',      14856, 1);
+INSERT INTO T_COURT VALUES (712, '2', 40909, 510, 'Административен съд - Кърджали',       14855, 1);
+INSERT INTO T_COURT VALUES (713, '2', 43952, 430, 'Административен съд - Ловеч',          14857, 1);
+INSERT INTO T_COURT VALUES (714, '2', 48489, 160, 'Административен съд - Монтана',        14859, 1);
+INSERT INTO T_COURT VALUES (715, '2', 55155, 520, 'Административен съд - Пазарджик',      14860, 1);
+INSERT INTO T_COURT VALUES (716, '2', 55871, 170, 'Административен съд - Перник',         14861, 1);
+INSERT INTO T_COURT VALUES (717, '2', 56722, 440, 'Административен съд - Плевен',         14862, 1);
+INSERT INTO T_COURT VALUES (718, '2', 56784, 530, 'Административен съд - Пловдив',        14863, 1);
+INSERT INTO T_COURT VALUES (719, '2', 61710, 330, 'Административен съд - Разград',        14864, 1);
+INSERT INTO T_COURT VALUES (720, '2', 63427, 450, 'Административен съд - Русе',           14865, 1);
+INSERT INTO T_COURT VALUES (721, '2', 66425, 340, 'Административен съд - Силистра',       14866, 1);
+INSERT INTO T_COURT VALUES (722, '2', 67338, 220, 'Административен съд - Сливен',         14867, 1);
+INSERT INTO T_COURT VALUES (723, '2', 67653, 540, 'Административен съд - Смолян',         14868, NULL);
+INSERT INTO T_COURT VALUES (724, '2', 68850, 550, 'Административен съд - Стара Загора',   14872, 1);
+INSERT INTO T_COURT VALUES (725, '2', 73626, 350, 'Административен съд - Търговище',      14873, 1);
+INSERT INTO T_COURT VALUES (726, '2', 77195, 560, 'Административен съд - Хасково',        14874, 1);
+INSERT INTO T_COURT VALUES (727, '2', 83510, 360, 'Административен съд - Шумен',          14875, 1);
+INSERT INTO T_COURT VALUES (728, '2', 87374, 230, 'Административен съд - Ямбол',          14876, 1);
+
+/* Special */
+INSERT INTO T_COURT VALUES (101, '9', 68134, 110, 'Апелативен специализиран наказателен съд', 15051, NULL);
+INSERT INTO T_COURT VALUES (105, '6', 68134, 110, 'Специализиран наказателен съд',            15052, 1);
+
+/* 2006:264 */
+INSERT INTO T_SECTION VALUES ('p', 'print');
+INSERT INTO T_SECTION VALUES ('e', 'address');
+INSERT INTO T_SECTION VALUES ('r', 'repeat');
+INSERT INTO T_SECTION VALUES ('u', 'autorun');
+INSERT INTO T_SECTION VALUES ('x', 'external');
+INSERT INTO T_SECTION VALUES ('a', 'application');
+INSERT INTO T_SECTION VALUES ('h', 'hyper');
+INSERT INTO T_SECTION VALUES ('c', 'sched');
+INSERT INTO T_SECTION VALUES ('s', 'sms');
+INSERT INTO T_SECTION VALUES ('d', 'distribution');
+INSERT INTO T_SECTION VALUES ('i', 'serial');
+INSERT INTO T_SECTION VALUES ('t', 'update');
+INSERT INTO T_SECTION VALUES ('k', 'chrome');
+INSERT INTO T_SECTION VALUES ('f', 'filter');
+INSERT INTO T_SECTION VALUES ('n', 'transfer');  /* 2011:164 per-court; 2012:299 re-unified */
+INSERT INTO T_SECTION VALUES ('o', 'posterm');   /* 2013:135 */
+
+/* 2012:299 T_SETTING was here */
+
+/* 2006:313; 2006:325 'i' -> 'b'; 2007:242 unified */
+INSERT INTO T_CONNECT_TYPE VALUES ('F', 0010, 'Паркетно дело',                     'ПД',            'F',  'p', NULL, 791);
+INSERT INTO T_CONNECT_TYPE VALUES ('O', 0011, 'Прокурорска преписка',              'ПП',            'O',  'p', NULL, 823);
+INSERT INTO T_CONNECT_TYPE VALUES ('I', 0012, 'Следствено дело',                   'СД',            'I',  'P', NULL, 1013);
+INSERT INTO T_CONNECT_TYPE VALUES ('G', 0014, 'Дознание',                          'Дознание',      'A',  'Z', NULL, 656);
+INSERT INTO T_CONNECT_TYPE VALUES ('M', 0015, 'Досъдебно производство',            'Досъд.произв.', NULL, 'M', NULL, NULL);
+INSERT INTO T_CONNECT_TYPE VALUES ('K', 0016, 'Книга присъди',                     'КП',            NULL, 'p', NULL, NULL);  /* 2007:303 */
+INSERT INTO T_CONNECT_TYPE VALUES ('Q', 0017, 'Бързо полицейско производство',     'БПП',           NULL, 'Z', NULL, NULL);
+INSERT INTO T_CONNECT_TYPE VALUES ('W', 0018, 'Незабавно полицейско производство', 'НПП',           NULL, 'Z', NULL, NULL);  /* 2010:274 from Q */
+INSERT INTO T_CONNECT_TYPE VALUES ('E', 0019, 'Наказателно постановление',         'НП',            NULL, 't', NULL, NULL);
+INSERT INTO T_CONNECT_TYPE VALUES ('T', 0020, 'Данъчен ревизионен акт',            'ДРА',           NULL, 'T', NULL, NULL);
+INSERT INTO T_CONNECT_TYPE VALUES ('V', 0021, 'Пробационно дело',                  'Проб.дело',     'V',  'V', NULL, 14372);  /* 2007:311 */
+INSERT INTO T_CONNECT_TYPE VALUES ('P', 0022, 'Затворническо досие',               'Затв.досие',    'P',  'O', NULL, 1134);   /* 2016:294 */
+INSERT INTO T_CONNECT_TYPE VALUES ('n', 0023, 'Нотариално дело',                   'Нотар.дело',    NULL, 'Y', NULL, NULL);   /* 2011:147 */
+INSERT INTO T_CONNECT_TYPE VALUES ('e', 0024, 'Електронен фиш',                    'Електр.фиш',    NULL, 't', NULL, NULL);   /* 2011:147 */
+INSERT INTO T_CONNECT_TYPE VALUES ('d', 0025, 'Дело по чл.368 НПК',                'Дело 368 НПК',  'п',  'b', NULL, NULL);
+
+INSERT INTO T_CONNECT_TYPE VALUES ('u', 0026, 'Съдебна поръчка',               'Съд. поръчка',    'пZбтяжЎ',   'J', NULL, NULL);  /* 2018-05-08 */
+
+/* 2009:189 */
+INSERT INTO T_CONNECT_TYPE VALUES ('J', 0001, 'Дело по подсъдност',            'По подсъдност',   'пZбтяжЎ',   'J', 3001, 853);
+/* 2009 from AREA */
+INSERT INTO T_CONNECT_TYPE VALUES ('R', 0002, 'Върнато дело',                  'Върнато',         'пZбтяж',    'b', NULL, NULL);
+INSERT INTO T_CONNECT_TYPE VALUES ('A', 0003, 'Върнато след администриране',   'След администр.', 'пZбтяжЎ',   'b', NULL, NULL);
+INSERT INTO T_CONNECT_TYPE VALUES ('U', 0004, 'Внесено след доразследване',    'След доразсл.',   'п',         'b', NULL, 853);  /* 2006:325 'пZTяж' -> 'п' */
+INSERT INTO T_CONNECT_TYPE VALUES ('N', 0005, 'Възобновено дело',              'Възобновено',     'пZбтяж',    'b', NULL, 853);
+INSERT INTO T_CONNECT_TYPE VALUES ('L', 0006, 'Първоинстанционно дело',        'I-инст.дело',     'пZбтяжЎіi', 'L', 3002, 853);  /* 2006:345 +Ўі; 2006:349 +i; 2009:212 пZd -> пZбтяж */
+INSERT INTO T_CONNECT_TYPE VALUES ('B', 0007, 'Въззивно дело',                 'Въззивно дело',   'Zтп',       'L', 3003, 853);  /* 2009:254 +Zт; 2015:180 +п */
+INSERT INTO T_CONNECT_TYPE VALUES ('D', 0008, 'Фирмено дело (на длъжника)',    'ФД на длъжника',  'ж',         'b', NULL, NULL); /* 2006:325 NULL -> 'ж' */
+INSERT INTO T_CONNECT_TYPE VALUES ('H', 0009, 'Дело на висша инстанция',       'Висша инст.',     'пZтяж',     's', 3004, 853);  /* 2006:325; 2006:328 +п */
+/* 2010:034 IRQ: T -> т for CSY */
+INSERT INTO T_CONNECT_TYPE VALUES ('C', 0030, 'Дело - конфликт на интереси',   'Конфликт',        'пZбтяжЎ',   'J', 3005, 853);  /* 2009:182 */
+INSERT INTO T_CONNECT_TYPE VALUES ('S', 0031, 'Дело - препирня за подсъдност', 'Препирня',        'пZбтяжЎ',   'J', 3006, 853);  /* 2009:209 */
+INSERT INTO T_CONNECT_TYPE VALUES ('Y', 0032, 'Дело по подсъдност',            'По подсъдност',   'пZбтяжЎ',   'J', NULL, 853);  /* 2009:182 */
+INSERT INTO T_CONNECT_TYPE VALUES ('X', 0033, 'Дело на висша инстанция',       'Висша инст.',     'пZтяж',     'K', NULL, 853);  /* 2009:206 */
+/* 2100:346 LRQ: outreg receive */
+INSERT INTO T_CONNECT_TYPE VALUES ('b', 0040, 'Дело на въззивна инстанция',    'Въззивна инст',   'пZбтяжЎ',   's', NULL, 853);  /* 2013:070 +Ў */
+INSERT INTO T_CONNECT_TYPE VALUES ('k', 0041, 'Дело на касационна инстанция',  'Касационна инст', 'пZбтяжЎ',   's', NULL, 853);  /* 2013:070 +Ў */
+
+/* 2009:041 */
+INSERT INTO T_GOP VALUES ('U', 0010, 'Актуализация');
+INSERT INTO T_GOP VALUES ('A', 0020, 'Архивиране');
+INSERT INTO T_GOP VALUES ('E', 0030, 'Вписване');
+INSERT INTO T_GOP VALUES ('r', 0040, 'Връщане');
+INSERT INTO T_GOP VALUES ('a', 0050, 'Добавяне');
+/*INSERT INTO T_GOP VALUES ('k', 0060, 'Доклад');*/
+INSERT INTO T_GOP VALUES ('X', 0070, 'Експорт');
+INSERT INTO T_GOP VALUES ('3', 0075, 'ЕИСПП');
+INSERT INTO T_GOP VALUES ('L', 0080, 'Журнал');
+INSERT INTO T_GOP VALUES ('s', 0090, 'Изпращане');
+INSERT INTO T_GOP VALUES ('x', 0100, 'Изпълнение');
+INSERT INTO T_GOP VALUES ('d', 0120, 'Изтриване');
+INSERT INTO T_GOP VALUES ('w', 0125, 'Запис');      /* 2013:199 */
+INSERT INTO T_GOP VALUES ('I', 0130, 'Импорт');
+/*INSERT INTO T_GOP VALUES ('b', 0140, 'Книги');*/
+INSERT INTO T_GOP VALUES ('Y', 0140, 'Използване');
+INSERT INTO T_GOP VALUES ('f', 0150, 'Насрочване');
+INSERT INTO T_GOP VALUES ('m', 0160, 'Номенклатури');
+INSERT INTO T_GOP VALUES ('l', 0170, 'Образуване');
+INSERT INTO T_GOP VALUES ('u', 0180, 'Отлагане');
+INSERT INTO T_GOP VALUES ('B', 0185, 'Отмяна');
+INSERT INTO T_GOP VALUES ('p', 0190, 'Печат');
+INSERT INTO T_GOP VALUES ('P', 0200, 'Превод през ПОС');
+INSERT INTO T_GOP VALUES ('G', 0210, 'Предоставяне');
+INSERT INTO T_GOP VALUES ('N', 0220, 'Преименуване');
+INSERT INTO T_GOP VALUES ('v', 0225, 'Преместване');    /* 2017:090 */
+INSERT INTO T_GOP VALUES ('R', 0230, 'Пренасрочване');
+INSERT INTO T_GOP VALUES ('M', 0240, 'Преномериране');
+INSERT INTO T_GOP VALUES ('J', 0250, 'Присъединяване');
+INSERT INTO T_GOP VALUES ('V', 0260, 'Проверка');
+INSERT INTO T_GOP VALUES ('C', 0270, 'Промяна');
+/*INSERT INTO T_GOP VALUES ('O', 0280, 'Разпореждане');*/
+INSERT INTO T_GOP VALUES ('D', 0290, 'Разпределение');
+INSERT INTO T_GOP VALUES ('n', 0300, 'Регистриране');
+INSERT INTO T_GOP VALUES ('e', 0310, 'Редактиране');
+INSERT INTO T_GOP VALUES ('1', 0320, 'Сесия');
+INSERT INTO T_GOP VALUES ('q', 0330, 'Справки');
+INSERT INTO T_GOP VALUES ('c', 0340, 'Създаване');
+INSERT INTO T_GOP VALUES ('T', 0350, 'Трансфер');
+INSERT INTO T_GOP VALUES ('K', 0360, 'Унищожаване');
+INSERT INTO T_GOP VALUES ('z', 0370, 'Други');
+INSERT INTO T_GOP VALUES ('2', 0035, 'Връчване');  /* 2018-03-19 */
+
+/* 2009:189 */
+INSERT INTO T_CONNECT_KIND VALUES ('п', 0010, 'Наказателно дело',     4001, 'НД');
+INSERT INTO T_CONNECT_KIND VALUES ('Z', 0020, 'Гражданско дело',      4002, 'ГрД');
+INSERT INTO T_CONNECT_KIND VALUES ('б', 0026, 'Брачно дело',          4006, 'БрД');
+INSERT INTO T_CONNECT_KIND VALUES ('т', 0030, 'Търговско дело',       4003, 'ТД');
+INSERT INTO T_CONNECT_KIND VALUES ('я', 0035, 'Административно дело', 4004, 'АдмД');
+INSERT INTO T_CONNECT_KIND VALUES ('ж', 0040, 'Фирмено дело',         4005, 'ФД');
+
+INSERT INTO T_CONNECT_KIND VALUES ('і', 0045, 'Изпълнително дело',            4007, 'ИзпД');
+INSERT INTO T_CONNECT_KIND VALUES ('i', 0050, 'Изпълнително дело (ЧСИ)',      4008, 'ИзпД ЧСИ');      /* 2009:145 */
+INSERT INTO T_CONNECT_KIND VALUES ('Ў', 0060, 'Преписка',                     4009, 'Преписка');
+INSERT INTO T_CONNECT_KIND VALUES ('x', 0070, 'Обща администрация',           NULL, 'Обща админ.');   /* 2014:076, unused */
+INSERT INTO T_CONNECT_KIND VALUES ('K', 0080, 'Документ от Входящ регистър',  NULL, 'Док.Вх.рег.');   /* 2014:077 */
+INSERT INTO T_CONNECT_KIND VALUES ('o', 0090, 'Документ от Изходящ регистър', NULL, 'Док.Изх.рег.');  /* 2014:077 */
+
+INSERT INTO T_CONNECT_KIND VALUES ('О', 0001, '', NULL, '');
+INSERT INTO T_CONNECT_KIND VALUES ('к', 0002, '', NULL, '');
+INSERT INTO T_CONNECT_KIND VALUES ('и', 0003, '', NULL, '');
+INSERT INTO T_CONNECT_KIND VALUES ('Т', NULL, 'Данни за архивиране на дело', NULL, 'Архив');
+
+INSERT INTO T_CONNECT_KIND VALUES ('Ї', 0010, 'Разпореждане по входящ документ', NULL, 'Разпор.вх.док.');
+INSERT INTO T_CONNECT_KIND VALUES ('Й', 0010, 'Разпореждане по док. от входящ регистър', NULL, 'Разпор.вх.рег.');
+
+INSERT INTO T_CONNECT_KIND VALUES ('Р', 0100, 'Съпровождащ документ', NULL, 'Съпр.док.');
+
+/* 2012:296 LPR: for EISPP */
+INSERT INTO T_CONNECT_KIND VALUES ('F', 9000, 'Паркетно дело',        NULL, 'ПД');
+INSERT INTO T_CONNECT_KIND VALUES ('O', 9001, 'Прокурорска преписка', NULL, 'ПП');
+INSERT INTO T_CONNECT_KIND VALUES ('I', 9002, 'Следствено дело',      NULL, 'СД');
+INSERT INTO T_CONNECT_KIND VALUES ('A', 9003, 'Дознание',             NULL, 'Дознание');   /* 2012:354 G -> A */
+INSERT INTO T_CONNECT_KIND VALUES ('V', 0021, 'Пробационно дело',     NULL, 'Проб.дело');
+INSERT INTO T_CONNECT_KIND VALUES ('P', 9004, 'Затворническо досие',  NULL, 'Затв.досие');
+
+/* 2009:188 */
+INSERT INTO T_XFER_KIND VALUES (2001, 1, 'НОХД', 'п', 1002);
+INSERT INTO T_XFER_KIND VALUES (2002, 1, 'НЧХД', 'п', 1001);
+INSERT INTO T_XFER_KIND VALUES (2003, 1, 'НАХД', 'п', 999);
+INSERT INTO T_XFER_KIND VALUES (2004, 1, 'ЧНД', 'п', 1000);
+INSERT INTO T_XFER_KIND VALUES (2005, 1, 'ВНОХД', 'п', 1010);
+INSERT INTO T_XFER_KIND VALUES (2006, 1, 'ВНЧХД', 'п', 1009);
+INSERT INTO T_XFER_KIND VALUES (2007, 1, 'КНАХД', 'п', NULL);
+INSERT INTO T_XFER_KIND VALUES (2008, 1, 'ВЧНД', 'п', 1008);
+INSERT INTO T_XFER_KIND VALUES (2009, 1, 'ВНАХД', 'п', NULL);
+INSERT INTO T_XFER_KIND VALUES (2010, 2, 'Гражданско дело', 'Z', NULL);
+INSERT INTO T_XFER_KIND VALUES (2011, 2, 'Частно гражданско дело', 'Z', NULL);
+INSERT INTO T_XFER_KIND VALUES (2012, 2, 'Въззивно гражданско дело', 'Z', NULL);
+INSERT INTO T_XFER_KIND VALUES (2013, 2, 'Въззивно частно гражданско дело', 'Z', NULL);
+INSERT INTO T_XFER_KIND VALUES (2014, 2, 'Търговско дело', 'т', NULL);
+INSERT INTO T_XFER_KIND VALUES (2015, 2, 'Частно търговско дело', 'т', NULL);
+INSERT INTO T_XFER_KIND VALUES (2016, 2, 'Въззивно търговско дело', 'т', NULL);
+INSERT INTO T_XFER_KIND VALUES (2017, 2, 'Въззивно частно търговско дело', 'т', NULL);
+INSERT INTO T_XFER_KIND VALUES (2018, 2, 'Административно дело', 'я', NULL);
+INSERT INTO T_XFER_KIND VALUES (2019, 2, 'Частно административно дело', 'я', NULL);
+INSERT INTO T_XFER_KIND VALUES (2020, 2, 'Касационно административно дело', 'я', NULL);
+INSERT INTO T_XFER_KIND VALUES (2021, 4, 'Фирмено дело', 'ж', NULL);
+INSERT INTO T_XFER_KIND VALUES (2022, 2, 'Брачно дело', 'б', NULL);
+INSERT INTO T_XFER_KIND VALUES (2023, 2, 'Касационно гражданско дело', 'Z', NULL);
+INSERT INTO T_XFER_KIND VALUES (2024, 2, 'Касационно частно гражданско дело', 'Z', NULL);
+INSERT INTO T_XFER_KIND VALUES (2025, 2, 'Касационно търговско дело', 'т', NULL);
+INSERT INTO T_XFER_KIND VALUES (2026, 2, 'Касационно частно търговско дело', 'т', NULL);
+INSERT INTO T_XFER_KIND VALUES (2027, 2, 'Гражданско дело по несъстоятелност', 'Z', NULL);
+INSERT INTO T_XFER_KIND VALUES (2028, 2, 'Търговско дело по несъстоятелност', 'т', NULL);
+INSERT INTO T_XFER_KIND VALUES (2029, 2, 'Гражданско дело по несъстоятелност (В)', 'Z', NULL);
+INSERT INTO T_XFER_KIND VALUES (2030, 2, 'Търговско дело по несъстоятелност (В)', 'т', NULL);
+INSERT INTO T_XFER_KIND VALUES (2033, 2, 'ЧКАНД', 'я', NULL);
+INSERT INTO T_XFER_KIND VALUES (2034, 2, 'КАдмНД', 'я', NULL);
+INSERT INTO T_XFER_KIND VALUES (2035, 1, 'НДВ', 'п', NULL);
+
+INSERT INTO T_XFER_KIND VALUES (4007, NULL, 'Изпълнително дело', 'і', NULL);
+INSERT INTO T_XFER_KIND VALUES (4008, NULL, 'Изпълнително дело (ЧСИ)', 'i', NULL);
+INSERT INTO T_XFER_KIND VALUES (4009, NULL, 'Преписка', 'Ў', NULL);
+
+INSERT INTO T_XFER_KIND VALUES (5001, NULL, 'Решение', NULL, NULL);
+INSERT INTO T_XFER_KIND VALUES (5002, NULL, 'Определение', NULL, NULL);
+INSERT INTO T_XFER_KIND VALUES (5003, NULL, 'Присъда', NULL, NULL);
+INSERT INTO T_XFER_KIND VALUES (5004, NULL, 'Споразумение', NULL, NULL);
+INSERT INTO T_XFER_KIND VALUES (5005, NULL, 'Разпореждане', NULL, NULL);
+INSERT INTO T_XFER_KIND VALUES (5006, NULL, 'Протокол', NULL, NULL);
+INSERT INTO T_XFER_KIND VALUES (5007, NULL, 'Заповед', NULL, NULL);
+
+INSERT INTO T_XFER_KIND VALUES (6001, NULL, 'Въззивна жалба', NULL, NULL);
+INSERT INTO T_XFER_KIND VALUES (6002, NULL, 'Въззивна частна жалба', NULL, NULL);
+INSERT INTO T_XFER_KIND VALUES (6003, NULL, 'Протест', NULL, NULL);
+INSERT INTO T_XFER_KIND VALUES (6004, NULL, 'Частен протест', NULL, NULL);
+INSERT INTO T_XFER_KIND VALUES (6005, NULL, 'Касационна жалба', NULL, NULL);
+INSERT INTO T_XFER_KIND VALUES (6006, NULL, 'Касационна жалба (АС)', NULL, NULL);
+INSERT INTO T_XFER_KIND VALUES (6007, NULL, 'Касационна частна жалба', NULL, NULL);
+INSERT INTO T_XFER_KIND VALUES (6008, NULL, 'Касационна частна жалба (АС)', NULL, NULL);
+INSERT INTO T_XFER_KIND VALUES (6009, NULL, 'Касационен протест', NULL, NULL);
+INSERT INTO T_XFER_KIND VALUES (6010, NULL, 'Касационен частен протест', NULL, NULL);
+INSERT INTO T_XFER_KIND VALUES (6011, NULL, 'Молба за отмяна', NULL, NULL);
+INSERT INTO T_XFER_KIND VALUES (6012, NULL, 'Молба за преглед', NULL, NULL);
+INSERT INTO T_XFER_KIND VALUES (6013, NULL, 'Молба за определяне срок при бавност', NULL, NULL);
+INSERT INTO T_XFER_KIND VALUES (6014, NULL, 'Насрещна въззивна жалба', NULL, NULL);
+INSERT INTO T_XFER_KIND VALUES (6015, NULL, 'Насрещна касационна жалба', NULL, NULL);
+INSERT INTO T_XFER_KIND VALUES (6016, NULL, 'Молба (искане) за възобновяване', NULL, NULL);
+
+INSERT INTO T_XFER_KIND VALUES (8001, 2, 'Искова молба', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8002, 2, 'Жалба по чл.25 ЗТР', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8003, 2, 'Жалба с-у действия на съдия по вписван.', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8004, 2, 'Заявление непарични вноски', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8005, 2, 'Заявление за издав. заповед за изпълн.', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8006, 2, 'Молба', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8007, 2, 'Молба за назначаване на одитор', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8008, 2, 'Молба за възст. срок за обжалване', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8009, 2, 'Молба (искане) по ЗЗДН', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8010, 2, 'Молба за издаване на изпълнителен лист', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8011, 2, 'Молба за обезпечение', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8012, 2, 'Молба за обезп. на доказателства (ЧГД)', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8013, 2, 'Молба за обявяване в несъстоятелност', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8014, 2, 'Молба за опис насл./връщ. на дете (ЧГД)', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8015, 2, 'Молба за отказ от наследство (ЧГД)', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8016, 2, 'Молба за приемане на наследство (ЧГД)', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8017, 2, 'Препирня за подсъдност', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8018, 2, 'Жалба с-у административен акт', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8019, 2, 'Молба за спиране на адм. акт', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8020, 4, 'Заявление за регистрация', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8021, 1, 'Обвинителен акт', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8022, 1, 'Жалба по ЗИН', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8023, 1, 'Жалба по чл.68, ал.3 НПК', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8024, 1, 'Жалба срещу НП', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8025, 1, 'Жалба срещу постановление по чл.243 НПК', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8026, 1, 'Жалба - 24ч. задържане', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8027, 1, 'Жалба по текст от НПК', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8028, 1, 'Искане', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8029, 1, 'Искане за претърсване, обиск, изземване', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8030, 1, 'Искане по чл.368 НПК', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8031, 1, 'Искане по чл.64 НПК за вземане на МНО', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8032, 1, 'Молба за комулация', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8033, 1, 'Молба предварит.освобожд.', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8034, 1, 'Молба за реабилитация', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8035, 1, 'Молба по част VII-ма от ГПК (нов)', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8036, 1, 'Молба (искане) по чл.65 НПК за измен.МНО', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8037, 1, 'По член 23 от ЗБППМН', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8038, 1, 'Постановление по чл.243 НПК', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8039, 1, 'Постановление по чл.375 НПК', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8040, 1, 'Полицейска преписка по УБДХ', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8041, 1, 'Предложение за кумулация', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8042, 1, 'Предложение за лечение', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8043, 1, 'Предложение за разкр. на банкова сметка', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8044, 1, 'Предложение от Н-ка на затвора', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8045, 1, 'Предложение от ОП', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8046, 1, 'Предложение от пробационна служба', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8047, 1, 'Споразумение за прекратяване на НП', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8048, 3, 'Жалба', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8049, 3, 'Жалба с-у действия на съдия-изпълн.', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8050, 3, 'Частна жалба', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8051, 3, 'Протест', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8052, 3, 'Протест и жалба', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8053, 3, 'Частен протест', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8054, 3, 'Частен протест и частна жалба', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8055, 3, 'Молба за определяне срок при бавност', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8056, 3, 'Касационна жалба', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8057, 3, 'Касационна частна жалба', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8058, 3, 'Касационен протест', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8059, 3, 'Касационен частен протест', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8060, 3, 'Частна тъжба', 'Ў', NULL);
+INSERT INTO T_XFER_KIND VALUES (8061, 3, 'Искане за определяне на компетентен съд', 'Ў', NULL);
+
+/* 2012:296 LPR: for EISPP xfer */
+INSERT INTO T_XFER_KIND VALUES (90000, 1, 'ПД', 'F', 1003);
+INSERT INTO T_XFER_KIND VALUES (90001, 1, 'Вх.№', 'O', 1006);
+INSERT INTO T_XFER_KIND VALUES (90002, 1, 'СлД-СK', 'I', 12422);
+INSERT INTO T_XFER_KIND VALUES (90003, 1, 'СлД-СО', 'I', 12421);
+INSERT INTO T_XFER_KIND VALUES (90004, 1, 'СлД', 'I', 1007);
+INSERT INTO T_XFER_KIND VALUES (90005, 1, 'ДЗ', 'A', 995);
+INSERT INTO T_XFER_KIND VALUES (90006, 1, 'ПБД', 'V', 14373);
+INSERT INTO T_XFER_KIND VALUES (90007, 1, 'КНОХД', 'п', 998);
+INSERT INTO T_XFER_KIND VALUES (90008, 1, 'КНЧД', 'п', 997);
+INSERT INTO T_XFER_KIND VALUES (90009, 1, 'ЗД', 'P', 1011);
+
+DELETE FROM T_RECEIVED_STATUS;  /* 2018-04-05: from common~ */
+/* 2009:212 common */
+INSERT INTO T_RECEIVED_STATUS VALUES ('n', ' ',                               ' ',              'y', 'y', 'n', 'n', 'n', 'y',  0);
+INSERT INTO T_RECEIVED_STATUS VALUES ('s', 'Изпратен(а,о)',                   'Изпратен(а,о)',  'y', 'n', 'n', 'n', 'n', 'y', 10);
+INSERT INTO T_RECEIVED_STATUS VALUES ('l', 'За връчване',                     'За връчване',    'y', 'n', 'n', 'n', 'n', 'y', 15);  /* 2018-01-19 */
+/*INSERT INTO T_RECEIVED_STATUS VALUES ('e', 'Изпратен(а,о) по електр. поща', 'Изпр е-мейл',    'y', 'n', 'n', 'n', 'n', 'y', 12);*/
+INSERT INTO T_RECEIVED_STATUS VALUES ('r', 'Връчен(а,о)',                     'Връчен(а,о)',    'n', 'y', 'y', 'y', 'y', 'y', 20);
+INSERT INTO T_RECEIVED_STATUS VALUES ('f', 'Невръчен(а,о)',                   'Невръчен(а,о)',  'n', 'y', 'y', 'y', 'n', 'y', 30);
+INSERT INTO T_RECEIVED_STATUS VALUES ('p', 'Публикуван(а,о) в ДВ',            'Публик. в ДВ',   'y', 'n', 'y', 'n', 'n', 'y', 60);
+/* 2009:356 cp from f; 2010:088 FIX: allow receiver/returned -> n like s */
+INSERT INTO T_RECEIVED_STATUS VALUES ('d', 'Получен(а,о)',                    'Получен(а,о)',   'n', 'y', 'n', 'n', 'n', 'y', 16);
+/* 2010:049 common */
+INSERT INTO T_RECEIVED_STATUS VALUES ('x', 'Уведомяване по чл. 41 ГПК(отм.)', 'Ув. чл. 41 ГПК', 'y', 'n', 'y', 'y', 'y', 'n', 35);
+INSERT INTO T_RECEIVED_STATUS VALUES ('v', 'Уведомяване по чл. 47 ГПК',       'Ув. чл. 47 ГПК', 'y', 'n', 'y', 'y', 'y', 'n', 40);
+INSERT INTO T_RECEIVED_STATUS VALUES ('y', 'Уведомяване по чл. 50 ГПК',       'Ув. чл. 50 ГПК', 'y', 'n', 'y', 'y', 'y', 'n', 45);
+INSERT INTO T_RECEIVED_STATUS VALUES ('w', 'Уведомяване по чл. 51 ГПК',       'Ув. чл. 51 ГПК', 'y', 'n', 'y', 'y', 'y', 'n', 50);
+/* 2010:088 FIX: allow receiver/returned -> n like s */
+INSERT INTO T_RECEIVED_STATUS VALUES ('c', 'Изготвен(а,о)',                   'Изготвен(а,о)',  'y', 'n', 'n', 'n', 'n', 'y', 17);
+
+/* 2009:215; 2012:095 LPR: F_NAME can't be NULL */
+INSERT INTO T_SENDER
+(
+	F_UCN_TYPE,
+	F_UCN,
+	F_NAME,
+	F_COURT,
+	F_EISPP
+)
+SELECT
+	'J',
+	'0000000' || CAST (F_COURT AS NUMERIC(3, 0)),
+	F_NAME,
+	F_COURT,
+	F_EISPP
+FROM T_COURT WHERE F_COURT_TYPE IN ('7', '5', '3', '2', '6', '9');
+
+/* 2009:238 */
+INSERT INTO T_SENDER VALUES ('0000000001', 'J', 'Върховен административен съд', 001, 2793, NULL);
+INSERT INTO T_SENDER VALUES ('0000000002', 'J', 'Върховен касационен съд', 002, 2071, NULL);
+
+/* 2010:039 common */
+INSERT INTO T_APPEAL_RESOLUTION VALUES ('z', 0001, 'z', '');
+INSERT INTO T_APPEAL_RESOLUTION VALUES ('А', 0940, 'А', 'Не допуска касационно обжалване');
+
+/* 2010:340 */
+INSERT INTO T_DEBTOR_STATUS VALUES ('0', 0010, 'Действаща', 14001);
+INSERT INTO T_DEBTOR_STATUS VALUES ('3', 0020, 'Заличена', 14002);
+INSERT INTO T_DEBTOR_STATUS VALUES ('9', 0030, 'В производство по несъстоятелност', 14003);
+INSERT INTO T_DEBTOR_STATUS VALUES ('A', 0040, 'Обявена в несъстоятелност', 14004);
+INSERT INTO T_DEBTOR_STATUS VALUES ('D', 0050, 'Обявена в несъстоятелност и заличена', 14005);
+
+
+/*                                  sk   name                                                  alias               kinds statuses involvements                  law kinds        attributes                    proc  order template       genk  info,additional text,surround kinds */
+/*                                  --   ----                                                  -----               ----- -------- ------------                  ---------        ----------                    ----  ----- --------       ----- ------------------------------------- */
+INSERT INTO T_SUBPOENA_KIND VALUES ('I', ' ',                                                  ' ',                NULL, NULL,    NULL,                                          NULL, 'a...........t.......', NULL, NULL, NULL,          NULL, NULL, NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('D', 'Починал. Очаква се у-ние за наследници.',            'Поч. У-ие насл.',  '!Ї', NULL,    'vuEZCyhaмпцлфIBsiqГrkUQdYOОЯJHRTwe1j3ТbnVgf', NULL, '.n......L...........', 'n',  0125, NULL,          NULL, NULL, NULL, NULL);  /* 2010:333 +мЯ */
+INSERT INTO T_SUBPOENA_KIND VALUES ('S', 'Призовка',			                             'Призовка',         NULL, NULL,    NULL,                                          NULL, 'a...........t.......', NULL, 0010, NULL,          NULL, NULL, NULL, NULL);  /* 2009:344 */
+INSERT INTO T_SUBPOENA_KIND VALUES ('T', 'Призовка с приложения',                              'Призовка+прил.',   NULL, NULL,    NULL,                                          NULL, 'a...........t.......', NULL, 0020, NULL,          NULL, NULL, NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('Y', 'Призовка СИС',                                       'Призовка СИС',     NULL, NULL,    NULL,                                          NULL, 'a...........t.......', NULL, 0030, NULL,          NULL, NULL, NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('M', 'Съобщение',                                          'Съобщение',        NULL, NULL,    NULL,                                          NULL, 'a...........t.......', NULL, 0040, NULL,          NULL, NULL, NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('N', 'Съобщение с приложения',                             'Съобщение+прил.',  NULL, NULL,    NULL,                                          NULL, 'a...........t.......', NULL, 0050, NULL,          NULL, NULL, NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('Z', 'Съобщение СИС',                                      'Съобщение СИС',    NULL, NULL,    NULL,                                          NULL, 'a...........t.......', NULL, 0060, NULL,          NULL, NULL, NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('K', 'Писмо',                                              'Писмо',            NULL, NULL,    NULL,                                          NULL, 'a...........t.......', NULL, 0070, NULL,          NULL, NULL, NULL, NULL);  /* 2010:048 */
+INSERT INTO T_SUBPOENA_KIND VALUES ('O', 'Разходен касов ордер с разписка',                    'РКО+Разписка',     NULL, NULL,    NULL,                                          NULL, 'a..m................', 'o',  NULL, 'rko.htm',     NULL, NULL, NULL, NULL);  /* 2011:148; 2011:158 'P' */
+INSERT INTO T_SUBPOENA_KIND VALUES ('P', 'Разходен касов ордер',                               'РКО',              NULL, NULL,    NULL,                                          NULL, 'a..m................', 'o',  NULL, 'rko2.htm',    NULL, NULL, NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('L', 'Служебна бележка възнагр.',                          'Сл.бележка',       NULL, NULL,    NULL,                                          NULL, 'a..m................', 'o',  NULL, 'CertPay.htm', NULL, NULL, NULL, NULL);
+
+/* 2012:350 LPR: TMP: 1st EISPP version only */
+UPDATE T_SENDER SET F_EISPP = (SELECT F_EISPP FROM T_COURT WHERE T_COURT.F_COURT = T_SENDER.F_COURT)
+WHERE F_UCN_TYPE IN ('L', 'W');
+
+INSERT INTO T_LEGAL_AID_TYPE VALUES (1, 'Чл.21 т.1 ЗПП');
+INSERT INTO T_LEGAL_AID_TYPE VALUES (3, 'Чл.21 т.2 ЗПП');
+INSERT INTO T_LEGAL_AID_TYPE VALUES (4, 'Чл.28 ЗПП');
+INSERT INTO T_LEGAL_AID_TYPE VALUES (5, 'Чл.21 т.3 ЗПП');
+INSERT INTO T_LEGAL_AID_TYPE VALUES (6, 'Чл.21 т.4 ЗПП');
+INSERT INTO T_LEGAL_AID_TYPE VALUES (7, 'Чл.21 т.1 и т.4 ЗПП');
+
+/* 2018-09-18 */
+DELETE FROM T_WHAT;
+INSERT INTO T_WHAT VALUES (00100, 'Входящ документ (преписка)');
+INSERT INTO T_WHAT VALUES (00200, 'Дело');
+INSERT INTO T_WHAT VALUES (00300, 'Страна');
+INSERT INTO T_WHAT VALUES (00400, 'Заседание');
+INSERT INTO T_WHAT VALUES (00450, 'Протоколен акт');
+INSERT INTO T_WHAT VALUES (00500, 'Съдебен акт');
+INSERT INTO T_WHAT VALUES (00800, 'Жалба');
+INSERT INTO T_WHAT VALUES (00900, 'Изходящ документ');
+INSERT INTO T_WHAT VALUES (01000, 'Съпровождащ документ');
+INSERT INTO T_WHAT VALUES (05001, 'Съобщение за постановен съдебен акт');
+INSERT INTO T_WHAT VALUES (05002, 'Съобщение за обжалване на съдебен акт');
+/*INSERT INTO T_WHAT VALUES (05003, 'Съобщение по съдебно дело/преписка');*/
+INSERT INTO T_WHAT VALUES (05004, 'Призовка за съдебно заседание');
+INSERT INTO T_WHAT VALUES (10000, 'Файл по входящ документ (преписка)');
+INSERT INTO T_WHAT VALUES (10100, 'Файл по съпровождащ документ');
+INSERT INTO T_WHAT VALUES (10200, 'Регистрация на лице');
+INSERT INTO T_WHAT VALUES (10201, 'Регистрация на адвокат');
+INSERT INTO T_WHAT VALUES (10300, 'Съдия по заседание');
+INSERT INTO T_WHAT VALUES (10400, 'Съдия по съдебен акт');
+INSERT INTO T_WHAT VALUES (10500, 'Необезличен файл по заседание');
+INSERT INTO T_WHAT VALUES (10501, 'Обезличен файл по заседание');
+INSERT INTO T_WHAT VALUES (10600, 'Необезличен файл по съдебен акт');
+INSERT INTO T_WHAT VALUES (10601, 'Обезличен файл по съдебен акт');
+INSERT INTO T_WHAT VALUES (10700, 'Необезличени мотиви по съдебен акт');
+INSERT INTO T_WHAT VALUES (10701, 'Обезличени мотиви по съдебен акт');
+INSERT INTO T_WHAT VALUES (10800, 'Файл по изходящ документ');
+INSERT INTO T_WHAT VALUES (10901, 'Файл по съобщение за постановен акт');
+INSERT INTO T_WHAT VALUES (10902, 'Файл по съобщение за обжалване');
+/*INSERT INTO T_WHAT VALUES (10903, 'Файл по съобщение за дело/преписка');*/
+INSERT INTO T_WHAT VALUES (10904, 'Файл по призовка за заседание');
+INSERT INTO T_WHAT VALUES (11000, 'Участие на лице по дело');
+INSERT INTO T_WHAT VALUES (11001, 'Участие на адвокат по дело');

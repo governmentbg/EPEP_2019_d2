@@ -1,0 +1,66 @@
+﻿using System;
+
+public static class Const
+{
+    public static readonly int CourtCode;
+    public static readonly string CourtName;
+    public static readonly char CourtType;
+
+    public const int
+        Subject800A = 83450,
+        Subject900A = 99950,
+        SubjectMultiply = 100;
+
+    public const int CacPathMax = 250;
+    public const int CacYearMin = 1970;
+
+    public static readonly string[] ElectricDirs = new string[ElectricType.Count];
+    public static readonly string[] ElectricExts = new string[ElectricType.Count];
+
+    public const string StateAppealers = "ЖжзП";
+    public const char ResultEPortalAllowed = '‹';
+
+    public static void Init() { }  // Invoke ctor
+
+    static Const()
+    {
+        Connection.Init("AppName");
+
+        using (Connection conn = new Connection())
+        {
+            Sender sender = Sender.Seek(conn, InstanceSelf, UcnType.Self);
+            Court court = new Court();
+
+            court.court = sender.court;  // TODO? make alias
+            court.Get(conn, null);
+            CourtCode = court.court;
+            CourtName = court.name;
+            CourtType = court.courtType;
+
+            Alias.Init(conn);
+
+            // the modern (c - '0') is quite long
+            int TextIndex = Convert.ToInt32(ElectricType.Text.ToString()),
+                ImageIndex = Convert.ToInt32(ElectricType.Image.ToString()),
+                FilterIndex = Convert.ToInt32(ElectricType.Filter.ToString());
+            ConfigData configData = new ConfigData();
+
+            configData.config = ConfigNameGlobal;
+            configData.section = "external";
+            ElectricDirs[TextIndex] = configData.GetValue(conn, "TEXT_PATH");
+            ElectricDirs[ImageIndex] = configData.GetValue(conn, "IMAGE_PATH");
+            configData.value = "DOC";
+            ElectricExts[TextIndex] = configData.GetExtension(conn, "TEXT_TYPE");
+            configData.value = "TIF";
+            ElectricExts[ImageIndex] = configData.GetExtension(conn, "IMAGE_TYPE");
+
+            configData.section = "filter";
+            ElectricDirs[FilterIndex] = configData.GetValue(conn, "PATH");
+            ElectricExts[FilterIndex] = "HTM";
+        }
+    }
+
+    private const string
+        InstanceSelf = "0000000007",
+        ConfigNameGlobal = "*GLOBAL";
+}

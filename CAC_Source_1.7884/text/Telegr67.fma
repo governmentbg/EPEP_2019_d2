@@ -1,0 +1,184 @@
+***_TITLE
+***_END
+***_HTML_TITLE
+<html>
+<head>
+<title>Телеграма с обратно известие</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<style>
+<!--
+body
+{
+	font-family:Arial;
+	font-size:12pt;
+	font-weight:normal;
+	color:black;
+	background-color:white
+}
+
+table
+{
+	color:black;
+	background-color:white;
+}
+
+td
+{
+	font-family:Arial;
+	font-size:12pt;
+	font-weight:bold;
+	color:black;
+	background-color:white;
+}
+
+th
+{
+	font-family:Arial;
+	font-size:12pt;
+	color:black;
+	background-color:white;
+}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF">
+<center>
+***_END
+***_FORMATTED_HEADER
+***_END
+***_HTML_FORMATTED_HEADER
+<h4>Телеграма с обратно известие</h4>
+<table width="100%" cellspacing=0>
+<tr>#
+<td width="5%">&nbsp;</td>#
+<td width="40%">ИД/ТЕЛЕГРАМИ</td>#
+<td width="55%">&nbsp;</td>#
+</tr>#
+<tr>#
+<td colspan=2>&nbsp;</td>#
+<td>#@ 27002 255#<br>
+общ. #@ 27046 255# обл. #@ 27045 255#<br>
+#@ 27010 255#<br>
+#@ 74002 255#<br>
+<br>
+</td>#
+</tr>#
+<tr>#
+<td colspan=3>
+<font style='font-weight:normal'>&nbsp; &nbsp; &nbsp; &nbsp;#
+Призоваваме Ви да се явите на #
+#@ 2145 255# г. от #@ 2146 255# часа като #@ 28009 255# по
+#@ 1003 255# No #@ 1001 1#/#@ 1002 4# г. по описа на #@ 1 255#
+#@ 1061 255#.</font>
+</td>#
+</tr>#
+<tr>#
+<td colspan=2>&nbsp;</td>#
+<td><br>
+Съдия:<br>#
+<br>
+Адм. секретар:<br>#
+<br>
+</td>#
+</tr>#
+<tr>#
+<td>&nbsp;</td>#
+<td><hr></td>#
+<td>&nbsp;</td>#
+</tr>#
+<tr>#
+<td>&nbsp;</td>#
+<td colspan=2>
+#@ 2 255#<br>
+#@ 1 255#<br>
+#@ 1061 255#<br>
+#@ 1003 255# No #@ 1001 1#/#@ 1002 4# г.
+</td>#
+</tr>#
+</table>
+<br><br><br><br><br><br><br><br><br><br>#
+<h4>Телеграма с обратно известие</h4>
+<table width="100%" cellspacing=0>
+<tr>#
+<td width="5%">&nbsp;</td>#
+<td width="40%">ИД/ТЕЛЕГРАМИ</td>#
+<td width="55%">&nbsp;</td>#
+</tr>#
+<tr>#
+<td colspan=2>&nbsp;</td>#
+<td>#@ 27002 255#<br>
+общ. #@ 27046 255# обл. #@ 27045 255#<br>
+#@ 27010 255#<br>
+#@ 74002 255#<br>
+<br>
+</td>#
+</tr>#
+<tr>#
+<td colspan=3>
+<font style='font-weight:normal'>&nbsp; &nbsp; &nbsp; &nbsp;#
+Призоваваме Ви да се явите на #
+#@ 2145 255# г. от #@ 2146 255# часа като #@ 28009 255# по
+#@ 1003 255# No #@ 1001 1#/#@ 1002 4# г. по описа на #@ 1 255#
+#@ 1061 255#.</font>
+</td>#
+</tr>#
+<tr>#
+<td colspan=2>&nbsp;</td>#
+<td><br>
+Съдия:<br>#
+<br>
+Адм. секретар:<br>#
+<br>
+</td>#
+</tr>#
+<tr>#
+<td>&nbsp;</td>#
+<td><hr></td>#
+<td>&nbsp;</td>#
+</tr>#
+<tr>#
+<td>&nbsp;</td>#
+<td colspan=2>
+#@ 2 255#<br>
+#@ 1 255#<br>
+#@ 1061 255#<br>
+#@ 1003 255# No #@ 1001 1#/#@ 1002 4# г.
+</td>#
+</tr>#
+</table>
+***_END
+***_HEADER
+***_END
+***_HTML_PAGE_BREAK
+<br style='page-break-before:always'>
+***_END
+***_COLUMNS
+0 0
+***_END
+
+***_MEDIUM_LINE
+‘—†—’
+***_END
+***_WANT_KINDS
+NO
+***_END
+***_SUBJECTS
+***_END
+***_SUBJECT_RANGES
+***_END
+***_MERGED_KINDS
+***_END
+***_FORMATTED_TAIL
+***_END
+***_HTML_TAIL
+</center>
+</body>
+</html>
+***_END
+***_TAIL
+***_END
+
+***_PARAMETERS
+127 55 1 1 0 3
+***_END
+

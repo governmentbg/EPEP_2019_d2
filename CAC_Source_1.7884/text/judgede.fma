@@ -1,0 +1,47 @@
+***_HISTORY_LEN
+4
+***_END
+***_TRUNC_NAMES
+NO
+***_END
+***_SHOW_ZEROES_IN_CHECK_UP
+NO
+***_END
+***_SHOW_ZEROES_IN_HISTORY
+NO
+***_END
+***_HISTORY_AT_NEW_PAGE
+YES
+***_END
+***_PAGE_WIDTH
+79
+***_END
+***_NUMBER_COLUMN_MIN_WIDTH
+3
+***_END
+***_TITLE
+***_END
+***_FORMATTED_HEADER
+#@ 1 254 2#
+#@ 17016 254 2#
+#@ 17019 254 2#
+#@ 17008 254 2#
+#@ 17028 254 2#
+#@ 17007 254 2#
+***_END
+***_HEADER
+***_END
+***_MEDIUM_LINE
+‘—†—’
+***_END
+***_TAIL
+
+***_END
+***_PARAMETERS
+79 -1000 1 1 69 10
+***_END
+***_COLUMNS
+0 0
+***_END
+
+#@ 17011 254 2#

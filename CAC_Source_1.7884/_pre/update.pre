@@ -1,0 +1,31 @@
+#include "shared.pre"
+#include "appname.pre"
+
+/* Area */
+UPDATE T_SURROUND SET F_JUDGE = NULL WHERE F_JUDGE = '0000000206' AND (NOT F_LAWSUIT_TYPE = 'd' OR NOT F_KIND = 'o');
+/* Other */
+UPDATE T_SURROUND SET F_JUDGE = NULL WHERE F_JUDGE = '0000000206';
+
+/* 2018-09-18 */
+CREATE TABLE T_WHAT
+(
+	F_WHAT	INTEGER NOT NULL,
+	F_NAME	CHAR(L_NAME) NOT NULL,
+
+	CONSTRAINT I_WHAT PRIMARY KEY (F_WHAT),
+	CONSTRAINT C_WHAT_WHAT CHECK D_WHAT(F_WHAT)
+);
+
+/* 2018-10-08 */
+
+/* Area */
+UPDATE T_SUBJECT SET F_NAME = 'Регистрация на сдружение, фондация, читалище, синдикална и работодателска организация'
+WHERE F_SUBJECT = 2220000 AND F_TYPE = 'd';
+/* Appeal */
+UPDATE T_SUBJECT SET F_NAME = 'Регистрация на сдружение, фондация, читалище, синдикална и работодателска организация'
+WHERE F_SUBJECT = 2220000 AND F_TYPE = 't';
+UPDATE T_SUBJECT SET F_NAME = 'Отказ за вписване на промени на сдружение, фондация, читалище, синдикална и работодателска организация'
+WHERE F_SUBJECT = 2221000 AND F_TYPE = 't';
+
+/* 2018-10-10 */
+ALTER TABLE T_EPORT_GUID ADD F_STAMP TIMESTAMP;

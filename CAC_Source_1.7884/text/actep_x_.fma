@@ -1,0 +1,286 @@
+Бюлетин за съдимост
+***_IS_HTML
+YES
+***_END
+***_WANT_CONVICTION_BULLETIN_DIALOG
+YES
+***_END
+***_COLUMN_WIDTH
+120
+***_END
+***_ODD_PAGE_ROWS_NUMBER
+18	
+***_END
+***_EVEN_PAGE_ROWS_NUMBER
+38
+***_END
+***_TITLE
+<html>
+<head>
+<title>Бюлетин за съдимост</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+</head>
+<body bgcolor="#FFFFFF">
+<font face="Arial Narrow" size=3 color="000000">
+***_END
+***_FORMATTED_HEADER
+<table cellspacing=0 width="93%">#
+<tr>#
+<td align="left">#
+	<table border cellspacing=0>#
+	<tr>#
+	<td><font size=1>Вх.&nbsp;No&nbsp;и<br>дата&nbsp;на<br>получ.</font></td>#
+	<td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </td>#
+	</tr>#
+	</table>#
+</td>#
+<td>&nbsp;</td>#
+<td align="center">#
+	<table border cellspacing=0 cellpadding=2>#
+	<tr>#
+	<td><font face="Arial Narrow" size=5><b>БЮЛЕТИН&nbsp;за&nbsp;СЪДИМОСТ</b></font></td>#
+	</tr>#
+	</table>#
+</td>#
+<td>&nbsp;</td>#
+<td align="center">#
+	<table border cellspacing=0>#
+	<tr>#
+	<td><font size=1>Поред.&nbsp;No<br>бюлет.<br>за&nbsp;лицето</font></td>#
+	<td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </td>#
+	</tr>#
+	</table>#
+</td>#
+<td>&nbsp;</td>#
+<td align="right">#
+	<table border cellspacing=0>#
+	<tr>#
+	<td><font size=1>&nbsp;<br>&nbsp;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </font></td>#
+	</tr>#
+	</table>#
+</td>#
+</tr>#
+</table>#
+<br>#
+<font face="Arial Narrow">#
+<table cellspacing=0 cellpadding=1 width="93%"  cols=7  border=1>#
+<tr>#
+<td align="center" colspan=5>Собствено, бащино и фамилно име на осъдения</td>#
+<td align="center" colspan=2 wrap><font face="ArialNarrow" size=2>Фамилно име, придобито при сключване на граждански брак</font></td>#
+</tr>#
+<tr>#
+<td colspan=5>#@ 51004 255#</td>#
+<td colspan=2>#@ 51019 255#</td>#
+</tr>#
+<tr>#
+<td align="center" colspan=2>Месторождение</td>#
+<td align="center" wrap><font size=2>Ден, месец и година на раждане</font></td>#
+<td align="center" colspan=2>ЕГН/ЛНЧ</td>#
+<td align="center" colspan=2>Гражданство</td>#
+</tr>#
+<tr>#
+<td colspan=2><font size=2>#@ 51018 255#</font></td>#
+<td>          <font size=2>#@ 51017 255#</font></td>#
+<td colspan=2>             #@ 51006 255#</td>#
+<td colspan=2><font size=2>#@ 51020 255#</font></td>#
+</tr>#
+<tr>#
+<td colspan=2><font size=2>Собствено, бащино и фамилно име на бащата</font></td>#
+<td colspan=5><font size=2>#@ 51021 255#</font></td>#
+</tr>#
+<tr>#
+<td colspan=2><font size=2>Собствено, бащино и фамилно име на майката</font></td>#
+<td colspan=5><font size=2>#@ 51022 255#</font></td>#
+</tr>#
+***_END
+***_TABLE_ROW
+<tr>#
+<td colspan=7><font size=2>#@ 54001 255#</font>#
+</tr>#
+***_END
+***_FORMATTED_TAIL
+<tr>#
+<font size=2>
+<td align="left" colspan=1 rowspan=2 >Дата на влизане в сила на съдебния акт: <br>#@ 55003 255#</td>#
+<td align="left" colspan=1 rowspan=2 >Дата на съставяне на бюлетина на съдимост:<br>#@ 13 255#</td>#
+<td align="left" colspan=5 >Вярно извлечение от оригинала! Служител "Бюро съдимост":<br><font size=1>(име презиме, фамилия и подпис)</font></td>#
+</font>
+</tr>#
+<tr>#
+<font size=2>
+<td align="left" colspan=5 >Проверил:<br><font size=1>(име презиме, фамилия и подпис на председател или районен съдия)</font></td>#
+</font>
+</tr>#
+<tr>#
+<td align="center" colspan=1 >Дата</td>#
+<td align="center" colspan=5 ><font size=2>Допълнителни сведения-основание документ, номер и дата</font></td>#
+<td align="center" colspan=1 >Подпис</td>#
+</tr>#
+<tr>#
+<td>&nbsp;</td>#
+<td colspan=5>&nbsp;</td>#
+<td>&nbsp;</td>#
+</tr>#
+<tr>#
+<td>&nbsp;</td>#
+<td colspan=5>&nbsp;</td>#
+<td>&nbsp;</td>#
+</tr>#
+<tr>#
+<td>&nbsp;</td>#
+<td colspan=5>&nbsp;</td>#
+<td>&nbsp;</td>#
+</tr>#
+<tr>#
+<td>&nbsp;</td>#
+<td colspan=5>&nbsp;</td>#
+<td>&nbsp;</td>#
+</tr>#
+</table>#
+<font size=1>No 12</font>#
+</font>#
+***_END
+***_TAIL
+</body>
+</html>
+***_END
+***_FORMATTED_TEXT
+64000
+ИЗВЛЕЧЕНИЕ от ВЛЯЗЛАТА в СИЛА ПРИСЪДА#
+No #@ 41022 1#/#@ 41006 255# по #@ 1070 255 ; 1060 255# 
+#@ 249 1 0 160#
+#@ 55001 255 ; 41010 255; 55001 255 #
+***_END
+#@ 249 1 0 160#
+#@ 13 255#г. гр.#@ 2 255# Вярно, Секретар: #@ 11 255# Съдия:#
+***_EVEN_PAGE_FORMATTED_HEADER
+<font face="ArialNarrow">#
+<table cellspacing=0 cellpadding=1 width="93%"  cols=7  border=1>#
+***_END
+***_EVEN_PAGE_FORMATTED_TAIL
+</table>#
+</font>#
+***_END
+***_HTML_PG_BREAK
+<br style='page-break-before:always'>#
+***_END
+***_MEDIUM_FORMATTED_TEXT
+***_END
+;***_WINDOWS_TITLE
+;***_END
+***_REASON_TABLE_ROW
+***_END
+***_HEADER
+***_END
+***_WANT_ELECTRIC
+YES
+***_END
+***_WANT_REASON
+NO
+***_END
+***_WANT_RECEIVER
+NO
+***_END
+***_WANT_RECEIVER_ADDRESS
+NO
+***_END
+***_WANT_RECEIVER_UCN
+NO
+***_END
+***_WANT_AGAINST
+YES
+***_END
+***_WANT_AGAINST_ADDRESS
+YES
+***_END
+***_WANT_AGAINST_UCN
+NO
+***_END
+***_WANT_VALID_AGAINST_CIT_UCN
+YES
+***_END
+;***_WANT_ACCOMPANY_LETTER
+;NO
+;***_END
+***_ACCOMPANY_LETTERS
+jw
+***_END
+***_FOCUS_SIDES
+NO
+***_END
+***_FOCUS_AGAINST_SIDES
+YES
+***_END
+***_WANT_MEDIUM_FORMATTED_TEXT
+YES
+***_END
+***_AUTO_RECEIVER
+NO
+***_END
+***_AUTO_AGAINST
+YES
+***_END
+***_RECEIVER
+***_END
+***_RECEIVER_ADDRESS
+***_END
+***_WINDOWS_DOC_NAME
+***_END
+***_DOC_NAME
+***_END
+***_WINDOWS_SALUTATION
+***_END
+***_SALUTATION
+***_END
+***_FROM
+***_END
+***_TO
+***_END
+***_REASON
+***_END
+***_MEDIUM_LINE
+‘———————————————————————†———————————————————————’
+***_END
+***_WANT_KINDS
+NO
+***_END
+***_SUBJECTS
+***_END
+***_SUBJECT_RANGES
+***_END
+***_MERGED_KINDS
+***_END
+***_PARAMETERS
+78 55 1 1
+***_END
+
+***_COLUMNS
+1 0
+54001 64000 1 ;
+***_END
+
+<font face="CourierNew" size=3>
+<pre>
+
+
+----------------------------------------------------------------------------
+                                                                           ^
+          Документът трябва да е приблизително толкова широк.              |
+             Този текст трябва да е на първата страница.                   |
+</pre>
+</font>
+
+***_TABLE_ROW
+<tr>#
+<td colspan=7>
+	<table>#
+	<tr>#
+	<td><font size=2>ИЗВЛЕЧЕНИЕ от ВЛЯЗЛАТА в СИЛА ПРИСЪДА</font></td>#
+	</tr>#
+	<tr>#
+	<td><font size=2>#@ 54001 255#</font></td>#
+	</tr>#
+	</table>#
+</td>#
+</tr>#
+***_END

@@ -1,0 +1,1106 @@
+#include "shared.pre"
+#include "appname.pre"
+
+INSERT INTO T_TYPE VALUES ('j', 0035, 'Пристигнал документ', 'Пристигнал док.', NULL);
+
+INSERT INTO T_TYPE VALUES ('p', 0002, 'Наказателно дело',     'НД',   0001);
+INSERT INTO T_TYPE VALUES ('c', 0003, 'Гражданско дело',      'ГД',   0002);
+INSERT INTO T_TYPE VALUES ('t', 0004, 'Търговско дело',       'ТД',   0005);
+INSERT INTO T_TYPE VALUES ('a', 0005, 'Административно дело', 'АдмД', 0003);
+INSERT INTO T_TYPE VALUES ('d', 0006, 'Фирмено дело',         'ФД',   0004);
+/* 2007:131 separated */
+INSERT INTO T_TYPE VALUES ('P', 0025, 'Веществено доказателство', 'Вещ.док-во', NULL);
+
+/* 2006:251 +e for all I docs/laws */
+/* 2008:294 +PAАBUYDLHJK for indocs all where missing, removed from laws */
+/* 2009:344 +Н where I, +К where S; 2013:259 +т where И */
+/* 2014:163 +э +ь where S; 2016:062 -ZV for all except 'p' law kinds */
+/* 2016:062 +o for all 'p' 2nd where m; 2016:088 +х for IH */
+
+/* punishment; 2002:030 +BD; 2002:031 -BD; 2008:253 +Л for ehkь */
+/* 2008:256 +LИPHA; 2009:238 e <- for 5т“В6Є; 2011:018 +и; 2017:305 +Њ */
+INSERT INTO T_KIND VALUES ('A', 0201, 'Обвинителен акт',                          'r', 'O', 'meo', 'c',       'LИтиPHAАBUYDJK‡Њ',    'Обв.акт',         8021, NULL, 0101);  /* 2009:073 +e */
+INSERT INTO T_KIND VALUES (';', 0202, 'Предложение чл.83а и сл. ЗАНН',            'r', 'D', 'amo', 'exх',     'LИтиPHAАBUYDJK‡Њ',    'Предл.83а ЗАНН',  8045, NULL, 0101);  /* 2016:056 */
+INSERT INTO T_KIND VALUES ('e', 0203, 'Предложение от ОП',                        'r', 'I', 'mo',  'ceЛх',    'LИтиPHAАBUYDJK‡Њ',    'Предл. ОП',       8045, NULL, 0101);
+INSERT INTO T_KIND VALUES ('h', 0204, 'Предложение от Н-ка на затвора',           'r', 'I', 'mo',  'ceЛх',    'LИтиPHAАBUYDJK‡Њ',    'Предл.Н-к затв.', 8044, NULL, 0101);
+/* 2002:161 +x */
+INSERT INTO T_KIND VALUES ('x', 0207, 'Молба(искане) по чл.65 НПК за измен.МНО',  'r', 'I', 'rmo', 'delxх',   'WLИтиPHAАBUYDJK‡Њ',   'М/И чл.65 НПК',   8036, NULL, 0101);  /* 2006:124 renamed */
+INSERT INTO T_KIND VALUES ('b', 0209, 'Молба за реабилитация',                    'r', 'I', 'r',   'deх',     'LИтиPHAАBUYDJK‡Њ',    'М реабилит.',     8034, NULL, 0101);
+INSERT INTO T_KIND VALUES ('k', 0212, 'Молба за кумулация',                       'r', 'I', 'r',   'deЛх',    'LИтиPHAАBUYDJK‡Њ',    'М комул.',        8032, NULL, 0101);
+INSERT INTO T_KIND VALUES ('7', 0214, 'Молба за УПО',                             'r', 'I', 'mo',  'ceЛх',    'LИтиPHAАBUYDJK‡Њ',    'Молба за УПО',    8006, NULL, 0101);  /* 2017:096 */
+INSERT INTO T_KIND VALUES ('0', 0216, 'Молба за замяна на доживотен затвор',      'r', 'I', 'mo',  'ceЛх',    'LИтиPHAАBUYDJK‡Њ',    'М зам.до живот',  8006, NULL, 0101);  /* 2017:096 */
+INSERT INTO T_KIND VALUES ('ь', 0218, 'Искане',                                   'r', 'I', 'mo',  'elxЛщх',  'WLИтиPHAАBUYDJK‡Њ',   'Искане',          8028, NULL, 0101);  /* 2013:064 +щ */
+INSERT INTO T_KIND VALUES ('Ё', 0220, 'Искане по чл.64 НПК за вземане на МНО',    'r', 'I', 'mo',  'elxх',    'WLИтиPHAАBUYDJK‡Њ',   'Иск.чл.64 НПК',   8031, NULL, 0101);  /* 2006:124 renamed */
+INSERT INTO T_KIND VALUES ('А', 0222, 'Жалба по текст от НПК',                    'r', 'I', 'a',   'exх',     'LИтиPHAАBUYDJK‡Њ',    'Ж НПК',           8027, NULL, 0101);  /* 2002:161 +x */
+INSERT INTO T_KIND VALUES ('і', 0224, 'Жалба по ЗИНЗС',                           'r', 'I', 'a',   'exх',     'LИтиPHAАBUYDJK‡Њ',    'Жалба ЗИНЗС',     8022, NULL, 0101);  /* 2009:182 cp from А */
+INSERT INTO T_KIND VALUES ('З', 0226, 'Споразумение за прекратяване на НП',       'r', 'O', 'mo',  'xc',      'LИтиPHAАBUYDJK‡Њ',    'Спораз.прекр.НП', 8047, NULL, 0101);  /* 2002:112 +O; 2002:116 O->c */
+/* 2002:078 +rй */
+INSERT INTO T_KIND VALUES ('К', 0228, 'Постановление по чл.243 НПК',              'r', 'I', 'rmo',  'xeйх',   'LИтиPHAАBUYDJKщ‡Њ',   'Пост.чл.243 НПК', 8038, NULL, 0101);  /* 2006:124 renamed; 2013:113 +щ */
+INSERT INTO T_KIND VALUES ('»', 0230, 'Предложение от пробационна служба',        'r', 'I', 'mo',   'ceЛх',   'LИтиPHAАBUYDJK‡Њ',    'Предл. ПС',       8046, NULL, 0101);  /* 2008:281 cp from e */
+INSERT INTO T_KIND VALUES ('#', 0232, 'Тъжба',                                    'r', '!', 'b',    'c',      'ВИтиPAАBUYDLHJKя‡Њ',  'Тъжба',           8060, NULL, 0101);  /* 2013:064 */
+INSERT INTO T_KIND VALUES ('a', 0234, 'Постановление по чл.375 НПК',              'r', 'D', 'amo',  'ex',     'LИтиPHAАBUYDJK‡Њ',    'Пост.чл.375 НПК', 8039, NULL, 0101);  /* 2002:161 +x; 2006:124 renamed; 2008:287 +m */
+INSERT INTO T_KIND VALUES ('ј', 0236, 'Жалба - 24ч. задържане',                   'r', 'D', 'a',    'e',      'LИтиPHAАBUYDJK‡Њ',    'Ж 24ч.задържане', 8026, NULL, 0101);  /* 2002:330 */
+INSERT INTO T_KIND VALUES (')', 0238, 'Искане на трансфер на НП от др. държава',  'r', 'I', 'mo',   'elxЛх',  'WLИтиPHAАBUYDJK‡Њ',   'Искане',          8028, NULL, 0101);
+/* 2008:291 +ЛI for WCH; 2009:005 +cx l/r; 2009:073 +d for 5В6Є */
+/* 2011:299 +a for 5ВЄ6; 2016:062 +лпф except for lawKind U */
+INSERT INTO T_KIND VALUES ('1', 0242, 'Жалба',                           'r', 'WCHП', 'riaucxbлпф', 'dveЛ',   'LИтиPHAIАBUYDJKН‡Њ',  'Жалба',          8048, NULL, 0102);  /* 2017:087 += C; 2017:088 += HП */
+INSERT INTO T_KIND VALUES ('5', 0248, 'Протест',                         'r', 'WHП',  'imeuaлпфo',  'cxЛdv',  'LИтиPHAIАBUYDJKН‡Њ',  'Протест',        8051, NULL, 0102);  /* 2010:197 +uv; 2017:088 += HП */
+INSERT INTO T_KIND VALUES ('4', 0252, 'Частна жалба (ЧНД)',              'r', 'H',    'aucxлпф',    'dveЛх',  'LИтиPHAIАBUYDJKН‡Њ',  'ЧЖ (ЧНД)',       8050, NULL, 0102);
+INSERT INTO T_KIND VALUES ('ў', 0254, 'Частна жалба (НОХД)',             'r', 'H',    'aucxлпф',    'dveЛх',  'LИтиPHAIАBUYDJKН‡Њ',  'ЧЖ (НОХД)',      8050, NULL, 0102);
+INSERT INTO T_KIND VALUES ('Ў', 0255, 'Частна жалба (НЧХД)',             'r', 'H',    'aucxbлпф',   'dveЛх',  'LИтиPHAIАBUYDJKН‡Њ',  'ЧЖ(НЧХД)',       8050, NULL, 0102);  /* 2009:182 cp from 2 */
+INSERT INTO T_KIND VALUES ('6', 0256, 'Частен протест (ЧНД)',            'r', 'H',    'meaлпфo',    'cxЛdх',  'LИтиPHAIАBUYDJKН‡Њ',  'ЧП (ЧНД)',       8053, NULL, 0102);
+INSERT INTO T_KIND VALUES ('Є', 0258, 'Частен протест (НОХД)',           'r', 'H',    'meaлпфo',    'cxЛdх',  'LИтиPHAIАBUYDJKН‡Њ',  'ЧП (НОХД)',      8053, NULL, 0102);
+INSERT INTO T_KIND VALUES ('ц', 0260, 'Касационна жалба (АНД)',          'r', 'U',    'iaucx',      'dve',    'LИтиPHAАBUYDJK‡Њ',    'КЖ (АНД)',       8056, NULL, 0102);
+INSERT INTO T_KIND VALUES ('g', 0262, 'Частна касационна жалба (АНД)',   'r', 'U',    'iaucx',      'dve',    'LИтиPHAАBUYDJK‡Њ',    'КЧЖ (АНД)',      8057, NULL, 0102);
+/* 2006:178; 2008:277 +cx for Фйт */
+INSERT INTO T_KIND VALUES ('ф', 0217, 'Искане по чл.368 НПК',            'r', 'I',    'mo',         'elxх',   'WLИтиPHAАBUYDJK‡Њ',   'Иск.чл.368 НПК', 8030, NULL, 0101);
+INSERT INTO T_KIND VALUES ('й', 0255, 'Частна жалба (АНД)',              'r', 'H',    'iaucxлпф',   'dveх',   'LИтиPHAАBUYDJK‡Њ',    'ЧЖ (АНД)',       8050, NULL, 0102);
+INSERT INTO T_KIND VALUES ('“', 0259, 'Частен протест (АНД)',            'r', 'H',    'iaueлпф',    'dvcxх',  'LИтиPHAАBUYDJK‡Њ',    'ЧП (АНД)',       8053, NULL, 0102);  /* 2008:281 cp from т */
+INSERT INTO T_KIND VALUES ('–', 0270, 'Протест и жалба',                 'r', 'W',    'aucxmлпфo',  'dveЛ',   'LИтиPHAIАBUYDJKН‡Њ',  'П и Ж',          8052, NULL, 0102);  /* 2010:025 cp from 1; 2010:027 +m */
+INSERT INTO T_KIND VALUES ('—', 0272, 'Частен протест и частна жалба',   'r', 'H',    'aucxmлпфo',  'dveЛх',  'LИтиPHAIАBUYDJKН‡Њ',  'ЧП и ЧЖ',        8054, NULL, 0102);  /* 2010:025 cp from 4; 2010:027 +m */
+INSERT INTO T_KIND VALUES ('&', 0273, 'Касационен протест (АНД)',        'r', 'U',    'iaucx',      'dve',    'LИтиPHAАBUYDJK‡Њ',    'КП (АНД)',       8051, NULL, 0102);  /* 2011:315 */
+
+/* 2005:039 comout '*-БП': ЙстФухЏйЋџфП; 2005:147 removed */
+/* citizen */
+/* 2004:052 +Т <> for all but Э; +rh << where missing +Q <> everywhere */
+/* 2004:071 +S where from trade; 2004:301 VRQ: +S everywhere */
+/*INSERT INTO T_KIND VALUES ('w', 0301, 'Искова молба-гражд. дело',               'r', 'Z',  'rsГэ',     'dь',    'IS3GBUYDPLHJKТQAАНКhNр‡',   'ИМ',              8001, NULL, 0101);*/  /* 2013:197 +N */
+INSERT INTO T_KIND VALUES ('w', 0310, 'Искова молба',                             'r', 'ZT', 'rsГэ',     'dь',    'IS3GBUYDPLHJKТQAАНКhNр‡П',  'ИМ',              8001, NULL, 0101);  /* 2013:197 +N; 2017:086 += T */
+INSERT INTO T_KIND VALUES ('j', 0320, 'Заявление непарични вноски',               'r', '[{', 'rЗэ',      'dь',    'I3GLHJKТQSPAАBUYDНКh‡',     'З непар.вноски',  8004, NULL, 0101);  /* URQ: +d; 2007:213 +З; 2017:087 += { */
+INSERT INTO T_KIND VALUES ('Г', 0325, 'Молба за обявяване в несъстоятелност',     'r', 'ZT', 'rqГэ',     'dyь',   'I3GLHJKSПEТQSPAАBUYDНКhу‡', 'М несъст.',       8013, NULL, 0101);  /* 2012:132 +у; 2017:087 += T */
+INSERT INTO T_KIND VALUES ('m', 0340, 'Молба за обезпечение',                     'r', '[{', 'rэ',       'dь',    'I3GLHJKТQSPAАBUYDНКh‡',     'М обезпеч.',      8011, NULL, 0101);  /* 2017:087 += { */
+INSERT INTO T_KIND VALUES ('Y', 0345, 'Жалба с-у действия на СИ (I инст.)',       'r', 'Z',  'rauГэ',    'dvyо',  'ILHJKBUY3GDPТQSAАНКh‡',     'Ж СИ I',          8049, NULL, 0101);  /* 2007:250 cp from Ј */
+INSERT INTO T_KIND VALUES ('В', 0355, 'Жалба п-в постановление на нотариус',      'r', '[',  'amэ',      'dь',    'ILHJKBUY3GDPТQSAАНК‡',      'Ж п-в нотар',     8048, NULL, 0101);  /* 2011:147; 2017:097 was \\; 2018-10-25: 8048 */
+INSERT INTO T_KIND VALUES ('Ѕ', 0430, 'Жалба с-у съдия по вписван. (I инст)',     'r', '[',  'rauГэ',    'dvyоь', 'ILHJKBUY3GDPТQSAАНКh‡',     'Ж СВ',            8003, NULL, 0101);  /* 2008:255 cp from † */
+
+/* trade */
+/* 2004:052 +Т <> for all; +rh << where missing +Q <> everywhere */
+/* 2004:301 VRQ: +S everywhere */
+/*INSERT INTO T_KIND VALUES ('8', 0401, 'Искова молба-търг. дело',                'r', 'T',  'rsГэ',     'dь',    'IS3GLHJKPBUYDПТQAАНКhN‡',   'ИМ',              8001, NULL, 0101);*/  /* 2013:197 +N */
+INSERT INTO T_KIND VALUES ('ђ', 0315, 'Частна жалба срещу действие на синдик',    'r', '{',  'rsГэ',     'dь',    'IS3GLHJKPBUYDПEТQAАНКh‡',   'ЧЖ синдик',       8050, NULL, 0101);  /* 2018-10-25: 8050 */
+INSERT INTO T_KIND VALUES ('Ђ', 0330, 'Възражение в пр-вото по несъстоятелност',  'r', 'T',  'rqГэ',     'dyь',   'I3GLHJKSПEТQSPAАBUYDНКhу‡', 'Възраж.несъст.',  8088, NULL, 0101);  /* 2012:132 +у; 2018-10-25: 8088 */
+INSERT INTO T_KIND VALUES ('.', 0335, 'Възражение в пр-вото по несъстоят. (ЧТД)', 'r', '{',  'rqГэ',     'dyь',   'I3GLHJKSПEТQSPAАBUYDНКhу‡', 'Възраж.несъст.',  8088, NULL, 0101);  /* 2014:163; 2018-10-25: 8088 */
+INSERT INTO T_KIND VALUES ('«', 0350, 'Молба за назначаване на одитор',           'r', '{',  'rэ',       'dь',    'I3GLHJKТQSЮPAАBUYDНКh‡',    'М одитор',        8007, NULL, 0101);  /* 2008:060 */
+INSERT INTO T_KIND VALUES ('ѕ', 0360, 'Молба по част VII-ма от ГПК (нов)',        'r', '{[', 'rэ',       'Рdь',   'ILHJKBUY3GDPТQSAАНК‡',      'М VII ГПК',       8035, NULL, 0101);  /* 2007:253 cp from Q; 2010:014 +d; 2017:090 += [ */
+INSERT INTO T_KIND VALUES ('¶', 0370, 'Жалба по чл.25 ЗТР',                       'r', 'TZ', 'rauГэ',    'dvyоь', 'ILHJKBUY3GDPТQSAАНКh‡',     'Жалба чл.25 ЗТР', 8002, NULL, 0101);  /* 2008:003 cp from Y; 2010:162 { -> T; 2017:090 += Z */
+INSERT INTO T_KIND VALUES ('„', 0375, 'Установителен иск',                        'r', 'TZ', 'rsГэ',     'dь',    'IS3GLHJKPBUYDПТQAАНКh‡',    'Устан. иск',      8063, NULL, 0101);  /* 2010:025 cp from 8; 2017:090 += Z; 2018-10-25: 8063 */
+INSERT INTO T_KIND VALUES ('‹', 0380, 'Искане за спиране на вписване в ТР',       'r', '{[', 'rmэ',      'dь',    'I3GLHJKТQSPAАBUYDНКh‡',     'Искане',          8028, NULL, 0101);  /* 2010:025 cp from q; 2010:027 +m; 2011:018 NULL -> 8028; 2017:090 += [ */
+INSERT INTO T_KIND VALUES ('¬', 0385, 'Молба',                                    'r', '{[', 'rэqГ',     'dyь',   'I3GLHJKТQSPAАBUYDНКh‡',     'Молба',           8006, NULL, 0101);  /* 2010:260; 2010:274; 2014:076 +y; 2017:090 += [ */
+INSERT INTO T_KIND VALUES ('·', 0390, 'Искане',                                   'r', '{[', 'rmэ',      'dyь',   'I3GLHJKТQSPAАBUYDНКhq‡',    'Искане',          8028, NULL, 0101);  /* 2010:260; 2010:274; 2013:065 +q; 2014:076 +y; 2017:090 += [ */
+/* 2007:157 +G; 2012:254 add/left 'о', right 'y' */
+INSERT INTO T_KIND VALUES ('Ћ', 0395, 'Молба за определяне срок при бавност',     'r', '}]', 'raоэ',     'eyь',   'LHJQSGPAАBUYDKКh‡',         'М бавност',       8055, NULL, 0102);  /* 2005:039 cp from citizen; 2017:090 += ] */
+INSERT INTO T_KIND VALUES ('Ж', 0405, 'Жалба',                                    'r', 'nN', 'rauГоэ',   'dvyь',  'ILHJKPBUYD3ТQSGAАНКh‡',     'Ж',               8048, NULL, 0102);  /* 2017:090 += N */
+INSERT INTO T_KIND VALUES ('Ч', 0410, 'Частна жалба',                             'r', '}]', 'rauГоэ',   'dvyь',  'ILHJKPBUYD3ТQSGAАНКh‡',     'ЧЖ',              8050, NULL, 0102);  /* 2008:245 +yо; 2017:090 += ] */
+INSERT INTO T_KIND VALUES ('ґ', 0415, 'Препирня за подсъдност',                   'r', '}]', 'rauГmоэ',  'dvyь',  'ILHJKPBUYD3ТQSGAАНКh‡',     'Препирня подсъд', 8017, NULL, 0102);  /* 2009:191 +m; 2017:090 +] */
+INSERT INTO T_KIND VALUES ('™', 0420, 'Дело по отстран.на съдии чл.23, ал.3 ГПК', 'r', '}]', 'rauГmоэ',  'dvyь',  'ILHJKBUY3GDPТQSAАНКh‡',     'Отстр на съдии',  8061, NULL, 0102);  /* 2009:181; 2017:090 += ] */
+INSERT INTO T_KIND VALUES ('І', 0425, 'Жалба с-у действия на СИ (II инст.)',      'r', 'nN', 'rauГоэ',   'dvyь',  'ILHJKPBUYD3ТQSGAАНКh‡',     'Ж СИ II',         8049, NULL, 0102);  /* 2002:326 cp from Ж; 2017:090 += N */
+INSERT INTO T_KIND VALUES ('‡', 0435, 'Жалба с-у съдия по вписван. (II инст)',    'r', '}]', 'rauГоэ',   'dvyь',  'ILHJKPBUYD3ТQSGAАНКh‡',     'Ж СВ',            8003, NULL, 0102);  /* 2008:255 cp from І; 2017:090 += ] */
+INSERT INTO T_KIND VALUES ('‚', 0440, 'Възражение по чл.423 ГПК',                 'r', '}]', 'rauГmоэq', 'dvyь',  'ILHJKPBUYD3ТQSGAАНКh‡',     'Възр.чл.423',     8088, NULL, 0102);  /* 2010:025 cp from Ч; 2010:027 +m; 2017:090 += ]; 2018-10-25: 8088 */
+INSERT INTO T_KIND VALUES ('Ф', 0317, 'Молба за опред. срок при бавност I инст.', 'r', '[{', 'raоэ',     'eyь',   'LHJQSGPAАBUYDKКh‡',         'М бавност',       8055, NULL, 0101);  /* 2019:0096 */
+INSERT INTO T_KIND VALUES ('т', 0417, 'Молба за ИЛ по арбитражно решение чл.405', 'r', '{',  'rэqГ',     'dyь',   'I3GLHJKТQSPAАBUYDНКh‡',     'Молба',           8006, NULL, 0101);  /* 2019:0096 */
+
+/* administrative */
+/* 2004:035 URQ: +M for all; 2006:074 +Г for all; 2006:315 +Т where missing */
+INSERT INTO T_KIND VALUES ('9', 0500, 'Жалба-админ. дело',                       'r', 'я',   'a',    'd',    'I3GPLHJKТBMevГAАUYDН‡',    'Ж',               8018, NULL, NULL);  /* 2005:147 +ev */
+INSERT INTO T_KIND VALUES ('s', 0502, 'Молба за спиране на адм. акт',            'r', 'Н',   'r',    'd',    'I3GPLHJKТBMГAАUYDН‡',      'М спир.адм.акт',  8019, NULL, NULL);
+INSERT INTO T_KIND VALUES ('б', 0505, 'Касационна жалба',                        'r', 'Я',   'raui', 'dv',   'IPHLJKMГТAАBUYDН‡',        'КЖ',              8056, NULL, 0102);
+INSERT INTO T_KIND VALUES ('ш', 0503, 'Частна жалба-админ.дело',                 'r', 'Н',   'a',    'd',    'I3GPLHJKТMГAАBUYDН‡',      'ЧЖ',              8050, NULL, NULL);
+INSERT INTO T_KIND VALUES ('э', 0506, 'Частна касационна жалба',                 'r', 'Е',   'raui', 'dv',   'IPHLJKMГТAАBUYDН‡',        'КЧЖ',             8057, NULL, 0102);  /* 2010:260 Я -> Е */
+INSERT INTO T_KIND VALUES ('ї', 0509, 'Искане по чл.75 ДОПК (отм. чл.12 ДПК)',   'r', 'Н',   'arm',  'de',   'I3GPLHJKТMТГAАBUYDНh‡',    'Иск.чл.75 ДОПК',  8028, NULL, 0101);  /* 2018-10-25: 8028 */
+
+/* firm; 2005:039 +r; 2011:172 +дезк */
+INSERT INTO T_KIND VALUES ('ч', 0601, 'Заявление за регистрация',  'r', 'ж',    'wjntfgбгюГУФХЦЧШЩЪrдезк',  NULL, 'LHPAАBUYDJKh‡',       'Първ.регистр.',   8020, NULL, 0101);
+
+/* (punishment, NULL); 2002:030 +BD; 2002:031 -BD; 2008:253 +Л for EzK */
+/* 2008:256 +LИPHA; 2011:018 +и */
+INSERT INTO T_KIND VALUES ('u', 0201, 'Обвинителен акт',                         'V', 'O',   'meo',  'c',   'LИтиPHAАBUYDJK‡',          'Обв.акт',         8021, NULL, 0101);  /* 2009:073 +e */
+INSERT INTO T_KIND VALUES ('z', 0203, 'Предложение',                             'V', 'I',   'mo',   'ceЛ', 'LИтиPHAАBUYDJK‡',          'Предложение',     8044, NULL, 0101);  /* 2009:192 -от Н-ка на затвора Предл.Н-к затв. */
+INSERT INTO T_KIND VALUES ('X', 0207, 'Молба за изм.мярка неоткл.',              'V', 'I',   'r',    'de',  'LИтиPHAАBUYDJK‡',          'М изм.МНО',       8036, NULL, 0101);
+INSERT INTO T_KIND VALUES ('B', 0209, 'Молба за реабилитация',                   'V', 'I',   'r',    'de',  'LИтиPHAАBUYDJK‡',          'М реабилит.',     8034, NULL, 0101);
+INSERT INTO T_KIND VALUES ('K', 0210, 'Молба за кумулация',                      'V', 'I',   'r',    'deЛ', 'LИтиPHAАBUYDJK‡',          'М комул.',        8032, NULL, 0101);
+INSERT INTO T_KIND VALUES ('є', 0211, 'Решение на ВКС за възобновяване',         'V', NULL,  'msa',  'cd',  'LИтиPHAАBUYDJK‡',          'Реш.ВКС възобн.', NULL, NULL, 0100);  /* 2007:244 +sad */
+/* 2005:147 URQ/LRQ: re1st admin punishment, cp from 'aј' */
+INSERT INTO T_KIND VALUES ('Џ', 0240, 'Постановление по чл.375 НПК',             'V', 'D',   'amo',  'ex',  'LИтиPHAАBUYDJK‡',          'Пост.чл.375 НПК', 8039, NULL, 0101);  /* 2006:124 renamed; 2008:287 +m */
+INSERT INTO T_KIND VALUES ('џ', 0241, 'Жалба - 24ч. задържане',                  'V', 'D',   'a',    'e',   'LИтиPHAАBUYDJK‡',          'Ж 24ч.задържане', 8026, NULL, 0101);
+
+/* (citizen, NULL); 2004:301 all +S; 2008:071 all +Т */
+INSERT INTO T_KIND VALUES ('г', 0303, 'Молба за обявяване в несъстоятелност',    'V', NULL,  'rqГэ', 'dyь', 'IS3GLHJKПESТPAАBUYDНКhу‡', 'М несъст.',       8013, NULL, 0101);  /* 2012:132 +у */
+INSERT INTO T_KIND VALUES ('M', 0304, 'Молба за обезпечение',                    'V', NULL,  'rэ',   'dь',  'I3GLHJKSТPAАBUYDНК‡',      'М обезпеч.',      8011, NULL, 0101);  /* URQ: +d */
+
+/* (trade, NULL); 2004:301 all +S; 2007:071 all +Т */
+INSERT INTO T_KIND VALUES ('ћ', 0404, 'Възражение в пр-вото по несъстоятелност', 'V', NULL,  'rqГэ', 'dyь', 'I3GLHJKSПESТPAАBUYDНКhу‡', 'Възраж. несъст.', NULL, NULL, 0101);  /* 2002:290 == Ђ; 2012:132 +у */
+
+/* (administrative, NULL); 2002:108 +Т where 3; */
+/* 2004:274 +M for Pџ; 2004:035 URQ: +M for all */
+/* 2006:074 +Г for all; 2006:315 +Т for rest */
+INSERT INTO T_KIND VALUES ('P', 0500, 'Жалба-админ. дело',             'V', 'я',  'a',     'd',  'I3GPLHJKТBMevГAАUYDН‡', 'Ж',              8048, NULL, 0101);  /* 2005:147 +ev */
+INSERT INTO T_KIND VALUES ('S', 0502, 'Молба за спиране на адм. акт',  'V', 'Н',  'r',     'd',  'I3GPLHJKТBMГAАUYDН‡',   'М спир.адм.акт', 8019, NULL, 0101);
+INSERT INTO T_KIND VALUES ('Ц', 0505, 'Касационна жалба',              'V', NULL, 'asui',  'dv', 'IPHLJKMГТAАBUYDН‡',     'КЖ',             8056, NULL, 0102);
+INSERT INTO T_KIND VALUES ('ю', 0503, 'Частна жалба-админ.дело',       'V', 'Н',  'a',     'd',  'I3GPLHJKТMГAАBUYDН‡',   'ЧЖ',             8050, NULL, 0101);
+INSERT INTO T_KIND VALUES ('ы', 0506, 'Частна касационна жалба',       'V', NULL, 'asu',   'dv', 'IPHLJKMГТAАBUYDН‡',     'КЧЖ',            8057, NULL, 0100);
+
+/* (common, NULL) */
+/* 2009:005 +cx l/r; 2009:238 e <- for LV */
+INSERT INTO T_KIND VALUES ('l', 0001, 'Жалба',          'V', NULL,  'sauГcxb',  'dve',  'LHJKBUY3GDPAА‡',     'Ж',       8048, NULL, 0102);
+INSERT INTO T_KIND VALUES ('v', 0002, 'Частна жалба',   'V', NULL,  'sauГcxоb', 'dvey', 'LHJKBUY3GDPAА‡',     'ЧЖ',      8050, NULL, 0102);  /* 2008:245 +yо; 2012:254 о -> left*/
+INSERT INTO T_KIND VALUES ('L', 0003, 'Протест',        'V', NULL,  'me',       'cxd',  'LHJKPAАBUYD‡',       'Протест', 8051, NULL, 0102);  /* 2002:030 +BD; 2002:031 -BD; 2009:073 +d */
+INSERT INTO T_KIND VALUES ('V', 0004, 'Частен протест', 'V', NULL,  'me',       'cxd',  'LHJKPAАBUYD‡',       'ЧП',      8053, NULL, 0102);  /* 2002:030 +BD; 2002:031 -BD; 2009:073 +d */
+INSERT INTO T_KIND VALUES ('Б', 0005, 'Искова молба',   'V', NULL,  'sГэ',      'dь',  'I3GBUYDPLHJKAАНSNр‡', 'ИМ',      8001, NULL, 0101);  /* 2010:340 +S; 2013:197 +N */
+/* +d; 2006:349 (citizen) -> (common) [w/trade] */
+INSERT INTO T_KIND VALUES ('J', 0302, 'Заявление непарични вноски',  'V', NULL,  'rЗэ',  'dь',  'I3GLHJKSPAАBUYDНК‡', 'З непар.вноски', 8004, NULL, 0101);  /* 2007:213 +З */
+
+/* (firm, NULL) */
+INSERT INTO T_KIND VALUES ('щ', 0601, 'Заявление за регистрация',  'V', NULL,  'wjntfgбгГУФХЦЧШЩЪ',  NULL, 'PAАBUYDLHJKh‡', 'Първ.регистр.', 8020, NULL, 0101);
+
+/* 2009:231 all law kinds +hТ where missing */
+
+/* PUNISHMENT 2002:031 +BD */
+/* 2005:059 +А where A; 2006:028 +6; 2006:187 LRQ: reordered; 2007:026 +И */
+/* 2008:256 +P; 2008:291 +ЛI for WCH; 2009:005 +c for WCHUП */
+/* 2009:238 -e for UH; 2011:018 +и; 2015:081 +B where missing */
+/* 2016:062 +чЉ; 2016:062 +лпф for 2nd inst; 2017:305 +Њ */
+INSERT INTO T_KIND VALUES ('O', 0001, 'НОХД',  'p', NULL,  NULL,       NULL,  'WX6RрNAZVчЉCLHMOяBDАДИтиВPhТ†‡Њ', 'НОХД',  2001, 1002, 0201);  /* 2005:131 +Д; 2007:027 +В */
+INSERT INTO T_KIND VALUES ('!', 0002, 'НЧХД',  'p', NULL,  NULL,       NULL,  'WX6RрNAZVчЉCLHMOBDАИтиВPIhТН†‡Њ', 'НЧХД',  2002, 1001, 0201);  /* 2013:064 */
+INSERT INTO T_KIND VALUES ('D', 0004, 'АНД',   'p', NULL,  NULL,       'e',   'WX6RрNAZVчЉCLHMOBDАИтиPhТВ†‡Њщ',  'АНД',   2003, 999,  0201);  /* 2007:023 +e; 2017:348 +щ */
+INSERT INTO T_KIND VALUES ('I', 0003, 'ЧНД',   'p', NULL,  NULL,       'eх',  'WX6RрNAZVчЉCLHMOBDАИтияPhТВ†‡Њ',  'ЧНД',   2004, 1000, 0201);  /* 2006:251 +e; 2007:242 +я */
+INSERT INTO T_KIND VALUES ('W', 0005, 'ВНОХД', 'p', NULL,  'ambuлпфo', 'dЛv', 'WX6RрNAZVчЉCLHMOBDАИтиВPIhТН†‡Њ', 'ВНОХД', 2005, 1010, 0202);  /* 2007:027 +В; 2009:238 +b; 2011:172 +uv */
+INSERT INTO T_KIND VALUES ('C', 0006, 'ВНЧХД', 'p', NULL,  'ambлпфo',  'dЛ',  'WX6RрNAZVчЉCLHMOBDАИтиВPIhТН†‡Њ', 'ВНЧХД', 2006, 1009, 0202);  /* 2007:027 +В */
+INSERT INTO T_KIND VALUES ('U', 0009, 'КАНД',  'p', NULL,  'ai',       'd',   'WX6RрNAZVчЉCLHMOBDАИтиPhТВ†‡Њ',   'КАНД',  2007, NULL, 0202);  /* 2007:023 +e */
+INSERT INTO T_KIND VALUES ('H', 0007, 'ВЧНД',  'p', NULL,  'amлпфo',   'dЛх', 'WX6RрNAZVчЉCLHMOBDАИтиPIhТНВ†‡Њ', 'ВЧНД',  2008, 1008, 0202);  /* 2006:335 +e */
+INSERT INTO T_KIND VALUES ('П', 0008, 'ВАНД',  'p', NULL,  'amлпфo',   'd',   'WX6RрNAZVчЉCLHMOBDАИтиPhТВ†‡Њ',   'ВАНД',  2009, 1900001685, 0202);  /* 2006:186; 2017:325 LPR/IRQ: 1900001685 */
+
+/* 2013:336 +н for CITIZEN, TRADE and ADMIN */
+
+/* CITIZEN; 2006:209 +A */
+INSERT INTO T_KIND VALUES ('Z', 0010, 'Гражданско дело',                 'c', NULL,  'э',     'eь',    'ETQSПТhКнр', 'ГрД',   2010, NULL, 0201);
+/* URQ +s; +u, +v */
+INSERT INTO T_KIND VALUES ('N', 0014, 'Гражданско дело (В)',             'c', NULL,  'asuоэ', 'dveyь', 'ETQSПТhКн',  'ВГрД',  2012, NULL, 0202);  /* 2012:254 +о, +y */
+/* 2009:071 URQ +related */
+INSERT INTO T_KIND VALUES ('[', 0012, 'Частно гражданско дело',          'c', NULL,  'э',     'eь',    'ETQSПТhКн',  'ЧГрД',  2011, NULL, 0201);
+INSERT INTO T_KIND VALUES (']', 0016, 'Частно гражданско дело (В)',      'c', NULL,  'asuоэ', 'dveyь', 'ETQSПТhКн',  'ВЧГрД', 2013, NULL, 0202);  /* 2012:254 +о, +y */
+
+/* TRADE; 2006:206 +S; 2006:209 +A; 2007:213 +G; 2018-05-08: +Е */
+INSERT INTO T_KIND VALUES ('T', 0020, 'Търговско дело',                  't', NULL,  'э',     'ь',     'ЕSGТhКн',    'ТД',    2014, NULL, 0201);
+INSERT INTO T_KIND VALUES ('n', 0024, 'Търговско дело (В)',              't', NULL,  'asоэ',  'dyь',   'ЕSGТhКн',    'ВТД',   2016, NULL, 0202);  /* 2012:254 +о, +y */
+/* 2009:071 URQ +related; 2018-05-08: +Е */
+INSERT INTO T_KIND VALUES ('{', 0022, 'Частно търговско дело',           't', NULL,  'э',     'ь',     'ETQSПТhКн',  'ЧТД',   2015, NULL, 0201);
+INSERT INTO T_KIND VALUES ('}', 0026, 'Частно търговско дело (В)',       't', NULL,  'asоэ',  'dyь',   'ETQSПТhКн',  'ВЧТД',  2017, NULL, 0202);  /* 2012:254 +о, +y */
+
+/* ADMIN; 2006:074 +Г */
+INSERT INTO T_KIND VALUES ('я', 0030, 'Административно дело',            'a', NULL,  'ra',    'd',     'Тhн',        'АдмД',   2018, NULL, 0201);
+INSERT INTO T_KIND VALUES ('Я', 0031, 'Административно дело (К)',        'a', NULL,  'ras',   'de',    'Тhн',        'КАдмД',  2020, NULL, 0202);  /* 2002:039 +e URQ */
+INSERT INTO T_KIND VALUES ('Н', 0032, 'Частно административно дело',     'a', NULL,  'ra',    'd',     'Тhн',        'ЧАдмД',  2019, NULL, 0201);
+INSERT INTO T_KIND VALUES ('Е', 0033, 'Частно административно дело (К)', 'a', NULL,  'ras',   'de',    'Тhн',        'ЧКАдмД', 2020, NULL, 0202);
+
+/* FIRM */
+INSERT INTO T_KIND VALUES ('ж', 0040, 'Фирмено дело',      'd', NULL,  NULL,  NULL,  'hТ', 'ФД', 2021, NULL, 0201);
+
+/* SESSIONS; 2008:023 +MМ */
+INSERT INTO T_KIND VALUES ('Ъ', 0002, 'Първо заседание',          NULL, NULL,  'э',  'ь', 'WX3STQLBUYDEGHПMМК†‡', 'I-во зас-е',    10001, NULL, 0400);
+INSERT INTO T_KIND VALUES ('Д', 0003, 'Второ заседание',          NULL, NULL,  'э',  'ь', 'WX3STQLBUYDEGHПMМК†‡', 'II-ро зас-е',   10002, NULL, 0400);
+/* 2005:059 +А; 2006:028 +6; 2008:023 +М */
+INSERT INTO T_KIND VALUES ('Щ', 0001, 'Съдебно заседание',        NULL, NULL,  NULL, 'c', 'WX6RрNACLHMOАМ†‡',     'Съдебно зас-е', NULL,  NULL, 0400);
+INSERT INTO T_KIND VALUES ('”', 0002, 'Разпоредително заседание', NULL, NULL,  NULL, 'c', 'WX6RрNACLHMOАМ†‡',     'Разпор. зас-е', NULL,  NULL, 0400);  /* 2017:304 cp from 'Щ' */
+INSERT INTO T_KIND VALUES ('p', 0003, 'Предварително изслушване', NULL, NULL,  NULL, 'c', 'WX6RрNACLHMOАМ†‡',     'Предв. изсл-е', NULL,  NULL, 0400);  /* 2006:188 */
+/* 2005:059 +А where A; 2006:028 +6 where X; 2008:023 +М */
+/* 2015:070 +M for closed; ; 2018-05-08: +Е for closed */
+INSERT INTO T_KIND VALUES ('У', 0004, 'Друго заседание',                        NULL, NULL,  'э',  'cь',   'WX6RрN3ASTQCLBUYDEGHMOПАМК†‡', 'Друго зас-е',     10003, NULL, 0400);
+INSERT INTO T_KIND VALUES ('Л', 0005, 'Събрание на кредиторите',                NULL, NULL,  'э',  'ь',    'XSACLBUYDEGHПАК†‡',            'С-е кредиторите', 10004, NULL, 0400);
+INSERT INTO T_KIND VALUES ('И', 0010, 'Закрито/разпоредително заседание',       NULL, NULL,  NULL,  NULL,  'ЕWX63M†',                      'ЗЗ/РЗ',           10005, NULL, 0402);
+INSERT INTO T_KIND VALUES ('F', 0011, 'Закрито/разпоредително заседание 2',     NULL, NULL,  NULL,  NULL,  'ЕWX63M†',                      'ЗЗ/РЗ 2',         10005, NULL, 0403);
+INSERT INTO T_KIND VALUES ('G', 0012, 'Закрито/разпоредително заседание 3',     NULL, NULL,  NULL,  NULL,  'ЕWX63M†',                      'ЗЗ/РЗ 3',         10005, NULL, 0403);
+INSERT INTO T_KIND VALUES ('Ю', 0020, 'Резолюция извън заседание',              NULL, NULL,  NULL,  NULL,  'ЕWX63†',                       'Резолюция',       NULL,  NULL, 0401);
+INSERT INTO T_KIND VALUES ('Ѓ', 0013, 'Закрито/разпоредително заседание 4',     NULL, NULL,  NULL,  NULL,  'ЕWX63M†',                      'ЗЗ/РЗ 4',         10005, NULL, 0403);
+INSERT INTO T_KIND VALUES ('ѓ', 0014, 'Закрито/разпоредително заседание 5',     NULL, NULL,  NULL,  NULL,  'ЕWX63M†',                      'ЗЗ/РЗ 5',         10005, NULL, 0403);
+INSERT INTO T_KIND VALUES ('Љ', 0015, 'Закрито/разпоредително заседание 6',     NULL, NULL,  NULL,  NULL,  'ЕWX63M†',                      'ЗЗ/РЗ 6',         10005, NULL, 0403);
+INSERT INTO T_KIND VALUES ('Њ', 0016, 'Закрито/разпоредително заседание 7',     NULL, NULL,  NULL,  NULL,  'ЕWX63M†',                      'ЗЗ/РЗ 7',         10005, NULL, 0403);
+INSERT INTO T_KIND VALUES ('Ќ', 0017, 'Закрито/разпоредително заседание 8',     NULL, NULL,  NULL,  NULL,  'ЕWX63M†',                      'ЗЗ/РЗ 8',         10005, NULL, 0403);
+INSERT INTO T_KIND VALUES ('љ', 0018, 'Закрито/разпоредително заседание 9',     NULL, NULL,  NULL,  NULL,  'ЕWX63M†',                      'ЗЗ/РЗ 9',         10005, NULL, 0403);
+INSERT INTO T_KIND VALUES ('њ', 0019, 'Закрито/разпоредително заседание 10',    NULL, NULL,  NULL,  NULL,  'ЕWX63M†',                      'ЗЗ/РЗ 10',        10005, NULL, 0403);
+
+/* 2005:047 +ZC3; 2006:041 Order += 30; 2006:205 +BD; 2007:320 34 <=> 35 */
+/* 2014:295 +X6 for exec lists */
+INSERT INTO T_KIND VALUES ('Ш', 0031, 'Решение',                                NULL, NULL, NULL, NULL, 'C3BDX6†', 'Решение',        5001, 649,   0500);
+INSERT INTO T_KIND VALUES ('R', 0032, 'Решение (второ)',                        NULL, NULL, NULL, NULL, 'C3BDX6†', 'Решение (2)',    5001, 649,   0501);
+INSERT INTO T_KIND VALUES ('ъ', 0033, 'Присъда',                                NULL, NULL, NULL, NULL, 'C3BDX6†', 'Присъда',        5003, 646,   0500);
+INSERT INTO T_KIND VALUES ('М', 0034, 'Споразумение',                           NULL, NULL, NULL, NULL, 'C3BDX6†', 'Споразумение',   5004, 644,   0500);
+INSERT INTO T_KIND VALUES ('л', 0035, 'Определение',                            NULL, NULL, NULL, NULL, 'C3BDX6†', 'Определение',    5002, 644,   0500);  /* 2005:056 Опр-е -> Определение */
+INSERT INTO T_KIND VALUES ('м', 0036, 'Разпореждане',                           NULL, NULL, NULL, NULL, 'C3BDX6†', 'Разпореждане',   5005, 648,   0500);
+INSERT INTO T_KIND VALUES ('Ы', 0037, 'Протокол',                               NULL, NULL, NULL, NULL, 'C3BDX6†', 'Протокол',       5006, 12621, 0500);
+INSERT INTO T_KIND VALUES ('х', 0038, 'Мотиви',                                 NULL, NULL, NULL, NULL, NULL,      'Мотиви',         NULL, NULL,  0502);  /* 2006:187 pseudo */
+INSERT INTO T_KIND VALUES ('п', 0039, 'Особено мнение',                         NULL, NULL, NULL, NULL, NULL,      'Особено мнение', NULL, NULL,  0502);
+INSERT INTO T_KIND VALUES ('E', 0040, 'Заповед',                                NULL, NULL, NULL, NULL, 'X6†',     'Заповед',        5007, NULL,  0503);  /* 2010:032 */
+INSERT INTO T_KIND VALUES ('’', 0041, 'Заповед за защита',                      NULL, NULL, NULL, NULL, 'X6†',     'Заповед защита', 5007, NULL,  0500);  /* 2014:255 cp from region */
+INSERT INTO T_KIND VALUES ('-', 0042, 'Постановление',                          NULL, NULL, NULL, NULL, 'X6†',     'Постановление',  5006, NULL,  0503);  /* 2011:256 */
+INSERT INTO T_KIND VALUES ('+', 0043, 'Становище',                              NULL, NULL, NULL, NULL, 'X6†',     'Становище',      5005, NULL,  0503);  /* 2013:336; ?? */
+INSERT INTO T_KIND VALUES ('†', 0045, 'Европейско удостоверение за наследство', NULL, NULL, NULL, NULL, NULL,      'ЕУН',            5010, NULL,  0503);  /* 2017:236 */
+
+/* SURROUND; 2007:248 +h for all; 2018-10-05: LRQ/LPR: xfer codes for all */
+INSERT INTO T_KIND VALUES ('o', 0001, 'Заявление за промяна в обстоятелствата',   's', NULL, 'h', NULL, NULL,      'Промяна',         8080, NULL, 1000);
+INSERT INTO T_KIND VALUES ('€', 0002, 'Молба за издаване на УАС за пререгистр.',  's', NULL, 'h', NULL, NULL,      'М пререгист.',    8006, NULL, 1000);  /* 2007:248 for firm */
+INSERT INTO T_KIND VALUES ('©', 0003, 'Искане за издаване на УАС за пререгистр.', 's', NULL, 'h', NULL, NULL,      'И пререгист.',    8028, NULL, 1000);  /* 2008:113 for firm */
+INSERT INTO T_KIND VALUES ('f', 0004, 'Действие по чл.634В от ТЗ',                's', NULL, 'h', NULL, 'X6†',     'Д-е чл.634В ТЗ',  8085, NULL, 1000);  /* 2009:198 IRQ: +X; 2014:072 LPR/IRQ: +6 */
+INSERT INTO T_KIND VALUES ('ќ', 0005, 'Молба за изменение на мярка',              's', NULL, 'h', NULL, NULL,      'М изм.МНО',       8006, NULL, 1000);
+INSERT INTO T_KIND VALUES ('¤', 0011, 'Молба за правна помощ',                    's', NULL, 'h', NULL, NULL,      'М.правна помощ',  8006, NULL, 1000);  /* 2008:023; 2008:085 URQ: 8 -> 11 */
+INSERT INTO T_KIND VALUES ('°', 0012, 'Молба за изпл. разноски за правна помощ',  's', NULL, 'h', NULL, NULL,      'М.разн.пр.помощ', 8006, NULL, 1000);
+INSERT INTO T_KIND VALUES ('$', 0014, 'Молба за обезпечение',                     's', NULL, 'h', NULL, NULL,      'М.обезпечение',   8006, NULL, 1000);  /* 2011:315 */
+INSERT INTO T_KIND VALUES ('i', 0015, 'Искова молба',                             's', NULL, 'h', NULL, NULL,      'ИМ',              8001, NULL, 1000);      /* 2010:176 */
+INSERT INTO T_KIND VALUES ('/', 0016, 'Молба за кумулация',                       's', NULL, 'h', NULL, NULL,      'М.кумулация',     8006, NULL, 1000);    /* 2011:278 */
+INSERT INTO T_KIND VALUES ('ё', 0040, 'Друг документ',                            's', NULL, 'h', NULL, '3GIWX6NRрPMBUYDLHJKН†‡', 'Др.док', 8085, NULL, 1000);
+
+INSERT INTO T_KIND VALUES (':', 0020, 'Допълнителна искова молба',                's', NULL, 'h', NULL, NULL,      'Доп. ИМ',         8006, NULL, 1000);
+INSERT INTO T_KIND VALUES ('<', 0021, 'Отговор на искова молба',                  's', NULL, 'h', NULL, NULL,      'Отговор ИМ',      8082, NULL, 1000);
+INSERT INTO T_KIND VALUES ('=', 0022, 'Молба за продължаване на срок',            's', NULL, 'h', NULL, NULL,      'М продълж.срок',  8006, NULL, 1000);
+INSERT INTO T_KIND VALUES ('>', 0023, 'Молба за възстановяване на срок',          's', NULL, 'h', NULL, NULL,      'М възстан.срок',  8006, NULL, 1000);
+INSERT INTO T_KIND VALUES ('?', 0024, 'Възражение',                               's', NULL, 'h', NULL, NULL,      'Възражение',      8088, NULL, 1000);
+INSERT INTO T_KIND VALUES ('@', 0025, 'Молба за отмяна на глоба',                 's', NULL, 'h', NULL, NULL,      'М отмяна глоба',  8006, NULL, 1000);
+INSERT INTO T_KIND VALUES ('^', 0026, 'Молба за поправка на ОФГ',                 's', NULL, 'h', NULL, NULL,      'М попр.ОФГ',      8006, NULL, 1000);
+INSERT INTO T_KIND VALUES ('_', 0027, 'Молба за допълване на решение - разноски', 's', NULL, 'h', NULL, NULL,      'М допълв. реш.',  8006, NULL, 1000);
+INSERT INTO T_KIND VALUES ('|', 0028, 'Молба за допълване на решение',            's', NULL, 'h', NULL, NULL,      'М допълв. реш.',  8006, NULL, 1000);
+INSERT INTO T_KIND VALUES ('~', 0029, 'Искане за тълкуване на решение',           's', NULL, 'h', NULL, NULL,      'И тълкув. реш.',  8028, NULL, 1000);
+INSERT INTO T_KIND VALUES ('`', 0030, 'Експертиза/заключение на вещо лице',       's', NULL, 'h', NULL, 'X6†',     'Експерт./закл.',  8083, NULL, 1000);  /* 2013:336 */
+INSERT INTO T_KIND VALUES (',', 0031, 'Молба за издаване на изпълнителен лист',   's', NULL, 'h', NULL, NULL,      'М изпълн. лист',  8006, NULL, 1000);  /* 2013:336 */
+/* 2018-03-19 */
+INSERT INTO T_KIND VALUES ('›', 0032, 'Възражение срещу списък',                  's', NULL, 'h', NULL, NULL,      'Възр.списък',     8088, NULL, 1000);
+INSERT INTO T_KIND VALUES ('•', 0033, 'Възражение срещу частична сметка',         's', NULL, 'h', NULL, NULL,      'Възр.част.с-ка',  8088, NULL, 1000);
+INSERT INTO T_KIND VALUES ('‘', 0034, 'Предложение чл.70,ал.7,изр.1,предл.2 НК',  's', NULL, 'h', NULL, NULL,      'Пред.чл.70,ал.7', 8006, NULL, 1000);
+INSERT INTO T_KIND VALUES ('Э', 0038, 'Отговор на жалба',                         's', NULL, 'h', NULL, NULL,      'Отговор жалба',   8082, NULL, 1000);  /* 2018-06-04 */
+INSERT INTO T_KIND VALUES ('d', 0039, 'Отговор на частна жалба',                  's', NULL, 'h', NULL, NULL,      'Отговор жалба',   8082, NULL, 1000);  /* 2018-06-04 */
+
+/* OUTREG */
+INSERT INTO T_KIND VALUES ('О', 0001, 'Писмо',                                    'o', NULL, NULL, NULL, NULL,     'Писмо',           7001, NULL, 0900);
+INSERT INTO T_KIND VALUES ('№', 0002, 'Удостоверение',                            'o', NULL, NULL, NULL, NULL,     'Удостов.',        NULL, NULL, 0900);  /* 2007:244 */
+INSERT INTO T_KIND VALUES ('Р', 0003, 'Писмо - молба за опр. срок при бавност',   'o', NULL, NULL, NULL, NULL,     'Писмо-МБ',        7002, NULL, 0900);
+INSERT INTO T_KIND VALUES ('С', 0004, 'Писмо - предложение за възобновяване',     'o', NULL, NULL, NULL, NULL,     'Писмо-възобнов.', 7003, NULL, 0900);
+INSERT INTO T_KIND VALUES ('Т', 0005, 'Друг документ',                            'o', NULL, NULL, NULL, NULL,     'Др.док.',         NULL, NULL, 0900);
+INSERT INTO T_KIND VALUES ('(', 0006, 'Изпълнителен лист',                        'o', NULL, NULL, NULL, NULL,     'Изпълн.лист',     NULL, NULL, 0900);  /* 2012:075 */
+/* 2004:285 +X for %жалба%; 2005:047 +ZC3 to all */
+/* 2007:288 +µ§ */
+INSERT INTO T_KIND VALUES ('Х', 0001, 'Въззивна жалба',                           'i', NULL, NULL, NULL, 'X6C3†',  'ВЖ',              6001, NULL, 0800);
+INSERT INTO T_KIND VALUES ('Ь', 0003, 'Въззивна частна жалба',                    'i', NULL, NULL, NULL, 'X6C3†',  'ВЧЖ',             6002, NULL, 0800);
+INSERT INTO T_KIND VALUES ('а', 0004, 'Протест',                                  'i', NULL, NULL, NULL, 'C3',     'Протест',         6003, NULL, 0800);
+INSERT INTO T_KIND VALUES ('в', 0005, 'Частен протест',                           'i', NULL, NULL, NULL, 'C3',     'ЧП',              6004, NULL, 0800);
+INSERT INTO T_KIND VALUES ('д', 0006, 'Касационна жалба',                         'i', NULL, NULL, NULL, 'X6C3†',  'КЖ',              6005, NULL, 0800);
+INSERT INTO T_KIND VALUES ('µ', 0008, 'Касационна жалба (АС)',                    'i', NULL, NULL, NULL, 'X6C3†',  'КЖ',              6006, NULL, 0800);
+INSERT INTO T_KIND VALUES ('н', 0009, 'Касационна частна жалба',                  'i', NULL, NULL, NULL, 'X6C3†',  'КЧЖ',             6007, NULL, 0800);
+INSERT INTO T_KIND VALUES ('§', 0010, 'Касационна частна жалба (АС)',             'i', NULL, NULL, NULL, 'X6C3†',  'КЧЖ',             6008, NULL, 0800);
+INSERT INTO T_KIND VALUES ('о', 0011, 'Касационен протест',                       'i', NULL, NULL, NULL, 'X6C3†',  'КП',              6009, NULL, 0800);
+INSERT INTO T_KIND VALUES ('р', 0012, 'Касационен частен протест',                'i', NULL, NULL, NULL, 'X6C3†',  'КЧП',             6010, NULL, 0800);
+INSERT INTO T_KIND VALUES ('"', 0013, 'Молба (искане) за възобновяване',          'i', NULL, NULL, NULL, 'C3',     'М възобнов.',     6016, NULL, NULL);
+INSERT INTO T_KIND VALUES ('е', 0014, 'Молба за отмяна',                          'i', NULL, NULL, NULL, 'XC3†',   'М отмяна',        6011, NULL, 0800);
+INSERT INTO T_KIND VALUES ('з', 0015, 'Молба за преглед',                         'i', NULL, NULL, NULL, 'XC3†',   'М преглед',       6012, NULL, 0800);
+INSERT INTO T_KIND VALUES ('и', 0020, 'Писмо',                                    'i', NULL, NULL, NULL, 'X6C3†',  'Писмо',           NULL, NULL, 0800);
+INSERT INTO T_KIND VALUES ('к', 0021, 'Друг документ',                            'i', NULL, NULL, NULL, 'X6C3†',  'Др.док.',         NULL, NULL, 0800);
+/* 2008:028 */
+INSERT INTO T_KIND VALUES ('‰', 0014, 'Молба за определяне срок при бавност',     'i', NULL, NULL, NULL, 'X6C3†',  'М бавност',       6013, NULL, 0800);
+INSERT INTO T_KIND VALUES ('¦', 0002, 'Насрещна въззивна жалба',                  'i', NULL, NULL, NULL, 'X6C3†',  'Насрещна ВЖ',     6014, NULL, 0800);
+INSERT INTO T_KIND VALUES ('±', 0007, 'Насрещна касационна жалба',                'i', NULL, NULL, NULL, 'X6C3†',  'Насрещна КЖ',     6015, NULL, 0800);
+/* 2016:246 */
+INSERT INTO T_KIND VALUES ('*', 0030, 'Заявление регистр. в ЕПЕП/достъп до дела', 'i', NULL, 'ЗL', NULL, NULL,     'Заявка ЕЕПСВ',    NULL, NULL, 0800);
+
+/* 2004:006 'Разпореждане' -> 'Резолюция'; 2007:338 rename back */
+INSERT INTO T_KIND VALUES ('Ї', 0001, 'Разпореждане по входящ документ',          'r', NULL, NULL, NULL, NULL,     'Разпор.вх.док.',  5005, NULL, NULL);
+
+INSERT INTO T_KIND VALUES ('Й', 0001, 'Разпореждане по док. от входящ регистър',  'i', NULL, NULL, NULL, NULL,     'Разпор.вх.рег.',  5005, NULL, NULL);
+INSERT INTO T_KIND VALUES ('­', 0002, 'Разпореждане 2 по док.от входящ регистър', 'i', NULL, NULL, NULL, NULL,     'Разпор.вх.рег.2', 5005, NULL, NULL);  /* 2017:156 */
+INSERT INTO T_KIND VALUES ('…', 0003, 'Разпореждане 3 по док.от входящ регистър', 'i', NULL, NULL, NULL, NULL,     'Разпор.вх.рег.3', 5005, NULL, NULL);  /* 2017:156 */
+INSERT INTO T_KIND VALUES ('®', 0005, 'Разпореждане по док. от входящ регистър',  'i', NULL, NULL, NULL, NULL,     'Разпор.вх.рег.',  5005, NULL, NULL);  /* 2011:019 */
+
+/* 2005:343 */
+INSERT INTO T_KIND VALUES ('с', NULL, 'Веществено доказателство', 'P', NULL, NULL, 'cx', 'O', 'Вещ.доказ.', NULL, NULL, NULL);  /* 2009:316 IRQ: +O */
+INSERT INTO T_KIND VALUES ('у', NULL, 'Разпоред. д-вие с веществ. доказателство', 'P', NULL, NULL, NULL, NULL, 'Разп.вещ.доказ.', NULL, NULL, NULL);
+
+/* MOVEMENT */
+INSERT INTO T_KIND VALUES ('c', 0001, 'Предоставяне',  'v', NULL, NULL, NULL, NULL, 'Предоставяне', NULL, NULL, NULL);
+INSERT INTO T_KIND VALUES ('t', 0002, 'Връщане',  'v', NULL, NULL, NULL, NULL, 'Връщане', NULL, NULL, NULL);
+
+INSERT INTO T_RESOLUTION VALUES ('A', 0350, 'Прекратява поради оттегляне на жалбата/протеста');
+INSERT INTO T_RESOLUTION VALUES ('B', 0360, 'Прекратява делото');
+INSERT INTO T_RESOLUTION VALUES ('C', 0010, 'Потвърждава присъдата');
+INSERT INTO T_RESOLUTION VALUES ('D', 0120, 'Потвърждава');
+INSERT INTO T_RESOLUTION VALUES ('E', 0020, 'Оставя в сила присъдата/решението');
+INSERT INTO T_RESOLUTION VALUES ('F', 0030, 'Изменя присъдата');
+INSERT INTO T_RESOLUTION VALUES ('G', 0140, 'Изменя');
+INSERT INTO T_RESOLUTION VALUES ('H', 0130, 'Отменя');
+INSERT INTO T_RESOLUTION VALUES ('I', 0090, 'Отменя присъдата и прекратява делото');
+INSERT INTO T_RESOLUTION VALUES ('J', 0040, 'Отменя присъдата/решението и прекратява производството');
+INSERT INTO T_RESOLUTION VALUES ('K', 0050, 'Отменя присъдата отчасти и връща делото за ново разглеждане');
+INSERT INTO T_RESOLUTION VALUES ('L', 0060, 'Отменя присъдата изцяло и връща делото за ново разглеждане');
+INSERT INTO T_RESOLUTION VALUES ('M', 0070, 'Отменя присъдата и произнася нова осъдителна присъда');
+INSERT INTO T_RESOLUTION VALUES ('N', 0080, 'Отменя присъдата и произнася нова оправдателна присъда');
+INSERT INTO T_RESOLUTION VALUES ('O', 0100, 'Връща за процедура по чл.320/322 НПК');
+INSERT INTO T_RESOLUTION VALUES ('P', 0370, 'Връща като недопустим/недопустима');
+INSERT INTO T_RESOLUTION VALUES ('Q', 0430, 'Прекратява производството по молбата');
+INSERT INTO T_RESOLUTION VALUES ('R', 0390, 'Прекратява производството по жалбата');
+INSERT INTO T_RESOLUTION VALUES ('S', 0420, 'Прекратява поради оттегляне на молбата');
+INSERT INTO T_RESOLUTION VALUES ('T', 0410, 'Прекратява поради оттегляне на жалбата');
+INSERT INTO T_RESOLUTION VALUES ('U', 0400, 'Прекратява поради недопустимост на производството');
+INSERT INTO T_RESOLUTION VALUES ('V', 0180, 'Оставя в сила решението');
+INSERT INTO T_RESOLUTION VALUES ('W', 0150, 'Изменя отчасти');
+INSERT INTO T_RESOLUTION VALUES ('X', 0220, 'Изменя отчасти решението');
+INSERT INTO T_RESOLUTION VALUES ('Y', 0230, 'Изменя отчасти решението с чл.65 ГПК');
+INSERT INTO T_RESOLUTION VALUES ('Z', 0200, 'Изменя отчасти решението и постановява ново');
+INSERT INTO T_RESOLUTION VALUES ('b', 0210, 'Изменя отчасти решението и връща за ново разглеждане');
+INSERT INTO T_RESOLUTION VALUES ('c', 0260, 'Отменя изцяло рeшeниeто');
+INSERT INTO T_RESOLUTION VALUES ('d', 0270, 'Отменя изцяло решението с чл.65 ГПК');
+INSERT INTO T_RESOLUTION VALUES ('e', 0250, 'Отменя решението и постановява ново');
+INSERT INTO T_RESOLUTION VALUES ('f', 0240, 'Отменя решението и връща делото за ново разглеждане');
+INSERT INTO T_RESOLUTION VALUES ('g', 0280, 'Обезсилва решението и връща делото за ново разглеждане');
+INSERT INTO T_RESOLUTION VALUES ('9', 0285, 'Обезсилва');
+INSERT INTO T_RESOLUTION VALUES ('i', 0290, 'Обезсилва решението и прекратява делото');
+INSERT INTO T_RESOLUTION VALUES ('j', NULL, 'Оставя без разглеждане');
+INSERT INTO T_RESOLUTION VALUES ('k', 0190, 'Оставя без уважение');
+INSERT INTO T_RESOLUTION VALUES ('m', 0450, 'Връща за комплектоване');
+INSERT INTO T_RESOLUTION VALUES ('o', 0340, 'Други');
+INSERT INTO T_RESOLUTION VALUES ('v', 0500, 'Връща по други причини');
+INSERT INTO T_RESOLUTION VALUES ('p', 0001, 'Отмeня');
+INSERT INTO T_RESOLUTION VALUES ('q', 0002, 'Отменя с чл.65 ГПК');
+INSERT INTO T_RESOLUTION VALUES ('t', 0003, 'Измeня');
+INSERT INTO T_RESOLUTION VALUES ('u', 0004, 'Изменя с чл.65 ГПК');
+
+INSERT INTO T_COLLEGE VALUES ('p', 0001, 'Наказателно',  'Наказателно');
+INSERT INTO T_COLLEGE VALUES ('c', 0002, 'Гражданско',  'Гражданско');
+INSERT INTO T_COLLEGE VALUES ('t', 0003, 'Търговско',  'Търговско');
+INSERT INTO T_COLLEGE VALUES ('a', 0004, 'Административно', 'Административно');
+INSERT INTO T_COLLEGE VALUES ('d', 0005, 'Фирмено',  'Фирмено');
+
+/* 2008:259 T_COMPOSITION moved to init */
+
+INSERT INTO T_SENDER VALUES ('0000000001', 'B', 'AREA 1.7884', NULL, NULL, NULL);
+INSERT INTO T_SENDER VALUES ('0000000005', 's', 'Върховен административен съд', 001, 2793, NULL);
+
+INSERT INTO T_PUNISHMENT VALUES ('n', 0001, '');
+INSERT INTO T_PUNISHMENT VALUES ('z', 0002, 'Признат за невинен');
+INSERT INTO T_PUNISHMENT VALUES ('C', 0003, 'ЛС до 3 г.-условно');
+INSERT INTO T_PUNISHMENT VALUES ('N', 0004, 'ЛС до 3 г.-ефективно');
+INSERT INTO T_PUNISHMENT VALUES ('3', 0005, 'ЛС 3-5г.');
+INSERT INTO T_PUNISHMENT VALUES ('5', 0006, 'ЛС 5-10г.');
+INSERT INTO T_PUNISHMENT VALUES ('t', 0007, 'ЛС 10-15г.');
+INSERT INTO T_PUNISHMENT VALUES ('f', 0008, 'ЛС 15-20г.');
+INSERT INTO T_PUNISHMENT VALUES ('e', 0009, 'ЛС 20-30г.');
+INSERT INTO T_PUNISHMENT VALUES ('T', 0010, 'ЛС над 30г.');
+INSERT INTO T_PUNISHMENT VALUES ('w', 0011, 'Доживотен затвор');
+INSERT INTO T_PUNISHMENT VALUES ('s', 0012, 'Доживотен затвор без замяна');
+INSERT INTO T_PUNISHMENT VALUES ('W', 0021, 'Поправителен труд');
+INSERT INTO T_PUNISHMENT VALUES ('m', 0022, 'Задължително заселване');
+INSERT INTO T_PUNISHMENT VALUES ('M', 0023, 'Глоба');
+INSERT INTO T_PUNISHMENT VALUES ('P', 0024, 'Обществено порицание');
+INSERT INTO T_PUNISHMENT VALUES ('d', 0025, 'Лишаване от права');
+INSERT INTO T_PUNISHMENT VALUES ('p', 0027, 'Пробация');
+INSERT INTO T_PUNISHMENT VALUES ('K', 0030, 'Конфискация');
+INSERT INTO T_PUNISHMENT VALUES ('o', 0033, 'Други наказания');
+
+INSERT INTO T_RESULT VALUES ('с', 8146, 'С решение за отстраняване на ОФГ', 11002);  /* 2015:070 */
+INSERT INTO T_RESULT VALUES ('т', 0202, 'Поправка на протокол от заседание', 11005);  /* 2015:070 */
+
+/* 2ND PUNISHMENT RESULTS */
+INSERT INTO T_RESULT VALUES ('Г', 8002, 'Потвърждава присъдата', NULL);
+INSERT INTO T_RESULT VALUES ('Д', 8003, 'Изменя присъдата-прилага условно осъждане', NULL);
+INSERT INTO T_RESULT VALUES ('И', 8004, 'Изменя присъдата-отменя условното осъждане', NULL);
+INSERT INTO T_RESULT VALUES ('Й', 8005, 'Изменя присъдата-намалява наказанието', NULL);
+INSERT INTO T_RESULT VALUES ('Л', 8006, 'Изменя присъдата-увеличава наказанието', NULL);
+INSERT INTO T_RESULT VALUES ('П', 8007, 'Изменя присъдата в наказателната част', NULL);
+INSERT INTO T_RESULT VALUES ('У', 8008, 'Изменя присъдата в гражданската част', NULL);
+INSERT INTO T_RESULT VALUES ('р', 8009, 'Изменя присъдата в частта на мотивите', NULL);
+INSERT INTO T_RESULT VALUES ('Ф', 8010, 'Отменя присъдата отчасти-връща за ново разглеждане', NULL);
+INSERT INTO T_RESULT VALUES ('Ц', 8011, 'Отменя присъдата изцяло-връща за ново разглеждане', NULL);
+INSERT INTO T_RESULT VALUES ('Ч', 8012, 'Отменя присъдата изцяло-произнася нова присъда', NULL);
+/* 2011:151 */
+INSERT INTO T_RESULT VALUES ('Ї', 8014, 'Отменя присъдата изцяло-връща на прокуратурата', NULL);
+INSERT INTO T_RESULT VALUES ('ї', 8112, 'Отменя изцяло решението и връща за ново разглеждане', NULL);
+INSERT INTO T_RESULT VALUES ('ѕ', 8114, 'Отменя отчасти решението и връща за ново разглеждане', NULL);
+
+/* 2ND OTHER RESULTS; 2003:350 +Ґ */
+INSERT INTO T_RESULT VALUES ('C', 8110, 'Потвърждава решението', NULL);    /* 2011:160 renamed */
+INSERT INTO T_RESULT VALUES ('E', 8111, 'Отменя отчасти решението', NULL);  /* 2011:160 renamed */
+INSERT INTO T_RESULT VALUES ('Ґ', 8115, 'Изменя решението', NULL);
+INSERT INTO T_RESULT VALUES ('G', 8116, 'Отменя изцяло решението', NULL);
+INSERT INTO T_RESULT VALUES ('H', 8117, 'Обезсилва решението', NULL);
+
+/* 2ND COMMON RESULTS */
+INSERT INTO T_RESULT VALUES ('Ш', 9999, 'Прекратява делото', NULL);  /* 2011:173 8121 -> 9999 */
+
+/* 2ND DECISION RESULTS */
+INSERT INTO T_RESULT VALUES ('М', 8124, 'Отменя решението', NULL);
+
+/* INCONSISTENCE */
+INSERT INTO T_RESULT VALUES ('Q', 0100, 'С резултат от събрание на кредиторите', 11003);
+INSERT INTO T_RESULT VALUES ('Ђ', 0008, 'С произнасяне по възражения', 11002);
+
+/* 2004:309 COMULATION */
+INSERT INTO T_RESULT VALUES ('ґ', 8145, 'С определение по кумулация', NULL);
+
+/* FIRM RESULTS */
+INSERT INTO T_RESULT VALUES ('F', 0001, 'С рeшeниe (ф.д.)', NULL);
+INSERT INTO T_RESULT VALUES ('K', 0002, 'Обявено за рeшaвaнe (ф.д.)', NULL);
+INSERT INTO T_RESULT VALUES ('A', 0003, 'Прекратено производство по регистрация', NULL);
+INSERT INTO T_RESULT VALUES ('V', 0004, 'Прекратено производство по промяна', NULL);
+INSERT INTO T_RESULT VALUES ('a', 0005, 'Изпратено по подсъдност след регистрация', NULL);
+/* 2005:049 */
+INSERT INTO T_RESULT VALUES ('Ё', 0006, 'С определение, подлежащо на вписване в ТР', NULL);
+INSERT INTO T_RESULT VALUES ('ё', 0007, 'С разпореждане, подлежащо на вписване в ТР', NULL);
+
+/* FIRM DECISION RESULTS (replacement for COMPANY DECISIONS) */
+INSERT INTO T_RESULT VALUES ('я', 0100, 'Регистрация', NULL);  /* 2013:112 was: "на фирма" */
+INSERT INTO T_RESULT VALUES ('г', 0200, 'Регистрация на клон', NULL);
+INSERT INTO T_RESULT VALUES ('2', 0250, 'Регистрация след отказ', NULL);
+INSERT INTO T_RESULT VALUES ('ж', 0300, 'Промяна в обстоятелствата', NULL);
+INSERT INTO T_RESULT VALUES ('й', 0410, 'Прекратяване по решение на съда', NULL);
+INSERT INTO T_RESULT VALUES ('л', 0420, 'Прекратяване поради смърт на собственик', NULL);
+INSERT INTO T_RESULT VALUES ('3', 0425, 'Поемане по наследство', NULL);
+INSERT INTO T_RESULT VALUES ('п', 0430, 'Прекратяване поради преобразуване в друг вид', NULL);
+INSERT INTO T_RESULT VALUES ('ф', 0440, 'Прекратяване поради разделяне на дружества', NULL);
+INSERT INTO T_RESULT VALUES ('ц', 0450, 'Прекратяване поради вливане в друго дружество', NULL);
+INSERT INTO T_RESULT VALUES ('ч', 0460, 'Прекратяване поради сливане с друго дружество', NULL);
+INSERT INTO T_RESULT VALUES ('1', 0470, 'Прекратяване поради прехвърляне на предприятие', NULL);
+/*INSERT INTO T_RESULT VALUES ('2', 0480, 'Прекратяване по решение на общото събрание', NULL);*/
+INSERT INTO T_RESULT VALUES ('ш', 0490, 'Прехвърляне на предприятие', NULL);
+INSERT INTO T_RESULT VALUES ('щ', 0500, 'Прекратяване и ликвидация', NULL);
+INSERT INTO T_RESULT VALUES ('ъ', 0600, 'Заличаване', NULL);
+INSERT INTO T_RESULT VALUES ('ь', 0700, 'Отказ за регистрация', NULL);
+INSERT INTO T_RESULT VALUES ('ю', 0800, 'Отказ за промяна в обстоятелствата', NULL);
+INSERT INTO T_RESULT VALUES ('м', 0540, 'Прекратяване произв.по ликвидация и възобнов.на дейността', NULL);
+INSERT INTO T_RESULT VALUES ('о', 0550, 'Прекратяване произв.по ликвидация поради откр.произв.несъст.', NULL);
+INSERT INTO T_RESULT VALUES ('Ј', 0560, 'Изпратено по подсъдност след регистрация', NULL);  /* 2006:068 */
+
+INSERT INTO T_RESULT VALUES ('В', 9001, 'С решение по I-ва фаза на делото', NULL);
+INSERT INTO T_RESULT VALUES ('4', 9991, 'С разпореждане, приключващо делото', 11002);
+INSERT INTO T_RESULT VALUES ('5', 8125, 'С готово разпореждане', NULL);  /* 2012:034 was 0003 */
+INSERT INTO T_RESULT VALUES ('6', 8126, 'С готов протокол', NULL);  /* 2012:034 was 0004 */
+INSERT INTO T_RESULT VALUES ('7', 0001, 'Указва', NULL);
+INSERT INTO T_RESULT VALUES ('8', 0002, 'Задължава', NULL);
+INSERT INTO T_RESULT VALUES ('9', 9992, 'С резултат от пр-во по несъстоятелност', 11002);
+INSERT INTO T_RESULT VALUES ('Ы', 0050, 'Отложено с прил.чл.65 ГПК', 11005);
+
+INSERT INTO T_RESULT VALUES ('r', 8110, 'Прекратено за доразследване от з.з.', NULL);  /* 2007:016 was чл.241; 2013:063 was по чл.248 НПК */
+INSERT INTO T_RESULT VALUES ('B', 0101, 'Прекратено за доразследване от о.с.з.', NULL);  /* 2007:016 was чл.287; 2013:063 was по чл.249 НПК */
+INSERT INTO T_RESULT VALUES ('Љ', 0101, 'С присъда и споразумение', NULL);
+INSERT INTO T_RESULT VALUES ('P', 9000, 'Прекратено по спогодба', 11002);  /* 2007:031 per-court */
+INSERT INTO T_RESULT VALUES ('b', 0002, 'С готово споразумение', NULL);    /* 2010:068 per-court */
+
+/* 2006:332 per-court */
+INSERT INTO T_UCN_TYPE VALUES ('L', 0003, 'Подчинени РС', 's');
+/* 2006:349 area-only */
+INSERT INTO T_UCN_TYPE VALUES ('x', 0012, 'Частен съд.изп.', 's');
+INSERT INTO T_UCN_TYPE VALUES ('X', 0012, 'Частен съд.изп.', 's');
+INSERT INTO T_UCN_TYPE VALUES ('Y', 0014, 'Нотариус', 's');  /* 2011:147 */
+/* 2006:278; 2008:203 common => area */
+INSERT INTO T_UCN_TYPE VALUES ('V', 0015, 'Пробац. служба', 's');
+INSERT INTO T_UCN_TYPE VALUES ('R', 0016, 'Кредитни инст.', 's');
+
+INSERT INTO T_POST VALUES ('j', 0004, 'Съдия');
+INSERT INTO T_POST VALUES ('x', 0018, 'Разширен състав');
+INSERT INTO T_POST VALUES ('d', 0024, 'За дела по несъстоятелност/ликвидация');
+INSERT INTO T_POST VALUES ('Z', 0122, 'Касационни производства по ЗСПЗЗ (неакт)');
+INSERT INTO T_POST VALUES ('M', 0126, 'Кумулация');  /* 2017:262 */
+
+/* 2011:133 T_APPEAL_TIME removed */
+
+INSERT INTO T_APPEAL_RESOLUTION VALUES ('A', 0010, 'ABQRSTU',  'Прекратява');
+INSERT INTO T_APPEAL_RESOLUTION VALUES ('C', 0020, 'CDEV',  'Потвърждава/оставя в сила');
+INSERT INTO T_APPEAL_RESOLUTION VALUES ('F', 0030, 'FGWXZbt',  'Изменя');
+INSERT INTO T_APPEAL_RESOLUTION VALUES ('u', 0040, 'uY',  'Изменя с чл.65 ГПК');
+INSERT INTO T_APPEAL_RESOLUTION VALUES ('М', 0050, 'MNe',  'Отменя и постановява/произнася');
+INSERT INTO T_APPEAL_RESOLUTION VALUES ('K', 0060, 'KLf',  'Отменя и връща за ново разглеждане');
+INSERT INTO T_APPEAL_RESOLUTION VALUES ('H', 0070, 'HIJcp',  'Отменя - други');
+INSERT INTO T_APPEAL_RESOLUTION VALUES ('q', 0080, 'qd',  'Отменя с чл.65 ГПК');
+INSERT INTO T_APPEAL_RESOLUTION VALUES ('g', 0090, 'gi9',  'Обезсилва');
+INSERT INTO T_APPEAL_RESOLUTION VALUES ('O', 0100, 'OPmv',  'Връща');
+INSERT INTO T_APPEAL_RESOLUTION VALUES ('j', 0105, 'j',    'Оставя без разглеждане');
+INSERT INTO T_APPEAL_RESOLUTION VALUES ('k', 0110, 'k',    'Оставя без уважение');
+INSERT INTO T_APPEAL_RESOLUTION VALUES ('o', 0990, 'o',    'Други');  /* 2010:039 120 -> 990 */
+
+/* 2002:091; 2002:092 Restructured; 2002:099 Completed; 2002:311 +j */
+INSERT INTO T_CAL_INTERVAL VALUES ('f', 0001, '0', NULL,  -12, 'c', 'Насрочено');
+INSERT INTO T_CAL_INTERVAL VALUES ('h', 0002, '4',    7,  -11, 'c', 'За изпълнение "Без движение"');
+INSERT INTO T_CAL_INTERVAL VALUES ('s', 0003, '4',    7,  -11, 'c', 'За обжалване "Спряно"');
+INSERT INTO T_CAL_INTERVAL VALUES ('c', 0004, '4',    7,  -11, 'c', 'За обжалване "Прекратено"');
+INSERT INTO T_CAL_INTERVAL VALUES ('d', 0005, '4',    7,  -11, 'c', 'За обжалване "Определение прикл. делото"');
+INSERT INTO T_CAL_INTERVAL VALUES ('y', 0006, '4',   14,  -11, 'c', 'За обжалване "Решение" I-ва инстанция');
+INSERT INTO T_CAL_INTERVAL VALUES ('p', 0007, '6',    1,  -11, 'c', 'За обжалване "Решение" въззивни');
+INSERT INTO T_CAL_INTERVAL VALUES ('д', 0008, '5',    2,  -11, 'c', 'ВЖ за отговор');
+INSERT INTO T_CAL_INTERVAL VALUES ('а', 0009, '4',    7,  -11, 'c', 'За изпълнение "В срок-без движение"');
+INSERT INTO T_CAL_INTERVAL VALUES ('Х', 0010, '4',    7,  -11, 'c', 'За обжалване "Върнат като просрочен"');
+INSERT INTO T_CAL_INTERVAL VALUES ('Ь', 0011, '4',    7,  -11, 'c', 'За обжалване "Върнат като нередовен"');
+INSERT INTO T_CAL_INTERVAL VALUES ('Ю', 0012, '4',    7,  -11, 'c', 'За обжалване "Върнат като недопустим"');
+INSERT INTO T_CAL_INTERVAL VALUES ('Д', 0013, '5',    1,  -11, 'c', 'ЧЖ за отговор');
+INSERT INTO T_CAL_INTERVAL VALUES ('Г', 0014, '6',    1,  -11, 'c', 'КЖ за отговор');
+INSERT INTO T_CAL_INTERVAL VALUES ('A', 0016, '4',    7,  -11, 'c', 'За обжалване "Прекратено" по регистрация');
+INSERT INTO T_CAL_INTERVAL VALUES ('V', 0017, '4',    7,  -11, 'c', 'За обжалване "Прекратено" по промяна');
+INSERT INTO T_CAL_INTERVAL VALUES ('ь', 0018, '4',   14,  -11, 'c', 'За обжалване "Решение" отказ за регистр.');
+INSERT INTO T_CAL_INTERVAL VALUES ('ю', 0019, '4',   14,  -11, 'c', 'За обжалване "Решение" отказ за промяна');
+INSERT INTO T_CAL_INTERVAL VALUES ('S', 0020, '6',    1,  -11, 'c', 'Спрени');
+/* 2002:311 Punishment-specific */
+INSERT INTO T_CAL_INTERVAL VALUES ('j', 0021, '4',   15,  -11, 'c', 'За обжалване "Присъда"');
+INSERT INTO T_CAL_INTERVAL VALUES ('В', 0022, '4',   14,  -11, 'c', 'ВЖ за възраж. "В срок-изпратени преписи"');
+INSERT INTO T_CAL_INTERVAL VALUES ('Б', 0023, '4',    7,  -11, 'c', 'ЧЖ за възраж. "В срок-изпратени преписи"');
+INSERT INTO T_CAL_INTERVAL VALUES ('Е', 0024, '4',   15,  -11, 'c', 'За обжалване "Опред.прикл.делото чл.341"');
+INSERT INTO T_CAL_INTERVAL VALUES ('Ж', 0025, '4',    3,  -11, 'c', 'За обжалване "Опред.прикл.делото чл.65"');
+INSERT INTO T_CAL_INTERVAL VALUES ('З', 0007, '4',    7,  -11, 'c', 'За обжалване "Решение" за екстрадиция');
+/* 2003:059 */
+INSERT INTO T_CAL_INTERVAL VALUES ('ч', 0026, '4',   30, NULL, 'j', 'Първоначална регистрация');
+INSERT INTO T_CAL_INTERVAL VALUES ('o', 0027, '4',   30, NULL, 'j', 'Промяна');
+INSERT INTO T_CAL_INTERVAL VALUES ('Ы', 0028, '2',    3, NULL, 's', 'Изготвяне на протокол от О.С.З');
+INSERT INTO T_CAL_INTERVAL VALUES ('D', 0029, '6',    1, NULL, 'j', 'Изготвяне на решение');
+INSERT INTO T_CAL_INTERVAL VALUES ('W', 0030, '4',   60, NULL, 'j', 'Изготвяне на мотиви към присъда');  /* 2018-06-04: 30 -> 60 */
+/* 2006:179 */
+INSERT INTO T_CAL_INTERVAL VALUES ('ф', 0031, '6',    2, NULL, 'c', 'За служебно произнасяне от съда');
+/* 2009:215 */
+INSERT INTO T_CAL_INTERVAL VALUES ('R', 0032, '6',    1,  -11, 'c', 'За отговор на искова молба');
+INSERT INTO T_CAL_INTERVAL VALUES ('Q', 0033, '5',    3,  -11, 'j', 'За насрочване на дело БП');
+INSERT INTO T_CAL_INTERVAL VALUES ('O', 0034, '5',    1,  -11, 'c', 'Насрещна ВЖ за отговор');
+INSERT INTO T_CAL_INTERVAL VALUES ('J', 0035, '5',    1,  -11, 'c', 'За отговор на молба за отмяна');
+INSERT INTO T_CAL_INTERVAL VALUES ('K', 0036, '5',    2,  -11, 'c', 'Насрещна КЖ за отговор');
+INSERT INTO T_CAL_INTERVAL VALUES ('Џ', 0040, '6',    3, NULL, 'c', 'За изпълнение - Върнато чл.369, ал.1 НПК');  /* 2013:235 */
+/*INSERT INTO T_CAL_INTERVAL VALUES ('џ', 0041, '6',  1, NULL, 'c', 'За изпълнение - Върнато чл.369, ал.3 НПК');*/  /* 2013:235 */
+
+INSERT INTO T_SUM_TYPE VALUES ('w', 0005, 'Гаранция', 'Гаранция', 'd', NULL, NULL);
+
+COMMIT WORK;
+
+INSERT INTO T_MAIL_TYPE VALUES ('p', 0001, 'Наказателни дела', 'НД');
+INSERT INTO T_MAIL_TYPE VALUES ('c', 0002, 'Граждански дела', 'ГД');
+INSERT INTO T_MAIL_TYPE VALUES ('t', 0003, 'Търговски дела', 'ТД');
+INSERT INTO T_MAIL_TYPE VALUES ('a', 0004, 'Административни дела', 'АдмД');
+INSERT INTO T_MAIL_TYPE VALUES ('d', 0005, 'Фирмени дела', 'ФД');
+INSERT INTO T_MAIL_TYPE VALUES ('W', 0006, 'Призовки', 'Приз.');
+INSERT INTO T_MAIL_TYPE VALUES ('A', 0008, 'Администрация', 'Адм.');
+
+DELETE FROM T_OLD_SUBJECT_RANGE;
+
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (0100, 'p', 0100, 0199, 'Виж T_SUBJECT (0100, ''p'')', 'b', NULL);
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (0200, 'p', 0200, 0299, 'Виж T_SUBJECT (0200, ''p'')', 'b', NULL);
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (0500, 'p', 0500, 0599, 'Виж T_SUBJECT (0500, ''p'')', 'b', NULL);
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (0600, 'p', 0600, 0699, 'Виж T_SUBJECT (0600, ''p'')', 'b', NULL);
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (0700, 'p', 0700, 0799, 'Виж T_SUBJECT (0700, ''p'')', 'b', NULL);
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (0800, 'p', 0800, 0899, 'Виж T_SUBJECT (0800, ''p'')', 'b', NULL);
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (0900, 'p', 0900, 0909, 'Виж T_SUBJECT (0900, ''p'')', 'b', NULL);
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (0910, 'p', 0910, 0919, 'Виж T_SUBJECT (0910, ''p'')', 'b', NULL);
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (1000, 'p', 1000, 1099, 'Виж T_SUBJECT (1000, ''p'')', 'b', NULL);
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (1100, 'p', 1100, 1199, 'Виж T_SUBJECT (1100, ''p'')', 'b', NULL);
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (1200, 'p', 1200, 1299, 'Виж T_SUBJECT (1200, ''p'')', 'b', NULL);
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (1300, 'p', 1300, 1398, 'Виж T_SUBJECT (1300, ''p'')', 'b', NULL);
+/*INSERT INTO T_OLD_SUBJECT_RANGE VALUES (1398, 'p', 1398, 1398, 'Иззети дела от районните съдилища По чл. .......', 'b', NULL); */
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (1399, 'p', 0100, 1398, 'ОБЩО ДЕЛА НОХ от 0100 - 1300', 'b', NULL);
+/* 2004:155 +1850 comout 1990 */
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (1850, 'p', 1850, 1899, 'Други дела', 'b', NULL);
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (1900, 'p', 1900, 1989, 'НЧД от досъдебното производство', 'bR', NULL);
+/*INSERT INTO T_OLD_SUBJECT_RANGE VALUES (1990, 'p', 1990, 1995, 'НЧД - други', 'bR', NULL); */
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (2000, 'p', 2000, 2099, 'Административни дела = общо', 'b', NULL);
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (9999, 'p', 0100, 9999, 'Общо от ш. 0100 до ш. 9999 вкл.', 'b', NULL);
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (0100, 'c', 0100, 0199, 'Виж T_SUBJECT (0100, ''c'')', 'b', NULL);
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (0200, 'c', 0200, 0299, 'Виж T_SUBJECT (0200, ''c'')', 'b', NULL);
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (0300, 'c', 0300, 0399, 'Виж T_SUBJECT (0300, ''c'')', 'b', NULL);
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (0400, 'c', 0400, 0499, 'Виж T_SUBJECT (0400, ''c'')', 'b', NULL);
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (0500, 'c', 0500, 0599, 'Виж T_SUBJECT (0500, ''c'')', 'b', NULL);
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (0600, 'c', 0600, 0699, 'Виж T_SUBJECT (0600, ''c'')', 'b', NULL);
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (0700, 'c', 0700, 0799, 'Виж T_SUBJECT (0700, ''c'')', 'b', NULL);
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (0800, 'c', 0800, 0898, 'Виж T_SUBJECT (0800, ''c'')', 'b', NULL);
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (0899, 'c', 0100, 0898, 'Общо (от ш. 0100 до ш. 0800 вкл.)', 'b', NULL);
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (1000, 'c', 1000, 1098, 'Фирмени дела', 'b', NULL);
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (1099, 'c', 0100, 1098, 'ВСИЧКО (от ш. 0100 до ш. 1000 вкл.)', 'b', NULL);
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (0200, 't', 0200, 0299, 'Виж T_SUBJECT (0200, ''t'')', 'b', NULL);
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (0300, 't', 0300, 0399, 'Виж T_SUBJECT (0300, ''t'')', 'b', NULL);
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (0400, 't', 0400, 0499, 'Виж T_SUBJECT (0400, ''t'')', 'b', NULL);
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (0500, 't', 0500, 0599, 'Виж T_SUBJECT (0500, ''t'')', 'b', NULL);
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (0600, 't', 0600, 0699, 'Виж T_SUBJECT (0600, ''t'')', 'b', NULL);
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (0700, 't', 0700, 0799, 'Виж T_SUBJECT (0700, ''t'')', 'b', NULL);
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (0800, 't', 0800, 0898, 'Виж T_SUBJECT (0800, ''t'')', 'b', NULL);
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (0899, 't', 0100, 0898, 'Общо (от ш. 0100 до ш. 0800 вкл.)', 'b', NULL);
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (1000, 't', 1000, 1098, 'Фирмени дела', 'b', NULL);
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (1099, 't', 0100, 1098, 'ВСИЧКО (от ш. 0100 до ш. 1000 вкл.)', 'b', NULL);
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (0900, 'a', 0900, 0999, 'Виж T_SUBJECT (0900, ''a'')', 'b', NULL);
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (1000, 'd', 1000, 1998, 'Фирмени дела', 'b', NULL);
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (1099, 'd', 0100, 1998, 'ВСИЧКО (от ш. 0100 до ш. 1000 вкл.)', 'b', NULL);
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (1400, 'd', 1400, 1499, 'Виж T_SUBJECT (1400, ''d'')', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (1500, 'd', 1500, 1599, 'Виж T_SUBJECT (1500, ''d'')', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT_RANGE VALUES (1900, 'd', 1900, 1999, 'Виж T_SUBJECT (1900, ''d'')', NULL, NULL);
+
+/* 2016:088 NEW RANGES */
+INSERT INTO T_SUBJECT_RANGE VALUES (010000, 'p', 010000, 019900, 'Н 100-199', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (020000, 'p', 020000, 029900, 'Н 200-299', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (030000, 'p', 030000, 039900, 'Н 300-399', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (040000, 'p', 040000, 049900, 'Н 400-499', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (050000, 'p', 050000, 059900, 'Н 500-599', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (060000, 'p', 060000, 069900, 'Н 600-699', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (070000, 'p', 070000, 079900, 'Н 700-799', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (080000, 'p', 080000, 083400, 'Н 800-899', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (083500, 'p', 083450, 089900, 'Н 800А-899А', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (090000, 'p', 090000, 099900, 'Н 900-999', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (099900, 'p', 099950, 099950, 'Н 900А-999А', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (100000, 'p', 100000, 109900, 'Н 1000-1099', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (110000, 'p', 110000, 119900, 'Н 1100-1199', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (120000, 'p', 120000, 129900, 'Н 1200-1299', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (130000, 'p', 130000, 139900, 'Н 1300-1399', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (140000, 'p', 140000, 149900, 'Н 1400-1499', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (150000, 'p', 150000, 159900, 'Н 1500-1599', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (160000, 'p', 160000, 169800, 'Н 1600-1699', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (170000, 'p', 170000, 179800, 'Н 1700-1799', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (200000, 'p', 200000, 299900, 'Н 2000-2999', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (300000, 'p', 300000, 399800, 'Н 3000-3999', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (400000, 'p', 400000, 499700, 'Н 4000-4999', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (5000000, 'p', 5000000, 5169900, 'Н 50000-51699', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (600000, 'p', 600000, 699900, 'Н 6000-6999', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (700000, 'p', 700000, 799900, 'Н 7000-7999', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (800000, 'p', 800000, 899900, 'Н 8000-8999', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (9000000, 'p', 9000000, 9499900, 'Н 90000-94999', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (010000, 'c', 010000, 019900, 'Г 100-199', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (010000, 't', 010000, 019900, 'Т 100-199', 'b', NULL);  /* ext */
+INSERT INTO T_SUBJECT_RANGE VALUES (020000, 'c', 020000, 029900, 'Г 200-299', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (020000, 't', 020000, 029900, 'Т 200-299', 'b', NULL);  /* ext */
+INSERT INTO T_SUBJECT_RANGE VALUES (030000, 'c', 030000, 039900, 'Г 300-399', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (030000, 't', 030000, 039900, 'Т 300-399', 'b', NULL);  /* ext */
+INSERT INTO T_SUBJECT_RANGE VALUES (040000, 'c', 040000, 049900, 'Г 400-499', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (040000, 't', 040000, 049900, 'Т 400-499', 'b', NULL);  /* ext */
+INSERT INTO T_SUBJECT_RANGE VALUES (050000, 'c', 050000, 059900, 'Г 500-599', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (060000, 'c', 060000, 069900, 'Г 600-699', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (070000, 'c', 070000, 079900, 'Г 700-799', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (080000, 'c', 080000, 089900, 'Г 800-899', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (090000, 'c', 090000, 099900, 'Г 900-999', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (090000, 't', 090000, 099900, 'Т 900-999', 'b', NULL);  /* ext */
+INSERT INTO T_SUBJECT_RANGE VALUES (100000, 'c', 100000, 109900, 'Г 1000-1099', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (100000, 't', 100000, 109900, 'Т 1000-1099', 'b', NULL);  /* ext */
+INSERT INTO T_SUBJECT_RANGE VALUES (110000, 'c', 110000, 119900, 'Г 1100-1199', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (110000, 't', 110000, 119900, 'Т 1100-1199', 'b', NULL);  /* ext */
+INSERT INTO T_SUBJECT_RANGE VALUES (120000, 'c', 120000, 129900, 'Г 1200-1299', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (130000, 'c', 130000, 139900, 'Г 1300-1399', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (140000, 'c', 140000, 149900, 'Г 1400-1499', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (150000, 'c', 150000, 159900, 'Г 1500-1599', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (160000, 'c', 160000, 169900, 'Г 1600-1699', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (170000, 'c', 170000, 179900, 'Г 1700-1799', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (170000, 't', 170000, 179900, 'Т 1700-1799', 'b', NULL);  /* ext */
+INSERT INTO T_SUBJECT_RANGE VALUES (210000, 't', 210000, 299900, 'Т 2100-2199', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (210000, 'c', 210000, 299900, 'Г 2100-2199', 'b', NULL);  /* ext */
+INSERT INTO T_SUBJECT_RANGE VALUES (2100000, 't', 2100000, 2209900, 'Т 21000-22099', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (2100000, 'c', 2100000, 2209900, 'Т 21000-22099', 'b', NULL);  /* ext */
+INSERT INTO T_SUBJECT_RANGE VALUES (2210000, 't', 2210000, 2219900, 'Т 22100-22199', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (2210000, 'c', 2210000, 2219900, 'Г 22100-22199', 'b', NULL);  /* ext */
+INSERT INTO T_SUBJECT_RANGE VALUES (2220000, 'd', 2210000, 2279900, 'Т 22200-22799', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (2280000, 't', 2280000, 2289900, 'Т 22800-22899', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (2290000, 'd', 2290000, 2299900, 'Ф 22900-22999', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (2290000, 't', 2290000, 2299900, 'Т 22900-22999', 'b', NULL);  /* ext */
+INSERT INTO T_SUBJECT_RANGE VALUES (080000, 'a', 080000, 089900, 'А 800-899', 'b', NULL);
+/* 2016:096 -> X 3 */
+INSERT INTO T_SUBJECT_RANGE VALUES (050000, 't', 050000, 059900, 'Т 500-599', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (060000, 't', 060000, 069900, 'Т 600-699', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (070000, 't', 070000, 079900, 'Т 700-799', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (080000, 't', 080000, 089900, 'Т 800-899', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (120000, 't', 120000, 129900, 'Т 1200-1299', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (130000, 't', 130000, 139900, 'Т 1300-1399', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (140000, 't', 140000, 149900, 'Т 1400-1499', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (150000, 't', 150000, 159900, 'Т 1500-1599', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (160000, 't', 160000, 169900, 'Т 1600-1699', 'b', NULL);
+/* 2016:181 */
+INSERT INTO T_SUBJECT_RANGE VALUES (169900, 'p', 10000, 169800, 'Всичко OX', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (179900, 'p', 170000, 179800, 'Всичко ЧX', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (399900, 'p', 200000, 399800, 'Всичко ЧНД', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (499800, 'p', 400000, 499700, 'Всичко AНД', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (499900, 'p', 10000, 499800, 'Общо дела', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (2399900, 'c', 10000, 2399800, 'Всичко (от ш. 100 до ш. 22900 вкл.)', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (2399900, 't', 10000, 2399800, 'Всичко (от ш. 100 до ш. 22900 вкл.)', 'b', NULL);
+INSERT INTO T_SUBJECT_RANGE VALUES (2300000, 'd', 2300000, 2399900, 'Ф 23000-23999', 'b', NULL);    /* 2016:278 */
+INSERT INTO T_SUBJECT_RANGE VALUES (2410000, 't', 2410000, 2420000, 'Т 24100-24200', NULL, NULL);  /* 2017:219 */
+
+COMMIT WORK;
+SELECT * FROM T_SUBJECT S WHERE (SELECT COUNT(F_TYPE) FROM T_SUBJECT_RANGE R
+  WHERE R.F_TYPE = S.F_TYPE AND S.F_SUBJECT BETWEEN R.F_LOW_SUBJECT_RANGE AND R.F_HIGH_SUBJECT_RANGE) = 0;
+UPDATE T_SUBJECT S SET F_SUBJECT = NULL WHERE (SELECT COUNT(F_TYPE) FROM T_SUBJECT_RANGE R
+  WHERE R.F_TYPE = S.F_TYPE AND S.F_SUBJECT BETWEEN R.F_LOW_SUBJECT_RANGE AND R.F_HIGH_SUBJECT_RANGE) = 0;
+
+/* 2009:145 */
+INSERT INTO T_CONNECT_KIND VALUES ('Щ', 0010, 'Съдебно заседание', NULL, 'Съдебно зас-е');
+INSERT INTO T_CONNECT_KIND VALUES ('Ъ', 0015, 'Първо заседание', NULL, 'I-во зас-е');
+INSERT INTO T_CONNECT_KIND VALUES ('”', 0017, 'Разпоредително заседание', NULL, 'Разпор. зас-е');
+INSERT INTO T_CONNECT_KIND VALUES ('p', 0020, 'Предварително изслушване', NULL, 'Предв. изсл-е');
+INSERT INTO T_CONNECT_KIND VALUES ('Д', 0025, 'Второ заседание', NULL, 'II-ро зас-е');
+INSERT INTO T_CONNECT_KIND VALUES ('У', 0030, 'Друго заседание', NULL, 'Друго зас-е');
+INSERT INTO T_CONNECT_KIND VALUES ('Л', 0035, 'Събрание на кредиторите', NULL, 'С-е кредиторите');
+INSERT INTO T_CONNECT_KIND VALUES ('И', 0040, 'Закрито/разпоредително заседание', NULL, 'ЗЗ/РЗ');
+INSERT INTO T_CONNECT_KIND VALUES ('Ю', 0045, 'Резолюция извън заседание', NULL, 'Резолюция');
+
+INSERT INTO T_CONNECT_KIND VALUES ('Ш', 0050, 'Решение', NULL, 'Решение');
+INSERT INTO T_CONNECT_KIND VALUES ('R', 0052, 'Решение (второ)', NULL, 'Решение (2)');
+INSERT INTO T_CONNECT_KIND VALUES ('ъ', 0055, 'Присъда', NULL, 'Присъда');
+INSERT INTO T_CONNECT_KIND VALUES ('л', 0060, 'Определение', NULL, 'Определение');
+INSERT INTO T_CONNECT_KIND VALUES ('М', 0065, 'Споразумение', NULL, 'Споразумение');
+INSERT INTO T_CONNECT_KIND VALUES ('м', 0070, 'Разпореждане', NULL, 'Разпореждане');
+INSERT INTO T_CONNECT_KIND VALUES ('Ы', 0075, 'Протокол', NULL, 'Протокол');
+INSERT INTO T_CONNECT_KIND VALUES ('-', 0080, 'Постановление', NULL, 'Постановление');
+
+INSERT INTO T_CONNECT_KIND VALUES ('c', 0010, 'Предоставяне', NULL, 'Предоставяне');
+INSERT INTO T_CONNECT_KIND VALUES ('t', 0020, 'Връщане', NULL, 'Връщане');
+
+INSERT INTO T_CONNECT_KIND VALUES ('с', 0150, 'Веществено доказателство', NULL, 'Вещ.док-во');
+INSERT INTO T_CONNECT_KIND VALUES ('у', 0155, 'Разпоред. д-вие с веществ. доказателство', NULL, 'Разп.вещ.доказ.');
+
+/* 2009:206 */
+INSERT INTO T_SENDER
+(
+  F_UCN_TYPE,
+  F_UCN,
+  F_NAME,
+  F_COURT,
+  F_EISPP
+)
+SELECT
+  'K',
+  '0000000' || CAST (F_COURT AS NUMERIC(3, 0)),
+  F_NAME,
+  F_COURT,
+  F_EISPP
+FROM T_COURT WHERE F_COURT_TYPE = '3';
+
+INSERT INTO T_SENDER
+(
+  F_UCN_TYPE,
+  F_UCN,
+  F_NAME,
+  F_COURT,
+  F_EISPP
+)
+SELECT
+  'k',
+  '0000000' || CAST (F_COURT AS NUMERIC(3, 0)),
+  F_NAME,
+  F_COURT,
+  F_EISPP
+FROM T_COURT WHERE F_COURT_TYPE = '7';
+
+/* 2009:206 */
+INSERT INTO T_SENDER VALUES ('0000000001', 'K', 'Върховен административен съд', 001, 2793, NULL);
+INSERT INTO T_SENDER VALUES ('0000000002', 'K', 'Върховен касационен съд', 002, 2071, NULL);
+
+INSERT INTO T_SECTION VALUES ('g', 'eispp');  /* 2012:299 */
+
+/* 2006:115 MRQ/LRQ: IhicufoJ: addr n->y; 2006:315 LRQ: CBHEabzu: +p */
+/* 2009:343 LPR: new table format; 2010:105 -> area_.sql */
+/* 2012:045 -> area.sql; 2014:096 +ЊЌЋђћџsј; 2017:348 +” if missing */
+
+/*                                  sk   name                                                  alias               kinds                         statuses           involvements                  law kinds        attributes              proc order template          genk  info,additional text,surround kinds */
+/*                                  --   ----                                                  -----               -----                         --------           ------------                  ---------        ----------              ---- ----- --------          ----- ------------------------------------- */
+INSERT INTO T_SUBPOENA_KIND VALUES ('e', 'Уведомен по друг начин',                             'Ув.по др. начин',  NULL,                         NULL,              NULL,                         NULL,            'an..s..ML...........', 'n', 0075, NULL,             NULL, NULL, NULL, NULL);  /* 2016:078 '!Ї' -> NULL */
+INSERT INTO T_SUBPOENA_KIND VALUES ('h', 'Уведомен по телефона',                               'Ув. по телефона',  NULL,                         NULL,              NULL,                         NULL,            'an..s..ML...........', 'n', 0080, NULL,             NULL, NULL, NULL, NULL);  /* 2016:078 '!Ї' -> NULL */
+INSERT INTO T_SUBPOENA_KIND VALUES ('i', 'Уведомен от предно заседание',                       'Увед.пред.засед', 'ЩЪДЛУИFGЃѓЉЊЌљњЮp”',          'f',               NULL,                         NULL,            'an......L......G....', 'n', 0070, NULL,             NULL, NULL, NULL, NULL);  /* 2008:282 +p */
+INSERT INTO T_SUBPOENA_KIND VALUES ('c', 'Уведомен от заседание',                              'Увед. от засед.', 'ЩЪДЛУЮШълМмЫR”',              '!f',              NULL,                         NULL,            'an.....ML......G....', 'n', 0072, NULL,             NULL, NULL, NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('u', 'Ще бъде призован',                                   'Ще бъде призов.', 'ЩЪДЛУИFGЃѓЉЊЌљњЮp”',          'f',               NULL,                         NULL,            'a.......L...........', 'n', 0095, NULL,             NULL, NULL, NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('x', 'Уведомен по чл.41, ал.6 ГПК (отм.)',                 'Ув. чл.41,ал.6',  'ЩЪДЛУИFGЃѓЉЊЌљњЮ”',           'f',               NULL,                         'ZNTn[]{}яНЯЕж', 'an..s...L...........', 'n', 0085, NULL,             NULL, NULL, NULL, NULL);  /* 24.feb.2004 ZTяНжNnЯ */
+INSERT INTO T_SUBPOENA_KIND VALUES ('Q', 'Уведомен по чл.50, ал.2 ГПК',                        'Ув. чл.50,ал.2',  'ЩЪДЛУИFGЃѓЉЊЌљњЮ”',           'f',               NULL,                         'ZNTn[]{}яНЯЕж', 'an..s...L...........', 'n', 0087, NULL,             NULL, NULL, NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('z', 'Ще бъде доведен',                                    'Ще бъде доведен', 'ЩЪДЛУИFGЃѓЉЊЌљњЮp”',          'f',               NULL,                         NULL,            'an......L...........', 'n', 0090, NULL,             NULL, NULL, NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('f', 'Уведомяване по чл.51 ГПК (отм.)',                    'Ув.чл51 ГПК отм', 'ЩЪДЛУИFGЃѓЉЊЌљњЮ”',           'f',               NULL,                         'яЯНЕ',          'an......L...........', 'n', 0087, NULL,             NULL, NULL, NULL, NULL);  /* 24.feb.2004 */
+INSERT INTO T_SUBPOENA_KIND VALUES ('g', 'Телеграма',                                          'Телеграма',       'ЩЪДЛУИFGЃѓЉЊЌљњЮ',            'f',               NULL,                         NULL,            'anpms...L......G....', 't', 0990, 'Telegram.htm',   NULL, NULL, NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('o', 'Публикация в ДВ',                                    'Публ. в ДВ',      'ЩЪДЛУИFGЃѓЉЊЌљњЮ',            NULL,              NULL,                         NULL,            'anpmsl..L......G....', 'p', 0980, 'Publicat.htm',   NULL, NULL, NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('a', 'Призовка',                                           'Призовка',        'ЩЪДЛУИFGЃѓЉЊЌљњЮp',           'f',               NULL,                         'ZNTn[]{}яЯНЕж', 'anpmsl..L...tx......', 'a', 0010, NULL,             'S',  NULL, NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('A', 'Съобщение по чл.255 НПК',                            'Съобщ. чл.255',   'ЩЪДЛУИFGЃѓЉЊЌљњЮp”',          'f',               'O',                          'O!DIWCUH',      'anpmslP.L...t..G....', 'a', 0030, 'Anp_fO.htm',     'M',  NULL, 'В случай на наследствени права по делото, следва да е представено удостоверение за наследници. Насрочено за {F_SESSION_DATE}г. от {F_SESSION_TIME} часа.', NULL);  /* 2008:007 LRQ: +p */
+INSERT INTO T_SUBPOENA_KIND VALUES ('b', 'Съобщение',                                          'Съобщение',       'ЩЪДЛУИFGЃѓЉЊЌљњЮp',           '!f',              NULL,                         'ZNTn[]{}яЯНЕж', 'anpmsl.ML...t.......', 'a', 0040, NULL,    'M',     NULL, NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('ђ', 'Съобщение – стар ГПК',                               'Съобщение',       'ИFGЃѓЉЊЌљњЮ',                 '!fcPsd4pZhDS',    NULL,                         'ZNTn[]{}яЯНЕж', 'anpmsl.ML...t.......', 'a', 0042, 'Ang_bs.htm',     'M',  'Съобщение – стар ГПК', '{F_LAWSUIT_TEXT}{F_EVENT_TEXT}', NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('ћ', 'Съобщение – стар ГПК',                               'Съобщение',       'ЩЪДЛУp',                      '!fcPsd4pZhDS',    NULL,                         'ZNTn[]{}яЯНЕж', 'anpmsl.ML...t.......', 'a', 0042, 'Anc_bs.htm',     'M',  'Съобщение – стар ГПК', '{F_LAWSUIT_TEXT}{F_EVENT_TEXT}', NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('џ', 'Съобщение – стар ГПК',                               'Съобщение',       'ЩЪДЛУpИFGЃѓЉЊЌљњЮ',           'hD',              NULL,                         'ZNTn[]{}яЯНЕж', 'anpmsl.ML...t.......', 'a', 0042, 'Anc_us.htm',     'M',  'Съобщение – стар ГПК', '{F_LAWSUIT_TEXT}Определението подлежи на обжалване пред ........ с частна жалба в ……. дневен срок от съобщението. {F_EVENT_TEXT}', NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('s', 'Съобщение – стар ГПК',                               'Съобщение',       'ЩЪДЛУpИFGЃѓЉЊЌљњЮ',           'S',               NULL,                         'ZNTn[]{}яЯНЕж', 'anpmsl.ML...t.......', 'a', 0042, 'Anc_ss.htm',     'M',  'Съобщение – стар ГПК', '{F_LAWSUIT_TEXT}Определението подлежи на обжалване пред ........ с частна жалба в ……. дневен срок от съобщението. {F_EVENT_TEXT}', NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('ј', 'Съобщение – стар ГПК',                               'Съобщение',       'ЩЪДЛУpИFGЃѓЉЊЌљњЮ',           'c',               NULL,                         'ZNTn[]{}яЯНЕж', 'anpmsl.ML...t.......', 'a', 0042, 'Anc_cs.htm',     'M',  'Съобщение – стар ГПК', '{F_LAWSUIT_TEXT}Определението подлежи на обжалване пред ........ с частна жалба в …... дневен срок от съобщението.', NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('j', 'Съобщение',                                          'Съобщение',       'Ї',                           NULL,              NULL,                         NULL,            'anpmsl..L...t.......', 'a', 0045, NULL,    'M',     NULL, NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('k', 'СРГ',                                                'СРГ',             'ШълМмЫR',                     NULL,              NULL,                         NULL,            'anpmslPML.A.t..G....', 'a', 0060, 'Announ__.htm',   'M',  NULL, '{F_EVENT_TEXT}', NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('l', 'Съобщение',                                          'Съобщение',       'Й',                           NULL,              NULL,                         NULL,            'anpmsl.ML...t.......', 'a', 0050, NULL,    'M',     NULL, NULL, NULL);  /* 24.jan.2006 Й */
+INSERT INTO T_SUBPOENA_KIND VALUES ('‘', 'Съобщение - в срок изпратени преписи',               'Съобщение',       'Й',                           'д',               NULL,                        'O!DIWCUHП',      'anpmslPML...t.iG....', 'a', 0052, 'aplan_s.htm',    'N',  NULL, '{F_EVENT_TEXT}В ...-дневен срок от получаване на съобщението можете да представите писмено възражение, като посочите доказателства и приложите писмени такива.', NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('’', 'Съобщение - с определение/разпореждане/становище',   'Съобщение',       'Й',                           'ђы€',             NULL,                        'O!DIWCUHП',      'anpmslPML...t..G....', 'a', 0054, 'aplan_p.htm',    'N',  NULL, '{F_EVENT_TEXT}', NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('—', 'Съобщение - върнат',                                 'Съобщение',       'Й',                           'ХЬЮв',            NULL,                        'O!DIWCUHП',      'anpmslPML...t..G....', 'a', 0056, 'aplan__r.htm',   'N',  NULL, '{F_EVENT_TEXT}', NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('“', 'Съобщение - без движение',                           'Съобщение',       'Й',                           'а',               NULL,                        'O!DIWCUHП',      'anpmslPML...t..G....', 'a', 0058, 'aplan__u.htm',   'N',  NULL, '{F_EVENT_TEXT}', NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('B', 'Писмо за довеждане в с.з.',                          'П-мо дов.',       'ЩЪДЛУИFGЃѓЉЊЌљњЮp”',          'f',               NULL,                         NULL,            'a.p.s.P..o.....G....', 'l', 0100, 'Boslet42.htm',   NULL, 'Напр. до Началника на Затвора, Началника на ОСС, Командира на поделение', NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('X', 'Писмо за довеждане в с.з. пред въззивна инстанция',  'Писмо',           'лмЩpУ',                       '!f',              'cxйer',                      'OIDWCПHU',      'a.p.s.P..o.....G....', 'l', 0100, 'Boslet44.htm',   NULL, NULL, NULL, NULL);  /* 2012:067 */
+INSERT INTO T_SUBPOENA_KIND VALUES ('E', 'Писмо за принудително довеждане в с.з.',             'П-мо прин.дов.',  'ЩЪДЛУИFGЃѓЉЊЌљњЮp”',          'f',               NULL,                         NULL,            'a.p.s.P..o.....G....', 'l', 0105, 'Boslet45.htm',   NULL, 'Напр. до Началника на РДВР или РПУ', NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('C', 'Писмо за връчване',                                  'П-мо връчв',      'ЩЪДЛУИFGЃѓЉЊЌљњЮШълМмЫRЙpЇ',  '!f',              NULL,                         NULL,            'a.p.s.P..o.....G....', 'l', 0110, 'Boslet43.htm',   NULL, 'Напр. до Началника на РДВР или РПУ', NULL, NULL);  /* 24.jan.2006 Й */
+INSERT INTO T_SUBPOENA_KIND VALUES ('H', 'Писмо за принудително връчване',                     'П-мо прин.връчв', 'ЩЪДЛУИFGЃѓЉЊЌљњЮШълМмЫRЙpЇ”', NULL,              NULL,                         NULL,            'a.p.s.P..o.....G....', 'l', 0115, 'Boslet48.htm',   NULL, 'Напр. до Началника на РДВР или РПУ', NULL, NULL);  /* 24.jan.2006 Й */
+INSERT INTO T_SUBPOENA_KIND VALUES ('J', 'Писмо до Редакцията на Държавен вестник',            'П-мо ДВ',         'ЩЪДЛУИFGЃѓЉЊЌљњЮ”',           NULL,              NULL,                         NULL,            'a.p.s.P..o.....G....', 'l', 0120, 'Boslet4A.htm',   NULL, NULL, NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('U', 'Връчено УАС за пререгистрация',                      'Връчено УАС',     NULL,                          '!f',              NULL,                         'ж',             '.n..................', 'n', 0130, NULL,             NULL, NULL, NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('G', 'Уведомен по електронна поща',                        'Ув. по e-mail',   '!Ї',                          NULL,              NULL,                         NULL,            'an..s..ML...........', 'n', 0082, NULL,             NULL, NULL, NULL, NULL);
+/* 2008:058; 2008:074 АВЕЖПРС -NMМXW, ЖПР -cPsd4pZ, З -fcPsd4pZ, И -fJd, Й -fJdcsPpZ */
+/* 2008:076 Х -NMМXW; 2008:078 И Jd -> З4; 2008:303 ИЙЧШЩ +ж */
+INSERT INTO T_SUBPOENA_KIND VALUES ('А', 'Призовка по чл.142 ГПК',                             'Призовка чл.142', 'ЩЪДЛУpИFGЃѓЉЊЌљњЮ',           'f',               '!NMМXW',                     'ZNTn[]{}',      'anpmslP.L...t..G....', 'a', 0200, 'Sm_142.htm',     'T',  'Приложение № 1 - призовка за страна', 'Допълнение съгл. чл.5 ал.2 от Наредба №7/2008 МП {F_EVENT_TEXT}', NULL);  /* 2013:064 +Nn]} */
+INSERT INTO T_SUBPOENA_KIND VALUES ('Б', 'Призовка по чл.142, ал.4 ГПК',                       'Приз. чл142 ал4', 'ЩЪДЛУpИFGЃѓЉЊЌљњЮ',           'f',               NULL,                         'ZNTn[]{}ж',     'anpmslP.L...t..G....', 'a', 0210, 'Sm_142-4.htm',   'S',  'Приложение № 2 - призовка за страна, вещо лице и свидетел', 'Допълнение съгл. чл.5 ал.2 от Наредба №7/2008 МП {F_EVENT_TEXT}', NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('Њ', 'Призовка за страна – стар ГПК',                      'Приз. страна',    'ЩЪДЛУpИFGЃѓЉЊЌљњЮ',           'f',               '!WX6†',                      'ZNTn[]{}яЯНЕж', 'anpmslP.L...t..G....', 'a', 0215, 'Smc1fs.htm',     'S',  'Призовка за страна – стар ГПК', '{F_LAWSUIT_TEXT}Второто съдебно заседание по делото ще се проведе на  ……... година в ……. часа. При явяването си в съда носете личната си карта.', NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('В', 'Призовка по чл.176 ГПК',                             'Призовка чл.176', 'ЩЪДЛУpИFGЃѓЉЊЌљњЮ',           'f',               '!NMМXW',                     'ZNTn[]{}',      'anpmslP.L...t..G....', 'a', 0220, 'Sm_176.htm',     'S',  'Приложение № 3 - призовка за лично явяване на страна', 'Допълнение съгл. чл.5 ал.2 от Наредба №7/2008 МП {F_EVENT_TEXT}', NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('Г', 'Призовка за свидетел',                               'Приз. свидетел',  'ЩЪДЛУpИFGЃѓЉЊЌљњЮ',           'f',               'Wp',                         'ZNTn[]{}',      'anpmslP.L...t..G....', 'a', 0230, 'SmW.htm',        'S',  'Приложение № 4', 'Допълнение съгл. чл.5 ал.2 от Наредба №7/2008 МП {F_EVENT_TEXT}', NULL);  /* 2010:048 +p */
+INSERT INTO T_SUBPOENA_KIND VALUES ('Ќ', 'Призовка за свидетел – стар ГПК',                    'Приз. свидетел',  'ЩЪДЛУpИFGЃѓЉЊЌљњЮ',           'f',               'Wp',                         'ZNTn[]{}яЯНЕж', 'anpmslP.L...t..G....', 'a', 0235, 'Smc_fw.htm',     'S',  'Призовка за свидетел – стар ГПК', '{F_LAWSUIT_TEXT}НАЛАГА ГЛОБА в размер на ......... лв. за неявяване в съдебно заседание на .......... год. В 7-дневен срок можете да изложите уважителни причини за неявяването си на ........... г., ако са били налице такива.', NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('Д', 'Призовка за вещо лице',                              'Приз. вещо лице', 'ЩЪДЛУpИFGЃѓЉЊЌљњЮ',           'f',               'X6†',                        'ZNTn[]{}',      'anpmslP.L...tx.G....', 'a', 0240, 'SmX.htm',        'T',  'Приложение № 5 - призовка за вещо лице с предмет, задача на експертизата и краен срок за представяне', 'Допълнение съгл. чл.5 ал.2 от Наредба №7/2008 МП {F_EVENT_TEXT}', NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('Ћ', 'Призовка за вещо лице – стар ГПК',                   'Приз. вещо лице', 'ЩЪДЛУpИFGЃѓЉЊЌљњЮ',           'f',               'X6†',                        'ZNTn[]{}яЯНЕж', 'anpmslP.L...tx.G....', 'a', 0245, 'Smc_fe.htm',     'T',  'Призовка за вещо лице – стар ГПК', '{F_LAWSUIT_TEXT}НАЛАГА ГЛОБА в размер на ......... лв. за неявяване в съдебно заседание на .......... год.  В 7-дневен срок можете да изложите уважителни причини за неявяването си на ........... г., ако са били налице такива.', NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('Е', 'Призовка по чл.312 ГПК - БЪРЗО ПРОИЗВОДСТВО',        'Приз. чл.312 БП', 'ЩЪДЛУpИFGЃѓЉЊЌљњЮ',           'f',               '!NMМXW',                     'Z[T{',          'anpmslP.L...t..G....', 'a', 0250, 'Sm_312.htm',     'T',  'Приложение № 6 - призовка за страна по бързо производство', 'Допълнение съгл. чл.5 ал.2 от Наредба №7/2008 МП {F_EVENT_TEXT}', NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('Ж', 'Съобщение по чл.131 ГПК',                            'Съобщ. чл.131',   'ЩЪДЛУpИFGЃѓЉЊЌљњ',            '!cPsd4pZf',       '!NMМXW',                     'ZTNn',          'anpmslP.L...t..G....', 'a', 0260, 'An_131.htm',     'N',  'Приложение № 7 - съобщение за връчване препис от искова молба и подаване на писмен отговор', 'Допълнение съгл. чл.5 ал.2 от Наредба №7/2008 МП {F_EVENT_TEXT}', 'ёi+');  /* 2011:166 +Nn; 2012:058 +ё */
+INSERT INTO T_SUBPOENA_KIND VALUES ('З', 'Съобщение по чл.192, ал.2 ГПК',                      'Съобщ.чл192 ал2', 'ЩЪДЛУpИFGЃѓЉЊЌљњЮ',           '!fcPsd4pZ',       NULL,                         'ZNTn[]{}',      'anpmslP.L...t..G....', 'a', 0270, 'An_192-2.htm',   'N',  'Приложение № 8 - съобщение за представяне на документ от трето лице', 'Допълнение съгл. чл.5 ал.2 от Наредба №7/2008 МП {F_EVENT_TEXT}', 'ofќё€¤©:<=>?@^_|~i');
+INSERT INTO T_SUBPOENA_KIND VALUES ('И', 'Съобщение за връчване препис от Определение',        'Съобщ.преп.опр.', 'ЩЪДЛУpИFGЃѓЉЊЌљњЮл',          '!fЗ4',            NULL,                         'ZNTnж[]{}',     'anpmslPML...t..G....', 'a', 0280, 'AnRuling.htm',   'N',  'Приложение № 9', 'Допълнение съгл. чл.5 ал.2 от Наредба №7/2008 МП {F_EVENT_TEXT}', NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('Й', 'Съобщение за връчване препис от Разпореждане',       'Съобщ.преп.разп', 'ЩЪДЛУpИFGЃѓЉЊЌљњЮм',          '!fJdPpZ',         NULL,                         'ZNTnж[]{}',     'anpmslPML...t..G....', 'a', 0290, 'AnWrit.htm',     'N',  'Приложение № 9', 'Допълнение съгл. чл.5 ал.2 от Наредба №7/2008 МП {F_EVENT_TEXT}', NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('К', 'Съобщение за връчване препис от частна жалба',       'Съобщ.препис ЧЖ', 'Й',                           'д',               NULL,                         'ZNTn[]{}',      'anpmslPML...t.iG....', 'a', 0300, 'An_276.htm',     'N',  'Приложение № 10', 'Допълнение съгл. чл.5 ал.2 от Наредба №7/2008 МП {F_EVENT_TEXT}', NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('Л', 'Съобщение за връчване препис от Решение',            'Съобщ.преп.реш.', 'ШR',                          NULL,              NULL,                         'ZNTnж[]{}',     'anpmslPML...t..G....', 'a', 0310, 'AnDecis.htm',    'N',  'Приложение № 11', 'Допълнение съгл. чл.5 ал.2 от Наредба №7/2008 МП {F_EVENT_TEXT}', NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('М', 'Съобщение по чл.263 ГПК',                            'Съобщ. чл.263',   'Й',                           'д',               NULL,                         'Z[T{',          'anpmslPML...t.iG....', 'a', 0320, 'An_263.htm',     'N',  'Приложение № 12 - съобщение за връчване препис от въззивна / насрещна въззивна жалба', 'Допълнение съгл. чл.5 ал.2 от Наредба №7/2008 МП {F_EVENT_TEXT}', NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('Н', 'Съобщение по чл.287 ГПК',                            'Съобщ. чл.287',   'Й',                           'д',               NULL,                         'Nn]}',          'anpmslPML...t.iG....', 'a', 0330, 'An_287.htm',     'N',  'Приложение № 13 - съобщение за връчване препис от касационна / насрещна касационна жалба', 'Допълнение съгл. чл.5 ал.2 от Наредба №7/2008 МП {F_EVENT_TEXT}', NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('О', 'Съобщение по чл.367 ГПК по търговски спорове',       'Съобщ. чл.367',   'ИFGЃѓЉЊЌљњ',                  NULL,              NULL,                         'ZT',            'anpmslP.L...t..G....', 'a', 0340, 'An_367.htm',     'N',  'Приложение № 14 - за връчване препис от искова молба и подаване на отговор по търговски спорове', 'Допълнение съгл. чл.5 ал.2 от Наредба №7/2008 МП {F_EVENT_TEXT}', 'ёi+');  /* 2012:058 +ё */
+INSERT INTO T_SUBPOENA_KIND VALUES ('П', 'Съобщение по чл.372 ГПК',                            'Съобщ. чл.372',   'ИFGЃѓЉЊЌљњ',                  '!cPsd4pZ',        '!NMМXW',                     'ZT',            'anpmslP.L...t..G....', 'a', 0350, 'An_372.htm',     'N',  'Приложение № 15 - съобщение за връчване отговор и подаване на допълнителна искова молба', 'Допълнение съгл. чл.5 ал.2 от Наредба №7/2008 МП {F_EVENT_TEXT}', 'ё<');  /* 2012:058 +ё */
+INSERT INTO T_SUBPOENA_KIND VALUES ('Р', 'Съобщение по чл.373 ГПК',                            'Съобщ. чл.373',   'ИFGЃѓЉЊЌљњ',                  '!cPsd4pZ',        '!NMМXW',                     'ZT',            'anpmslP.L...t..G....', 'a', 0360, 'An_373.htm',     'N',  'Приложение № 16 - съобщение за връчване препис от допълнителна искова молба', 'Допълнение съгл. чл.5 ал.2 от Наредба №7/2008 МП {F_EVENT_TEXT}', 'ё:');  /* 2012:058 +ё */
+INSERT INTO T_SUBPOENA_KIND VALUES ('С', 'Съобщение по чл.398 ГПК',                            'Съобщ. чл.398',   'ИFGЃѓЉЊЌљњ',                  NULL,              '!NMМXW',                     'ZNTn[]{}',      'anpmslP.L...t..G....', 'a', 0370, 'An_398.htm',     'M',  'Приложение № 17 - за постъпило искане за замяна/отмяна на допуснато обезпечение', 'Допълнение съгл. чл.5 ал.2 от Наредба №7/2008 МП {F_EVENT_TEXT}', 'ё');
+INSERT INTO T_SUBPOENA_KIND VALUES ('Х', 'Уведомление по чл.47, ал.1 и 7 ГПК',                 'Ув.чл.47 ал.1,7', 'ЩЪДЛУpИFGЃѓЉЊЌљњЮШлмЙ”',      NULL,              '!NMМXW',                     'ZNTnж[]{}',     'a.pms...L...t..G....', 'a', 0410, 'Nt_47-1.htm',    NULL, 'Приложение № 32 - уведомление за ответник, подпомагаща страна', 'Допълнение съгл. чл.5 ал.2 от Наредба №7/2008 МП {F_EVENT_TEXT}', NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('Ц', 'Уведомление по чл.47, ал.8 ГПК',                     'Увед.чл.47 ал.8', 'ЩЪДЛУpИFGЃѓЉЊЌљњЮ”',          NULL,              NULL,                         'ZNTn[]{}',      'a.pms.P.L...t..G....', 'a', 0420, 'Nt_47-8.htm',    NULL, 'Приложение № 33 - уведомление за свидетел, вещо лице, неучастващо в делото лице', 'Допълнение съгл. чл.5 ал.2 от Наредба №7/2008 МП {F_EVENT_TEXT}', NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('¶', 'Съобщение за връчване препис от Определение',        'Съобщ.преп.опр.', 'ЙЇ',                          'ђ',               NULL,                         'ZNTnж[]{}',     'anpmslPML...t..G....', 'a', 0280, 'AnRuling.htm',   'N',  'Приложение № 9', 'Допълнение съгл. чл.5 ал.2 от Наредба №7/2008 МП {F_EVENT_TEXT}', NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('Щ', 'Съобщение за връчване препис от Разпореждане',       'Съобщ.преп.разп', 'ЙЇ',                          NULL,              NULL,                         'ZNTnж[]{}',     'anpmslPML...t..G....', 'a', 0290, 'AnWrit.htm',     'N',  'Приложение № 9', 'Допълнение съгл. чл.5 ал.2 от Наредба №7/2008 МП {F_EVENT_TEXT}', NULL);
+/* 2009:168 */
+INSERT INTO T_SUBPOENA_KIND VALUES ('а', 'Съобщение',                                          'Съобщение',       'Ї',                           'h',               NULL,                         NULL,            'anpmslP.L...t..G....', 'a', 0500, 'reqr__ha.htm',   'M',  'За разпореждане "Без движение"', '{F_EVENT_TEXT} В 7-дневен срок от съобщението представете доказателство съгласно тарифа № 1. При неизпълнение в срок входящия документ ще бъде върнат.', NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('б', 'Писмо',                                              'Писмо',           'Ї',                           'h',               NULL,                         NULL,            'a.p.s.P..o..t..G....', 'a', 0510, 'reqr___l.htm',   NULL, NULL, '{F_EVENT_TEXT}', NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('в', 'Съобщение',                                          'Съобщение',       'Ї',                           'r',               NULL,                         NULL,            'anpmslP.L.A.t..G....', 'a', 0520, 'reqr__ra.htm',   'M',  'За разпореждане "Върнат"', '{F_EVENT_TEXT}', NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('г', 'Писмо',                                              'Писмо',           'Ї',                           'r',               NULL,                         NULL,            'a.p.s.P..o..t..G....', 'a', 0530, 'reqr__rl.htm',   NULL, NULL, '{F_EVENT_TEXT}', NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('Ў', 'Писмо',                                              'Писмо',           'Ї',                           'a',               NULL,                         NULL,            'a.p.s.P..o..t..G....', 'a', 0535, 'reqr__ll.htm',   NULL, NULL, '{F_EVENT_TEXT}', NULL);  /* 2013:233 */
+INSERT INTO T_SUBPOENA_KIND VALUES ('д', 'Писмо',                                              'Писмо',           'Ї',                           's',               NULL,                         NULL,            'a.p.s.P..o..t..G....', 'a', 0540, 'reqr__sl.htm',   NULL, NULL, '{F_EVENT_TEXT}', NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('е', 'Съобщение',                                          'Съобщение',       'Ї',                           'a',               NULL,                         NULL,            'anpmslP.L...t..G....', 'a', 0550, 'reqr__aa.htm',   'M',  NULL, '{F_EVENT_TEXT}', NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('ж', 'Призовка за подсъдим',                               'Призовка',        'pЩУ',                         'f',               'cxй',                        'O!DI',          'anpmslP.L...t..G....', 'a', 0560, 'Smp1fa.htm',     'T',  NULL, 'ПРИЛОЖЕН: препис от обвинителен акт {F_FLOOR_LAWSUIT} В 7-дневен срок от получаване на призовката, може да дадете отговор, в който да изложите възраженията си и да направите нови искания. ДЕЛОТО МОЖЕ ДА БЪДЕ РАЗГЛЕДАНО И РЕШЕНО ВЪВ ВАШЕ ОТСЪСТВИЕ при условията на чл.269, ал.3 НПК.', NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('з', 'Призовка за подсъдим',                               'Призовка',        'pЩУ',                         'f',               'cxйard',                     'WCПH',          'anpmslP.L...t..G....', 'a', 0570, 'Smp2fa.htm',     'T',  NULL, 'Съгласно чл.329, ал.2 НПК явяването Ви в съдебно заседание е задължително. В случай на неявяване делото може да бъде разгледано и решено във Ваше отсъствие при условията на чл.269, ал.3 НПК.', NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('и', 'Призовка за свидетел',                               'Призовка',        'pЩУ',                         'f',               'WRp',                        'OIDWCПHU',      'anpmslP.....t..G....', 'a', 0580, 'Smp_fw.htm',     'S',  NULL, 'Налага глоба в размер на .........лв. за неявяване в съдебно заседание на .........г. В 7-дневен срок може да изложите уважителни причини за неявяването си на ........., ако са били на лице такива.', NULL);  /* 2010:048 +p */
+INSERT INTO T_SUBPOENA_KIND VALUES ('й', 'Призовка за вещо лице',                              'Призовка',        'pЩУ',                         'f',               'X6†',                        'OIDWCПHU',      'anpmslP.....tx.G....', 'a', 0590, 'Smp_fe.htm',     'S',  NULL, 'Налага глоба в размер на .........лв. за неявяване в съдебно заседание на .........г. В 7-дневен срок може да изложите уважителни причини за неявяването си на ........., ако са били на лице такива.', NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('л', 'Призовка за страна',                                 'Призовка',        'pЩУ',                         'f',               '!cxйWX6†',                   'O!DI',          'anpmslP.L...t..G....', 'a', 0610, 'Smp1fs.htm',     'S',  NULL, '{F_FLOOR_LAWSUIT}  На основание чл.179 (3) НПК имате право да се явите с повереник.', NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('м', 'Призовка за страна',                                 'Призовка',        'pЩУ',                         'f',               '!cxйWX6†',                   'WCHПU',         'anpmslP.L...t..G....', 'a', 0620, 'Smp2fs.htm',     'S',  NULL, '{F_FLOOR_LAWSUIT}  Съгласно чл.329, ал.2 НПК явяването Ви в съдебно заседание е задължително. В случай на неявяване делото може да бъде разгледано и решено във Ваше отсъствие при условията на чл.269, ал.3 НПК.', NULL);  /* 2009:198 kinds +p */
+INSERT INTO T_SUBPOENA_KIND VALUES ('к', 'Призовка за насрочване пред въззивна инстанция',     'Призовка',        'лмЩpУ',                       '!f',              'cxйerхlЛ',                   'OIDWCПHU',      'anpmslP.L...t..G....', 'a', 0621, 'Smp_fs.htm',     'S',  'За призоваване за насрочено заседание пред въззивна инстанция', NULL, NULL);  /* 2012:062; 2012:067 +e; 2013:064 !f; 2016:088 +хl; 2017:306 +Л */
+INSERT INTO T_SUBPOENA_KIND VALUES ('н', 'Съобщение',                                          'Съобщение',       'pЩУИFGЃѓЉЊЌљњ”',              '!f',              NULL,                         'OIDWCПHU!',     'anpmslPML...t..G....', 'a', 0630, 'Anp_bs.htm',     'M',  NULL, '{F_EVENT_TEXT}', NULL);  /* 2018-11-22: +! */
+INSERT INTO T_SUBPOENA_KIND VALUES ('”', 'Съобщение за изготвени мотиви',                      'Съобщение',       'Шълм',                        NULL,              NULL,                         NULL,            'anpmslP.L...t..G....', 'a', 0640, 'Anp_m.htm',      'M',  NULL, '{F_EVENT_TEXT}', NULL);  /* 2016:054 */
+INSERT INTO T_SUBPOENA_KIND VALUES ('п', 'Съобщение по чл.350, ал.2 НПК',                      'Съобщение',       'ъМШлм',                       NULL,              NULL,                         'WCHПU',         'anpmslPML.A.t..G....', 'a', 0650, 'Announp2.htm',   'M',  NULL, '{F_EVENT_TEXT}', NULL);
+/* 2013:338 -a for multi-address р€F */
+INSERT INTO T_SUBPOENA_KIND VALUES ('р', 'Искане по чл.23, ал.1 ЗПП',                          'Искане ЗПП',      'ЪДЩpУИFGЃѓЉЊЌљњЙ®Шълм”',      '!ABPZcdjsБ04r9Љ', '!mop8ТEGTSПГЮWX6ДNMМИВKяL†', NULL,            '..p.s....o..t..G....', 'a', 0660, 'Req_ZPP.htm',    NULL, 'За определяне на адвокат за осъществяване на правна помощ', NULL, NULL);  /* 2014:143 +Й® */
+INSERT INTO T_SUBPOENA_KIND VALUES ('€', 'Искане по чл.29, ал.4 ГПК',                          'Искане ГПК',      'ЪДЩpУИFGЃѓЉЊЌљњШълм',         '!ABPZcdjsБ04r9Љ', '!mop8ТEGTSПГЮWX6ДNMМИВKяL†', 'ZNTn[]{}яЯНЕж', '..p.s....o..t..G....', 'a', 0662, 'Req_GPK_.htm',   NULL, 'За определяне на особен представител', NULL, NULL);  /* 2013:337 */
+INSERT INTO T_SUBPOENA_KIND VALUES ('F', 'Искане по чл.47, ал.6 ГПК',                          'Искане ГПК',      'ЪДЩpУИFGЃѓЉЊЌљњШълм',         '!ABPZcdjsБ04r9Љ', '!mop8ТEGTSПГЮWX6ДNMМИВKяL†', 'ZNTn[]{}яЯНЕж', '..p.s....o..t..G....', 'a', 0663, 'Req_GPK.htm',    NULL, 'За определяне на особен представител', NULL, NULL);  /* 2010:048 */
+INSERT INTO T_SUBPOENA_KIND VALUES ('†', 'Искане по чл.101, ал.2 НПК',                         'Искане НПК',      'ЪДЩpУИFGЃѓЉЊЌљњШълм”',        '!ABPZcdjsБ04r9Љ', '!mop8ТEGTSПГЮWX6ДNMМИВKяL†', 'O!DIWCПHU',     '..p.s....o..t..G....', 'a', 0664, 'Req_NPK.htm',    NULL, 'За определяне на особен представител', NULL, NULL);  /* 2015:081 */
+INSERT INTO T_SUBPOENA_KIND VALUES ('Џ', 'Писмо – връщане на прокурора чл.369, ал.1',          'Връщ.прок.369-1', 'ИFGЃѓЉЊЌљњ',                  'JЗ',              NULL,                         'I',             'a.pms.P..o.....G....', 'a', 0665, 'Let_369_1.htm',  NULL, NULL, NULL, NULL);  /* 2013:235 */
+/*INSERT INTO T_SUBPOENA_KIND VALUES ('џ', 'Писмо – връщане на прокурора чл.369, ал.3',        'Връщ.прок.369-3', 'ИFGЃѓЉЊЌљњ',                  'JЗ',              NULL,                         'I',             'a.pms.P..o.....G....', 'a', 0667, 'Let_369_1.htm',  NULL, NULL, NULL, NULL);*/  /* 2013:235 */
+INSERT INTO T_SUBPOENA_KIND VALUES ('с', 'Писмо - информация за лице в следствените арести',   'Писмо',           'ЩЪДЛУИFGЃѓЉЊЌљњЮp”',          NULL,              '!mop8ТEGTЮCX6NMМИВKя†',      'O!DIWHUC',      'a.p.s.P..o.....G....', 'L', 0670, 'Let_9p.htm',     NULL, 'За предоставяне на информация за лице в следствените арести на страната', NULL, NULL);  /* 2012:058 +WHUC */
+INSERT INTO T_SUBPOENA_KIND VALUES ('ґ', 'Писмо - свидетелство за съдимост',                   'Писмо',           'ЩЪДЛУИFGЃѓЉЊЌљњЮp”',          NULL,              '!mop8ТEGTЮCX6NMМИВKя†',      'O!DIWCПHU',     'a.p.s.P..o.....G....', 'L', 0675, 'Let_17p.htm',    NULL, 'За предоставяне на свидетелство за съдимост', NULL, NULL);  /* 2010:343 */
+INSERT INTO T_SUBPOENA_KIND VALUES ('т', 'Съобщение по чл.411 ГПК - ЗАПОВЕДНО ПРОИЗВОДСТВО',   'Съобщ.чл.411 ЗП', 'лм',                          NULL,              NULL,                         ']',             'anpmslP.L...t..G....', 'a', 0680, 'An_411.htm',     'N',  'Приложение № 18 - съобщение за връчване Заповед за изпълнение', NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('у', 'Съобщение по чл.415 ГПК - ЗАПОВЕДНО ПРОИЗВОДСТВО',   'Съобщ.чл.415 ЗП', 'ИFGЃѓЉЊЌљњ',                  NULL,              NULL,                         ']',             'anpmslP.L...t..G....', 'a', 0690, 'An_415.htm',     'M',  'Приложение № 19 - съобщение за постъпило възражение и указания', NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('ф', 'Съобщение по чл.418 ГПК - ЗАПОВЕДНО ПРОИЗВОДСТВО',   'Съобщ.чл.418 ЗП', 'лм',                          NULL,              NULL,                         ']',             'anpmslP.L...t..G....', 'a', 0700, 'An_418.htm',     'N',  'Приложение № 20 - съобщение за връчване препис от Заповед за изпълнение и препис от', NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('х', 'Писмо - информация за адресна регистрация',          'Писмо',           'ЪДЩpУ”',                      'f',               '!mop8ТEGTЮCX6NMМИВKя†',      NULL,            'a.p.s.P..o.....G....', 'L', 0710, 'Let_10_.htm',    NULL, 'За предоставяне на информация за актуална адресна регистрация', NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('ц', 'Писмо - информация за напускане на РБ',              'Писмо',           'ЩЪДЛУИFGЃѓЉЊЌљњЮp”',          NULL,              '!mop8ТEGTЮCX6NMМИВKя†',      NULL,            'a.p.s.P..o.....G....', 'L', 0720, 'Let_11_.htm',    NULL, 'За предоставяне на информация за напускане пределите на Република България', NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('ч', 'Писмо - информация за родственици',                  'Писмо',           'ЪДЩpУ”',                      'f',               '!mop8ТEGTЮCX6NMМИВKя†',      NULL,            'a.p.s.P..o.....G....', 'L', 0730, 'Let_12_.htm',    NULL, 'За предоставяне на информация за родственици на лице', NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('ш', 'Уведомен по чл.56, ал.2 ГПК',                        'Ув. чл.56, ал2',  'ЪДУ',                         'f',               NULL,                         'Z[N]T{n}ж',     'an......L......G....', 'n', 0740, NULL,             NULL, NULL, NULL, NULL);  /* 2012:058 -s */
+INSERT INTO T_SUBPOENA_KIND VALUES ('щ', 'Уведомен за УПО',                                    'Ув. УПО',         'ЩУ”',                         'f',               NULL,                         'I',             '.n..................', 'n', 0750, NULL,             NULL, NULL, NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('ъ', 'Изпълнителен лист',                                  'Изпълн. лист',    'ШлмЪДЩpУИFGЃѓЉЊЌљњЛ”',        '!f',              NULL,                         'Z[N]T{n}',      '..pmsl..L...t..GH...', 'a', 0760, 'ActEx_e_.htm',   NULL, NULL, '{F_EVENT_TEXT}', NULL);  /* 2011:172; 2013:085 -W; 2015:071 !mop8EGTЮCДNMМИВKя -> NULL */
+INSERT INTO T_SUBPOENA_KIND VALUES ('ь', 'Изпълнителен лист',                                  'Изпълн. лист',    'Шлм”',                        '!f',              NULL,                         'яЯНЕ',          '..pmsl..L...t..GH...', 'a', 0770, 'ActEx_ea.htm',   NULL, NULL, '{F_EVENT_TEXT}', NULL);  /* 2013:085 -W; 2015:071 !mop8EGTЮCДNMМИВKя -> NULL */
+INSERT INTO T_SUBPOENA_KIND VALUES ('ю', 'Изпълнителен лист',                                  'Изпълн. лист',    'ШъМлмЪДЩpУИFGЃѓЉЊЌљњ”',       '!f',              NULL,                         'OIDWCПHU',      '..pmsl..L...t..GH...', 'a', 0780, 'ActEx_ep.htm',   NULL, NULL, '{F_EVENT_TEXT}', NULL);  /* 2012:041 +ЪДЩpУИFGЃѓЉЊЌљњ; 2013:085 -W; 2015:071 !mop8EGTЮCДNMМИВKя -> NULL */
+INSERT INTO T_SUBPOENA_KIND VALUES ('Ј', 'Уведомление за доброволно изпълнение',               'Ув.добр.изпълн.', 'ЩЪДЛУpИFGЃѓЉЊЌљњЮШRъМлмЫ”',   '!f',              NULL,                         'O!DIWCUHП',     'a.pmslP.Lo.f...G....', 'a', 0782, 'Nt_volex_p.htm', 'N',  NULL, NULL, NULL);  /* 2013:234; 2013:015 _p */
+INSERT INTO T_SUBPOENA_KIND VALUES ('ѕ', 'Уведомление за доброволно изпълнение',               'Ув.добр.изпълн.', 'ЩЪДЛУpИFGЃѓЉЊЌљњЮШRъМлмЫ”',   '!f',              NULL,                         'ZNTn[]{}яЯНЕж', 'a.pmslP.Lo.f...G....', 'a', 0782, 'Nt_volex_c.htm', 'N',  NULL, NULL, NULL);  /* 2013:015 */
+INSERT INTO T_SUBPOENA_KIND VALUES ('Ѓ', 'Уведомление за доброволно изпълнение - ЧСИ',         'Ув.добр.изп.ЧСИ', 'ЩЪДЛУpИFGЃѓЉЊЌљњЮШRъМлмЫ”',   '!f',              NULL,                         NULL,            'a.pmslP.Lo.f...G....', 'a', 0783, 'Inv_volex.htm',  'N',  NULL, NULL, NULL);  /* 2016:057 */
+INSERT INTO T_SUBPOENA_KIND VALUES ('W', 'Изпълнителен лист в полза на Държавата',             'Изпълн. лист',    'ШъМлмЪДЩpУИFGЃѓЉЊЌљњЛ”',      '!f',              NULL,                         NULL,            '..p.sl..L..ft.......', 'a', 0785, 'ActEx_e__.htm',  NULL, NULL, '{F_EVENT_TEXT}', NULL);  /* 2015:033 F_EVENT_TEXT */
+INSERT INTO T_SUBPOENA_KIND VALUES ('я', 'Обезпечителна заповед',                              'Обезп. заповед',  'ЪДУИFGЃѓЉЊЌљњ',               '!f',              '!mop8ТEGTЮCWX6ДNMМИВKя†',    'Z[N]T{n}',      'a.p.s...L...t..G....', 'a', 0790, 'ActEx_p_.htm',   NULL, NULL, '{F_EVENT_TEXT}', NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('ї', 'Обезпечителна заповед',                              'Обезп. заповед',  'Шлм',                         '!f',              '!mop8ТEGTЮCWX6ДNMМИВKя†',    'Z[N]T{n}',      'a.p.s...L...t..G....', 'a', 0800, 'ActEx_p.htm',    NULL, NULL, '{F_EVENT_TEXT}', NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('‡', 'Обезпечителна заповед',                              'Обезп. заповед',  'ЩЪДЛУpИFGЃѓЉЊЌљњЮШRъМлмЫ',    '!f',              '!mop8ТEGTЮCWX6ДNMМИВKя†',    'O!DIWCUHП',     'a.p.s.P.L...t..G....', 'a', 0800, 'ActEx_pp.htm',   NULL, NULL, '{F_EVENT_TEXT}', NULL);  /* 2014:067 */
+INSERT INTO T_SUBPOENA_KIND VALUES ('є', 'Бюлетин за съдимост',                                'Бюлет. съдимост', 'ъМлШ',                        NULL,              'cxЛr',                       'OI',            '..p.sl......t..G....', 'a', 0810, 'Buletin.htm',    NULL, NULL, '{F_EXEC_TEXT}', NULL);  /* 2012:045 attr +f; 2012:076 was F_EVENT_TEXT; 2013:071 -f */
+INSERT INTO T_SUBPOENA_KIND VALUES ('ё', 'Бюлетин за съдимост - чл. 78а НК',                   'Бюлет. съдимост', 'ъШ',                          NULL,              'cxЛk',                       'O!D',           '..p.sl......t..G....', 'a', 0820, 'Buletin_.htm',   NULL, NULL, '{F_EXEC_TEXT}', NULL);  /* 2012:045 attr +f; 2012:076 was F_EVENT_TEXT; 2013:071 -f */
+INSERT INTO T_SUBPOENA_KIND VALUES ('ў', 'Писмо до Бюро съдимост',                             'Писмо',           'ъМШл',                        NULL,              NULL,                         'O!DIWCПHU',     '..p.s.P..o.....G....', 'l', 0830, 'Boslet1p.htm',   NULL, NULL, NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('ќ', 'Писмо за изпращане на изпълн.лист, обезп.заповед',   'Писмо',           'ЪДУИFGЃѓЉЊЌљњъМШлмЩp”',       '!f',              NULL,                         NULL,            '..p.s.P..o.....G....', 'l', 0840, 'Boslet2_.htm',   NULL, 'За изпращане на изпълнителен лист, обезпечителна заповед в полза на Държавата', NULL, NULL);  /* 2014:339 !INVOLVEMENTS -> NULL */
+INSERT INTO T_SUBPOENA_KIND VALUES ('µ', 'Писмо-уведомление до финансов орган',                'Писмо',           'ЪДУИFGЃѓЉЊЌљњъМШлмЩp”',       '!f',              NULL,                         NULL,            '..p.s.P..o.....G....', 'l', 0842, 'Boslet2n.htm',   NULL, 'За изпращане на изпълнителен лист в полза на държавата на финансов орган', NULL, NULL);  /* 2014:339 !INVOLVEMENTS -> NULL */
+INSERT INTO T_SUBPOENA_KIND VALUES ('ѓ', 'Възлагателно писмо ЧСИ',                             'Писмо',           'ЪДУИFGЃѓЉЊЌљњъМШлмЩp”',       '!f',              NULL,                         NULL,            '..p.s.P..o.....G....', 'l', 0844, 'Boslet2_n.htm',  NULL, 'За изпращане на изпълнителен лист, обезпечителна заповед в полза на Държавата на ЧСИ', NULL, NULL);  /* 2016:057 */
+INSERT INTO T_SUBPOENA_KIND VALUES ('–', 'Възлагателно писмо - публични съдебни вземания',     'Писмо',           'ЪДУИFGЃѓЉЊЌљњъМШлмЩp”',       '!f',              NULL,                         NULL,            '..p.s.P..o..t..G....', 'l', 0846, 'Boslet61.htm',   NULL, 'За изпращане на изпълнителен лист, обезпечителна заповед в полза на Държавата на ДСИ', NULL, NULL);  /* 2016:271 */
+INSERT INTO T_SUBPOENA_KIND VALUES ('•', 'Възлагателно писмо - частни съдебни вземания',       'Писмо',           'ЪДУИFGЃѓЉЊЌљњъМШлмЩp”',       '!f',              NULL,                         NULL,            '..p.s.P..o..t..G....', 'l', 0848, 'Boslet62.htm',   NULL, 'За изпращане на изпълнителен лист, обезпечителна заповед в полза на Държавата на ДСИ', NULL, NULL);  /* 2016:271 */
+INSERT INTO T_SUBPOENA_KIND VALUES ('њ', 'Писмо - препис от определение',                      'Писмо',           'л',                           NULL,              NULL,                         'I',             '..p.s.P..o.....G....', 'L', 0850, 'Let_1p.htm',     NULL, 'За изпращане на препис от определение', NULL, NULL);  /* 2011:174 rename */
+INSERT INTO T_SUBPOENA_KIND VALUES ('љ', 'Писмо - МНО',                                        'Писмо',           'лм',                          NULL,              NULL,                         'I',             '..p.s.P..o.....G....', 'L', 0860, 'Let_2p.htm',     NULL, 'До прокуратурата за изпращане на заверен препис от определение/разпореждане', NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('э', 'Писмо - препис от присъда/споразумение/решение',     'Писмо',           'ъМШ',                         NULL,              NULL,                         'O!D',           '..p.s.P..o.....G....', 'L', 0870, 'Let_3p.htm',     NULL, 'До прокуратурата за изпращане на заверен препис', NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('ы', 'Писмо - издръжка',                                   'Писмо',           'ЪДУ',                         'f',               'G',                          'Z',             '..p.s.P..o.....G....', 'L', 0880, 'Let_4c.htm',     NULL, 'До Дирекция "Социално подпомагане" относно образувано дело за издръжка', NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('0', 'Писмо - попечителство',                              'Писмо',           'Ш',                           NULL,              NULL,                         'Z',             '..p.s.P..o.....G....', 'L', 0890, 'Let_5c.htm',     NULL, 'До общината относно поставяне под пълно запращение', NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('1', 'Писмо - настойничество',                             'Писмо',           'Ш',                           NULL,              NULL,                         'Z',             '..p.s.P..o.....G....', 'L', 0900, 'Let_6c.htm',     NULL, 'До ДВУИ относно учредяване на настойничество', NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('2', 'Писмо - препис от решение/определение/разпореждане', 'Писмо',           'Шлм',                         NULL,              NULL,                         '!OIDWCПHU',     '..p.s.P..o.....G....', 'L', 0910, 'Let_7c.htm',     NULL, 'До общината, служба "Гражданско състояние" за изпращане на заверен препис', NULL, NULL);  /* 2012:170 Z -> !OIDWCПHU */
+INSERT INTO T_SUBPOENA_KIND VALUES ('9', 'Писмо - препис от решение/определение/разпореждане', 'Писмо',           'Шлм',                         NULL,              NULL,                         'OIDWCПHU',      '..p.s.P..o.....G....', 'L', 0911, 'Let_7p.htm',     NULL, 'До прокуратурата за сведение и изпълнение', NULL, NULL);  /* 2012:039; 2012:062 +G */
+INSERT INTO T_SUBPOENA_KIND VALUES ('Љ', 'Писмо с разписка - препис от съдебен акт',           'Писмо',           'ШлмЩpУ”',                     NULL,              NULL,                         'OIDWCПHU',      '..p.s.P..o.....G....', 'L', 0912, 'Let_19p.htm',    NULL, 'До Бюро съдимост за сведение и изпълнение', NULL, NULL);  /* 2012:062 */
+INSERT INTO T_SUBPOENA_KIND VALUES ('3', 'Писмо - предоставяне на документ',                   'Писмо',           'ЪДЩpУИFGЃѓЉЊЌљњ',             '!f',              NULL,                         'OID',           'a.p.s.P..o.....G....', 'L', 0920, 'Let_8p.htm',     NULL, NULL, NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('4', 'Писмо - изпращане за обжалване',                     'Писмо',           'О',                           NULL,              NULL,                         NULL,            'a.p.s.P........G....', 'L', 0930, 'OutRegL1.htm',   NULL, NULL, NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('5', 'Писмо - връщане на първоинстанционен съд',           'Писмо',           'О',                           NULL,              'Ж',                          NULL,            'a.p.s.P........G....', 'L', 0940, 'OutRegL2.htm',   NULL, NULL, NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('6', 'Писмо - изпращане по подсъдност/компетентност',      'Писмо',           'О',                           NULL,              NULL,                         NULL,            'a.p.s.P........G....', 'L', 0950, 'OutRegL3.htm',   NULL, NULL, NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('7', 'Писмо - изпращане за определяне на компетентен съд', 'Писмо',           'О',                           NULL,              NULL,                         NULL,            'a.p.s.P........G....', 'L', 0960, 'OutRegL4.htm',   NULL, NULL, NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('8', 'Писмо - изпращане на дело за послужване',            'Писмо',           'О',                           NULL,              NULL,                         NULL,            'a.p.s.P........G....', 'L', 0970, 'OutRegL5.htm',   NULL, NULL, NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('Ю', 'Писмо - връщане на частен съдебен изпълнител',       'Писмо',           'О',                           NULL,              NULL,                         NULL,            'a.p.s.P........G....', 'L', 0980, 'OutRegL6.htm',   NULL, NULL, NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('V', 'Уведомен чрез публикация в ТР',                      'Ув.публ. в ТР',   'ЪДУИFGЃѓЉЊЌљњЛ',              NULL,              '!NMМXW',                     'ZT',            'an..s...L...........', 'n', 0077, NULL,             NULL, NULL, NULL, NULL);  /* 2011:227 +Л */
+INSERT INTO T_SUBPOENA_KIND VALUES ('Я', 'Приложение за ВКС',                                  'Прил. за ВКС',    'О',                           NULL,              NULL,                         NULL,            'a.p.s.P........G....', 'o', 0990, 'OutRegL11.htm',  NULL, NULL, NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('¦', 'Писмо - връщане на прокуратурата',                   'Писмо',           'О',                           NULL,              NULL,                         NULL,            'a.p.s.P........G....', 'o', 0995, 'OutRegL12.htm',  NULL, NULL, NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('Ђ', 'Писмо',                                              'Писмо',           'О',                           NULL,              NULL,                         NULL,            'a.p.s.P........G....', 'L', 1000, 'OutRegL13.htm',  NULL, NULL, NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('У', 'Покана за свикване на събрание на кредиторите',      'Покана СК',       'Л',                           'f',               'dy',                         'ZT',            'anpmsl..L......GH...', 'a', 0980, 'Inv_credit.htm', NULL, NULL, NULL, NULL);  /* 2016:180 */
+INSERT INTO T_SUBPOENA_KIND VALUES ('Ф', 'Писмо - за вписване на покана в ТР',                 'П-мо впи.пок.ТР', 'Л',                           'f',               'dy',                         'ZT',            'a.p.s.P..o.....GH...', 'l', 0120, 'Let_20c.htm',    NULL, NULL, NULL, NULL);  /* 2016:180 */
+INSERT INTO T_SUBPOENA_KIND VALUES ('Ш', 'Писмо - за вписване на съдебен акт в ТР',            'П-мо впи.акт ТР', 'ЪДЛУИFGЃѓЉЊЌљњШлм',           '!f',              NULL,                         'Z[T{N]n}',      '..p.s.P..o.....G....', 'L', 0910, 'Let_19c.htm',    NULL, NULL, NULL, NULL);  /* 2016:180 */
+INSERT INTO T_SUBPOENA_KIND VALUES ('‰', 'Известие за доставяне',                              'Изв.за доставян', '!',                           NULL,              NULL,                         NULL,            '..p.s...............', 'n', 1030, 'bp_orgl.htm',    NULL, NULL, NULL, NULL);
+/* 2017:307 cp from region; 2018-10-02: genk 'M' -> 'T' */
+INSERT INTO T_SUBPOENA_KIND VALUES ('[', 'Съобщение по чл.247б НПК за подсъдим',               'Съобщ. чл.247б',  '”',                           'f',               'cxй',                        NULL,            'anpmslP.L...t..G....', 'a', 1050, 'Smp1fa_r1.htm',  'T',  NULL, NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES (']', 'Съобщение по чл.247б НПК за страна',                 'Съобщ. чл.247б',  '”',                           'f',               '!cxйmoOЊ',                   NULL,            'anpmslP.L...t..G....', 'a', 1055, 'Smp1fs_r1.htm',  'T',  NULL, NULL, NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('{', 'Съобщение по чл.247б НПК за страна',                 'Съобщ. чл.247б',  '”',                           'f',               'mo',                         NULL,            'anpmslP.L...t..G....', 'a', 1060, 'Smp1fs_r2.htm',  'T',  NULL, '{F_FLOOR_LAWSUIT}', NULL);
+INSERT INTO T_SUBPOENA_KIND VALUES ('}', 'Съобщение по чл.247б НПК за пострадал',              'Съобщ. чл.247б',  '”',                           'f',               'OЊ',                         NULL,            'anpmslP.L...t..G....', 'a', 1065, 'Smc_fw_r1.htm',  'T',  NULL, NULL, NULL);
+/* 2017:345 */
+INSERT INTO T_SUBPOENA_KIND VALUES ('<', 'Съобщение по чл.247б НПК за съдебен заседател',      'Съобщ. чл.247б',  '”',                           'f',               'я',                          'O',             'anpmslP.L...t..G....', 'a', 1070, 'Smp1fs_r3.htm',  'T',  NULL, NULL, NULL);  /* 2018-10-02: genk 'M' -> 'T' */
+INSERT INTO T_SUBPOENA_KIND VALUES ('>', 'Призовка за съдебен заседател',                      'Приз. заседател', 'ЩУ',                          'f',               'я',                          'O',             'anpmslP.L...t..G....', 'a', 1075, 'Smp1fsj.htm',    'S',  NULL, NULL, NULL);
+/* 2018-06-26 */
+INSERT INTO T_SUBPOENA_KIND VALUES ('=', 'Съобщение – с разпореждане/определение',             'Съобщ.разп/опр.', 'Й',                           'ђы',              NULL,                         'ки',            'anpmslPML...t..G....', 'a', 0065, 'aplan_req.htm',  'N',  NULL, '{F_EVENT_TEXT}', NULL);
+
+/* 2014:168 */
+UPDATE T_INVOLVEMENT SET F_ORDER = 0155 WHERE F_INVOLVEMENT = 'э';
+
+                              /*  order   subjects */
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 010000, '010000...019900', 'b', '\b\iИскове по СК и ЗЛС', '0100-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 010600, '010600', 'b', '\b\iв.т.ч.\cИскове по СК - за произход', '0106-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 010700, '010700', 'b', '\tИскове по СК - допускане на осиновяване', '0107-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 010800, '011700', 'b', '\tИскове по СК - информация за осиновяване', '0117-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 010900, '010800', 'b', '\tИскове по СК - допускане на международно осиновяване', '0108-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 011300, '010900', 'b', 'Искове по СК - прекратяване на осиновяване, вкл. международно осиновяване', '0109-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 011400, '011300', 'b', 'Иск за връщане на дете – Хагска конвенция \b\i/само СГС/', '0113-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 011700, '011400', 'b', 'Иск за признаване на чуждестранно решение и за допускане на изпълнението на чуждестранно решение \b\i/само СГС/', '0114-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 020000, '020000...029900', 'b', '\b\iОбликационни искове', '0200-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 020100, '020100', 'b', '\b\iв.т.ч.\c Облигационни искове между съсобственици', '0201-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 020200, '020200', 'b', '\tОблигационни искове от/срещу владелец', '0202-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 020400, '020400', 'b', '\tИскове по ЗОДОВ', '0204-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 021900, '021900', 'b', '\tИскове за обезщетение от неприлагане на право на ЕС', '0219-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 030000, '030000...039900', 'b', '\b\iВещни искове', '0300-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 040000, '040000...049900', 'b', '\b\iКолективни искове', '0400-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 060000, '060000...069900', 'b', '\b\iУстановителни искове', '0600-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 090000, '090000...099900', 'b', '\b\iОбезпечения', '0900-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 100000, '100000...109900', 'b', '\b\iЧастни производства', '1000-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 100800, '100800', 'b', '\bв.т.ч.\c Молба за издаване на европейска заповед за плащане и на молба за издаване изпълнителен лист по Регламент /ЕО/ № 1896/2006 г.', '1008-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 100900, '100900', 'b', '\tМолба за издаване на изпълнителен лист  и  на молба за допущане изпълнението на  съд.решение или друг акт постановен в ДЧ на ЕС по Регламент /ЕО/ № 4/2009 г.', '1009-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 101000, '101000', 'b', '\tМолба за събиране на доказателства съгласно чл.17 от Регламент /ЕО/ № 1206/2001 г. само при искания за:а) непосредствено събиране на доказателства;б) ползване на специални средства, запис, диск, телефон.', '1010-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 101100, '101100', 'b', '\tМолба за издаване на удостоверение; молба за издаване на изпълнителен лист въз основа на европейско изпълнително основание  по Регламент /ЕО/ № 805/2004 г.', '1011-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 101200, '101200', 'b', '\tМолба за признаване или отказ признаване решението по чл.  623 ГПК (Р-2201/2001г.,Р-44/2001) и за допускане изпълнението на съдебно решение или друг акт  постановен в ДЧ  съгласно Регламент /ЕО/ № 1215/2012 г. по чл. 623, ал. 1 ГПК;', '1012-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 130000, '130000...139900', 'b', '\b\iДруги граждански дела', '1300-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 210000, '210000...219900', 'b', '\b\iИскове за права или правоотношения, породени или отнасящи се до търговска сделка /обективна и субективна/.', '2100-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 220000, '220000...229900', 'b', '\b\iИскове за права или правоотношения,породени или отнасящи се до концесия, обществена поръчка или приватизационен договор', '2200-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 230000, '230000...239900', 'b', '\b\iИскове за права или правоотношения, породени или отнасящи се до картелни споразумения, решения и съгласувани практики, концентрация на стопанска дейност, нелоялна конкуренция и злоупотреба с монополно или господстващо положение', '2300-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 240000, '240000...249900', 'b', '\b\iИск за недействителност на ТД', '2400-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 250000, '250000...259900', 'b', '\b\iИск за защита на членствени права на членове на ТД', '2500-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 260000, '260000...269900', 'b', '\b\iИск за отмяна на решение на общо събрание на ТД и нищожност при повторност на отменено решение на орган на ТД', '2600-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 270000, '270000...279900', 'b', '\b\iИск за установяване допуснато нарушение при преобразуване на ТД', '2700-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 280000, '280000...289900', 'b', '\b\iИск за прекратяване на ТД по съдебен ред', '2800-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 290000, '290000...299900', 'b', '\b\iИск за обезщетение за вреди, причинени от членове на органи на ТД или други ЮЛ', '2900-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 2100000, '2100000...2109900', 'b', '\b\iИск за заплащане на дивидент и равностойността на дружествен дял', '21000-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 2110000, '2110000...2119900', 'b', '\b\iПроизводство по несъстоятелност', '21100-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 2120000, '2120000...2129900', 'b', '\b\iИск за установяване нищожност или недопустимост на вписването, или несъществуване на вписано обстоятелство', '21200-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 2130000, '2130000...2139900', 'b', '\b\iОбжалване отказ на длъжностното лице по ЗТР за вписване/обявяване', '21300-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 2140000, '2140000...2149900', 'b', '\b\iИск за отмяна или изменение на охранителен акт, засягащ права на трети лица, извън исковете по чл. 29 ЗТР', '21400-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 2150000, '2150000...2159900', 'b', '\b\iИск за отмяна на решение на общото събрание на сдружение', '21500-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 2160000, '2160000...2169900', 'b', '\b\iИск за прекратяване по ЮЛНЦ', '21600-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 2170000, '2170000...2179900', 'b', '\b\iИск за прекратяване на кооперация по съдебен ред', '21700-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 2180000, '2180000...2189900', 'b', '\b\iИск за отмяна на решение на общото събрание на народно читалище или прекратяване на читалището', '21800-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 2190000, '2190000...2199900', 'b', '\b\iИск за прекратяване на читалище по съдебен ред', '21900-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 2200000, '2200000...2209900', 'b', '\b\iИск за разпускане на политическа партия', '22000-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 2210000, '2210000...2219900', 'b', '\b\iИскове по спорове за интелектуална собственост', '22100-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 2220000, '2220000...2229900', 'b', '\b\iРегистрация на сдружение, фондация, читалище', '22200-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 2230000, '2230000...2239900', 'b', '\b\iРегистрация на ЖСК', '22300-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 2240000, '2240000...2249900', 'b', '\b\iРегистрации на адвокатско дружество', '22400-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 2250000, '2250000...2259900', 'b', '\b\iРегистрация на пенсионен фонд /фондове за допълнително задължително пенсионно осигуряване и фондове за допълнително доброволно пенсионни осигуряване вкл. по професионални схеми/', '22500-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 2260000, '2260000...2269900', 'b', '\b\iРегистрация на религиозни институции и местните им поделения', '22600-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 2270000, '2270000...2279900', 'b', '\b\iРегистрация и промени на политическа партия', '22700-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 2280000, '2280000...2289900', 'b', '\b\iЧастни търговски дела', '22800-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 2290000, '2290000...2299900', 'b', '\b\iДруги търговски дела', '22900-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 2300000, '2300000...2399900', 'b', '\b\iДруги фирмени дела', '23000-1');
+/*INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 2399950, '0010000...2399900', 'b', '\b\iВСИЧКО / от ш. 0100-1 до ш. 23000-1 вкл. /', '');*/
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 2400000, '2400000...2499900', 'b', '\b\iПроизводство по стабилизация на търговец', '24000-1');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 2499950, '0010000...2499900', 'b', '\b\iВСИЧКО / от ш. 0100-1 до ш. 24000-1 вкл. /', '');
+
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 010000, '010000...019900', 'b', '\b\iПРЕСТЪПЛЕНИЯ ПРОТИВ РЕПУБЛИКАТА', '0100');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 011300, '011300', 'b', 'в т.ч. Тероризъм - чл. 108а (само за СпНС)', '0113');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 020000, '020000...029900', 'b', '\b\iПРЕСТЪПЛЕНИЯ ПРОТИВ ЛИЧНОСТТА - Убийства', '0200');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 020100, '020100', 'b', 'в т.ч. Убийство по чл. 115 НК', '0201');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 020200, '020200', 'b', 'Квалифицирани състави на убийство - чл. 116, ал. 1 НК', '0202');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 020300, '020300', 'b', 'Убийство на съдия, прокурор, следовател, полицейски орган, разследващ полицай, държавен или частен съдебен изпълнител и помощник - частен съдебен изпълнител, митнически и данъчен служител - чл. 116, ал. 2 НК', '0203');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 020500, '020500', 'b', 'Убийство в състояние на силно раздразнение - чл. 118 НК', '0205');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 021000, '021000', 'b', 'Лишаване от живот при професионална непредпазливост - чл. 123 НК', '0210');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 021400, '021400', 'b', 'Опит за убийство по чл. 115 НК', '0214');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 021500, '021500', 'b', 'Опит за убийство по чл. 116 НК', '0215');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 021600, '021600', 'b', 'Опит за убийство по чл. 118 НК', '0216');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 030000, '030000...039900', 'b', '\b\iПРЕСТЪПЛЕНИЯ ПРОТИВ ЛИЧНОСТТА - Телесни повреди', '0300');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 030500, '030500', 'b', 'в т.ч. Квалифицирани състави на телесна повреда - чл. 131, ал. 1, т. 8 НК (само за СпНС)', '0305');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 030600, '030600', 'b', 'Тежка, средна телесна повреда на съдия, прокурор, следовател, лице от състава на МВР, държавен или частен съдебен изпълнител и помощник - частен съдебен изпълнител, митнически и данъчен служител - чл. 131, ал. 2, т. 1 и 2 НК', '0306');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 040000, '040000...049900', 'b', '\b\iДРУГИ ПРЕСТЪПЛЕНИЯ ПРОТИВ ЛИЧНОСТТА', '0400');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 040700, '040700', 'b', 'в.т.ч. Отвличане - чл. 142, ал. 1 НК', '0407');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 040800, '040800', 'b', 'Квалифицирани състави на отвличане - чл. 142, ал. 2 НК', '0408');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 040900, '040900', 'b', 'Отвличане по чл. 142, ал. 3 НК', '0409');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 041000, '041000', 'b', 'Приготовление за отвличане - чл. 142, ал. 5 НК', '0410');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 041200, '041200', 'b', 'Противозаконно лишаване от свобода от длъжностно лице, представител на обществеността в нарушение на службата или функцията му, от охранител, застраховател или лице от състава на МВР, от лице, действащо по поръчение на организирана престъпна група - чл. 142а, ал. 2, предл.второ НК (само за СпНС)', '0412');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 041600, '041600', 'b', 'Принуда - чл. 143, ал. 2, предл.второ НК (само за СпНС)', '0416');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 041800, '041800', 'b', 'Задържане на заложници -  чл. 143а, ал. 3, предл.второ НК (само за СпНС)', '0418');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 042500, '042500', 'b', 'Квалфицирани състави на блудство - чл. 149, ал. 5 НК', '0425');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 043100, '043100', 'b', 'Квалифицирани състави на изнасилване - чл. 152, ал. 4 НК', '0431');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 043500, '043500', 'b', 'Склоняване към проституция - чл. 155, ал. 5, т. 1 НК (само за СпНС)', '0435');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 044000, '044000', 'b', 'Квалифицирани състави на отвличане с цел предоставяне за развратни действия - чл. 156, ал. 3, т. 1 НК (само за СпНС)', '0440');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 044300, '044300', 'b', 'Разпространение на порнографски материали - чл. 159, ал. 5 НК (само за СпНС)', '0443');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 044700, '044700', 'b', 'Трафик на хора, представляващ опасен рецидив - чл. 159г, предл.второ НК (само за СпНС)', '0447');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 050000, '050000...059900', 'b', '\b\iПРЕСТЪПЛЕНИЯ ПРОТИВ ПРАВАТА НА ГРАЖДАНИТЕ', '0500');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 050100, '050100', 'b', 'в т.ч. Против националното и расовото равенство - чл. 162, ал. 3, предл.първо и ал. 4 НК  (само за СпНС)', '0501');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 070000, '070000...079900', 'b', '\b\iПРЕСТЪПЛЕНИЯ ПРОТИВ СОБСТВЕНОСТТА', '0700');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 070200, '070200', 'b', 'в т.ч. Квалифицирани състави на кражба - чл. 195, ал. 1, т. 9, предл.второ НК  (само за СпНС)', '0702');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 070600, '070600', 'b', 'Кражба в особено големи размери, представляваща особено тежък случай - чл. 196а НК', '0706');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 070900, '070900', 'b', 'Квалифицирани състави на грабеж - чл. 199, ал. 1 НК', '0709');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 071000, '071000', 'b', 'Квалифицирани състави на грабеж - чл. 199, ал. 2 НК', '0710');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 071500, '071500', 'b', 'Длъжностно присвояване в особено големи размери, представляващо особено тежък случай - чл. 203, ал. 1 НК', '0715');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 072000, '072000', 'b', 'Обсебване в особено големи размери, представляващо особено тежък случай - чл. 206, ал. 4 НК', '0720');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 072200, '072200', 'b', 'Присвояване на съкровище - чл. 208, ал. 5, предл.първо НК (само за СпНС)', '0722');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 072900, '072900', 'b', 'Документна измама в особено големи размери - чл. 212, ал. 5 НК', '0729');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 073400, '073400', 'b', 'Квалифицирани състави на рекет - чл. 213а, ал. 2, т. 5, предл.второ НК (само за СпНС)', '0734');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 073500, '073500', 'b', 'Квалифицирани състави на рекет - чл. 213а, ал. 3 НК', '0735');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 073600, '073600', 'b', 'Квалифицирани състави на рекет - чл.213а, ал. 4 НК', '0736');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 073800, '073800', 'b', 'Квалифицирани състави на изнудване - чл. 214, ал. 2 НК', '0738');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 080000, '080000...083400', 'b', '\b\iПРЕСТЪПЛЕНИЯ ПРОТИВ СТОПАНСТВОТО', '0800');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 080100, '080100', 'b', 'в т.ч. Безстопанственост - чл. 219, ал. 1 и 2 НК', '0801');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 080200, '080200', 'b', 'Умишлена безстопанственост - чл. 219, ал. 3 НК', '0802');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 080300, '080300', 'b', 'Безстопанственост в особено големи размери, представляваща особено тежък случай - чл. 219, ал. 4 НК', '0803');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 080400, '080400', 'b', 'Сключване на неизгодна сделка, в това число и квалифициран състав - чл. 220 НК', '0804');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 081700, '081700', 'b', 'Престъпления против горското стопанство - чл. 235, ал. 4, предл.първо НК (само за СпНС)', '0817');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 082200, '082200', 'b', 'Контрабанда на наркотични вещества - чл. 242 ал. 2 НК', '0822');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 082300, '082300', 'b', 'Контрабанда на прекурсори или съоръжения и материали за производство на наркотични вещества - чл. 242 ал. 3 НК', '0823');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 083450, '083450...83900', 'b', 'ПРЕСТЪПЛЕНИЯ ПРОТИВ ФИНАНСОВАТА,  ДАНЪЧНАТА И ОСИГУРИТЕЛНАТА СИСТЕМИ', '800А');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 083500, '083500', 'b', 'в т.ч. Пране на пари, приготовление и сдружаване - чл. 253, ал. 1 НК; чл. 253а НК', '0835');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 083600, '083600', 'b', 'Квалифицирани състави на пране на пари - чл. 253, ал. 2 - 5 НК', '0836');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 083700, '083700', 'b', 'Нарушаване разпоредбите на Закона за мерките срещу изпирането на пари от длъжностно лице - чл. 253б НК', '0837');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 083900, '083900', 'b', 'Укриване и неплащане на данъчни задължения - чл. 255, чл. 255а, чл. 256, чл. 257 НК', '0839');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 090000, '090000...099900', 'b', '\b\iПРЕСТЪПЛЕНИЯ ПРОТИВ ДЕЙНОСТТА НА ДЪРЖАВНИТЕ ОРГАНИ И ОБЩЕСТВЕНИТЕ ОРГАНИЗАЦИИ', '0900');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 091100, '091100', 'b', 'в т.ч. Незаконно превеждане през граница - чл. 280, ал. 2, т. 5 НК  (само за СпНС)', '0911');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 091300, '091300', 'b', 'Основен състав на престъпление по служба - чл. 282,  ал. 1 НК', '0913');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 091400, '091400', 'b', 'Квалифицирани състави на престъпление по служба - чл. 282, ал. 2 - 5 НК', '0914');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 091500, '091500', 'b', 'Престъпление по служба - чл. 282а НК', '0915');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 091600, '091600', 'b', 'Престъпление по служба - чл. 283 НК', '0916');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 091700, '091700', 'b', 'Престъпление по служба - чл. 283а НК', '0917');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 091800, '091800', 'b', 'Престъпление по служба - чл. 283б НК', '0918');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 093200, '093200', 'b', 'Подкуп - чл. 301 НК', '0932');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 093300, '093300', 'b', 'Квалифицирани състави на подуп - чл. 302 НК', '0933');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 093400, '093400', 'b', 'Подкуп в особено големи размери, представляващ особено тежък случай - чл. 302а НК', '0934');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 093500, '093500', 'b', 'Подкуп на длъжностно лице - чл. 304 НК', '0935');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 093600, '093600', 'b', 'Подкуп на длъжностно лице, заемащо отговорно служебно положение, включително съдия, съдебен заседател, прокурор или следовател - чл. 304а НК', '0936');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 093700, '093700', 'b', 'Подкуп от и на чуждо длъжностно лице - чл. 301, ал. 5 и чл. 304, ал. 3 НК', '0937');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 093800, '093800', 'b', 'Подкуп с цел упражняване на влияние - чл. 304б НК', '0938');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 093900, '093900', 'b', 'Подкуп, получен от арбитър или вещо лице - чл. 305 НК', '0939');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 094000, '094000', 'b', 'Посредничество за подкуп - чл. 305а НК', '0940');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 094100, '094100', 'b', 'Провокация за подкуп - чл. 307 НК', '0941');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 100000, '100000...109900', 'b', '\b\iДОКУМЕНТНИ ПРЕСТЪПЛЕНИЯ - чл. 308 - чл. 319 НК', '1000');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 110000, '110000...119900', 'b', '\b\iКОМПЮТЪРНИ ПРЕСТЪПЛЕНИЯ - чл. 319а - чл. 319е НК', '1100');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 120000, '120000...129900', 'b', '\b\iПРЕСТЪПЛЕНИЯ ПРОТИВ РЕДА И ОБЩЕСТВЕНОТО СПОКОЙСТВИЕ', '1200');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 120200, '120200', 'b', 'в т.ч. Образуване и ръководене на организирана престъпна група - чл. 321 НК (само за СпНС)', '1202');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 120300, '120300', 'b', 'Участие в ръководството на престъпна организация или група - чл. 321а НК (само за СпНС)', '1203');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 130000, '130000...139900', 'b', '\b\iОБЩООПАСНИ ПРЕСТЪПЛЕНИЯ', '1300');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 130200, '130200', 'b', 'в т.ч. Квалифицирани състави на палеж и взрив - чл. 330, ал. 2 и 3, чл. 333 НК', '1302');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 131100, '131100', 'b', 'Причиняване на смърт и телесна повреда в транспорта - чл. 342 НК', '1311');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 131300, '131300', 'b', 'Причиняване на смърт по непредпазливост в транспорта - чл.343, ал. 1 б. "в" от НК', '1313');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 131500, '131500', 'b', 'Причиняване на смърт при управление на МПС в квалифицирани случаи - чл. 343, ал. 3, б. "б" и ал. 4 НК', '1315');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 132100, '132100', 'b', 'Противозаконно отнемане на МПС - чл. 346, ал.6, предл.второ НК  (само за СпНС)', '1321');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 133200, '133200', 'b', 'Основни състави на производство, пренасяне, изготвяне, търговия и др. на наркотични вещества - чл. 354а, ал. 1 и 2 НК', '1332');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 133400, '133400', 'b', 'Склоняване към употреба на наркотични вещества - чл. 354б НК', '1334');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 133600, '133600', 'b', 'Квалифицирани състави на отглеждане на растения с цел производство на наркотични вещества - чл. 354в, ал. 2 - 4 НК  (само за СпНС)', '1336');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 133800, '133800', 'b', 'Общоопасни престъпления, извършени от чужд гражданин - чл. 356б, ал. 2  НК  (само за СпНС)', '1338');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 140000, '140000...149900', 'b', '\b\iПРЕСТЪПЛЕНИЯ ПРОТИВ ОТБРАНИТЕЛНАТА СПОСОБНОСТ НА РЕПУБЛИКАТА', '1400');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 140100, '140100', 'b', 'в т.ч. Разгласяване сведения, представляващи държавна тайна - чл. 357 - чл. 360 НК', '1401');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 160000, '160000...169800', 'b', '\b\iПРЕСТЪПЛЕНИЯ ПРОТИВ МИРА И ЧОВЕЧЕСТВОТО', '1600');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 169900, '010000...169800', 'b', '\b\iОБЩО ДЕЛА НОХ  /от ш. 0100 до ш. 1600/', '1699');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 200000, '200000...299900', 'b', '\b\iЧНД - СЪДЕБНО ПРОИЗВОДСТВО', '2000');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 211000, '211000', 'b', 'в т.ч. Производство за определяне на общо наказание по чл. 23-27 НК (кумулации – чл. 306, ал. 1, т. 1 НПК)', '2110');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 240000, '240000', 'b', 'Производство по молби за реабилитация', '2400');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 300000, '300000...399900', 'b', '\b\iЧНД - ОТ ДОСЪДЕБНОТО ПРОИЗВОДСТВО', '3000');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 400000, '400000...499900', 'b', '\b\iАДМИНИСТРАТИВНИ ДЕЛА - общо', '4000');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 499900, '010000...499900', 'b', '\bОбщо наказателни I инстанция дела', '');
+/* 2018-01-05 */
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 71200, '71200', 'b', 'Длъжностно присвояване – чл. 201 НК (само за СпНС)', '0712');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 71300, '71300', 'b', 'Длъжностно присвояване, за улесняването на което е извършено и друго престъпление, не по-тежко наказуемо – чл. 201 НК (само за СпНС)', '0713');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 71400, '71400', 'b', 'Длъжностно присвояване в големи размери – чл. 202, ал. 1, т. 1 и т. 2 НК (само за СпНС)', '0714');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 71600, '71600', 'b', 'Маловажни случаи на длъжностно присвояване – чл. 204 НК (само за СпНС) – чл. 205 НК (само за СпНС)', '0716');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 72600, '72600', 'b', 'Документна измама – чл. 212, ал. 1 и ал. 2 НК (само за СпНС)', '0726');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 72700, '72700', 'b', 'Документна измама, при която полученото без правно основание имущество е от фондове на Европейския съюз или предоставено от тях на българската държава – чл. 212, ал. 3 НК (само за СпНС)', '0727');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 72800, '72800', 'b', 'Документна измама в големи размери или представляваща опасен рецидив – чл. 212, ал. 4 НК (само за СпНС)', '0728');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 73000, '73000', 'b', 'Измама по чл.212а НК (само за СпНС)', '0730');
+INSERT INTO T_REPORT_RANGE VALUES ('p', 1, 92100, '92100', 'b', 'Престъпление по служба - чл.285 НК (само за СпНС)', '0921');
+/* 2018-01-05 */
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 2111000, '2111000', 'b', '\bв.т.ч.\c Молба за откриване на производство по несъстоятелност', '21110');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 2112000, '2112000', 'b', 'Искове за прогласяване /обявяване на нищожност/ недействителност на действия и сделки по отношение на кредиторите на несъстоятелността', '21120');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 2113000, '2113000', 'b', 'Иск за установяване съществуване на неприето или несъществуване на прието вземане, възражения по ЗБН', '21130');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 2410000, '2410000', 'b', '\bв.т.ч.\c Молба за откриване на производство по стабилизация', '24100');
+INSERT INTO T_REPORT_RANGE VALUES ('ctad', 1, 2420000, '2420000', 'b', 'Иск за унищожаване на плана за стабилизация', '24200');

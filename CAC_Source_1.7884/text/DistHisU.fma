@@ -1,0 +1,105 @@
+***_TITLE
+***_END
+***_FORMATTED_HEADER
+<html>
+<head>
+<title>СПРАВКА ЗА РАЗПРЕДЕЛЕНИ ДОКУМЕНТИ</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+</head>
+<body bgcolor="#@249 1 0 35#FFFFFF">
+<font face="Arial" color="#@ 249 1 0 35#000000">
+<center>
+<h3>
+СПРАВКА ЗА РАЗПРЕДЕЛЕНИ ДОКУМЕНТИ<br>
+за #@ 7067 255#<br>
+#@ 7066 255#<br>
+</h3>#
+***_END
+***_HEADER
+<table border cellspacing=1>
+<tr>
+<th bgcolor="#D0D0D0"><font face="Arial" color="#000000">Разпределен на</font></th>
+<th bgcolor="#D0D0D0"><font face="Arial" color="#000000">Дата</font></th>
+<th bgcolor="#D0D0D0"><font face="Arial" color="#000000">Вх.No/г.</font></th>
+<th bgcolor="#D0D0D0"><font face="Arial" color="#000000">Съдия</font></th>
+<th bgcolor="#D0D0D0"><font face="Arial" color="#000000">Предмет</font></th>
+<th bgcolor="#D0D0D0"><font face="Arial" color="#000000">Сл</font></th>
+<th bgcolor="#D0D0D0"><font face="Arial" color="#000000">Страни</font></th>
+<th bgcolor="#D0D0D0"><font face="Arial" color="#000000">Резолюция</font></th>
+<th bgcolor="#D0D0D0"><font face="Arial" color="#000000">Дело</font></th>
+<th bgcolor="#D0D0D0"><font face="Arial" color="#000000">Разпределил</font></th>
+</tr>
+***_END
+***_TABLE_ROW
+<tr>
+<td align="left" valign="top"><font face="Arial" color="#@ 249 1 0 35#000000">#@ 65002 100 1 ; Разпределен на#</font></td>#
+<td align="left" valign="top"><font face="Arial" color="#@ 249 1 0 35#000000">#@ 65003 100 1 ; Дата на<br>документа#</font></td>#
+<td align="right" valign="top"><font face="Arial" color="#@ 249 1 0 35#000000">#@ 65004 100 1 ; Преписка#</font></td>
+<td align="left" valign="top"><font face="Arial" color="#@ 249 1 0 35#000000">#@ 65005 100 1 ; Съдия#</font></td>#
+<td align="left" valign="top"><font face="Arial" color="#@ 249 1 0 35#000000">#@ 65006 200 1 ; Предмет#</font></td>#
+<td align="left" valign="top"><font face="Arial" color="#@ 249 1 0 35#000000">#@ 65007 100 1 ; Сл#</font></td>#
+<td align="left" valign="top"><font face="Arial" color="#@ 249 1 0 35#000000">#@ 65008 100 1 ; Страни#</font></td>#
+<td align="left" valign="top"><font face="Arial" color="#@ 249 1 0 35#000000">#@ 65009 100 1 ; Резолюция#</font></td>#
+<td align="left" valign="top"><font face="Arial" color="#@ 249 1 0 35#000000">#@ 65010 100 1 ; Дело#</font></td>#
+<td align="left" valign="top"><font face="Arial" color="#@ 249 1 0 35#000000">#@ 65011 100 1 ; Разпределил#</font></td>#
+</tr>#
+***_END
+***_ALTER_TABLE_ROW
+<tr>
+<td align="left" valign="top" bgcolor="#@ 249 1 0 35#E0E0E0"><font face="Arial" color="#@ 249 1 0 35#000000">#@ 65002 100 1 ; Разпределен на#</font></td>#
+<td align="left" valign="top" bgcolor="#@ 249 1 0 35#E0E0E0"><font face="Arial" color="#@ 249 1 0 35#000000">#@ 65003 100 1 ; Дата на<br>документа#</font></td>#
+<td align="right" valign="top" bgcolor="#@ 249 1 0 35#E0E0E0"><font face="Arial" color="#@ 249 1 0 35#000000">#@ 65004 100 1 ; Преписка#</font></td>
+<td align="left" valign="top" bgcolor="#@ 249 1 0 35#E0E0E0"><font face="Arial" color="#@ 249 1 0 35#000000">#@ 65005 100 1 ; Съдия#</font></td>#
+<td align="left" valign="top" bgcolor="#@ 249 1 0 35#E0E0E0"><font face="Arial" color="#@ 249 1 0 35#000000">#@ 65006 200 1 ; Предмет#</font></td>#
+<td align="left" valign="top" bgcolor="#@ 249 1 0 35#E0E0E0"><font face="Arial" color="#@ 249 1 0 35#000000">#@ 65007 100 1 ; Сл#</font></td>#
+<td align="left" valign="top" bgcolor="#@ 249 1 0 35#E0E0E0"><font face="Arial" color="#@ 249 1 0 35#000000">#@ 65008 100 1 ; Страни#</font></td>#
+<td align="left" valign="top" bgcolor="#@ 249 1 0 35#E0E0E0"><font face="Arial" color="#@ 249 1 0 35#000000">#@ 65009 100 1 ; Резолюция#</font></td>#
+<td align="left" valign="top" bgcolor="#@ 249 1 0 35#E0E0E0"><font face="Arial" color="#@ 249 1 0 35#000000">#@ 65010 100 1 ; Дело#</font></td>#
+<td align="left" valign="top" bgcolor="#@ 249 1 0 35#E0E0E0"><font face="Arial" color="#@ 249 1 0 35#000000">#@ 65011 100 1 ; Разпределил#</font></td>#
+</tr>#
+***_END
+***_NO_DATA
+<tr>
+<td align="center" valign="top" colspan="10"><font face="Arial" color="#000000">Липсват данни</font></td>
+</tr>
+***_END
+***_COLUMNS
+10 0
+65002 100 ; Разпределен на
+65003 100 ; Дата на документа
+65004 100 ; Преписка
+65005 100 ; Съдия
+65006 200 ; Предмет
+65007 100 ; Сл
+65008 100 ; Страни
+65009 100 ; Резолюция
+65010 100 ; Дело
+65011 100 ; Разпределил
+***_END
+***_END
+***_MEDIUM_LINE
+‘—†—’
+***_END
+***_WANT_KINDS
+NO
+***_END
+***_SUBJECTS
+***_END
+***_SUBJECT_RANGES
+***_END
+***_MERGED_KINDS
+***_END
+***_FORMATTED_TAIL
+***_END
+***_TAIL
+</table>
+</center>
+</font>
+</body>
+</html>
+***_END
+
+***_PARAMETERS
+127 55 1 1 0 3
+***_END
+

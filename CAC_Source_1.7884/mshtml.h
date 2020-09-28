@@ -1,0 +1,167 @@
+EXTERN_C const IID IID_IHTMLDocument;
+#undef INTERFACE
+#define INTERFACE IHTMLDocument
+DECLARE_INTERFACE_(IHTMLDocument,IDispatch)
+{
+	STDMETHOD(QueryInterface)(THIS_ REFIID,PVOID*) PURE;
+	STDMETHOD_(ULONG,AddRef)(THIS) PURE;
+	STDMETHOD_(ULONG,Release)(THIS) PURE;
+	STDMETHOD(GetTypeInfoCount)(THIS_ UINT*) PURE;
+	STDMETHOD(GetTypeInfo)(THIS_ UINT,LCID,LPTYPEINFO*) PURE;
+	STDMETHOD(GetIDsOfNames)(THIS_ REFIID,LPOLESTR*,UINT,LCID,DISPID*) PURE;
+	STDMETHOD(Invoke)(THIS_ DISPID,REFIID,LCID,WORD,DISPPARAMS*,VARIANT*,EXCEPINFO*,UINT*) PURE;
+
+	STDMETHOD(get_Script)(THIS_ IDispatch**) PURE;
+};
+
+#define IHTMLDocument_QueryInterface(p,i,o) (p)->lpVtbl->QueryInterface((p),(i),(o))
+#define IHTMLDocument_Release(p) (p)->lpVtbl->Release(p)
+
+typedef struct IHTMLElementCollection *LPHTMLELEMENTCOLLECTION;
+typedef struct IHTMLElement *LPHTMLELEMENT;
+typedef struct IHTMLSelectionObject *LPHTMLSELECTIONOBJECT;
+typedef struct IHTMLFramesCollection *LPHTMLFRAMESCOLLECTION;
+typedef struct IHTMLLocation *LPHTMLLOCATION;
+typedef struct IHTMLWindow2 *LPHTMLWINDOW2;
+typedef struct IHTMLStyleSheetsCollection *LPHTMLSTYLESHEETSCOLLECTION;
+typedef struct IHTMLStyleSheet *LPHTMLSTYLESHEET;
+typedef struct IHTMLStyle *LPHTMLSTYLE;
+typedef struct IHTMLFiltersCollection *LPHTMLFILTERSCOLLECTION;
+typedef struct IHTMLLinkElement *LPHTMLLINKELEMENT;
+typedef struct IHTMLImgElement *LPHTMLIMGELEMENT;
+typedef struct IHTMLImageElementFactory *LPHTMLIMAGEELEMENTFACTORY;
+typedef struct IHTMLEventObj *LPHTMLEVENTOBJ;
+typedef struct IHTMLScreen *LPHTMLSCREEN;
+typedef struct IHTMLOptionElementFactory *LPHTMLOPTIONELEMENTFACTORY;
+typedef struct IOmHistory *LPOMHISTORY;
+typedef struct IOmNavigator *LPOMNAVIGATOR;
+
+EXTERN_C const IID IID_IHTMLDocument2;
+#undef INTERFACE
+#define INTERFACE IHTMLDocument2
+DECLARE_INTERFACE_(IHTMLDocument2,IHTMLDocument)
+{
+	STDMETHOD(QueryInterface)(THIS_ REFIID,PVOID*) PURE;
+	STDMETHOD_(ULONG,AddRef)(THIS) PURE;
+	STDMETHOD_(ULONG,Release)(THIS) PURE;
+	STDMETHOD(GetTypeInfoCount)(THIS_ UINT*) PURE;
+	STDMETHOD(GetTypeInfo)(THIS_ UINT,LCID,LPTYPEINFO*) PURE;
+	STDMETHOD(GetIDsOfNames)(THIS_ REFIID,LPOLESTR*,UINT,LCID,DISPID*) PURE;
+	STDMETHOD(Invoke)(THIS_ DISPID,REFIID,LCID,WORD,DISPPARAMS*,VARIANT*,EXCEPINFO*,UINT*) PURE;
+
+	STDMETHOD(get_Script)(THIS_ IDispatch**) PURE;
+
+	STDMETHOD(get_all)(THIS_ LPHTMLELEMENTCOLLECTION*) PURE;
+	STDMETHOD(get_body)(THIS_ LPHTMLELEMENT*) PURE;
+	STDMETHOD(get_activeElement)(THIS_ LPHTMLELEMENT*) PURE;
+	STDMETHOD(get_images)(THIS_ LPHTMLELEMENTCOLLECTION*) PURE;
+	STDMETHOD(get_applets)(THIS_ LPHTMLELEMENTCOLLECTION*) PURE;
+	STDMETHOD(get_links)(THIS_ LPHTMLELEMENTCOLLECTION*) PURE;
+	STDMETHOD(get_forms)(THIS_ LPHTMLELEMENTCOLLECTION*) PURE;
+	STDMETHOD(get_anchors)(THIS_ LPHTMLELEMENTCOLLECTION*) PURE;
+	STDMETHOD(put_title)(THIS_ BSTR) PURE;
+	STDMETHOD(get_title)(THIS_ BSTR*) PURE;
+	STDMETHOD(get_scripts)(THIS_ LPHTMLELEMENTCOLLECTION*) PURE;
+	STDMETHOD(put_designMode)(THIS_ BSTR) PURE;
+	STDMETHOD(get_designMode)(THIS_ BSTR*) PURE;
+	STDMETHOD(get_selection)(THIS_ LPHTMLSELECTIONOBJECT*) PURE;
+	STDMETHOD(get_readyState)(THIS_ BSTR*) PURE;
+	STDMETHOD(get_frames)(THIS_ LPHTMLFRAMESCOLLECTION*) PURE;
+	STDMETHOD(get_embeds)(THIS_ LPHTMLELEMENTCOLLECTION*) PURE;
+	STDMETHOD(get_plugins)(THIS_ LPHTMLELEMENTCOLLECTION*) PURE;
+	STDMETHOD(put_alinkColor)(THIS_ VARIANT) PURE;
+	STDMETHOD(get_alinkColor)(THIS_ VARIANT*) PURE;
+	STDMETHOD(put_bgColor)(THIS_ VARIANT) PURE;
+	STDMETHOD(get_bgColor)(THIS_ VARIANT*) PURE;
+	STDMETHOD(put_fgColor)(THIS_ VARIANT) PURE;
+	STDMETHOD(get_fgColor)(THIS_ VARIANT*) PURE;
+	STDMETHOD(put_linkColor)(THIS_ VARIANT) PURE;
+	STDMETHOD(get_linkColor)(THIS_ VARIANT*) PURE;
+	STDMETHOD(put_vlinkColor)(THIS_ VARIANT) PURE;
+	STDMETHOD(get_vlinkColor)(THIS_ VARIANT*) PURE;
+	STDMETHOD(get_referrer)(THIS_ BSTR*) PURE;
+	STDMETHOD(get_location)(THIS_ LPHTMLLOCATION*) PURE;
+	STDMETHOD(get_lastModified)(THIS_ BSTR*) PURE;
+	STDMETHOD(put_URL)(THIS_ BSTR) PURE;
+	STDMETHOD(get_URL)(THIS_ BSTR*) PURE;
+	STDMETHOD(put_domain)(THIS_ BSTR) PURE;
+	STDMETHOD(get_domain)(THIS_ BSTR*) PURE;
+	STDMETHOD(put_cookie)(THIS_ BSTR) PURE;
+	STDMETHOD(get_cookie)(THIS_ BSTR*) PURE;
+	STDMETHOD(put_expands)(THIS_ VARIANT_BOOL) PURE;
+	STDMETHOD(get_expands)(THIS_ VARIANT_BOOL*) PURE;
+	STDMETHOD(put_charset)(THIS_ BSTR) PURE;
+	STDMETHOD(get_charset)(THIS_ BSTR*) PURE;
+	STDMETHOD(put_defaultCharset)(THIS_ BSTR) PURE;
+	STDMETHOD(get_defaultCharset)(THIS_ BSTR*) PURE;
+	STDMETHOD(get_mimeType)(THIS_ BSTR*) PURE;
+	STDMETHOD(get_fileSize)(THIS_ BSTR*) PURE;
+	STDMETHOD(get_fileCreatedDate)(THIS_ BSTR*) PURE;
+	STDMETHOD(get_fileModifiedDate)(THIS_ BSTR*) PURE;
+	STDMETHOD(get_fileUpdatedDate)(THIS_ BSTR*) PURE;
+	STDMETHOD(get_security)(THIS_ BSTR*) PURE;
+	STDMETHOD(get_protocol)(THIS_ BSTR*) PURE;
+	STDMETHOD(get_nameProp)(THIS_ BSTR*) PURE;
+	STDMETHOD(write)(THIS_ SAFEARRAY*) PURE;
+	STDMETHOD(writeln)(THIS_ SAFEARRAY*) PURE;
+	STDMETHOD(open)(THIS_ BSTR,VARIANT,VARIANT,VARIANT,IDispatch**) PURE;
+	STDMETHOD(close)(THIS) PURE;
+	STDMETHOD(clear)(THIS) PURE;
+	STDMETHOD(queryCommandSupported)(THIS_ BSTR,VARIANT_BOOL*) PURE;
+	STDMETHOD(queryCommandEnabled)(THIS_ BSTR,VARIANT_BOOL*) PURE;
+	STDMETHOD(queryCommandState)(THIS_ BSTR,VARIANT_BOOL*) PURE;
+	STDMETHOD(queryCommandIndeterm)(THIS_ BSTR,VARIANT_BOOL*) PURE;
+	STDMETHOD(queryCommandText)(THIS_ BSTR,BSTR*) PURE;
+	STDMETHOD(queryCommandValue)(THIS_ BSTR,VARIANT*) PURE;
+	STDMETHOD(execCommand)(THIS_ BSTR,VARIANT_BOOL,VARIANT,VARIANT_BOOL*) PURE;
+	STDMETHOD(execCommandShowHelp)(THIS_ BSTR,VARIANT_BOOL*) PURE;
+	STDMETHOD(createElement)(THIS_ BSTR,LPHTMLELEMENT*) PURE;
+	STDMETHOD(put_onhelp)(THIS_ VARIANT) PURE;
+	STDMETHOD(get_onhelp)(THIS_ VARIANT*) PURE;
+	STDMETHOD(put_onclick)(THIS_ VARIANT) PURE;
+	STDMETHOD(get_onclick)(THIS_ VARIANT*) PURE;
+	STDMETHOD(put_ondblclick)(THIS_ VARIANT) PURE;
+	STDMETHOD(get_ondblclick)(THIS_ VARIANT*) PURE;
+	STDMETHOD(put_onkeyup)(THIS_ VARIANT) PURE;
+	STDMETHOD(get_onkeyup)(THIS_ VARIANT*) PURE;
+	STDMETHOD(put_onkeydown)(THIS_ VARIANT) PURE;
+	STDMETHOD(get_onkeydown)(THIS_ VARIANT*) PURE;
+	STDMETHOD(put_onkeypress)(THIS_ VARIANT) PURE;
+	STDMETHOD(get_onkeypress)(THIS_ VARIANT*) PURE;
+	STDMETHOD(put_onmouseup)(THIS_ VARIANT) PURE;
+	STDMETHOD(get_onmouseup)(THIS_ VARIANT*) PURE;
+	STDMETHOD(put_onmousedown)(THIS_ VARIANT) PURE;
+	STDMETHOD(get_onmousedown)(THIS_ VARIANT*) PURE;
+	STDMETHOD(put_onmousemove)(THIS_ VARIANT) PURE;
+	STDMETHOD(get_onmousemove)(THIS_ VARIANT*) PURE;
+	STDMETHOD(put_onmouseout)(THIS_ VARIANT) PURE;
+	STDMETHOD(get_onmouseout)(THIS_ VARIANT*) PURE;
+	STDMETHOD(put_onmouseover)(THIS_ VARIANT) PURE;
+	STDMETHOD(get_onmouseover)(THIS_ VARIANT*) PURE;
+	STDMETHOD(put_onreadystatechange)(THIS_ VARIANT) PURE;
+	STDMETHOD(get_onreadystatechange)(THIS_ VARIANT*) PURE;
+	STDMETHOD(put_onafterupdate)(THIS_ VARIANT) PURE;
+	STDMETHOD(get_onafterupdate)(THIS_ VARIANT*) PURE;
+	STDMETHOD(put_onrowexit)(THIS_ VARIANT) PURE;
+	STDMETHOD(get_onrowexit)(THIS_ VARIANT*) PURE;
+	STDMETHOD(put_onrowenter)(THIS_ VARIANT) PURE;
+	STDMETHOD(get_onrowenter)(THIS_ VARIANT*) PURE;
+	STDMETHOD(put_ondragstart)(THIS_ VARIANT) PURE;
+	STDMETHOD(get_ondragstart)(THIS_ VARIANT*) PURE;
+	STDMETHOD(put_onselectstart)(THIS_ VARIANT) PURE;
+	STDMETHOD(get_onselectstart)(THIS_ VARIANT*) PURE;
+	STDMETHOD(elementFromPoint)(THIS_ long,long,LPHTMLELEMENT*) PURE;
+	STDMETHOD(get_parentWindow)(THIS_ LPHTMLWINDOW2*) PURE;
+	STDMETHOD(get_styleSheets)(THIS_ LPHTMLSTYLESHEETSCOLLECTION*) PURE;
+	STDMETHOD(put_onbeforeupdate)(THIS_ VARIANT) PURE;
+	STDMETHOD(get_onbeforeupdate)(THIS_ VARIANT*) PURE;
+	STDMETHOD(put_onerrorupdate)(THIS_ VARIANT) PURE;
+	STDMETHOD(get_onerrorupdate)(THIS_ VARIANT*) PURE;
+	STDMETHOD(toString)(THIS_ BSTR*) PURE;
+	STDMETHOD(createStyleSheet)(THIS_ BSTR,long,LPHTMLSTYLESHEET*) PURE;
+};
+
+#define IHTMLDocument2_Release(p) (p)->lpVtbl->Release(p)
+#define IHTMLDocument2_open(p,u,ve1,ve2,ve3,d) (p)->lpVtbl->open((p),(u),(ve1),(ve2),(ve3),(d))
+#define IHTMLDocument2_close(p) (p)->lpVtbl->close(p)
+#define IHTMLDocument2_write(p,a) (p)->lpVtbl->write((p),(a))

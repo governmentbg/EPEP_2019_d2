@@ -1,0 +1,2579 @@
+#include "cac.h"
+
+// ----- VARIOUS -------------------------------------------------------------
+#if COURT_TYPE == COURT_APPEAL || COURT_TYPE == COURT_ADMIN || COURT_TYPE == COURT_AREAL || COURT_TYPE == COURT_MILITARY
+const char *_COLLEGE = "ÓÚ‰ÂÎÂÌËÂ";
+#endif // APPEAL || ADMIN || AREAL || MILITARY
+#if COURT_TYPE == COURT_REGIONAL
+const char *_COLLEGE = "ÍÓÎÂ„Ëˇ";
+#endif  // REGIONAL
+constant Q_CONTINUE = "∆ÂÎ‡ÂÚÂ ÎË ‰‡ ÔÓ‰˙ÎÊËÚÂ?";
+constant HTML_COLUMN_INDENT = "\x06\x06\x06\x06";
+constant UNHANDLED_EXCEPT = "ÕÂÓ·‡·ÓÚÂÌÓ ËÁÍÎ˛˜ÂÌËÂ";
+
+// ----- PROMPTS -------------------------------------------------------------
+constant
+	WAIT = "ÃÓÎˇ ËÁ˜‡Í‡ÈÚÂ...",
+	WAIT_MORE = "       ÃÓÎˇ ËÁ˜‡Í‡ÈÚÂ...       ",
+	WAIT_MUCH_MORE = "              ÃÓÎˇ ËÁ˜‡Í‡ÈÚÂ...               ",
+	WAIT_CC = "Œ·ÏÂÌ Ì‡ ‰‡ÌÌË Á‡ ‚Â˘Ë ÎËˆ‡, ÏÓÎˇ ËÁ˜‡Í‡ÈÚÂ...";
+
+// ----- ELLIPSIS ------------------------------------------------------------
+constant ELLIPSIS_90 = "..........................................................................................";
+
+// ----- C2S -----------------------------------------------------------------
+const char C2S[256][2] =
+{
+	"", "\1", "\2", "\3", "\4", "\5", "\6", "\7", "\10", "\11", "\12",
+	"\13", "\14", "\15", "\16", "\17", "\20", "\21", "\22", "\23", "\24",
+	"\25", "\26", "\27", "\30", "\31", "\32", "\33", "\34", "\35", "\36",
+	"\37", "\40", "\41", "\42", "\43", "\44", "\45", "\46", "\47", "\50",
+	"\51", "\52", "\53", "\54", "\55", "\56", "\57", "\60", "\61", "\62",
+	"\63", "\64", "\65", "\66", "\67", "\70", "\71", "\72", "\73", "\74",
+	"\75", "\76", "\77", "\100", "\101", "\102", "\103", "\104", "\105",
+	"\106", "\107", "\110", "\111", "\112", "\113", "\114", "\115",
+	"\116", "\117", "\120", "\121", "\122", "\123", "\124", "\125",
+	"\126", "\127", "\130", "\131", "\132", "\133", "\134", "\135",
+	"\136", "\137", "\140", "\141", "\142", "\143", "\144", "\145",
+	"\146", "\147", "\150", "\151", "\152", "\153", "\154", "\155",
+	"\156", "\157", "\160", "\161", "\162", "\163", "\164", "\165",
+	"\166", "\167", "\170", "\171", "\172", "\173", "\174", "\175",
+	"\176", "\177", "\200", "\201", "\202", "\203", "\204", "\205",
+	"\206", "\207", "\210", "\211", "\212", "\213", "\214", "\215",
+	"\216", "\217", "\220", "\221", "\222", "\223", "\224", "\225",
+	"\226", "\227", "\230", "\231", "\232", "\233", "\234", "\235",
+	"\236", "\237", "\240", "\241", "\242", "\243", "\244", "\245",
+	"\246", "\247", "\250", "\251", "\252", "\253", "\254", "\255",
+	"\256", "\257", "\260", "\261", "\262", "\263", "\264", "\265",
+	"\266", "\267", "\270", "\271", "\272", "\273", "\274", "\275",
+	"\276", "\277", "\300", "\301", "\302", "\303", "\304", "\305",
+	"\306", "\307", "\310", "\311", "\312", "\313", "\314", "\315",
+	"\316", "\317", "\320", "\321", "\322", "\323", "\324", "\325",
+	"\326", "\327", "\330", "\331", "\332", "\333", "\334", "\335",
+	"\336", "\337", "\340", "\341", "\342", "\343", "\344", "\345",
+	"\346", "\347", "\350", "\351", "\352", "\353", "\354", "\355",
+	"\356", "\357", "\360", "\361", "\362", "\363", "\364", "\365",
+	"\366", "\367", "\370", "\371", "\372", "\373", "\374", "\375",
+	"\376", "\377"
+};
+
+// ----- INSTANCE_ -----------------------------------------------------------
+constant
+#if COURT_TYPE == COURT_APPEAL || COURT_TYPE == COURT_ADMIN || COURT_TYPE == COURT_AREAL || COURT_TYPE == COURT_REGIONAL
+	INSTANCE_III	= "0000000003",
+#endif  // APPEAL || ADMIN || AREAL || REGIONAL
+#if COURT_TYPE == COURT_MILITARY
+	INSTANCE_III	= "0000000009",
+#endif  // MILITARY
+	INSTANCE_SUPER	= "0000000004",
+#if COURT_TYPE == COURT_APPEAL || COURT_TYPE == COURT_ADMIN || COURT_TYPE == COURT_AREAL || COURT_TYPE == COURT_REGIONAL
+	INSTANCE_SPEAL	= "0000000005",
+#endif  // APPEAL || ADMIN || AREAL || REGIONAL
+	INSTANCE_SELF	= "0000000007",
+	INSTANCE_ADMIN	= "0000000008",
+	INSTANCE_SOFAP	= "0000000006",
+	INSTANCE_EISPP	= "0000000001",
+	INSTANCE_APP	= "0000000010";
+
+// ----- HSPDS ---------------------------------------------------------------
+constant
+	SYSAD	= "0000000103",
+#if TESTVER
+	DZHEK = "7106051022",
+#endif  // TESTVER
+	INTER	= "0000000206",
+	EMPTY	= "0000000000";
+
+// ----- UXN_ ----------------------------------------------------------------
+constant
+	UXN_REAL_SIDES	= "cf",
+	UXN_REJOINABLES	= "cf";
+
+// ----- UCN_ ----------------------------------------------------------------
+constant
+	UCN_CITIZENS		= "cC",
+	UCN_FIRMS			= "fF",
+
+	UCN_INSTANCE_RESERVEDS	= "z",
+	UCN_INSTANCE_ANNOUNCES	= "bW",
+	UCN_INSTANCE_JURICONFS	= "Jk",
+	UCN_INSTANCE_RESTARTS	= "sKJ",	// 2013:168 IRQ/FIX: +J
+	UCN_INSTANCE_DESCRIPTS	= "JKk",
+
+	// 2008:203 +M where Z; 2009:345 +W; 2014:244 EDITABLE +E
+	// 2015:051 EDITABLE -E; 2016:270 EDITABLE +N;
+#if COURT_TYPE == COURT_APPEAL
+	// 2015:035 +T; 2015:316 +J
+	UCN_EDITABLE_SENDERS	= "LpsPZbMWTJNO",		// 2018-03-23: +O
+	UCN_RETURN_LOWERS		= "L",
+#endif  // APPEAL
+#if COURT_TYPE == COURT_ADMIN
+	UCN_EDITABLE_SENDERS	= "JsLTbtWN",		// 2007:046 +t
+	UCN_RETURN_LOWERS		= "L",
+#endif  // AREAL
+#if COURT_TYPE == COURT_AREAL
+	UCN_EDITABLE_SENDERS	= "JLpPZsTbVMWNO",	// 2007:311 +V; 2016:294 +O
+	UCN_RETURN_LOWERS		= "LxX",
+#endif  // AREAL
+#if COURT_TYPE == COURT_MILITARY
+	UCN_EDITABLE_SENDERS	= "JLpPZsbVMWTNO",	// 2015:035 +T; 2016:294 +O
+	UCN_RETURN_LOWERS		= "L",
+#endif  // MILITARY
+#if COURT_TYPE == COURT_REGIONAL
+	UCN_EDITABLE_SENDERS	= "JpPZstbMWTN",		// 2015:035 +T
+#endif  // REGIONAL
+	UCN_COURT_TEMPL_SENDERS	= "LW",
+	// 2017:089 clean 1-purpose categories; 2017:138 FIX: +t
+	UCN_ADD_ABLE_SENDERS	= "LpPZMTVW" "RI" "t",
+	UCN_ADDR_REQR_SENDERS	= "TI",
+	UCN_EDIT_NAME_SENDERS	= "pPZMTV" "RI" "LWbJst",	// 2017:138 FIX: +t
+	UCN_EDIT_ADDR_SENDERS	= "bJLTsWNO" "I",
+	UCN_MIXED_CASE_SENDERS	= "LW" "bJs",
+	UCN_RECEIVER_SENDERS	= "JkKsL",
+
+	UCN_DAMNS			= "dD",
+	UCN_EXECUTORS		= "xX",
+	UCN_ACCOUNTS		= "bE",
+
+	UCN_RENUMBERABLE_FROMS	= "cCfF",
+	UCN_RENUMBERABLE_TOS	= "cf",
+	UCN_JOINABLE_FROMS	= "cCfF",
+	UCN_JOINABLE_TOS		= "cCfF",
+
+	UCN_LOW_CODES		= "pt",
+	UCN_SIDES			= "cCfFU",
+	UCN_DATED_SIDES		= "cCfFAU",
+	UCN_REAL_SIDES		= "cCfF",
+	UCN_INSTANCE_PAYMENTS	= "Lb",
+	UCN_EXEC_RECEIVERS	= "xXTN",
+	UCN_LIST_NAMES_ONLY	= "JNT",
+	UCN_NOT_EPORTALS		= "TxXYVNRIEOP";
+
+char _UCN_FLOATCON_SENDERS[SIZE_OF_UCN_TYPES];
+
+// ----- INVOLVEMENT_ --------------------------------------------------------
+constant
+#if COURT_TYPE == COURT_APPEAL
+	INVOLVEMENT_FROM_SIDES		= "ad¡",
+	INVOLVEMENT_FROM_LEFTS		= "a",
+	INVOLVEMENT_FROM_RIGHTS		= "d",
+	INVOLVEMENT_FROMABLE_SIDES	= "I3W",
+#endif  // APPEAL
+#if COURT_TYPE == COURT_ADMIN
+	INVOLVEMENT_FROM_SIDES		= "saudv¡",
+	INVOLVEMENT_FROM_LEFTS		= "sau",
+	INVOLVEMENT_FROM_RIGHTS		= "dv",
+	INVOLVEMENT_FROMABLE_SIDES	= "I3W",
+#endif  // ADMIN
+#if COURT_TYPE == COURT_AREAL
+	INVOLVEMENT_FROM_SIDES		= "saudv¡",
+	INVOLVEMENT_FROM_LEFTS		= "sau",
+	INVOLVEMENT_FROM_RIGHTS		= "dv",
+	INVOLVEMENT_FROMABLE_SIDES	= "I3W",
+#endif  // AREAL
+#if COURT_TYPE == COURT_MILITARY
+	INVOLVEMENT_FROM_SIDES		= "saudv¡",
+	INVOLVEMENT_FROM_LEFTS		= "sau",
+	INVOLVEMENT_FROM_RIGHTS		= "dv",
+	INVOLVEMENT_FROMABLE_SIDES	= "I3W",
+#endif  // MILITARY
+#if COURT_TYPE == COURT_REGIONAL
+	INVOLVEMENT_FROM_SIDES		= "sd¡",
+	INVOLVEMENT_FROM_LEFTS		= "s",
+	INVOLVEMENT_FROM_RIGHTS		= "d",
+	INVOLVEMENT_FROMABLE_SIDES	= "I3W",
+#endif  // REGIONAL
+	// 2007:040 +9; 2007:305 +À; 2007:346 + , to be removed; 2008:023 - 
+	// 2008:075 _RQ: FIX: +«; 2008:282 +¯; 2009:132 -¡, -local lower
+	// 2011:242 -8 for RC; 2015:187 +ö +ú; 2017:101 +û; 2017:213 +à
+	// 2018-01-31 -8 for all counrs, used in RC only
+	INVOLVEMENT_PSEUDO_LOWERS	= "√”‘’÷◊ÿŸ⁄…209À«öúùçûàü",
+	// 2008:059 +Ã; 2011:147 +DP; 2015:070 +OŒ; 2015:071 +8
+	// 2016:279 TRQ/FIX: +Ü; 2017:003 TRQ/FIX: +V; 2017:010 FIX: +Z˜ä
+	INVOLVEMENT_MONEYABLES		= "WXNMADS6ˇÃDPOŒ8ÜVZ˜ä",
+	// 2010:060 + ; 2011:019 +Ë; 2011:172 -¬; 2014:107 ~KNOWN; 2016:070 +7
+	INVOLVEMENT_CHECK_PERSONS	= "LADXS 6ˇ»Ë7",
+#if COURT_TYPE == COURT_APPEAL || COURT_TYPE == COURT_ADMIN
+	INVOLVEMENT_VISIBLE_PERSONS	= "5›XS7F",		// 2010:069 LPR/LRQ: -4; 2011:147 +F
+#endif  // APPEAL || ADMIN
+#if COURT_TYPE == COURT_AREAL || COURT_TYPE == COURT_MILITARY || COURT_TYPE == COURT_REGIONAL
+	INVOLVEMENT_VISIBLE_PERSONS	= "54›XS7F",	// 2011:147 +F
+#endif  // APPEAL || ADMIN || AREAL || MILITARY || REGIONAL
+	INVOLVEMENT_REAL_PERSONS	= "45",
+	INVOLVEMENT_PROSECUTORS		= "5",
+	INVOLVEMENT_JURORS		= "4",
+	INVOLVEMENT_INTERNALS		= "¡",
+	INVOLVEMENT_REASONABLES		= "DA",
+	INVOLVEMENT_EXPERTS		= "X6Ü",		// 2016:271 +Ü
+	INVOLVEMENT_DEBTORS		= "y",
+	INVOLVEMENT_CREDITORS		= "q«",
+	INVOLVEMENT_CREDEBTORS		= "yq«",
+	INVOLVEMENT_PUNISHMENTS		= "cx",
+	INVOLVEMENT_EXPORTS		= "5›X",
+	INVOLVEMENT_PERSONALS		= "ecx…",
+#if COURT_TYPE == COURT_AREAL
+	INVOLVEMENT_CREDITOR_LEFTS	= "srq",
+	INVOLVEMENT_CREDITOR_RIGHTS	= "dy",
+	INVOLVEMENT_DEBTOR_LEFTS	= "sry",
+	INVOLVEMENT_INCONSISTENCES	= "srq" "dy",
+	INVOLVEMENT_DEBTOR_CHECKS	= "sr",
+#endif  // AREAL
+#if COURT_TYPE == COURT_REGIONAL
+	INVOLVEMENT_HERITAGES		= "rﬂ",
+	INVOLVEMENT_EUHER_MANDATORYS	= "«0",
+#endif  // REGIONAL
+	INVOLVEMENT_SYNDICS		= "S ",
+	// 2011:018; 2011:172 +Ì; 2011:235 +h; 2012:079 ALL synced w/ REGION: +h
+	// 2012:132 +Û; 2013:259 +Ú; 2014:143 +; 2014:237 +˜; 2016:300 FIX: +åÜá
+	// 2017:023 +ä; 2017:213 +ÄÖ
+	INVOLVEMENT_PSEUDO_UPPERS	= "ˇËÌhÛÚ˜åÜáäÄÖ",
+	INVOLVEMENT_CSJIDS		= "7F",		// 2011:147 +F
+	INVOLVEMENT_LAWERS		= "»ËADLá",		// == CHECK_PERSONS: LEGALESE
+	INVOLVEMENT_EPORTALS		= "«L",
+	INVOLVEMENT_VZ_CORR_DEFENDS	= "aÎˆ";
+
+char _INVOLVEMENT_ALLS[SIZE_OF_INVOLVEMENT_ALLS];
+char _INVOLVEMENT_NON_LAWERS[SIZE_OF_INVOLVEMENT_ALLS];
+
+// ----- TYPE_ ---------------------------------------------------------------
+constant
+	TYPE_REQUESTS	= "r",
+	TYPE_RETURNEDS	= "V",
+	TYPE_JURISDS	= "j",
+	TYPE_ALLDOCS	= "r" "V" "j",
+	TYPE_INREGS		= "i",
+	TYPE_OUTREGS	= "o",
+	TYPE_IOREGS		= "io",
+	TYPE_SURROUNDS	= "s",
+	TYPE_OTHERS		= "O",
+	TYPE_INDOCS		= "rsi",		// 2010:340
+
+	// 2007:281 LPR: +i for non-area SURROUNBABLES, SELECT_SURROUNDS
+#if COURT_TYPE == COURT_APPEAL
+	// 2007:265 URQ: +ad where ct
+	TYPE_LAWSUITS		= "pcatd",
+	TYPE_FORCABLE_LAWS	= "pcatd",
+	TYPE_CITIZALIKE_LAWS	= "catd",
+	TYPE_PROVES			= "P",
+	TYPE_TRADEALIKE_LAWS	= "ct",		// 2012:021 +c
+	TYPE_PROVABLES		= "pr",		// 2007:022 per-court
+	TYPE_FLAGABLE_LAWS	= "ctad",
+	TYPE_NEWGPK_LAWS		= "ctad",
+	TYPE_UNWANTED_LAWS	= "ctad",
+	TYPE_REKINDABLE_LAWS	= "pctad",
+	TYPE_TWIN_SUBJ_LAWS	= "",
+	TYPE_CHILDREN_LAWS	= "";
+#endif  // APPEAL
+
+#if COURT_TYPE == COURT_ADMIN
+	TYPE_CITIZALIKE_LAWS	= "atc",
+
+	// 2007:130 +ct where a
+	TYPE_LAWSUITS		= "atc",
+	TYPE_FORCABLE_LAWS	= "atc",
+	TYPE_FLAGABLE_LAWS	= "ca",		// 2008:086 LPR/LRQ: +ca
+	TYPE_NEWGPK_LAWS		= "ca",		// 2008:086 LRQ: +a
+	TYPE_UNWANTED_LAWS	= "ca",
+	TYPE_REKINDABLE_LAWS	= "at",
+	TYPE_TWIN_SUBJ_LAWS	= "ct",
+	TYPE_CHILDREN_LAWS	= "";
+#endif  // ADMIN
+
+#if COURT_TYPE == COURT_AREAL
+	TYPE_FIRM_LAWS		= "d",
+
+	TYPE_CITIZALIKE_LAWS	= "cta",
+	TYPE_TRADEALIKE_LAWS	= "ct",
+
+	TYPE_LAWSUITS		= "pctad",
+	TYPE_FORCABLE_LAWS	= "pcta",
+	TYPE_PROVES			= "P",
+	TYPE_PROVABLES		= "pr",			// 2007:022 per-court
+	TYPE_FLAGABLE_LAWS	= "cta",
+	TYPE_NEWGPK_LAWS		= "ct",
+	TYPE_UNWANTED_LAWS	= "ctad",
+	TYPE_REKINDABLE_LAWS	= "pcta",
+	TYPE_TWIN_SUBJ_LAWS	= "ct",
+	TYPE_CHILDREN_LAWS	= "pct";
+#endif  // AREAL
+
+#if COURT_TYPE == COURT_MILITARY
+	TYPE_CITIZALIKE_LAWS	= "c",
+	TYPE_LAWSUITS		= "pc",
+	TYPE_FORCABLE_LAWS	= "pc",
+	TYPE_PROVES			= "P",
+	TYPE_PROVABLES		= "pr",
+	TYPE_FLAGABLE_LAWS	= "c",
+	TYPE_NEWGPK_LAWS		= "c",
+	TYPE_UNWANTED_LAWS	= "c",
+	TYPE_REKINDABLE_LAWS	= "pc",
+	TYPE_TWIN_SUBJ_LAWS	= "c",
+	TYPE_CHILDREN_LAWS	= "";
+#endif  // MILITARY
+
+#if COURT_TYPE == COURT_REGIONAL
+	// 2009:140 +m, 'm' pre-checked in siggest_ses_kind()
+	TYPE_CITIZALIKE_LAWS	= "mca",
+	TYPE_LAWSUITS		= "mcpa",
+
+	TYPE_FORCABLE_LAWS	= "mcpa",
+	TYPE_PROVES			= "P",
+	TYPE_PROVABLES		= "pr",			// 2007:022 per-court
+	TYPE_FLAGABLE_LAWS	= "mca",
+	TYPE_NEWGPK_LAWS		= "mc",
+	TYPE_UNWANTED_LAWS	= "mca",
+	TYPE_REKINDABLE_LAWS	= "mcp",
+	TYPE_APC_LAWS		= "ca",
+	TYPE_TWIN_SUBJ_LAWS	= "",
+	TYPE_CHILDREN_LAWS	= "mcp"; 
+#endif  // REGIONAL
+
+char
+	_TYPE_ORIGINS[SIZE_OF_TYPES],
+	_TYPE_UCNQUERABLES[SIZE_OF_TYPES],
+	_TYPE_MOVABLES[SIZE_OF_TYPES],
+	_TYPE_LAWQUERABLES[SIZE_OF_TYPES],
+	_TYPE_ORIGINS_INREGS[SIZE_OF_TYPES],
+	_TYPE_SELECT_SURROUNDS[SIZE_OF_TYPES],
+	_TYPE_LOGS[SIZE_OF_LOG_TYPES],
+	_TYPE_MONEYABLES[SIZE_OF_TYPES],
+	_TYPE_SCHEDULABLES[SIZE_OF_TYPES],
+	_TYPE_SCHEDULABLE_BASICS[SIZE_OF_TYPES],
+	_TYPE_IOREGS_SURROUNDS[SIZE_OF_TYPES],
+	_TYPE_ORIGINS_INOUTS[SIZE_OF_TYPES],
+	_TYPE_MAILABLES[SIZE_OF_TYPES],
+	_TYPE_ELECTRICABLES[SIZE_OF_TYPES],
+	_TYPE_NON_PUNISHMENT_LAWS[SIZE_OF_TYPES],
+	_TYPE_ANNOUNCABLES[SIZE_OF_TYPES],
+	_TYPE_CONNECTABLES[SIZE_OF_TYPES],
+	_TYPE_ELEQUERABLES[SIZE_OF_TYPES],
+	_TYPE_SUBPOENABLES[SIZE_OF_TYPES];
+
+// ----- KIND_ ---------------------------------------------------------------
+constant
+	// 2010:194 +∞ where §; 2012:011 *CONNECT_ENDOCS +'-'
+	// 2012:019 ENDOCS -'-'; 2012:075 +( where “ except _V_
+	// 2012:093 FIX: VISIBLE_ENDOCS -'-'; 2013:316 FIX: ANY_OTHER -(
+
+#if COURT_TYPE == COURT_APPEAL
+	// 2007:265 +recitizen/retrade indoc/law kinds
+	// 2007:267 +XY where 56; 2008:315 +Ù where 29
+	// 2011:245 +Ê˜ where ∆◊; 2012:020 +gh where 70
+	// 2015:084 +!œ where WH, +)/ where 13; 2015:108 +{} where 13
+	// 2014:255 +o where h, +p where ˜; 2016:054 +ãõ where {}
+	// 2016:110 IRQ: -ãõ; 2017:311 +$ where Ù
+	KIND_PUNISHMENT_INDOCS	= "135¬X4ˆ6Y QF29Ù$)/{}à",
+	KIND_CITIZEN_INDOCS	= "7g0ho8jm√f",
+	KIND_RECITIZEN_INDOCS	= "P®",
+	KIND_TRADE_INDOCS		= "∆Ê◊˜pw•y¥›",
+	KIND_RETRADE_INDOCS	= "¿˛",
+
+	KIND_INDOCS			= "135¬X4ˆ6Y QF29Ù$)/{}à" "7g0ho8jm√f" "P®" "∆Ê◊˜pw•y¥›" "¿˛",
+	KIND_VIRTUALS		= "lv" "LV" "q" "M" "‘",
+
+	// 2008:315 +U where WH; 2015:180 +[] where WH; 2016:054 +´ª where []
+	// 2016:110 -´ª +ø
+	KIND_PUNISHMENT_LAWS	= "WHU!œ[]ø",
+	KIND_CITIZEN_LAWS		= "ZN",
+	KIND_RECITIZEN_LAWS	= "ˇﬂ",
+	KIND_TRADE_LAWS		= "Tn",
+	KIND_RETRADE_LAWS		= "ÕΩ",
+
+	// 2017:327 for 14-teen codes
+	KIND_VZ_PUNISHMENT_LAWS	= "WH!œ",	// U[]ø
+	KIND_VZ_CITIZEN_LAWS	= "Z",	// Nˇﬂ
+
+	KIND_LAWSUITS		= "WHU!œ[]ø" "ZN" "ˇﬂ" "Tn" "ÕΩ",
+	KIND_EQUATE_LAWS		= KIND_LAWSUITS,
+
+	KIND_PUNISHMENT_SESS	= "Ÿ”",
+	KIND_CITIZEN_SESS		= "À”",
+	KIND_RECITIZEN_SESS	= "À”",
+	KIND_TRADE_SESS		= "À”",
+	KIND_RETRADE_SESS		= "À”",
+
+	KIND_OPEN_SESSIONS		= "ŸÀ”",
+	KIND_CLOSED_SESSIONS		= "»IJ" "ABCDEGK",
+	KIND_VISIBLE_CLOSEDS		= "»",
+	KIND_FINISHED_SESSIONS		= "",
+
+	KIND_SESSIONS			= "ŸÀ”" "»IJ" "ABCDEGK",
+	KIND_VISIBLE_SESSIONS		= "ŸÀ”" "»",
+	KIND_APPEALABLE_SESSIONS	= KIND_VISIBLE_SESSIONS,
+
+	KIND_14_DAY_DOCS		= "",
+	KIND_30_DAY_LAWS		= "W",
+	KIND_STATABLE		= "",
+
+	KIND_ENDOCS			= "ÿ˙ÎÏ",
+	KIND_UNMOTIVABLES		= "Ã",	// 2009:350 URQ: -Î
+
+	KIND_DECISIONS		= "ÿ",
+	KIND_JUDGEMENTS		= "˙",
+	KIND_SETTLEMENTS		= "Î",
+	KIND_BULWARKS		= "",
+	KIND_ORDERS			= "Ï",
+
+	KIND_VISIBLE_DECISIONS	= "ÿ",
+	KIND_VISIBLE_ENDOCS	= "ÿ˙ÎÏ",
+
+	KIND_CRIME_CONNECT_ENDOCS	= "ÿ˙ÎÏ-",
+	KIND_OTHER_CONNECT_ENDOCS	= "ÿÎÏ-",
+
+	KIND_SURROUNDS			= "ùÚ∏§∞`," "=>?@^_|~" "#&.;",	// 2017:048 +#&.;
+	KIND_TEXTUAL_SURROUNDS		= "∏",
+	KIND_APPEALABLE_SURROUNDS 	= "ùÚ" "=>?@^_|~",
+	KIND_ACCUSATIONS			= " W",
+
+	// 2008:028 +± where ¸
+	KIND_APPEAL_IN_DOCS		= "¸ÌÓÂ±â",	// 2008:028 +â
+	KIND_IN_REG_X_DOCS		= "Ì",
+	KIND_OUT_REG_DOCS			= "Œ–—“(æ",	// 2007:244 +æ
+	KIND_OUT_REG_APPS			= "Œ–—",
+	KIND_OUT_REG_CUTS			= "Œ“æ",	// 2007:244 +æ
+
+	KIND_IN_UNDECIDABLES		= "ÎÏ",
+	KIND_APPJUDREP_SETTS		= "ÎÏ" "€",
+	KIND_OBJECTION_IN_DOCS		= "",
+	KIND_IN_APPEALABLES		= "ÿ˙" "ÎÏ",
+
+	KIND_IN_RESOLUTABLES		= "¸ÌÓÂË±â",
+	KIND_IOREG_OTHERS			= "“(Í",
+	KIND_IN_LETTERS			= "Ë",
+	KIND_MOVEMENTS			= "c" "t",
+	KIND_IN_SURROUNDERS		= "¸Ì",
+
+	KIND_PRIVATE_IN_REG_DOCS	= "Ì",
+	KIND_REQUEST_152XS		= "",
+	KIND_INCONSISTENCE_INDOCS	= "Ê˜gh",	// 2012:020 +gh
+	KIND_INCONSISTENCE_REQUESTS	= "Ê˜gh",	// 2012:020 +gh
+	KIND_ANY_OTHER_DOCUMENTS	= "“Í∏Ú",
+	KIND_FORCABLE_ENDOCS		= "ÿ˙ÎÏ",	// 2018-06-26 +Ï
+
+	KIND_CALL_APPROTS			= "",
+	KIND_PRIVATE_CALL_APPROTS	= "",
+	KIND_CONNECT_APPROTS		= "¸Ó",	// 2009:258 FIX: -±
+	KIND_PRIVATE_CONNECT_APPROTS	= "Ì",
+
+	// 2007:265 LRQ: +P¿; 2011:245 +Ê; 2012:020 +g
+	KIND_QUICKABLES			= "7g∆Ê" "P¿" "lv",
+	KIND_QUICKONLYS			= "",
+	KIND_IMMEDIATABLES		= "",
+
+	KIND_SLOW_REQUESTS		= "j›",
+	KIND_PROVABLE_SESS		= "Ÿ”" "»",
+
+	KIND_FIRST_LAWS			= "U",	// pseudo-1ST
+	KIND_ARTICLE_LAWS			= "",
+	KIND_DANGER_LAWS			= "",
+
+	// 2007:265
+	KIND_RECALL_INDOCS		= "P®¿˛",
+	KIND_RECALL_LAWS			= "ˇﬂÕΩ",
+	KIND_NON_PRIVATE_RECALL_LAWS	= "ˇÕ",
+
+	KIND_ORDERS_AND_IN_REG_DOCS	= "Ï" "¸ÌÓÂËÍ±â",
+	KIND_COMPETENT_INDOCS		= "√y" "f¥",
+	KIND_FIRST_SET_LAWS		= "ZNˇﬂTnÕΩ",
+	KIND_AGAINST_APPROTS		= "±",
+	// 2012:172 FIX: 1/4/5 -> generic l/v/L; 2015:244 +op
+	KIND_ALL_GENERALS			= "lLv96Y Q70P®∆◊¿˛8jm√fFÙ${}àop",
+	KIND_START_HERE_INDOCS		= "",
+	KIND_CALL_PUNISHMENT_LAWS	= "WH!œ",
+	KIND_RENEW_LAWS			= "[]ø",
+	KIND_RENEW_INDOCS			= "{}à",
+	KIND_CT274_INDOCS			= "op",
+	KIND_RENEW_LIMITED_LAWS		= "[]",
+
+	KIND_NONP_PRIV_APPL_INDOCS	= "v0ho®◊˜p˛",
+	KIND_NONP_REQUEST_INDOCS	= "8mw•M‘",
+#endif  // APPEAL
+
+#if COURT_TYPE == COURT_ADMIN
+	// 2007:030 +Aehxbk¸™ where 9; 2008:028 +∫ where ™, +è where g
+	// 2008:206 +B where ø; 2008:253 +Ä where ø; 2008:282 +˜ where 9
+	// 2008:296 +u where w|g, +U where È; 2012:079 +• where ∫
+	// 2016:113 +{ where k, +} where S; 2016:201 +HI
+	KIND_1ST_ADMIN_INDOCS		= "9˜Ae¯hsxøBÄbk¸à{",	// 2013:232 +à
+	KIND_2ND_ADMIN_INDOCS		= "·™˝∫•H",
+	KIND_1ST_TRICKY_INDOCS		= "u",
+	KIND_2ND_TRICKY_INDOCS		= "gèI",
+	KIND_CITIZEN_INDOCS		= "w",	// 1st only
+
+	// 2007:031 +®¿≈« aº¬ˆ where P; 2007:134 +j where ˚
+	// 2008:028 +X where ˆ, +ü where È; 2008:206 +C where ¬
+	// 2008:206 FIX: +X where ˚, +ü where È (qicks differ)
+	// 2008:253 +é where ¬; 2008:282 +˘ where P; 2012:079 +¥; 2013:232 +â
+	// 2016:201 +JK
+	KIND_VIRTUALS	= "P˘®¿˛≈S« aº¬Cé)J}" "U" "ÈKü" "÷ˆ˚¥X" "j",
+
+	// 2008:028 +E where ﬂMΩ, +z where n; 2008:296 +N
+	KIND_1ST_PUNISHMENT_LAWS	= "",
+	KIND_1ST_ADMIN_LAWS		= "ˇÕ",
+	KIND_1ST_TRICKY_LAWS		= "N",	// 2008:296
+	KIND_1ST_CITIZEN_LAWS		= "Z",
+
+	KIND_1ST_LAWSUITS			= "ˇÕ" "Z" "N",
+	KIND_1ST_CITIZALIKE_LAWS	= "ˇÕ" "Z" "N",
+
+	KIND_2ND_PUNISHMENT_LAWS	= "",
+	KIND_2ND_ADMIN_LAWS		= "ﬂMΩE",
+	KIND_2ND_TRICKY_LAWS		= "nz",
+	KIND_2ND_CITIZEN_LAWS		= "",
+
+	KIND_2ND_LAWSUITS			= "ﬂMΩE" "nz",
+
+	KIND_ADMIN_LAWS			= "ˇÕ" "ﬂMΩE",
+	KIND_CITIZEN_LAWS			= "Z",
+	KIND_TRICKY_LAWS			= "nzN",
+
+	KIND_LAWSUITS			= "ˇÕ" "ﬂMΩE" "Z" "nzN",
+	KIND_EQUATE_LAWS			= "ˇÕ" "ﬂMΩE" "Z" "nzN",
+
+	KIND_ADMIN_SESS			= "⁄ƒ”",
+	KIND_TRICKY_SESS			= "⁄ƒ”",
+	KIND_CITIZEN_SESS			= "⁄ƒ”",
+
+	KIND_OPEN_SESSIONS		= "⁄ƒ”",
+	// 2015:313 LRQ/URQ: +15 extra
+	KIND_CLOSED_SESSIONS		= "»FGÅÉäåçöú" "ÇÑÖÜáãëíìîïñóõ¶",
+	KIND_VISIBLE_CLOSEDS		= "»",
+	KIND_FINISHED_SESSIONS		= "”",
+
+	KIND_SESSIONS			= "⁄ƒ”" "»FGÅÉäåçöú" "ÇÑÖÜáãëíìîïñóõ¶" "ﬁ",
+	KIND_VISIBLE_SESSIONS		= "⁄ƒ”" "»" "ﬁ",
+	KIND_APPEALABLE_SESSIONS	= KIND_VISIBLE_SESSIONS,
+
+	KIND_14_DAY_DOCS		= "",
+	KIND_30_DAY_LAWS		= "",
+	KIND_STATABLE		= "",
+
+	KIND_ENDOCS			= "ÿRÎÏ€",	// 2010:088 FIX: +€; 2013:170 TRQ: R after ÿ
+	KIND_UNMOTIVABLES		= "",		// 2009:350 -Î
+
+	KIND_DECISIONS		= "ÿR",
+	KIND_SETTLEMENTS		= "Î",
+	KIND_BULWARKS		= "",
+	KIND_ORDERS			= "Ï",
+	KIND_PROTOCOLS		= "€",	// 2009:267 "" -> "€" +related
+
+	KIND_VISIBLE_DECISIONS	= "ÿ",
+	KIND_VISIBLE_ENDOCS	= "ÿÎÏ€",
+
+	KIND_CRIME_CONNECT_ENDOCS	= "ÿÎÏ€-",
+	KIND_OTHER_CONNECT_ENDOCS	= "ÿÎÏ€-",
+
+	KIND_SURROUNDS			= "∏§∞`," "=>?@^|" "#&.;",	// 2017:048 +#&.;
+	KIND_APPEALABLE_SURROUNDS	= "=>?@^|",
+	KIND_TEXTUAL_SURROUNDS		= "∏",
+	KIND_ACCUSATIONS			= "",
+
+	// 2008:028 +± where ‰
+	KIND_APPEAL_IN_DOCS	= "‰Â" "ÌÓâ±",	// 2007:046 -Á; 2008:068 +â
+	KIND_IN_REG_X_DOCS	= "Ì",
+	KIND_OUT_REG_DOCS		= "Œ–“(æ",		// 2007:241 +æ; 2008:086 +–
+	KIND_OUT_REG_APPS		= "Œ–",		// 2008:086 +–
+	KIND_OUT_REG_CUTS		= "Œ“æ",		// 2007:241 +æ
+
+	KIND_IN_UNDECIDABLES	= "ÎÏ",
+	KIND_APPJUDREP_SETTS	= "ÎÏ" "€",
+	KIND_OBJECTION_IN_DOCS	= "",
+	KIND_IN_APPEALABLES	= "ÿ" "ÎÏ" "R" "€",
+
+	KIND_IN_RESOLUTABLES	= "‰ÂÁ" "ÌÓâ±",	// 2008:068 +â
+	KIND_IOREG_OTHERS		= "“(Í",
+	KIND_IN_LETTERS		= "Ë",
+	KIND_MOVEMENTS		= "c" "t",
+	KIND_IN_SURROUNDERS	= "",
+
+	KIND_PRIVATE_IN_REG_DOCS	= "Ì",
+	KIND_ANY_OTHER_DOCUMENTS	= "∏“Í",
+	KIND_FORCABLE_ENDOCS		= "ÿÎÏ€",
+
+	KIND_CALL_APPROTS			= "",
+	KIND_PRIVATE_CALL_APPROTS	= "",
+	KIND_CONNECT_APPROTS		= "‰Ó",	// 2009:258 ± -> AGAINST
+	KIND_PRIVATE_CONNECT_APPROTS	= "Ì",
+
+	// 2008:253 +Äé; 2012:048 +A¿; 2014:119 +b ¸a
+	KIND_QUICKABLES			= "9˜˝B" "P˘˚C" "Äé" "A¿" "b ¸a",
+	// no support for IMMEDONLYS yet...
+	KIND_QUICKONLYS			= "ø¬" "kx" "Sº" "{}",
+	KIND_IMMEDIATABLES		= "kx" "Sº" "{}",
+
+	KIND_SLOW_REQUESTS		= "",
+	KIND_PROVABLE_SESS		= "" "",
+	KIND_ARTICLE_LAWS			= "",
+	KIND_DANGER_LAWS			= "",
+
+	KIND_ORDERS_AND_IN_REG_DOCS	= "Ï" "‰ÂËÍ" "ÌÓâ±",
+	KIND_FIRST_SET_LAWS		= KIND_LAWSUITS,
+	//KIND_AGAINST_APPROTS		= "±",	// 2009:258 not used
+	KIND_ALL_GENERALS			= "9˜eA¯hksb¸xøBÄ·™˝∫•à",	// 2013:232 +à
+	KIND_COMPETENT_INDOCS		= "•¥",	// 2012:131 TRQ/LRQ
+	KIND_BOOK_251_INDOCS		= "k{",
+	KIND_RENEW_JUMP_INDOCS		= "IK" "HJ",
+	KIND_START_HERE_INDOCS		= "",
+#endif  // ADMIN
+
+#if COURT_TYPE == COURT_AREAL
+	// 2007:253 +YQ where m, +æ where q; 2007:320 LPR: mv Ã before Î
+	// 2008:003 +∂ where æ; // 2008:060 +´ where q; 2008:240 +Ö where ›•
+	// 2008:255 +Ü where £, +á where ≤, +Æ where Ω; 2008:081 +ª where  
+	// 2008:081 +ì where Ú; 2008:283 Ö moved from ›• to YQ
+	// 2009:182 -EΩÆ, +≥° where ¿¢; 2009:183 +d where •; 2010:025 +ë where Ü
+	// 2010:025 +ñó where Úì, +Ñã where ∂, +ôÇ where ≤á, +îõ where QÖ
+	// 2010:197 +Ω where mY; 2010:260 +≠ï where õ 2010:260 +¨∑ where ã
+	// 2011:147 +\ where mY; 2011:315 +& where ó; 2012:289 +) where ª
+	// 2013:064 +! where ODI; 2013:071 +# wfere Ù; 2014:164 +. where q
+	// 2016:056 +; where #; 2017:096 +‘Ú78; 2017:097 -> 70‘Ú, \\ -> ¬
+	KIND_1ST_PUNISHMENT_INDOCS	= "Aehxbk¸®¿≥« ªaº)Ù#;70",
+	KIND_1ST_CITIZEN_INDOCS		= "w√jmY¬Ωæ∂Ñã¨∑‘",
+	KIND_1ST_TRADE_INDOCS		= "wêj√Ä.m´æ∂Ñã¨∑‘Ú",
+	KIND_1ST_ADMIN_INDOCS		= "9¯sø",
+
+	KIND_2ND_PUNISHMENT_INDOCS	= "1456ˆg¢°™" "Èìñó&",
+	KIND_2ND_CITIZEN_INDOCS		= "∆◊é¥ô≤áÇ",
+	KIND_2ND_TRADE_INDOCS		= "∆◊é¥≤áôÇ",
+	KIND_2ND_ADMIN_INDOCS		= "·˝",
+
+	KIND_FIRM_INDOCS			= "˜",
+	KIND_FIRM_ALLDOCS			= "˜" "˘",
+
+	// 2007:250 „Mæ common
+	KIND_VIRTUALS	= "uzXBKèü" "„M" "û" "P˛S˚" "÷" "˘" "lv" "LV" "¡J" "∫",
+	// ALLDOCS: 2007:250 „Mæ common
+
+	// 2009:071 +[ where Z, +{ where T, +] where N, +} where n
+	KIND_1ST_PUNISHMENT_LAWS	= "O!DI",
+	KIND_1ST_CITIZEN_LAWS		= "Z[",
+	KIND_1ST_TRADE_LAWS		= "T{",
+	KIND_1ST_ADMIN_LAWS		= "ˇÕ",
+
+	KIND_1ST_LAWSUITS			= "O!DI" "Z[" "T{" "ˇÕ" "Ê",
+	KIND_1ST_CITIZALIKE_LAWS	= "Z[" "T{" "ˇÕ",
+
+	KIND_2ND_PUNISHMENT_LAWS	= "WCUHœ",
+	KIND_2ND_CITIZEN_LAWS		= "N]",
+	KIND_2ND_TRADE_LAWS		= "n}",
+	KIND_2ND_ADMIN_LAWS		= "ﬂ≈",
+
+	KIND_2ND_LAWSUITS		= "WCUHœ" "N]" "n}" "ﬂ≈" "",
+
+	KIND_PUNISHMENT_LAWS	= "O!DI" "WCUHœ",
+	KIND_CITIZEN_LAWS		= "Z[" "N]",
+	KIND_TRADE_LAWS		= "T{" "n}",
+	KIND_ADMIN_LAWS		= "ˇÕ" "ﬂ≈",
+	KIND_FIRM_LAWS		= "Ê" "",
+
+	KIND_LAWSUITS		= "O!DI" "Z[" "T{" "ˇÕ" "Ê" "WCUHœ" "N]" "n}" "ﬂ≈",
+	KIND_EQUATE_LAWS		= "O!DI" "Z[" "T{" "ˇÕ" "WCUHœ" "N]" "n}" "ﬂ≈",
+
+	// 2017:304 +î where Ÿ”
+	KIND_PUNISHMENT_SESS	= "Ÿîp”",
+	KIND_NOPREORDER_SESS	= "Ÿp”",
+	KIND_CITIZEN_SESS		= "⁄ƒÀ”",
+	KIND_TRADE_SESS		= "⁄ƒÀ”",
+	KIND_ADMIN_SESS		= "⁄ƒ”",
+	KIND_FIRM_SESS		= "Ÿ",
+
+	KIND_OPEN_SESSIONS		= "Ÿ⁄ƒÀ”pî",
+	KIND_CLOSED_SESSIONS		= "»FGÅÉäåçöú",
+	KIND_VISIBLE_CLOSEDS		= "»",
+	KIND_FINISHED_SESSIONS		= "”À",
+
+	KIND_SESSIONS			= "Ÿ⁄ƒÀ”pî" "»FGÅÉäåçöú" "ﬁ",
+	KIND_VISIBLE_SESSIONS		= "Ÿ⁄ƒÀ”pî" "»" "ﬁ",
+	KIND_APPEALABLE_SESSIONS	= KIND_VISIBLE_SESSIONS,
+
+	KIND_14_DAY_DOCS	= "bkBK",
+	KIND_30_DAY_LAWS	= "O" "WC",
+	KIND_STATABLE	= "A" "u" "O" "W" "",
+
+	KIND_ENDOCS			= "ÿR˙ÃÎÏ€í",	// 2013:170 TRQ: R after ÿ
+	KIND_UNMOTIVABLES		= "Ã",		// 2009:350 URQ: -Î
+
+	KIND_DECISIONS		= "ÿR",
+	KIND_JUDGEMENTS		= "˙",
+	KIND_SETTLEMENTS		= "Î",
+	KIND_BULWARKS		= "Ã",
+	KIND_ORDERS			= "Ï",
+	KIND_PROTOCOLS		= "€",
+
+	KIND_VISIBLE_DECISIONS	= "ÿ",
+	KIND_VISIBLE_ENDOCS	= "ÿ˙ÎÃÏ€í",
+
+	KIND_CRIME_CONNECT_ENDOCS	= "ÿ˙ÎÏ€-",
+	KIND_OTHER_CONNECT_ENDOCS	= "ÿÎÏ€E-Ü",	// 2010:032 +E; 2017:236 +Ü
+
+	// 2007:248 +à; 2010:181 +i; 2011:283 +/; 2011:315 +$; 2018-03-19: +õïë; 2018-06-05: +›d
+	KIND_SURROUNDS			= "ofù∏à§∞i©/$" ":<=>?@^_|~`," "õïë" "›d",
+	// 2009:201 LRQ: +:<...; 2011:283 +/; 2011:315 +$
+	KIND_APPEALABLE_SURROUNDS	= "f/$" ":<=>?@^_|~",
+	KIND_TEXTUAL_SURROUNDS		= "∏f",
+	KIND_ACCUSATIONS			= "Au" "OW" "∫",
+
+	// 2007:288 +µß where ‰Ì; 2008:028 +¶± where ’‰
+	KIND_APPEAL_IN_DOCS	= "’‹‡‚‰µÂÁ¶±" "ÌßÓâ\"",	// 2008:028 +â; 2015:174 +"
+	KIND_IN_REG_X_DOCS	= "‹‚Ìß",			// 2011:175 +ß
+	KIND_OUT_REG_DOCS		= "Œ–—“(π",			// 2007:244 +π
+	KIND_OUT_REG_APPS		= "Œ–—",
+	KIND_OUT_REG_CUTS		= "Œ“π",			// 2007:244 +π
+	KIND_IN_UNDECIDABLES	= "ÎÏ",
+	KIND_APPJUDREP_SETTS	= "ÎÏ" "€",
+	KIND_OBJECTION_IN_DOCS	= "‡‚",
+	KIND_IN_APPEALABLES	= "ÿ˙" "ÎÏ" "R",
+
+	KIND_IN_RESOLUTABLES	= "’‹‡‚‰µÂÁ¶±" "ÌßÓâ\"",	// 2008:028 +â; 2015:174 +"
+	KIND_IOREG_OTHERS		= "“(Í",
+	KIND_IN_LETTERS		= "Ë",
+	KIND_MOVEMENTS		= "c" "t",
+	KIND_IN_SURROUNDERS	= "’‹",
+
+	KIND_PRIVATE_IN_REG_DOCS	= "‹‚Ì",
+	KIND_RERETURNED_DOCS		= "Au",	// 2007:243 LPR: unified scheme: +A
+
+	KIND_REQUEST_152XS		= "®x",
+	KIND_INCONSISTENCE_INDOCS	= "√Ä„û",	// 2007:250 „ common; 2009:071 +û
+	KIND_INCONSISTENCE_REQUESTS	= "√„",
+	KIND_INCONSISTENCE_INREGS	= "‰ÌÓ",
+	KIND_ANY_OTHER_DOCUMENTS	= "f∏“Í",
+	KIND_FORCABLE_ENDOCS		= "ÿ˙ÃÎÏ€í",
+
+	KIND_CALL_APPROTS			= "’‡",	// 2009:231 ¶ -> AGAINST
+	KIND_PRIVATE_CALL_APPROTS	= "‹‚",
+	KIND_CONNECT_APPROTS		= "‰µÓ",	// 2009:231 ± -> AGAINST
+	KIND_PRIVATE_CONNECT_APPROTS	= "Ìß",
+
+	KIND_2ND_NONADM_PUNISHMENT_LAWS	= "WCH",
+
+	// 2008:092 +«
+	KIND_QUICKABLES			= "w¡∆◊é9P˝˚¯˛Au" "lv¡P÷˚" "¸" "«",
+	KIND_QUICKONLYS			= "ø",
+	KIND_IMMEDIATABLES		= "Au¸",
+
+	KIND_SLOW_REQUESTS		= "é‘",		// 2017:096 +‘
+	KIND_PROVABLE_SESS		= "Ÿîp”" "»",
+	KIND_ARTICLE_LAWS			= "O",
+	KIND_DANGER_LAWS			= "O",
+
+	KIND_IN_REG_REQ_2NDS		= "µß",
+	KIND_ORDERS_AND_IN_REG_DOCS	= "Ï" "’‹‡‚‰µÂÁËÍ*¶±" "ÌßÓâ\"",	// 2015:174 +"
+	KIND_COMPETENT_INDOCS		= "ô" "¥",
+
+	KIND_DOUBLE_EXCH_INDOCS		= "w¡" "Ñ",		// 2012:102 TRQ/FIX: +îÑ
+	KIND_FIRST_SET_LAWS		= "Z[T{" "N]n}",	// 2009:260 LRQ: +N]n}
+	KIND_AGAINST_APPEALS		= "¶",
+	KIND_AGAINST_APPROTS		= "±",
+	// 2010:025 +ñóÑãÇ 2010:039 +êÄY; 2010:197 +Ω; 2010:260 +≠; 2013:071 +#; 2017:096 +70‘Ú
+	KIND_ALL_GENERALS			= "Aehxbk∫élv≤∂áLVˆ˝¡j√m´sæ˜¸« ª)a¥ôºêÄYñó&ÑãÇΩ¨¬#;70‘Ú",
+	KIND_PRIVATE_CITIZALIKE_LAWS	= "[]{}Õ≈",
+	KIND_ACCOMPLYABLE_ENDOCS	= "ÿR" "Î" "Ï",
+	KIND_START_HERE_INDOCS		= ")#",		// 2016:099 +#
+	KIND_FIRM_PSDLIZ_ENDOCS		= "ÿRÎÏ",
+	KIND_RANGEREP_Q3_L1S		= "O!",	// 2017:117 FIX: R -> !
+#endif  // AREAL
+
+#if COURT_TYPE == COURT_MILITARY
+	KIND_1ST_PUNISHMENT_INDOCS	= "A„ehxbk¸®¿« ªaº£Ù",	// 2009:322 +£
+	KIND_2ND_PUNISHMENT_INDOCS	= "12345¬6ˆg¢™" "‘ÈÚì",
+
+	KIND_1ST_CITIZEN_INDOCS		= "w",
+	KIND_2ND_CITIZEN_INDOCS		= "70›•",
+
+	KIND_VIRTUALS	= "u¥EzXBKèüJ" "lvLV" "¡" "∫",	// 2009:322 +J
+	KIND_GENERALS	= "j",					// 2010:102
+
+	// 2011:032 +[ where Z, +] where N
+	KIND_1ST_PUNISHMENT_LAWS	= "O√DI",
+	KIND_1ST_CITIZEN_LAWS		= "Z[",
+
+	KIND_1ST_LAWSUITS			= "O√DI" "Z[",
+	KIND_1ST_CITIZALIKE_LAWS	= "Z[",
+
+	KIND_2ND_PUNISHMENT_LAWS	= "WCUHœ",
+	KIND_2ND_CITIZEN_LAWS		= "N]",
+
+	KIND_2ND_LAWSUITS		= "WCUHœ" "N]",
+
+	KIND_PUNISHMENT_LAWS	= "O√DI" "WCUHœ",
+	KIND_CITIZEN_LAWS		= "Z[" "N]",
+
+	KIND_LAWSUITS		= "O√DI" "Z[" "WCUHœ" "N]",
+	KIND_EQUATE_LAWS		= "O√DI" "Z[" "WCUHœ" "N]",
+
+	KIND_PUNISHMENT_SESS	= "Ÿîp”",	// 2017:304 +î where Ÿ”
+	KIND_NOPREORDER_SESS	= "Ÿp”",
+	KIND_CITIZEN_SESS		= "⁄ƒ”",
+
+	KIND_OPEN_SESSIONS		= "Ÿ⁄ƒ”pî",
+	KIND_CLOSED_SESSIONS		= "»FGÅÉäåçöú",
+	KIND_VISIBLE_CLOSEDS		= "»",
+	KIND_FINISHED_SESSIONS		= "”",
+
+	KIND_SESSIONS			= "Ÿ⁄ƒ”pî" "»FGÅÉäåçöú",
+	KIND_VISIBLE_SESSIONS		= "Ÿ⁄ƒ”pî" "»",
+	KIND_APPEALABLE_SESSIONS	= KIND_VISIBLE_SESSIONS,
+
+	KIND_14_DAY_DOCS	= "bkBK",
+	KIND_30_DAY_LAWS	= "O" "WC",
+	KIND_STATABLE	= "A" "u" "O" "W",
+
+	KIND_ENDOCS			= "ÿR˙ÃÎÏ€í",	// 2013:170 TRQ: R after ÿ
+	KIND_UNMOTIVABLES		= "Ã",		// 2009:350 -Î
+
+	KIND_DECISIONS		= "ÿR",
+	KIND_JUDGEMENTS		= "˙",
+	KIND_SETTLEMENTS		= "Î",
+	KIND_BULWARKS		= "Ã",
+	KIND_ORDERS			= "Ï",
+	KIND_PROTOCOLS		= "€",
+
+	KIND_VISIBLE_DECISIONS	= "ÿ",
+	KIND_VISIBLE_ENDOCS	= "ÿ˙ÎÃÏ€",
+
+	KIND_CRIME_CONNECT_ENDOCS	= "ÿ˙ÎÏ€-",
+	KIND_OTHER_CONNECT_ENDOCS	= "ÿÎÏ€-",
+
+	KIND_SURROUNDS			= "ù∏§∞/`," "#&.;ﬂd",	// 2012:110 +/; 2017:048 +#&.; 2018-06-05: +ﬂd
+	KIND_APPEALABLE_SURROUNDS	= "",
+	KIND_TEXTUAL_SURROUNDS		= "∏",
+
+	KIND_ACCUSATIONS		= "Au" "OW" "∫",
+
+	KIND_APPEAL_2ND_INDOCS	= "‰ÓÌ±Ââ",
+	KIND_APPEAL_1ST_INDOCS	= "’‹‡‚µÁ¶" "ß\"",	// 2015:174 +"
+
+	KIND_IN_REG_X_2ND_DOCS	= "Ì",
+	KIND_IN_REG_X_1ST_DOCS	= "‹‚",
+	KIND_OUT_REG_DOCS		= "Œ–—“(π",
+	KIND_OUT_REG_APPS		= "Œ–—",
+	KIND_OUT_REG_CUTS		= "Œ“π",
+	KIND_IN_UNDECIDABLES	= "ÎÏ",
+	KIND_APPJUDREP_SETTS	= "ÎÏ" "€",
+	KIND_OBJECTION_IN_DOCS	= "‡‚",
+	KIND_IN_APPEALABLES	= "ÿ˙" "ÎÏ" "Rí",
+
+	KIND_IN_RESOLUTABLES	= "’‹‡‚‰µÂÁ¶±" "ÌßÓâ\"",	// 2015:174 +"
+	KIND_IOREG_OTHERS		= "“(Í",
+	KIND_IN_LETTERS		= "Ë",
+	KIND_MOVEMENTS		= "c" "t",
+	KIND_IN_SURROUNDERS	= "",
+
+	KIND_PRIVATE_IN_REG_DOCS	= "‹‚Ì",
+	KIND_RERETURNED_DOCS		= "Au",
+
+	KIND_REQUEST_152XS		= "®x",
+	KIND_ANY_OTHER_DOCUMENTS	= "f∏“Í",
+	KIND_FORCABLE_ENDOCS		= "ÿ˙ÃÎÏ€",
+
+	KIND_CALL_APPROTS			= "’‡¶",
+	KIND_PRIVATE_CALL_APPROTS	= "‹‚",
+	KIND_CONNECT_APPROTS		= "‰µÓ±",
+	KIND_PRIVATE_CONNECT_APPROTS	= "Ìß",
+
+	KIND_2ND_NONADM_PUNISHMENT_LAWS	= "WCH",
+
+	KIND_QUICKABLES			= "¡Au" "lv¡" "¸" "«" "w70",
+	KIND_QUICKONLYS			= "",
+	KIND_IMMEDIATABLES		= "Au¸",
+
+	KIND_SLOW_REQUESTS		= "›",
+	KIND_PROVABLE_SESS		= "Ÿîp”" "»",
+	KIND_ARTICLE_LAWS			= "O",
+	KIND_DANGER_LAWS			= "O",
+
+	KIND_IN_REG_REQ_2NDS		= "µß",
+	KIND_ORDERS_AND_IN_REG_DOCS	= "Ï" "’‹‡‚‰µÂÁËÍ¶±" "ÌßÓâ\"",	// 2015:174 +"
+	KIND_FIRST_SET_LAWS		= "",
+	// 2010:102 LPR/REQ: º -> j
+	KIND_ALL_GENERALS			= "Aehxbk∫lv„LVˆg¡¸« ªaj" "•›",
+	KIND_START_HERE_INDOCS		= "„¥",	// 2016:09 was ""
+	KIND_RANGEREP_Q3_L1S		= "O√",	// 2017:117
+#endif  // MILITARY
+
+#if COURT_TYPE == COURT_REGIONAL
+	// 2007:320 LPR: moved Ã before S where both; 2008:025 +¥Ω where fÙ
+	// 2008:282 +ˆ where ¿; 2008:318 LRQ: 456 -> 564
+	// 2014:203 +Ä where °¢; 2018-05-08: +¯/˘ where X/g
+	KIND_MARRIAGE_INDOCS	= "M",
+	// 2008:024 +ÅÉ where Cw
+	// 2011:014 +≥ø where Ù¥; 2017:202 +Ç where g
+	KIND_CITIZEN_INDOCS	= "CweJÅÉ" "h012Ä°¢g˘FKÇ",
+	KIND_PUNISHMENT_INDOCS	= "ABPHNxX¯®bk7¿ˆ« " "3ufÙ¥≥øΩ",
+	KIND_ADMIN_INDOCS		= "yz",
+	KIND_INDOCS			= "M" "CweJÅÉ" "h012Ä°¢g˘FKÇ" "ABPHNxX¯®bk7¿ˆ« " "3ufÙ¥≥øΩ" "yz",
+	KIND_HERITAGE_INDOCS	= "Ä°¢",
+	// 2007:032 +é +related
+	KIND_VIRTUALS		= "navoUY" "j" "·é" "∫•",
+
+	KIND_MARRIAGE_LAWS	= "m",
+	KIND_CITIZEN_LAWS		= "c" "Z",
+	KIND_PUNISHMENT_LAWS	= "ORDIQ≈",
+	KIND_ADMIN_LAWS		= "pr",
+	KIND_LAWSUITS		= "m" "c" "Z" "ORDIQ≈" "pr",
+	KIND_EQUATE_LAWS		= "m" "c" "Z" "ORDIQ≈" "pr",
+
+	KIND_MARRIAGE_SESS	= "564£9",
+	KIND_CITIZEN_SESS		= "564£9",
+	KIND_PUNISHMENT_SESS	= "8îq9",		// 2017:304 +î where 89
+	KIND_NOPREORDER_SESS	= "8q9",
+	KIND_ADMIN_SESS		= "564£9",		// 2014:093
+
+	KIND_OPEN_SESSIONS		= "5648îq£9L",
+	KIND_CLOSED_SESSIONS		= "lVW" "¡¬√ƒ∆»À",
+	KIND_VISIBLE_CLOSEDS		= "l",
+	KIND_FINISHED_SESSIONS		= "9",
+
+	KIND_SESSIONS			= "5648îq£9" "l" "LVW" "d" "¡¬√ƒ∆»À",
+	KIND_VISIBLE_SESSIONS		= "5648îq£9" "l" "L" "d",
+	KIND_APPEALABLE_SESSIONS	= "5648îq£9" "l",
+
+	KIND_14_DAY_DOCS		= "bk",
+	KIND_30_DAY_LAWS		= "OR",
+	// 2008:162 +«U
+	KIND_STATABLE		= "A" "O" "B7" "3u" "«U",
+
+	// 2008:029 +€ where in area; 2008:058 +⁄; 2008:072 +Ï
+	// 2008:295 +˜ where ⁄; 2013:064 +) where ˜
+	KIND_ENDOCS			= "EœGÃS€Ï⁄˜)á",	// 2016:236 +œ; 2017:202 +á
+	// 2009:350 URQ: -S; 2010:057 FIX: -S
+	KIND_UNMOTIVABLES		= "Ã",
+
+	KIND_DECISIONS		= "Eœ",	// 2016:236 +œ
+	KIND_JUDGEMENTS		= "G",
+	KIND_SETTLEMENTS		= "S",
+	KIND_BULWARKS		= "Ã",
+	KIND_ORDERS			= "Ï",
+	KIND_PROTOCOLS		= "€",
+	KIND_EXEC_PROTS		= "⁄" "˜)",
+	KIND_PROTECTIONS		= "˜)",
+
+	KIND_VISIBLE_DECISIONS	= "Eœ",		// 2016:263 +œ
+	KIND_VISIBLE_ENDOCS	= "EGÃS€Ï⁄˜)á",	// 2017:205 +á
+
+	KIND_CRIME_CONNECT_ENDOCS	= "EGS€Ï-",
+	KIND_OTHER_CONNECT_ENDOCS	= "ES€Ï-",
+
+	// 2009:201 +:<=...; 2010:201 +i; 2011:283 +/; 2017:047 +#&.; 2017:205 +ÑÜ;
+	// 2018-06-05: +›¸˙˚˝˛ˇ
+	KIND_SURROUNDS			= "ù∏§∞i/`," ":<=>?@^_|~$#&.;" "ÑÜ" "›¸˙˚˝˛ˇ",
+	KIND_APPEALABLE_SURROUNDS	= "ù/" ":<=>?@^_|~",
+	KIND_TEXTUAL_SURROUNDS		= "∏",
+
+	KIND_ACCUSATIONS		= "A" "O" "·",
+
+	// 2008:028 +¶± where ’‰
+	KIND_APPEAL_IN_DOCS	= "’‹‡‚‰ÂÁ¶±" "ÌÓâ",	// 2008:028 +â
+	KIND_IN_REG_X_DOCS	= "‹‚Ì",
+	KIND_OUT_REG_DOCS		= "Œ–—“(æ",			// 2007:244 +æ
+	KIND_OUT_REG_APPS		= "Œ–—",
+	KIND_OUT_REG_CUTS		= "Œ“æ",			// 2007:244 +æ
+	KIND_IN_UNDECIDABLES	= "SÏ",
+	KIND_APPJUDREP_SETTS	= "SÏ" "€⁄)",
+	KIND_OBJECTION_IN_DOCS	= "‡‚",
+	// 2008:058 +⁄
+	KIND_IN_APPEALABLES	= "EG" "S" "Ï" "⁄˜)",
+
+	KIND_IN_RESOLUTABLES	= "’‹‡‚‰ÂÁ¶±" "ÌÓâ",	// 2008:028 +â
+	KIND_IOREG_OTHERS		= "“(Í",
+	KIND_IN_LETTERS		= "Ë",
+	KIND_MOVEMENTS		= "T" "t",
+	KIND_IN_SURROUNDERS	= "",
+
+	KIND_PRIVATE_IN_REG_DOCS	= "‹‚Ì",
+	KIND_REQUEST_152XS		= "®x",
+	KIND_ANY_OTHER_DOCUMENTS	= "“Í∏",	// 2010:061 LPR: +∏
+	// 2008:058 +⁄; 2008:072 +Ï
+	KIND_FORCABLE_ENDOCS		= "EGÃS€Ï⁄˜)",
+
+	KIND_CALL_APPROTS			= "’‡",	// 2009:231 ¶ -> AGAINST
+	KIND_PRIVATE_CALL_APPROTS	= "‹‚",
+	KIND_CONNECT_APPROTS		= "‰±",
+	KIND_PRIVATE_CONNECT_APPROTS	= "Ì",
+	KIND_CONNECT_APPEALS		= "‰Ì",
+
+	// 2007:222 LPR/LRQ +"navoUY" "j"; 2008:273 +«U; 2010:274 +7
+	// 2013:345 +w
+	KIND_QUICKABLES		= "MCA·w" "navoUY" "j" "«U7",
+	KIND_QUICKONLYS		= "F",
+	KIND_IMMEDIATABLES	= "A·«U7",		// 2008:273 +«U; 2010:274 +7
+
+	KIND_SLOW_REQUESTS	= "",
+	KIND_PROVABLE_SESS	= "8îq9" "l",
+	KIND_ARTICLE_LAWS		= "O",
+	KIND_DANGER_LAWS		= "O",
+
+	// 2007:032 +é; 2007:221 BUGFIX: -é
+	// 2007:243 LPR: unified scheme: +A; 2008:162 +7éH«U
+	KIND_RERETURNED_DOCS	= "A·7éH«U",
+
+	KIND_ORDERS_AND_IN_REG_DOCS	= "Ï" "’‹‡‚‰ÂÁËÍ¶±" "ÌÓâ",
+	KIND_FIRST_SET_LAWS		= "cZm" "pr",	// 2014:017 TRQ: +pr
+	KIND_AGAINST_APPEALS		= "¶",
+	// 2010:106 +Ä°¢; 2010:340 +C; 2011:014 +≥ø
+	KIND_ALL_GENERALS			= "MCweJh012FKABPHNxbk73ufnavojX¯« gÅÉ∫¥ΩÄ°¢≥øÇ",
+	KIND_START_HERE_INDOCS		= "B",
+	KIND_PUNISH_DECREES		= "Pu",
+	KIND_RANGEREP_Q3_L1S		= "OR",
+#endif  // REGIONAL
+
+	KIND_PROVES				= "Ò",
+	KIND_PROVE_ACTIONS		= "Û",
+	KIND_V_EMPTIES			= "Œ",
+	KIND_V_SURROUNDS			= "–",
+	KIND_V_NODATES			= "Œ“ÒÍË",		// 2009:192 FIX: -–
+	KIND_V_LAWSUITS			= "Í",
+	KIND_V_REQUESTS			= "Ë",
+	KIND_V_BASICS			= "ŒÍË",
+	KIND_ANOTHER_SURROUNDS		= "∏",
+	KIND_V_ARCHIVES			= "“",
+	KIND_ENDOC_RIDERS			= "ıÔ",
+	KIND_OUT_REG_LETTERS		= "Œ",
+	KIND_INREG_RESCINDS		= "Â",
+	KIND_REQUEST_RESOLUTIONS	= "Ø",	// 2010:063 common
+	KIND_VISIBLE_EVENTS		= "…",	// 2011:019 +related
+	KIND_DECREES			= "-",	// 2011:257
+	KIND_TEXTUAL_NON_EPORTS		= "ËÍ";	// 2018-09-03: common
+
+const char
+	*_KIND_SURROUENDOCS		= "?f∏õï",	// 2016:126 IRQ: +∏; 2018-09-03: IRQ: +õï
+	*_KIND_SURROUENDOC_ACTS		= "ÿÎ";
+
+#if COURT_TYPE == COURT_APPEAL || COURT_TYPE == COURT_AREAL || COURT_TYPE == COURT_MILITARY || COURT_TYPE == COURT_REGIONAL
+constant
+	KIND_INREG_USER_EVENTS		= "…≠Ö";
+#endif  // APPEAL || AREAL || MILITARY || REGIONAL
+
+#if COURT_TYPE == COURT_ADMIN
+constant
+	KIND_INREG_USER_EVENTS		= "…≠<";
+#endif  // ADMIN
+
+#if COURT_TYPE == COURT_APPEAL || COURT_TYPE == COURT_AREAL || COURT_TYPE == COURT_MILITARY
+constant KIND_P64_CONNECT_ENDOCS = "˙";	// 2017:310 SCC: -ÿ
+#endif  // APPEAL || AREAL || MILITARY
+
+#if COURT_TYPE == COURT_ADMIN || COURT_TYPE == COURT_REGIONAL
+constant KIND_P64_CONNECT_ENDOCS = "";
+#endif  // ADMIN || REGIONAL
+
+#if COURT_TYPE == COURT_APPEAL || COURT_TYPE == COURT_ADMIN
+constant KIND_P64_DIRECT_ENDOCS = "";
+#endif  // APPEAL || ADMIN
+
+#if COURT_TYPE == COURT_AREAL || COURT_TYPE == COURT_MILITARY
+constant KIND_P64_DIRECT_ENDOCS = "˙Ã";
+#endif  // AREAL || MILITARY
+
+#if COURT_TYPE == COURT_REGIONAL
+constant KIND_P64_DIRECT_ENDOCS = "GÃ";
+#endif  // REGIONAL
+
+#if COURT_TYPE == COURT_APPEAL || COURT_TYPE == COURT_AREAL
+char
+	// 2007:130 AREA only
+	// 2009:071 ::= CITIZEN_LAWS + TRADE_LAWS
+	KIND_TRADEALIKE_LAWS[SIZE_OF_KINDS];
+#endif  // APPEAL || AREAL
+
+#if COURT_TYPE == COURT_ADMIN
+char
+	KIND_ADMIN_INDOCS[SIZE_OF_KINDS],
+	KIND_TRICKY_INDOCS[SIZE_OF_KINDS];
+#endif  // ADMIN
+
+#if COURT_TYPE == COURT_AREAL
+char
+	KIND_PUNISHMENT_INDOCS[SIZE_OF_KINDS],
+	KIND_CITIZEN_INDOCS[SIZE_OF_KINDS],
+	KIND_TRADE_INDOCS[SIZE_OF_KINDS],
+	KIND_ADMIN_INDOCS[SIZE_OF_KINDS];
+#endif  // AREAL || MILITARY
+
+#if COURT_TYPE == COURT_MILITARY
+char
+	KIND_PUNISHMENT_INDOCS[SIZE_OF_KINDS],
+	KIND_CITIZEN_INDOCS[SIZE_OF_KINDS],
+	KIND_APPEAL_IN_DOCS[SIZE_OF_KINDS],
+	KIND_IN_REG_X_DOCS[SIZE_OF_KINDS];
+#endif  // MILITARY
+
+#if COURT_TYPE == COURT_ADMIN || COURT_TYPE == COURT_AREAL || COURT_TYPE == COURT_MILITARY
+char
+	KIND_1ST_INDOCS[SIZE_OF_KINDS],
+	KIND_2ND_INDOCS[SIZE_OF_KINDS],
+	KIND_INDOCS[SIZE_OF_KINDS];
+#endif  // ADMIN || AREAL || MILITARY
+
+char
+	_KIND_INREG_DOCS[SIZE_OF_KINDS],
+	_KIND_ALLDOCS[SIZE_OF_KINDS],
+	_KIND_VISIBLE_SESSIONS_ENDOCS[SIZE_OF_KINDS],
+	_KIND_SECONDARY_SESSIONS_ENDOCS[SIZE_OF_KINDS],
+	_KIND_SESSIONS_ENDOCS[SIZE_OF_KINDS],
+	_KIND_VISIBLE_SCHEDULABLES[SIZE_OF_KINDS],
+	_KIND_SCHEDULABLE_EVENTS[SIZE_OF_KINDS],
+	_KIND_ELEQUERABLES[SIZE_OF_KINDS],
+	_KIND_VISIBLE_RETURNABLES[SIZE_OF_KINDS],
+	_KIND_INDOC_GENERALS[SIZE_OF_KINDS],
+	_KIND_GRANTABLES[SIZE_OF_KINDS],
+	_KIND_XFERABLES[SIZE_OF_KINDS],
+	_KIND_MONEYABLES[SIZE_OF_KINDS],
+	_KIND_VISIBLE_MONEYABLES[SIZE_OF_KINDS],
+	_KIND_SUBPOENABLES[SIZE_OF_KINDS],
+	_KIND_VISIBLE_SUBPOENABLES[SIZE_OF_KINDS],
+	_KIND_RCDKEY_COMPARES[SIZE_OF_COMPARE_KINDS],
+	_KIND_PREFER_MOTIVES[SIZE_OF_KINDS],
+	_KIND_FORCABLES[SIZE_OF_KINDS],
+	_KIND_EVENT_INDEXES[SIZE_OF_KINDS],
+	_KIND_VISIBLE_EVENT_INDEXES[SIZE_OF_KINDS],
+	_KIND_OUT_REG_OUTS[SIZE_OF_KINDS],
+	_KIND_VISIBLE_NON_CRIME_EVENT_INDEXES[SIZE_OF_KINDS],
+	_KIND_VISIBLE_CRIME_EVENT_INDEXES[SIZE_OF_KINDS],
+	_KIND_TEXTUAL_IN_DOCS[SIZE_OF_KINDS],
+	_KIND_IN_NOENDOCS[SIZE_OF_KINDS],
+	_KIND_AFTER_KILLS[SIZE_OF_KINDS],
+	_KIND_INREG_EVENTS[SIZE_OF_KINDS],
+	_KIND_INREG_NON_EPORTS[SIZE_OF_KINDS];
+
+// ----- RESOLUTION_ ---------------------------------------------------------
+constant
+	// 2009:155 +è where n
+	RESOLUTION_LAWABLES		= "nèha" "Á",
+	RESOLUTION_RESOLUTABLES		= "nèhrsa" "Á",
+	RESOLUTION_RESOLUTIONS		= "hrsa",
+	RESOLUTION_STANDALONES		= "hrsa" "Á",
+	RESOLUTION_PREPARABLES		= "nèha" "Á",
+	RESOLUTION_PREPASSIGNS		= "Á",
+	RESOLUTION_PERFASSIGNS		= "hrsa" "",
+	// 2011:172 -l; 2011:178 +l for now, removing requires separate Indexable()
+	// 2017:156 -l
+	RESOLUTION_INDEXABLES		= "hrsa",
+
+	RESOLUTION_MJS			= "pqtu",
+#if COURT_TYPE == COURT_APPEAL
+	RESOLUTION_2NDABLES		= "PRT",	// 2013:070 +PRT
+	RESOLUTION_APPEALEDS		= "ABCDEFGHIJKLMNOPQRSTUVWXjkq",
+#endif  // APPEAL
+#if COURT_TYPE == COURT_ADMIN
+	RESOLUTION_2NDABLES		= "bfg",	// 2012:185 FIX: -KL
+	RESOLUTION_APPEALEDS		= "ABCDEFGHIJKLMNOPQRSTUVWXYZbcdefgijkmopqtu",
+#endif  // ADMIN
+#if COURT_TYPE == COURT_AREAL || COURT_TYPE == COURT_MILITARY
+	RESOLUTION_2NDABLES		= "KLbfg",	// 2012:185 FIX: +KL
+	RESOLUTION_APPEALEDS		= "ABDGHPQRSTUVWXYZbcdefgijkmopqtu",
+#endif  // AREAL || MILITARY
+#if COURT_TYPE == COURT_REGIONAL
+	RESOLUTION_2NDABLES		= "EFVWv01",
+	RESOLUTION_APPEALEDS		= "ABCDEFGHIJKLMNOPQRSTUVWXYZbcdefgijkmopqtuvwxy01234567",
+#endif  // REGIONAL
+	RESOLUTION_APPEALABLES		= "hrsa" "Á",
+	RESOLUTION_REQUEST_152AS	= "¡√∆À",
+	RESOLUTION_REQUEST_152BS	= "·„ÊÎ",
+	RESOLUTION_PROVE_ACTIONS	= "»…ËÈ";
+
+// ----- RESULT_ -------------------------------------------------------------
+constant
+	RESULT_CLEANS			= "n¢Â",
+	RESULT_UNCARRIEDS			= "f¿™",	// non-resultables
+	RESULT_FOLLOWABLES		= "hSD", 	// 2015:247 JRQ: FIX: +D
+	RESULT_UNLINKEDS			= "¿™",	// 2011:257 after x UN/RESETABLES
+	RESULT_UNDOS			= "g[", 
+
+	// 2009:139 n -> Â
+	RESULT_SURROUNDABLES		= "ÂhSlJ«èd" "≈Ÿ⁄",	// 2015:154 +D; 2016:173 +≈Ÿ⁄
+	RESULT_SURROUNDMENT_DECS	= "ıy",
+	RESULT_SURROUNDMENT_SETTS	= "ıchSlJ",
+	RESULT_SURROUNDMENT_ORDERS	= "ı«D",			// 2015:154 +D
+	RESULT_SETTLEMENTS		= "T",
+
+	// 2013:207 +ê where ˚
+	RESULT_UNDEPARTEDS		= "Â’‹ﬁ‡›˝ÅÉ˚êè‰‚à",	// 2009:153 FIX: +è
+	RESULT_SENDABLES			= "Â’‹ﬁ‡›˝ÅÉ˚êè‰çùà",	// 2009:153 FIX: +è
+	RESULT_EVENTABLES			= "Â’‹ﬁ‡›˝ÅÉ˚êè‰‚çùà",
+	// 2011:139 +˚; 2013:346 +à; 2016:251 +ãõ
+	RESULT_INREG_RESOLUTIONS	= "’‹ﬁ‡‚‰˚êàãõ",
+	RESULT_CITIZALIKE_RESOLUTIONS	= "’‹ﬁ‡‚‰˚êà",
+	RESULT_PUNISHMENT_RESOLUTIONS	= "’‹ﬁ‡‚‰˚ê",		// 2013:346 all but à
+	RESULT_TEXTUAL_RESOLUTIONS	= "˚ê",
+	RESULT_APPEALABLES		= "’‹ﬁ‡˚ê",			// 2011:178 +˚
+	RESULT_SESSION_MESSAGES		= "JSchg«Ì≤ΩD",		// 2015:154 +D; 2018-03-19: +≤Ω, FIX: +D
+	RESULT_EPORTAL_RESOLUTIONS	= "ãõ",
+
+	// 2006:196 LRQ: RESULT_OPENS -Ä; 2008:192 RESULT_FINALIZEDS -p
+	// 2009:224 LPR: SETTLEMENTABLES +p; 2013:064 LRQ: +Ω for OPENS
+	// 2013:064 LRQ: +Ω≤ for closeds; 2015:070 +Ò for DECIDABLES
+	// 2015:070 +ÒÚ for OPENS, CLOSEDS; 2015:082 CLOSEDS -Ú
+	// 2015:071 +h for ORDERABLES, SETTLEMENTABLES; 2015:120 reverted
+	// 2015:091 +h for UNGRANTABLES; 2015:120 reverted
+	// 2015:110 FIX: APPEAL ÒÚ -> âá; 2015:120 +D where h
+	// 2016:025 +  where ÿ and   was missing
+	// 2017:306 CLOSEDS +[ except ADMIN
+#if COURT_TYPE == COURT_APPEAL
+	// 2007:124 +Z
+	RESULT_OPENS		= "lpjdchFKQVSÎÏÓÔJ°ZΩâáD",
+	// 2009:234 +35 to avoid warnings; 2009:274 -35, see below
+	RESULT_REENTERABLES	= "·",
+
+	RESULT_DECIDABLES		= "pÏZâ",
+	RESULT_JUDGEMENTABLES	= "j",
+	// 2009:274 -35
+	RESULT_SETTLEMENTABLES	= "dcÓÔA" "p",
+	RESULT_ORDERABLES		= "c",		// 2009:224 +c
+	RESULT_PROTOCOLABLES	= "",			// 2017:304
+	RESULT_BULWARKABLES	= "",			// 2017:304
+
+	// 2011:192 removed non-session results
+	RESULT_FINALIZEDS		= "jdcÿZÔ ",
+	// 2007:267 +äÄéêû (1st as longest); 2011:154 +Øøæ; 2011:235 IRQ: +Œ
+	// 2011:236 TRQ: +uw ; 2012:172 FIX: -äÄéêû
+	RESULT_TEXTUALS		= "œ”ÿv‘◊÷zC√HÀƒ»…EG12ØøæŒuw ",
+	RESULT_UNGRANTABLES	= "sc" "ÿ ",	// 2011:157 LPR: -P, not used
+	RESULT_ALL_CANCELEDS	= "c" "ÿ ",
+	RESULT_REINVESTS		= "",
+
+	RESULT_WITH_SETTORDERS	= "d",
+	RESULT_CLOSEDS		= "d3«c5JghSaAZÓÔΩ≤âD[]",
+	RESULT_RESET_RESOLUTIONS= "«ÌJ3Ω≤",	// 2014:209 +Ω≤
+	RESULT_LEFTS		= "oINmML·Ω≤l°FKQV12345Î9",
+	RESULT_SLC_LEFTS		= "l°FKQVÎ",
+#endif  // APPEAL
+
+#if COURT_TYPE == COURT_ADMIN
+	// 2007:067 LRQ: FIX: all -√ƒ»…Àœ”‘÷◊; 2007:134 FIX: all -j
+	// 2007:240 FIX: -·¡; 2015:104 +Ü where c
+	RESULT_OPENS		= "PILdslphSc0ZJ€°ΩÒÚÜD",
+	RESULT_REENTERABLES	= "·",
+
+	RESULT_DECIDABLES		= "pZÒ",
+	RESULT_SETTLEMENTABLES	= "d" "csÜ" "P" "p",
+	RESULT_ORDERABLES		= "4" "csÜ" "p",		// 2009:224 +cs; 2017:261 +p
+	RESULT_PROTOCOLABLES	= "0",
+
+	// 2011:186 removed non-session results
+	RESULT_FINALIZEDS		= "PZcdsÿ04Ü ",
+
+	// 2011:154 +øæ Ã; 2011:235 IRQ: +Œ
+	RESULT_TEXTUALS		= "qÿvzCuHEGw87•øæ ÃŒ",
+	// 2008:204 removed dups, +¿ -VÌY, 0 kept for future use
+	RESULT_CLOSEDS		= "ScJdZh«g4sΩ≤ÒÜD]",	// 2010:085 IRQ: FIX: +s
+	RESULT_UNGRANTABLES	= "scPÿÜ ",
+	RESULT_REINVESTS		= "",
+
+	RESULT_ALL_CANCELEDS	= "cOPsÜ" "ÿ ",
+	RESULT_WITH_SETTORDERS	= "d4",
+	RESULT_RESET_RESOLUTIONS= "«ÌJΩ≤",	// 2014:209 +Ω≤
+	RESULT_LEFTS		= "°€oINmML·Ω≤l",
+	RESULT_SLC_LEFTS		= "lLI°€",
+#endif  // ADMIN
+
+#if COURT_TYPE == COURT_AREAL
+	// 2010:335 +º
+	RESULT_OPENS		= "PILQjBdslphScK0·¡¬Z9aAVJ€ä°¥®∏ºΩÒÚD",
+	// 2009:083; 2009:113 FIX: +9 +0
+	RESULT_CLOSEDS		= "JdZc«rg40ShÌ9FAVsa®∏Ω≤ÒD[]",
+	RESULT_REENTERABLES	= "·9",
+
+	// 2009:245 FIX: +9
+	RESULT_DECIDABLES		= "pZ" "FK"  "Q" "¬" "9Ò",
+	RESULT_JUDGEMENTABLES	= "jä",
+	// 2009:224 +9Q; 2010:335 +º
+	RESULT_SETTLEMENTABLES	= "d" "cBsr" "P" "AVa®" "¥" "9pQº",
+	RESULT_BULWARKABLES	= "·¡ä",
+	RESULT_ORDERABLES		= "4∏" "cBsr",	// 2009:224 +cBsr
+	RESULT_PROTOCOLABLES	= "0",
+
+	// 2011:153 removed non-session results
+	RESULT_FINALIZEDS		= "ABPZcdjs¡04r9ä" "ÿ ",
+	RESULT_FIRM_SENDECS	= "£",
+	RESULT_FIRM_ACCEPTS	= "ˇ„Ê˘˙ÈÎÔÙˆ˜¯123ÏÓ£",
+	RESULT_FIRM_LEFTS		= "l",
+	RESULT_FIRM_SURROUNDS	= "ÊÈÎÔÙˆ˜¯˘˙˛13ÏÓ",
+//	RESULT_FIRM_STANDARDS	= "ˇ„¸",
+	RESULT_FIRM_CANCELD1S	= "ÈÎÔÙˆ˜1˘˙3",
+	RESULT_FIRM_UNACCEPTS	= "¸",
+	RESULT_FIRM_REACCEPTS	= "2",
+	RESULT_FIRM_RESURRECTS	= "Ï",
+
+	// 2011:154 +Øøæ Ã; 2011:235 IRQ: +Œ; 2011:236 TRQ: +u; 2014:255 +∫
+	RESULT_TEXTUALS	= "qœ”ÿv‘◊÷zC√uHÀƒ»…EGw87•Øøæ ÃŒu∫",
+	RESULT_SURROUNDMENTABLES	= "9",
+	RESULT_FIRM_PSEUDOLIZEDS	= "FK®∏",
+
+	RESULT_UNGRANTABLES		= "sacBrPAV" "ÿ ",
+	RESULT_ALL_CANCELEDS		= "cOArBPs¡" "ÿ ",
+	RESULT_WITH_SETTORDERS		= "d4",
+	RESULT_REINVESTS			= "rB",
+
+	RESULT_FIN_JUDGEMENTS		= "pZd4jä0",
+	RESULT_FIN_SETT_381_4S		= "¡",
+	RESULT_FIN_ABORTEDS		= "srB",
+	RESULT_INCONSISTENCES		= "QpZ9Ä",			// 2016:165 +Ä
+	RESULT_BANCONSIST			= "scPd4" "QpZ9",
+	RESULT_RESET_RESOLUTIONS	= "«ÌJΩ≤",			// 2014:209 +Ω≤
+	RESULT_LEFTS			= "°€oINmML·Ω≤l¬",
+	RESULT_SLC_LEFTS			= "lLI°€·",
+	RESULT_RANGEREP_Q1_L3S		= "L",
+#endif  // AREAL
+
+#if COURT_TYPE == COURT_MILITARY
+	// 2008:350 LPR: copied from AREAL and cut down "QK9aAV®∏F"; 2013:346 +º
+	RESULT_OPENS		= "PILjBdslphSc0·¡ZJä°¥ΩºÒÚD",
+	RESULT_CLOSEDS		= "JdZc«rg40ShÌΩ≤ÒD[]",		// 2009:315 FIX: +0ShÌ
+
+	RESULT_REENTERABLES	= "·",
+	RESULT_DECIDABLES		= "pZÒ",
+	RESULT_JUDGEMENTABLES	= "jä",
+	RESULT_SETTLEMENTABLES	= "d" "cBsr" "P¥pº",		// 2013:346 +º
+	RESULT_BULWARKABLES	= "·¡ä",
+	RESULT_ORDERABLES		= "4" "cBsr",			// 2009:224 +cBsr
+	RESULT_PROTOCOLABLES	= "0",
+
+	// 2011:192 removed non-session results
+	RESULT_FINALIZEDS		= "BPZcdjs¡ÿ04räK ",
+	// 2011:154 +Øøæ Ã; 2011:235 IRQ: +Œ; 2011:236 TRQ: +u
+	RESULT_TEXTUALS	= "qœ”ÿv‘◊÷zC√uHÀƒ»…EGw87•Øøæ ÃŒu",
+	// 2010:350 LPR: -Y
+	RESULT_UNGRANTABLES	= "scBrP" "ÿ ",
+
+	RESULT_ALL_CANCELEDS	= "cOrBPs¡" "ÿ ",
+	RESULT_WITH_SETTORDERS	= "d4",
+	RESULT_REINVESTS		= "rB",
+
+	RESULT_FIN_JUDGEMENTS	= "pZd4jä0",
+	RESULT_FIN_SETT_381_4S	= "¡",
+	RESULT_FIN_ABORTEDS	= "srB",
+	RESULT_RESET_RESOLUTIONS= "«ÌJΩ≤",	// 2014:209 +Ω≤
+	RESULT_LEFTS		= "°€oINmML·Ω≤l",
+	RESULT_SLC_LEFTS		= "lLI°·",
+	RESULT_RANGEREP_Q1_L3S	= "L",	// 2017:117
+#endif  // MILITARY
+
+#if COURT_TYPE == COURT_REGIONAL
+	// 2008:068 +¸ where present
+	// 2009:118 +QK; 2010:218 LPR: -i; 2013:346 +º
+	RESULT_OPENS		= "PoINmML123456789aAjBdslphScVek0·¡Zä°CEQKΩºÒÚD",
+	// 2009:118; 2010:048 +F; 2013:064 +√
+	RESULT_CLOSEDS		= "dcghSJ«sZ•BFΩ≤√ÒD[]",
+	RESULT_REENTERABLES	= "·E",
+
+	RESULT_DECIDABLES		= "pZ" "A"  "7aÒ",
+	RESULT_JUDGEMENTABLES	= "jä",
+	RESULT_SETTLEMENTABLES	= "d" "cBs" "P" "GH" "CE" "p" "√" "º",	// 2013:346 +º
+	RESULT_BULWARKABLES	= "·¡ä",
+	// 2008:330 +•: was missing; 2009:224 +cBs
+	RESULT_ORDERABLES		= "•" "cBs",
+	RESULT_PROTOCOLABLES	= "0",		// 2008:029 +0
+	RESULT_EXECUTIVABLES	= "•F",		// 2010:048 +F
+
+	// 2008:070 +•; 2008:0075 +∫; 2010:048 +F
+	// 2011:187 removed non-session and not-region results
+	// 2014:035 +7
+	RESULT_FINALIZEDS		= "ABPZcdjs0¡" "ä•F" "7",
+
+	// 2011:236 TRQ: +u; 2014:255 +∫
+	RESULT_TEXTUALS		= "txX" "quvwzu" "∫",
+	RESULT_UNGRANTABLES	= "scBPÿ",		// 2017:013 TRQ: +ÿ
+
+	RESULT_ALL_CANCELEDS	= "scPOB¡" "ÿ",	// 2017:033 FIX: +ÿ
+	RESULT_WITH_SETTORDERS	= "d•",
+	RESULT_PROTECTABLES	= "pZ",
+	RESULT_REINVESTS		= "B",
+
+	RESULT_FIN_JUDGEMENTS	= "pZd•jä0",
+	RESULT_FIN_SETT_381_4S	= "¡",
+	RESULT_FIN_ABORTEDS	= "sB",
+	RESULT_DIV_PSEUDOSETS	= "a7",
+	RESULT_RESET_RESOLUTIONS= "«ÌJΩ≤",	// 2014:209 +Ω≤
+	RESULT_HERITAGE_ENDOCS	= "®∏",
+	RESULT_HERITAGE_STATES	= "®∏ø",
+	RESULT_LEFTS		= "oINmML·Ω≤lek°a123456789E",
+	RESULT_SLC_LEFTS		= "lek1INmML°2345689E·",
+	RESULT_RANGEREP_Q1_L3S	= "L34MmN",
+	RESULT_RANGEREP_ADMPLS	= "txX",
+	RESULT_CSB_SETTLEMENT	= "JêΩh",
+	RESULT_CSB_ORDER		= "«˚≤D",
+#endif  // REGIONAL
+
+	RESULT_APPEAL_LETTERS		= "—“",
+	RESULT_PROPOSITION_LETTERS	= "Œ–",
+	RESULT_IOREG_RETURNEDS		= "Õ" "Á" "—“" "Œ–" "›˝" "ÅÉ" "çù",
+	RESULT_IOREG_FINISHEDS		= "Õ",
+	RESULT_IOREG_CONTINUEDS		= "Á",
+	RESULT_COMPLECT_FINISHEDS	= "›",
+	RESULT_COMPLECT_CONTINUEDS	= "˝",
+	RESULT_COMPLECTS			= "›˝",
+	RESULT_SERVICE_FINISHEDS	= "Å",
+	RESULT_SERVICE_CONTINUEDS	= "É",
+	RESULT_SERVICES			= "ÅÉ",
+	RESULT_PROCEDURE_FINISHEDS	= "ç",
+	RESULT_PROCEDURE_CONTINUEDS	= "ù",
+	RESULT_MOVED_OUTS			= "Ë",
+	RESULT_MOVED_INS			= "Í",
+	RESULT_FAKES			= "ﬂ",
+	// not used in APPEAL, ADMIN; 2010:350 LRQ: +º; 2013:119 TRQ: +¡
+	// 2013:336 LRQ: +º
+	RESULT_PERSONAL_SETTLEMENTS	= "d¥jäº¡º",
+	RESULT_ARCHIVEDS_DESTROYEDS	= "åú",
+	RESULT_FIXEDS			= "f",
+	RESULT_APPEAL_RETURNEDS		= "Õ" "Á",
+	RESULT_UNSET_RESOLUTIONS	= RESULT_RESET_RESOLUTIONS,
+	RESULT_RECUSALS			= "Ω≤",
+	RESULT_RECUJEDS			= "Ω≤·",
+	RESULT_CANCELAWS			= "ÿ ",
+	RESULT_SURROUENDOC_DECISIONS	= "y",
+	RESULT_SURROUENDOC_SETTLEMENTS= "≈TŸ⁄Û",
+	RESULT_KILLED_SESSIONS		= "«J",
+	RESULT_EXTERN_SESSIONS		= "fi™",	// 2018-05-10: +™
+	RESULT_CUMULATABLES		= "Tq";
+
+const char RESULT_HOLDS[3] = { RESULT_HOLD_SETT, RESULT_HOLD_ORD, '\0' };
+const char *_RESULT_SURROUENDOCS = "Ä";
+
+char
+	_RESULT_COMPLETIZEDS[SIZE_OF_RESULTS],
+	_RESULT_ENTERABLES[SIZE_OF_RESULTS],
+	_RESULT_SESSIONS[SIZE_OF_RESULTS],
+	_RESULT_WITH_READY_ANYS[SIZE_OF_RESULTS],
+	_RESULT_ENDOCS[SIZE_OF_RESULTS],
+	_RESULT_LEFTS_OR_STOPPEDS[SIZE_OF_RESULTS],
+	_RESULT_SURROUENTERABLES[SIZE_OF_RESULTS],
+	_RESULT_SURROUENDOC_ENDOCS[SIZE_OF_RESULTS];
+
+// ----- POST_ ---------------------------------------------------------------
+constant
+	POST_SECRETARS	= "si",
+	POST_PROSECUTORS	= "pi",
+	POST_VISIBLE_SECRETARS	= "s",
+
+	// 2007:031 -Q; 2009:180 crime +A, must be on
+	// 2010:167 +I except arbitary; +H where J; 2010:259 crime +D
+	// 2011:158 OTHER +G; 2017:027 CRIME/OTHER +L; 2017:241 CRIME +V
+#if COURT_TYPE == COURT_APPEAL
+	POST_CRIME_ATTRIBS	= "bjspx34I" "uCK" "ADMLV",	// 2016:356 +M; 2017:307 revert: -P
+	POST_OTHER_ATTRIBS	= "bjspx34I" "AGL",
+	POST_VISIBLE_JUDGES	= "12j",
+	POST_JURORS			= "i",
+	POST_VISIBLES		= "rcs12jhaow",
+#endif  // APPEAL
+#if COURT_TYPE == COURT_ADMIN
+	// 2009:217 CRIME/OTHER -J; 2012:076 CRIME/OTHER -v
+#if TESTVER
+	POST_CRIME_ATTRIBS	= "bjspx34I" "uCK" "ADLV",
+	POST_OTHER_ATTRIBS	= "bjspx34I" "AGL",
+#else  // TESTVER
+	POST_CRIME_ATTRIBS	= "bjspx34I" "uCK" "ADV",
+	POST_OTHER_ATTRIBS	= "bjspx34I" "AG",
+#endif  // TESTVER
+	POST_VISIBLE_JUDGES	= "12jy",
+	POST_JURORS			= "Ji",
+	POST_VISIBLES		= "rcs12jyhaow",
+#endif  // ADMIN
+#if COURT_TYPE == COURT_AREAL
+	POST_CRIME_ATTRIBS	= "bjspJHx34I" "uPCKF" "ADLVM",
+	POST_OTHER_ATTRIBS	= "bjspJHx34I" "AGL",
+	POST_VISIBLE_JUDGES	= "12jy",
+	POST_JURORS			= "Ji",
+	POST_VISIBLES		= "rcs12jyhaow",
+#endif  // AREAL
+#if COURT_TYPE == COURT_MILITARY
+	POST_CRIME_ATTRIBS	= "bjspJHx34I" "uPCKF" "ADLVM",
+	POST_OTHER_ATTRIBS	= "bjspJHx34I" "AGL",
+	POST_VISIBLE_JUDGES	= "12jy",
+	POST_JURORS			= "Ji",
+	POST_VISIBLES		= "rcs12jyhaow",
+#endif  // MILITARY
+#if COURT_TYPE == COURT_REGIONAL
+	POST_CRIME_ATTRIBS	= "bjspJH34I" "uPCKE" "ADBLVM",
+	POST_OTHER_ATTRIBS	= "bjspJH34I" "AGL",	// 2009:201 -L, obsolete
+	POST_VISIBLE_JUDGES	= "12jy",
+	POST_JURORS			= "Ji",
+	POST_VISIBLES		= "rcs12jyhaow",
+#endif  // REGIONAL
+
+	POST_INTERNALS		= "i",
+	POST_MATURE_JUDGES	= "12ji",
+	POST_VISIBLE_MATURES	= "12j",
+	// 2010:096 ALLS -> USERS +i
+	POST_USERS			= "rcs12jyhapJow",
+	POST_KNOWN_PERSONS	= "pJ",
+	POST_CACHES			= "12syjw",
+	POST_PERSONELS		= "rcsh",
+	POST_BOSSES			= "12";
+
+char _POST_JUDGES[SIZE_OF_POSTS];
+char _POST_INSECT_TARGETS[SIZE_OF_POSTS];
+
+// ----- COLLEGE_ ------------------------------------------------------------
+constant
+#if COURT_TYPE == COURT_APPEAL || COURT_TYPE == COURT_ADMIN || COURT_TYPE == COURT_AREAL || COURT_TYPE == COURT_MILITARY
+	COLLEGE_COMMONS	= "x";
+#endif  // APPEAL || ADMIN || AREAL || MILITARY
+#if COURT_TYPE == COURT_REGIONAL
+	COLLEGE_COMMONS	= "xe";
+#endif  // REGIONAL
+
+char _COLLEGE_XALLS[SIZE_OF_TYPES];
+
+// ----- COMPOSITION_ --------------------------------------------------------
+constant COMPOSITION_ALLS =	// 2010:165 FIX: 100..255
+	"\1\2\3\4\5\6\7\10\11\12\13\14\15\16\17\20\21\22\23\24\25\26"
+	"\27\30\31\32\33\34\35\36\37\40\41\42\43\44\45\46\47\50\51"
+	"\52\53\54\55\56\57\60\61\62\63\64\65\66\67\70\71\72\73\74"
+	"\75\76\77\100\101\102\103\104\105\106\107\110\111\112\113"
+	"\114\115\116\117\120\121\122\123\124\125\126\127\130\131"
+	"\132\133\134\135\136\137\140\141\142\143\144\145\146\147"
+	"\150\151\152\153\154\155\156\157\160\161\162\163\164\165"
+	"\166\167\170\171\172\173\174\175\176\177\200\201\202\203"
+	"\204\205\206\207\210\211\212\213\214\215\216\217\220\221"
+	"\222\223\224\225\226\227\230\231\232\233\234\235\236\237"
+	"\240\241\242\243\244\245\246\247\250\251\252\253\254\255"
+	"\256\257\260\261\262\263\264\265\266\267\270\271\272\273"
+	"\274\275\276\277\300\301\302\303\304\305\306\307\310\311"
+	"\312\313\314\315\316\317\320\321\322\323\324\325\326\327"
+	"\330\331\332\333\334\335\336\337\340\341\342\343\344\345"
+	"\346\347\350\351\352\353\354\355\356\357\360\361\362\363"
+	"\364\365\366\367\370\371\372";
+
+// ----- RIGHT_ --------------------------------------------------------------
+constant
+
+	// 2007:208 +BT
+	// 2007:331 FIX: -3; 2008:024 qb moved from functions to menus
+	// 2008:043 +ı; 2009:139 +mt; 2009:217 t -> per-court
+#if COURT_TYPE == COURT_APPEAL
+	// 2007:102 FIX: +K
+	RIGHT_PERCOURTS	= "jK≈",
+#endif  // APPEAL
+#if COURT_TYPE == COURT_ADMIN
+	RIGHT_PERCOURTS	= "",
+#endif  // ADMIN
+#if COURT_TYPE == COURT_AREAL
+	RIGHT_PERCOURTS	= "jKt≈",
+#endif  // AREAL
+#if COURT_TYPE == COURT_MILITARY
+	RIGHT_PERCOURTS	= "jKt≈",
+#endif  // MILITARY
+#if COURT_TYPE == COURT_REGIONAL
+	RIGHT_PERCOURTS	= "jt≈",
+#endif  // REGIONAL
+	// 2010:103 URQ: +a; 2010:110 LPR/LRQ: -a; 2012:016 +∆; 2013:070 +«–
+	// 2013:150 +œ; 2015:034 +»; 2015:085 +”
+	RIGHT_COMMONS	= "nerNElFLwWoPgGM9DOUusVIQHYvZik0fz1245678yxXBTm∆«–œÀ»”",
+	// 2008:309 re-unified; 2009:352 +3
+	RIGHT_MENUS		= "RCSJhqbA3",
+	RIGHT_QUERIES	= "q",
+	RIGHT_MINIMALS	= "Q5";
+
+char _RIGHT_FUNCTIONS[SIZE_OF_FUNCTIONS];
+
+// ----- AGE_ ----------------------------------------------------------------
+constant
+	AGE_AGES	= "0" "12" "678",
+	AGES_THREE_OR_LESS	= "123",
+	AGES_MORE_THAN_THREE	= "6789";
+
+// ----- GRANT_ --------------------------------------------------------------
+constant
+	GRANT_DECISIONS	= "neprz",
+	GRANT_ALLS		= "neprz";
+
+// ----- JUDGED_ -------------------------------------------------------------
+constant
+	JUDGED_RIGHT_JUDGEDS	= "jpr76o",
+	JUDGED_RIGHT_EXECS	= "jipr76o",
+	JUDGED_DISCHARGEDS	= "io",
+	JUDGED_ALLS			= "njipsr76o";
+
+// ----- PUNISHMENT_ ---------------------------------------------------------
+constant
+#if COURT_TYPE == COURT_APPEAL || COURT_TYPE == COURT_AREAL || COURT_TYPE == COURT_MILITARY
+	PUNISHMENT_DECISIONS	= "zWmMPdp",
+	PUNISHMENT_JUDGEMENTS	= "zCN35tfeTwsWmMPdpo",
+	PUNISHMENT_BULWARKS	= "zCN35tfeTwsWmMPdpo",
+	PUNISHMENT_EXTRAS		= "mMPdpK",				// 2014:048 +K
+	PUNISHMENT_CONVICTIONS	= "CN35tfeTwsWmMPdpo",
+	PUNISHMENT_BASICS		= "CN35tfeTwsWmMPdpo" "nz",
+	// 2017:304 for APPEAL too
+	PUNISHMENT_OTHERS		= "TwsWmPdo",
+	PUNISHMENT_OPT_EXECS	= "CpM",
+	PUNISHMENT_P64_LCPS	= "N35tfeTws",	// 2017:310 -pdP
+#endif  // APPEAL || AREAL || MILITARY
+#if COURT_TYPE == COURT_ADMIN
+	PUNISHMENT_OPT_EXECS	= "",
+	PUNISHMENT_CONVICTIONS	= "",
+	PUNISHMENT_BASICS		= "n",
+	PUNISHMENT_P64_LCPS	= "",
+#endif  // ADMIN
+#if COURT_TYPE == COURT_AREAL || COURT_TYPE == COURT_MILITARY
+	PUNISHMENT_REPORT_PROBAS	= "pWm",
+	PUNISHMENT_REPORT_OTHERS	= "WmpMdPo",
+#endif  // AREAL || MILITARY
+#if COURT_TYPE == COURT_REGIONAL
+	// 2014:006 +l where needed
+	PUNISHMENT_DECISIONS	= "zwtmPdpao",
+	PUNISHMENT_JUDGEMENTS	= "zukCN35TwtmPdoOspl",
+	PUNISHMENT_BULWARKS	= "zukCN35TwtmPdoOspl",
+	PUNISHMENT_EXTRAS		= "tmPdpK",				// 2014:048 +K
+	PUNISHMENT_EXTRA_OTHERS	= "tmPdpK" "o",			// 2014:048 +K
+	PUNISHMENT_CONVICTIONS	= "ukCN35TwtmPdaoOspl",
+	PUNISHMENT_BASICS		= "ukCN35TwtmPdaoOspl" "nz",	// 2014:059 +l
+	PUNISHMENT_OTHERS		= "wmPdoOs",
+	PUNISHMENT_OPT_EXECS	= "uCpOt",
+	PUNISHMENT_P64_LCPS	= "kN35T",
+
+	PUNISHMENT_3_TO_10_YEARS_S	= "35",
+	PUNISHMENT_10_TO_30_YEARS_S	= "T",
+
+	PUNISHMENT_3_TO_15_YEARS	= "35T",
+	PUNISHMENT_REPORT_PROBAS	= "pwm",
+	PUNISHMENT_REPORT_OTHERS	= "PdoOsl",
+#endif  // REGIONAL
+	PUNISHMENT_NOT_KNOWNS	= "n",
+	PUNISHMENT_NULLS	= "";
+
+// ----- DEFAULT_ ------------------------------------------------------------
+long DEFAULT_AREA = BUILDIN_AREA;
+long DEFAULT_REGION = BUILDIN_REGION;
+
+// ----- BUILDIN_ ------------------------------------------------------------
+constant BUILDIN_COUNTRY = "BG";
+
+// ----- STATE_ --------------------------------------------------------------
+constant STATE_APPEALERS = "∆ÊÁœ";
+#if COURT_TYPE == COURT_REGIONAL
+constant STATE_HERITAGES = "œŒ«";
+#endif  // REGIONAL
+
+// ----- INTERVAL_ -----------------------------------------------------------
+constant
+	INTERVAL_DOCS	= "0379",
+	INTERVAL_CALS	= "4568";
+
+// ----- SESSION_ ------------------------------------------------------------
+const CTime SESSION_DEFAULT_TIME(8, 30, 0);
+
+// ----- CRIME_FORM_ ---------------------------------------------------------
+constant CRIME_FORM_ALLS = "eis";
+
+// ----- CRIME_STAGE_ --------------------------------------------------------
+constant CRIME_STAGE_ALLS = "cap";
+
+// ----- ACCOMPLY_ -----------------------------------------------------------
+constant
+	// 2011:203 // EFGHIJK; 2011:010 LRQ: +EFGH; 2012:004 +CLMQRSTUVWX
+	// 2017:116 +¿¡¬√ƒ≈∆«»… ÀÃÕŒ
+	ACCOMPLY_INCONSISTENCES = "0123456789ADEFGHIJKCLMQRSTUVWX" "¿¡¬√ƒ≈∆«»… ÀÃÕŒ",
+#if COURT_TYPE == COURT_APPEAL || COURT_TYPE == COURT_AREAL || COURT_TYPE == COURT_MILITARY
+	ACCOMPLY_SUBPOENABLES	= "N",
+#endif  // APPEAL || AREAL || MILITARY
+#if COURT_TYPE == COURT_ADMIN
+	ACCOMPLY_SUBPOENABLES	= "n",
+#endif  // ADMIN
+	// 2012:004 +STUVWX; 2017:116 +¿¡¬√ƒ≈∆«»… ÀÃÕŒ
+	ACCOMPLY_DECIDEDS		= "0123456789ADEFGHSTUVWX" "¿¡¬√ƒ≈∆«»… ÀÃÕŒ",
+	ACCOMPLY_CANCELEDS	= "IJKLMQR",			// 2012:004 +LMQR
+	ACCOMPLY_SENDS		= "C",
+	ACCOMPLY_CREDITORS	= "dfi",
+#if COURT_TYPE == COURT_REGIONAL
+	ACCOMPLY_SUBPOENABLES	= "NOP",
+#endif  // REGIONAL
+	ACCOMPLY_SUBPUNIABLES	= "YZ",
+	ACCOMPLY_NULLS		= "n";
+
+// ----- SCHED_ --------------------------------------------------------------
+constant
+	SCHED_AUTOENDS	= "scdyAV¸˛pf’‹ﬁ",
+	SCHED_SENDENDS 	= "scdyp‰‡’‹ﬁƒ√¬AV¸˛˜o€DWjÙOJK",	// 2009:223 +OJK
+#if COURT_TYPE == COURT_AREAL
+	SCHED_UNHOLDS	= "FSc" "AV",
+#endif  // COURT_AREAL
+	SCHED_LOCALS	= "˜oDW";
+
+char _SCHED_ALLS[SIZE_OF_SCHEDS];
+
+// ----- SUM_TYPE_ -----------------------------------------------------------
+char
+	_SUM_TYPE_EXEC_LIST_PRIVATES[SIZE_OF_SUM_TYPES],
+	_SUM_TYPE_EXEC_LIST_COUNTRIES[SIZE_OF_SUM_TYPES],
+	_SUM_TYPE_EXEC_LISTS[SIZE_OF_SUM_TYPES],
+	_SUM_TYPE_OTHERS[SIZE_OF_SUM_TYPES],
+	_SUM_TYPE_VALUES[SIZE_OF_SUM_TYPES],
+	_SUM_TYPE_BUDGETS[SIZE_OF_SUM_TYPES],
+	_SUM_TYPE_DEPOSITS[SIZE_OF_SUM_TYPES],
+	_SUM_TYPE_PAYMENTS[SIZE_OF_SUM_TYPES];
+
+// ----- SUM_ ----------------------------------------------------------------
+const double SUM_EXEC_TAX_MONEY = 5.0;	// config?
+
+// ----- SUM_STATE_ ----------------------------------------------------------
+constant
+	SUM_STATE_PENALITIES	= "fcup",
+	SUM_STATE_REWARDS		= "rn",
+	SUM_STATE_TAXES		= "p",
+	SUM_STATE_ALLS		= "faup" "rn" "d";
+
+// ----- ACCOUNT_TYPE_ -------------------------------------------------------
+constant ACCOUNT_TYPE_ALLS = "bd";
+
+const char
+	NUMAP_FULL_RANGE[SIZE_OF_NUMAP_FULL_RANGE] = "***",
+	NUMAP_HALF_RANGE[SIZE_OF_NUMAP_HALF_RANGE] = "* * * *",
+	NUMAP_CONT_RANGE[SIZE_OF_NUMAP_CONT_RANGE] = " *";
+
+// ----- COURT_ --------------------------------------------------------------
+constant COURT_AREA_ALLS = "5";
+
+// ----- SUBJECT_ ------------------------------------------------------------
+constant
+#if COURT_TYPE == COURT_APPEAL
+	SUBJECT_SI_1_SUFFIX	= "-2",
+	SUBJECT_SI_2_SUFFIX	= "-2";
+#endif  // APPEAL
+#if COURT_TYPE == COURT_ADMIN
+	SUBJECT_SI_1_SUFFIX	= "",
+	SUBJECT_SI_2_SUFFIX	= "";
+#endif  // ADMIN
+#if COURT_TYPE == COURT_AREAL || COURT_TYPE == COURT_MILITARY || COURT_TYPE == COURT_REGIONAL
+	SUBJECT_SI_1_SUFFIX	= "-1",
+	SUBJECT_SI_2_SUFFIX	= "-2";
+#endif  // ADMIN || AREAL || MILITARY || REGIONAL
+
+// ----- GENERAL_KIND_ -------------------------------------------------------
+char GENERAL_KIND_INDOCS[SIZE_OF_KINDS];
+
+// ----- SETTING_BAD_ --------------------------------------------------------
+constant
+	SETTING_BAD_FILENAME_CHARS 		= "\\/:*?\"<>|",
+	SETTING_BAD_ELECTRIC_TYPE_CHARS	= ".\\/:*?\"|"; 
+
+// ----- SECTION_ ------------------------------------------------------------
+constant
+	// 2007:222 +kt; 2009:138 -o; 2009:180 +n; 2009:343 LOCALS -b
+	// 2010:112 -m; 2011:164 xfer depends on db; 2012:299 +g for !admin
+#if COURT_TYPE == COURT_APPEAL || COURT_TYPE == COURT_AREAL || COURT_TYPE == COURT_MILITARY || COURT_TYPE == COURT_REGIONAL
+	SECTION_GLOBALS	= "pelruxahcsdiktfng",
+	SECTION_LOCALS	= "pelruxahcsdktfngo";
+#endif  // APPEAL || AREAL || MILITARY || REGIONAL
+#if COURT_TYPE == COURT_ADMIN
+	SECTION_GLOBALS	= "pelruxahcsdiktfn",
+	SECTION_LOCALS	= "pelruxahcsdktfno";
+#endif  // ADMIN
+
+// ----- CONNECT_TYPE_ -------------------------------------------------------
+constant
+	// 2007:103 LRQ: APPEAL -UNET
+	// 2007:242 LPR: dynamic lower, unified
+	CONNECT_TYPE_REQUIREDS		= "JRNUHL" "CS",
+	CONNECT_TYPE_JURISDICTIONS	= "J",
+	CONNECT_TYPE_DUPLISDICTIONS	= "JY",
+	CONNECT_TYPE_RETURNEDS		= "RH",
+	CONNECT_TYPE_RENEWEDS		= "NH",
+	CONNECT_TYPE_RERETURNEDS	= "U",
+#if COURT_TYPE == COURT_APPEAL
+	CONNECT_TYPE_LOWER_INSTANCES	= "LB",
+	CONNECT_TYPE_COMPOSITABLES	= "JRNULB",		// 2015:254 TRQ: +B
+#endif  // APPEAL
+#if COURT_TYPE == COURT_ADMIN || COURT_TYPE == COURT_AREAL || COURT_TYPE == COURT_MILITARY || COURT_TYPE == COURT_REGIONAL
+	CONNECT_TYPE_LOWER_INSTANCES	= "L",
+	CONNECT_TYPE_COMPOSITABLES	= "JRNUL",
+#endif  // ADMIN || AREAL || MILITARY || REGIONAL
+#if COURT_TYPE == COURT_AREAL
+	CONNECT_TYPE_FIRM_DEBTORS	= "D",
+#endif  // AREAL
+	// all visible types, for queries; 2008:203 +M where G
+	// 2009:182 +P +CY where applicable; 2010:274 +W where Q
+	// 2010:350 FIX: +O where F; 2012:353 -P
+	// 2015:087 +A where L; 2018
+#if COURT_TYPE == COURT_APPEAL
+	CONNECT_TYPE_ALLS		= "RHLB" "FOIGQWM" "CSY" "kAP",	// 2018-06-26: FIX: +P
+	// 2013:053 FIX: +Y; 2018-06-26: FIX: +P
+	CONNECT_TYPE_VISIBLES	= "RHLB" "FOIGQWM" "CSY" "kAP",
+#endif  // APPEAL
+#if COURT_TYPE == COURT_ADMIN
+	CONNECT_TYPE_ALLS		= "JRHL" "ET" "CSY" "bkA",	// 2007:256 -QFIG
+	CONNECT_TYPE_VISIBLES	= "JRHL" "ET" "CS" "bkA",
+#endif  // ADMIN
+	// 2013:239 +d
+#if COURT_TYPE == COURT_AREAL
+	CONNECT_TYPE_ALLS		= "JRNUHL" "DFOIGQWVM" "CSY" "nbk" "dAP",	// 2011:152 +n
+	CONNECT_TYPE_VISIBLES	= "JRNUHL" "DFOIGQWVM" "CS" "nbk" "dAP",	// 2011:152 +n
+#endif  // AREAL
+#if COURT_TYPE == COURT_MILITARY
+	CONNECT_TYPE_ALLS		= "JRNUHL" "FOIGQWVM" "CSY" "bk" "dAP",
+	CONNECT_TYPE_VISIBLES	= "JRNUHL" "FOIGQWVM" "CS" "bk" "dAP",
+#endif  // MILITARY
+#if COURT_TYPE == COURT_REGIONAL
+	CONNECT_TYPE_ALLS		= "JNRUH" "FOIGKQWEM" "CSY" "ebk" "du",	// 2011:152 +e
+	CONNECT_TYPE_VISIBLES	= "JNRUH" "FOIGKQWEM" "CS" "ebk" "du",	// 2011:152 +e
+#endif  // REGIONAL
+	CONNECT_TYPE_15_ANYS	= "ETFOIM",		// 2008:288 +F; 2008:297 +IM
+	CONNECT_TYPE_14_DIGITS	= "JRHNULA",	// 2008:297 +L
+	CONNECT_TYPE_PRINTSUBS	= "FOIGMQW",
+	CONNECT_TYPE_SELFS	= "RN",
+	CONNECT_TYPE_STARTUPS	= "JCS",		// 2009:209
+
+	CONNECT_TYPE_DECISIVES	= "JRNU",
+	CONNECT_TYPE_EXCLUSIVES	= "JRNU" "CSA",	// 2009:209
+	CONNECT_TYPE_LAW_LINKS	= "RNU",		// 2012:062
+	CONNECT_TYPE_PROSECS	= "FO";		// 2013:014
+
+// ----- CONNECT_KIND_ -------------------------------------------------------
+constant
+	// 2012:354 G -> A
+#if COURT_TYPE == COURT_APPEAL
+	CONNECT_KIND_CRIMES	= "IA" "FOP",	// 2018-06-26: FIX: +P
+	CONNECT_KIND_SELFS	= "ÔZÚ",
+#endif  // APPEAL
+#if COURT_TYPE == COURT_ADMIN
+	CONNECT_KIND_CRIMES	= "",
+	CONNECT_KIND_SELFS	= "ÔZˇ",
+#endif  // ADMIN
+#if COURT_TYPE == COURT_AREAL
+	CONNECT_KIND_CRIMES	= "IA" "FOVP",
+	CONNECT_KIND_SELFS	= "ÔZÚˇÊ",
+#endif  // AREAL
+#if COURT_TYPE == COURT_MILITARY
+	CONNECT_KIND_CRIMES	= "IA" "FOVP",
+	CONNECT_KIND_SELFS	= "ÔZ",
+#endif  // MILITARY
+#if COURT_TYPE == COURT_REGIONAL
+	CONNECT_KIND_CRIMES	= "IA" "FO",
+	CONNECT_KIND_SELFS	= "ÔZ·ˇ",
+#endif  // REGIONAL
+	CONNECT_KIND_LAWSUITS	= "ÔZ·ÚˇÊ",
+	CONNECT_KIND_EXECUTIVES	= "≥i",
+	CONNECT_KIND_ANNOUNCES	= "ÔZ·ÚˇÊ≥°iKo",	// 2014:076 ?x; 2014:077 +Ko
+	// REM: U is for executive lawsuits
+	CONNECT_KIND_ANNOTYPES	= "pcmtadUr?io",	// 2014:076 ?x; 2014:077 +io
+	CONNECT_KIND_LAW_TYPES	= "pcmtad",		// 2015:182 for AmdC return lower
+	CONNECT_KIND_EISPP_LAWS	= "Ô",
+	CONNECT_KIND_PAYMENTS	= "ÔZ·ÚˇÊ°";
+
+char _CONNECT_KIND_ALLS[SIZE_OF_CONNECT_KINDS];
+
+// ----- FONT_ ---------------------------------------------------------------
+TFontScale FONT_MONO = { 0, 0 };
+TFontScale FONT_NORMAL = { 0, 0 };
+
+// ----- SUBPOENA_KIND_ ------------------------------------------------------
+constant
+	// 2008:088 LPR: refreshed; 2009:229 +9; 2010:048 +F; 2010:106 ALL +y
+	// 2010:162 ALL +w; 2010:0280 LPR/LRQ: -◊ÿyw; 2010:343 FIX: -9
+	// 2011:152 ALL +LO; 2011:165 ALL +P; 2012:016 AC/OC/BC/PC +Q
+	// 2012:038 AC/DC/OC/PC +W; 2013:039 +ﬂ/ﬁ; 2013:233 +°; 2013:234 +£
+	// 2013:338 +à; 2014:063 +µ; 2014:067 +á except AdmC; 2014:072 +∂
+	// 2014:073 +¶ 2014:345 LOCKEDS -W; 2015:016 +æ except AdmC/Spec
+	// 2015:138 +Ü for APPEAL, MILITARY and REGIONAL; 2016:054 +î w/o AdmC
+	// 2016:057 +ÅÉ; 2016:272/307: +ñï; 2017:005 +G (was admin only)
+	// 2018-06-27: += for all
+#if COURT_TYPE == COURT_APPEAL
+	// 2012:173 +¥; 2014:078 +å; 2014:114 +∆; 2016:340 FIX: +ëíóì
+	SUBPOENA_KIND_VISIBLES	= "ehicuxzgoaAbkBECHJGD¡¬√ƒ∆«»… ÀÕ—’÷ﬂ·ÊÏÔıˆ˜¯˙ˇùµ345678FLOPQW¥°£æà¶åÜîÅÉñïëíóìâ=",
+	// 2014:078 +åçéêûüsº; 2015:187 +Ó; 2016:054 +ªœ; 2016:111 +Í
+	SUBPOENA_KIND_ALLS	= "ehicuxzgoaAbjklBECHJGD¡¬√ƒ∆«»… ÀÕ—’÷Ÿﬂ"
+		"‡·‚„‰ÂÊÁËÈÏÌÔıˆ˜¯˙˛ˇøùµ345678FLOPQW¥°£æàá∂¶åçéêûüsºÜÓªœîÅÉÍñïëíóìâ=",
+	SUBPOENA_KIND_LOCKEDS	= "",
+	SUBPOENA_KIND_EXEC_LISTS= "˙˛W",
+	SUBPOENA_KIND_LEGAL_AIDS= "àFÜ",
+#endif  // APPEAL
+#if COURT_TYPE == COURT_ADMIN
+	// 2010:343 FIX: -L; 2012:137 +Q; 2014:048 +1; 2014:064 +ê
+	SUBPOENA_KIND_VISIBLES	= "ehicuxzfgoaAbkBECHJGmD¿¡√ƒ∆«»… ÀÕ’÷⁄›ﬂ" "·ı˜¸ùµ45678FLOPWQ°£à1ê¶ÅÉñïâ=",
+	// 2014:048 +1239; 2014:064 +êûüº
+	SUBPOENA_KIND_ALLS	= "ehicuxzfgoaAbjklBECHJGmD¿¡√ƒ∆«»…Ÿ ÀÕ’÷⁄€‹›ﬂ" "‡·‚„‰Âı˜¸ùµ45678FLOPWQ°£à123ê9ûüº∂¶ÅÉñïâ=",
+	SUBPOENA_KIND_LOCKEDS	= "",
+	SUBPOENA_KIND_EXEC_LISTS= "¸W",
+	SUBPOENA_KIND_LEGAL_AIDS= "àF",
+#endif  // APPEAL
+#if COURT_TYPE == COURT_AREAL
+	// 2010:343 +¥; 2011:152 +V; 2012:039 ALL +9; 2012:062 +Í ALL +ä
+	// 2012:067 +X; 2013:235 +èü; 2013:239 -ü; 2014:064 +å; 2015:081 +Ü
+	// 2016:180 +”‘ÿ; 2016:274 IRQ: +ëíóì
+	SUBPOENA_KIND_VISIBLES	= "ehicuxzfgoaAklBECHJUGD¿¡¬√ƒ≈∆«»… ÀÃÕŒœ–”—’÷ﬂ‘ÿ"
+		"·ÊÎÔFÒ¥ÚÛÙıˆ˜¯˘˙ø∫∏¢ùµúö˝˚012345678ﬁLOPVQWÍX°£æèàå¶ÜîÅÉñïëíóìâ[]}<>=",
+	// 2014:069 +åçéêûüsº; 2016:273 +ëíóì
+	SUBPOENA_KIND_ALLS	= "ehicuxzfgoaAbjklBECHJUGD¿¡¬√ƒ≈∆«»… ÀÃÕŒœ–—”’÷Ÿﬂ‘ÿ"
+		"‡·‚„‰ÂÊÁËÈÎÏÌÔFÒ¥ÚÛÙıˆ˜¯˘˙¸˛ˇø∫∏¢ùµúö˝˚012345678ﬁLOPVQW9äÍX°£æèàáåçéêûüsº∂¶ÜîÅÉñïëíóìâ[]{}<>=",
+	SUBPOENA_KIND_LOCKEDS	= "",
+	SUBPOENA_KIND_OLD_GPKS	= "åçéêûüsº",
+	SUBPOENA_KIND_MEET_LETTERS = "‘ÿ",
+	SUBPOENA_KIND_MEET_ACCOMPLYS = "”‘",
+	SUBPOENA_KIND_EXEC_LISTS= "˙¸˛W",
+	SUBPOENA_KIND_LEGAL_AIDS= "àFÜ",
+#endif  // AREAL
+#if COURT_TYPE == COURT_MILITARY
+	// 2008:355 -U; 2009:316 IRQ: +∫∏; 2009:317 IRQ: +¢; 2009:321 +ﬂ
+	// 2011:031 +¥; 2012:110 +W; 2012:115 ALL +9ä; 2013:235 +èü
+	// 2013:239 -ü; 2016:340 FIX: +ëíóì
+	SUBPOENA_KIND_VISIBLES	= "ehicuxzfgoaAﬂbkBECHJGD¿¡¬√ƒ≈∆«»… ÀÃÕŒœ–—’÷ﬁ"
+		"‡·‚„ÊÁËÈÔÚÛ¥ıˆ˜¯˙ˇ∫∏¢ùµ2345678FLOPQW°£æèà¶ÜîÅÉñïëíóìâ[]}<>=",
+	SUBPOENA_KIND_ALLS	= "ehicuxzfgoaAﬂbjklBECHJGD¿¡¬√ƒ≈∆«»… ÀÃÕŒœ–—’÷Ÿﬁ"
+		"‡·‚„‰ÂÊÁËÈÍÌÔÒÚÛÙ¥ıˆ˜¯˙˛ˇø∫∏¢ùµ2345678FLOPQW9ä°£æèàá∂¶ÜîÅÉñïëíóìâ[]{}<>=",
+	SUBPOENA_KIND_LOCKEDS	= "",
+	SUBPOENA_KIND_EXEC_LISTS= "˙˛W",
+	SUBPOENA_KIND_LEGAL_AIDS= "àFÜ",
+#endif  // MILITARY
+#if COURT_TYPE == COURT_REGIONAL
+	// 2008:287 +Œ, FIX: +Õ◊Ÿ; 2010:343 +¥; 2012:039 ALL +qr +9
+	// 2012:062 +Í ALL +ä; 2012:067 +X; 2013:235 +èü; 2013:239 -ü; 2014:064 +å
+	// 2014:073 FIX: -°, non-lead; 2017:012 dup G -> ™; 2017:213 +Ç
+	// 2017:214 +Ñ; 2017:233 +â´; 2017:305 +[]}
+	// 2018-04-04: +◊≤; 2018-08-09: +ÚÛ
+	SUBPOENA_KIND_VISIBLES	= "ehicuxzgoaAbkBECHJ™D¿¡¬√ƒ≈∆«»… ÀÃÕŒœ–—“”‘’÷⁄ﬂ"
+		"·„‰ÊÁÎÒ¥ıˆ˜¯˙ˇ∫∏¢ùµúö˝˚234678FLOPQWqrÍX£æèàå¶ÜîÅÉñïëíóìÇÑâ´[]}<>◊≤π=ÚÛ",
+	// 2014:035 +015GRUVdf; 2014:064 +åçéêûüsº; 2014:072 +ß; 2017:305 +[]{}
+	// 2018-04-04: +◊≤; 2018-08-09: +ÚÛ
+	SUBPOENA_KIND_ALLS	= "ehicuxzgoaAbjklBECHJ™D¿¡¬√ƒ≈∆«»… ÀÃÕŒœ–—“”‘’÷Ÿ⁄€‹ﬂ"
+		"‡·‚„‰ÂÊÁËÈÎÌÒ¥ıˆ˜¯˙˛ˇø∫∏¢ùµúö˝˚234678FLOPQW9qräÍX°£æèà015GRUVdfmåçéêûüsºá∂ß¶ÜîÅÉñïëíóìÇÑâ´[]{}<>◊≤π=ÚÛ",
+	SUBPOENA_KIND_LOCKEDS	= "qr",
+	SUBPOENA_KIND_EXEC_LISTS= "˙˛W",
+	SUBPOENA_KIND_LEGAL_AIDS= "àFÜ",
+#endif  // APPEAL
+#if COURT_TYPE == COURT_AREAL || COURT_TYPE == COURT_MILITARY || COURT_TYPE == COURT_REGIONAL
+	SUBPOENA_KIND_CONVICT_BULLETS		= "∫∏",
+#endif  // AREAL || MILITARY || REGIONAL
+	SUBPOENA_KIND_LETTER_ADDRESSES	= "ı",
+	SUBPOENA_KIND_WILL_BES			= "uz",
+	SUBPOENA_KIND_GENERICS			= "STYMNZK",
+	SUBPOENA_KIND_GENERIC_WRITS		= "STY",
+	SUBPOENA_KIND_GENERIC_MESSAGES	= "MN",
+	SUBPOENA_KIND_GENERIC_NON_WRITS	= "MNZK",
+#if COURT_TYPE == COURT_AREAL || COURT_TYPE == COURT_REGIONAL
+	SUBPOENA_KIND_JUDGEMENT_COPIES	= "ú˝",
+#endif  // AREAL || REGIONAL
+#if COURT_TYPE == COURT_REGIONAL
+	SUBPOENA_KIND_APC_TEMPLATES		= "015GRUVdfm",
+	SUBPOENA_KIND_MESSAGE_415S 		= "”◊",
+	SUBPOENA_KIND_HERITAGES			= "‰„´",  // 2018-11-20: for update
+#endif  // REGIONAL
+	SUBPOENA_KIND_REWARDS			= "OPL",
+	SUBPOENA_KIND_ACT_COPIES		= "»…ÀŸ" "RUfV",	// 2014:035 +RUfV
+	SUBPOENA_KIND_COUNTEX_EXECLETS	= "ñï",
+	SUBPOENA_KIND_STICKERS			= "’÷",
+	SUBPOENA_KIND_EXECLETS			= "ùÉµñï";
+
+char	// 2016:271 arrays
+	_SUBPOENA_KIND_EXEC_LETTERS[SIZE_OF_SUBPOENA_KINDS],
+	_SUBPOENA_KIND_NONTDEP_EXECLETS[SIZE_OF_SUBPOENA_KINDS],
+	_SUBPOENA_KIND_EXECBOOK_LETS[SIZE_OF_SUBPOENA_KINDS];
+
+// ----- CDate ---------------------------------------------------------------
+const CDate NewGPKDate(1, 3, 2008);
+const CDate NewWebDate(1, 1, 2016);
+const CDate IntMinDate(1, 1, 2016);
+const CDate IntMaxDate(1, 1, 2018);
+const CDate P64ActDate(5, 11, 2017);
+
+// ----- DANGER_ -------------------------------------------------------------
+constant DANGER_LIKE_SECTION = "%00000";
+
+// ----- GOP_ ----------------------------------------------------------------
+constant
+	GOP_SEND_RECV	= "sr",
+	GOP_NEW_ENTER	= "nEl",
+	GOP_ATTACHES	= "ned",
+	GOP_ALLS		= "UAEraX3LsxdwIfmlupPGNRMJVCDne1qcTKz ";	// k0bYO
+
+// ----- FILTER_ -------------------------------------------------------------
+constant
+	FILTER_QUOTES	= "'\"ëíìî`ÑÇ",	// 2009:168 FIX: +down quote(s)
+	FILTER_MINUSES	= "-ñó≠",
+	FILTER_UCLP_PREFIXES[] = { "√–¿ƒ", "√–", "—≈ÀŒ", "—", "Ã≈—“ÕŒ—“", "Ã", NULL },
+	FILTER_STREET_PREFIXES[] = { "”À»÷¿", "”À", "¡”À≈¬¿–ƒ", "¡”À", " ¬¿–“¿À", " ¬", "∆. ", "∆ ", NULL };
+
+// ----- SRS_ ----------------------------------------------------------------
+constant
+	SRS_NONES		= "n",
+	SRS_ANNOUNCES	= "ldcrf",
+	SRS_STATE_PAPERS	= "sp",
+	SRS_TELEGRAMS	= "sr",
+	SRS_FORTY_FIFTY	= "vwxy",
+	SRS_DELIVEREDS	= "rf" "vwxy",
+	SRS_REWARDS		= "cr",
+	SRS_SUBPOENAS	= "slrfvwpcxy",	// 2011:165 +c; 2014:002 +xy
+	SRS_DELIV_BASICS	= "rf",
+	SRS_INITIALS	= "sl" "cd";
+
+// ----- JUROR_ --------------------------------------------------------------
+const CDate JUROR_MIN_CORR_DATE(9, 8, 2016);
+const double JUROR_MIN_DAY_MONEY = 20.0;
+
+// ----- JUROR_DISTRIB_ ------------------------------------------------------
+constant
+	JUROR_DISTRIB_REDISTRIBS	= "RNM",
+	JUROR_DISTRIB_PHASE_OUTS	= "NMZ",
+	JUROR_DISTRIB_AUTO_REDS		= "RN";
+
+// ----- SPERS_ --------------------------------------------------------------
+constant
+	SPERS_FIRST		= "œ˙‚Ë",
+	SPERS_SECOND	= "¬ÚÓË",
+	SPERS_THIRD		= "“ÂÚË",
+	SPERS_JUROR		= "Ò˙‰Â·ÂÌ Á‡ÒÂ‰‡ÚÂÎ",
+	SPERS_JUDGE		= "Ò˙‰Ëˇ",
+	SPERS_PRESIDENT	= "œÂ‰ÒÂ‰‡ÚÂÎ",
+	SPERS_PRESENTER	= "ƒÓÍÎ‡‰˜ËÍ",
+	SPERS_PROSECUTOR	= "ÔÓÍÛÓ",
+	SPERS_RESERVE	= "–ÂÁÂ‚ÂÌ";
+
+// ----- LISTW_ --------------------------------------------------------------
+TListWEmpty LISTW_HEADERS;
+TListWEmpty LISTW_NOHEADS;
+
+// ----- CONFIG_NAME_ --------------------------------------------------------
+constant CONFIG_NAME_GLOBAL = "*GLOBAL";
+char CONFIG_NAME_LOCAL[SIZE_OF_ALIAS];
+
+// ----- DEBTOR_STATUS_ ------------------------------------------------------
+constant DEBTOR_STATUS_ALLS = "039AD";
+
+// ----- EISPP_ --------------------------------------------------------------
+#if COURT_TYPE == COURT_APPEAL || COURT_TYPE == COURT_ADMIN || COURT_TYPE == COURT_REGIONAL
+constant EISPP_SENDERS = "pPZM";
+#endif  // APPEAL || ADMIN || REGIONAL
+#if COURT_TYPE == COURT_AREAL || COURT_TYPE == COURT_MILITARY
+constant EISPP_SENDERS = "pPZMV";
+#endif  // AREAL || MILITARY
+
+TIntegerArray EISPP_DEPARTS;
+constant EISPP_LETTERS = "¿¡¬√ƒ≈∆» ÀÃÕœ–—“”‘’÷◊ÿﬁﬂ";
+constant EISPP_TABLE_NAMES[] = { "T_SNPR", "T_NPR", "T_FZL", "T_PNE", "T_NPRFZLPNE", NULL };
+
+// ----- TRANS_ --------------------------------------------------------------
+constant
+	TRANS_ID_PENDING = "-",
+	TRANS_ID_INVALID = "000000000000000";
+
+// ----- PORTABLE_ -----------------------------------------------------------
+constant PORTABLE_TYPE = "PDF";
+
+// ----- CURRENCY_ -----------------------------------------------------------
+constant CURRENCY_BGN = "BGN";
+
+// ----- SENDER_ -------------------------------------------------------------
+constant SENDER_NIA_TDEP_FOREIGN = "0000002100";
+
+// ----- SLC_REASON ----------------------------------------------------------
+constant
+	SLC_TYPE_STOPPED_OR_LEFTS	= "sl",
+	SLC_TYPE_TO_LETTERS		= "—Œœ",
+	SLC_TYPE_ALLS			= "slc";
+
+// ----- WHAT_ ---------------------------------------------------------------
+TIntegerArray WHAT_LOGS;
+
+// ----- FOUR_TEEN_ ----------------------------------------------------------
+constant
+	FOUR_TEEN_1ST_CITIZEN    = "01",
+	FOUR_TEEN_1ST_PUNISHMENT = "02",
+	FOUR_TEEN_2ND_CITIZEN    = "05",
+	FOUR_TEEN_2ND_PUNISHMENT = "06",
+	FOUR_TEEN_ADMINISTRATIVE = "07",
+	FOUR_TEEN_FIRM           = "08",
+	FOUR_TEEN_TRADE          = "09",
+	FOUR_TEEN_UNKNOWN        = "??";
+
+// ----- LOG_ ----------------------------------------------------------------
+constant LOG_ANNOUNCE_FORMAT = "—˙‰ %ld, ÔËÁÓ‚Í‡ %ld";
+
+// ----- COLOR_ --------------------------------------------------------------
+COLORREF
+	COLOR_BUTTON_TEXT,
+	COLOR_3D_BACKGROUND,
+	COLOR_LIGHT_RED = 0x000000FF;
+
+// ----- BRUSH_ --------------------------------------------------------------
+HBRUSH BRUSH_3D_BACKGROUND;
+
+// ----- runtime -------------------------------------------------------------
+struct RT_INIT
+{
+	char *dest;
+	int elem;
+};
+
+static constant rt_types[] =
+{
+	TYPE_REQUESTS,
+	TYPE_LAWSUITS,
+	TYPE_INREGS,
+	TYPE_OUTREGS,
+	TYPE_SURROUNDS,
+#if COURT_TYPE == COURT_APPEAL || COURT_TYPE == COURT_AREAL || COURT_TYPE == COURT_MILITARY || COURT_TYPE == COURT_REGIONAL
+	TYPE_PROVES,
+#endif  // APPEAL || AREAL || MILITARY || REGIONAL
+#if COURT_TYPE == COURT_ADMIN
+	"",
+#endif  // ADMIN
+	COLLEGE_COMMONS,
+	TYPE_OTHERS
+};
+
+static RT_INIT rt_dest_types[] =
+{
+	{ _TYPE_ORIGINS, RT_TYPE_ORIGINS },
+	{ _TYPE_UCNQUERABLES, RT_TYPE_ORIGINS | RT_TYPE_PROVES | RT_TYPE_INREGS | RT_TYPE_OUTREGS },	// 2009:357 +IOREGS
+	{ _TYPE_MOVABLES, RT_TYPE_ORIGINS | RT_TYPE_INREGS | RT_TYPE_PROVES | RT_TYPE_SURROUNDS },
+	{ _TYPE_LAWQUERABLES, RT_TYPE_ORIGINS | RT_TYPE_IOREGS | RT_TYPE_PROVES | RT_TYPE_SURROUNDS },
+	{ _TYPE_ORIGINS_INREGS, RT_TYPE_ORIGINS | RT_TYPE_INREGS },
+	{ _TYPE_SELECT_SURROUNDS, RT_TYPE_ORIGINS | RT_TYPE_INREGS | RT_TYPE_SURROUNDS },
+	{ _TYPE_LOGS, RT_TYPE_ORIGINS | RT_TYPE_IOREGS | RT_TYPE_SURROUNDS | RT_TYPE_PROVES | RT_TYPE_OTHERS },
+	{ _TYPE_MONEYABLES, RT_TYPE_ORIGINS | RT_TYPE_INREGS | RT_TYPE_SURROUNDS },
+	{ _TYPE_SCHEDULABLES, RT_TYPE_LAWSUITS | RT_TYPE_INREGS | RT_TYPE_SURROUNDS },	// LAWSUITS -> ORIGINS IF NEEDED
+	{ _TYPE_SCHEDULABLE_BASICS, RT_TYPE_LAWSUITS | RT_TYPE_SURROUNDS },
+	{ _TYPE_IOREGS_SURROUNDS, RT_TYPE_IOREGS | RT_TYPE_SURROUNDS },
+	{ _TYPE_ORIGINS_INOUTS, RT_TYPE_ORIGINS | RT_TYPE_IOREGS },
+	{ _TYPE_MAILABLES, RT_TYPE_ORIGINS | RT_TYPE_OUTREGS },
+	{ _TYPE_ELECTRICABLES, RT_TYPE_ORIGINS | RT_TYPE_IOREGS | RT_TYPE_PROVES },
+	{ _TYPE_CONNECTABLES, RT_TYPE_ORIGINS | RT_TYPE_OUTREGS },
+	{ _COLLEGE_XALLS, RT_TYPE_LAWSUITS | RT_TYPE_COMMONS },
+	{ NULL, 0 }
+};
+
+#if TESTVER
+static void compare_adjusted(const char *adjs, const char *alls, const char *what)
+{
+	for (const char *s = adjs; *s; s++)
+		if (!strchr(alls, *s))
+			message("extra adjusted %s %d", what, *s);
+
+	for (const char *s = alls; *s; s++)
+		if (!strchr(adjs, *s))
+			message("adjusted %ss lack %d", what, *s);
+}
+#endif  // TESTVER
+
+void initialize_const()
+{
+	TAliasGroup::InitializeConst();
+
+#if COURT_TYPE == COURT_ADMIN
+	strcpy(KIND_ADMIN_INDOCS, KIND_1ST_ADMIN_INDOCS);
+	strcat(KIND_ADMIN_INDOCS, KIND_2ND_ADMIN_INDOCS);
+	strcpy(KIND_TRICKY_INDOCS, KIND_1ST_TRICKY_INDOCS);
+	strcat(KIND_TRICKY_INDOCS, KIND_2ND_TRICKY_INDOCS);
+	strcpy(KIND_1ST_INDOCS, KIND_1ST_ADMIN_INDOCS);
+	strcat(KIND_1ST_INDOCS, KIND_1ST_TRICKY_INDOCS);
+	strcat(KIND_1ST_INDOCS, KIND_CITIZEN_INDOCS);
+	strcpy(KIND_2ND_INDOCS, KIND_2ND_ADMIN_INDOCS);
+	strcat(KIND_2ND_INDOCS, KIND_2ND_TRICKY_INDOCS);
+#endif  // ADMIN
+
+#if COURT_TYPE == COURT_AREAL
+	strcpy(KIND_PUNISHMENT_INDOCS, KIND_1ST_PUNISHMENT_INDOCS);
+	strcat(KIND_PUNISHMENT_INDOCS, KIND_2ND_PUNISHMENT_INDOCS);
+	strcpy(KIND_CITIZEN_INDOCS, KIND_1ST_CITIZEN_INDOCS);
+	strcat(KIND_CITIZEN_INDOCS, KIND_2ND_CITIZEN_INDOCS);
+	strcpy(KIND_TRADE_INDOCS, KIND_1ST_TRADE_INDOCS);
+	strcat(KIND_TRADE_INDOCS, KIND_2ND_TRADE_INDOCS);
+	strcpy(KIND_ADMIN_INDOCS, KIND_1ST_ADMIN_INDOCS);
+	strcat(KIND_ADMIN_INDOCS, KIND_2ND_ADMIN_INDOCS);
+	strcpy(KIND_1ST_INDOCS, KIND_1ST_PUNISHMENT_INDOCS);
+	strcat(KIND_1ST_INDOCS, KIND_1ST_CITIZEN_INDOCS);
+	strcat(KIND_1ST_INDOCS, KIND_1ST_TRADE_INDOCS);
+	strcat(KIND_1ST_INDOCS, KIND_1ST_ADMIN_INDOCS);
+	strcat(KIND_1ST_INDOCS, KIND_FIRM_INDOCS);
+	strcpy(KIND_2ND_INDOCS, KIND_2ND_PUNISHMENT_INDOCS);
+	strcat(KIND_2ND_INDOCS, KIND_2ND_CITIZEN_INDOCS);
+	strcat(KIND_2ND_INDOCS, KIND_2ND_TRADE_INDOCS);
+	strcat(KIND_2ND_INDOCS, KIND_2ND_ADMIN_INDOCS);
+#endif  // AREAL || MILITARY
+
+#if COURT_TYPE == COURT_MILITARY
+	strcpy(KIND_PUNISHMENT_INDOCS, KIND_1ST_PUNISHMENT_INDOCS);
+	strcat(KIND_PUNISHMENT_INDOCS, KIND_2ND_PUNISHMENT_INDOCS);
+	strcpy(KIND_CITIZEN_INDOCS, KIND_1ST_CITIZEN_INDOCS);
+	strcat(KIND_CITIZEN_INDOCS, KIND_2ND_CITIZEN_INDOCS);
+	strcpy(KIND_1ST_INDOCS, KIND_1ST_PUNISHMENT_INDOCS);
+	strcat(KIND_1ST_INDOCS, KIND_1ST_CITIZEN_INDOCS);
+	strcpy(KIND_2ND_INDOCS, KIND_2ND_PUNISHMENT_INDOCS);
+	strcat(KIND_2ND_INDOCS, KIND_2ND_CITIZEN_INDOCS);
+#endif  // MILITARY
+
+#if COURT_TYPE == COURT_ADMIN || COURT_TYPE == COURT_AREAL || COURT_TYPE == COURT_MILITARY
+	strcpy(KIND_INDOCS, KIND_1ST_INDOCS);
+	strcat(KIND_INDOCS, KIND_2ND_INDOCS);
+#endif  // ADMIN || AREAL || MILITARY
+
+	for (RT_INIT *rt = rt_dest_types; rt->dest; rt++)
+		for (int i = 0; i < sizeof rt_types / sizeof *rt_types; i++)
+			if (rt->elem & (1 << i))
+				strcat(rt->dest, rt_types[i]);
+
+	strcach(_TYPE_LAWQUERABLES, TYPE_INCOMING);
+	strcpy(_TYPE_ELEQUERABLES, TYPE_ELECTRICABLES);
+	strcach(_TYPE_ELEQUERABLES, TYPE_INCOMING);
+
+	strcat(_RESULT_COMPLETIZEDS, RESULT_FINALIZEDS);
+	strcach(_RESULT_COMPLETIZEDS, RESULT_PUBLIC_DECISION);
+
+	strcpy(_TYPE_SUBPOENABLES, TYPE_ORIGINS_INOUTS);
+	strcach(_TYPE_SUBPOENABLES, TYPE_EXECUTIVE_LAW);
+
+	// 2009:071 LPR, after checking INDOCS + VIRTUALS ::= former ALLDOCS
+	strcat(_KIND_ALLDOCS, KIND_INDOCS);
+	strcat(_KIND_ALLDOCS, KIND_VIRTUALS);
+#if COURT_TYPE == COURT_MILITARY
+	strcat(_KIND_ALLDOCS, KIND_GENERALS);
+#endif  // MILITARY
+
+#if COURT_TYPE == COURT_APPEAL || COURT_TYPE == COURT_AREAL
+	strcpy(KIND_TRADEALIKE_LAWS, KIND_CITIZEN_LAWS);
+	strcat(KIND_TRADEALIKE_LAWS, KIND_TRADE_LAWS);
+#endif  // AREAL
+
+	strcat(_TYPE_ANNOUNCABLES, TYPE_ORIGINS);
+#if COURT_TYPE == COURT_REGIONAL
+	strcach(_TYPE_ANNOUNCABLES, TYPE_EXECUTIVE_LAW);
+#endif  // REGIONAL
+
+	strcat(_KIND_VISIBLE_SESSIONS_ENDOCS, KIND_VISIBLE_SESSIONS);
+	strcat(_KIND_VISIBLE_SESSIONS_ENDOCS, KIND_VISIBLE_ENDOCS);
+
+	strcpy(_KIND_SECONDARY_SESSIONS_ENDOCS, _KIND_VISIBLE_SESSIONS_ENDOCS);
+#if COURT_TYPE == COURT_ADMIN || COURT_TYPE == COURT_AREAL || COURT_TYPE == COURT_MILITARY
+	strcach(_KIND_SECONDARY_SESSIONS_ENDOCS, KIND_SECOND_DECISION);
+#endif  // ADMIN || COURT_AREAL || MILITARY
+
+	strcat(_KIND_SESSIONS_ENDOCS, KIND_SESSIONS);
+	strcat(_KIND_SESSIONS_ENDOCS, KIND_ENDOCS);
+
+	strcat(_KIND_VISIBLE_SCHEDULABLES, KIND_VISIBLE_SESSIONS_ENDOCS);
+	strcat(_KIND_VISIBLE_SCHEDULABLES, KIND_VISIBLE_EVENTS);
+	strcat(_KIND_VISIBLE_SCHEDULABLES, KIND_V_LAWSUITS);
+	strcat(_KIND_VISIBLE_SCHEDULABLES, KIND_V_SURROUNDS);
+
+	strcat(_KIND_SCHEDULABLE_EVENTS, KIND_SESSIONS_ENDOCS);
+	strcat(_KIND_SCHEDULABLE_EVENTS, KIND_INREG_EVENTS);
+	strcat(_KIND_SCHEDULABLE_EVENTS, KIND_SURROUNDS);
+	//_KIND_SCHEDULABLE_EVENTS->cat(KIND_REQUEST_RESOLUTIONS);	// if needed
+
+	strcpy(_KIND_TEXTUAL_IN_DOCS, KIND_TEXTUAL_NON_EPORTS);
+	strcach(_KIND_TEXTUAL_IN_DOCS, KIND_EPORTAL_REQUEST);
+
+	strcat(_KIND_INREG_DOCS, KIND_APPEAL_IN_DOCS);
+	strcat(_KIND_INREG_DOCS, KIND_TEXTUAL_IN_DOCS);
+
+	strcat(_KIND_IN_NOENDOCS, KIND_TEXTUAL_IN_DOCS);
+	strcach(_KIND_IN_NOENDOCS, KIND_INREG_SLOWDOWN);
+
+	strcpy(_KIND_INREG_NON_EPORTS, KIND_APPEAL_IN_DOCS);
+	strcat(_KIND_INREG_NON_EPORTS, KIND_TEXTUAL_NON_EPORTS);
+
+	strcat(_RIGHT_FUNCTIONS, RIGHT_COMMONS);
+	strcat(_RIGHT_FUNCTIONS, RIGHT_PERCOURTS);
+
+#if TESTVER
+#else  // TESTVER
+	if (COURT_CODE == COURT_SOFGS)
+#endif  // TESTVER
+	{
+		strcach(_RIGHT_FUNCTIONS, RIGHT_ATTACH);
+		strcach(_RIGHT_FUNCTIONS, RIGHT_EXTERN);
+	}
+
+	strcat(_KIND_ELEQUERABLES, KIND_INDOCS);
+	strcat(_KIND_ELEQUERABLES, KIND_LAWSUITS);
+	strcat(_KIND_ELEQUERABLES, KIND_IN_REG_DOCS);
+	strcat(_KIND_ELEQUERABLES, KIND_OUT_REG_DOCS);
+	strcat(_KIND_ELEQUERABLES, KIND_PROVES);
+
+	strcat(_KIND_VISIBLE_RETURNABLES, KIND_VISIBLE_ENDOCS);
+	strcat(_KIND_VISIBLE_RETURNABLES, KIND_REQUEST_RESOLUTIONS);
+
+	struct TEnteReadyResults
+	{
+		const char *enterables;
+		char endocready;
+	};
+
+#if TESTVER
+	char WITH_READY_ANYS[SIZE_OF_RESULTS];
+	*WITH_READY_ANYS = '\0';
+#endif  // TESTVER
+
+	static const TEnteReadyResults Results[] =
+	{
+		{ RESULT_DECIDABLES, RESULT_READY_DECISION },
+		{ RESULT_ORDERABLES, RESULT_READY_ORDER },
+		{ RESULT_SETTLEMENTABLES, RESULT_READY_SETTLEMENT },
+	#if COURT_TYPE == COURT_APPEAL || COURT_TYPE == COURT_AREAL || COURT_TYPE == COURT_MILITARY || COURT_TYPE == COURT_REGIONAL
+		{ RESULT_JUDGEMENTABLES, RESULT_READY_JUDGEMENT },
+		{ RESULT_BULWARKABLES, RESULT_READY_BULWARK },
+	#endif  // APPEAL || AREAL || MILITARY || REGIONAL
+	#if COURT_TYPE == COURT_ADMIN || COURT_TYPE == COURT_AREAL || COURT_TYPE == COURT_MILITARY || COURT_TYPE == COURT_REGIONAL
+		{ RESULT_PROTOCOLABLES, RESULT_READY_PROTOCOL },
+	#endif  // ADMIN || AREAL || MILITARY || REGIONAL
+		{ NULL, NULL }
+	};
+
+	for (const TEnteReadyResults *result = Results; result->enterables; result++)
+	{
+		strcat(_RESULT_ENTERABLES, result->enterables);
+#if TESTVER
+		strcach(WITH_READY_ANYS, result->endocready);
+#endif  // TESTVER
+	}
+
+#if COURT_TYPE == COURT_AREAL
+#if TESTVER
+	strcach(WITH_READY_ANYS, RESULT_READY_EXEC_PROT);	// 2014:255
+#endif  // TESTVER
+#endif  // AREAL
+
+#if COURT_TYPE == COURT_REGIONAL
+	// 2010:065 LRQ: YA special exception
+	strcach(_RESULT_ENTERABLES, RESULT_FORCE_EXECUTIVE);
+#if TESTVER
+	strcach(WITH_READY_ANYS, RESULT_READY_EXEC_PROT);	// 2012:129
+	strcach(WITH_READY_ANYS, RESULT_READY_CERTIFICATE);	// 2017:205
+#endif  // TESTVER
+	strcach(_RESULT_ENTERABLES, RESULT_IMMED_PROTECT);
+#endif  // REGIONAL
+
+	// 2009:337
+	strcpy(_TYPE_NON_PUNISHMENT_LAWS, TYPE_LAWSUITS);
+	stremove(_TYPE_NON_PUNISHMENT_LAWS, TYPE_PUNISHMENT_LAW);
+
+#if TESTVER
+	char subpoenaKinds[SIZE_OF_SUBPOENA_KINDS];
+
+	strcpy(subpoenaKinds, SUBPOENA_KIND_VISIBLES);
+	adjust_subpoena_kinds(subpoenaKinds);
+	compare_adjusted(subpoenaKinds, SUBPOENA_KIND_ALLS, "subpoena kind");
+
+	char generalKinds[SIZE_OF_KINDS];
+
+	strcpy(generalKinds, KIND_ALL_GENERALS);
+	adjust_general_kinds(generalKinds);
+	compare_adjusted(generalKinds, KIND_ALLDOCS, "general kind");
+#endif  // TESTVER
+
+	for (const char *kind = KIND_ALL_GENERALS; *kind; kind++)
+	{
+		char kinds[SIZE_OF_KINDS];
+		constant *equ;
+
+		for (equ = GeneralKindEquivalences; *equ; equ++)
+			if (strchr(*equ, *kind))
+				break;
+
+		if (*equ)
+			strcpy(kinds, *equ);
+		else
+		{
+			kinds[0] = *kind;
+			kinds[1] = '\0';
+		}
+
+		for (const char *s = kinds; *s; s++)
+		{
+			Kind->Seek(*s);
+
+			if (Kind->type == TYPE_REQUEST)
+			{
+				strcach(_KIND_INDOC_GENERALS, *kind);
+				break;
+			}
+		}
+	}
+
+	// 2010:050
+	strcat(_KIND_GRANTABLES, KIND_DECISIONS);
+	strcat(_KIND_GRANTABLES, KIND_SETTLEMENTS);
+	strcat(_KIND_GRANTABLES, KIND_ORDERS);
+#if COURT_TYPE == COURT_REGIONAL
+	strcach(_KIND_GRANTABLES, KIND_EXECUTIVE);
+#endif  //  REGIONAL
+
+	// 2010:063
+	strcat(_KIND_XFERABLES, KIND_VISIBLE_SESSIONS);
+	strcat(_KIND_XFERABLES, KIND_ENDOCS);
+	strcat(_KIND_MONEYABLES, KIND_SESSIONS);
+	strcat(_KIND_MONEYABLES, KIND_ENDOCS);
+	strcat(_KIND_VISIBLE_MONEYABLES, KIND_VISIBLE_SESSIONS);
+	strcat(_KIND_VISIBLE_MONEYABLES, KIND_VISIBLE_ENDOCS);
+	// 2010:064
+	strcat(_KIND_SUBPOENABLES, KIND_SESSIONS);
+	strcat(_KIND_SUBPOENABLES, KIND_REQUEST_RESOLUTIONS);
+	strcat(_KIND_SUBPOENABLES, KIND_INREG_EVENTS);
+	strcat(_KIND_SUBPOENABLES, KIND_ENDOCS);
+	strcat(_KIND_VISIBLE_SUBPOENABLES, KIND_VISIBLE_SESSIONS);
+	strcat(_KIND_VISIBLE_SUBPOENABLES, KIND_REQUEST_RESOLUTIONS);
+	strcat(_KIND_VISIBLE_SUBPOENABLES, KIND_VISIBLE_EVENTS);
+	strcat(_KIND_VISIBLE_SUBPOENABLES, KIND_VISIBLE_ENDOCS);
+
+	strcat(_KIND_RCDKEY_COMPARES, KIND_ALLDOCS);			// 2010:181 for electric
+	strcat(_KIND_RCDKEY_COMPARES, KIND_REQUEST_RESOLUTIONS);	// 2011:019 for electric
+	strcat(_KIND_RCDKEY_COMPARES, KIND_LAWSUITS);			// 2010:181 for electric
+	strcat(_KIND_RCDKEY_COMPARES, KIND_PROVES);			// 2012:109 for electric
+	strcat(_KIND_RCDKEY_COMPARES, KIND_PROVE_ACTIONS);		// 2012:111 for electric
+	//strcach(_KIND_RCDKEY_COMPARES, KIND_IN_MOVEMENT);
+	strcat(_KIND_RCDKEY_COMPARES, KIND_SURROUNDS);			// Low
+	strcat(_KIND_RCDKEY_COMPARES, KIND_SESSIONS);			// Normal
+	strcat(_KIND_RCDKEY_COMPARES, KIND_ENDOCS);			// High
+	strcach(_KIND_RCDKEY_COMPARES, KIND_MOTIVES);			// 2010:160 for electric
+	strcach(_KIND_RCDKEY_COMPARES, KIND_OPINION);			// 2010:160 for electric
+
+	if (can_surrouendoc())
+	{
+		for (int i = 0; i < strlen(KIND_SESSIONS); i++)
+			strcach(_KIND_RCDKEY_COMPARES, (char) (KIND_SURROUENDOC_BASE + i));
+	}
+	else
+	{
+		_KIND_SURROUENDOCS = "";
+		_KIND_SURROUENDOC_ACTS = "";
+		_RESULT_SURROUENDOCS = "";
+	}
+
+	strcat(_KIND_RCDKEY_COMPARES, KIND_IN_REG_DOCS);
+	strcat(_KIND_RCDKEY_COMPARES, KIND_INREG_EVENTS);		// 2011:019 for electric
+	strcat(_KIND_RCDKEY_COMPARES, KIND_OUT_REG_DOCS);
+	//strcach(_KIND_RCDKEY_COMPARES, KIND_OUT_MOVEMENT);
+
+	// 2011:312; 2011:328 judgements for their courts only
+#if COURT_TYPE == COURT_APPEAL || COURT_TYPE == COURT_AREAL || COURT_TYPE == COURT_MILITARY || COURT_TYPE == COURT_REGIONAL
+	strcat(_KIND_PREFER_MOTIVES, KIND_JUDGEMENTS);
+#endif  // APPEAL || AREAL || MILITARY || REGIONAL
+	strcat(_KIND_PREFER_MOTIVES, KIND_DECISIONS);
+
+	for (const char *connectType = CONNECT_TYPE_ALLS; *connectType; connectType++)
+	{
+		ConnectType->Seek(*connectType);
+		strcach_nx(_UCN_FLOATCON_SENDERS, ConnectType->senderType);
+	}
+#if COURT_TYPE == COURT_APPEAL || COURT_TYPE == COURT_ADMIN || COURT_TYPE == COURT_AREAL
+	strcat(_UCN_FLOATCON_SENDERS, UCN_EXECUTORS);
+#endif  // APPEAL || ADMIN || AREAL
+
+	strcpy(_POST_JUDGES, POST_VISIBLE_JUDGES);
+	strcat(_POST_JUDGES, POST_INTERNALS);
+
+	strcpy(_POST_INSECT_TARGETS, POST_JUDGES);
+	strcach(_POST_INSECT_TARGETS, POST_SECRETAR);
+
+	strcat(_RESULT_SESSIONS, RESULT_OPENS);
+	strcat_nx(_RESULT_SESSIONS, RESULT_CLOSEDS);
+	strcat(_RESULT_SESSIONS, RESULT_UNCARRIEDS);
+
+	strcpy(_RESULT_SURROUENTERABLES, RESULT_ENTERABLES);
+	strcat(_RESULT_SESSIONS, RESULT_SURROUENDOCS);
+	strcat(_RESULT_SURROUENTERABLES, RESULT_SURROUENDOCS);
+
+	strcat(_KIND_FORCABLES, KIND_FORCABLE_ENDOCS);
+	strcat(_KIND_FORCABLES, KIND_VISIBLE_SESSIONS);
+
+	strcat(_CONNECT_KIND_ALLS, CONNECT_KIND_LAWSUITS);
+	strcat(_CONNECT_KIND_ALLS, CONNECT_KIND_CRIMES);
+	strcach(_CONNECT_KIND_ALLS, CONNECT_KIND_REGION_REQUEST);
+#if COURT_TYPE == COURT_AREAL
+	strcat(_CONNECT_KIND_ALLS, CONNECT_KIND_EXECUTIVES);
+#endif  // AREAL
+
+	strcat(_KIND_EVENT_INDEXES, KIND_ENDOCS);
+	strcat(_KIND_VISIBLE_EVENT_INDEXES, KIND_VISIBLE_ENDOCS);
+	strcach(_KIND_VISIBLE_EVENT_INDEXES, KIND_STANDPOINT);
+
+	// 2016:056 LPR: conditional
+	if (strchr(RESULT_SESSIONS, RESULT_WITH_DECREE))
+	{
+		strcach(_KIND_EVENT_INDEXES, KIND_DECREE);
+		strcach(_KIND_VISIBLE_EVENT_INDEXES, KIND_DECREE);
+	}
+
+	strcpy(_KIND_OUT_REG_OUTS, KIND_OUT_REG_CUTS);
+	strcach(_KIND_OUT_REG_OUTS, KIND_EXECUTIVE_LIST);
+
+	CreateEndocResults();
+
+	*_KIND_VISIBLE_NON_CRIME_EVENT_INDEXES = '\0';
+	*_KIND_VISIBLE_CRIME_EVENT_INDEXES = '\0';
+
+	for (const char *kind = KIND_VISIBLE_EVENT_INDEXES; *kind; kind++)
+	{
+	#if COURT_TYPE == COURT_APPEAL || COURT_TYPE == COURT_AREAL || COURT_TYPE == COURT_MILITARY || COURT_TYPE == COURT_REGIONAL
+		if (*kind != KIND_JUDGEMENT && *kind != KIND_BULWARK)
+			strcach(_KIND_VISIBLE_NON_CRIME_EVENT_INDEXES, *kind);
+	#endif  // APPEAL || AREAL || MILITARY || REGIONAL
+	#if COURT_TYPE == COURT_AREAL
+		if (*kind == KIND_PROTECTIVE)
+			continue;
+	#endif
+		strcach(_KIND_VISIBLE_CRIME_EVENT_INDEXES, *kind);
+	}
+
+#if TESTVER
+
+#if COURT_TYPE == COURT_APPEAL
+	// 2011:152 +Øøæ; 2011:192 -67Û; 2011:230 +9; 2012:163 -bäéêû
+	// 2012:164 -Ä
+	constant result_endocs = "ﬂvwzÿquyTÒÚ12CE√ƒ»…Àœ”‘÷◊GH4WØøæ9";
+#endif  // APPEAL
+#if COURT_TYPE == COURT_ADMIN
+	constant result_endocs = "ﬂvwzÿquyTbCEGH•Ã 5678øæ";	// 2011:152 +øæ
+#endif  // ADMIN
+#if COURT_TYPE == COURT_AREAL
+	constant result_endocs = "ﬂvwzÿquyTbCEGH•Ã 5678ˇ„Ê˘˙¸˛ÈÎÔÙˆ˜¯123ÏÓW√ƒ»…Àœ”‘÷◊£Øøæ";	// 2011:151 +£Øøæ
+#endif  // AREAL
+#if COURT_TYPE == COURT_MILITARY
+	constant result_endocs = "ﬂvwzÿquyTbCEGH•Ã 5678W√ƒ»…Àœ”‘÷◊Øøæ";	// 2011:152 +Øøæ
+#endif  // MILITARY
+#if COURT_TYPE == COURT_REGIONAL
+	constant result_endocs = "ﬂvwzÿquyTb∫txXGHWœ®∏";	// 2014:203 +®∏
+#endif  // REGIONAL
+
+	for (const char *s = result_endocs; *s; s++)
+		if (!strchr(RESULT_ENDOCS, *s))
+			message("computed results lack %d", *s);
+
+	compare_adjusted(RESULT_WITH_READY_ANYS, WITH_READY_ANYS, "ready anys");
+#endif  // TESTVER
+
+	EISPP_DEPARTS.Add(EISPP_ARREST, EISPP_PRISON, EISPP_MILPOL, EISPP_POLICE, EISPP_PROSEC, EISPP_COURT, EISPP_DETECT,
+		EISPP_PROBAT, INT_MAX);
+
+	strcpy(_RESULT_LEFTS_OR_STOPPEDS, RESULT_LEFTS);
+	strcach(_RESULT_LEFTS_OR_STOPPEDS, RESULT_STOPPED);
+	COLOR_BUTTON_TEXT = GetSysColor(COLOR_BTNTEXT);
+	COLOR_3D_BACKGROUND = GetSysColor(COLOR_3DFACE);
+	strcpy(_RESULT_SURROUENDOC_ENDOCS, RESULT_SURROUENDOC_DECISIONS);
+	strcat(_RESULT_SURROUENDOC_ENDOCS, RESULT_SURROUENDOC_SETTLEMENTS);
+
+	strcpy(_SUBPOENA_KIND_NONTDEP_EXECLETS, C2S[SUBPOENA_KIND_EXECLET_PRIVEXC]);
+	strcat(_SUBPOENA_KIND_NONTDEP_EXECLETS, SUBPOENA_KIND_COUNTEX_EXECLETS);
+
+	// 2016:305 IRQ/FIX: was _SUBPOENA_KIND_NONTDEP_EXECLETS
+	strcpy(_SUBPOENA_KIND_EXEC_LETTERS, SUBPOENA_KIND_NONTDEP_EXECLETS);
+	strcach(_SUBPOENA_KIND_EXEC_LETTERS, SUBPOENA_KIND_EXECLET_NIATDEP);
+	// 2018-05-11: was TFloatExecListQuery:includeSubletterKinds
+	strcpy(_SUBPOENA_KIND_EXECBOOK_LETS, SUBPOENA_KIND_EXEC_LETTERS);
+	strcach(_SUBPOENA_KIND_EXECBOOK_LETS, SUBPOENA_KIND_EXECLET_FINOTE);
+
+	// 2017:011
+	strcpy(_KIND_AFTER_KILLS, KIND_ENDOCS);
+	strcat(_KIND_AFTER_KILLS, KIND_SURROUNDS);
+	strcat(_KIND_AFTER_KILLS, KIND_CLOSED_SESSIONS);
+
+	// 2017:156
+	strcpy(_KIND_INREG_EVENTS, KIND_INREG_USER_EVENTS);
+	strcach(_KIND_INREG_EVENTS, KIND_INREG_SEND_EVENT);
+
+	// 2017:236
+	BRUSH_3D_BACKGROUND = CreateSolidBrush(COLOR_3D_BACKGROUND);
+
+	// 2018-09-28
+	static const long LOG_WHATS[] = { WHAT_REQUEST, WHAT_LAWSUIT, WHAT_SIDEWIND, WHAT_SESSION, WHAT_SESS_ENDOC,
+		WHAT_ENDOC, WHAT_INREG, WHAT_OUTREG, WHAT_ENDOC_MESSAGE, WHAT_APPEAL_MESSAGE, WHAT_SESSION_SUBPOENA,
+		WHAT_PERSON_REGISTRATION, WHAT_LAWYER_REGISTRATION, WHAT_PERSON_ASSIGNMENT, WHAT_LAWYER_ASSIGNMENT, 0 };
+
+	for (int index = 0; LOG_WHATS[index]; index++)
+		WHAT_LOGS.Add(LOG_WHATS[index]);
+}
+
+void shutdown_const()
+{
+	TAliasGroup::ShutdownConst();
+}

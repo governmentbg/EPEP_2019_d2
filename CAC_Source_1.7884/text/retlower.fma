@@ -1,0 +1,76 @@
+***_OUT_NO_DIALOG
+NO
+***_END
+***_LETTER_DEFAULT
+YES
+***_END
+***_OUT_NO_DEFAULT
+NO
+***_END
+***_TITLE
+***_END
+***_FORMATTED_HEADER
+#@ 6 40 1#       |    #@ 6 40 1#
+                                               |#
+          До                     |              До#
+          #@ 47021 37 1#|              #@ 47021 37 1#
+                                               |#
+#@ 1 37 1# ........ |    #@ 1 37 1# ........ #
+                                               |#
+#@ 47024 27 1 ; 47023 21 1#                    |    #@ 47024 27 1 ; 47023 21 1# 
+                                               |#
+                                               |#
+***_END
+***_MEDIUM_FORMATTED_TEXT
+***_END
+***_FORMATTED_TEXT
+2000
+На No ................#
+#@ 249 1 0 160##@ 249 1 0 160#Връща Ви се #@ 47020 255# по описа на съда Ви заедно с #@ 47022 255# по описа на съда за сведение и изпълнение.#
+***_END
+***_HEADER
+***_END
+***_FORMATTED_TAIL
+                                               |#
+                                               |#
+#@ 20008 32# съдия:                            |    #@ 20008 32# съдия:#
+                                               |#
+No 168#
+***_END
+***_MEDIUM_LINE
+‘———————————————————————†———————————————————————’
+***_END
+***_WANT_KINDS
+NO
+***_END
+***_SUBJECTS
+***_END
+***_SUBJECT_RANGES
+***_END
+***_MERGED_KINDS
+***_END
+***_WANT_FORMATTED_BODY
+YES
+***_END
+***_TAIL
+
+***_END
+***_PARAMETERS
+49 55 1 1
+***_END
+
+***_COLUMNS
+5 0
+48005 45 3
+  253  5 2
+    0  2
+48006 45 3
+  255  1
+***_END
+
+|  6   |   6  |   5 |    11     |               31              |                 32             |               32               |    8   |          21         |         17      |    9    |       17        |
+  spare new page symbols        (do not remove!)
+  spare condensed print symbols (do not remove!)
+  spare normal print symbols    (do not remove!)
+                                            Председателя на#
+#@ 1 43 1# #@ 47021 255#

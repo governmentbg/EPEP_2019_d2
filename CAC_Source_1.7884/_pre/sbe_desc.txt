@@ -1,0 +1,2644 @@
+Според ЕИСПП от 2015-06 т.3, вид дело 1008 допуска съдебно производство 1025. Затова 1025
+е добавено в 958, 957, 14130, 14118, 955, 893, 891, 896, 930, 932, 927, 928, 948 и 14117.
+
+Заради апелативен съд, на 20.04.2016 са добавени съдебно производство 1900001637,
+видове съдебни дела 1900001639, 1900001638 и 1900001640, и 7 вида събития от ВКС
+
+Вземане на мярка за процесуална принуда (1)
+
+	947	sbevid				3	947
+	947	sbedkpvid			3	644, 648, 649; вид на съответния съдебен акт
+	947	sbedkpnmr			5	номер на съдебния акт
+	947	sbedkpdta			3	дата на съдебния акт
+	947	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	947	SRK				3
+	947	SRK.srkvid			3	1029; срок за обжалване
+	947	SRK.srkden			5
+	947	SRK.srksdc			5
+	947	SRK.srkmsc			5
+	947	SRK.srkgdn			5
+	947	SRK.srkdta			3	дата на заседание/съдебен акт - начална дата на срока
+	947	NPR				3
+	947	NPR.nprnmr			3	ЕИСПП номер на НП
+	947	NPR.DLO				3
+	947	NPR.DLO.dlovid			3	853
+	947	NPR.DLO.dlosig			3	998...1002, 1008...1010, 1900001638...1900001640, 1900001685
+	947	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	947	NPR.DLO.dlogdn			3	година на делото
+	947	NPR.DLO.dlonmr			3	номер на делото
+	947	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682
+	947	NPR.DLO.dlosprvid		3	1014, 1018, 1021, 1025, 1016, 1900001637; 2014:272 +1016
+	947	NPR.DLO.FZL			3
+	947	NPR.DLO.FZL.MPP			3
+	947	NPR.DLO.FZL.MPP.mppvid		7	708...719, 14084; въвежда се от потребителя
+	947	NPR.DLO.FZL.MPP.mpprzm		7	въвежда се от потребителя при vid парична гаранция, или 0
+	947	NPR.DLO.FZL.MPP.mppste		3	1107; според приложенията може и други, но това е глупост
+	947	NPR.DLO.FZL.MPP.mppdta		3	дата на съответния съдебен акт; според приложенията не се изпраща
+	947	NPR.DLO.FZL.MPP.mppstr		3	-1; ЕИСПП код на текущия съд
+
+Включване на извършител в НП (2)
+
+	1640	sbevid				3	1640
+	1640	sbedkpvid			3	вид на съответния съдебен акт
+	1640	sbedkpnmr			5	номер на съдебния акт
+	1640	sbedkpdta			3	дата на съдебния акт
+	1640	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	1640	NPR				3
+	1640	NPR.nprnmr			3	ЕИСПП номер на НП
+	1640	NPR.DLO				3
+	1640	NPR.DLO.dlovid			3	853
+	1640	NPR.DLO.dlosig			3	999...1002, 1008...1010, 1900001685
+	1640	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	1640	NPR.DLO.dlogdn			3	година на делото
+	1640	NPR.DLO.dlonmr			3	номер на делото
+	1640	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682
+	1640	NPR.DLO.dlosprvid		3	1018, 1025; p.157: // 1014, 1017
+	1640	NPR.DLO.FZL			7
+	1640	NPR.DLO.FZL.*			5
+	1640	NPR.DLO.PNE			7	много
+	1640	NPR.DLO.PNE.pnenmr		7	ЕИСПП номер на престъпление
+	1640	NPR.DLO.PNE.*			5
+	1640	NPR.DLO.PNE.PNESTA.*		5	според декстро е NPRPNESTA, но при образуване е PNESTA
+	1640	NPR.DLO.NPRFZLPNE		7	много
+	1640	NPR.DLO.NPRFZLPNE.SCQ		3
+	1640	NPR.DLO.NPRFZLPNE.SCQ.scqvid	3	987
+	1640	NPR.DLO.NPRFZLPNE.SCQ.scqstv	1
+	1640	NPR.DLO.NPRFZLPNE.SCQ.scqstr	3	-1; ЕИСПП код на текущия съд
+	1640	NPR.DLO.NPRFZLPNE.SCQ.scqdta	1	дата на заседание/съдебен акт
+	1640	NPR.DLO.NPRFZLPNE.SCQ.scqrlq	7	846...848, 851, 852; въвежда се от потребителя
+	1640	NPR.DLO.NPRFZLPNE.SBC		1
+	1640	NPR.DLO.NPRFZLPNE.SBC.sbcrcd	5	1587...1591
+	1640	NPR.DLO.NPRFZLPNE.SBC.sbcple	5	1575...1578
+	1640	NPR.DLO.NPRFZLPNE.SBC.sbcspj	5
+	1640	NPR.DLO.NPRFZLPNE.SBC.sbcobr	5
+	1640	NPR.DLO.NPRFZLPNE.SBC.sbctrd	5
+	1640	NPR.DLO.NPRFZLPNE.SBC.sbcznq	5
+	1640	NPR.DLO.NPRFZLPNE.SBC.sbcetn	5
+	1640	NPR.DLO.NPRFZLPNE.SBC.sbcrge	5
+	1640	NPR.DLO.NPRFZLPNE.NPL		1
+	1640	NPR.DLO.NPRFZLPNE.NPL.*		3
+	1640	NPR.DLO.NPRFZLPNE.VSL		1
+	1640	NPR.DLO.NPRFZLPNE.VSL.vslpdl	1
+	1640	NPR.DLO.NPRFZLPNE.VSL.vsldlj	1
+	1640	NPR.DLO.NPRFZLPNE.VSL.vslzvn	3
+	1640	NPR.DLO.NPRFZLPNE.VSL.vslktg	3
+
+Влизане на присъда в сила (3)
+
+	924	sbevid				3	924
+	924	sbedkpvid			3	644, 646, 648, 649; вид на съответния съдебен акт
+	924	sbedkpnmr			5	номер на съдебния акт
+	924	sbedkpdta			7	дата на съдебния акт; 2014:295 IRQ/TRQ: 3 -> 7
+	924	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	924	SBH				3
+	924	SBH.sbhvid			3	971
+	924	SBH.sbhstn			7	824, 825; оправдателна, осъдителна - засега се редактира
+	924	SRK				3
+	924	SRK.srkvid			3	1028; "Дата, на постановяване на съдебния акт, който влиза в сила"
+	924	SRK.srkdta			3	дата на постановяване на съдебния акт
+	924	NPR				3
+	924	NPR.nprnmr			3	ЕИСПП номер на НП
+	924	NPR.DLO				3
+	924	NPR.DLO.dlovid			3	853
+	924	NPR.DLO.dlosig			3	998, 999, 1001, 1002, 1009, 1010
+	924	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	924	NPR.DLO.dlogdn			3	година на делото
+	924	NPR.DLO.dlonmr			3	номер на делото
+	924	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682
+	924	NPR.DLO.dlosprvid		3	1018; може би така ще остане
+	924	NPR.DLO.FZL			3
+	924	NPR.DLO.FZL.NKZ			1	задължителни само когато тип присъда = "осъдителна"
+	924	NPR.DLO.FZL.NKZ.nkztip		7	721, 745
+	924	NPR.DLO.FZL.NKZ.nkzvid		7	654, 655, 670, 699, 700, 702...705, 798, 799, 12070, 14344
+	924	NPR.DLO.FZL.NKZ.nkzstr		3	-1; или се въвежда
+	924	NPR.DLO.FZL.NKZ.nkzrzm		7	въвежда се от потребителя за наказание "Глоба", в противен случай 0
+	924	NPR.DLO.FZL.NKZ.nkzden		5	поне едно от полетата при наказание "лишаване от свобода"
+	924	NPR.DLO.FZL.NKZ.nkzsdc		5	-''-
+	924	NPR.DLO.FZL.NKZ.nkzmsc		5	-''-
+	924	NPR.DLO.FZL.NKZ.nkzgdn		5	-''-
+	924	NPR.DLO.FZL.NKZ.nkzncn		7	763, 764; ефективно, условно осъждане
+	924	NPR.DLO.FZL.NKZ.iptsrkden	5	поне едно от полетата при nkzncn = "условно осъждане"
+	924	NPR.DLO.FZL.NKZ.iptsrksdc	5	-''-
+	924	NPR.DLO.FZL.NKZ.iptsrkmsc	5	-''-
+	924	NPR.DLO.FZL.NKZ.iptsrkgdn	5	-''-
+	924	NPR.DLO.FZL.NKZ.iptsrkdta	5	задължителна при nkzncn = "условно осъждане"
+	924	NPR.DLO.FZL.NKZ.nkzrjm		5	; 842...845; режим на изтърпяване; 2014:182 всички
+	924	NPR.DLO.FZL.NKZ.nkzakt		7	1106, 1108, 1117, 1118, 1127; въвежда се от потребителя
+	924	NPR.DLO.FZL.NKZ.nkzaktdta	7	дата на влизане в законна сила на акта / индивидуалното наказание?
+	924	NPR.DLO.PNE			3	много
+	924	NPR.DLO.PNE.pnenmr		3	ЕИСПП номер на престъпление
+	924	NPR.DLO.PNE.PNESTA.*		1
+	924	NPR.DLO.NPRFZLPNE		3	много
+	924	NPR.DLO.NPRFZLPNE.SCQ		3
+	924	NPR.DLO.NPRFZLPNE.SCQ.scqvid	7	978, 979
+	924	NPR.DLO.NPRFZLPNE.SCQ.scqstv	1
+	924	NPR.DLO.NPRFZLPNE.SCQ.scqstr	3	-1; ЕИСПП код на текущия съд
+	924	NPR.DLO.NPRFZLPNE.SCQ.scqdta	1	дата на заседание/съдебен акт
+	924	NPR.DLO.NPRFZLPNE.SCQ.scqrlq	7	846...848, 851, 852; въвежда се от потребителя
+	924	NPR.DLO.NPRFZLPNE.SCQ.NKZPNE	1	много; задължителни само когато scqvid="осъжда"
+	924	NPR.DLO.NPRFZLPNE.SBC		3
+	924	NPR.DLO.NPRFZLPNE.SBC.sbcrcd	5	1587...1591
+	924	NPR.DLO.NPRFZLPNE.SBC.sbcple	7	1575...1578
+	924	NPR.DLO.NPRFZLPNE.SBC.sbcspj	5
+	924	NPR.DLO.NPRFZLPNE.SBC.sbcobr	5
+	924	NPR.DLO.NPRFZLPNE.SBC.sbctrd	5
+	924	NPR.DLO.NPRFZLPNE.SBC.sbcznq	5
+	924	NPR.DLO.NPRFZLPNE.SBC.sbcetn	5
+	924	NPR.DLO.NPRFZLPNE.SBC.sbcrge	5
+	924	NPR.DLO.NPRFZLPNE.NPL		1
+	924	NPR.DLO.NPRFZLPNE.NPL.*		7	въвежда се от потребителя (номенклатура ЕИСПП)
+	924	NPR.DLO.NPRFZLPNE.VSL		1
+	924	NPR.DLO.NPRFZLPNE.VSL.vslpdl	1
+	924	NPR.DLO.NPRFZLPNE.VSL.vsldlj	1
+	924	NPR.DLO.NPRFZLPNE.VSL.vslzvn	7	въвежда се от потребителя (номенклатура ЕИСПП)
+	924	NPR.DLO.NPRFZLPNE.VSL.vslktg	7	въвежда се от потребителя (номенклатура ЕИСПП)
+	924	.dlosprvid			3	1020; Привеждане в изпълнение на влезли в сила
+	924	.sbhvid				3	231
+
+Връщане на НД за доразследване на прокурор (4)
+
+	943	sbevid				3	943
+	943	sbedkpvid			3	644, 646, 648, 649; вид на съответния съдебен акт
+	943	sbedkpnmr			5	номер на съдебния акт
+	943	sbedkpdta			3	дата на съдебния акт
+	943	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	943	SBH				3
+	943	SBH.sbhvid			3	1663; структура, която ще провежда стадия
+	943	SBH.sbhstn			1	прокуратура, на която се връща делото за доразследване - от DLOOSN
+	943	SBH.sbhtxt			1
+	943	NPR				3
+	943	NPR.nprnmr			3	ЕИСПП номер на НП
+	943	NPR.DLO				3
+	943	NPR.DLO.dlovid			3	853
+	943	NPR.DLO.dlosig			3	999, 1002, 1010, 1900001638...1900001640, 1900001685
+	943	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	943	NPR.DLO.dlogdn			3	година на делото
+	943	NPR.DLO.dlonmr			3	номер на делото
+	943	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682
+	943	NPR.DLO.dlosprvid		3	1018, 1021, 1025, 1900001637
+	943	NPR.DLO.DLOOSN			3
+	943	NPR.DLO.DLOOSN.dlostr		3	Прокуратура, на която е прокурорската преписка (на която се връща делото)
+	943	NPR.DLO.DLOOSN.dlovid		3	823; прокурорска преписка
+	943	NPR.DLO.DLOOSN.dlosig		3	1005, 1006; вх.номер, НСН - защо няма паркетно дело?
+	943	NPR.DLO.DLOOSN.dlogdn		3	година на прокурорската преписка
+	943	NPR.DLO.DLOOSN.dlonmr		3	номер на прокурорската преписка
+	943	.sbhvid				3	-2; адресант
+
+Връщане на НД за ново разглеждане на първоинстанционен съд (6)
+
+	945	sbevid				3	945
+	945	sbedkpvid			3	вид на съответния съдебен акт
+	945	sbedkpnmr			5	номер на съдебния акт
+	945	sbedkpdta			3	дата на съдебния акт
+	945	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	945	SBH				3
+	945	SBH.sbhvid			3	1663; структура, която ще провежда стадия
+	945	SBH.sbhstn			1	първоинстанционен съд, на който се връща делото - от DLOOSN
+	945	SBH.sbhtxt			1
+	945	NPR				3
+	945	NPR.nprnmr			3	ЕИСПП номер на НП
+	945	NPR.DLO				3
+	945	NPR.DLO.dlovid			3	853
+	945	NPR.DLO.dlosig			3	998, 1008...1010, 1900001638...1900001640, 1900001685
+	945	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	945	NPR.DLO.dlogdn			3	година на делото
+	945	NPR.DLO.dlonmr			3	номер на делото
+	945	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682
+	945	NPR.DLO.dlosprvid		3	1021, 1025, 1900001637
+	945	NPR.DLO.DLOOSN			3
+	945	NPR.DLO.DLOOSN.dlostr		3	първонстанционен съд, на който се връща делото, определя се по вътрешна логика
+	945	NPR.DLO.DLOOSN.dlovid		3	853; (първоинстанционно) съдебно дело
+	945	NPR.DLO.DLOOSN.dlosig		3	999...1002; точен вид на първоинстанционното дело; 2016:111 +999
+	945	NPR.DLO.DLOOSN.dlogdn		3	година на първоинстанционното дело
+	945	NPR.DLO.DLOOSN.dlonmr		3	номер на първоинстанционното дело
+	945	.sbhvid				3	-2; адресант
+
+Възобновяване на прекратено НП (8)
+
+	953	sbevid				3	953
+	953	sbedkpvid			3	вид на съответния съдебен акт
+	953	sbedkpnmr			5	номер на съдебния акт
+	953	sbedkpdta			3	дата на съдебния акт
+	953	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	953	NPR				3
+	953	NPR.nprnmr			3	ЕИСПП номер на НП
+	953	NPR.DLO				3
+	953	NPR.DLO.dlovid			3	853
+	953	NPR.DLO.dlosig			3	997...1002, 1008...1010, 1900001685
+	953	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	953	NPR.DLO.dlogdn			3	година на делото
+	953	NPR.DLO.dlonmr			3	номер на делото
+	953	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682
+	953	NPR.DLO.dlosprvid		3	1014, 1018, 1021, 1025
+	953	NPR.DLO.FZL			3	много
+	953	NPR.DLO.PNE			3	много
+	953	NPR.DLO.PNE.pnenmr		3	ЕИСПП номер на престъпление
+	953	NPR.DLO.PNE.PNESTA.*		1	
+	953	NPR.DLO.NPRFZLPNE		3	много
+	953	NPR.DLO.NPRFZLPNE.SCQ		3
+	953	NPR.DLO.NPRFZLPNE.SCQ.scqvid	3	987
+	953	NPR.DLO.NPRFZLPNE.SCQ.scqstv	1
+	953	NPR.DLO.NPRFZLPNE.SCQ.scqstr	3	-1; ЕИСПП код на текущия съд
+	953	NPR.DLO.NPRFZLPNE.SCQ.scqdta	1	дата на заседание/съдебен акт
+	953	NPR.DLO.NPRFZLPNE.SCQ.scqosn	7	14106...14112; според прижоленията е задължително
+	953	NPR.DLO.NPRFZLPNE.SCQ.scqrlq	3	846...852
+	953	.scqosn				3	14113
+
+Възобновяване на спряно НП (9)
+
+	954	sbevid				3	954
+	954	sbedkpvid			3	вид на съответния съдебен акт
+	954	sbedkpnmr			5	номер на съдебния акт
+	954	sbedkpdta			3	дата на съдебния акт
+	954	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	954	NPR				3
+	954	NPR.nprnmr			3	ЕИСПП номер на НП
+	954	NPR.DLO				3
+	954	NPR.DLO.dlovid			3	853
+	954	NPR.DLO.dlosig			3	997...1002, 1008...1010, 1900001638...1900001640, 1900001685
+	954	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	954	NPR.DLO.dlogdn			3	година на делото
+	954	NPR.DLO.dlonmr			3	номер на делото
+	954	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682
+	954	NPR.DLO.dlosprvid		3	1014, 1018, 1021, 1025, 1900001637
+	954	NPR.DLO.FZL			3	много
+	954	NPR.DLO.PNE			3	много
+	954	NPR.DLO.PNE.pnenmr		3	ЕИСПП номер на престъпление
+	954	NPR.DLO.PNE.PNESTA.*		1
+	954	NPR.DLO.NPRFZLPNE		1
+	954	NPR.DLO.NPRFZLPNE.SCQ		3
+	954	NPR.DLO.NPRFZLPNE.SCQ.scqvid	3	987
+	954	NPR.DLO.NPRFZLPNE.SCQ.scqstv	1
+	954	NPR.DLO.NPRFZLPNE.SCQ.scqstr	3	-1; ЕИСПП код на текущия съд
+	954	NPR.DLO.NPRFZLPNE.SCQ.scqdta	1	дата на заседание/ съдебен акт
+	954	NPR.DLO.NPRFZLPNE.SCQ.scqosn	7	14106...14112; според приложенията е задължително
+	954	NPR.DLO.NPRFZLPNE.SCQ.scqrlq	3	846...852
+	954	.scqosn				3	14113
+
+Заменяване режима на изтърпяване на наказанието лишаване от свобода (10)
+
+	958	sbevid				3	958
+	958	sbedkpvid			3	вид на съответния съдебен акт
+	958	sbedkpnmr			5	номер на съдебния акт
+	958	sbedkpdta			3	дата на съдебния акт
+	958	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	958	NPR				3
+	958	NPR.nprnmr			3	ЕИСПП номер на НП
+	958	NPR.DLO				3
+	958	NPR.DLO.dlovid			3	853
+	958	NPR.DLO.dlosig			3	997...1002, 1008...1010, 1900001638...1900001640, 1900001685
+	958	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	958	NPR.DLO.dlogdn			3	година на делото
+	958	NPR.DLO.dlonmr			3	номер на делото
+	958	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682
+	958	NPR.DLO.dlosprvid		3	1017, 1024, 1025, 1900001637; p.156: // 1014, 1018, 1021, 1025
+	958	NPR.DLO.FZL			3
+	958	NPR.DLO.FZL.NKZ			3
+	958	NPR.DLO.FZL.NKZ.nkztip		3	721; p.108
+	958	NPR.DLO.FZL.NKZ.nkzvid		3	704; /1354- грешка в описание на събитието/
+	958	NPR.DLO.FZL.NKZ.nkzstr		3	-1; или се въвежда
+	958	NPR.DLO.FZL.NKZ.nkzrzm		7	размер на глоба = 0; според Декстро е задължителен
+	958	NPR.DLO.FZL.NKZ.nkzden		5	поне едно от полетата при nkzvid = лишаване от свобода
+	958	NPR.DLO.FZL.NKZ.nkzsdc		5	-''-
+	958	NPR.DLO.FZL.NKZ.nkzmsc		5	-''-
+	958	NPR.DLO.FZL.NKZ.nkzgdn		5	-''-
+	958	NPR.DLO.FZL.NKZ.nkzncn		3	763
+	958	NPR.DLO.FZL.NKZ.nkzrjm		5	; 842...845; режим на изтърпяване; 2014:182 всички
+	958	NPR.DLO.FZL.NKZ.nkzakt		7	1108, 1127; въвежда се от потребителя
+	958	NPR.DLO.FZL.NKZ.nkzaktdta	7	въвежда се от потребителя
+
+Замяна на наказание за изтърпяване (11)
+
+	957	sbevid				3	957
+	957	sbedkpvid			3	вид на съответния съдебен акт
+	957	sbedkpnmr			5	номер на съдебния акт
+	957	sbedkpdta			3	дата на съдебния акт
+	957	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	957	NPR				3
+	957	NPR.nprnmr			3	ЕИСПП номер на НП
+	957	NPR.DLO				3
+	957	NPR.DLO.dlovid			3	853
+	957	NPR.DLO.dlosig			3	1000, 1008; ЕИСПП код на точен вид дело
+	957	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	957	NPR.DLO.dlogdn			3	година на делото
+	957	NPR.DLO.dlonmr			3	номер на делото
+	957	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682
+	957	NPR.DLO.dlosprvid		3	1017, 1024, 1025
+	957	NPR.DLO.FZL			3
+	957	NPR.DLO.FZL.NKZ			3
+	957	NPR.DLO.FZL.NKZ.nkztip		3	721; p.108
+	957	NPR.DLO.FZL.NKZ.nkzvid		3	704; /1354-грешно описание на събитие/
+	957	NPR.DLO.FZL.NKZ.nkzstr		3	-1; или се въвежда
+	957	NPR.DLO.FZL.NKZ.nkzrzm		3	размер на глоба = 0; според Декстро е задължителен
+	957	NPR.DLO.FZL.NKZ.nkzden		5	задължително е 1 от полетата дни, месеци, седмици, години
+	957	NPR.DLO.FZL.NKZ.nkzsdc		5	-''-
+	957	NPR.DLO.FZL.NKZ.nkzmsc		5	-''-
+	957	NPR.DLO.FZL.NKZ.nkzgdn		5	-''-
+	957	NPR.DLO.FZL.NKZ.nkzncn		7	763, 764, 788...790
+	957	NPR.DLO.FZL.NKZ.iptsrkden	5	поне едно от полетата при nkzncn = "условно осъждане"
+	957	NPR.DLO.FZL.NKZ.iptsrksdc	5	-''-
+	957	NPR.DLO.FZL.NKZ.iptsrkmsc	5	-''-
+	957	NPR.DLO.FZL.NKZ.iptsrkgdn	5	-''-
+	957	NPR.DLO.FZL.NKZ.iptsrkdta	5	задължителна при nkzncn = "условно осъждане"
+	957	NPR.DLO.FZL.NKZ.nkzrjm		5	; 842...845; режим на изтърпяване; 2014:182 всички
+	957	NPR.DLO.FZL.NKZ.nkzakt		7	1108, 1127; въвежда се от потребителя
+	957	NPR.DLO.FZL.NKZ.nkzaktdta	7	датата на заменяване режима на наказанието
+
+Изменение на присъда по решение на чужд съд (12)
+
+	14127	sbevid				3	14127
+	14127	sbedkpvid			3	644, 649; вид на съответния съдебен акт
+	14127	sbedkpnmr			5	номер на съдебния акт
+	14127	sbedkpdta			3	дата на съдебния акт
+	14127	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	14127	SBH				3
+	14127	SBH.sbhvid			3	971
+	14127	SBH.sbhstn			7	824, 825
+	14127	SRK				3
+	14127	SRK.srkvid			3	1029
+	14127	SRK.srkden			5
+	14127	SRK.srksdc			5
+	14127	SRK.srkmsc			5
+	14127	SRK.srkgdn			5
+	14127	SRK.srkdta			3	дата на заседание/съдебен акт - начална дата на срока
+	14127	NPR				3
+	14127	NPR.nprnmr			3	ЕИСПП номер на НП
+	14127	NPR.DLO				3
+	14127	NPR.DLO.dlovid			3	853
+	14127	NPR.DLO.dlosig			3	1000; ЕИСПП код на точен вид дело
+	14127	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	14127	NPR.DLO.dlogdn			3	година на делото
+	14127	NPR.DLO.dlonmr			3	номер на делото
+	14127	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682
+	14127	NPR.DLO.dlosprvid		3	14119; ПИС - международно сътрудничество
+	14127	NPR.DLO.FZL			3
+	14127	NPR.DLO.FZL.NKZ			1	задължителни само когато тип присъда = "осъдителна"
+	14127	NPR.DLO.FZL.NKZ.nkztip		7	745, 721
+	14127	NPR.DLO.FZL.NKZ.nkzvid		7	654, 655, 670, 699, 700, 702...705, 721, 745, 798, 799, 12070, 14344
+	14127	NPR.DLO.FZL.NKZ.nkzstr		3	-1; или се въвежда
+	14127	NPR.DLO.FZL.NKZ.nkzrzm		7	въвежда се от потребителя за наказание "Глоба", в противен случай 0
+	14127	NPR.DLO.FZL.NKZ.nkzden		5	поне едно от полетата при nzkvid = "лишаване от свобода"
+	14127	NPR.DLO.FZL.NKZ.nkzsdc		5	-''-
+	14127	NPR.DLO.FZL.NKZ.nkzmsc		5	-''-
+	14127	NPR.DLO.FZL.NKZ.nkzgdn		5	-''-
+	14127	NPR.DLO.FZL.NKZ.nkzncn		7	763, 764
+	14127	NPR.DLO.FZL.NKZ.iptsrkden	5	поне едно от полетата при nkzncn = "условно осъждане"
+	14127	NPR.DLO.FZL.NKZ.iptsrksdc	5	-''-
+	14127	NPR.DLO.FZL.NKZ.iptsrkmsc	5	-''-
+	14127	NPR.DLO.FZL.NKZ.iptsrkgdn	5	-''-
+	14127	NPR.DLO.FZL.NKZ.iptsrkdta	5	задължителна при nkzncn = "условно осъждане"
+	14127	NPR.DLO.FZL.NKZ.nkzrjm		5	; 842...845; режим на изтърпяване; 2014:182 всички
+	14127	NPR.DLO.FZL.NKZ.nkzakt		7	1106, 1108, 1117, 1118, 1127
+	14127	NPR.DLO.FZL.NKZ.nkzaktdta	7
+	14127	NPR.DLO.PNE			3	много
+	14127	NPR.DLO.PNE.pnenmr		3	ЕИСПП номер на престъпление
+	14127	NPR.DLO.PNE.PNESTA.*		1
+	14127	NPR.DLO.NPRFZLPNE		1
+	14127	NPR.DLO.NPRFZLPNE.SCQ		3
+	14127	NPR.DLO.NPRFZLPNE.SCQ.scqvid	7	978, 979
+	14127	NPR.DLO.NPRFZLPNE.SCQ.scqstv	1
+	14127	NPR.DLO.NPRFZLPNE.SCQ.scqstr	3	-1; ЕИСПП код на текущия съд
+	14127	NPR.DLO.NPRFZLPNE.SCQ.scqdta	1	дата на заседание/съдебен акт
+	14127	NPR.DLO.NPRFZLPNE.SCQ.scqrlq	7	846...848, 851, 852
+	14127	NPR.DLO.NPRFZLPNE.SCQ.NKZPNE	1	задължителни само когато scqvid=”осъжда”
+	14127	NPR.DLO.NPRFZLPNE.SBC		1
+	14127	NPR.DLO.NPRFZLPNE.SBC.sbcrcd	5	1587...1591
+	14127	NPR.DLO.NPRFZLPNE.SBC.sbcple	5	1575...1578
+	14127	NPR.DLO.NPRFZLPNE.SBC.sbcspj	5
+	14127	NPR.DLO.NPRFZLPNE.SBC.sbcobr	5
+	14127	NPR.DLO.NPRFZLPNE.SBC.sbctrd	5
+	14127	NPR.DLO.NPRFZLPNE.SBC.sbcznq	5
+	14127	NPR.DLO.NPRFZLPNE.SBC.sbcetn	5
+	14127	NPR.DLO.NPRFZLPNE.SBC.sbcrge	5
+	14127	NPR.DLO.NPRFZLPNE.NPL		1
+	14127	NPR.DLO.NPRFZLPNE.NPL.*		3
+	14127	NPR.DLO.NPRFZLPNE.VSL		1
+	14127	NPR.DLO.NPRFZLPNE.VSL.vslpdl	1
+	14127	NPR.DLO.NPRFZLPNE.VSL.vsldlj	1
+	14127	NPR.DLO.NPRFZLPNE.VSL.vslzvn	3
+	14127	NPR.DLO.NPRFZLPNE.VSL.vslktg	3
+	14127	.sbhvid				3	231
+
+Изменяне на мярка за процесуална принуда (14)
+
+	863	sbevid				3	863
+	863	sbedkpvid			3	644, 646, 648, 649; вид на съответния съдебен акт; 2014:163 +646
+	863	sbedkpnmr			5	номер на съдебния акт
+	863	sbedkpdta			3	дата на съдебния акт
+	863	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	863	NPR				3
+	863	NPR.nprnmr			3	ЕИСПП номер на НП
+	863	NPR.DLO				3
+	863	NPR.DLO.dlovid			3	853
+	863	NPR.DLO.dlosig			3	998...1002, 1008...1010, 1900001638...1900001640, 1900001685
+	863	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	863	NPR.DLO.dlogdn			3	година на делото
+	863	NPR.DLO.dlonmr			3	номер на делото
+	863	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682
+	863	NPR.DLO.dlosprvid		3	1014, 1018, 1016, 1021, 1025, 1900001637
+	863	NPR.DLO.FZL			3
+	863	NPR.DLO.FZL.MPP			3	описание на предишната мярка = засега същото
+	863	NPR.DLO.FZL.MPP.mppvid		7	708...719, 14084
+	863	NPR.DLO.FZL.MPP.mpprzm		7	въвежда се от потребителя при vid парична гаранция, или 0
+	863	NPR.DLO.FZL.MPP.mppste		7	1107, 1116
+	863	NPR.DLO.FZL.MPP.mppdta		3
+	863	NPR.DLO.FZL.MPP.mppstr		7	каква структура е за предишната мярка?
+
+Изменяне на първоинстанционна присъда (15)
+
+	865	sbevid				3	865
+	865	sbedkpvid			3	649; Решение
+	865	sbedkpnmr			5	номер на съдебния акт
+	865	sbedkpdta			3	дата на съдебния акт
+	865	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	865	SBH				3
+	865	SBH.sbhvid			3	971
+	865	SBH.sbhstn			7	824, 825; оправдателна, осъдителна - засега се редактира
+	865	SRK				3
+	865	SRK.srkvid			3	1029
+	865	SRK.srkden			5
+	865	SRK.srksdc			5
+	865	SRK.srkmsc			5
+	865	SRK.srkgdn			5
+	865	SRK.srkdta			3	дата на заседание/съдебен акт - начална дата на срока
+	865	NPR				3
+	865	NPR.nprnmr			3	ЕИСПП номер на НП
+	865	NPR.DLO				3
+	865	NPR.DLO.dlovid			3	853
+	865	NPR.DLO.dlosig			3	1009, 1010, 1900001685; ВНЧХД, ВНОХД, ВНАХД
+	865	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	865	NPR.DLO.dlogdn			3	година на делото
+	865	NPR.DLO.dlonmr			3	номер на делото
+	865	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682
+	865	NPR.DLO.dlosprvid		3	1025; Въззивно производство по наказателни дела
+	865	NPR.DLO.FZL			3
+	865	NPR.DLO.FZL.NKZ			1	задължителни само когато тип присъда = "осъдителна"
+	865	NPR.DLO.FZL.NKZ.nkztip		7	721, 745
+	865	NPR.DLO.FZL.NKZ.nkzvid		7	654, 655, 670, 699, 700, 702...705, 798, 799, 12070, 14344
+	865	NPR.DLO.FZL.NKZ.nkzstr		3	-1; или се въвежда
+	865	NPR.DLO.FZL.NKZ.nkzrzm		7	въвежда се от потребителя за наказание "Глоба", в противен случай 0
+	865	NPR.DLO.FZL.NKZ.nkzden		5	поне едно от полетата при nkzvid = лишаване от свобода
+	865	NPR.DLO.FZL.NKZ.nkzsdc		5	-''-
+	865	NPR.DLO.FZL.NKZ.nkzmsc		5	-''-
+	865	NPR.DLO.FZL.NKZ.nkzgdn		5	-''-
+	865	NPR.DLO.FZL.NKZ.nkzncn		7	763, 764
+	865	NPR.DLO.FZL.NKZ.iptsrkden	5	поне едно от полетата при nkzncn = "условно осъждане"
+	865	NPR.DLO.FZL.NKZ.iptsrksdc	5	-''-
+	865	NPR.DLO.FZL.NKZ.iptsrkmsc	5	-''-
+	865	NPR.DLO.FZL.NKZ.iptsrkgdn	5	-''-
+	865	NPR.DLO.FZL.NKZ.iptsrkdta	5	задължителна при nkzncn = "условно осъждане"
+	865	NPR.DLO.FZL.NKZ.nkzrjm		5	; 842...845; режим на изтърпяване; 2014:182 всички
+	865	NPR.DLO.FZL.NKZ.nkzakt		7	1106, 1108, 1117, 1118, 1127; въвежда се от потребителя
+	865	NPR.DLO.FZL.NKZ.nkzaktdta	7	въвежда се от потребителя
+	865	NPR.DLO.PNE			3	много
+	865	NPR.DLO.PNE.pnenmr		3	ЕИСПП номер на престъпление
+	865	NPR.DLO.PNE.PNESTA.*		1
+	865	NPR.DLO.NPRFZLPNE		1
+	865	NPR.DLO.NPRFZLPNE.SCQ		3
+	865	NPR.DLO.NPRFZLPNE.SCQ.scqvid	7	978, 979
+	865	NPR.DLO.NPRFZLPNE.SCQ.scqstv	1
+	865	NPR.DLO.NPRFZLPNE.SCQ.scqstr	3	-1; ЕИСПП код на текущия съд
+	865	NPR.DLO.NPRFZLPNE.SCQ.scqdta	1	дата на заседание/ съдебен акт
+	865	NPR.DLO.NPRFZLPNE.SCQ.scqrlq	7	846...848, 851, 852
+	865	NPR.DLO.NPRFZLPNE.SCQ.NKZPNE	1	задължителни само когато scqvid=”осъжда”
+	865	NPR.DLO.NPRFZLPNE.SBC		1
+	865	NPR.DLO.NPRFZLPNE.SBC.sbcrcd	5	1587...1591
+	865	NPR.DLO.NPRFZLPNE.SBC.sbcple	5	1575...1578
+	865	NPR.DLO.NPRFZLPNE.SBC.sbcspj	7
+	865	NPR.DLO.NPRFZLPNE.SBC.sbcobr	5
+	865	NPR.DLO.NPRFZLPNE.SBC.sbctrd	5	"
+	865	NPR.DLO.NPRFZLPNE.SBC.sbcznq	5	"
+	865	NPR.DLO.NPRFZLPNE.SBC.sbcetn	5
+	865	NPR.DLO.NPRFZLPNE.SBC.sbcrge	5
+	865	NPR.DLO.NPRFZLPNE.NPL		1
+	865	NPR.DLO.NPRFZLPNE.NPL.*		3
+	865	NPR.DLO.NPRFZLPNE.VSL		1
+	865	NPR.DLO.NPRFZLPNE.VSL.vslpdl	5
+	865	NPR.DLO.NPRFZLPNE.VSL.vsldlj	1	"
+	865	NPR.DLO.NPRFZLPNE.VSL.vslzvn	3
+	865	NPR.DLO.NPRFZLPNE.VSL.vslktg	3
+	865	.sbhvid				3	231
+
+Изпращане на дело за провеждане на НП от друга прокуратура (16)
+
+	860	sbevid				3	860
+	860	sbedkpvid			3	644, 646, 648, 649; вид на съответния съдебен акт
+	860	sbedkpnmr			5	номер на съдебния акт
+	860	sbedkpdta			3	дата на съдебния акт
+	860	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	860	SBH				3
+	860	SBH.sbhvid			3	1663
+	860	SBH.sbhstn			7	Прокуратура, която ще провежда стадия
+	860	NPR				3
+	860	NPR.nprnmr			3	ЕИСПП номер на НП
+	860	NPR.DLO				3
+	860	NPR.DLO.dlovid			3	853
+	860	NPR.DLO.dlosig			3	997...999, 1001, 1002, 1009, 1010, 1900001685
+	860	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	860	NPR.DLO.dlogdn			3	година на делото
+	860	NPR.DLO.dlonmr			3	номер на делото
+	860	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682
+	860	NPR.DLO.dlosprvid		3	1018, 1021, 1023, 1025
+	860	.sbhvid				3	1102
+
+Изпращане на дело (17)
+
+	859	sbevid				3	859
+	859	sbedkpdta			3	дата на документа
+	859	sbedkpstr			3	-1; структура, издала документа - ЕИСПП код на текущия съд
+	859	DVJDLO				3
+	859	DVJDLO.dvjvid			3	659
+	859	DVJDLO.dvjdta			3	дата на изпращане/получаване на делото
+	859	DVJDLO.dvjstripr		3	-1; ЕИСПП код на текущия съд
+	859	DVJDLO.dvjstrplc		3	структурата получаваща делото "съотв.съд или надзорна прокуратура"
+	859	DVJDLO.dvjprc			7	671, 673...676, 681, 682, 685, 688, 1900001684
+	859	DVJDLO.dvjdlodvn		5
+	859	DVJDLO.dvjdloopi		1
+	859	NPR				3
+	859	NPR.nprnmr			3
+	859	NPR.DLO				3
+	859	NPR.DLO.dlovid			3	853
+	859	NPR.DLO.dlosig			3	997...1002, 1008...1010, 1900001685
+	859	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	859	NPR.DLO.dlogdn			3	година на делото
+	859	NPR.DLO.dlonmr			3	номер на делото
+	859	NPR.DLO.dloncnone		1	722, 723, 728...730, 1900001682; според Декстро не е задължителен
+	859	.resSid				3	2029
+
+Искане за преместване на НД (18)
+
+	861	sbevid				3	861
+	861	sbedkpvid			3	644; определение
+	861	sbedkpnmr			5	номер на съдебния акт
+	861	sbedkpdta			3	дата на съдебния акт
+	861	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	861	NPR				3
+	861	NPR.nprnmr			3	ЕИСПП номер на НП
+	861	NPR.DLO				3
+	861	NPR.DLO.dlovid			3	853
+	861	NPR.DLO.dlosig			3	997...999, 1001, 1002, 1009, 1010, 1900001685
+	861	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	861	NPR.DLO.dlogdn			3	година на делото
+	861	NPR.DLO.dlonmr			3	номер на делото
+	861	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682
+	861	NPR.DLO.dlosprvid		3	1018, 1025
+	861	.sbhvid				3	-2
+
+Кумулиране на наказание за изтърпяване (19)
+
+	1718	sbevid				3	1718
+	1718	sbedkpvid			3	644, 646, 648, 649; вид на съответния съдебен акт
+	1718	sbedkpnmr			5	номер на съдебния акт
+	1718	sbedkpdta			3	дата на съдебния акт
+	1718	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	1718	NPR				3
+	1718	NPR.nprnmr			3	ЕИСПП номер на НП
+	1718	NPR.DLO				3
+	1718	NPR.DLO.dlovid			3	853
+	1718	NPR.DLO.dlosig			3	1000; НЧД (ЧНД)
+	1718	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	1718	NPR.DLO.dlogdn			3	година на делото
+	1718	NPR.DLO.dlonmr			3	номер на делото
+	1718	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682
+	1718	NPR.DLO.dlosprvid		3	1017; ПИС по изпълнение на наказанията
+	1718	NPR.DLO.FZL			3
+	1718	NPR.DLO.FZL.NKZ			3	много
+	1718	NPR.DLO.FZL.NKZ.nkztip		3	721
+	1718	NPR.DLO.FZL.NKZ.nkzvid		7	654, 655, 670, 699...705, 798, 799, 1140, 14344
+	1718	NPR.DLO.FZL.NKZ.nkzstr		3	-1; или се въвежда
+	1718	NPR.DLO.FZL.NKZ.nkzrzm		7	въвежда се от потребителя за наказание "Глоба", в противен случай 0
+	1718	NPR.DLO.FZL.NKZ.nkzden		5	поне едно от полетата при nkzvid = лишаване от свобода
+	1718	NPR.DLO.FZL.NKZ.nkzsdc		5	-''-
+	1718	NPR.DLO.FZL.NKZ.nkzmsc		5	-''-
+	1718	NPR.DLO.FZL.NKZ.nkzgdn		5	-''-
+	1718	NPR.DLO.FZL.NKZ.nkzncn		7	763, 764, 788...790
+	1718	NPR.DLO.FZL.NKZ.iptsrkden	5	поне едно от полетата при nkzncn = "условно осъждане"
+	1718	NPR.DLO.FZL.NKZ.iptsrksdc	5	-''-
+	1718	NPR.DLO.FZL.NKZ.iptsrkmsc	5	-''-
+	1718	NPR.DLO.FZL.NKZ.iptsrkgdn	5	-''-
+	1718	NPR.DLO.FZL.NKZ.iptsrkdta	5	задължителна при nkzncn = "условно осъждане"
+	1718	NPR.DLO.FZL.NKZ.nkzrjm		5	; 842...845; режим на изтърпяване; 2014:182 всички
+	1718	NPR.DLO.FZL.NKZ.nkzakt		3	1106
+	1718	NPR.DLO.FZL.NKZ.nkzaktdta	7
+
+Обединяване на НД_и_ Приключване на наказателно производство поради обединяване
+
+Обединяване на НД (20)
+
+	898	sbevid				3	898
+	898	sbedkpvid			3	644, 646, 648, 649; вид на съответния съдебен акт
+	898	sbedkpnmr			5	номер на съдебния акт
+	898	sbedkpdta			3	дата на съдебния акт
+	898	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	898	NPR				3
+	898	NPR.nprnmr			3	ЕИСПП номер на НП
+	898	NPR.DLO				3
+	898	NPR.DLO.dlovid			3	853
+	898	NPR.DLO.dlosig			3	999, 1001, 1002; ЕИСПП код на точен вид дело
+	898	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	898	NPR.DLO.dlogdn			3	година на делото
+	898	NPR.DLO.dlonmr			3	номер на делото
+	898	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682
+	898	NPR.DLO.dlosprvid		3	1018
+	898	NPR.DLO.FZL			7	много
+	898	NPR.DLO.FZL.*			5
+	898	NPR.DLO.PNE			3	много
+	898	NPR.DLO.PNE.pnenmr		3	ЕИСПП номер на престъпление
+	898	NPR.DLO.PNE.PNESTA.*		1
+	898	NPR.DLO.NPRFZLPNE		1
+	898	NPR.DLO.NPRFZLPNE.SCQ		3
+	898	NPR.DLO.NPRFZLPNE.SCQ.scqvid	3	987
+	898	NPR.DLO.NPRFZLPNE.SCQ.scqstv	1
+	898	NPR.DLO.NPRFZLPNE.SCQ.scqstr	3	-1; ЕИСПП код на текущия съд
+	898	NPR.DLO.NPRFZLPNE.SCQ.scqdta	1
+	898	NPR.DLO.NPRFZLPNE.SCQ.scqrlq	7	846...848, 851, 852
+	898	SBE				3
+
+Приключване на наказателно производство поради обединяване (няма, вторично събитие)
+
+	1721	sbevid				3	1721
+	1721	sbedkpdta			3	дата на съдебния акт
+	1721	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	1721	NPR				3
+	1721	NPR.nprnmr			3	ЕИСПП номер на НП
+	1721	NPR.DLO				3
+	1721	NPR.DLO.dlovid			3	853
+	1721	NPR.DLO.dlosig			3	999, 1001, 1002; ЕИСПП код на точен вид дело
+	1721	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	1721	NPR.DLO.dlogdn			3	година на делото
+	1721	NPR.DLO.dlonmr			1	номер на делото незадължителен?
+	1721	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682
+	1721	NPR.DLO.dlosprvid		3	1018
+	1721	NPR.DLO.FZL			3	много
+	1721	NPR.DLO.PNE			3	много
+	1721	NPR.DLO.PNE.pnenmr		3	ЕИСПП номер на престъпление
+	1721	NPR.DLO.PNE.PNESTA.*		1
+	1721	NPR.DLO.NPRFZLPNE		1
+	1721	NPR.DLO.NPRFZLPNE.SCQ		3
+	1721	NPR.DLO.NPRFZLPNE.SCQ.scqvid	1	инициализира се служебно; 976
+	1721	NPR.DLO.NPRFZLPNE.SCQ.scqstv	1
+	1721	NPR.DLO.NPRFZLPNE.SCQ.scqstr	3	-1; ЕИСПП код на текущия съд
+	1721	NPR.DLO.NPRFZLPNE.SCQ.scqdta	1
+	1721	NPR.DLO.NPRFZLPNE.SCQ.scqrlq	3	инициализира се служебно; 849
+
+Образуване на съдебно дело (21)
+
+	871	sbevid				3	871
+	871	sbedkpdta			3	дата на съдебния акт
+	871	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	871	NPR				3
+	871	NPR.nprnmr			3	ЕИСПП номер на НП
+	871	NPR.nprstr			1	ЕИСПП код на текущия съд, ако НП започва в съда
+	871	NPR.nprdta			1	дата на образуване на делото, ако НП започва в съда
+	871	NPR.nprdrj			1	България (8805), ако НП започва в съда
+	871	NPR.DLO				3
+	871	NPR.DLO.dlovid			3	853
+	871	NPR.DLO.dlosig			3	997...1002, 1008...1010, 1900001638...1900001640, 1900001685
+	871	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	871	NPR.DLO.dlogdn			3	година на делото
+	871	NPR.DLO.dlonmr			3	номер на делото
+	871	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682; определя се по вътрешна логика
+	871	NPR.DLO.dlosprvid		7	1014, 1016...1019, 1024...1026, 1900001637; вътрешна логика + редактиране
+	871	NPR.DLO.FZL			7	много
+	871	NPR.DLO.FZL.*			5
+	871	NPR.DLO.PNE			7	много
+	871	NPR.DLO.PNE.pnenmr		7	ЕИСПП номер на престъпление
+	871	NPR.DLO.PNE.*			5
+	871	NPR.DLO.PNE.PNESTA.*		5
+	871	NPR.DLO.PNE.ADR.adrtip		3	635; местопрестъпление
+	871	NPR.DLO.PNE.ADR.adrdrj		5
+	871	NPR.DLO.PNE.ADR.adrnsmbgr	5
+	871	NPR.DLO.PNE.ADR.adrnsmchj	5
+	871	NPR.DLO.PNE.ADR.adrrjn		5
+	871	NPR.DLO.PNE.ADR.adrpstkod	5
+	871	NPR.DLO.PNE.ADR.adrkrdtxt	5
+	871	NPR.DLO.PNE.ADR.adrnmr		5
+	871	NPR.DLO.PNE.ADR.adrblk		5
+	871	NPR.DLO.PNE.ADR.adrvhd		5
+	871	NPR.DLO.PNE.ADR.adretj		5
+	871	NPR.DLO.PNE.ADR.adrapr		5
+	871	NPR.DLO.PNE.ADR.adrmstvid	5
+	871	NPR.DLO.PNE.ADR.adrmsttxt	5
+	871	NPR.DLO.PNE.ADR.adrkodpdl	5
+	871	NPR.DLO.PNE.ADR.adrloc		7
+	871	NPR.DLO.NPRFZLPNE		7	много
+	871	NPR.DLO.NPRFZLPNE.SCQ		3
+	871	NPR.DLO.NPRFZLPNE.SCQ.scqvid	3	987
+	871	NPR.DLO.NPRFZLPNE.SCQ.scqstv	1
+	871	NPR.DLO.NPRFZLPNE.SCQ.scqstr	3	-1; ЕИСПП код на текущия съд
+	871	NPR.DLO.NPRFZLPNE.SCQ.scqdta	1
+	871	NPR.DLO.NPRFZLPNE.SCQ.scqrlq	7	846...848, 851, 852
+	871	NPR.DLO.NPRFZLPNE.SBC.sbcrcd	5	1587...1591; SBC не се изпращат, но могат да се попълват
+	871	NPR.DLO.NPRFZLPNE.SBC.sbcple	5	1575...1578
+	871	NPR.DLO.NPRFZLPNE.SBC.sbcspj	5
+	871	NPR.DLO.NPRFZLPNE.SBC.sbcobr	5
+	871	NPR.DLO.NPRFZLPNE.SBC.sbctrd	5
+	871	NPR.DLO.NPRFZLPNE.SBC.sbcznq	5
+	871	NPR.DLO.NPRFZLPNE.SBC.sbcetn	5
+	871	NPR.DLO.NPRFZLPNE.SBC.sbcrge	5
+	871	NPR.DLO.DLOOSN			1	от основния списък обекти
+	871	NPR.DLO.DLOOSN.dlostr		3	структура, в която се води свързаното дело
+	871	NPR.DLO.DLOOSN.dlovid		3	823, 853, 791, 823, 1013, 656, 14372, 1134
+	871	NPR.DLO.DLOOSN.dlosig		3	999...1002, 1006, 1010, 1003, 12422, 12421, 1007, 14373, 995, 1009, 1011
+	871	NPR.DLO.DLOOSN.dlogdn		3	година на свързаното дело
+	871	NPR.DLO.DLOOSN.dlonmr		3	номер на свързаното дело
+	871	.resSid				3	2056
+
+Образуване на съдебно производство при трансфер от друга държава (22)
+
+	14130	sbevid				3	14130
+	14130	sbedkpvid			3	649; = решение, според приложенията е 644 = определение
+	14130	sbedkpnmr			5	номер на съдебния акт
+	14130	sbedkpdta			7	дата на образуване/регистриране на делото
+	14130	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	14130	SBH				3
+	14130	SBH.sbhvid			3	14133
+	14130	SBH.sbhstn			7	държава, от която се приема НП
+	14130	NPR				3
+	14130	NPR.nprnmr			3	ЕИСПП номер на НП
+	14130	NPR.nprstr			1	ЕИСПП код на текущия съд, ако НП започва в съда
+	14130	NPR.nprdta			1	дата на образуване на делото, ако НП започва в съда
+	14130	NPR.nprdrj			1	България (8805), ако НП започва в съда
+	14130	NPR.DLO				3
+	14130	NPR.DLO.dlovid			3	853
+	14130	NPR.DLO.dlosig			3	реално е ЧНД; 1002; ЕИСПП код на точен вид дело (НОХД)
+	14130	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	14130	NPR.DLO.dlogdn			3	година на делото
+	14130	NPR.DLO.dlonmr			3	номер на делото
+	14130	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682
+	14130	NPR.DLO.dlosprvid		5	14119, 1025; всъщност 14120, грешка на МВС/НСлС
+	14130	NPR.DLO.FZL			7	много
+	14130	NPR.DLO.FZL.*			5
+	14130	NPR.DLO.PNE			7
+	14130	NPR.DLO.PNE.pnenmr		7	ЕИСПП номер на престъпление
+	14130	NPR.DLO.PNE.*			5
+	14130	NPR.DLO.PNE.PNESTA.*		5
+	14130	NPR.DLO.PNE.ADR.adrtip		3	635; местопрестъпление
+	14130	NPR.DLO.PNE.ADR.adrdrj		5
+	14130	NPR.DLO.PNE.ADR.adrnsmbgr	5
+	14130	NPR.DLO.PNE.ADR.adrnsmchj	5
+	14130	NPR.DLO.PNE.ADR.adrrjn		5
+	14130	NPR.DLO.PNE.ADR.adrpstkod	5
+	14130	NPR.DLO.PNE.ADR.adrkrdtxt	5
+	14130	NPR.DLO.PNE.ADR.adrnmr		5
+	14130	NPR.DLO.PNE.ADR.adrblk		5
+	14130	NPR.DLO.PNE.ADR.adrvhd		5
+	14130	NPR.DLO.PNE.ADR.adretj		5
+	14130	NPR.DLO.PNE.ADR.adrapr		5
+	14130	NPR.DLO.PNE.ADR.adrmstvid	5
+	14130	NPR.DLO.PNE.ADR.adrmsttxt	5
+	14130	NPR.DLO.PNE.ADR.adrkodpdl	5
+	14130	NPR.DLO.PNE.ADR.adrloc		7
+	14130	NPR.DLO.NPRFZLPNE		7	много
+	14130	NPR.DLO.NPRFZLPNE.SCQ		3
+	14130	NPR.DLO.NPRFZLPNE.SCQ.scqvid	3	987
+	14130	NPR.DLO.NPRFZLPNE.SCQ.scqstv	1
+	14130	NPR.DLO.NPRFZLPNE.SCQ.scqstr	3	-1; ЕИСПП код на текущия съд
+	14130	NPR.DLO.NPRFZLPNE.SCQ.scqdta	1
+	14130	NPR.DLO.NPRFZLPNE.SCQ.scqrlq	7	846...848, 851, 852
+	14130	NPR.DLO.NPRFZLPNE.SBC.sbcrcd	5	1587...1591; SBC не се изпращат, но могат да се попълват
+	14130	NPR.DLO.NPRFZLPNE.SBC.sbcple	5	1575...1578
+	14130	NPR.DLO.NPRFZLPNE.SBC.sbcspj	5
+	14130	NPR.DLO.NPRFZLPNE.SBC.sbcobr	5
+	14130	NPR.DLO.NPRFZLPNE.SBC.sbctrd	5
+	14130	NPR.DLO.NPRFZLPNE.SBC.sbcznq	5
+	14130	NPR.DLO.NPRFZLPNE.SBC.sbcetn	5
+	14130	NPR.DLO.NPRFZLPNE.SBC.sbcrge	5
+	14130	.resSid				3	14132
+	14130	.sbhvid				3	8619
+
+Определяне на подсъдност (23)
+
+	870	sbevid				3	870
+	870	sbedkpvid			3	644; вид на съответния съдебен акт
+	870	sbedkpnmr			5	номер на съдебния акт
+	870	sbedkpdta			3	дата на съдебния акт
+	870	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	870	SBH				3
+	870	SBH.sbhvid			3	970
+	870	SBH.sbhstn			7	съд, на който става подсъдно делото (стандарт 42)
+	870	NPR				3
+	870	NPR.nprnmr			3	ЕИСПП номер на НП
+	870	NPR.DLO				3
+	870	NPR.DLO.dlovid			3	853
+	870	NPR.DLO.dlosig			3	999...1002, 1008...1010, 1900001685
+	870	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	870	NPR.DLO.dlogdn			3	година на делото
+	870	NPR.DLO.dlonmr			3	номер на делото
+	870	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682
+	870	NPR.DLO.dlosprvid		3	1018, 1023, 1025
+	870	NPR.DLO.DLOOSN			3
+	870	NPR.DLO.DLOOSN.dlostr		3	структура/съд, изпратил делото за определяне на подсъдност
+	870	NPR.DLO.DLOOSN.dlovid		3	853
+	870	NPR.DLO.DLOOSN.dlosig		3	999, 1001, 1002, 1009, 1010
+	870	NPR.DLO.DLOOSN.dlogdn		3	година на делото, чиято подсъдност се определя
+	870	NPR.DLO.DLOOSN.dlonmr		3	номер на делото, чиято подсъдност се определя
+	870	.sbhvid				3	1103
+
+Отказ за признаване и изпълнение на присъда на чуждестранен съд (25)
+
+	14128	sbevid				3	14128
+	14128	sbedkpvid			3	644, 649; вид на съответния съдебен акт
+	14128	sbedkpnmr			5	номер на съдебния акт
+	14128	sbedkpdta			3	дата на съдебния акт
+	14128	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	14128	SBH				3
+	14128	SBH.sbhvid			3	14133
+	14128	SBH.sbhstn			7	държава, от която се приема НП
+	14128	NPR				3
+	14128	NPR.nprnmr			3	ЕИСПП номер на НП
+	14128	NPR.DLO				3
+	14128	NPR.DLO.dlovid			3	853
+	14128	NPR.DLO.dlosig			3	1000, 1008; ЕИСПП код на точен вид дело
+	14128	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	14128	NPR.DLO.dlogdn			3	година на делото
+	14128	NPR.DLO.dlonmr			3	номер на делото
+	14128	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682
+	14128	NPR.DLO.dlosprvid		3	14119, 1025
+	14128	NPR.DLO.FZL			3
+	14128	.sbhvid				3	8619
+
+Отказ на искане за реабилитация (26)
+
+	14118	sbevid				3	14118
+	14118	sbedkpvid			3	644; вид на съответния съдебен акт
+	14118	sbedkpnmr			5	номер на съдебния акт
+	14118	sbedkpdta			3	дата на съдебния акт
+	14118	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	14118	SRK				3
+	14118	SRK.srkvid			3	1029 срок за обжалване
+	14118	SRK.srkden			5	поне едно от полетата е задължително
+	14118	SRK.srksdc			5	-''-
+	14118	SRK.srkmsc			5	-''-
+	14118	SRK.srkgdn			5	-''-
+	14118	SRK.srkdta			7	начална дата на срока
+	14118	NPR				3
+	14118	NPR.nprnmr			3	ЕИСПП номер на НП
+	14118	NPR.DLO				3
+	14118	NPR.DLO.dlovid			3	853
+	14118	NPR.DLO.dlosig			3	1000, 1008; ЕИСПП код на точен вид дело (ЧНД, ВЧНД)
+	14118	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	14118	NPR.DLO.dlogdn			3	година на делото
+	14118	NPR.DLO.dlonmr			3	номер на делото
+	14118	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682
+	14118	NPR.DLO.dlosprvid		3	1019, 1026, 1025; ПИС - особени производства, ВЗИ - проверка на -''-
+	14118	NPR.DLO.FZL			3
+
+Отказ на предложението за отмяна зачитането на работните дни (27)
+
+	955	sbevid				3	955
+	955	sbedkpvid			3	644, 646, 648, 649; вид на съответния съдебен акт
+	955	sbedkpnmr			5	номер на съдебния акт
+	955	sbedkpdta			3	дата на съдебния акт
+	955	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	955	SRK				3
+	955	SRK.srkvid			3	1029; срок за обжалване
+	955	SRK.srkden			5
+	955	SRK.srksdc			5
+	955	SRK.srkmsc			5
+	955	SRK.srkgdn			5
+	955	SRK.srkdta			3	дата на заседание/съдебен акт - начална дата на срока
+	955	NPR				3
+	955	NPR.nprnmr			3	ЕИСПП номер на НП. При НЧХД се генерира от СУСД
+	955	NPR.DLO				3
+	955	NPR.DLO.dlovid			3	853
+	955	NPR.DLO.dlosig			3	1000, 1008; ЕИСПП код на точен вид дело (ЧНД, ВЧНД)
+	955	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	955	NPR.DLO.dlogdn			3	година на делото
+	955	NPR.DLO.dlonmr			3	номер на делото
+	955	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682
+	955	NPR.DLO.dlosprvid		3	1017, 1024, 1025; ПИС - изпълнение на наказания, ВЗИ - проверка на -''-
+	955	NPR.DLO.FZL			3
+
+Отказ от вземане на мярка за процесуална принуда (28)
+
+	877	sbevid				3	877
+	877	sbedkpvid			3	644, 648, 649; вид на съответния съдебен акт
+	877	sbedkpnmr			5	номер на съдебния акт
+	877	sbedkpdta			3	дата на съдебния акт
+	877	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	877	SRK				3
+	877	SRK.srkvid			3	1029; срок за обжалване
+	877	SRK.srkden			5
+	877	SRK.srksdc			5
+	877	SRK.srkmsc			5
+	877	SRK.srkgdn			5
+	877	SRK.srkdta			3	дата на заседание/съдебен акт - начална дата на срока
+	877	NPR				3
+	877	NPR.nprnmr			3	ЕИСПП номер на НП
+	877	NPR.DLO				3
+	877	NPR.DLO.dlovid			3	853
+	877	NPR.DLO.dlosig			3	1000, 1008; 2014:272 +1008
+	877	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	877	NPR.DLO.dlogdn			3	година на делото
+	877	NPR.DLO.dlonmr			3	номер на делото
+	877	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682
+	877	NPR.DLO.dlosprvid		3	1014, 1016; 2014:272 +1016
+	877	NPR.DLO.FZL			3
+	877	NPR.DLO.FZL.MPP			3
+	877	NPR.DLO.FZL.MPP.mppvid		7	708...719, 14084
+	877	NPR.DLO.FZL.MPP.mpprzm		7	въвежда се от потребителя при vid парична гаранция, или 0
+	877	NPR.DLO.FZL.MPP.mppste		3	1115; отказана
+	877	NPR.DLO.FZL.MPP.mppdta		3	дата на заседание/съдебен акт
+	877	NPR.DLO.FZL.MPP.mppstr		3	-1; ЕИСПП код на текущия съд
+
+Отказ от заменяване режима на изтърпяване на наказанието лишаване от свобода (30)
+
+	962	sbevid				3	962
+	962	sbedkpvid			3	644, 649; вид на съответния съдебен акт
+	962	sbedkpnmr			5	номер на съдебния акт
+	962	sbedkpdta			3	дата на съдебния акт
+	962	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	962	SRK				3
+	962	SRK.srkvid			3	1029; срок за обжалване
+	962	SRK.srkden			5
+	962	SRK.srksdc			5
+	962	SRK.srkmsc			5
+	962	SRK.srkgdn			5
+	962	SRK.srkdta			3	дата на заседание/съдебен акт - начална дата на срока
+	962	NPR				3
+	962	NPR.nprnmr			3	ЕИСПП номер на НП
+	962	NPR.DLO				3
+	962	NPR.DLO.dlovid			3	853
+	962	NPR.DLO.dlosig			3	1000; ЧНД
+	962	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	962	NPR.DLO.dlogdn			3	година на делото
+	962	NPR.DLO.dlonmr			3	номер на делото
+	962	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682
+	962	NPR.DLO.dlosprvid		3	1017; ПИС - изпълнение на наказания
+	962	NPR.DLO.FZL			3
+
+Отказ от замяна на наказанието доживотен затвор (31)
+
+	885	sbevid				3	885
+	885	sbedkpvid			3	644, 649; вид на съответния съдебен акт
+	885	sbedkpnmr			5	номер на съдебния акт
+	885	sbedkpdta			3	дата на съдебния акт
+	885	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	885	SRK				3
+	885	SRK.srkvid			3	1029; срок за обжалване
+	885	SRK.srkden			5
+	885	SRK.srksdc			5
+	885	SRK.srkmsc			5
+	885	SRK.srkgdn			5
+	885	SRK.srkdta			3	дата на заседание/съдебен акт - начална дата на срока
+	885	NPR				3
+	885	NPR.nprnmr			3	ЕИСПП номер на НП
+	885	NPR.DLO				3
+	885	NPR.DLO.dlovid			3	853
+	885	NPR.DLO.dlosig			3	1000; ЧНД
+	885	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	885	NPR.DLO.dlogdn			3	година на делото
+	885	NPR.DLO.dlonmr			3	номер на делото
+	885	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682
+	885	NPR.DLO.dlosprvid		3	1017; ПИС - изпълнение на наказания
+	885	NPR.DLO.FZL			3
+
+Отказ от предсрочно освобождаване (32)
+
+	883	sbevid				3	883
+	883	sbedkpvid			3	644, 649; вид на съответния съдебен акт
+	883	sbedkpnmr			5	номер на съдебния акт
+	883	sbedkpdta			3	дата на съдебния акт
+	883	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	883	NPR				3
+	883	NPR.nprnmr			3	ЕИСПП номер на НП
+	883	NPR.DLO				3
+	883	NPR.DLO.dlovid			3	853
+	883	NPR.DLO.dlosig			3	1000; ЧНД
+	883	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	883	NPR.DLO.dlogdn			3	година на делото
+	883	NPR.DLO.dlonmr			3	номер на делото
+	883	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682; определя се по вътрешна логика
+	883	NPR.DLO.dlosprvid		3	1017; ПИС - изпълнение на наказания
+	883	NPR.DLO.FZL			3
+
+Отказ от прилагане на принудителни медицински мерки (35)
+
+	880	sbevid				3	880
+	880	sbedkpvid			3
+	880	sbedkpnmr			5	номер на съдебния акт
+	880	sbedkpdta			3	дата на съдебния акт
+	880	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	880	SRK				3
+	880	SRK.srkvid			3	1029; срок за обжалване
+	880	SRK.srkden			5
+	880	SRK.srksdc			5
+	880	SRK.srkmsc			5
+	880	SRK.srkgdn			5
+	880	SRK.srkdta			3	дата на заседание/съдебен акт - начална дата на срока
+	880	NPR				3
+	880	NPR.nprnmr			3	ЕИСПП номер на НП
+	880	NPR.DLO				3
+	880	NPR.DLO.dlovid			3	853
+	880	NPR.DLO.dlosig			3	1000; ЧНД
+	880	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	880	NPR.DLO.dlogdn			3	година на делото
+	880	NPR.DLO.dlonmr			3	номер на делото
+	880	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682; определя се по вътрешна логика
+	880	NPR.DLO.dlosprvid		3	1019; ПИС - особени производства
+	880	NPR.DLO.FZL			3
+
+Отказ от разрешаване на временно напускане на РБ (36)
+
+	961	sbevid				3	961
+	961	sbedkpvid			3	644, 649; вид на съответния съдебен акт
+	961	sbedkpnmr			5	номер на съдебния акт
+	961	sbedkpdta			3	дата на съдебния акт
+	961	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	961	NPR				3
+	961	NPR.nprnmr			3	ЕИСПП номер на НП
+	961	NPR.DLO				3
+	961	NPR.DLO.dlovid			3	853
+	961	NPR.DLO.dlosig			3	1000; ЧНД
+	961	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	961	NPR.DLO.dlogdn			3	година на делото
+	961	NPR.DLO.dlonmr			3	номер на делото
+	961	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682
+	961	NPR.DLO.dlosprvid		3	1014; ПИС - Съдебен контрол на досъдебното производство
+	961	NPR.DLO.FZL			3
+
+Отменяне на мярка за процесуална принуда (38)
+
+	888	sbevid				3	888
+	888	sbedkpvid			3	644, 646, 648, 649; вид на съответния съдебен акт; 2014:163 +646
+	888	sbedkpnmr			5	номер на съдебния акт
+	888	sbedkpdta			3	дата на съдебния акт
+	888	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	888	NPR				3
+	888	NPR.nprnmr			3	ЕИСПП номер на НП
+	888	NPR.DLO				3
+	888	NPR.DLO.dlovid			3	853
+	888	NPR.DLO.dlosig			3	997...1002, 1008...1010, 1900001638...1900001640, 1900001685
+	888	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	888	NPR.DLO.dlogdn			3	година на делото
+	888	NPR.DLO.dlonmr			3	номер на делото
+	888	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682
+	888	NPR.DLO.dlosprvid		3	1014...1016, 1018, 1021, 1025, 1900001637
+	888	NPR.DLO.FZL			3
+	888	NPR.DLO.FZL.MPP			3
+	888	NPR.DLO.FZL.MPP.mppvid		5	708...719, 14084
+	888	NPR.DLO.FZL.MPP.mpprzm		7	въвежда се от потребителя при vid парична гаранция, или 0
+	888	NPR.DLO.FZL.MPP.mppste		3	1116; отменена
+	888	NPR.DLO.FZL.MPP.mppdta		3	дата на съдебния акт
+	888	NPR.DLO.FZL.MPP.mppstr		3	-1; ЕИСПП код на текущия съд
+
+Отменяне на предсрочно освобождаване (39)
+
+	893	sbevid				3	893
+	893	sbedkpvid			3	644, 646, 648, 649; вид на съответния съдебен акт
+	893	sbedkpnmr			5	номер на съдебния акт
+	893	sbedkpdta			3	дата на съдебния акт
+	893	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	893	NPR				3
+	893	NPR.nprnmr			3	ЕИСПП номер на НП
+	893	NPR.DLO				3
+	893	NPR.DLO.dlovid			3	853
+	893	NPR.DLO.dlosig			3	1008; ЕИСПП код на точен вид дело
+	893	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	893	NPR.DLO.dlogdn			3	година на делото
+	893	NPR.DLO.dlonmr			3	номер на делото
+	893	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682; определя се по вътрешна логика
+	893	NPR.DLO.dlosprvid		3	1024, 1025; ВЗИ - проверка на изпълнение на наказанията
+	893	NPR.DLO.FZL			3
+	893	NPR.DLO.FZL.NKZ			3
+	893	NPR.DLO.FZL.NKZ.nkztip		3	721
+	893	NPR.DLO.FZL.NKZ.nkzvid		7	654, 655, 670, 699...705, 798, 799, 1140, 14344
+	893	NPR.DLO.FZL.NKZ.nkzstr		3	-1; или се въвежда
+	893	NPR.DLO.FZL.NKZ.nkzrzm		7	въвежда се от потребителя за наказание "Глоба", в противен случай 0
+	893	NPR.DLO.FZL.NKZ.nkzden		5	поне едно от полетата при nkzvid = лишаване от свобода
+	893	NPR.DLO.FZL.NKZ.nkzsdc		5	-''-
+	893	NPR.DLO.FZL.NKZ.nkzmsc		5	-''-
+	893	NPR.DLO.FZL.NKZ.nkzgdn		5	-''-
+	893	NPR.DLO.FZL.NKZ.nkzncn		3	789
+	893	NPR.DLO.FZL.NKZ.iptsrkden	5	поне едно от полетата при nkzncn = "условно осъждане"
+	893	NPR.DLO.FZL.NKZ.iptsrksdc	5	-''-
+	893	NPR.DLO.FZL.NKZ.iptsrkmsc	5	-''-
+	893	NPR.DLO.FZL.NKZ.iptsrkgdn	5	-''-
+	893	NPR.DLO.FZL.NKZ.iptsrkdta	5	задължителна при nkzncn = "условно осъждане"
+	893	NPR.DLO.FZL.NKZ.nkzrjm		5	; 842...845; режим на изтърпяване; 2014:182 всички
+	893	NPR.DLO.FZL.NKZ.nkzakt		3	1117
+	893	NPR.DLO.FZL.NKZ.nkzaktdta	7	дата на съдебния акт (дата на заседание/съдебен акт)
+
+Отменяне на принудителни медицински мерки (40)
+
+	891	sbevid				3	891
+	891	sbedkpvid			3	644; вид на съответния съдебен акт
+	891	sbedkpnmr			5	номер на съдебния акт
+	891	sbedkpdta			3	дата на съдебния акт
+	891	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	891	NPR				3
+	891	NPR.nprnmr			3	ЕИСПП номер на НП
+	891	NPR.DLO				3
+	891	NPR.DLO.dlovid			3	853
+	891	NPR.DLO.dlosig			3	1008; ВЧНД
+	891	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	891	NPR.DLO.dlogdn			3	година на делото
+	891	NPR.DLO.dlonmr			3	номер на делото
+	891	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682
+	891	NPR.DLO.dlosprvid		3	1026, 1025; ВЗИ - проверка на особени производства
+	891	NPR.DLO.FZL			3
+
+Отменяне на първоинстанционна присъда и постановяване на нова присъда (42)
+
+	950	sbevid				3	950
+	950	sbedkpvid			3
+	950	sbedkpnmr			5	номер на съдебния акт
+	950	sbedkpdta			3	дата на съдебния акт
+	950	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	950	SBH				3
+	950	SBH.sbhvid			3	971
+	950	SBH.sbhstn			7	824, 825; определя се по вътрешна логика
+	950	SRK				3
+	950	SRK.srkvid			3	1029; срок за обжалване
+	950	SRK.srkden			5
+	950	SRK.srksdc			5
+	950	SRK.srkmsc			5
+	950	SRK.srkgdn			5
+	950	SRK.srkdta			3	начална дата на срока - дата на заседание/съдебен акт?
+	950	NPR				3
+	950	NPR.nprnmr			3	ЕИСПП номер на НП
+	950	NPR.DLO				3
+	950	NPR.DLO.dlovid			3	853
+	950	NPR.DLO.dlosig			3	1009, 1010, 1900001685; ВНЧХД, ВНОХД, ВНАХД
+	950	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	950	NPR.DLO.dlogdn			3	година на делото
+	950	NPR.DLO.dlonmr			3	номер на делото
+	950	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682; определя се по вътрешна логика
+	950	NPR.DLO.dlosprvid		3	1025; ВЗИ - Въззивно производство по наказателни дела
+	950	NPR.DLO.FZL			3
+	950	NPR.DLO.FZL.NKZ			1	задължителни само когато тип присъда = "осъдителна"
+	950	NPR.DLO.FZL.NKZ.nkztip		7	721, 745
+	950	NPR.DLO.FZL.NKZ.nkzvid		7	654, 655, 670, 699, 700, 702...705, 721, 745, 798, 799, 12070, 14344
+	950	NPR.DLO.FZL.NKZ.nkzstr		3	-1; или се въвежда
+	950	NPR.DLO.FZL.NKZ.nkzrzm		7	въвежда се от потребителя за наказание "Глоба", в противен случай 0
+	950	NPR.DLO.FZL.NKZ.nkzden		5	поне едно от полетата при nkzvid = лишаване от свобода
+	950	NPR.DLO.FZL.NKZ.nkzsdc		5	-''-
+	950	NPR.DLO.FZL.NKZ.nkzmsc		5	-''-
+	950	NPR.DLO.FZL.NKZ.nkzgdn		5	-''-
+	950	NPR.DLO.FZL.NKZ.nkzncn		7	763, 764
+	950	NPR.DLO.FZL.NKZ.iptsrkden	5	поне едно от полетата при nkzncn = "условно осъждане"
+	950	NPR.DLO.FZL.NKZ.iptsrksdc	5	-''-
+	950	NPR.DLO.FZL.NKZ.iptsrkmsc	5	-''-
+	950	NPR.DLO.FZL.NKZ.iptsrkgdn	5	-''-
+	950	NPR.DLO.FZL.NKZ.iptsrkdta	5	задължителна при nkzncn = "условно осъждане"
+	950	NPR.DLO.FZL.NKZ.nkzrjm		5	; 842...845; режим на изтърпяване; 2014:182 всички
+	950	NPR.DLO.FZL.NKZ.nkzakt		7	1106, 1108, 1117, 1118, 1127
+	950	NPR.DLO.FZL.NKZ.nkzaktdta	7
+	950	NPR.DLO.PNE			3	много
+	950	NPR.DLO.PNE.pnenmr		3	ЕИСПП номер на престъпление
+	950	NPR.DLO.PNE.PNESTA.*		1
+	950	NPR.DLO.NPRFZLPNE		3	много
+	950	NPR.DLO.NPRFZLPNE.SCQ		3
+	950	NPR.DLO.NPRFZLPNE.SCQ.scqvid	7	978, 979
+	950	NPR.DLO.NPRFZLPNE.SCQ.scqstv	1
+	950	NPR.DLO.NPRFZLPNE.SCQ.scqstr	3	-1; ЕИСПП код на текущия съд
+	950	NPR.DLO.NPRFZLPNE.SCQ.scqdta	1	дата на съдебния акт
+	950	NPR.DLO.NPRFZLPNE.SCQ.scqrlq	7	846...848, 851, 852
+	950	NPR.DLO.NPRFZLPNE.SCQ.NKZPNE	1	задължителни само когато scqvid=”осъжда”
+	950	NPR.DLO.NPRFZLPNE.SBC		1
+	950	NPR.DLO.NPRFZLPNE.SBC.sbcrcd	5	1587...1591
+	950	NPR.DLO.NPRFZLPNE.SBC.sbcple	5	1575...1578
+	950	NPR.DLO.NPRFZLPNE.SBC.sbcspj	5	въвежда се от потребителя
+	950	NPR.DLO.NPRFZLPNE.SBC.sbcobr	5	въвежда се от потребителя
+	950	NPR.DLO.NPRFZLPNE.SBC.sbctrd	5	въвежда се от потребителя
+	950	NPR.DLO.NPRFZLPNE.SBC.sbcznq	5	въвежда се от потребителя
+	950	NPR.DLO.NPRFZLPNE.SBC.sbcetn	5	въвежда се от потребителя
+	950	NPR.DLO.NPRFZLPNE.SBC.sbcrge	5	въвежда се от потребителя
+	950	NPR.DLO.NPRFZLPNE.NPL		1
+	950	NPR.DLO.NPRFZLPNE.NPL.*		7	въвежда се от потребителя
+	950	NPR.DLO.NPRFZLPNE.VSL		1
+	950	NPR.DLO.NPRFZLPNE.VSL.vslpdl	5	въвежда се от потребителя
+	950	NPR.DLO.NPRFZLPNE.VSL.vsldlj	5	въвежда се от потребителя
+	950	NPR.DLO.NPRFZLPNE.VSL.vslzvn	7	въвежда се от потребителя
+	950	NPR.DLO.NPRFZLPNE.VSL.vslktg	7	въвежда се от потребителя
+	950	.sbhvid				3	231
+
+Отменяне на първоинстанционна присъда (43)
+
+	890	sbevid				3	890
+	890	sbedkpvid			3	649; Решение
+	890	sbedkpnmr			5	номер на съдебния акт
+	890	sbedkpdta			3	дата на съдебния акт
+	890	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	890	SBH				3
+	890	SBH.sbhvid			3	971
+	890	SBH.sbhstn			7	824, 825; определя се по вътрешна логика
+	890	NPR				3
+	890	NPR.nprnmr			3	ЕИСПП номер на НП
+	890	NPR.DLO				3
+	890	NPR.DLO.dlovid			3	853
+	890	NPR.DLO.dlosig			3	997, 1009, 1010, 1900001638...1900001640, 1900001685
+	890	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	890	NPR.DLO.dlogdn			3	година на делото
+	890	NPR.DLO.dlonmr			3	номер на делото
+	890	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682; определя се по вътрешна логика
+	890	NPR.DLO.dlosprvid		3	1023, 1025, 1900001637; определя се по вътрешна логика
+	890	NPR.DLO.FZL			3
+	890	NPR.DLO.FZL.NKZ			3	задължителни винаги според Декстро
+	890	NPR.DLO.FZL.NKZ.nkztip		7	721, 745
+	890	NPR.DLO.FZL.NKZ.nkzvid		7	654, 655, 670, 699, 700, 702...705, 798, 799, 12070, 14344
+	890	NPR.DLO.FZL.NKZ.nkzstr		3	-1; или се въвежда
+	890	NPR.DLO.FZL.NKZ.nkzrzm		7	въвежда се от потребителя за наказание "Глоба", в противен случай 0
+	890	NPR.DLO.FZL.NKZ.nkzden		5	поне едно от полетата при nkzvid = лишаване от свобода
+	890	NPR.DLO.FZL.NKZ.nkzsdc		5	-''-
+	890	NPR.DLO.FZL.NKZ.nkzmsc		5	-''-
+	890	NPR.DLO.FZL.NKZ.nkzgdn		5	-''-
+	890	NPR.DLO.FZL.NKZ.nkzncn		7	763, 764, 15349
+	890	NPR.DLO.FZL.NKZ.iptsrkden	5	поне едно от полетата при nkzncn = "условно осъждане"
+	890	NPR.DLO.FZL.NKZ.iptsrksdc	5	-''-
+	890	NPR.DLO.FZL.NKZ.iptsrkmsc	5	-''-
+	890	NPR.DLO.FZL.NKZ.iptsrkgdn	5	-''-
+	890	NPR.DLO.FZL.NKZ.iptsrkdta	5	задължителна при nkzncn = "условно осъждане"
+	890	NPR.DLO.FZL.NKZ.nkzrjm		5	; 842...845; режим на изтърпяване; 2014:182 всички
+	890	NPR.DLO.FZL.NKZ.nkzakt		7	1106, 1108, 1117, 1118, 1127
+	890	NPR.DLO.FZL.NKZ.nkzaktdta	7
+	890	NPR.DLO.PNE			3	много
+	890	NPR.DLO.PNE.pnenmr		3	ЕИСПП номер на престъпление
+	890	NPR.DLO.PNE.PNESTA.*		1
+	890	NPR.DLO.NPRFZLPNE		3	много
+	890	NPR.DLO.NPRFZLPNE.SCQ		3
+	890	NPR.DLO.NPRFZLPNE.SCQ.scqvid	7	983, 1180
+	890	NPR.DLO.NPRFZLPNE.SCQ.scqstv	1
+	890	NPR.DLO.NPRFZLPNE.SCQ.scqstr	3	-1; ЕИСПП код на текущия съд
+	890	NPR.DLO.NPRFZLPNE.SCQ.scqdta	1	дата на съдебния акт
+	890	NPR.DLO.NPRFZLPNE.SCQ.scqrlq	7	846...848, 851, 852
+	890	NPR.DLO.NPRFZLPNE.SCQ.NKZPNE	1	задължителни само когато scqvid=”осъжда”, винаги според Декстро
+	890	NPR.DLO.NPRFZLPNE.SBC		1	при наличие на данни!
+	890	NPR.DLO.NPRFZLPNE.SBC.sbcrcd	5	1587...1591
+	890	NPR.DLO.NPRFZLPNE.SBC.sbcple	5	1575...1578
+	890	NPR.DLO.NPRFZLPNE.SBC.sbcspj	5
+	890	NPR.DLO.NPRFZLPNE.SBC.sbcobr	5
+	890	NPR.DLO.NPRFZLPNE.SBC.sbctrd	5
+	890	NPR.DLO.NPRFZLPNE.SBC.sbcznq	5
+	890	NPR.DLO.NPRFZLPNE.SBC.sbcetn	5
+	890	NPR.DLO.NPRFZLPNE.SBC.sbcrge	5
+	890	NPR.DLO.NPRFZLPNE.NPL		1	при наличие на данни!
+	890	NPR.DLO.NPRFZLPNE.NPL.*		3
+	890	NPR.DLO.NPRFZLPNE.VSL		1	при наличие на данни!
+	890	NPR.DLO.NPRFZLPNE.VSL.vslpdl	1
+	890	NPR.DLO.NPRFZLPNE.VSL.vsldlj	1
+	890	NPR.DLO.NPRFZLPNE.VSL.vslzvn	3
+	890	NPR.DLO.NPRFZLPNE.VSL.vslktg	3
+	890	.sbhvid				3	231
+
+Отмяна зачитането на работните дни (45)
+
+	896	sbevid				3	896
+	896	sbedkpvid			3	644, 646, 648, 649; вид на съответния съдебен акт
+	896	sbedkpnmr			5	номер на съдебния акт
+	896	sbedkpdta			3	дата на съдебния акт
+	896	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	896	SRK				3
+	896	SRK.srkvid			3	1029; срок за обжалване
+	896	SRK.srkden			5
+	896	SRK.srksdc			5
+	896	SRK.srkmsc			5
+	896	SRK.srkgdn			5
+	896	SRK.srkdta			3	дата на заседание/съдебен акт - начална дата на срока
+	896	NPR				3
+	896	NPR.nprnmr			3	ЕИСПП номер на НП
+	896	NPR.DLO				3
+	896	NPR.DLO.dlovid			3	853
+	896	NPR.DLO.dlosig			3	1000, 1008; ЕИСПП код на точен вид дело
+	896	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	896	NPR.DLO.dlogdn			3	година на делото
+	896	NPR.DLO.dlonmr			3	номер на делото
+	896	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682
+	896	NPR.DLO.dlosprvid		3	1017, 1024, 1025; ПИС - изпълнение на наказанията, ВЗИ - контрол на -''-
+	896	NPR.DLO.FZL			3
+
+Повдигане на спор за подсъдност пред ВКС (46)
+
+	941	sbevid				3	941
+	941	sbedkpvid			3	644, 646, 648, 649; вид на съответния съдебен акт
+	941	sbedkpnmr			5	номер на съдебния акт
+	941	sbedkpdta			3	дата на съдебния акт
+	941	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	941	NPR				3
+	941	NPR.nprnmr			3	ЕИСПП номер на НП
+	941	NPR.DLO				3
+	941	NPR.DLO.dlovid			3	853
+	941	NPR.DLO.dlosig			3	999, 1001, 1002, 1009, 1010; (НАХД, НЧХД, НОХД, ВНЧХД, ВНОХД)
+	941	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	941	NPR.DLO.dlogdn			3	година на делото
+	941	NPR.DLO.dlonmr			3	номер на делото
+	941	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682
+	941	NPR.DLO.dlosprvid		3	1018, 1025; ПИС - наказателни дела, ВЗИ - наказателни дела
+
+Получаване на дело (47)
+
+	913	sbevid				3	913
+	913	sbedkpdta			3	дата - от T_REQUEST
+	913	sbedkpstr			3	-1; ЕИСПП код на текущия съд (структура, която получава делото)
+	913	DVJDLO				3
+	913	DVJDLO.dvjvid			3	660
+	913	DVJDLO.dvjdta			7	дата на изпращане/получаване на делото - от T_REQUEST? или днешна?
+	913	DVJDLO.dvjstripr		3	ЕИСПП код на изпращащата структура - от T_CONNECT/T_OUTREG
+	913	DVJDLO.dvjstrplc		3	-1; ЕИСПП код на текущия съд (структура, която получава делото)
+	913	DVJDLO.dvjprc			5	причина за движение, от nmk_dvjprc; 2014:163 was 7
+	913	DVJDLO.dvjdlodvn		1	деловоден номер да делото - (от T_CONNECT) няма смисъл без годината
+	913	DVJDLO.dvjdloopi		1	няма да изпращаме
+	913	NPR				3
+	913	NPR.nprnmr			3	ЕИСПП номер на НП
+	913	NPR.DLO				3
+	913	NPR.DLO.dlovid			3	от T_CONNECT; 853 съдебно дело
+	913	NPR.DLO.dlosig			1	от T_CONNECT; 997...1002, 1008...1010, 1900001685
+	913	NPR.DLO.dlostr			1	от T_CONNECT
+	913	NPR.DLO.dlogdn			3	от T_CONNECT
+	913	NPR.DLO.dlonmr			3	от T_CONNECT
+	913	NPR.DLO.dloncnone		1	722, 723, 728...730, 1900001682; според Декстро не е задължителен
+	913	.resSid				3	2028
+
+Постановяване на първоинстанционна присъда (48)
+
+	901	sbevid				3	901
+	901	sbedkpvid			3	644, 646, 649; вид на съответния съдебен акт
+	901	sbedkpnmr			5	номер на съдебния акт
+	901	sbedkpdta			3	дата на съдебния акт
+	901	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	901	SBH				3
+	901	SBH.sbhvid			3	971; тип на присъда
+	901	SBH.sbhstn			7	824, 825; оправдателна, осъдителна
+	901	SRK				3
+	901	SRK.srkvid			3	1029; срок за обжалване
+	901	SRK.srkden			5
+	901	SRK.srksdc			5
+	901	SRK.srkmsc			5
+	901	SRK.srkgdn			5
+	901	SRK.srkdta			5	начална дата на срока, подразбира се датата на заседанието/акта
+	901	NPR				3
+	901	NPR.nprnmr			3	ЕИСПП номер на НП
+	901	NPR.DLO				3
+	901	NPR.DLO.dlovid			3	853
+	901	NPR.DLO.dlosig			3	999, 1001, 1002; НАХД, НЧХД, НОХД
+	901	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	901	NPR.DLO.dlogdn			3	година на делото
+	901	NPR.DLO.dlonmr			3	номер на делото
+	901	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682; определя се по вътрешна логика
+	901	NPR.DLO.dlosprvid		3	1018; Производство  на ПИС по наказателни дела
+	901	NPR.DLO.FZL			3
+	901	NPR.DLO.FZL.NKZ			1	задължителни само когато тип присъда = "осъдителна"
+	901	NPR.DLO.FZL.NKZ.nkztip		7	721, 745
+	901	NPR.DLO.FZL.NKZ.nkzvid		7	654, 655, 670, 699, 700, 702...705, 798, 799, 12070, 14344
+	901	NPR.DLO.FZL.NKZ.nkzstr		3	-1; или се въвежда
+	901	NPR.DLO.FZL.NKZ.nkzrzm		7	въвежда се от потребителя за наказание "Глоба", в противен случай 0
+	901	NPR.DLO.FZL.NKZ.nkzden		5	поне едно от полетата при nkzvid = лишаване от свобода
+	901	NPR.DLO.FZL.NKZ.nkzsdc		5	-''-
+	901	NPR.DLO.FZL.NKZ.nkzmsc		5	-''-
+	901	NPR.DLO.FZL.NKZ.nkzgdn		5	-''-
+	901	NPR.DLO.FZL.NKZ.nkzncn		7	763, 764
+	901	NPR.DLO.FZL.NKZ.iptsrkden	5	поне едно от полетата при nkzncn = "условно осъждане"
+	901	NPR.DLO.FZL.NKZ.iptsrksdc	5	-''-
+	901	NPR.DLO.FZL.NKZ.iptsrkmsc	5	-''-
+	901	NPR.DLO.FZL.NKZ.iptsrkgdn	5	-''-
+	901	NPR.DLO.FZL.NKZ.iptsrkdta	5	задължителна при nkzncn = "условно осъждане"
+	901	NPR.DLO.FZL.NKZ.nkzrjm		5	; 842...845; режим на изтърпяване; 2014:182 всички
+	901	NPR.DLO.FZL.NKZ.nkzakt		7	1106, 1108, 1117, 1118, 1127; въвежда се от потребителя
+	901	NPR.DLO.FZL.NKZ.nkzaktdta	7	въвежда се от потребителя
+	901	NPR.DLO.PNE			3	много
+	901	NPR.DLO.PNE.pnenmr		3	ЕИСПП номер на престъпление
+	901	NPR.DLO.PNE.PNESTA.*		1
+	901	NPR.DLO.NPRFZLPNE		1
+	901	NPR.DLO.NPRFZLPNE.SCQ		3
+	901	NPR.DLO.NPRFZLPNE.SCQ.scqvid	7	978, 979; определя се по вътрешна логика
+	901	NPR.DLO.NPRFZLPNE.SCQ.scqstv	1
+	901	NPR.DLO.NPRFZLPNE.SCQ.scqstr	3	-1; ЕИСПП код на текущия съд
+	901	NPR.DLO.NPRFZLPNE.SCQ.scqdta	1	не е задължителен, дата на съдебния акт
+	901	NPR.DLO.NPRFZLPNE.SCQ.scqrlq	7	846...848, 851, 852
+	901	NPR.DLO.NPRFZLPNE.SCQ.NKZPNE	1	задължителни само когато scqvid=”осъжда”
+	901	NPR.DLO.NPRFZLPNE.SBC		1
+	901	NPR.DLO.NPRFZLPNE.SBC.sbcrcd	5	1587...1591
+	901	NPR.DLO.NPRFZLPNE.SBC.sbcple	5	1575...1578
+	901	NPR.DLO.NPRFZLPNE.SBC.sbcspj	5	въвежда се от потребителя
+	901	NPR.DLO.NPRFZLPNE.SBC.sbcobr	5	въвежда се от потребителя
+	901	NPR.DLO.NPRFZLPNE.SBC.sbctrd	5	въвежда се от потребителя
+	901	NPR.DLO.NPRFZLPNE.SBC.sbcznq	5	въвежда се от потребителя
+	901	NPR.DLO.NPRFZLPNE.SBC.sbcetn	5	въвежда се от потребителя
+	901	NPR.DLO.NPRFZLPNE.SBC.sbcrge	5	въвежда се от потребителя
+	901	NPR.DLO.NPRFZLPNE.NPL		1
+	901	NPR.DLO.NPRFZLPNE.NPL.*		7	въвежда се от потребителя
+	901	NPR.DLO.NPRFZLPNE.VSL		1
+	901	NPR.DLO.NPRFZLPNE.VSL.vslpdl	5	въвежда се от потребителя
+	901	NPR.DLO.NPRFZLPNE.VSL.vsldlj	5	въвежда се от потребителя
+	901	NPR.DLO.NPRFZLPNE.VSL.vslzvn	7	въвежда се от потребителя
+	901	NPR.DLO.NPRFZLPNE.VSL.vslktg	7	въвежда се от потребителя
+	901	.sbhvid				3	231
+
+Потвърждаване на мярка за процесуална принуда (49)
+
+	926	sbevid				3	926
+	926	sbedkpvid			3	644, 648, 649; вид на съответния съдебен акт
+	926	sbedkpnmr			5	номер на съдебния акт
+	926	sbedkpdta			3	дата на съдебния акт
+	926	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	926	NPR				3
+	926	NPR.nprnmr			3	ЕИСПП номер на НП
+	926	NPR.DLO				3
+	926	NPR.DLO.dlovid			3	853
+	926	NPR.DLO.dlosig			3	997, 998, 1000, 1002, 1008...1010, 1900001638...1900001640, 1900001685
+	926	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	926	NPR.DLO.dlogdn			3	година на делото
+	926	NPR.DLO.dlonmr			3	номер на делото
+	926	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682
+	926	NPR.DLO.dlosprvid		3	1014...1016, 1018, 1021, 1025, 1900001637
+	926	NPR.DLO.FZL			3
+
+Потвърждаване на прекратяване на НП (50)
+
+	930	sbevid				3	930
+	930	sbedkpvid			3	; 644, 649; определение, постановление; 2015:016 New spec: всички
+	930	sbedkpnmr			5	номер на съдебния акт
+	930	sbedkpdta			3	дата на съдебния акт
+	930	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	930	NPR				3
+	930	NPR.nprnmr			3	ЕИСПП номер на НП
+	930	NPR.DLO				3
+	930	NPR.DLO.dlovid			3	853
+	930	NPR.DLO.dlosig			3	; 1000; ЧНД; 2015:016 New spec: всички
+	930	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	930	NPR.DLO.dlogdn			3	година на делото
+	930	NPR.DLO.dlonmr			3	номер на делото
+	930	NPR.DLO.dloncnone		3	722, 1900001682; новообразувано, според Декстро няма ограничения
+	930	NPR.DLO.dlosprvid		3	1014, 1016, 1025; 1018; 2015:016 New spec: +1016; 2018-08-13: ;+1018
+	930	NPR.DLO.FZL			3
+;	903	NPR.DLO.PNE			3	много; 2018-08-13: копирани от "Прекратяване на НП"...
+;	903	NPR.DLO.PNE.pnenmr		3
+;	903	NPR.DLO.PNE.PNESTA.*		1
+;	903	NPR.DLO.NPRFZLPNE		3	много
+;	903	NPR.DLO.NPRFZLPNE.SCQ		3
+;	903	NPR.DLO.NPRFZLPNE.SCQ.scqvid	3	986
+;	903	NPR.DLO.NPRFZLPNE.SCQ.scqstv	1
+;	903	NPR.DLO.NPRFZLPNE.SCQ.scqstr	3	-1; ЕИСПП код на текущия съд
+;	903	NPR.DLO.NPRFZLPNE.SCQ.scqdta	1	дата на съдебния акт
+;	903	NPR.DLO.NPRFZLPNE.SCQ.scqosn	7
+;	903	NPR.DLO.NPRFZLPNE.SCQ.scqrlq	7	846...848, 851, 852; 2018-08-13: уж всички, остава без обединено/отделено
+;	903	NPR.DLO.NPRFZLPNE.SBC		1
+;	903	NPR.DLO.NPRFZLPNE.SBC.sbcrcd	5	1587...1591
+;	903	NPR.DLO.NPRFZLPNE.SBC.sbcple	5	1575...1578
+;	903	NPR.DLO.NPRFZLPNE.SBC.sbcspj	5
+;	903	NPR.DLO.NPRFZLPNE.SBC.sbcobr	5
+;	903	NPR.DLO.NPRFZLPNE.SBC.sbctrd	5
+;	903	NPR.DLO.NPRFZLPNE.SBC.sbcznq	5
+;	903	NPR.DLO.NPRFZLPNE.SBC.sbcetn	5
+;	903	NPR.DLO.NPRFZLPNE.SBC.sbcrge	5
+;	903	NPR.DLO.NPRFZLPNE.NPL		1
+;	903	NPR.DLO.NPRFZLPNE.NPL.*		7	въвежда се от потребителя
+;	903	NPR.DLO.NPRFZLPNE.VSL		1
+;	903	NPR.DLO.NPRFZLPNE.VSL.vslpdl	5	въвежда се от потребителя
+;	903	NPR.DLO.NPRFZLPNE.VSL.vsldlj	5	въвежда се от потребителя
+;	903	NPR.DLO.NPRFZLPNE.VSL.vslzvn	7	въвежда се от потребителя
+;	903	NPR.DLO.NPRFZLPNE.VSL.vslktg	7	въвежда се от потребителя
+;	903	.scqosn				7	240
+
+Потвърждаване на първоинстанционна присъда (51)
+
+	929	sbevid				3	929
+	929	sbedkpvid			3	649; вид на съдебения акт, според Декстро няма ограничения
+	929	sbedkpnmr			5	номер на съдебния акт
+	929	sbedkpdta			3	дата на съдебния акт
+	929	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	929	SRK				3
+	929	SRK.srkvid			3	1029
+	929	SRK.srkden			5
+	929	SRK.srksdc			5
+	929	SRK.srkmsc			5
+	929	SRK.srkgdn			5
+	929	SRK.srkdta			3	дата на заседание/съдебен акт - начална дата на срока
+	929	NPR				3
+	929	NPR.nprnmr			3	ЕИСПП номер на НП
+	929	NPR.DLO				3
+	929	NPR.DLO.dlovid			3	853
+	929	NPR.DLO.dlosig			3	1009, 1010, 1900001685; ВНЧХД, ВНОХД, ВНАХД
+	929	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	929	NPR.DLO.dlogdn			3	година на делото
+	929	NPR.DLO.dlonmr			3	номер на делото
+	929	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682
+	929	NPR.DLO.dlosprvid		3	1025; ВЗИ - производство по наказателни дела
+	929	NPR.DLO.FZL			3
+
+Потвърждаване на спиране на НП (53)
+
+	932	sbevid				3	932
+	932	sbedkpvid			3	; 2015:016 New spec: всички, но ние нямахме ограничение
+	932	sbedkpnmr			5	номер на съдебния акт
+	932	sbedkpdta			3	дата на съдебния акт
+	932	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	932	NPR				3
+	932	NPR.nprnmr			3	ЕИСПП номер на НП
+	932	NPR.DLO				3
+	932	NPR.DLO.dlovid			3	853
+	932	NPR.DLO.dlosig			3	; 1000; НЧД (ЧНД); 2015:016 New spec: всички
+	932	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	932	NPR.DLO.dlogdn			3	година на делото
+	932	NPR.DLO.dlonmr			3	номер на делото
+	932	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682; определя се по вътрешна логика
+	932	NPR.DLO.dlosprvid		3	1014, 1016, 1025; 2015:016 New spec: +1016
+	932	NPR.DLO.FZL			3	;2015:016 New spec: FZL
+
+Потвърждаване определение на ПИС във връзка с международното сътрудничество по наказателни дела (54)
+
+	14123	sbevid				3	14123
+	14123	sbedkpvid			3	644, 648, 649; определение, разпореждане, решение
+	14123	sbedkpnmr			5	номер на съдебния акт
+	14123	sbedkpdta			3	дата на съдебния акт
+	14123	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	14123	SBH				3
+	14123	SBH.sbhvid			3	14124
+	14123	SBH.sbhstn			7	839, 14126
+	14123	NPR				3
+	14123	NPR.nprnmr			3	ЕИСПП номер на НП
+	14123	NPR.DLO				3
+	14123	NPR.DLO.dlovid			3	853
+	14123	NPR.DLO.dlosig			3	1008; ЕИСПП код на точен вид дело
+	14123	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	14123	NPR.DLO.dlogdn			3	година на делото
+	14123	NPR.DLO.dlonmr			3	номер на делото
+	14123	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682; определя се по вътрешна логика
+	14123	NPR.DLO.dlosprvid		3	1025; всъщност 14120, грешка на МВС/НСлС
+	14123	NPR.DLO.FZL			3	едно лице (50 - Събития само за едни лице)
+	14123	.dlosprvid			3	14120; ВЗИ - международно сътрудничество
+	14123	.sbhvid				3	14125
+
+Потвърждаване определение на ПИС по изпълнение на наказанията (55)
+
+	927	sbevid				3	927
+	927	sbedkpvid			3	644, 648, 649; определение, разпореждане, решение
+	927	sbedkpnmr			5	номер на съдебния акт
+	927	sbedkpdta			3	дата на съдебния акт
+	927	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	927	SBH				3
+	927	SBH.sbhvid			3	968
+	927	SBH.sbhstn			7	833, 835...838, 841
+	927	NPR				3
+	927	NPR.nprnmr			3	ЕИСПП номер на НП
+	927	NPR.DLO				3
+	927	NPR.DLO.dlovid			3	853
+	927	NPR.DLO.dlosig			3	1008; ВНЧД
+	927	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	927	NPR.DLO.dlogdn			3	година на делото
+	927	NPR.DLO.dlonmr			3	номер на делото
+	927	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682
+	927	NPR.DLO.dlosprvid		3	1024, 1025; ВЗИ - проверка на изпълнение на наказанията
+	927	NPR.DLO.FZL			3	едно лице (50 - Събития само за едни лице)
+	927	.sbhvid				3	256
+
+Потвърждаване определение на ПИС по особени производства (56)
+
+	928	sbevid				3	928
+	928	sbedkpvid			3	644, 648, 649; определение, разпореждане, решение
+	928	sbedkpnmr			5	номер на съдебния акт
+	928	sbedkpdta			3	дата на съдебния акт
+	928	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	928	SBH				3
+	928	SBH.sbhvid			3	969
+	928	SBH.sbhstn			7	834, 840, 14115, 14116
+	928	NPR				3
+	928	NPR.nprnmr			3	ЕИСПП номер на НП
+	928	NPR.DLO				3
+	928	NPR.DLO.dlovid			3	853
+	928	NPR.DLO.dlosig			3	1008; ЕИСПП код на точен вид дело
+	928	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	928	NPR.DLO.dlogdn			3	година на делото
+	928	NPR.DLO.dlonmr			3	номер на делото
+	928	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682
+	928	NPR.DLO.dlosprvid		3	1026, 1025; ВЗИ - проверка на особени производства
+	928	NPR.DLO.FZL			3	едно лице (50 - Събития само за едни лице)
+	928	.sbhvid				3	255
+
+Предсрочно освобождаване (57)
+
+	925	sbevid				3	925
+	925	sbedkpvid			3	644, 646, 648, 649; определение, присъда, разпореждане, решение
+	925	sbedkpnmr			5	номер на съдебния акт
+	925	sbedkpdta			3	дата на съдебния акт
+	925	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	925	SRK				3
+	925	SRK.srkvid			3	1029; срок за обжалване
+	925	SRK.srkden			5
+	925	SRK.srksdc			5
+	925	SRK.srkmsc			5
+	925	SRK.srkgdn			5
+	925	SRK.srkdta			5	начална дата на срока - дата на заседание/съдебен акт?
+	925	NPR				3
+	925	NPR.nprnmr			3	ЕИСПП номер на НП
+	925	NPR.DLO				3
+	925	NPR.DLO.dlovid			3	853
+	925	NPR.DLO.dlosig			3	1000; ЕИСПП код на точен вид дело
+	925	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	925	NPR.DLO.dlogdn			3	година на делото
+	925	NPR.DLO.dlonmr			3	номер на делото
+	925	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682
+	925	NPR.DLO.dlosprvid		3	1017; ПИС по изпълнение на наказанията
+	925	NPR.DLO.FZL			3
+	925	NPR.DLO.FZL.NKZ			3
+	925	NPR.DLO.FZL.NKZ.nkztip		3	721
+	925	NPR.DLO.FZL.NKZ.nkzvid		7	654, 655, 670, 699...705, 798, 799, 1140, 14344
+	925	NPR.DLO.FZL.NKZ.nkzstr		3	-1; или се въвежда
+	925	NPR.DLO.FZL.NKZ.nkzrzm		5	въвежда се от потребителя за наказание "Глоба", в противен случай 0
+	925	NPR.DLO.FZL.NKZ.nkzden		5	поне едно от полетата при nkzvid = лишаване от свобода
+	925	NPR.DLO.FZL.NKZ.nkzsdc		5	-''-
+	925	NPR.DLO.FZL.NKZ.nkzmsc		5	-''-
+	925	NPR.DLO.FZL.NKZ.nkzgdn		5	-''-
+	925	NPR.DLO.FZL.NKZ.nkzncn		3	789
+	925	NPR.DLO.FZL.NKZ.iptsrkden	5	поне едно от полетата при nkzncn = "условно осъждане"
+	925	NPR.DLO.FZL.NKZ.iptsrksdc	5	-''-
+	925	NPR.DLO.FZL.NKZ.iptsrkmsc	5	-''-
+	925	NPR.DLO.FZL.NKZ.iptsrkgdn	5	-''-
+	925	NPR.DLO.FZL.NKZ.iptsrkdta	5	задължителна при nkzncn = "условно осъждане"
+	925	NPR.DLO.FZL.NKZ.nkzrjm		5	; 842...845; режим на изтърпяване; 2014:182 всички
+	925	NPR.DLO.FZL.NKZ.nkzakt		3	1117; (отменено)
+	925	NPR.DLO.FZL.NKZ.nkzaktdta	7	дата на съдебния акт
+
+Прекратяване на НП при трансфер в друга държава (58)
+
+	14136	sbevid				3	14136
+	14136	sbedkpvid			3	644, 646, 648, 649; вид на съответния съдебен акт
+	14136	sbedkpnmr			5	номер на съдебния акт
+	14136	sbedkpdta			3	дата на съдебния акт
+	14136	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	14136	SBH				3
+	14136	SBH.sbhvid			3	14137
+	14136	SBH.sbhstn			7	държава, на която се предава НП
+	14136	NPR				3
+	14136	NPR.nprnmr			3	ЕИСПП номер на НП
+	14136	NPR.DLO				3
+	14136	NPR.DLO.dlovid			3	853
+	14136	NPR.DLO.dlosig			3	999, 1001, 1002, 1009, 1010; ЕИСПП код на точен вид дело
+	14136	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	14136	NPR.DLO.dlogdn			3	година на делото
+	14136	NPR.DLO.dlonmr			3	номер на делото
+	14136	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682; определя се по вътрешна логика
+	14136	NPR.DLO.dlosprvid		3	1018, 1025; определя се по вътрешна логика
+	14136	NPR.DLO.FZL			3
+	14136	NPR.DLO.FZL.NPRFZLSTA		3
+	14136	NPR.DLO.FZL.NPRFZLSTA.nprfzlkcv	3	698; "свързан с НП" според Декстро; в Приложенията няма стойност
+	14136	NPR.DLO.FZL.NPRFZLSTA.nprfzlsts	3	1120
+	14136	NPR.DLO.FZL.NPRFZLSTA.nprfzlosn	3	1159
+	14136	NPR.DLO.FZL.NPRFZLSTA.nprfzldta	1
+	14136	NPR.DLO.PNE			3
+	14136	NPR.DLO.PNE.pnenmr		3	ЕИСПП номер на престъпление
+	14136	NPR.DLO.PNE.PNESTA.*		1
+	14136	NPR.DLO.NPRFZLPNE		1
+	14136	NPR.DLO.NPRFZLPNE.SCQ		3
+	14136	NPR.DLO.NPRFZLPNE.SCQ.scqvid	3	986
+	14136	NPR.DLO.NPRFZLPNE.SCQ.scqstv	1
+	14136	NPR.DLO.NPRFZLPNE.SCQ.scqstr	3	-1; ЕИСПП код на текущия съд
+	14136	NPR.DLO.NPRFZLPNE.SCQ.scqdta	1	дата на заседание/съдебен акт
+	14136	NPR.DLO.NPRFZLPNE.SCQ.scqosn	3	1159
+	14136	NPR.DLO.NPRFZLPNE.SCQ.scqrlq	3	846...848, 851, 852
+	14136	.sbhvid				3	8619
+	14136	.scqosn				3	1865
+	14136	.nprfzlosn			3	1865
+
+Прекратяване на НП със споразумение (59)
+
+	905	sbevid				3	905
+	905	sbedkpvid			3	644; вид на съответния съдебен акт; Определение??
+	905	sbedkpnmr			5	номер на съдебния акт
+	905	sbedkpdta			3	дата на съдебния акт
+	905	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	905	SBH				3
+	905	SBH.sbhvid			3	971
+	905	SBH.sbhstn			7	824, 825
+	905	NPR				3
+	905	NPR.nprnmr			3	ЕИСПП номер на НП
+	905	NPR.DLO				3
+	905	NPR.DLO.dlovid			3	853
+	905	NPR.DLO.dlosig			3	1002, 1010; според SBE_dlosig.xls
+	905	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	905	NPR.DLO.dlogdn			3	година на делото
+	905	NPR.DLO.dlonmr			3	номер на делото
+	905	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682; определя се по вътрешна логика
+	905	NPR.DLO.dlosprvid		3	1014, 1018, 1025; определя се по вътрешна логика
+	905	NPR.DLO.FZL			3
+	905	NPR.DLO.FZL.NPRFZLSTA		3
+	905	NPR.DLO.FZL.NPRFZLSTA.nprfzlosn	3	785
+	905	NPR.DLO.FZL.NPRFZLSTA.nprfzldta	1
+	905	NPR.DLO.FZL.NKZ			1	задължителни само когато тип присъда = "осъдителна"
+	905	NPR.DLO.FZL.NKZ.nkztip		7	721, 745
+	905	NPR.DLO.FZL.NKZ.nkzvid		7	654, 655, 670, 699, 700, 702...705, 721, 745, 798, 799, 12070, 14344
+	905	NPR.DLO.FZL.NKZ.nkzstr		3	-1; или се въвежда
+	905	NPR.DLO.FZL.NKZ.nkzrzm		7	въвежда се от потребителя за наказание "Глоба", в противен случай 0
+	905	NPR.DLO.FZL.NKZ.nkzden		5	поне едно от полетата при nkzvid = лишаване от свобода
+	905	NPR.DLO.FZL.NKZ.nkzsdc		5	-''-
+	905	NPR.DLO.FZL.NKZ.nkzmsc		5	-''-
+	905	NPR.DLO.FZL.NKZ.nkzgdn		5	-''-
+	905	NPR.DLO.FZL.NKZ.nkzncn		7	763, 764
+	905	NPR.DLO.FZL.NKZ.iptsrkden	5	поне едно от полетата при nkzncn = "условно осъждане"
+	905	NPR.DLO.FZL.NKZ.iptsrksdc	5	-''-
+	905	NPR.DLO.FZL.NKZ.iptsrkmsc	5	-''-
+	905	NPR.DLO.FZL.NKZ.iptsrkgdn	5	-''-
+	905	NPR.DLO.FZL.NKZ.iptsrkdta	5	задължителна при nkzncn = "условно осъждане"
+	905	NPR.DLO.FZL.NKZ.nkzrjm		5	; 842...845; режим на изтърпяване; 2014:182 всички
+	905	NPR.DLO.FZL.NKZ.nkzakt		3	1108
+	905	NPR.DLO.FZL.NKZ.nkzaktdta	7
+	905	NPR.DLO.PNE			3	много
+	905	NPR.DLO.PNE.pnenmr		3	ЕИСПП номер на престъпление
+	905	NPR.DLO.PNE.PNESTA.*		1
+	905	NPR.DLO.NPRFZLPNE		3	много
+	905	NPR.DLO.NPRFZLPNE.SCQ		3
+	905	NPR.DLO.NPRFZLPNE.SCQ.scqvid	7	978, 979
+	905	NPR.DLO.NPRFZLPNE.SCQ.scqstv	1
+	905	NPR.DLO.NPRFZLPNE.SCQ.scqstr	3	-1; ЕИСПП код на текущия съд
+	905	NPR.DLO.NPRFZLPNE.SCQ.scqdta	3	дата на съдебния акт
+	905	NPR.DLO.NPRFZLPNE.SCQ.scqosn	3	785
+	905	NPR.DLO.NPRFZLPNE.SCQ.scqrlq	7	846...848, 851, 852
+	905	NPR.DLO.NPRFZLPNE.SCQ.NKZPNE	1	много; задължителни само когато scqvid=”осъжда”
+	905	NPR.DLO.NPRFZLPNE.SBC		3
+	905	NPR.DLO.NPRFZLPNE.SBC.sbcrcd	5	1587...1591
+	905	NPR.DLO.NPRFZLPNE.SBC.sbcple	7	1575...1578
+	905	NPR.DLO.NPRFZLPNE.SBC.sbcspj	5
+	905	NPR.DLO.NPRFZLPNE.SBC.sbcobr	5
+	905	NPR.DLO.NPRFZLPNE.SBC.sbctrd	5
+	905	NPR.DLO.NPRFZLPNE.SBC.sbcznq	5
+	905	NPR.DLO.NPRFZLPNE.SBC.sbcetn	5
+	905	NPR.DLO.NPRFZLPNE.SBC.sbcrge	5
+	905	NPR.DLO.NPRFZLPNE.NPL		1
+	905	NPR.DLO.NPRFZLPNE.NPL.*		7
+	905	NPR.DLO.NPRFZLPNE.VSL		1
+	905	NPR.DLO.NPRFZLPNE.VSL.vslpdl	5
+	905	NPR.DLO.NPRFZLPNE.VSL.vsldlj	5
+	905	NPR.DLO.NPRFZLPNE.VSL.vslzvn	7
+	905	NPR.DLO.NPRFZLPNE.VSL.vslktg	7
+	905	.sbhvid				3	231
+	905	.scqosn				3	241
+	905	.nprfzlosn			3	241
+
+Прекратяване на НП (60)
+
+	903	sbevid				3	903
+	903	sbedkpvid			3	644, 646, 648, 649; вид на съответния съдебен акт
+	903	sbedkpnmr			5	номер на съдебния акт
+	903	sbedkpdta			3	дата на съдебния акт
+	903	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	903	SRK				3
+	903	SRK.srkvid			3	1029; срок за обжалване
+	903	SRK.srkden			5
+	903	SRK.srksdc			5
+	903	SRK.srkmsc			5
+	903	SRK.srkgdn			5
+	903	SRK.srkdta			3	дата на заседание/съдебен акт - начална дата на срока
+	903	NPR				3
+	903	NPR.nprnmr			3	ЕИСПП номер на НП
+	903	NPR.DLO				3
+	903	NPR.DLO.dlovid			3	853
+	903	NPR.DLO.dlosig			3	997...999, 1001, 1002, 1009, 1010, 1900001685
+	903	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	903	NPR.DLO.dlogdn			3	година на делото
+	903	NPR.DLO.dlonmr			3	номер на делото
+	903	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682; определя се по вътрешна логика
+	903	NPR.DLO.dlosprvid		3	1014, 1018, 1021, 1023, 1025, 1900001637
+	903	NPR.DLO.FZL			3
+	903	NPR.DLO.FZL.NPRFZLSTA		7
+	903	NPR.DLO.FZL.NPRFZLSTA.nprfzlosn	7
+	903	NPR.DLO.PNE			3	много
+	903	NPR.DLO.PNE.pnenmr		3	ЕИСПП номер на престъпление
+	903	NPR.DLO.PNE.PNESTA.*		1
+	903	NPR.DLO.NPRFZLPNE		3	много
+	903	NPR.DLO.NPRFZLPNE.SCQ		3
+	903	NPR.DLO.NPRFZLPNE.SCQ.scqvid	3	986
+	903	NPR.DLO.NPRFZLPNE.SCQ.scqstv	1
+	903	NPR.DLO.NPRFZLPNE.SCQ.scqstr	3	-1; ЕИСПП код на текущия съд
+	903	NPR.DLO.NPRFZLPNE.SCQ.scqdta	1	дата на съдебния акт
+	903	NPR.DLO.NPRFZLPNE.SCQ.scqosn	7
+	903	NPR.DLO.NPRFZLPNE.SCQ.scqrlq	7	846...848, 851, 852
+	903	NPR.DLO.NPRFZLPNE.SBC		1
+	903	NPR.DLO.NPRFZLPNE.SBC.sbcrcd	5	1587...1591
+	903	NPR.DLO.NPRFZLPNE.SBC.sbcple	5	1575...1578
+	903	NPR.DLO.NPRFZLPNE.SBC.sbcspj	5
+	903	NPR.DLO.NPRFZLPNE.SBC.sbcobr	5
+	903	NPR.DLO.NPRFZLPNE.SBC.sbctrd	5
+	903	NPR.DLO.NPRFZLPNE.SBC.sbcznq	5
+	903	NPR.DLO.NPRFZLPNE.SBC.sbcetn	5
+	903	NPR.DLO.NPRFZLPNE.SBC.sbcrge	5
+	903	NPR.DLO.NPRFZLPNE.NPL		1
+	903	NPR.DLO.NPRFZLPNE.NPL.*		7	въвежда се от потребителя
+	903	NPR.DLO.NPRFZLPNE.VSL		1
+	903	NPR.DLO.NPRFZLPNE.VSL.vslpdl	5	въвежда се от потребителя
+	903	NPR.DLO.NPRFZLPNE.VSL.vsldlj	5	въвежда се от потребителя
+	903	NPR.DLO.NPRFZLPNE.VSL.vslzvn	7	въвежда се от потребителя
+	903	NPR.DLO.NPRFZLPNE.VSL.vslktg	7	въвежда се от потребителя
+	903	.scqosn				7	240
+	903	.nprfzlosn			7	240
+;	903	NPR.DLO.FZL.NPRFZLSTA.nprfzlkcv	3	698; от Декстро, според приложенията не се изпраща
+;	903	NPR.DLO.FZL.NPRFZLSTA.nprfzlsts	3	1120; от Декстро, според приложенията не се изпраща
+
+Прекратяване на принудителни медицински мерки (61)
+
+	906	sbevid				3	906
+	906	sbedkpvid			3
+	906	sbedkpnmr			5	номер на съдебния акт
+	906	sbedkpdta			3	дата на съдебния акт
+	906	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	906	NPR				3
+	906	NPR.nprnmr			3	ЕИСПП номер на НП
+	906	NPR.DLO				3
+	906	NPR.DLO.dlovid			3	853
+	906	NPR.DLO.dlosig			3	1000; ЕИСПП код на точен вид дело
+	906	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	906	NPR.DLO.dlogdn			3	година на делото
+	906	NPR.DLO.dlonmr			3	номер на делото
+	906	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682
+	906	NPR.DLO.dlosprvid		3	1019
+	906	NPR.DLO.FZL			3
+
+Приемане на жалба (64)
+
+	915	sbevid				3	915
+	915	sbedkpvid			3	641, 642; вид на документ от входящ регистър (t_kind)
+	915	sbedkpdta			3	дата на постъпване на жалбата
+	915	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	915	NPR				3
+	915	NPR.nprnmr			3	ЕИСПП номер на НП
+	915	NPR.DLO				3
+	915	NPR.DLO.dlovid			3	853
+	915	NPR.DLO.dlosig			3	997...1002, 1008...1010, 1900001685
+	915	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	915	NPR.DLO.dlogdn			3	година на делото
+	915	NPR.DLO.dlonmr			3	номер на делото
+	915	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682; определя се по вътрешна логика
+	915	NPR.DLO.FZL			3
+	915	.resSid				3	2055
+
+Приемане на чужда присъда за изпълнение (65)
+
+	914	sbevid				3	914
+	914	sbedkpvid			3	644, 649; вид на съответния съдебен акт
+	914	sbedkpnmr			5	номер на съдебния акт
+	914	sbedkpdta			3	дата на съдебния акт
+	914	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	914	SBH				3
+	914	SBH.sbhvid			3	971
+	914	SBH.sbhstn			3	825; осъдителна
+	914	SRK				3
+	914	SRK.srkvid			3	1029
+	914	SRK.srkden			5
+	914	SRK.srksdc			5
+	914	SRK.srkmsc			5
+	914	SRK.srkgdn			5
+	914	SRK.srkdta			3	дата на заседание/съдебен акт - начална дата на срока
+	914	NPR				3
+	914	NPR.nprnmr			3	ЕИСПП номер на НП
+	914	NPR.DLO				3
+	914	NPR.DLO.dlovid			3	853
+	914	NPR.DLO.dlosig			3	1000; ЕИСПП код на точен вид дело
+	914	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	914	NPR.DLO.dlogdn			3	година на делото
+	914	NPR.DLO.dlonmr			3	номер на делото
+	914	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682; определя се по вътрешна логика
+	914	NPR.DLO.dlosprvid		3	14119
+	914	NPR.DLO.FZL			3
+	914	NPR.DLO.FZL.NKZ			1	задължителни само когато тип присъда = "осъдителна"
+	914	NPR.DLO.FZL.NKZ.nkztip		7	721, 745
+	914	NPR.DLO.FZL.NKZ.nkzvid		7	654, 655, 670, 699, 700, 702...705, 798, 799, 12070, 14344
+	914	NPR.DLO.FZL.NKZ.nkzstr		3	-1; или се въвежда
+	914	NPR.DLO.FZL.NKZ.nkzrzm		7	въвежда се от потребителя за наказание "Глоба", в противен случай 0
+	914	NPR.DLO.FZL.NKZ.nkzden		5	поне едно от полетата при nkzvid = лишаване от свобода
+	914	NPR.DLO.FZL.NKZ.nkzsdc		5	-''-
+	914	NPR.DLO.FZL.NKZ.nkzmsc		5	-''-
+	914	NPR.DLO.FZL.NKZ.nkzgdn		5	-''-
+	914	NPR.DLO.FZL.NKZ.nkzncn		7	763, 764
+	914	NPR.DLO.FZL.NKZ.iptsrkden	5	поне едно от полетата при nkzncn = "условно осъждане"
+	914	NPR.DLO.FZL.NKZ.iptsrksdc	5	-''-
+	914	NPR.DLO.FZL.NKZ.iptsrkmsc	5	-''-
+	914	NPR.DLO.FZL.NKZ.iptsrkgdn	5	-''-
+	914	NPR.DLO.FZL.NKZ.iptsrkdta	5	задължителна при nkzncn = "условно осъждане"
+	914	NPR.DLO.FZL.NKZ.nkzrjm		5	; 842...845; режим на изтърпяване; 2014:182 всички
+	914	NPR.DLO.FZL.NKZ.nkzakt		7	1106, 1108, 1117, 1118, 1127
+	914	NPR.DLO.FZL.NKZ.nkzaktdta	7
+	914	NPR.DLO.PNE			3	много
+	914	NPR.DLO.PNE.pnenmr		3	ЕИСПП номер на престъпление
+	914	NPR.DLO.PNE.PNESTA.*		1
+	914	NPR.DLO.NPRFZLPNE		3	много
+	914	NPR.DLO.NPRFZLPNE.SCQ		3
+	914	NPR.DLO.NPRFZLPNE.SCQ.scqvid	7	978, 979
+	914	NPR.DLO.NPRFZLPNE.SCQ.scqstv	1
+	914	NPR.DLO.NPRFZLPNE.SCQ.scqstr	3	-1; ЕИСПП код на текущия съд
+	914	NPR.DLO.NPRFZLPNE.SCQ.scqdta	1
+	914	NPR.DLO.NPRFZLPNE.SCQ.scqrlq	7	846...848, 851, 852
+	914	NPR.DLO.NPRFZLPNE.SCQ.NKZPNE	1	задължителни само когато scqvid=”осъжда”
+	914	NPR.DLO.NPRFZLPNE.SBC		3
+	914	NPR.DLO.NPRFZLPNE.SBC.sbcrcd	5	1587...1591
+	914	NPR.DLO.NPRFZLPNE.SBC.sbcple	7	1575...1578
+	914	NPR.DLO.NPRFZLPNE.SBC.sbcspj	5
+	914	NPR.DLO.NPRFZLPNE.SBC.sbcobr	5
+	914	NPR.DLO.NPRFZLPNE.SBC.sbctrd	5
+	914	NPR.DLO.NPRFZLPNE.SBC.sbcznq	5
+	914	NPR.DLO.NPRFZLPNE.SBC.sbcetn	5
+	914	NPR.DLO.NPRFZLPNE.SBC.sbcrge	5
+	914	NPR.DLO.NPRFZLPNE.NPL		1
+	914	NPR.DLO.NPRFZLPNE.NPL.*		7
+	914	NPR.DLO.NPRFZLPNE.VSL		1
+	914	NPR.DLO.NPRFZLPNE.VSL.vslpdl	5
+	914	NPR.DLO.NPRFZLPNE.VSL.vsldlj	5
+	914	NPR.DLO.NPRFZLPNE.VSL.vslzvn	7
+	914	NPR.DLO.NPRFZLPNE.VSL.vslktg	7
+	914	.sbhvid				3	231
+
+Прилагане на принудителни медицински мерки (66)
+
+	948	sbevid				3	948
+	948	sbedkpvid			3
+	948	sbedkpnmr			5	номер на съдебния акт
+	948	sbedkpdta			3	дата на съдебния акт
+	948	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	948	SRK				3
+	948	SRK.srkvid			3	1029
+	948	SRK.srkden			5
+	948	SRK.srksdc			5
+	948	SRK.srkmsc			5
+	948	SRK.srkgdn			5
+	948	SRK.srkdta			3	дата на заседание/съдебен акт - начална дата на срока
+	948	NPR				3
+	948	NPR.nprnmr			3	ЕИСПП номер на НП
+	948	NPR.DLO				3
+	948	NPR.DLO.dlovid			3	853
+	948	NPR.DLO.dlosig			3	1000, 1008; ЕИСПП код на точен вид дело
+	948	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	948	NPR.DLO.dlogdn			3	година на делото
+	948	NPR.DLO.dlonmr			3	номер на делото
+	948	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682; определя се по вътрешна логика
+	948	NPR.DLO.dlosprvid		3	1019, 1026, 1025; ПИС - особени производства, ВЗИ - проверка на -''-
+	948	NPR.DLO.FZL			3
+
+Разрешаване на временно напускане на РБ (68)
+
+	938	sbevid				3	938
+	938	sbedkpvid			3	644, 649; вид на съответния съдебен акт
+	938	sbedkpnmr			5	номер на съдебния акт
+	938	sbedkpdta			3	дата на съдебния акт
+	938	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	938	SRK				3
+	938	SRK.srkvid			3	1034
+	938	SRK.srkden			5
+	938	SRK.srksdc			5
+	938	SRK.srkmsc			5
+	938	SRK.srkgdn			5
+	938	SRK.srkdta			3	дата на заседание/съдебен акт - начална дата на срока
+	938	NPR				3
+	938	NPR.nprnmr			3	ЕИСПП номер на НП
+	938	NPR.DLO				3
+	938	NPR.DLO.dlovid			3	853
+	938	NPR.DLO.dlosig			3	998...1002, 1009, 1010; ЕИСПП код на точен вид дело
+	938	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	938	NPR.DLO.dlogdn			3	година на делото
+	938	NPR.DLO.dlonmr			3	номер на делото
+	938	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682; определя се по вътрешна логика
+	938	NPR.DLO.dlosprvid		3	1014, 1018, 1021, 1025, 1900001637
+	938	NPR.DLO.FZL			3
+
+Реабилитация на осъдено лице (69)
+
+	14117	sbevid				3	14117
+	14117	sbedkpvid			3	644; вид на съответния съдебен акт
+	14117	sbedkpnmr			5	номер на съдебния акт
+	14117	sbedkpdta			3	дата на съдебния акт
+	14117	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	14117	SRK				3
+	14117	SRK.srkvid			3	1029
+	14117	SRK.srkden			5
+	14117	SRK.srksdc			5
+	14117	SRK.srkmsc			5
+	14117	SRK.srkgdn			5
+	14117	SRK.srkdta			3	дата на заседание/съдебен акт - начална дата на срока
+	14117	NPR				3
+	14117	NPR.nprnmr			3	ЕИСПП номер на НП
+	14117	NPR.DLO				3
+	14117	NPR.DLO.dlovid			3	853
+	14117	NPR.DLO.dlosig			3	1000, 1008; ЕИСПП код на точен вид дело
+	14117	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	14117	NPR.DLO.dlogdn			3	година на делото
+	14117	NPR.DLO.dlonmr			3	номер на делото
+	14117	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682; определя се по вътрешна логика
+	14117	NPR.DLO.dlosprvid		3	1019, 1026, 1025; ПИС - особени производства, ВЗИ - проверка на -''-
+	14117	NPR.DLO.FZL			3
+
+Спиране на НП (71)
+
+	940	sbevid				3	940
+	940	sbedkpvid			3	644, 646, 648, 649; вид на съответния съдебен акт
+	940	sbedkpnmr			5	номер на съдебния акт
+	940	sbedkpdta			3	дата на съдебния акт
+	940	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	940	NPR				3
+	940	NPR.nprnmr			3	ЕИСПП номер на НП
+	940	NPR.DLO				3
+	940	NPR.DLO.dlovid			3	853
+	940	NPR.DLO.dlosig			3	997...999, 1001, 1002, 1009, 1010, 1900001685
+	940	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	940	NPR.DLO.dlogdn			3	година на делото
+	940	NPR.DLO.dlonmr			3	номер на делото
+	940	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682; определя се по вътрешна логика
+	940	NPR.DLO.dlosprvid		3	1018, 1021, 1023, 1025, 1900001637
+	940	NPR.DLO.FZL			3	много
+	940	NPR.DLO.FZL.NPRFZLSTA		3
+	940	NPR.DLO.FZL.NPRFZLSTA.nprfzlosn	7	772...775, 780, 786, 1162; според Декстро е задължително
+	940	NPR.DLO.PNE			3	много
+	940	NPR.DLO.PNE.pnenmr		3	ЕИСПП номер на престъпление
+	940	NPR.DLO.PNE.PNESTA.*		1
+	940	NPR.DLO.NPRFZLPNE		3	много
+	940	NPR.DLO.NPRFZLPNE.SCQ		3
+	940	NPR.DLO.NPRFZLPNE.SCQ.scqvid	3	1933
+	940	NPR.DLO.NPRFZLPNE.SCQ.scqstv	1
+	940	NPR.DLO.NPRFZLPNE.SCQ.scqstr	3	-1; ЕИСПП код на текущия съд
+	940	NPR.DLO.NPRFZLPNE.SCQ.scqdta	1
+	940	NPR.DLO.NPRFZLPNE.SCQ.scqosn	7	772...775, 780, 786, 1162
+	940	NPR.DLO.NPRFZLPNE.SCQ.scqrlq	7	846...848, 851, 852
+	940	.scqosn				3	242
+	940	.nprfzlosn			3	242
+
+Директно описание на обекти или атрибути
+
+;	-1
+
+Редактиране или изтриване на събитие
+
+	-2	sbevid				1	от редактираното или изтриваното събитие
+	-2	sbedkpvid			1	вид на съдебния акт; липсва например при Образуване на дело
+	-2	sbedkpnmr			1	номер на съдебния акт
+	-2	sbedkpdta			1	дата на съдебния акт
+	-2	sbedkpstr			1	ЕИСПП код на текущия съд
+	-2	DVJDLO				1	за изтриване на изпращане/получаване, 18.01.2013
+	-2	DVJDLO.dvjprc			1
+	-2	DVJDLO.dvjdta			1
+	-2	DVJDLO.dvjstripr		1
+	-2	DVJDLO.dvjstrplc		1
+	-2	DVJDLO.dvjvid			1
+	-2	NPR				3
+	-2	NPR.nprnmr			3	ЕИСПП номер на НП
+	-2	NPR.DLO				3
+	-2	NPR.DLO.dlovid			3	съдебно дело
+	-2	NPR.DLO.dlosig			3
+	-2	NPR.DLO.dlostr			3	ЕИСПП код на текущия съд
+	-2	NPR.DLO.dlogdn			3	година на делото
+	-2	NPR.DLO.dlonmr			3	номер на делото
+	-2	NPR.DLO.FZL			1
+
+Редактиране на дело
+
+	-3	NPR				3
+	-3	NPR.nprnmr			3
+	-3	NPR.DLO				3
+	-3	NPR.DLO.dlovid			3
+	-3	NPR.DLO.dlosig			3
+	-3	NPR.DLO.dlostr			3
+	-3	NPR.DLO.dlogdn			3
+	-3	NPR.DLO.dlonmr			3
+
+Редактиране на лице/престъпление
+
+	-4	NPR				3
+	-4	NPR.nprnmr			3
+	-4	NPR.DLO				3
+	-4	NPR.DLO.dlovid			3
+	-4	NPR.DLO.dlosig			3
+	-4	NPR.DLO.dlostr			3
+	-4	NPR.DLO.dlogdn			3
+	-4	NPR.DLO.dlonmr			3
+	-4	NPR.DLO.FZL			5
+	-4	NPR.DLO.FZL.*			5
+	-4	NPR.DLO.PNE			5
+	-4	NPR.DLO.PNE.PNESTA.pnekcq	7
+	-4	NPR.DLO.PNE.pnenmr		3
+	-4	NPR.DLO.PNE.*			5
+	-4	NPR.DLO.PNE.ADR.adrtip		3	635; местопрестъпление
+	-4	NPR.DLO.PNE.ADR.adrdrj		5
+	-4	NPR.DLO.PNE.ADR.adrnsmbgr	5
+	-4	NPR.DLO.PNE.ADR.adrnsmchj	5
+	-4	NPR.DLO.PNE.ADR.adrrjn		5
+	-4	NPR.DLO.PNE.ADR.adrpstkod	5
+	-4	NPR.DLO.PNE.ADR.adrkrdtxt	5
+	-4	NPR.DLO.PNE.ADR.adrnmr		5
+	-4	NPR.DLO.PNE.ADR.adrblk		5
+	-4	NPR.DLO.PNE.ADR.adrvhd		5
+	-4	NPR.DLO.PNE.ADR.adretj		5
+	-4	NPR.DLO.PNE.ADR.adrapr		5
+	-4	NPR.DLO.PNE.ADR.adrmstvid	5
+	-4	NPR.DLO.PNE.ADR.adrmsttxt	5
+	-4	NPR.DLO.PNE.ADR.adrkodpdl	5
+	-4	NPR.DLO.PNE.ADR.adrloc		7
+
+Редактиране на лице
+
+	-5	NPR				3
+	-5	NPR.nprnmr			3
+	-5	NPR.DLO				3
+	-5	NPR.DLO.dlovid			3
+	-5	NPR.DLO.dlosig			3
+	-5	NPR.DLO.dlostr			3
+	-5	NPR.DLO.dlogdn			3
+	-5	NPR.DLO.dlonmr			3
+	-5	NPR.DLO.FZL			5
+	-5	NPR.DLO.FZL.*			5
+
+Редактиране на престъпление - старо
+
+	-6	NPR				3
+	-6	NPR.nprnmr			3
+	-6	NPR.DLO				3
+	-6	NPR.DLO.dlovid			3
+	-6	NPR.DLO.dlosig			3
+	-6	NPR.DLO.dlostr			3
+	-6	NPR.DLO.dlogdn			3
+	-6	NPR.DLO.dlonmr			3
+	-6	NPR.DLO.PNE			5
+	-6	NPR.DLO.PNE.pnenmr		3
+
+Редактиране на престъпление - ново
+
+	-7	NPR				3
+	-7	NPR.nprnmr			3
+	-7	NPR.DLO				3
+	-7	NPR.DLO.dlovid			3
+	-7	NPR.DLO.dlosig			3
+	-7	NPR.DLO.dlostr			3
+	-7	NPR.DLO.dlogdn			3
+	-7	NPR.DLO.dlonmr			3
+	-7	NPR.DLO.dloncnone		3
+	-7	NPR.DLO.dlosprvid		3
+	-7	NPR.DLO.PNE			5
+	-7	NPR.DLO.PNE.pnenmr		3
+	-7	NPR.DLO.PNE.*			5
+	-7	NPR.DLO.PNE.ADR			3
+	-7	NPR.DLO.PNE.ADR.adrtip		3
+	-7	NPR.DLO.PNE.ADR.adrdrj		5
+	-7	NPR.DLO.PNE.ADR.adrnsmbgr	5
+	-7	NPR.DLO.PNE.ADR.adrnsmchj	5
+	-7	NPR.DLO.PNE.ADR.adrrjn		5
+	-7	NPR.DLO.PNE.ADR.adrpstkod	5
+	-7	NPR.DLO.PNE.ADR.adrkrdtxt	5
+	-7	NPR.DLO.PNE.ADR.adrnmr		5
+	-7	NPR.DLO.PNE.ADR.adrblk		5
+	-7	NPR.DLO.PNE.ADR.adrvhd		5
+	-7	NPR.DLO.PNE.ADR.adretj		5
+	-7	NPR.DLO.PNE.ADR.adrapr		5
+	-7	NPR.DLO.PNE.ADR.adrmstvid	5
+	-7	NPR.DLO.PNE.ADR.adrmsttxt	5
+	-7	NPR.DLO.PNE.ADR.adrkodpdl	5
+	-7	NPR.DLO.PNE.ADR.adrloc		7
+
+; Събития от 30.07.2014г.
+
+Отмяна на прекратяване на НП (72)
+
+	15347	sbevid				3	15347
+	15347	sbedkpvid			3	644, 646, 648, 649; не е уточнено, взети са от "Прекратяване на НП"
+	15347	sbedkpnmr			5	номер на съдебния акт
+	15347	sbedkpdta			3	дата на съдебния акт
+	15347	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	15347	NPR				3
+	15347	NPR.nprnmr			3	ЕИСПП номер на НП
+	15347	NPR.DLO				3
+	15347	NPR.DLO.dlovid			3	853
+	15347	NPR.DLO.dlosig			3	997...1002, 1008...1010, 15342, 1900001685
+	15347	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	15347	NPR.DLO.dlogdn			3	година на делото
+	15347	NPR.DLO.dlonmr			3	номер на делото
+	15347	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682; определя се по вътрешна логика
+	15347	NPR.DLO.dlosprvid		3	1018, 1025, 1014, 1016; различават се от "Прекратяване на НП"
+	15347	NPR.DLO.FZL			3	много, на етап съдебно дело не може да има неизвестни лица
+	15347	NPR.DLO.PNE			3	много
+	15347	NPR.DLO.PNE.pnenmr		3	ЕИСПП номер на престъпление
+	15347	NPR.DLO.PNE.PNESTA.*		1	навсякъде е така
+	15347	NPR.DLO.NPRFZLPNE		3	много
+	15347	NPR.DLO.NPRFZLPNE.SCQ		3
+	15347	NPR.DLO.NPRFZLPNE.SCQ.scqvid	3	987
+	15347	NPR.DLO.NPRFZLPNE.SCQ.scqstv	1
+	15347	NPR.DLO.NPRFZLPNE.SCQ.scqstr	7	-1; ЕИСПП код на текущия съд
+	15347	NPR.DLO.NPRFZLPNE.SCQ.scqdta	7	дата на съдебния акт
+	15347	NPR.DLO.NPRFZLPNE.SCQ.scqrlq	7	846...852; повече стойности от "Прекратяване"
+	15347	NPR.DLO.NPRFZLPNE.SBC		1
+	15347	NPR.DLO.NPRFZLPNE.SBC.sbcrcd	5	1587...1591
+	15347	NPR.DLO.NPRFZLPNE.SBC.sbcple	5	1575...1578
+	15347	NPR.DLO.NPRFZLPNE.SBC.sbcspj	5
+	15347	NPR.DLO.NPRFZLPNE.SBC.sbcobr	5
+	15347	NPR.DLO.NPRFZLPNE.SBC.sbctrd	5
+	15347	NPR.DLO.NPRFZLPNE.SBC.sbcznq	5
+	15347	NPR.DLO.NPRFZLPNE.SBC.sbcetn	5
+	15347	NPR.DLO.NPRFZLPNE.SBC.sbcrge	5
+	15347	NPR.DLO.NPRFZLPNE.NPL		1
+	15347	NPR.DLO.NPRFZLPNE.NPL.*		7	въвежда се от потребителя
+	15347	NPR.DLO.NPRFZLPNE.VSL		1
+	15347	NPR.DLO.NPRFZLPNE.VSL.vslpdl	5	въвежда се от потребителя
+	15347	NPR.DLO.NPRFZLPNE.VSL.vsldlj	5	въвежда се от потребителя
+	15347	NPR.DLO.NPRFZLPNE.VSL.vslzvn	7	въвежда се от потребителя
+	15347	NPR.DLO.NPRFZLPNE.VSL.vslktg	7	въвежда се от потребителя
+
+Отмяна на спиране на НП (73)
+
+	15348	sbevid				3	15348
+	15348	sbedkpvid			3	644, 646, 648, 649; не е уточнено, взети са от "Спиране на НП"
+	15348	sbedkpnmr			5	номер на съдебния акт
+	15348	sbedkpdta			3	дата на съдебния акт
+	15348	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	15348	NPR				3
+	15348	NPR.nprnmr			3	ЕИСПП номер на НП
+	15348	NPR.DLO				3
+	15348	NPR.DLO.dlovid			3	853
+	15348	NPR.DLO.dlosig			3	997...1002, 1008...1010, 15342, 1900001685
+	15348	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	15348	NPR.DLO.dlogdn			3	година на делото
+	15348	NPR.DLO.dlonmr			3	номер на делото
+	15348	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682; определя се по вътрешна логика
+	15348	NPR.DLO.dlosprvid		3	1018, 1025, 1014; различават се от "Спиране на НП"
+	15348	NPR.DLO.FZL			3	много, на етап съдебно дело не може да има неизвестни лица
+	15348	NPR.DLO.PNE			3	много
+	15348	NPR.DLO.PNE.pnenmr		3	ЕИСПП номер на престъпление
+	15348	NPR.DLO.PNE.PNESTA.*		1	навсякъде е така
+	15348	NPR.DLO.NPRFZLPNE		3	много
+	15348	NPR.DLO.NPRFZLPNE.SCQ		3
+	15348	NPR.DLO.NPRFZLPNE.SCQ.scqvid	3	987
+	15348	NPR.DLO.NPRFZLPNE.SCQ.scqstv	1
+	15348	NPR.DLO.NPRFZLPNE.SCQ.scqstr	7	-1; ЕИСПП код на текущия съд
+	15348	NPR.DLO.NPRFZLPNE.SCQ.scqdta	7	дата на съдебния акт
+	15348	NPR.DLO.NPRFZLPNE.SCQ.scqrlq	7	846...852; повече стойности от "Спиране"
+	15348	NPR.DLO.NPRFZLPNE.SBC		1
+	15348	NPR.DLO.NPRFZLPNE.SBC.sbcrcd	5	1587...1591
+	15348	NPR.DLO.NPRFZLPNE.SBC.sbcple	5	1575...1578
+	15348	NPR.DLO.NPRFZLPNE.SBC.sbcspj	5
+	15348	NPR.DLO.NPRFZLPNE.SBC.sbcobr	5
+	15348	NPR.DLO.NPRFZLPNE.SBC.sbctrd	5
+	15348	NPR.DLO.NPRFZLPNE.SBC.sbcznq	5
+	15348	NPR.DLO.NPRFZLPNE.SBC.sbcetn	5
+	15348	NPR.DLO.NPRFZLPNE.SBC.sbcrge	5
+	15348	NPR.DLO.NPRFZLPNE.NPL		1
+	15348	NPR.DLO.NPRFZLPNE.NPL.*		7	въвежда се от потребителя
+	15348	NPR.DLO.NPRFZLPNE.VSL		1
+	15348	NPR.DLO.NPRFZLPNE.VSL.vslpdl	5	въвежда се от потребителя
+	15348	NPR.DLO.NPRFZLPNE.VSL.vsldlj	5	въвежда се от потребителя
+	15348	NPR.DLO.NPRFZLPNE.VSL.vslzvn	7	въвежда се от потребителя
+	15348	NPR.DLO.NPRFZLPNE.VSL.vslktg	7	въвежда се от потребителя
+
+Частично прекратяване на НП за престъпление (74)
+
+	904	sbevid				3	904
+	904	sbedkpvid			3	644, 646, 648, 649; не е уточнено, взети са от "Прекратяване на НП"
+	904	sbedkpnmr			5	номер на съдебния акт
+	904	sbedkpdta			3	дата на съдебния акт
+	904	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	904	NPR				3
+	904	NPR.nprnmr			3	ЕИСПП номер на НП
+	904	NPR.DLO				3
+	904	NPR.DLO.dlovid			3	853
+	904	NPR.DLO.dlosig			3	997...1002, 1008...1010, 15342, 1900001685
+	904	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	904	NPR.DLO.dlogdn			3	година на делото
+	904	NPR.DLO.dlonmr			3	номер на делото
+	904	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682; определя се по вътрешна логика
+	904	NPR.DLO.dlosprvid		3	1018, 1025, 1014, 1016; различават се от "Прекратяване на НП"
+	904	NPR.DLO.FZL			3	много, на етап съдебно дело не може да има неизвестни лица
+	904	NPR.DLO.PNE			3	много
+	904	NPR.DLO.PNE.pnenmr		3	ЕИСПП номер на престъпление
+	904	NPR.DLO.PNE.PNESTA.*		1	навсякъде е така
+	904	NPR.DLO.NPRFZLPNE		3	много
+	904	NPR.DLO.NPRFZLPNE.SCQ		3
+	904	NPR.DLO.NPRFZLPNE.SCQ.scqvid	3	973
+	904	NPR.DLO.NPRFZLPNE.SCQ.scqstv	1
+	904	NPR.DLO.NPRFZLPNE.SCQ.scqstr	7	-1; ЕИСПП код на текущия съд
+	904	NPR.DLO.NPRFZLPNE.SCQ.scqdta	7	дата на съдебния акт
+	904	NPR.DLO.NPRFZLPNE.SCQ.scqrlq	7	846...852; повече стойности от "Прекратяване"
+	904	NPR.DLO.NPRFZLPNE.SBC		1
+	904	NPR.DLO.NPRFZLPNE.SBC.sbcrcd	5	1587...1591
+	904	NPR.DLO.NPRFZLPNE.SBC.sbcple	5	1575...1578
+	904	NPR.DLO.NPRFZLPNE.SBC.sbcspj	5
+	904	NPR.DLO.NPRFZLPNE.SBC.sbcobr	5
+	904	NPR.DLO.NPRFZLPNE.SBC.sbctrd	5
+	904	NPR.DLO.NPRFZLPNE.SBC.sbcznq	5
+	904	NPR.DLO.NPRFZLPNE.SBC.sbcetn	5
+	904	NPR.DLO.NPRFZLPNE.SBC.sbcrge	5
+	904	NPR.DLO.NPRFZLPNE.NPL		1
+	904	NPR.DLO.NPRFZLPNE.NPL.*		7	въвежда се от потребителя
+	904	NPR.DLO.NPRFZLPNE.VSL		1
+	904	NPR.DLO.NPRFZLPNE.VSL.vslpdl	5	въвежда се от потребителя
+	904	NPR.DLO.NPRFZLPNE.VSL.vsldlj	5	въвежда се от потребителя
+	904	NPR.DLO.NPRFZLPNE.VSL.vslzvn	7	въвежда се от потребителя
+	904	NPR.DLO.NPRFZLPNE.VSL.vslktg	7	въвежда се от потребителя
+
+Приключване на дело (75)
+
+	910	sbevid				3	910
+	910	sbedkpdta			3	дата на съдебния акт
+	910	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	910	SBH				3
+	910	SBH.sbhvid			3	965
+	910	SBH.sbhstn			3	9649
+	910	NPR				3
+	910	NPR.nprnmr			3	ЕИСПП номер на НП
+	910	NPR.DLO				3
+	910	NPR.DLO.dlovid			3	853
+	910	NPR.DLO.dlosig			3	997...1002, 1008...1010, 15342, 1900001685
+	910	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	910	NPR.DLO.dlogdn			3	година на делото
+	910	NPR.DLO.dlonmr			3	номер на делото
+	910	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682
+	910	NPR.DLO.dlosprvid		3
+	910	NPR.DLO.DLOSTA			3
+	910	NPR.DLO.DLOSTA.dlosts		3	1122
+	910	NPR.DLO.DLOSTA.dlodtasts	7
+	910	.resSid				3	2016
+	910	.sbhvid				3	229
+
+Връщане на НД за ново разглеждане на въззивен съд (от ВКС)
+
+	946	sbevid				3	946
+	946	sbedkpvid			3	вид на съответния съдебен акт
+	946	sbedkpnmr			5	номер на съдебния акт
+	946	sbedkpdta			3	дата на съдебния акт
+	946	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	946	SBH				3
+	946	SBH.sbhvid			3	1663; структура, която ще провежда стадия
+	946	SBH.sbhstn			1	въззивен съд, на който се връща делото - от DLOOSN
+	946	SBH.sbhtxt			1
+	946	NPR				3
+	946	NPR.nprnmr			3	ЕИСПП номер на НП
+	946	NPR.DLO				3
+	946	NPR.DLO.dlovid			3	853
+	946	NPR.DLO.dlosig			3	1900001638...1900001640
+	946	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	946	NPR.DLO.dlogdn			3	година на делото
+	946	NPR.DLO.dlonmr			3	номер на делото
+	946	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682
+	946	NPR.DLO.dlosprvid		3	1900001637
+	946	NPR.DLO.DLOOSN			3
+	946	NPR.DLO.DLOOSN.dlostr		3	въззивен съд, на който се връща делото, определя се по вътрешна логика
+	946	NPR.DLO.DLOOSN.dlovid		3	853; (първоинстанционно) съдебно дело
+	946	NPR.DLO.DLOOSN.dlosig		3	1010, 1008, 1009; точен вид на второинстанционното дело; ВНАХД?
+	946	NPR.DLO.DLOOSN.dlogdn		3	година на второинстанционното дело
+	946	NPR.DLO.DLOOSN.dlonmr		3	номер на второинстанционното дело
+	946	.sbhvid				3	-2; адресант
+
+Възобновяване на наказателно дело (от ВКС)
+
+	951	sbevid				3	951
+	951	sbedkpvid			3	вид на съответния съдебен акт
+	951	sbedkpnmr			5	номер на съдебния акт
+	951	sbedkpdta			3	дата на съдебния акт
+	951	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	951	NPR				3
+	951	NPR.nprnmr			3	ЕИСПП номер на НП
+	951	NPR.DLO				3
+	951	NPR.DLO.dlovid			3	853
+	951	NPR.DLO.dlosig			3	1900001638...1900001640; ЕИСПП код на точен вид дело
+	951	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	951	NPR.DLO.dlogdn			3	година на делото
+	951	NPR.DLO.dlonmr			3	номер на делото
+	951	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682
+	951	NPR.DLO.dlosprvid		3	1900001637
+	951	NPR.DLO.FZL			3	много
+	951	NPR.DLO.PNE			3	много
+	951	NPR.DLO.PNE.pnenmr		3	ЕИСПП номер на престъпление
+	951	NPR.DLO.PNE.PNESTA.*		1	
+	951	NPR.DLO.NPRFZLPNE		3	много
+	951	NPR.DLO.NPRFZLPNE.SCQ		3
+	951	NPR.DLO.NPRFZLPNE.SCQ.scqvid	3	987
+	951	NPR.DLO.NPRFZLPNE.SCQ.scqstv	1
+	951	NPR.DLO.NPRFZLPNE.SCQ.scqstr	3	-1; ЕИСПП код на текущия съд
+	951	NPR.DLO.NPRFZLPNE.SCQ.scqdta	1	дата на заседание/съдебен акт
+	951	NPR.DLO.NPRFZLPNE.SCQ.scqosn	7	14106...14112; според приложенията е задължително
+	951	NPR.DLO.NPRFZLPNE.SCQ.scqrlq	3	846...852
+	951	.scqosn				3	14113
+
+Изменяне на присъда на въззивна инстанция (от ВКС)
+
+	866	sbevid				3	866
+	866	sbedkpvid			3	646, 644, 648, 649; Решение
+	866	sbedkpnmr			5	номер на съдебния акт
+	866	sbedkpdta			3	дата на съдебния акт
+	866	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	866	SBH				3
+	866	SBH.sbhvid			3	971
+	866	SBH.sbhstn			7	824, 825; оправдателна, осъдителна - засега се редактира
+	866	SRK				3
+	866	SRK.srkvid			3	1029
+	866	SRK.srkden			5
+	866	SRK.srksdc			5
+	866	SRK.srkmsc			5
+	866	SRK.srkgdn			5
+	866	SRK.srkdta			3	дата на заседание/съдебен акт - начална дата на срока
+	866	NPR				3
+	866	NPR.nprnmr			3	ЕИСПП номер на НП
+	866	NPR.DLO				3
+	866	NPR.DLO.dlovid			3	853
+	866	NPR.DLO.dlosig			3	1900001638...1900001640
+	866	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	866	NPR.DLO.dlogdn			3	година на делото
+	866	NPR.DLO.dlonmr			3	номер на делото
+	866	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682
+	866	NPR.DLO.dlosprvid		3	1900001637
+	866	NPR.DLO.FZL			3
+	866	NPR.DLO.FZL.NKZ			1	задължителни само когато тип присъда = "осъдителна"
+	866	NPR.DLO.FZL.NKZ.nkztip		7	721, 745
+	866	NPR.DLO.FZL.NKZ.nkzvid		7	654, 655, 670, 699, 700, 702...705, 798, 799, 12070, 14344
+	866	NPR.DLO.FZL.NKZ.nkzstr		3	-1; или се въвежда
+	866	NPR.DLO.FZL.NKZ.nkzrzm		7	въвежда се от потребителя за наказание "Глоба", в противен случай 0
+	866	NPR.DLO.FZL.NKZ.nkzden		5	поне едно от полетата при nkzvid = лишаване от свобода
+	866	NPR.DLO.FZL.NKZ.nkzsdc		5	-''-
+	866	NPR.DLO.FZL.NKZ.nkzmsc		5	-''-
+	866	NPR.DLO.FZL.NKZ.nkzgdn		5	-''-
+	866	NPR.DLO.FZL.NKZ.nkzncn		7	763, 764
+	866	NPR.DLO.FZL.NKZ.iptsrkden	5	поне едно от полетата при nkzncn = "условно осъждане"
+	866	NPR.DLO.FZL.NKZ.iptsrksdc	5	-''-
+	866	NPR.DLO.FZL.NKZ.iptsrkmsc	5	-''-
+	866	NPR.DLO.FZL.NKZ.iptsrkgdn	5	-''-
+	866	NPR.DLO.FZL.NKZ.iptsrkdta	5	задължителна при nkzncn = "условно осъждане"
+	866	NPR.DLO.FZL.NKZ.nkzrjm		5	; 842...845; режим на изтърпяване; 2014:182 всички
+	866	NPR.DLO.FZL.NKZ.nkzakt		7	1106, 1108, 1117, 1118, 1127; въвежда се от потребителя
+	866	NPR.DLO.FZL.NKZ.nkzaktdta	7	въвежда се от потребителя
+	866	NPR.DLO.PNE			3	много
+	866	NPR.DLO.PNE.pnenmr		3	ЕИСПП номер на престъпление
+	866	NPR.DLO.PNE.PNESTA.*		1
+	866	NPR.DLO.NPRFZLPNE		1
+	866	NPR.DLO.NPRFZLPNE.SCQ		3
+	866	NPR.DLO.NPRFZLPNE.SCQ.scqvid	7	978, 979
+	866	NPR.DLO.NPRFZLPNE.SCQ.scqstv	1
+	866	NPR.DLO.NPRFZLPNE.SCQ.scqstr	3	-1; ЕИСПП код на текущия съд
+	866	NPR.DLO.NPRFZLPNE.SCQ.scqdta	1	дата на заседание/ съдебен акт
+	866	NPR.DLO.NPRFZLPNE.SCQ.scqrlq	7	846...848, 851, 852
+	866	NPR.DLO.NPRFZLPNE.SCQ.NKZPNE	1	задължителни само когато scqvid=”осъжда”
+	866	NPR.DLO.NPRFZLPNE.SBC		1
+	866	NPR.DLO.NPRFZLPNE.SBC.sbcrcd	5	1587...1591
+	866	NPR.DLO.NPRFZLPNE.SBC.sbcple	5	1575...1578
+	866	NPR.DLO.NPRFZLPNE.SBC.sbcspj	7
+	866	NPR.DLO.NPRFZLPNE.SBC.sbcobr	5
+	866	NPR.DLO.NPRFZLPNE.SBC.sbctrd	5	"
+	866	NPR.DLO.NPRFZLPNE.SBC.sbcznq	5	"
+	866	NPR.DLO.NPRFZLPNE.SBC.sbcetn	5
+	866	NPR.DLO.NPRFZLPNE.SBC.sbcrge	5
+	866	NPR.DLO.NPRFZLPNE.NPL		1
+	866	NPR.DLO.NPRFZLPNE.NPL.*		3
+	866	NPR.DLO.NPRFZLPNE.VSL		1
+	866	NPR.DLO.NPRFZLPNE.VSL.vslpdl	5
+	866	NPR.DLO.NPRFZLPNE.VSL.vsldlj	1	"
+	866	NPR.DLO.NPRFZLPNE.VSL.vslzvn	3
+	866	NPR.DLO.NPRFZLPNE.VSL.vslktg	3
+	866	.sbhvid				3	231
+
+Отказ от възобновяване на наказателно дело (от ВКС)
+
+	884	sbevid				3	884
+	884	sbedkpvid			3	644, 649, 12621, 648; вид на съответния съдебен акт
+	884	sbedkpnmr			5	номер на съдебния акт
+	884	sbedkpdta			3	дата на съдебния акт
+	884	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	884	NPR				3
+	884	NPR.nprnmr			3	ЕИСПП номер на НП
+	884	NPR.DLO				3
+	884	NPR.DLO.dlovid			3	853
+	884	NPR.DLO.dlosig			3	1900001638...1900001640
+	884	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	884	NPR.DLO.dlogdn			3	година на делото
+	884	NPR.DLO.dlonmr			3	номер на делото
+	884	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682; определя се по вътрешна логика
+	884	NPR.DLO.dlosprvid		3	1900001637
+
+Отлагане изпълнението на наказание (от ВКС)
+
+	886	sbevid				3	886
+	886	sbedkpvid			3	644, 649; вид на съответния съдебен акт
+	886	sbedkpnmr			5	номер на съдебния акт
+	886	sbedkpdta			3	дата на съдебния акт
+	886	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	886	SBH				3
+	886	SBH.sbhvid			3	966
+	886	SBH.sbhstn			7	802, 803, 808, 807, 818, 819, 817
+	886	NPR				3
+	886	NPR.nprnmr			3	ЕИСПП номер на НП
+	886	NPR.DLO				3
+	886	NPR.DLO.dlovid			3	853
+	886	NPR.DLO.dlosig			3	1900001638...1900001640
+	886	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	886	NPR.DLO.dlogdn			3	година на делото
+	886	NPR.DLO.dlonmr			3	номер на делото
+	886	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682; определя се по вътрешна логика
+	886	NPR.DLO.dlosprvid		3	1900001637
+	886	NPR.DLO.FZL			3
+	886	.sbhvid				3	213
+
+Отменяне на присъда на въззивна инстанция (от ВКС)
+
+	895	sbevid				3	895
+	895	sbedkpvid			3	646, 644, 648, 649; Решение
+	895	sbedkpnmr			5	номер на съдебния акт
+	895	sbedkpdta			3	дата на съдебния акт
+	895	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	895	NPR				3
+	895	NPR.nprnmr			3	ЕИСПП номер на НП
+	895	NPR.DLO				3
+	895	NPR.DLO.dlovid			3	853
+	895	NPR.DLO.dlosig			3	1900001638...1900001640
+	895	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	895	NPR.DLO.dlogdn			3	година на делото
+	895	NPR.DLO.dlonmr			3	номер на делото
+	895	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682; определя се по вътрешна логика
+	895	NPR.DLO.dlosprvid		3	1900001637
+	895	NPR.DLO.FZL			3
+	895	NPR.DLO.FZL.NKZ			3	задължителни винаги според Декстро
+	895	NPR.DLO.FZL.NKZ.nkztip		7	721, 745
+	895	NPR.DLO.FZL.NKZ.nkzvid		7	654, 655, 670, 699, 700, 702...705, 798, 799, 12070, 14344
+	895	NPR.DLO.FZL.NKZ.nkzstr		3	-1; или се въвежда
+	895	NPR.DLO.FZL.NKZ.nkzrzm		7	въвежда се от потребителя за наказание "Глоба", в противен случай 0
+	895	NPR.DLO.FZL.NKZ.nkzden		5	поне едно от полетата при nkzvid = лишаване от свобода
+	895	NPR.DLO.FZL.NKZ.nkzsdc		5	-''-
+	895	NPR.DLO.FZL.NKZ.nkzmsc		5	-''-
+	895	NPR.DLO.FZL.NKZ.nkzgdn		5	-''-
+	895	NPR.DLO.FZL.NKZ.nkzncn		7	763, 764
+	895	NPR.DLO.FZL.NKZ.iptsrkden	5	поне едно от полетата при nkzncn = "условно осъждане"
+	895	NPR.DLO.FZL.NKZ.iptsrksdc	5	-''-
+	895	NPR.DLO.FZL.NKZ.iptsrkmsc	5	-''-
+	895	NPR.DLO.FZL.NKZ.iptsrkgdn	5	-''-
+	895	NPR.DLO.FZL.NKZ.iptsrkdta	5	задължителна при nkzncn = "условно осъждане"
+	895	NPR.DLO.FZL.NKZ.nkzrjm		5	; 842...845; режим на изтърпяване; 2014:182 всички
+	895	NPR.DLO.FZL.NKZ.nkzakt		7	1106, 1108, 1117, 1118, 1127
+	895	NPR.DLO.FZL.NKZ.nkzaktdta	7
+	895	NPR.DLO.PNE			3	много
+	895	NPR.DLO.PNE.pnenmr		3	ЕИСПП номер на престъпление
+	895	NPR.DLO.PNE.PNESTA.*		1
+	895	NPR.DLO.NPRFZLPNE		3	много
+	895	NPR.DLO.NPRFZLPNE.SCQ		3
+	895	NPR.DLO.NPRFZLPNE.SCQ.scqvid	7	983, 1180, 978
+	895	NPR.DLO.NPRFZLPNE.SCQ.scqstv	1
+	895	NPR.DLO.NPRFZLPNE.SCQ.scqstr	3	-1; ЕИСПП код на текущия съд
+	895	NPR.DLO.NPRFZLPNE.SCQ.scqdta	1	дата на съдебния акт
+	895	NPR.DLO.NPRFZLPNE.SCQ.scqrlq	7	846...848, 851, 852
+	895	NPR.DLO.NPRFZLPNE.SCQ.NKZPNE	1	задължителни само когато scqvid=”осъжда”, винаги според Декстро
+	895	NPR.DLO.NPRFZLPNE.SBC		1	при наличие на данни!
+	895	NPR.DLO.NPRFZLPNE.SBC.sbcrcd	5	1587...1591
+	895	NPR.DLO.NPRFZLPNE.SBC.sbcple	5	1575...1578
+	895	NPR.DLO.NPRFZLPNE.SBC.sbcspj	5
+	895	NPR.DLO.NPRFZLPNE.SBC.sbcobr	5
+	895	NPR.DLO.NPRFZLPNE.SBC.sbctrd	5
+	895	NPR.DLO.NPRFZLPNE.SBC.sbcznq	5
+	895	NPR.DLO.NPRFZLPNE.SBC.sbcetn	5
+	895	NPR.DLO.NPRFZLPNE.SBC.sbcrge	5
+	895	NPR.DLO.NPRFZLPNE.NPL		1	при наличие на данни!
+	895	NPR.DLO.NPRFZLPNE.NPL.*		3
+	895	NPR.DLO.NPRFZLPNE.VSL		1	при наличие на данни!
+	895	NPR.DLO.NPRFZLPNE.VSL.vslpdl	1
+	895	NPR.DLO.NPRFZLPNE.VSL.vsldlj	1
+	895	NPR.DLO.NPRFZLPNE.VSL.vslzvn	3
+	895	NPR.DLO.NPRFZLPNE.VSL.vslktg	3
+
+Отменяне на решение на ВЗИ по първоинстанционна присъда (от ВКС)
+
+	894	sbevid				3	894
+	894	sbedkpvid			3	646, 644, 648, 649; Решение
+	894	sbedkpnmr			5	номер на съдебния акт
+	894	sbedkpdta			3	дата на съдебния акт
+	894	sbedkpstr			3	-1; ЕИСПП код на текущия съд
+	894	NPR				3
+	894	NPR.nprnmr			3	ЕИСПП номер на НП
+	894	NPR.DLO				3
+	894	NPR.DLO.dlovid			3	853
+	894	NPR.DLO.dlosig			3	1900001638...1900001640
+	894	NPR.DLO.dlostr			3	-1; ЕИСПП код на текущия съд
+	894	NPR.DLO.dlogdn			3	година на делото
+	894	NPR.DLO.dlonmr			3	номер на делото
+	894	NPR.DLO.dloncnone		3	722, 723, 728...730, 1900001682; определя се по вътрешна логика
+	894	NPR.DLO.dlosprvid		3	1900001637
+	894	NPR.DLO.FZL			3
+	894	NPR.DLO.FZL.NKZ			3	задължителни винаги според Декстро
+	894	NPR.DLO.FZL.NKZ.nkztip		7	721, 745
+	894	NPR.DLO.FZL.NKZ.nkzvid		7	654, 655, 670, 699, 700, 702...705, 798, 799, 12070, 14344
+	894	NPR.DLO.FZL.NKZ.nkzstr		3	-1; или се въвежда
+	894	NPR.DLO.FZL.NKZ.nkzrzm		7	въвежда се от потребителя за наказание "Глоба", в противен случай 0
+	894	NPR.DLO.FZL.NKZ.nkzden		5	поне едно от полетата при nkzvid = лишаване от свобода
+	894	NPR.DLO.FZL.NKZ.nkzsdc		5	-''-
+	894	NPR.DLO.FZL.NKZ.nkzmsc		5	-''-
+	894	NPR.DLO.FZL.NKZ.nkzgdn		5	-''-
+	894	NPR.DLO.FZL.NKZ.nkzncn		7	763, 764
+	894	NPR.DLO.FZL.NKZ.iptsrkden	5	поне едно от полетата при nkzncn = "условно осъждане"
+	894	NPR.DLO.FZL.NKZ.iptsrksdc	5	-''-
+	894	NPR.DLO.FZL.NKZ.iptsrkmsc	5	-''-
+	894	NPR.DLO.FZL.NKZ.iptsrkgdn	5	-''-
+	894	NPR.DLO.FZL.NKZ.iptsrkdta	5	задължителна при nkzncn = "условно осъждане"
+	894	NPR.DLO.FZL.NKZ.nkzrjm		5	; 842...845; режим на изтърпяване; 2014:182 всички
+	894	NPR.DLO.FZL.NKZ.nkzakt		7	1106, 1108, 1117, 1118, 1127
+	894	NPR.DLO.FZL.NKZ.nkzaktdta	7
+	894	NPR.DLO.PNE			3	много
+	894	NPR.DLO.PNE.pnenmr		3	ЕИСПП номер на престъпление
+	894	NPR.DLO.PNE.PNESTA.*		1
+	894	NPR.DLO.NPRFZLPNE		3	много
+	894	NPR.DLO.NPRFZLPNE.SCQ		3
+	894	NPR.DLO.NPRFZLPNE.SCQ.scqvid	7	983, 1180, 978
+	894	NPR.DLO.NPRFZLPNE.SCQ.scqstv	1
+	894	NPR.DLO.NPRFZLPNE.SCQ.scqstr	3	-1; ЕИСПП код на текущия съд
+	894	NPR.DLO.NPRFZLPNE.SCQ.scqdta	1	дата на съдебния акт
+	894	NPR.DLO.NPRFZLPNE.SCQ.scqrlq	7	846...848, 851, 852
+	894	NPR.DLO.NPRFZLPNE.SCQ.NKZPNE	1	задължителни само когато scqvid=”осъжда”, винаги според Декстро
+	894	NPR.DLO.NPRFZLPNE.SBC		1	при наличие на данни!
+	894	NPR.DLO.NPRFZLPNE.SBC.sbcrcd	5	1587...1591
+	894	NPR.DLO.NPRFZLPNE.SBC.sbcple	5	1575...1578
+	894	NPR.DLO.NPRFZLPNE.SBC.sbcspj	5
+	894	NPR.DLO.NPRFZLPNE.SBC.sbcobr	5
+	894	NPR.DLO.NPRFZLPNE.SBC.sbctrd	5
+	894	NPR.DLO.NPRFZLPNE.SBC.sbcznq	5
+	894	NPR.DLO.NPRFZLPNE.SBC.sbcetn	5
+	894	NPR.DLO.NPRFZLPNE.SBC.sbcrge	5
+	894	NPR.DLO.NPRFZLPNE.NPL		1	при наличие на данни!
+	894	NPR.DLO.NPRFZLPNE.NPL.*		3
+	894	NPR.DLO.NPRFZLPNE.VSL		1	при наличие на данни!
+	894	NPR.DLO.NPRFZLPNE.VSL.vslpdl	1
+	894	NPR.DLO.NPRFZLPNE.VSL.vsldlj	1
+	894	NPR.DLO.NPRFZLPNE.VSL.vslzvn	3
+	894	NPR.DLO.NPRFZLPNE.VSL.vslktg	3

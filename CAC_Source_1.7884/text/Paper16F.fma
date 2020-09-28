@@ -1,0 +1,97 @@
+***_TITLE
+***_END
+***_HTML_TITLE
+<html>
+<head>
+<title>Обявление в ДВ</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<style>
+<!--
+body
+{
+	font-family:Arial;
+	font-size:12pt;
+	font-weight:normal;
+	color:black;
+	background-color:white
+}
+
+table
+{
+	color:black;
+	background-color:white;
+}
+
+td
+{
+	font-family:Arial;
+	font-size:12pt;
+	font-weight:normal;
+	text-align:justify;
+	color:black;
+	background-color:white;
+}
+
+th
+{
+	font-family:Arial;
+	font-size:12pt;
+	color:black;
+	background-color:white;
+}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF">
+<center>
+<table width="100%">
+<tr>
+<td>
+***_END
+***_FORMATTED_HEADER
+***_END
+***_TEXT_SIZE
+2500
+***_END
+***_HTML_FORMATTED_HEADER
+#@ 20011 255# #@ 18 255##@ 20012 255# призовава #@ 74006 255# с последен адрес #@ 27047 255# обл. #@ 27048 255# #@ 27049 255#, сега с неизвестен адрес, да се яви в съда на #@ 2177 255# г. в #@ 2178 255# (резервна дата #@ 2179 255# в #@ 2180 255#) като #@ 28009 255# по #@ 1003 255# No #@ 1001 1#/#@ 1002 4# г., заведено от #@ 1067 255# за [...]. #@ 28023 255# да посочи съдебен адрес, в противен случай делото ще се гледа при условията на чл. 50, ал. 2 ГПК(отм.).
+***_END
+***_HEADER
+***_END
+***_HTML_PAGE_BREAK
+<!-- <br style='page-break-before:always'> -->
+#@ 11070 255#
+***_END
+***_COLUMNS
+0 0
+***_END
+
+***_MEDIUM_LINE
+‘—†—’
+***_END
+***_WANT_KINDS
+NO
+***_END
+***_SUBJECTS
+***_END
+***_SUBJECT_RANGES
+***_END
+***_MERGED_KINDS
+***_END
+***_FORMATTED_TAIL
+***_END
+***_HTML_TAIL
+</td>
+</tr>
+</table>
+</center>
+</body>
+</html>
+***_END
+***_TAIL
+***_END
+
+***_PARAMETERS
+127 55 1 1 0 3
+***_END
+

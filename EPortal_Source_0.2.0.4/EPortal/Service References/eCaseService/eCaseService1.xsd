@@ -1,0 +1,2518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" elementFormDefault="qualified" targetNamespace="http://www.abbaty.com/eCase/v2" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://service.ecase.abbaty.com/eCaseService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://service.ecase.abbaty.com/eCaseService.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://service.ecase.abbaty.com/eCaseService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System" />
+  <xs:element name="GetPersonRegistrationById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="personRegistrationId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPersonRegistrationByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://www.abbaty.com/eCase/v2" minOccurs="0" name="GetPersonRegistrationByIdResult" nillable="true" type="q1:PersonRegistration" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="PersonRegistration">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BirthDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EGN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PersonRegistrationId" nillable="true" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q2="http://www.abbaty.com/eCase/v2" name="PersonRegistration" nillable="true" type="q2:PersonRegistration" />
+  <xs:complexType name="InfocaseFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorCode" type="xs:int" />
+      <xs:element minOccurs="0" name="ErrorField" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Reason" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q3="http://www.abbaty.com/eCase/v2" name="InfocaseFault" nillable="true" type="q3:InfocaseFault" />
+  <xs:element name="GetPersonRegistrationIdentifierByPersonAssignmentId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="personassignmentId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPersonRegistrationIdentifierByPersonAssignmentIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPersonRegistrationIdentifierByPersonAssignmentIdResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSummonById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="summonId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSummonByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://www.abbaty.com/eCase/v2" minOccurs="0" name="GetSummonByIdResult" nillable="true" type="q4:Summon" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="Summon">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Addressee" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DateCreated" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DateServed" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ParentId" type="ser:guid" />
+      <xs:element minOccurs="0" name="SideId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Subject" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SummonId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="SummonKind" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SummonTypeCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q5="http://www.abbaty.com/eCase/v2" name="Summon" nillable="true" type="q5:Summon" />
+  <xs:element name="GetSummonIdentifiersByParentId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="parentId" type="ser:guid" />
+        <xs:element minOccurs="0" name="summonTypeCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSummonIdentifiersByParentIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetSummonIdentifiersByParentIdResult" nillable="true" type="q6:ArrayOfguid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetScannedDocumentById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="scannedDocumentId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetScannedDocumentByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://www.abbaty.com/eCase/v2" minOccurs="0" name="GetScannedDocumentByIdResult" nillable="true" type="q7:ScannedDocument" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ScannedDocument">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CaseId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ScannedDocumentContent" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="ScannedDocumentId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="ScannedDocumentMimeType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q8="http://www.abbaty.com/eCase/v2" name="ScannedDocument" nillable="true" type="q8:ScannedDocument" />
+  <xs:element name="GetScannedDocumentIdentifiersByCaseId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="caseId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetScannedDocumentIdentifiersByCaseIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetScannedDocumentIdentifiersByCaseIdResult" nillable="true" type="q9:ArrayOfguid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAssignmentFileById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="assignmentFileId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAssignmentFileByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://www.abbaty.com/eCase/v2" minOccurs="0" name="GetAssignmentFileByIdResult" nillable="true" type="q10:AssignmentFile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="AssignmentFile">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AssignmentFileId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="AssignmentId" type="ser:guid" />
+      <xs:element minOccurs="0" name="ProtocolContent" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="ProtocolMimeType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q11="http://www.abbaty.com/eCase/v2" name="AssignmentFile" nillable="true" type="q11:AssignmentFile" />
+  <xs:element name="GetAssignmentFileIdentifiersByAssignmentId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="assignmentId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAssignmentFileIdentifiersByAssignmentIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetAssignmentFileIdentifiersByAssignmentIdResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPrivateProtocolFileById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="privateProtocolId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPrivateProtocolFileByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://www.abbaty.com/eCase/v2" minOccurs="0" name="GetPrivateProtocolFileByIdResult" nillable="true" type="q12:PrivateProtocolFile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="PrivateProtocolFile">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HearingId" type="ser:guid" />
+      <xs:element minOccurs="0" name="PrivateProtocolFileId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="ProtocolContent" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="ProtocolMimeType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q13="http://www.abbaty.com/eCase/v2" name="PrivateProtocolFile" nillable="true" type="q13:PrivateProtocolFile" />
+  <xs:element name="GetPrivateProtocolFileIdentifierByHearingId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="hearingId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPrivateProtocolFileIdentifierByHearingIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPrivateProtocolFileIdentifierByHearingIdResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPublicProtocolFileById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="publicProtocolFileId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPublicProtocolFileByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://www.abbaty.com/eCase/v2" minOccurs="0" name="GetPublicProtocolFileByIdResult" nillable="true" type="q14:PublicProtocolFile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="PublicProtocolFile">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HearingId" type="ser:guid" />
+      <xs:element minOccurs="0" name="ProtocolContent" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="ProtocolMimeType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PublicProtocolFileId" nillable="true" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q15="http://www.abbaty.com/eCase/v2" name="PublicProtocolFile" nillable="true" type="q15:PublicProtocolFile" />
+  <xs:element name="GetPublicProtocolFileIdentifierByHearingId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="hearingId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPublicProtocolFileIdentifierByHearingIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPublicProtocolFileIdentifierByHearingIdResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIncomingDocumentFileById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="incomingDocumentFileId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIncomingDocumentFileByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://www.abbaty.com/eCase/v2" minOccurs="0" name="GetIncomingDocumentFileByIdResult" nillable="true" type="q16:IncomingDocumentFile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="IncomingDocumentFile">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IncomingDocumentContent" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="IncomingDocumentFileId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="IncomingDocumentId" type="ser:guid" />
+      <xs:element minOccurs="0" name="IncomingDocumentMimeType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q17="http://www.abbaty.com/eCase/v2" name="IncomingDocumentFile" nillable="true" type="q17:IncomingDocumentFile" />
+  <xs:element name="GetIncomingDocumentFileIdentifierByIncomingDocumentId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="incomingDocumentId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIncomingDocumentFileIdentifierByIncomingDocumentIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetIncomingDocumentFileIdentifierByIncomingDocumentIdResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOutgoingDocumentFileById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="outgoingDocumentFileId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOutgoingDocumentFileByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://www.abbaty.com/eCase/v2" minOccurs="0" name="GetOutgoingDocumentFileByIdResult" nillable="true" type="q18:OutgoingDocumentFile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="OutgoingDocumentFile">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="OutgoingDocumentContent" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="OutgoingDocumentFileId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="OutgoingDocumentId" type="ser:guid" />
+      <xs:element minOccurs="0" name="OutgoingDocumentMimeType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q19="http://www.abbaty.com/eCase/v2" name="OutgoingDocumentFile" nillable="true" type="q19:OutgoingDocumentFile" />
+  <xs:element name="GetOutgoingDocumentFileIdentifierByOutgoingDocumentId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="outgoingDocumentId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOutgoingDocumentFileIdentifierByOutgoingDocumentIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetOutgoingDocumentFileIdentifierByOutgoingDocumentIdResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSummonFileById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="summonFileId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSummonFileByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://www.abbaty.com/eCase/v2" minOccurs="0" name="GetSummonFileByIdResult" nillable="true" type="q20:SummonFile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="SummonFile">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Content" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="MimeType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SummonFileId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="SummonId" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q21="http://www.abbaty.com/eCase/v2" name="SummonFile" nillable="true" type="q21:SummonFile" />
+  <xs:element name="GetSummonFileIdentifierBySummonId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="summonId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSummonFileIdentifierBySummonIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetSummonFileIdentifierBySummonIdResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPrivateActFileById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="privateActFileId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPrivateActFileByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://www.abbaty.com/eCase/v2" minOccurs="0" name="GetPrivateActFileByIdResult" nillable="true" type="q22:PrivateActFile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="PrivateActFile">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActId" type="ser:guid" />
+      <xs:element minOccurs="0" name="PrivateActContent" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="PrivateActFileId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="PrivateActMimeType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q23="http://www.abbaty.com/eCase/v2" name="PrivateActFile" nillable="true" type="q23:PrivateActFile" />
+  <xs:element name="GetPrivateActFileIdentifiersByActId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="actId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPrivateActFileIdentifiersByActIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPrivateActFileIdentifiersByActIdResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPublicActFileById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="publicActFileId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPublicActFileByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://www.abbaty.com/eCase/v2" minOccurs="0" name="GetPublicActFileByIdResult" nillable="true" type="q24:PublicActFile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="PublicActFile">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActId" type="ser:guid" />
+      <xs:element minOccurs="0" name="PublicActContent" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="PublicActFileId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="PublicActMimeType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q25="http://www.abbaty.com/eCase/v2" name="PublicActFile" nillable="true" type="q25:PublicActFile" />
+  <xs:element name="GetPublicActFileIdentifierByActId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="actId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPublicActFileIdentifierByActIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPublicActFileIdentifierByActIdResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPrivateMotiveFileById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="privateMotiveFileId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPrivateMotiveFileByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://www.abbaty.com/eCase/v2" minOccurs="0" name="GetPrivateMotiveFileByIdResult" nillable="true" type="q26:PrivateMotiveFile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="PrivateMotiveFile">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActId" type="ser:guid" />
+      <xs:element minOccurs="0" name="PrivateMotiveContent" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="PrivateMotiveFileId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="PrivateMotiveMimeType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q27="http://www.abbaty.com/eCase/v2" name="PrivateMotiveFile" nillable="true" type="q27:PrivateMotiveFile" />
+  <xs:element name="GetPrivateMotiveFileIdentifierByActId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="actId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPrivateMotiveFileIdentifierByActIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPrivateMotiveFileIdentifierByActIdResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPublicMotiveFileById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="publicActFileId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPublicMotiveFileByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://www.abbaty.com/eCase/v2" minOccurs="0" name="GetPublicMotiveFileByIdResult" nillable="true" type="q28:PublicMotiveFile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="PublicMotiveFile">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActId" type="ser:guid" />
+      <xs:element minOccurs="0" name="PublicMotiveContent" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="PublicMotiveFileId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="PublicMotiveMimeType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q29="http://www.abbaty.com/eCase/v2" name="PublicMotiveFile" nillable="true" type="q29:PublicMotiveFile" />
+  <xs:element name="GetPublicMotiveFileIdentifierByActId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="actId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPublicMotiveFileIdentifierByActIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPublicMotiveFileIdentifierByActIdResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertIncomingDocument">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://www.abbaty.com/eCase/v2" minOccurs="0" name="incomingDocument" nillable="true" type="q30:IncomingDocument" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="IncomingDocument">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CaseId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="CourtCode" nillable="true" type="xs:string" />
+      <xs:element xmlns:q31="http://www.abbaty.com/eCase/v2" minOccurs="0" name="Entity" nillable="true" type="q31:Entity" />
+      <xs:element minOccurs="0" name="IncomingDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IncomingDocumentId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="IncomingDocumentTypeCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IncomingNumber" type="xs:int" />
+      <xs:element xmlns:q32="http://www.abbaty.com/eCase/v2" minOccurs="0" name="Person" nillable="true" type="q32:Person" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q33="http://www.abbaty.com/eCase/v2" name="IncomingDocument" nillable="true" type="q33:IncomingDocument" />
+  <xs:complexType name="Entity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Bulstat" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q34="http://www.abbaty.com/eCase/v2" name="Entity" nillable="true" type="q34:Entity" />
+  <xs:complexType name="Person">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EGN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Firstname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Lastname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Secondname" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q35="http://www.abbaty.com/eCase/v2" name="Person" nillable="true" type="q35:Person" />
+  <xs:element name="InsertIncomingDocumentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertIncomingDocumentResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateIncomingDocument">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://www.abbaty.com/eCase/v2" minOccurs="0" name="incomingDocument" nillable="true" type="q36:IncomingDocument" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateIncomingDocumentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateIncomingDocumentResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertIncomingDocumentFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://www.abbaty.com/eCase/v2" minOccurs="0" name="incomingDocumentFile" nillable="true" type="q37:IncomingDocumentFile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertIncomingDocumentFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertIncomingDocumentFileResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateIncomingDocumentFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://www.abbaty.com/eCase/v2" minOccurs="0" name="incomingDocumentFile" nillable="true" type="q38:IncomingDocumentFile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateIncomingDocumentFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateIncomingDocumentFileResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOutgoingDocument">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://www.abbaty.com/eCase/v2" minOccurs="0" name="outgoingDocument" nillable="true" type="q39:OutgoingDocument" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="OutgoingDocument">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CaseId" nillable="true" type="ser:guid" />
+      <xs:element xmlns:q40="http://www.abbaty.com/eCase/v2" minOccurs="0" name="Entity" nillable="true" type="q40:Entity" />
+      <xs:element minOccurs="0" name="OutgoingDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="OutgoingDocumentId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="OutgoingDocumentTypeCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OutgoingNumber" type="xs:int" />
+      <xs:element xmlns:q41="http://www.abbaty.com/eCase/v2" minOccurs="0" name="Person" nillable="true" type="q41:Person" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q42="http://www.abbaty.com/eCase/v2" name="OutgoingDocument" nillable="true" type="q42:OutgoingDocument" />
+  <xs:element name="InsertOutgoingDocumentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertOutgoingDocumentResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateOutgoingDocument">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q43="http://www.abbaty.com/eCase/v2" minOccurs="0" name="outgoingDocument" nillable="true" type="q43:OutgoingDocument" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateOutgoingDocumentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateOutgoingDocumentResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOutgoingDocumentFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q44="http://www.abbaty.com/eCase/v2" minOccurs="0" name="outgoingDocumentFile" nillable="true" type="q44:OutgoingDocumentFile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertOutgoingDocumentFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertOutgoingDocumentFileResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateOutgoingDocumentFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q45="http://www.abbaty.com/eCase/v2" minOccurs="0" name="outgoingDocumentFile" nillable="true" type="q45:OutgoingDocumentFile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateOutgoingDocumentFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateOutgoingDocumentFileResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertCase">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q46="http://www.abbaty.com/eCase/v2" minOccurs="0" name="c" nillable="true" type="q46:Case" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="Case">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CaseCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CaseId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="CaseKindCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CaseTypeCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CaseYear" type="xs:int" />
+      <xs:element minOccurs="0" name="CourtCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DepartmentName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FormationDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IncomingDocumentId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="LegalSubject" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Number" type="xs:int" />
+      <xs:element minOccurs="0" name="PanelName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StatisticCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q47="http://www.abbaty.com/eCase/v2" name="Case" nillable="true" type="q47:Case" />
+  <xs:element name="InsertCaseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertCaseResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCase">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q48="http://www.abbaty.com/eCase/v2" minOccurs="0" name="c" nillable="true" type="q48:Case" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCaseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateCaseResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertConnectedCase">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q49="http://www.abbaty.com/eCase/v2" minOccurs="0" name="connectedCase" nillable="true" type="q49:ConnectedCase" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ConnectedCase">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CaseId" type="ser:guid" />
+      <xs:element minOccurs="0" name="ConnectedCaseTypeCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PredecessorCaseId" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q50="http://www.abbaty.com/eCase/v2" name="ConnectedCase" nillable="true" type="q50:ConnectedCase" />
+  <xs:element name="InsertConnectedCaseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertConnectedCaseResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateConnectedCase">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q51="http://www.abbaty.com/eCase/v2" minOccurs="0" name="connectedCase" nillable="true" type="q51:ConnectedCase" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateConnectedCaseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateConnectedCaseResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertReporter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q52="http://www.abbaty.com/eCase/v2" minOccurs="0" name="reporter" nillable="true" type="q52:Reporter" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="Reporter">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CaseId" type="ser:guid" />
+      <xs:element minOccurs="0" name="DateAssigned" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DateReplaced" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="JudgeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReasonReplaced" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReporterId" nillable="true" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q53="http://www.abbaty.com/eCase/v2" name="Reporter" nillable="true" type="q53:Reporter" />
+  <xs:element name="InsertReporterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertReporterResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateReporter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q54="http://www.abbaty.com/eCase/v2" minOccurs="0" name="reporter" nillable="true" type="q54:Reporter" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateReporterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateReporterResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertAssignment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q55="http://www.abbaty.com/eCase/v2" minOccurs="0" name="assignment" nillable="true" type="q55:Assignment" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="Assignment">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AssignmentId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="Assignor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CaseId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IncomingDocumentId" type="ser:guid" />
+      <xs:element minOccurs="0" name="JudgeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q56="http://www.abbaty.com/eCase/v2" name="Assignment" nillable="true" type="q56:Assignment" />
+  <xs:element name="InsertAssignmentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertAssignmentResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAssignment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q57="http://www.abbaty.com/eCase/v2" minOccurs="0" name="assignment" nillable="true" type="q57:Assignment" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAssignmentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateAssignmentResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertAssignmentFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q58="http://www.abbaty.com/eCase/v2" minOccurs="0" name="assignmentFile" nillable="true" type="q58:AssignmentFile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertAssignmentFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertAssignmentFileResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAssignmentFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q59="http://www.abbaty.com/eCase/v2" minOccurs="0" name="assignmentFile" nillable="true" type="q59:AssignmentFile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAssignmentFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateAssignmentFileResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertHearing">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q60="http://www.abbaty.com/eCase/v2" minOccurs="0" name="hearing" nillable="true" type="q60:Hearing" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="Hearing">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CaseId" type="ser:guid" />
+      <xs:element minOccurs="0" name="CourtRoom" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="HearingId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="HearingResult" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HearingType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsCanceled" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ProsecutorName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SecretaryName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q61="http://www.abbaty.com/eCase/v2" name="Hearing" nillable="true" type="q61:Hearing" />
+  <xs:element name="InsertHearingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertHearingResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateHearing">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q62="http://www.abbaty.com/eCase/v2" minOccurs="0" name="hearing" nillable="true" type="q62:Hearing" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateHearingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateHearingResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPrivateProtocolFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q63="http://www.abbaty.com/eCase/v2" minOccurs="0" name="privateProtocolFile" nillable="true" type="q63:PrivateProtocolFile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPrivateProtocolFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertPrivateProtocolFileResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePrivateProtocolFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q64="http://www.abbaty.com/eCase/v2" minOccurs="0" name="privateProtocolFile" nillable="true" type="q64:PrivateProtocolFile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePrivateProtocolFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdatePrivateProtocolFileResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPublicProtocolFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q65="http://www.abbaty.com/eCase/v2" minOccurs="0" name="publicProtocolFile" nillable="true" type="q65:PublicProtocolFile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPublicProtocolFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertPublicProtocolFileResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePublicProtocolFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q66="http://www.abbaty.com/eCase/v2" minOccurs="0" name="publicProtocolFile" nillable="true" type="q66:PublicProtocolFile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePublicProtocolFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdatePublicProtocolFileResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertHearingParticipant">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q67="http://www.abbaty.com/eCase/v2" minOccurs="0" name="hearingParticipant" nillable="true" type="q67:HearingParticipant" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="HearingParticipant">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HearingId" type="ser:guid" />
+      <xs:element minOccurs="0" name="HearingParticipantId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="JudgeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Role" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubstituteFor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubstituteReason" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q68="http://www.abbaty.com/eCase/v2" name="HearingParticipant" nillable="true" type="q68:HearingParticipant" />
+  <xs:element name="InsertHearingParticipantResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertHearingParticipantResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateHearingParticipant">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q69="http://www.abbaty.com/eCase/v2" minOccurs="0" name="hearingParticipant" nillable="true" type="q69:HearingParticipant" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateHearingParticipantResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateHearingParticipantResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertAct">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q70="http://www.abbaty.com/eCase/v2" minOccurs="0" name="act" nillable="true" type="q70:Act" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="Act">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="ActKindCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CaseId" type="ser:guid" />
+      <xs:element minOccurs="0" name="DateInPower" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DateSigned" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="HearingId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="MotiveDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Number" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q71="http://www.abbaty.com/eCase/v2" name="Act" nillable="true" type="q71:Act" />
+  <xs:element name="InsertActResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertActResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAct">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q72="http://www.abbaty.com/eCase/v2" minOccurs="0" name="act" nillable="true" type="q72:Act" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateActResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateActResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPublicActFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q73="http://www.abbaty.com/eCase/v2" minOccurs="0" name="publicActFile" nillable="true" type="q73:PublicActFile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPublicActFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertPublicActFileResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePublicActFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q74="http://www.abbaty.com/eCase/v2" minOccurs="0" name="publicActFile" nillable="true" type="q74:PublicActFile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePublicActFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdatePublicActFileResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPrivateActFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q75="http://www.abbaty.com/eCase/v2" minOccurs="0" name="privateActFile" nillable="true" type="q75:PrivateActFile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPrivateActFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertPrivateActFileResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePrivateActFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q76="http://www.abbaty.com/eCase/v2" minOccurs="0" name="privateActFile" nillable="true" type="q76:PrivateActFile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePrivateActFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdatePrivateActFileResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPublicMotiveFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q77="http://www.abbaty.com/eCase/v2" minOccurs="0" name="publicMotiveFile" nillable="true" type="q77:PublicMotiveFile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPublicMotiveFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertPublicMotiveFileResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePublicMotiveFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q78="http://www.abbaty.com/eCase/v2" minOccurs="0" name="publicMotiveFile" nillable="true" type="q78:PublicMotiveFile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePublicMotiveFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdatePublicMotiveFileResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPrivateMotiveFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q79="http://www.abbaty.com/eCase/v2" minOccurs="0" name="privateMotiveFile" nillable="true" type="q79:PrivateMotiveFile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPrivateMotiveFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertPrivateMotiveFileResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePrivateMotiveFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q80="http://www.abbaty.com/eCase/v2" minOccurs="0" name="privateMotiveFile" nillable="true" type="q80:PrivateMotiveFile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePrivateMotiveFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdatePrivateMotiveFileResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertActPreparator">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q81="http://www.abbaty.com/eCase/v2" minOccurs="0" name="actPreparator" nillable="true" type="q81:ActPreparator" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ActPreparator">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActId" type="ser:guid" />
+      <xs:element minOccurs="0" name="ActPreparatorId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="JudgeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Role" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubstituteFor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubstituteReason" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q82="http://www.abbaty.com/eCase/v2" name="ActPreparator" nillable="true" type="q82:ActPreparator" />
+  <xs:element name="InsertActPreparatorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertActPreparatorResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateActPreparator">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q83="http://www.abbaty.com/eCase/v2" minOccurs="0" name="actPreparator" nillable="true" type="q83:ActPreparator" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateActPreparatorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateActPreparatorResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertAppeal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q84="http://www.abbaty.com/eCase/v2" minOccurs="0" name="appeal" nillable="true" type="q84:Appeal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="Appeal">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActId" type="ser:guid" />
+      <xs:element minOccurs="0" name="AppealId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="AppealKindCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DateFiled" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SideId" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q85="http://www.abbaty.com/eCase/v2" name="Appeal" nillable="true" type="q85:Appeal" />
+  <xs:element name="InsertAppealResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertAppealResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAppeal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q86="http://www.abbaty.com/eCase/v2" minOccurs="0" name="appeal" nillable="true" type="q86:Appeal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateAppealResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateAppealResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertCaseRuling">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q87="http://www.abbaty.com/eCase/v2" minOccurs="0" name="caseRuling" nillable="true" type="q87:CaseRuling" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="CaseRuling">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="CaseId" type="ser:guid" />
+      <xs:element minOccurs="0" name="CaseRulingId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="CaseRulingKindCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HearingId" nillable="true" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q88="http://www.abbaty.com/eCase/v2" name="CaseRuling" nillable="true" type="q88:CaseRuling" />
+  <xs:element name="InsertCaseRulingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertCaseRulingResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCaseRuling">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q89="http://www.abbaty.com/eCase/v2" minOccurs="0" name="caseRuling" nillable="true" type="q89:CaseRuling" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateCaseRulingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateCaseRulingResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertSide">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q90="http://www.abbaty.com/eCase/v2" minOccurs="0" name="side" nillable="true" type="q90:Side" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="Side">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CaseId" type="ser:guid" />
+      <xs:element xmlns:q91="http://www.abbaty.com/eCase/v2" minOccurs="0" name="Entity" nillable="true" type="q91:Entity" />
+      <xs:element minOccurs="0" name="InsertDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IsActive" type="xs:boolean" />
+      <xs:element xmlns:q92="http://www.abbaty.com/eCase/v2" minOccurs="0" name="Person" nillable="true" type="q92:Person" />
+      <xs:element minOccurs="0" name="ProceduralRelation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SideId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="SideInvolvementKindCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q93="http://www.abbaty.com/eCase/v2" name="Side" nillable="true" type="q93:Side" />
+  <xs:element name="InsertSideResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertSideResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateSide">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q94="http://www.abbaty.com/eCase/v2" minOccurs="0" name="side" nillable="true" type="q94:Side" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateSideResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateSideResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertLawyerAssignment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q95="http://www.abbaty.com/eCase/v2" minOccurs="0" name="lawyerAssignment" nillable="true" type="q95:LawyerAssignment" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="LawyerAssignment">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IsActive" type="xs:boolean" />
+      <xs:element minOccurs="0" name="LawyerAssignmentId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="LawyerRegistrationId" type="ser:guid" />
+      <xs:element minOccurs="0" name="SideId" nillable="true" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q96="http://www.abbaty.com/eCase/v2" name="LawyerAssignment" nillable="true" type="q96:LawyerAssignment" />
+  <xs:element name="InsertLawyerAssignmentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertLawyerAssignmentResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateLawyerAssignment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q97="http://www.abbaty.com/eCase/v2" minOccurs="0" name="lawyerAssignment" nillable="true" type="q97:LawyerAssignment" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateLawyerAssignmentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateLawyerAssignmentResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertSummon">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q98="http://www.abbaty.com/eCase/v2" minOccurs="0" name="summon" nillable="true" type="q98:Summon" />
+        <xs:element minOccurs="0" name="userId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertSummonResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertSummonResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateSummon">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q99="http://www.abbaty.com/eCase/v2" minOccurs="0" name="summon" nillable="true" type="q99:Summon" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateSummonResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateSummonResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertSummonFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q100="http://www.abbaty.com/eCase/v2" minOccurs="0" name="summonFile" nillable="true" type="q100:SummonFile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertSummonFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertSummonFileResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateSummonFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q101="http://www.abbaty.com/eCase/v2" minOccurs="0" name="summonFile" nillable="true" type="q101:SummonFile" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateSummonFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateSummonFileResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllLawyers">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllLawyersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q102="http://www.abbaty.com/eCase/v2" minOccurs="0" name="GetAllLawyersResult" nillable="true" type="q102:ArrayOfLawyer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfLawyer">
+    <xs:sequence>
+      <xs:element xmlns:q103="http://www.abbaty.com/eCase/v2" minOccurs="0" maxOccurs="unbounded" name="Lawyer" nillable="true" type="q103:Lawyer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q104="http://www.abbaty.com/eCase/v2" name="ArrayOfLawyer" nillable="true" type="q104:ArrayOfLawyer" />
+  <xs:complexType name="Lawyer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="College" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LawyerId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Number" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q105="http://www.abbaty.com/eCase/v2" name="Lawyer" nillable="true" type="q105:Lawyer" />
+  <xs:element name="GetAllNewLawyers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="from" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllNewLawyersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q106="http://www.abbaty.com/eCase/v2" minOccurs="0" name="GetAllNewLawyersResult" nillable="true" type="q106:ArrayOfLawyer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLawyerByNumber">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="number" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLawyerByNumberResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q107="http://www.abbaty.com/eCase/v2" minOccurs="0" name="GetLawyerByNumberResult" nillable="true" type="q107:Lawyer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllReadSummons">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllReadSummonsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q108="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="GetAllReadSummonsResult" nillable="true" type="q108:ArrayOfTupleOfguiddateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReadSummonsForCertainDay">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="date" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReadSummonsForCertainDayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q109="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetReadSummonsForCertainDayResult" nillable="true" type="q109:ArrayOfguid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSummonReportDocument">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="summonId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSummonReportDocumentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetSummonReportDocumentResult" nillable="true" type="xs:base64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActivateSummonsAccess">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="ser:guid" />
+        <xs:element minOccurs="0" name="caseId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActivateSummonsAccessResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeactivateSummonsAccess">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" type="ser:guid" />
+        <xs:element minOccurs="0" name="caseId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeactivateSummonsAccessResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPersonAssignment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q110="http://www.abbaty.com/eCase/v2" minOccurs="0" name="personAssignment" nillable="true" type="q110:PersonAssignment" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="PersonAssignment">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IsActive" type="xs:boolean" />
+      <xs:element minOccurs="0" name="PersonAssignmentId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="PersonRegistrationId" type="ser:guid" />
+      <xs:element minOccurs="0" name="SideId" nillable="true" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q111="http://www.abbaty.com/eCase/v2" name="PersonAssignment" nillable="true" type="q111:PersonAssignment" />
+  <xs:element name="InsertPersonAssignmentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertPersonAssignmentResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePersonAssignment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q112="http://www.abbaty.com/eCase/v2" minOccurs="0" name="personAssignment" nillable="true" type="q112:PersonAssignment" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdatePersonAssignmentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdatePersonAssignmentResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertScannedDocument">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q113="http://www.abbaty.com/eCase/v2" minOccurs="0" name="scannedDocument" nillable="true" type="q113:ScannedDocument" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertScannedDocumentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertScannedDocumentResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateScannedDocument">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q114="http://www.abbaty.com/eCase/v2" minOccurs="0" name="scannedDocument" nillable="true" type="q114:ScannedDocument" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateScannedDocumentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateScannedDocumentResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertLawyerRegistration">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q115="http://www.abbaty.com/eCase/v2" minOccurs="0" name="lawyerRegistration" nillable="true" type="q115:LawyerRegistration" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="LawyerRegistration">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BirthDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LawyerId" type="ser:guid" />
+      <xs:element minOccurs="0" name="LawyerRegistrationId" nillable="true" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element xmlns:q116="http://www.abbaty.com/eCase/v2" name="LawyerRegistration" nillable="true" type="q116:LawyerRegistration" />
+  <xs:element name="InsertLawyerRegistrationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertLawyerRegistrationResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActivateLawyerRegistration">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="lawyerRegistrationId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActivateLawyerRegistrationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActivateLawyerRegistrationResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeactivateLawyerRegistration">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="lawyerRegistrationId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeactivateLawyerRegistrationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeactivateLawyerRegistrationResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPersonRegistration">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q117="http://www.abbaty.com/eCase/v2" minOccurs="0" name="personRegistration" nillable="true" type="q117:PersonRegistration" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPersonRegistrationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertPersonRegistrationResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActivatePersonRegistration">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="personRegistrationId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActivatePersonRegistrationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ActivatePersonRegistrationResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeactivatePersonRegistration">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="personRegistrationId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeactivatePersonRegistrationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeactivatePersonRegistrationResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUsername">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="oldUsername" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="newUsername" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="courtCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateUsernameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateUsernameResult" nillable="true" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCaseIdentifiers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="caseNumber" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="caseKindCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="caseYear" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="department" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCaseIdentifiersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q118="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetCaseIdentifiersResult" nillable="true" type="q118:ArrayOfguid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteIncomingDocument">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="incomingDocumentId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteIncomingDocumentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteIncomingDocumentResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteOutgoingDocument">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="outgoingDocumentId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteOutgoingDocumentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteOutgoingDocumentResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCase">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="caseId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCaseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteCaseResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteConnectedCase">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="connectedCaseId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteConnectedCaseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteConnectedCaseResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteReporter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="reporterId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteReporterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteReporterResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteAssignment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="assignmentId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteAssignmentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteAssignmentResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteHearing">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="hearingId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteHearingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteHearingResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteHearingParticipant">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="hearingParticipantId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteHearingParticipantResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteHearingParticipantResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteAct">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="actId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteActResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteActResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteActPreparator">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="actPreparatorId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteActPreparatorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteActPreparatorResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteAppeal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="appealId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteAppealResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteAppealResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCaseRuling">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="caseRulingId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCaseRulingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteCaseRulingResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteSide">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sideId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteSideResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteSideResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteLawyerAssignment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="lawyerAssignmentId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteLawyerAssignmentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteLawyerAssignmentResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteSummon">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="summonId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteSummonResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteSummonResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePersonAssignment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="personAssignmentId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePersonAssignmentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeletePersonAssignmentResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteScannedDocument">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="scannedDocumentId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteScannedDocumentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteScannedDocumentResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteAssignmentFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="assignmentId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteAssignmentFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteAssignmentFileResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePrivateProtocolFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="hearingId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePrivateProtocolFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeletePrivateProtocolFileResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePublicProtocolFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="hearingId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePublicProtocolFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeletePublicProtocolFileResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteIncomingDocumentFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="incomingDocumentId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteIncomingDocumentFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteIncomingDocumentFileResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteOutgoingDocumentFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="outgoingDocumentId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteOutgoingDocumentFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteOutgoingDocumentFileResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteSummonFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="summonId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteSummonFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteSummonFileResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePrivateActFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="actId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePrivateActFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeletePrivateActFileResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePublicActFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="actId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePublicActFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeletePublicActFileResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePrivateMotiveFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="actId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePrivateMotiveFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeletePrivateMotiveFileResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePublicMotiveFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="actId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeletePublicMotiveFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeletePublicMotiveFileResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIncomingDocumentById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="incomingDocumentId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIncomingDocumentByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q119="http://www.abbaty.com/eCase/v2" minOccurs="0" name="GetIncomingDocumentByIdResult" nillable="true" type="q119:IncomingDocument" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIncomingDocumentIdentifiersByCaseId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="caseId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIncomingDocumentIdentifiersByCaseIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q120="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetIncomingDocumentIdentifiersByCaseIdResult" nillable="true" type="q120:ArrayOfguid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOutgoingDocumentById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="outgoingDocumentId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOutgoingDocumentByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q121="http://www.abbaty.com/eCase/v2" minOccurs="0" name="GetOutgoingDocumentByIdResult" nillable="true" type="q121:OutgoingDocument" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOutgoingDocumentIdentifiersByCaseId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="caseId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOutgoingDocumentIdentifiersByCaseIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q122="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetOutgoingDocumentIdentifiersByCaseIdResult" nillable="true" type="q122:ArrayOfguid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCaseById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="caseId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCaseByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q123="http://www.abbaty.com/eCase/v2" minOccurs="0" name="GetCaseByIdResult" nillable="true" type="q123:Case" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConnectedCaseById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="connectedCaseId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConnectedCaseByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q124="http://www.abbaty.com/eCase/v2" minOccurs="0" name="GetConnectedCaseByIdResult" nillable="true" type="q124:ConnectedCase" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConnectedCaseIdentifiersByCaseId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="caseId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConnectedCaseIdentifiersByCaseIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q125="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetConnectedCaseIdentifiersByCaseIdResult" nillable="true" type="q125:ArrayOfguid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReporterById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="reporterId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReporterByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q126="http://www.abbaty.com/eCase/v2" minOccurs="0" name="GetReporterByIdResult" nillable="true" type="q126:Reporter" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReporterIdentifiersByCaseId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="caseId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReporterIdentifiersByCaseIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q127="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetReporterIdentifiersByCaseIdResult" nillable="true" type="q127:ArrayOfguid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAssignmentById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="assignmentId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAssignmentByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q128="http://www.abbaty.com/eCase/v2" minOccurs="0" name="GetAssignmentByIdResult" nillable="true" type="q128:Assignment" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAssignmentIdentifiersByCaseId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="caseId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAssignmentIdentifiersByCaseIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q129="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetAssignmentIdentifiersByCaseIdResult" nillable="true" type="q129:ArrayOfguid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHearingById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="hearingId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHearingByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q130="http://www.abbaty.com/eCase/v2" minOccurs="0" name="GetHearingByIdResult" nillable="true" type="q130:Hearing" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHearingIdentifiersByCaseId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="caseId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHearingIdentifiersByCaseIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q131="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetHearingIdentifiersByCaseIdResult" nillable="true" type="q131:ArrayOfguid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHearingParticipantById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="hearingParticipantId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHearingParticipantByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q132="http://www.abbaty.com/eCase/v2" minOccurs="0" name="GetHearingParticipantByIdResult" nillable="true" type="q132:HearingParticipant" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHearingParticipantIdentifiersByHearingId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="hearingId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHearingParticipantIdentifiersByHearingIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q133="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetHearingParticipantIdentifiersByHearingIdResult" nillable="true" type="q133:ArrayOfguid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetActById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="actId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetActByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q134="http://www.abbaty.com/eCase/v2" minOccurs="0" name="GetActByIdResult" nillable="true" type="q134:Act" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetActIdentifiersByCaseId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="caseId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetActIdentifiersByCaseIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q135="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetActIdentifiersByCaseIdResult" nillable="true" type="q135:ArrayOfguid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetActPreparatorById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="actPreparatorId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetActPreparatorByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q136="http://www.abbaty.com/eCase/v2" minOccurs="0" name="GetActPreparatorByIdResult" nillable="true" type="q136:ActPreparator" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetActPreparatorIdentifiersByActId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="actId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetActPreparatorIdentifiersByActIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q137="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetActPreparatorIdentifiersByActIdResult" nillable="true" type="q137:ArrayOfguid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAppealById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="appealId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAppealByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q138="http://www.abbaty.com/eCase/v2" minOccurs="0" name="GetAppealByIdResult" nillable="true" type="q138:Appeal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAppealIdentifiersByActId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="actId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAppealIdentifiersByActIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q139="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetAppealIdentifiersByActIdResult" nillable="true" type="q139:ArrayOfguid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCaseRulingById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="caseRulingId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCaseRulingByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q140="http://www.abbaty.com/eCase/v2" minOccurs="0" name="GetCaseRulingByIdResult" nillable="true" type="q140:CaseRuling" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCaseRulingIdentifiersByCaseId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="caseId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCaseRulingIdentifiersByCaseIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q141="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetCaseRulingIdentifiersByCaseIdResult" nillable="true" type="q141:ArrayOfguid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSideById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sideId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSideByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q142="http://www.abbaty.com/eCase/v2" minOccurs="0" name="GetSideByIdResult" nillable="true" type="q142:Side" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSideIdentifiersByCaseId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="caseId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSideIdentifiersByCaseIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q143="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetSideIdentifiersByCaseIdResult" nillable="true" type="q143:ArrayOfguid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLawyerAssignmentById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="lawyerAssignmentId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLawyerAssignmentByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q144="http://www.abbaty.com/eCase/v2" minOccurs="0" name="GetLawyerAssignmentByIdResult" nillable="true" type="q144:LawyerAssignment" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLawyerAssignmentIdentifiersBySideId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sideId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLawyerAssignmentIdentifiersBySideIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q145="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetLawyerAssignmentIdentifiersBySideIdResult" nillable="true" type="q145:ArrayOfguid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPersonAssignmentById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="personAssignmentId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPersonAssignmentByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q146="http://www.abbaty.com/eCase/v2" minOccurs="0" name="GetPersonAssignmentByIdResult" nillable="true" type="q146:PersonAssignment" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPersonAssignmentIdentifiersBySideId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sideId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPersonAssignmentIdentifiersBySideIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q147="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetPersonAssignmentIdentifiersBySideIdResult" nillable="true" type="q147:ArrayOfguid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLawyerRegistrationById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="lawyerRegistrationId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLawyerRegistrationByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q148="http://www.abbaty.com/eCase/v2" minOccurs="0" name="GetLawyerRegistrationByIdResult" nillable="true" type="q148:LawyerRegistration" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLawyerRegistrationIdentifiersByLawyerId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="lawyerId" type="ser:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLawyerRegistrationIdentifiersByLawyerIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q149="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetLawyerRegistrationIdentifiersByLawyerIdResult" nillable="true" type="q149:ArrayOfguid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

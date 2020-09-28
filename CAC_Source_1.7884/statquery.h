@@ -1,0 +1,9 @@
+#if COURT_TYPE == COURT_APPEAL || COURT_TYPE == COURT_ADMIN || COURT_TYPE == COURT_AREAL || COURT_TYPE == COURT_MILITARY
+void stat_query_first(TWindow *parent);
+#endif  // APPEAL || ADMIN || AREAL || MILITARY
+#if COURT_TYPE == COURT_ADMIN || COURT_TYPE == COURT_AREAL || COURT_TYPE == COURT_MILITARY || COURT_TYPE == COURT_REGIONAL
+void stat_query_second(TWindow *parent);
+#endif  // ADMIN || AREAL || MILITARY || REGIONAL
+#if COURT_TYPE == COURT_APPEAL || COURT_TYPE == COURT_ADMIN || COURT_TYPE == COURT_AREAL || COURT_TYPE == COURT_MILITARY
+void stat_query_third(TWindow *parent);
+#endif  // APPEAL || ADMIN || AREAL || MILITARY

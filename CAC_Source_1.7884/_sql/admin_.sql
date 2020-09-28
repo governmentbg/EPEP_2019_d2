@@ -1,0 +1,2026 @@
+INSERT INTO T_OLD_SUBJECT VALUES (0100, 'Дела по АПК - искови и ЗОДв', 'a', 'bjspv', 'PlLIphDScsЫЎЅ†', 'я', NULL, NULL, NULL, NULL, 1, NULL, 11, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (0110, 'Искове за обезщетение', 'a', 'jsp', 'PlLIphDScsЫЎЅ†', 'я', NULL, NULL, NULL, NULL, 1, NULL, 11, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (0120, 'Установителни искове', 'a', 'jsp', 'PlLIphDScsЫЎЅ†', 'я', NULL, NULL, NULL, NULL, 1, NULL, 11, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (0130, 'Искове за защита срещу неоснователно бездействие', 'a', 'jsp', 'PlLIphDScsЫЎЅ†', 'я', NULL, NULL, NULL, NULL, 1, NULL, 11, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (0140, 'Искане за прекратяване на неоснователни действия', 'a', 'jsp', 'PlLIphDScsЫЎЅ†', 'я', NULL, NULL, NULL, NULL, 1, NULL, 11, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (0150, 'Искане за констатиране на конфликт на интереси на държавен служител', 'a', 'jsp', 'PlLIphDScsЫЎЅ†', 'я', NULL, NULL, NULL, NULL, 1, NULL, 11, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (0200, 'Дела по ДОПК и ЗМ', 'a', 'bjspv', 'PlLIphDScsЫЎЅ†', 'я', NULL, NULL, NULL, NULL, 1, NULL, 4, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (0300, 'Дела по ЗУТ и ЗКИР', 'a', 'bjspv', 'PlLIphDScsЫЎЅ†', 'я', NULL, NULL, NULL, NULL, 1, NULL, 5, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (0400, 'Дела по ЗСПЗЗ, ЗВГЗГФ, ЗОСОИ, ЗВСВНОИ по ЗТСУ', 'a', 'bjspv', 'PlLIphDScsЫЎЅ†', 'я', NULL, NULL, NULL, NULL, 1, NULL, 6, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (0410, 'Дела по ЗСПЗЗ и ЗВГЗГФ', 'a', 'jspv', 'PlLIphDScsЫЎЅ†', 'я', NULL, NULL, NULL, NULL, 1, NULL, 6, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (0420, 'Дела по ЗОСОИ', 'a', 'jspv', 'PlLIphDScsЫЎЅ†', 'я', NULL, NULL, NULL, NULL, 1, NULL, 6, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (0430, 'Дела по ЗВСВНОИ по ЗТСУ', 'a', 'jspv', 'PlLIphDScsЫЎЅ†', 'я', NULL, NULL, NULL, NULL, 1, NULL, 6, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (0500, 'Дела по КСО и ЗСП', 'a', 'bjspv', 'PlLIphDScsЫЎЅ†', 'я', NULL, NULL, NULL, NULL, 1, NULL, 7, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (0510, 'Дела по КСО', 'a', 'jsp', 'PlLIphDScsЫЎЅ†', 'я', NULL, NULL, NULL, NULL, 1, NULL, 7, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (0520, 'Дела по ЗСП', 'a', 'jsp', 'PlLIphDScsЫЎЅ†', 'я', NULL, NULL, NULL, NULL, 1, NULL, 7, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (0600, 'Дела по КТ, ЗДСл, ЗМВР и ЗСВ', 'a', 'bjspv', 'PlLIphDScsЫЎЅ†', 'я', NULL, NULL, NULL, NULL, 1, NULL, 8, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (0610, 'Дела по КТ', 'a', 'jsp', 'PlLIphDScsЫЎЅ†', 'я', NULL, NULL, NULL, NULL, 1, NULL, 8, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (0620, 'Дела по ЗМВР', 'a', 'jsp', 'PlLIphDScsЫЎЅ†', 'я', NULL, NULL, NULL, NULL, 1, NULL, 8, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (0700, 'Дела по ЗДС, ЗОС, ЗМСМА и ЗАдм', 'a', 'bjspv', 'PlLIphDScsЫЎЅ†', 'я', NULL, NULL, NULL, NULL, 1, NULL, 9, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (0710, 'Дела по ЗДС', 'a', 'jsp', 'PlLIphDScsЫЎЅ†', 'я', NULL, NULL, NULL, NULL, 1, NULL, 9, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (0720, 'Дела по ЗОС', 'a', 'jsp', 'PlLIphDScsЫЎЅ†', 'я', NULL, NULL, NULL, NULL, 1, NULL, 9, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (0730, 'Дела по ЗМСМА', 'a', 'jsp', 'PlLIphDScsЫЎЅ†', 'я', NULL, NULL, NULL, NULL, 1, NULL, 9, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (0740, 'Дела по ЗАдм', 'a', 'jsp', 'PlLIphDScsЫЎЅ†', 'я', NULL, NULL, NULL, NULL, 1, NULL, 9, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (0800, 'Частни администр. дела', 'a', 'bjspv', 'PlLIphDScsЫЎЅ†', 'Н', NULL, NULL, NULL, NULL, 1, NULL, 15, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (0810, 'Частни администр. дела за спиране изпълнението на админ. акт', 'a', 'jsp', 'PlLIphDScsЫЎЅ†', 'Н', NULL, NULL, NULL, NULL, 1, NULL, 15, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (0820, 'Частни администр. дела за спиране изпълнението на админ. акт по ЗУТ', 'a', 'jsp', 'PlLIphDScsЫЎЅ†', 'Н', NULL, NULL, NULL, NULL, 1, NULL, 15, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (0830, 'Частни администр. дела за допускане на предварително изпълнение', 'a', 'jsp', 'PlLIphDScsЫЎЅ†', 'Н', NULL, NULL, NULL, NULL, 1, NULL, 15, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (0840, 'Частни администр. дела по чл. 75 ДОПК', 'a', 'jsp3', 'PlLIphDScsЫЎЅ†', 'Н', NULL, NULL, NULL, NULL, 1, NULL, 15, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (0900, 'Други административни дела', 'a', 'bjspv', 'PlLIphDScsЫЎЅ†', 'я', NULL, NULL, NULL, NULL, 1, NULL, 14, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (0920, 'Дела по жалби срещу действие на органа по изпълнение', 'a', 'jsp', 'PlLIphDScsЫЎЅ†', 'я', NULL, NULL, NULL, NULL, 1, NULL, 14, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (1000, 'Дела по ЗМИ, ЗИНП', 'a', 'bjspv', 'PlLIphDScsЫЎЅ†', 'я', NULL, NULL, NULL, NULL, 1, NULL, 3, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (1001, 'Дела по Изборен кодекс', 'a', 'bjspv', 'PlLIphDScsЫЎЅ†', 'я', NULL, NULL, NULL, NULL, 1, NULL, 3, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (1100, 'Дела по ЗЗК, ЗК, ЗОП, ЗПСК, лицензи', 'a', 'bjspv', 'PlLIphDScsЫЎЅ†', 'я', NULL, NULL, NULL, NULL, 1, NULL, 10, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (1200, 'Дела по жалби срещу подзаконови нормативни актове', 'a', 'bjspv', 'PlLIphDScsЫЎЅ†', 'я', NULL, NULL, NULL, NULL, 1, NULL, 2, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (1300, 'Дела по чл. 304 АПК', 'a', 'bjspv', 'PlLIphDScsЫЎЅ†', 'я', NULL, NULL, NULL, NULL, 1, NULL, 12, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (1400, 'Дела за бавност', 'a', 'bjspv', 'PlLIphDScsЫЎЅ†', 'я', NULL, NULL, NULL, NULL, 1, NULL, 13, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (3100, 'Наказателни касационни производства', 'a', 'bjsxpvA', 'lLIhDSpcPЫЎЅ†', 'M', NULL, NULL, NULL, NULL, 1, NULL, 17, NULL, 'ZdJShDЗgc4SЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (3150, 'Наказателни частни касационни производства', 'a', 'bjsxpvA', 'lLIhDSpcPЫЎЅ†', 'E', NULL, NULL, NULL, NULL, 1, NULL, 17, NULL, 'ZdJShDЗgc4SЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (3200, 'Касационни производства', 'a', 'bjsxpvA', 'lLIhDSpcPЫЎЅ†', 'Я', NULL, NULL, NULL, NULL, 1, NULL, 18, NULL, 'ZdJShDЗgc4SЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (3300, 'Частни касационни производства', 'a', 'bjsxpA', 'lLIhDSpcPЫЎЅ†', 'Ѕ', NULL, NULL, NULL, NULL, 1, NULL, 18, NULL, 'ZdJShDЗgc4SЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (0100, 'Дела по АПК - искови и ЗОДв', 'c', 'bjspv', 'PlLIphDScsЫЎЅ†', 'Z', NULL, NULL, NULL, NULL, 1, NULL, 11, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (0110, 'Искове за обезщетение', 'c', 'jsp', 'PlLIphDScsЫЎЅ†', 'Z', NULL, NULL, NULL, NULL, 1, NULL, 11, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (0120, 'Установителни искове', 'c', 'jsp', 'PlLIphDScsЫЎЅ†', 'Z', NULL, NULL, NULL, NULL, 1, NULL, 11, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (0130, 'Искове за защита срещу неоснователно бездействие', 'c', 'jsp', 'PlLIphDScsЫЎЅ†', 'Z', NULL, NULL, NULL, NULL, 1, NULL, 11, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (0140, 'Искане за прекратяване на неоснователни действия', 'c', 'jsp', 'PlLIphDScsЫЎЅ†', 'Z', NULL, NULL, NULL, NULL, 1, NULL, 11, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (0150, 'Искане за констатиране на конфликт на интереси на държавен служител', 'c', 'jsp', 'PlLIphDScsЫЎЅ†', 'Z', NULL, NULL, NULL, NULL, 1, NULL, 11, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (0980, 'Административни наказателни дела', 't', 'jspv', 'PlLIphDScsЫЎЅ†', 'N', NULL, NULL, NULL, NULL, 1, NULL, 14, NULL, 'ScJdZhDЗg4sЅ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (3100, 'Наказателни касационни производства', 't', 'bjsxpvA', 'lLIhDSpcPЫЎЅ†', 'n', NULL, NULL, NULL, NULL, 1, NULL, 17, NULL, 'ZdJShDЗgc4Ѕ†', NULL, NULL);
+INSERT INTO T_OLD_SUBJECT VALUES (3150, 'Наказателни частни касационни производства', 't', 'bjsxpvA', 'lLIhDSpcPЫЎЅ†', 'z', NULL, NULL, NULL, NULL, 1, NULL, 17, NULL, 'ZdJShDЗgc4Ѕ†', NULL, NULL);
+UPDATE T_OLD_SUBJECT SET F_REASONS = '         *         *' WHERE F_TYPE IN ('a', 't', 'c');
+UPDATE T_OLD_SUBJECT SET F_PENALITIES = '         *         *         *         *         *         * ******  *'
+WHERE F_TYPE IN ('a', 't', 'c');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (010000, 'a', 'я', NULL, 'Закон за данък върху добавената стойност');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (011000, 'a', 'я', NULL, 'Закон за митниците');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (012000, 'a', 'я', NULL, 'Закон за корпоративното подоходно облагане');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (013000, 'a', 'я', NULL, 'Закон за данъка върху доходите на физическите лица');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (014000, 'a', 'я', NULL, 'Закон за местните данъци и такси');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (015000, 'a', 'я', NULL, 'Закон за акцизите и данъчните складове');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (016000, 'a', 'я', NULL, 'Закон за възстановяване на надвнесен акциз върху употребявани автомобили');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (017000, 'a', 'я', NULL, 'ДОПК');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (018000, 'a', 'Н', NULL, 'чл. 75 ДОПК и чл. 121 ДОПК');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (019000, 'a', 'Н', NULL, 'ДОПК – други частни административни');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (020000, 'a', 'я', NULL, 'КСО');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (021000, 'a', 'я', NULL, 'Закон за интеграция на хората с увреждания');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (022000, 'a', 'я', NULL, 'Закон за социално подпомагане');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (023000, 'a', 'я', NULL, 'Закон за семейни помощи за деца');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (024000, 'a', 'я', NULL, 'Закон за здравното осигуряване (вкл.разноски за лечение)');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (025000, 'a', 'я', NULL, 'Закон за здравето (НЕЛК, ЦЕЛК и други)');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (026000, 'a', 'я', NULL, 'Закон за закрила на детето');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (030000, 'a', 'я', NULL, 'Закон за убежището и бежанците');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (031000, 'a', 'я', NULL, 'Закон за българските лични документи');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (032000, 'a', 'я', NULL, 'Закон за чужденците в РБ');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (033000, 'a', 'я', NULL, 'Закон за влизането, пребиваването и напускането на РБ на гражданите -на ЕС и техните семейства');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (034000, 'a', 'я', NULL, 'Закон за гражданската регистрация (без принудителни административни мерки)');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (040000, 'a', 'я', NULL, 'Закон за отбраната и въоръжените сили на РБ');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (041000, 'a', 'я', NULL, 'Закон за министерство на вътрешните работи');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (042000, 'a', 'я', NULL, 'Закон за държавния служител');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (043000, 'a', 'я', NULL, 'Закон за съдебната власт');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (044000, 'a', 'я', NULL, 'Закон за защита на класифицираната информация');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (045000, 'a', 'я', NULL, 'Закон за ДАНС');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (046000, 'a', 'я', NULL, 'Закон за висшето образование');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (047000, 'a', 'я', NULL, 'Закон за развитието на академичния състав в РБ');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (048000, 'a', 'я', NULL, 'Закон за достъп и разкриване на документите и за обявяване на принадлежност на български граждани към държавна сигурност и разузнавателните служби на българската народна армия');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (049000, 'a', 'я', NULL, 'Закон за оръжията, боеприпасите, взривните вещества и пиротехническите изделия');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (049100, 'a', 'я', NULL, 'Закон за движението по пътищата');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (049200, 'a', 'я', NULL, 'Закон за частната охранителна дейност');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (049300, 'a', 'я', NULL, 'ЗИНЗС (без чл. 111, чл. 122, чл. 193, чл. 281 и без исковите производства по част VІІ - чл. 284, чл. 285 и чл. 286)');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (050000, 'a', 'я', NULL, 'Изборен кодекс');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (060000, 'a', 'я', NULL, 'Закон за отговорността на държавата  и общините за вреди');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (061000, 'a', 'я', NULL, 'Закон за изпълнение на наказанията и задържането под стража, част VII - чл. 284, чл. 285 и чл. 286');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (070000, 'a', 'я', NULL, 'Закон за достъп  до обществена информация');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (080000, 'a', 'я', NULL, 'Закон за подпомагане на земеделските производители');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (081000, 'a', 'я', NULL, 'Закон за управление на средствата от европейските структурни и инвестиционни фондове /ЗУСЕСИФ/');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (090000, 'a', 'я', NULL, 'АПК – чл.19 АПК, чл.54, ал.5 АПК, чл.56, ал.4 АПК, чл.103, ал.3 АПК, чл.197-202 АПК, чл.294-298 АПК,чл.272, ал.2 АПК, чл.88 АПК');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (090050, 'a', 'Н', NULL, 'АПК – чл.19 АПК, чл.54, ал.5 АПК, чл.56, ал.4 АПК, чл.103, ал.3 АПК, чл.197-202 АПК, чл.294-298 АПК,чл.272, ал.2 АПК, чл.88 АПК');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (091000, 'a', 'Н', NULL, 'АПК – частни административни дела – чл.60, ал.4 АПК, чл.166, ал.4 АПК, чл.250 АПК, чл. 297, ал.4 АПК');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (092000, 'a', 'я', NULL, 'АПК искови – чл.256 АПК, чл.128, ал.1, т.7 АПК, чл. 128, ал.2 АПК, чл. 292 АПК , обезщетения на държавни служители');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (093000, 'a', 'я', NULL, 'чл. 304 АПК');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (100000, 'a', 'я', NULL, 'Закон за предотвратяване и установяване конфликт на интереси');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (101000, 'a', 'я', NULL, 'Закон за защита от дискриминация');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (102000, 'a', 'я', NULL, 'Закон за защита на личните данни');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (103000, 'a', 'я', NULL, 'Закон за марките и географските означения ');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (104000, 'a', 'я', NULL, 'Закон за патентите ');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (105000, 'a', 'я', NULL, 'Закон за промишления дизайн');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (106000, 'a', 'я', NULL, 'Закон за държавните резерви и военновременните запаси');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (107000, 'a', 'я', NULL, 'Закон за политическа и гражданска реабилитация на репресирани лица');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (108000, 'a', 'я', NULL, 'Закон за защита на потребителите');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (109000, 'a', 'я', NULL, 'Закон за обезщетяване на собственици на одържавени имоти');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (110000, 'a', 'я', NULL, 'Закон за защита на конкуренцията');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (120000, 'a', 'я', NULL, 'ЗСПЗЗ и ЗВСГЗГФ');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (130000, 'a', 'я', NULL, 'Закон за обществените поръчки');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (140000, 'a', 'я', NULL, 'Кодекс на труда');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (141000, 'a', 'я', NULL, 'Закон за здравословни и безопасни условия на труд');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (142000, 'a', 'я', NULL, 'Закон за камарата на архитектите и инженерите в инвестиционното проектиране');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (143000, 'a', 'я', NULL, 'Закон за лова и опазване на дивеча ');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (144000, 'a', 'я', NULL, 'Закон за физическото възпитание и спорта,  ');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (145000, 'a', 'я', NULL, 'Закон за туризма');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (150000, 'a', 'я', NULL, 'Закон за автомобилните превози');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (151000, 'a', 'я', NULL, 'Закон за измерванията ');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (152000, 'a', 'я', NULL, 'Закон за пътищата');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (153000, 'a', 'я', NULL, 'Закон за рибарството и  аквакултурите');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (154000, 'a', 'я', NULL, 'Закон за юридическите лица с нестопанска цел, ');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (155000, 'a', 'я', NULL, 'Закон за лекарствените продукти в хуманната медицина');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (156000, 'a', 'я', NULL, 'Закон за водите');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (160000, 'a', 'я', NULL, 'Закон за подземните богатства');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (161000, 'a', 'я', NULL, 'Закон за защитените територии');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (162000, 'a', 'я', NULL, 'Закон за опазване на земеделските земи');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (163000, 'a', 'я', NULL, 'Закон за опазване на околната среда');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (164000, 'a', 'я', NULL, 'Закон за културното наследство');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (165000, 'a', 'я', NULL, 'Закон за биологичното разнообразие');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (166000, 'a', 'я', NULL, 'Закон за управление на отпадъците');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (167000, 'a', 'я', NULL, 'Закон за енергетиката');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (170000, 'a', 'я', NULL, 'Закон за местното самоуправление и местната администрация');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (200000, 'a', 'я', NULL, 'Закон за държавната собственост  и Закон за общинската собственост – наеми');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (210000, 'a', 'я', NULL, 'Закон за държавната собственост и Закон за общинската собственост – отчуждавания');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (220000, 'a', 'я', NULL, 'Закон за държавната собственост  и Закон за общинската собственост - конкурси');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (230000, 'a', 'я', NULL, 'Други дела по ЗОС и ЗДС');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (240000, 'a', 'я', NULL, 'Други; ЗИНС - чл. 111, чл. 122 и чл. 193');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (300000, 'a', 'я', NULL, 'Закон за устройство на територията - актове ДНСК, узаконявания, търпимост, спиране на строеж, забрани за ползване, незаконно строителство и др.');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (310000, 'a', 'я', NULL, 'ЗУТ - ПУП Закон за устройство и застрояване на Столична община');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (320000, 'a', 'я', NULL, 'Закон за кадастъра и имотния регистър');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (400000, 'a', 'я', NULL, 'Подзаконови нормативни актове- тройни състави');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (410000, 'a', 'я', 'Я', 'Закон за пряко участие на гражданите в държавната власт и местното самоуправление - тройни състави');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (420000, 'a', NULL, 'Я', 'Производства по чл. 306, ал. 2 и ал. 5 АПК');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (430000, 'a', NULL, 'Я', 'Други касационни /ЗСПЗЗ/');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (430050, 'a', NULL, 'Ѕ', 'Други касационни /ЗСПЗЗ/');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (440000, 'a', NULL, 'M', 'Възобновяване на КАНД');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (440000, 't', NULL, 'n', 'Възобновяване на КАНД');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (450000, 'a', NULL, 'M', 'чл. 281 от ЗИНЗС');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (450050, 'a', NULL, 'E', 'чл. 281 от ЗИНЗС');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (450000, 't', NULL, 'n', 'чл. 281 от ЗИНЗС');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (450050, 't', NULL, 'z', 'чл. 281 от ЗИНЗС');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (500000, 'a', NULL, 'M', 'ЗАНН, Закон за движението по пътищата');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (500000, 't', NULL, 'n', 'ЗАНН, Закон за движението по пътищата');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (510000, 'a', NULL, 'M', 'ЗАНН: КФН');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (510000, 't', NULL, 'n', 'ЗАНН: КФН');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (511000, 'a', NULL, 'M', 'ЗАНН: НЗОК');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (511000, 't', NULL, 'n', 'ЗАНН: НЗОК');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (520000, 'a', NULL, 'M', 'ЗАНН: НАП');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (520000, 't', NULL, 'n', 'ЗАНН: НАП');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (521000, 'a', NULL, 'M', 'ЗАНН: АДФИ');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (521000, 't', NULL, 'n', 'ЗАНН: АДФИ');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (522000, 'a', NULL, 'M', 'ЗАНН: Агенция „Митници”');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (522000, 't', NULL, 'n', 'ЗАНН: Агенция „Митници”');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (523000, 'a', NULL, 'M', 'ЗАНН: ДНСК');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (523000, 't', NULL, 'n', 'ЗАНН: ДНСК');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (530000, 'a', NULL, 'M', 'ЗАНН: КРС');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (530000, 't', NULL, 'n', 'ЗАНН: КРС');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (531000, 'a', NULL, 'M', 'ЗАНН: СЕМ');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (531000, 't', NULL, 'n', 'ЗАНН: СЕМ');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (532000, 'a', NULL, 'M', 'ЗАНН: КХ');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (532000, 't', NULL, 'n', 'ЗАНН: КХ');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (533000, 'a', NULL, 'M', 'ЗАНН: КЗП');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (533000, 't', NULL, 'n', 'ЗАНН: КЗП');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (534000, 'a', NULL, 'M', 'ЗАНН: ДАДРВВЗ');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (534000, 't', NULL, 'n', 'ЗАНН: ДАДРВВЗ');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (535000, 'a', NULL, 'M', 'ЗАНН: КЗДискриминация');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (535000, 't', NULL, 'n', 'ЗАНН: КЗДискриминация');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (536000, 'a', NULL, 'M', 'ЗАНН: ДАНС');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (536000, 't', NULL, 'n', 'ЗАНН: ДАНС');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (537000, 'a', NULL, 'M', 'ЗАНН: Патентно ведомство');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (537000, 't', NULL, 'n', 'ЗАНН: Патентно ведомство');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (538000, 'a', NULL, 'M', 'ЗАНН: ДАЯР');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (538000, 't', NULL, 'n', 'ЗАНН: ДАЯР');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (539000, 'a', NULL, 'M', 'ЗАНН: ДАМТН');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (539000, 't', NULL, 'n', 'ЗАНН: ДАМТН');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (539100, 'a', NULL, 'M', 'ЗАНН: КЗЛД');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (539100, 't', NULL, 'n', 'ЗАНН: КЗЛД');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (539200, 'a', NULL, 'M', 'ЗАНН: Агенция за закрила на детето');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (539200, 't', NULL, 'n', 'ЗАНН: Агенция за закрила на детето');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (539300, 'a', NULL, 'M', 'ЗАНН: Министерство на културата');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (539300, 't', NULL, 'n', 'ЗАНН: Министерство на културата');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (539400, 'a', NULL, 'M', 'ЗАНН: КЕВР');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (539400, 't', NULL, 'n', 'ЗАНН: КЕВР');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (540000, 'a', NULL, 'M', 'ЗАНН: ДИТ');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (540000, 't', NULL, 'n', 'ЗАНН: ДИТ');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (541000, 'a', NULL, 'M', 'ЗАНН: ДКСБТ');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (541000, 't', NULL, 'n', 'ЗАНН: ДКСБТ');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (542000, 'a', NULL, 'M', 'ЗАНН: ИААА ');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (542000, 't', NULL, 'n', 'ЗАНН: ИААА ');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (543000, 'a', NULL, 'M', 'ЗАНН: БАБХ');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (543000, 't', NULL, 'n', 'ЗАНН: БАБХ');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (544000, 'a', NULL, 'M', 'ЗАНН: МВР');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (544000, 't', NULL, 'n', 'ЗАНН: МВР');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (545000, 'a', NULL, 'M', 'ЗАНН: Общини');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (545000, 't', NULL, 'n', 'ЗАНН: Общини');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (546000, 'a', NULL, 'M', 'ЗАНН: ИАРА');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (546000, 't', NULL, 'n', 'ЗАНН: ИАРА');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (546100, 'a', NULL, 'M', 'ЗАНН: МОСВ');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (546100, 't', NULL, 'n', 'ЗАНН: МОСВ');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (546200, 'a', NULL, 'M', 'ЗАНН: РИОСВ');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (546200, 't', NULL, 'n', 'ЗАНН: РИОСВ');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (546300, 'a', NULL, 'M', 'ЗАНН: РДВ');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (546300, 't', NULL, 'n', 'ЗАНН: РДВ');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (546400, 'a', NULL, 'M', 'ЗАНН: РДГ');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (546400, 't', NULL, 'n', 'ЗАНН: РДГ');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (547000, 'a', NULL, 'M', 'ЗАНН: Сметна палата');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (547000, 't', NULL, 'n', 'ЗАНН: Сметна палата');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (548000, 'a', NULL, 'M', 'ЗАНН: Здравна инспекция');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (548000, 't', NULL, 'n', 'ЗАНН: Здравна инспекция');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (550000, 'a', NULL, 'M', 'Други по ЗАНН');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (550000, 't', NULL, 'n', 'Други по ЗАНН');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (560000, 'a', NULL, 'E', 'Частни КАНД и КАД');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (560000, 't', NULL, 'z', 'Частни КАНД и КАД');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (560050, 'a', NULL, 'Ѕ', 'Частни КАНД и КАД');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (060000, 'c', 'Z', NULL, 'Закон за отговорността на държавата  и общините за вреди');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (092000, 'c', 'Z', NULL, 'АПК искови – чл.256 АПК, чл.128, ал.1, т.7 АПК, чл. 128, ал.2 АПК, чл. 292 АПК , обезщетения на държавни служители');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (100000, 'c', 'Z', NULL, 'Закон за предотвратяване и установяване конфликт на интереси');
+INSERT INTO T_SUBJECT (F_SUBJECT, F_TYPE, F_KIND_I, F_KIND_II, F_NAME) VALUES (240000, 't', 'N', NULL, 'Други; ЗИНС - чл. 111, чл. 122 и чл. 193');
+UPDATE T_SUBJECT SET
+ F_FLAGS_I = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 200 AND F_TYPE = 'a'),
+ F_ATTRIB_I = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 200 AND F_TYPE = 'a'),
+ F_RESULTS_I = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 200 AND F_TYPE = 'a'),
+ F_CLOSEDS_I = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 200 AND F_TYPE = 'a'),
+ F_PENALITIES_I = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 200 AND F_TYPE = 'a'),
+ F_REASONS_I = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 200 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_I = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 200 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_I = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 200 AND F_TYPE = 'a'),
+ F_VID_I = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 200 AND F_TYPE = 'a'),
+ F_SBES_I = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 200 AND F_TYPE = 'a')
+WHERE F_SUBJECT IN (10000, 11000, 12000, 13000, 14000, 15000, 16000) AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_I = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 200 AND F_TYPE = 'a'),
+ F_ATTRIB_I = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 200 AND F_TYPE = 'a'),
+ F_RESULTS_I = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 200 AND F_TYPE = 'a'),
+ F_CLOSEDS_I = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 200 AND F_TYPE = 'a'),
+ F_PENALITIES_I = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 200 AND F_TYPE = 'a'),
+ F_REASONS_I = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 200 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_I = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 200 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_I = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 200 AND F_TYPE = 'a'),
+ F_VID_I = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 200 AND F_TYPE = 'a'),
+ F_SBES_I = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 200 AND F_TYPE = 'a')
+WHERE F_SUBJECT = 17000 AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_I = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 840 AND F_TYPE = 'a'),
+ F_ATTRIB_I = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 840 AND F_TYPE = 'a'),
+ F_RESULTS_I = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 840 AND F_TYPE = 'a'),
+ F_CLOSEDS_I = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 840 AND F_TYPE = 'a'),
+ F_PENALITIES_I = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 840 AND F_TYPE = 'a'),
+ F_REASONS_I = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 840 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_I = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 840 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_I = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 840 AND F_TYPE = 'a'),
+ F_VID_I = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 840 AND F_TYPE = 'a'),
+ F_SBES_I = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 840 AND F_TYPE = 'a')
+WHERE F_SUBJECT = 18000 AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_I = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 840 AND F_TYPE = 'a'),
+ F_ATTRIB_I = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 840 AND F_TYPE = 'a'),
+ F_RESULTS_I = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 840 AND F_TYPE = 'a'),
+ F_CLOSEDS_I = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 840 AND F_TYPE = 'a'),
+ F_PENALITIES_I = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 840 AND F_TYPE = 'a'),
+ F_REASONS_I = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 840 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_I = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 840 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_I = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 840 AND F_TYPE = 'a'),
+ F_VID_I = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 840 AND F_TYPE = 'a'),
+ F_SBES_I = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 840 AND F_TYPE = 'a')
+WHERE F_SUBJECT = 19000 AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_I = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 500 AND F_TYPE = 'a'),
+ F_ATTRIB_I = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 500 AND F_TYPE = 'a'),
+ F_RESULTS_I = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 500 AND F_TYPE = 'a'),
+ F_CLOSEDS_I = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 500 AND F_TYPE = 'a'),
+ F_PENALITIES_I = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 500 AND F_TYPE = 'a'),
+ F_REASONS_I = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 500 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_I = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 500 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_I = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 500 AND F_TYPE = 'a'),
+ F_VID_I = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 500 AND F_TYPE = 'a'),
+ F_SBES_I = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 500 AND F_TYPE = 'a')
+WHERE F_SUBJECT = 20000 AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_I = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 520 AND F_TYPE = 'a'),
+ F_ATTRIB_I = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 520 AND F_TYPE = 'a'),
+ F_RESULTS_I = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 520 AND F_TYPE = 'a'),
+ F_CLOSEDS_I = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 520 AND F_TYPE = 'a'),
+ F_PENALITIES_I = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 520 AND F_TYPE = 'a'),
+ F_REASONS_I = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 520 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_I = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 520 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_I = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 520 AND F_TYPE = 'a'),
+ F_VID_I = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 520 AND F_TYPE = 'a'),
+ F_SBES_I = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 520 AND F_TYPE = 'a')
+WHERE F_SUBJECT IN (21000, 22000, 23000) AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_I = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_ATTRIB_I = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_RESULTS_I = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_CLOSEDS_I = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_PENALITIES_I = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_REASONS_I = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_I = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_I = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_VID_I = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_SBES_I = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a')
+WHERE F_SUBJECT IN (24000, 25000) AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_I = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_ATTRIB_I = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_RESULTS_I = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_CLOSEDS_I = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_PENALITIES_I = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_REASONS_I = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_I = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_I = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_VID_I = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_SBES_I = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a')
+WHERE F_SUBJECT IN (30000, 31000, 32000, 33000) AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_I = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 620 AND F_TYPE = 'a'),
+ F_ATTRIB_I = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 620 AND F_TYPE = 'a'),
+ F_RESULTS_I = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 620 AND F_TYPE = 'a'),
+ F_CLOSEDS_I = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 620 AND F_TYPE = 'a'),
+ F_PENALITIES_I = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 620 AND F_TYPE = 'a'),
+ F_REASONS_I = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 620 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_I = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 620 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_I = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 620 AND F_TYPE = 'a'),
+ F_VID_I = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 620 AND F_TYPE = 'a'),
+ F_SBES_I = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 620 AND F_TYPE = 'a')
+WHERE F_SUBJECT IN (40000, 41000, 42000, 43000, 44000, 45000, 46000, 47000, 48000, 49000, 49100, 49200, 49300) AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_I = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 1000 AND F_TYPE = 'a'),
+ F_ATTRIB_I = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 1000 AND F_TYPE = 'a'),
+ F_RESULTS_I = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 1000 AND F_TYPE = 'a'),
+ F_CLOSEDS_I = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 1000 AND F_TYPE = 'a'),
+ F_PENALITIES_I = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 1000 AND F_TYPE = 'a'),
+ F_REASONS_I = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 1000 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_I = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 1000 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_I = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 1000 AND F_TYPE = 'a'),
+ F_VID_I = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 1000 AND F_TYPE = 'a'),
+ F_SBES_I = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 1000 AND F_TYPE = 'a')
+WHERE F_SUBJECT = 50000 AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_I = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_ATTRIB_I = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_RESULTS_I = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_CLOSEDS_I = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_PENALITIES_I = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_REASONS_I = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_I = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_I = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_VID_I = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_SBES_I = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a')
+WHERE F_SUBJECT IN (60000, 80000, 90000, 92000, 240000) AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_I = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_ATTRIB_I = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_RESULTS_I = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_CLOSEDS_I = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_PENALITIES_I = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_REASONS_I = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_I = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_I = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_VID_I = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_SBES_I = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a')
+WHERE F_SUBJECT = 70000 AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_I = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_ATTRIB_I = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_RESULTS_I = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_CLOSEDS_I = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_PENALITIES_I = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_REASONS_I = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_I = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_I = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_VID_I = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_SBES_I = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a')
+WHERE F_SUBJECT = 93000 AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_I = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 800 AND F_TYPE = 'a'),
+ F_ATTRIB_I = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 800 AND F_TYPE = 'a'),
+ F_RESULTS_I = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 800 AND F_TYPE = 'a'),
+ F_CLOSEDS_I = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 800 AND F_TYPE = 'a'),
+ F_PENALITIES_I = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 800 AND F_TYPE = 'a'),
+ F_REASONS_I = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 800 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_I = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 800 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_I = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 800 AND F_TYPE = 'a'),
+ F_VID_I = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 800 AND F_TYPE = 'a'),
+ F_SBES_I = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 800 AND F_TYPE = 'a')
+WHERE F_SUBJECT = 91000 AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_I = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 150 AND F_TYPE = 'a'),
+ F_ATTRIB_I = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 150 AND F_TYPE = 'a'),
+ F_RESULTS_I = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 150 AND F_TYPE = 'a'),
+ F_CLOSEDS_I = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 150 AND F_TYPE = 'a'),
+ F_PENALITIES_I = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 150 AND F_TYPE = 'a'),
+ F_REASONS_I = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 150 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_I = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 150 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_I = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 150 AND F_TYPE = 'a'),
+ F_VID_I = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 150 AND F_TYPE = 'a'),
+ F_SBES_I = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 150 AND F_TYPE = 'a')
+WHERE F_SUBJECT = 100000 AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_I = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 420 AND F_TYPE = 'a'),
+ F_ATTRIB_I = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 420 AND F_TYPE = 'a'),
+ F_RESULTS_I = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 420 AND F_TYPE = 'a'),
+ F_CLOSEDS_I = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 420 AND F_TYPE = 'a'),
+ F_PENALITIES_I = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 420 AND F_TYPE = 'a'),
+ F_REASONS_I = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 420 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_I = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 420 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_I = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 420 AND F_TYPE = 'a'),
+ F_VID_I = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 420 AND F_TYPE = 'a'),
+ F_SBES_I = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 420 AND F_TYPE = 'a')
+WHERE F_SUBJECT IN (101000, 102000, 103000, 104000, 105000, 106000, 107000, 108000, 109000) AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_I = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 400 AND F_TYPE = 'a'),
+ F_ATTRIB_I = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 400 AND F_TYPE = 'a'),
+ F_RESULTS_I = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 400 AND F_TYPE = 'a'),
+ F_CLOSEDS_I = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 400 AND F_TYPE = 'a'),
+ F_PENALITIES_I = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 400 AND F_TYPE = 'a'),
+ F_REASONS_I = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 400 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_I = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 400 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_I = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 400 AND F_TYPE = 'a'),
+ F_VID_I = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 400 AND F_TYPE = 'a'),
+ F_SBES_I = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 400 AND F_TYPE = 'a')
+WHERE F_SUBJECT IN (110000, 120000) AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_I = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 1100 AND F_TYPE = 'a'),
+ F_ATTRIB_I = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 1100 AND F_TYPE = 'a'),
+ F_RESULTS_I = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 1100 AND F_TYPE = 'a'),
+ F_CLOSEDS_I = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 1100 AND F_TYPE = 'a'),
+ F_PENALITIES_I = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 1100 AND F_TYPE = 'a'),
+ F_REASONS_I = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 1100 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_I = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 1100 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_I = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 1100 AND F_TYPE = 'a'),
+ F_VID_I = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 1100 AND F_TYPE = 'a'),
+ F_SBES_I = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 1100 AND F_TYPE = 'a')
+WHERE F_SUBJECT = 130000 AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_I = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a'),
+ F_ATTRIB_I = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a'),
+ F_RESULTS_I = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a'),
+ F_CLOSEDS_I = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a'),
+ F_PENALITIES_I = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a'),
+ F_REASONS_I = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_I = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_I = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a'),
+ F_VID_I = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a'),
+ F_SBES_I = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a')
+WHERE F_SUBJECT IN (140000, 141000, 142000, 143000, 144000, 145000, 150000, 151000, 152000, 153000, 154000, 155000) AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_I = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a'),
+ F_ATTRIB_I = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a'),
+ F_RESULTS_I = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a'),
+ F_CLOSEDS_I = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a'),
+ F_PENALITIES_I = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a'),
+ F_REASONS_I = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_I = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_I = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a'),
+ F_VID_I = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a'),
+ F_SBES_I = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a')
+WHERE F_SUBJECT IN (160000, 161000, 162000, 163000, 164000) AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_I = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 730 AND F_TYPE = 'a'),
+ F_ATTRIB_I = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 730 AND F_TYPE = 'a'),
+ F_RESULTS_I = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 730 AND F_TYPE = 'a'),
+ F_CLOSEDS_I = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 730 AND F_TYPE = 'a'),
+ F_PENALITIES_I = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 730 AND F_TYPE = 'a'),
+ F_REASONS_I = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 730 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_I = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 730 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_I = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 730 AND F_TYPE = 'a'),
+ F_VID_I = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 730 AND F_TYPE = 'a'),
+ F_SBES_I = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 730 AND F_TYPE = 'a')
+WHERE F_SUBJECT IN (170000, 200000, 210000, 220000) AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_I = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 700 AND F_TYPE = 'a'),
+ F_ATTRIB_I = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 700 AND F_TYPE = 'a'),
+ F_RESULTS_I = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 700 AND F_TYPE = 'a'),
+ F_CLOSEDS_I = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 700 AND F_TYPE = 'a'),
+ F_PENALITIES_I = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 700 AND F_TYPE = 'a'),
+ F_REASONS_I = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 700 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_I = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 700 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_I = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 700 AND F_TYPE = 'a'),
+ F_VID_I = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 700 AND F_TYPE = 'a'),
+ F_SBES_I = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 700 AND F_TYPE = 'a')
+WHERE F_SUBJECT = 230000 AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_I = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 300 AND F_TYPE = 'a'),
+ F_ATTRIB_I = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 300 AND F_TYPE = 'a'),
+ F_RESULTS_I = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 300 AND F_TYPE = 'a'),
+ F_CLOSEDS_I = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 300 AND F_TYPE = 'a'),
+ F_PENALITIES_I = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 300 AND F_TYPE = 'a'),
+ F_REASONS_I = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 300 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_I = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 300 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_I = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 300 AND F_TYPE = 'a'),
+ F_VID_I = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 300 AND F_TYPE = 'a'),
+ F_SBES_I = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 300 AND F_TYPE = 'a')
+WHERE F_SUBJECT IN (300000, 310000, 320000) AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_I = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 1200 AND F_TYPE = 'a'),
+ F_ATTRIB_I = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 1200 AND F_TYPE = 'a'),
+ F_RESULTS_I = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 1200 AND F_TYPE = 'a'),
+ F_CLOSEDS_I = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 1200 AND F_TYPE = 'a'),
+ F_PENALITIES_I = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 1200 AND F_TYPE = 'a'),
+ F_REASONS_I = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 1200 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_I = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 1200 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_I = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 1200 AND F_TYPE = 'a'),
+ F_VID_I = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 1200 AND F_TYPE = 'a'),
+ F_SBES_I = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 1200 AND F_TYPE = 'a')
+WHERE F_SUBJECT = 400000 AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_II = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3200 AND F_TYPE = 'a'),
+ F_ATTRIB_II = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3200 AND F_TYPE = 'a'),
+ F_RESULTS_II = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3200 AND F_TYPE = 'a'),
+ F_CLOSEDS_II = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3200 AND F_TYPE = 'a'),
+ F_PENALITIES_II = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3200 AND F_TYPE = 'a'),
+ F_REASONS_II = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3200 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_II = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3200 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_II = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3200 AND F_TYPE = 'a'),
+ F_VID_II = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3200 AND F_TYPE = 'a'),
+ F_SBES_II = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3200 AND F_TYPE = 'a')
+WHERE F_SUBJECT IN (410000, 420000, 430000) AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_II = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_ATTRIB_II = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_RESULTS_II = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_CLOSEDS_II = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_PENALITIES_II = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_REASONS_II = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_II = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_II = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_VID_II = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_SBES_II = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a')
+WHERE F_SUBJECT = 440000 AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_II = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_ATTRIB_II = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_RESULTS_II = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_CLOSEDS_II = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_PENALITIES_II = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_REASONS_II = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_JUDGE_REPORT_II = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_QUICK_REPORT_II = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_VID_II = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_SBES_II = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't')
+WHERE F_SUBJECT = 440000 AND F_TYPE = 't';
+UPDATE T_SUBJECT SET
+ F_FLAGS_II = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_ATTRIB_II = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_RESULTS_II = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_CLOSEDS_II = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_PENALITIES_II = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_REASONS_II = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_II = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_II = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_VID_II = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_SBES_II = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a')
+WHERE F_SUBJECT = 500000 AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_II = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_ATTRIB_II = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_RESULTS_II = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_CLOSEDS_II = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_PENALITIES_II = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_REASONS_II = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_JUDGE_REPORT_II = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_QUICK_REPORT_II = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_VID_II = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_SBES_II = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't')
+WHERE F_SUBJECT = 500000 AND F_TYPE = 't';
+UPDATE T_SUBJECT SET
+ F_FLAGS_II = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_ATTRIB_II = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_RESULTS_II = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_CLOSEDS_II = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_PENALITIES_II = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_REASONS_II = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_II = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_II = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_VID_II = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_SBES_II = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a')
+WHERE F_SUBJECT IN (510000, 511000, 520000, 521000, 522000, 523000, 530000, 531000, 532000, 533000, 534000) AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_II = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_ATTRIB_II = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_RESULTS_II = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_CLOSEDS_II = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_PENALITIES_II = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_REASONS_II = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_JUDGE_REPORT_II = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_QUICK_REPORT_II = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_VID_II = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_SBES_II = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't')
+WHERE F_SUBJECT IN (510000, 511000, 520000, 521000, 522000, 523000, 530000, 531000, 532000, 533000, 534000) AND F_TYPE = 't';
+UPDATE T_SUBJECT SET
+ F_FLAGS_II = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_ATTRIB_II = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_RESULTS_II = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_CLOSEDS_II = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_PENALITIES_II = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_REASONS_II = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_II = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_II = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_VID_II = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_SBES_II = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a')
+WHERE F_SUBJECT IN (535000, 536000, 537000, 538000, 539000, 539100, 539200, 539300, 540000, 541000, 542000) AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_II = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_ATTRIB_II = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_RESULTS_II = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_CLOSEDS_II = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_PENALITIES_II = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_REASONS_II = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_JUDGE_REPORT_II = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_QUICK_REPORT_II = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_VID_II = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_SBES_II = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't')
+WHERE F_SUBJECT IN (535000, 536000, 537000, 538000, 539000, 539100, 539200, 539300, 540000, 541000, 542000) AND F_TYPE = 't';
+UPDATE T_SUBJECT SET
+ F_FLAGS_II = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_ATTRIB_II = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_RESULTS_II = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_CLOSEDS_II = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_PENALITIES_II = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_REASONS_II = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_II = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_II = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_VID_II = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_SBES_II = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a')
+WHERE F_SUBJECT IN (543000, 544000, 545000, 546000, 546100, 546200, 546300, 546400, 547000, 548000, 550000) AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_II = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_ATTRIB_II = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_RESULTS_II = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_CLOSEDS_II = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_PENALITIES_II = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_REASONS_II = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_JUDGE_REPORT_II = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_QUICK_REPORT_II = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_VID_II = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_SBES_II = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't')
+WHERE F_SUBJECT IN (543000, 544000, 545000, 546000, 546100, 546200, 546300, 546400, 547000, 548000, 550000) AND F_TYPE = 't';
+UPDATE T_SUBJECT SET
+ F_FLAGS_II = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3150 AND F_TYPE = 'a'),
+ F_ATTRIB_II = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3150 AND F_TYPE = 'a'),
+ F_RESULTS_II = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3150 AND F_TYPE = 'a'),
+ F_CLOSEDS_II = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3150 AND F_TYPE = 'a'),
+ F_PENALITIES_II = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3150 AND F_TYPE = 'a'),
+ F_REASONS_II = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3150 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_II = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3150 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_II = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3150 AND F_TYPE = 'a'),
+ F_VID_II = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3150 AND F_TYPE = 'a'),
+ F_SBES_II = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3150 AND F_TYPE = 'a')
+WHERE F_SUBJECT = 560000 AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_II = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3150 AND F_TYPE = 't'),
+ F_ATTRIB_II = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3150 AND F_TYPE = 't'),
+ F_RESULTS_II = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3150 AND F_TYPE = 't'),
+ F_CLOSEDS_II = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3150 AND F_TYPE = 't'),
+ F_PENALITIES_II = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3150 AND F_TYPE = 't'),
+ F_REASONS_II = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3150 AND F_TYPE = 't'),
+ F_JUDGE_REPORT_II = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3150 AND F_TYPE = 't'),
+ F_QUICK_REPORT_II = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3150 AND F_TYPE = 't'),
+ F_VID_II = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3150 AND F_TYPE = 't'),
+ F_SBES_II = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3150 AND F_TYPE = 't')
+WHERE F_SUBJECT = 560000 AND F_TYPE = 't';
+UPDATE T_SUBJECT SET
+ F_FLAGS_I = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 100 AND F_TYPE = 'c'),
+ F_ATTRIB_I = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 100 AND F_TYPE = 'c'),
+ F_RESULTS_I = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 100 AND F_TYPE = 'c'),
+ F_CLOSEDS_I = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 100 AND F_TYPE = 'c'),
+ F_PENALITIES_I = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 100 AND F_TYPE = 'c'),
+ F_REASONS_I = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 100 AND F_TYPE = 'c'),
+ F_JUDGE_REPORT_I = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 100 AND F_TYPE = 'c'),
+ F_QUICK_REPORT_I = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 100 AND F_TYPE = 'c'),
+ F_VID_I = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 100 AND F_TYPE = 'c'),
+ F_SBES_I = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 100 AND F_TYPE = 'c')
+WHERE F_SUBJECT = 60000 AND F_TYPE = 'c';
+UPDATE T_SUBJECT SET
+ F_FLAGS_I = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 120 AND F_TYPE = 'c'),
+ F_ATTRIB_I = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 120 AND F_TYPE = 'c'),
+ F_RESULTS_I = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 120 AND F_TYPE = 'c'),
+ F_CLOSEDS_I = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 120 AND F_TYPE = 'c'),
+ F_PENALITIES_I = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 120 AND F_TYPE = 'c'),
+ F_REASONS_I = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 120 AND F_TYPE = 'c'),
+ F_JUDGE_REPORT_I = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 120 AND F_TYPE = 'c'),
+ F_QUICK_REPORT_I = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 120 AND F_TYPE = 'c'),
+ F_VID_I = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 120 AND F_TYPE = 'c'),
+ F_SBES_I = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 120 AND F_TYPE = 'c')
+WHERE F_SUBJECT = 92000 AND F_TYPE = 'c';
+UPDATE T_SUBJECT SET
+ F_FLAGS_I = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 150 AND F_TYPE = 'c'),
+ F_ATTRIB_I = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 150 AND F_TYPE = 'c'),
+ F_RESULTS_I = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 150 AND F_TYPE = 'c'),
+ F_CLOSEDS_I = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 150 AND F_TYPE = 'c'),
+ F_PENALITIES_I = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 150 AND F_TYPE = 'c'),
+ F_REASONS_I = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 150 AND F_TYPE = 'c'),
+ F_JUDGE_REPORT_I = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 150 AND F_TYPE = 'c'),
+ F_QUICK_REPORT_I = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 150 AND F_TYPE = 'c'),
+ F_VID_I = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 150 AND F_TYPE = 'c'),
+ F_SBES_I = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 150 AND F_TYPE = 'c')
+WHERE F_SUBJECT = 100000 AND F_TYPE = 'c';
+UPDATE T_SUBJECT SET
+ F_FLAGS_I = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 980 AND F_TYPE = 't'),
+ F_ATTRIB_I = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 980 AND F_TYPE = 't'),
+ F_RESULTS_I = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 980 AND F_TYPE = 't'),
+ F_CLOSEDS_I = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 980 AND F_TYPE = 't'),
+ F_PENALITIES_I = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 980 AND F_TYPE = 't'),
+ F_REASONS_I = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 980 AND F_TYPE = 't'),
+ F_JUDGE_REPORT_I = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 980 AND F_TYPE = 't'),
+ F_QUICK_REPORT_I = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 980 AND F_TYPE = 't'),
+ F_VID_I = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 980 AND F_TYPE = 't'),
+ F_SBES_I = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 980 AND F_TYPE = 't')
+WHERE F_SUBJECT = 240000 AND F_TYPE = 't';
+UPDATE T_SUBJECT SET
+ F_FLAGS_I = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_ATTRIB_I = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_RESULTS_I = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_CLOSEDS_I = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_PENALITIES_I = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_REASONS_I = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_I = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_I = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_VID_I = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_SBES_I = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a')
+WHERE F_SUBJECT IN (26000, 34000, 81000) AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_I = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a'),
+ F_ATTRIB_I = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a'),
+ F_RESULTS_I = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a'),
+ F_CLOSEDS_I = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a'),
+ F_PENALITIES_I = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a'),
+ F_REASONS_I = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_I = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_I = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a'),
+ F_VID_I = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a'),
+ F_SBES_I = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a')
+WHERE F_SUBJECT IN (156000, 165000, 166000, 167000) AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_II = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_ATTRIB_II = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_RESULTS_II = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_CLOSEDS_II = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_PENALITIES_II = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_REASONS_II = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_II = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_II = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_VID_II = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_SBES_II = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a')
+WHERE F_SUBJECT = 539400 AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_II = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_ATTRIB_II = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_RESULTS_II = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_CLOSEDS_II = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_PENALITIES_II = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_REASONS_II = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_JUDGE_REPORT_II = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_QUICK_REPORT_II = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_VID_II = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_SBES_II = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't')
+WHERE F_SUBJECT = 539400 AND F_TYPE = 't';
+UPDATE T_SUBJECT SET
+ F_FLAGS_I = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_ATTRIB_I = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_RESULTS_I = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_CLOSEDS_I = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_PENALITIES_I = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_REASONS_I = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_I = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_I = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_VID_I = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a'),
+ F_SBES_I = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a')
+WHERE F_SUBJECT = 61000 AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_II = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_ATTRIB_II = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_RESULTS_II = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_CLOSEDS_II = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_PENALITIES_II = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_REASONS_II = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_II = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_II = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_VID_II = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_SBES_II = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a')
+WHERE F_SUBJECT = 450000 AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_II = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_ATTRIB_II = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_RESULTS_II = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_CLOSEDS_II = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_PENALITIES_II = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_REASONS_II = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_JUDGE_REPORT_II = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_QUICK_REPORT_II = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_VID_II = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_SBES_II = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't')
+WHERE F_SUBJECT = 450000 AND F_TYPE = 't';
+UPDATE T_SUBJECT SET
+ F_FLAGS_I = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 1200 AND F_TYPE = 'a'),
+ F_ATTRIB_I = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 1200 AND F_TYPE = 'a'),
+ F_RESULTS_I = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 1200 AND F_TYPE = 'a'),
+ F_CLOSEDS_I = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 1200 AND F_TYPE = 'a'),
+ F_PENALITIES_I = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 1200 AND F_TYPE = 'a'),
+ F_REASONS_I = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 1200 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_I = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 1200 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_I = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 1200 AND F_TYPE = 'a'),
+ F_VID_I = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 1200 AND F_TYPE = 'a'),
+ F_SBES_I = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 1200 AND F_TYPE = 'a')
+WHERE F_SUBJECT = 410000 AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_II = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3300 AND F_TYPE = 'a'),
+ F_ATTRIB_II = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3300 AND F_TYPE = 'a'),
+ F_RESULTS_II = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3300 AND F_TYPE = 'a'),
+ F_CLOSEDS_II = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3300 AND F_TYPE = 'a'),
+ F_PENALITIES_II = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3300 AND F_TYPE = 'a'),
+ F_REASONS_II = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3300 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_II = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3300 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_II = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3300 AND F_TYPE = 'a'),
+ F_VID_II = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3300 AND F_TYPE = 'a'),
+ F_SBES_II = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3300 AND F_TYPE = 'a')
+WHERE F_SUBJECT = 430050 AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_II = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3150 AND F_TYPE = 'a'),
+ F_ATTRIB_II = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3150 AND F_TYPE = 'a'),
+ F_RESULTS_II = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3150 AND F_TYPE = 'a'),
+ F_CLOSEDS_II = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3150 AND F_TYPE = 'a'),
+ F_PENALITIES_II = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3150 AND F_TYPE = 'a'),
+ F_REASONS_II = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3150 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_II = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3150 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_II = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3150 AND F_TYPE = 'a'),
+ F_VID_II = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3150 AND F_TYPE = 'a'),
+ F_SBES_II = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3150 AND F_TYPE = 'a')
+WHERE F_SUBJECT = 560050 AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_I = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 800 AND F_TYPE = 'a'),
+ F_ATTRIB_I = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 800 AND F_TYPE = 'a'),
+ F_RESULTS_I = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 800 AND F_TYPE = 'a'),
+ F_CLOSEDS_I = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 800 AND F_TYPE = 'a'),
+ F_PENALITIES_I = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 800 AND F_TYPE = 'a'),
+ F_REASONS_I = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 800 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_I = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 800 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_I = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 800 AND F_TYPE = 'a'),
+ F_VID_I = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 800 AND F_TYPE = 'a'),
+ F_SBES_I = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 800 AND F_TYPE = 'a')
+WHERE F_SUBJECT = 90050 AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_II = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_ATTRIB_II = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_RESULTS_II = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_CLOSEDS_II = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_PENALITIES_II = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_REASONS_II = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_JUDGE_REPORT_II = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_QUICK_REPORT_II = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_VID_II = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a'),
+ F_SBES_II = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a')
+WHERE F_SUBJECT = 450050 AND F_TYPE = 'a';
+UPDATE T_SUBJECT SET
+ F_FLAGS_II = (SELECT F_FLAGS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_ATTRIB_II = (SELECT F_ATTRIB FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_RESULTS_II = (SELECT F_RESULTS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_CLOSEDS_II = (SELECT F_CLOSEDS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_PENALITIES_II = (SELECT F_PENALITIES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_REASONS_II = (SELECT F_REASONS FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_JUDGE_REPORT_II = (SELECT F_JUDGE_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_QUICK_REPORT_II = (SELECT F_QUICK_REPORT FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_VID_II = (SELECT F_VID FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't'),
+ F_SBES_II = (SELECT F_SBES FROM T_OLD_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't')
+WHERE F_SUBJECT = 450050 AND F_TYPE = 't';
+UPDATE T_SUBJECT SET F_FLAGS_II = NULL WHERE F_SUBJECT = 546300 AND F_KIND_II = 'n' AND F_FLAGS_II = 1;
+UPDATE T_SUBJECT SET F_FLAGS_II = F_FLAGS_II-1 WHERE F_SUBJECT = 546300 AND F_KIND_II = 'n' AND F_FLAGS_II IN (3, 5, 7);
+UPDATE T_SUBJECT SET F_CLOSEDS_I = ']' || F_CLOSEDS_I WHERE NOT F_CLOSEDS_I IS NULL;
+UPDATE T_SUBJECT SET F_CLOSEDS_II = ']' || F_CLOSEDS_II WHERE NOT F_CLOSEDS_II IS NULL;
+SELECT * FROM T_SUBJECT WHERE (F_RESULTS_I IS NULL OR F_CLOSEDS_I IS NULL) AND NOT F_KIND_I IS NULL;
+SELECT * FROM T_SUBJECT WHERE (F_RESULTS_II IS NULL OR F_CLOSEDS_II IS NULL) AND NOT F_KIND_II IS NULL;
+UPDATE T_SUBJECT SET F_SUBJECT = NULL WHERE (F_RESULTS_I IS NULL OR F_CLOSEDS_I IS NULL) AND NOT F_KIND_I IS NULL;
+UPDATE T_SUBJECT SET F_SUBJECT = NULL WHERE (F_RESULTS_II IS NULL OR F_CLOSEDS_II IS NULL) AND NOT F_KIND_II IS NULL;
+INSERT INTO T_COMPOSITION VALUES ('I', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 001);
+INSERT INTO T_COMPOSITION VALUES ('II', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 002);
+INSERT INTO T_COMPOSITION VALUES ('III', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 003);
+INSERT INTO T_COMPOSITION VALUES ('IV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 004);
+INSERT INTO T_COMPOSITION VALUES ('V', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 005);
+INSERT INTO T_COMPOSITION VALUES ('VI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 006);
+INSERT INTO T_COMPOSITION VALUES ('VII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 007);
+INSERT INTO T_COMPOSITION VALUES ('VIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 008);
+INSERT INTO T_COMPOSITION VALUES ('IX', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 009);
+INSERT INTO T_COMPOSITION VALUES ('X', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 010);
+INSERT INTO T_COMPOSITION VALUES ('XI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 011);
+INSERT INTO T_COMPOSITION VALUES ('XII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 012);
+INSERT INTO T_COMPOSITION VALUES ('XIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 013);
+INSERT INTO T_COMPOSITION VALUES ('XIV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 014);
+INSERT INTO T_COMPOSITION VALUES ('XV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 015);
+INSERT INTO T_COMPOSITION VALUES ('XVI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 016);
+INSERT INTO T_COMPOSITION VALUES ('XVII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 017);
+INSERT INTO T_COMPOSITION VALUES ('XVIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 018);
+INSERT INTO T_COMPOSITION VALUES ('XIX', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 019);
+INSERT INTO T_COMPOSITION VALUES ('XX', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 020);
+INSERT INTO T_COMPOSITION VALUES ('XXI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 021);
+INSERT INTO T_COMPOSITION VALUES ('XXII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 022);
+INSERT INTO T_COMPOSITION VALUES ('XXIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 023);
+INSERT INTO T_COMPOSITION VALUES ('XXIV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 024);
+INSERT INTO T_COMPOSITION VALUES ('XXV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 025);
+INSERT INTO T_COMPOSITION VALUES ('XXVI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 026);
+INSERT INTO T_COMPOSITION VALUES ('XXVII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 027);
+INSERT INTO T_COMPOSITION VALUES ('XXVIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 028);
+INSERT INTO T_COMPOSITION VALUES ('XXIX', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 029);
+INSERT INTO T_COMPOSITION VALUES ('XXX', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 030);
+INSERT INTO T_COMPOSITION VALUES ('XXXI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 031);
+INSERT INTO T_COMPOSITION VALUES ('XXXII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 032);
+INSERT INTO T_COMPOSITION VALUES ('XXXIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 033);
+INSERT INTO T_COMPOSITION VALUES ('XXXIV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 034);
+INSERT INTO T_COMPOSITION VALUES ('XXXV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 035);
+INSERT INTO T_COMPOSITION VALUES ('XXXVI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 036);
+INSERT INTO T_COMPOSITION VALUES ('XXXVII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 037);
+INSERT INTO T_COMPOSITION VALUES ('XXXVIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 038);
+INSERT INTO T_COMPOSITION VALUES ('XXXIX', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 039);
+INSERT INTO T_COMPOSITION VALUES ('XL', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 040);
+INSERT INTO T_COMPOSITION VALUES ('XLI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 041);
+INSERT INTO T_COMPOSITION VALUES ('XLII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 042);
+INSERT INTO T_COMPOSITION VALUES ('XLIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 043);
+INSERT INTO T_COMPOSITION VALUES ('XLIV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 044);
+INSERT INTO T_COMPOSITION VALUES ('XLV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 045);
+INSERT INTO T_COMPOSITION VALUES ('XLVI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 046);
+INSERT INTO T_COMPOSITION VALUES ('XLVII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 047);
+INSERT INTO T_COMPOSITION VALUES ('XLVIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 048);
+INSERT INTO T_COMPOSITION VALUES ('XLIX', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 049);
+INSERT INTO T_COMPOSITION VALUES ('L', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 050);
+INSERT INTO T_COMPOSITION VALUES ('LI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 051);
+INSERT INTO T_COMPOSITION VALUES ('LII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 052);
+INSERT INTO T_COMPOSITION VALUES ('LIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 053);
+INSERT INTO T_COMPOSITION VALUES ('LIV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 054);
+INSERT INTO T_COMPOSITION VALUES ('LV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 055);
+INSERT INTO T_COMPOSITION VALUES ('LVI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 056);
+INSERT INTO T_COMPOSITION VALUES ('LVII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 057);
+INSERT INTO T_COMPOSITION VALUES ('LVIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 058);
+INSERT INTO T_COMPOSITION VALUES ('LIX', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 059);
+INSERT INTO T_COMPOSITION VALUES ('LX', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 060);
+INSERT INTO T_COMPOSITION VALUES ('LXI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 061);
+INSERT INTO T_COMPOSITION VALUES ('LXII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 062);
+INSERT INTO T_COMPOSITION VALUES ('LXIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 063);
+INSERT INTO T_COMPOSITION VALUES ('LXIV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 064);
+INSERT INTO T_COMPOSITION VALUES ('LXV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 065);
+INSERT INTO T_COMPOSITION VALUES ('LXVI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 066);
+INSERT INTO T_COMPOSITION VALUES ('LXVII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 067);
+INSERT INTO T_COMPOSITION VALUES ('LXVIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 068);
+INSERT INTO T_COMPOSITION VALUES ('LXIX', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 069);
+INSERT INTO T_COMPOSITION VALUES ('LXX', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 070);
+INSERT INTO T_COMPOSITION VALUES ('LXXI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 071);
+INSERT INTO T_COMPOSITION VALUES ('LXXII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 072);
+INSERT INTO T_COMPOSITION VALUES ('LXXIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 073);
+INSERT INTO T_COMPOSITION VALUES ('LXXIV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 074);
+INSERT INTO T_COMPOSITION VALUES ('LXXV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 075);
+INSERT INTO T_COMPOSITION VALUES ('LXXVI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 076);
+INSERT INTO T_COMPOSITION VALUES ('LXXVII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 077);
+INSERT INTO T_COMPOSITION VALUES ('LXXVIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 078);
+INSERT INTO T_COMPOSITION VALUES ('LXXIX', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 079);
+INSERT INTO T_COMPOSITION VALUES ('LXXX', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 080);
+INSERT INTO T_COMPOSITION VALUES ('LXXXI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 081);
+INSERT INTO T_COMPOSITION VALUES ('LXXXII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 082);
+INSERT INTO T_COMPOSITION VALUES ('LXXXIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 083);
+INSERT INTO T_COMPOSITION VALUES ('LXXXIV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 084);
+INSERT INTO T_COMPOSITION VALUES ('LXXXV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 085);
+INSERT INTO T_COMPOSITION VALUES ('LXXXVI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 086);
+INSERT INTO T_COMPOSITION VALUES ('LXXXVII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 087);
+INSERT INTO T_COMPOSITION VALUES ('LXXXVIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 088);
+INSERT INTO T_COMPOSITION VALUES ('LXXXIX', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 089);
+INSERT INTO T_COMPOSITION VALUES ('XC', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 090);
+INSERT INTO T_COMPOSITION VALUES ('XCI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 091);
+INSERT INTO T_COMPOSITION VALUES ('XCII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 092);
+INSERT INTO T_COMPOSITION VALUES ('XCIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 093);
+INSERT INTO T_COMPOSITION VALUES ('XCIV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 094);
+INSERT INTO T_COMPOSITION VALUES ('XCV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 095);
+INSERT INTO T_COMPOSITION VALUES ('XCVI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 096);
+INSERT INTO T_COMPOSITION VALUES ('XCVII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 097);
+INSERT INTO T_COMPOSITION VALUES ('XCVIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 098);
+INSERT INTO T_COMPOSITION VALUES ('XCIX', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 099);
+INSERT INTO T_COMPOSITION VALUES ('C', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 100);
+INSERT INTO T_COMPOSITION VALUES ('CI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 101);
+INSERT INTO T_COMPOSITION VALUES ('CII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 102);
+INSERT INTO T_COMPOSITION VALUES ('CIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 103);
+INSERT INTO T_COMPOSITION VALUES ('CIV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 104);
+INSERT INTO T_COMPOSITION VALUES ('CV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 105);
+INSERT INTO T_COMPOSITION VALUES ('CVI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 106);
+INSERT INTO T_COMPOSITION VALUES ('CVII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 107);
+INSERT INTO T_COMPOSITION VALUES ('CVIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 108);
+INSERT INTO T_COMPOSITION VALUES ('CIX', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 109);
+INSERT INTO T_COMPOSITION VALUES ('CX', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 110);
+INSERT INTO T_COMPOSITION VALUES ('CXI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 111);
+INSERT INTO T_COMPOSITION VALUES ('CXII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 112);
+INSERT INTO T_COMPOSITION VALUES ('CXIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 113);
+INSERT INTO T_COMPOSITION VALUES ('CXIV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 114);
+INSERT INTO T_COMPOSITION VALUES ('CXV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 115);
+INSERT INTO T_COMPOSITION VALUES ('CXVI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 116);
+INSERT INTO T_COMPOSITION VALUES ('CXVII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 117);
+INSERT INTO T_COMPOSITION VALUES ('CXVIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 118);
+INSERT INTO T_COMPOSITION VALUES ('CXIX', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 119);
+INSERT INTO T_COMPOSITION VALUES ('CXX', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 120);
+INSERT INTO T_COMPOSITION VALUES ('CXXI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 121);
+INSERT INTO T_COMPOSITION VALUES ('CXXII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 122);
+INSERT INTO T_COMPOSITION VALUES ('CXXIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 123);
+INSERT INTO T_COMPOSITION VALUES ('CXXIV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 124);
+INSERT INTO T_COMPOSITION VALUES ('CXXV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 125);
+INSERT INTO T_COMPOSITION VALUES ('CXXVI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 126);
+INSERT INTO T_COMPOSITION VALUES ('CXXVII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 127);
+INSERT INTO T_COMPOSITION VALUES ('CXXVIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 128);
+INSERT INTO T_COMPOSITION VALUES ('CXXIX', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 129);
+INSERT INTO T_COMPOSITION VALUES ('CXXX', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 130);
+INSERT INTO T_COMPOSITION VALUES ('CXXXI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 131);
+INSERT INTO T_COMPOSITION VALUES ('CXXXII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 132);
+INSERT INTO T_COMPOSITION VALUES ('CXXXIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 133);
+INSERT INTO T_COMPOSITION VALUES ('CXXXIV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 134);
+INSERT INTO T_COMPOSITION VALUES ('CXXXV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 135);
+INSERT INTO T_COMPOSITION VALUES ('CXXXVI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 136);
+INSERT INTO T_COMPOSITION VALUES ('CXXXVII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 137);
+INSERT INTO T_COMPOSITION VALUES ('CXXXVIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 138);
+INSERT INTO T_COMPOSITION VALUES ('CXXXIX', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 139);
+INSERT INTO T_COMPOSITION VALUES ('CXL', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 140);
+INSERT INTO T_COMPOSITION VALUES ('CXLI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 141);
+INSERT INTO T_COMPOSITION VALUES ('CXLII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 142);
+INSERT INTO T_COMPOSITION VALUES ('CXLIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 143);
+INSERT INTO T_COMPOSITION VALUES ('CXLIV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 144);
+INSERT INTO T_COMPOSITION VALUES ('CXLV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 145);
+INSERT INTO T_COMPOSITION VALUES ('CXLVI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 146);
+INSERT INTO T_COMPOSITION VALUES ('CXLVII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 147);
+INSERT INTO T_COMPOSITION VALUES ('CXLVIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 148);
+INSERT INTO T_COMPOSITION VALUES ('CXLIX', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 149);
+INSERT INTO T_COMPOSITION VALUES ('CL', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 150);
+INSERT INTO T_COMPOSITION VALUES ('CLI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 151);
+INSERT INTO T_COMPOSITION VALUES ('CLII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 152);
+INSERT INTO T_COMPOSITION VALUES ('CLIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 153);
+INSERT INTO T_COMPOSITION VALUES ('CLIV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 154);
+INSERT INTO T_COMPOSITION VALUES ('CLV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 155);
+INSERT INTO T_COMPOSITION VALUES ('CLVI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 156);
+INSERT INTO T_COMPOSITION VALUES ('CLVII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 157);
+INSERT INTO T_COMPOSITION VALUES ('CLVIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 158);
+INSERT INTO T_COMPOSITION VALUES ('CLIX', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 159);
+INSERT INTO T_COMPOSITION VALUES ('CLX', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 160);
+INSERT INTO T_COMPOSITION VALUES ('CLXI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 161);
+INSERT INTO T_COMPOSITION VALUES ('CLXII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 162);
+INSERT INTO T_COMPOSITION VALUES ('CLXIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 163);
+INSERT INTO T_COMPOSITION VALUES ('CLXIV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 164);
+INSERT INTO T_COMPOSITION VALUES ('CLXV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 165);
+INSERT INTO T_COMPOSITION VALUES ('CLXVI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 166);
+INSERT INTO T_COMPOSITION VALUES ('CLXVII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 167);
+INSERT INTO T_COMPOSITION VALUES ('CLXVIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 168);
+INSERT INTO T_COMPOSITION VALUES ('CLXIX', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 169);
+INSERT INTO T_COMPOSITION VALUES ('CLXX', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 170);
+INSERT INTO T_COMPOSITION VALUES ('CLXXI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 171);
+INSERT INTO T_COMPOSITION VALUES ('CLXXII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 172);
+INSERT INTO T_COMPOSITION VALUES ('CLXXIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 173);
+INSERT INTO T_COMPOSITION VALUES ('CLXXIV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 174);
+INSERT INTO T_COMPOSITION VALUES ('CLXXV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 175);
+INSERT INTO T_COMPOSITION VALUES ('CLXXVI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 176);
+INSERT INTO T_COMPOSITION VALUES ('CLXXVII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 177);
+INSERT INTO T_COMPOSITION VALUES ('CLXXVIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 178);
+INSERT INTO T_COMPOSITION VALUES ('CLXXIX', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 179);
+INSERT INTO T_COMPOSITION VALUES ('CLXXX', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 180);
+INSERT INTO T_COMPOSITION VALUES ('CLXXXI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 181);
+INSERT INTO T_COMPOSITION VALUES ('CLXXXII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 182);
+INSERT INTO T_COMPOSITION VALUES ('CLXXXIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 183);
+INSERT INTO T_COMPOSITION VALUES ('CLXXXIV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 184);
+INSERT INTO T_COMPOSITION VALUES ('CLXXXV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 185);
+INSERT INTO T_COMPOSITION VALUES ('CLXXXVI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 186);
+INSERT INTO T_COMPOSITION VALUES ('CLXXXVII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 187);
+INSERT INTO T_COMPOSITION VALUES ('CLXXXVIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 188);
+INSERT INTO T_COMPOSITION VALUES ('CLXXXIX', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 189);
+INSERT INTO T_COMPOSITION VALUES ('CXC', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 190);
+INSERT INTO T_COMPOSITION VALUES ('CXCI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 191);
+INSERT INTO T_COMPOSITION VALUES ('CXCII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 192);
+INSERT INTO T_COMPOSITION VALUES ('CXCIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 193);
+INSERT INTO T_COMPOSITION VALUES ('CXCIV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 194);
+INSERT INTO T_COMPOSITION VALUES ('CXCV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 195);
+INSERT INTO T_COMPOSITION VALUES ('CXCVI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 196);
+INSERT INTO T_COMPOSITION VALUES ('CXCVII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 197);
+INSERT INTO T_COMPOSITION VALUES ('CXCVIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 198);
+INSERT INTO T_COMPOSITION VALUES ('CXCIX', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 199);
+INSERT INTO T_COMPOSITION VALUES ('CC', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 200);
+INSERT INTO T_COMPOSITION VALUES ('CCI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 201);
+INSERT INTO T_COMPOSITION VALUES ('CCII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 202);
+INSERT INTO T_COMPOSITION VALUES ('CCIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 203);
+INSERT INTO T_COMPOSITION VALUES ('CCIV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 204);
+INSERT INTO T_COMPOSITION VALUES ('CCV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 205);
+INSERT INTO T_COMPOSITION VALUES ('CCVI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 206);
+INSERT INTO T_COMPOSITION VALUES ('CCVII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 207);
+INSERT INTO T_COMPOSITION VALUES ('CCVIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 208);
+INSERT INTO T_COMPOSITION VALUES ('CCIX', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 209);
+INSERT INTO T_COMPOSITION VALUES ('CCX', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 210);
+INSERT INTO T_COMPOSITION VALUES ('CCXI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 211);
+INSERT INTO T_COMPOSITION VALUES ('CCXII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 212);
+INSERT INTO T_COMPOSITION VALUES ('CCXIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 213);
+INSERT INTO T_COMPOSITION VALUES ('CCXIV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 214);
+INSERT INTO T_COMPOSITION VALUES ('CCXV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 215);
+INSERT INTO T_COMPOSITION VALUES ('CCXVI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 216);
+INSERT INTO T_COMPOSITION VALUES ('CCXVII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 217);
+INSERT INTO T_COMPOSITION VALUES ('CCXVIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 218);
+INSERT INTO T_COMPOSITION VALUES ('CCXIX', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 219);
+INSERT INTO T_COMPOSITION VALUES ('CCXX', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 220);
+INSERT INTO T_COMPOSITION VALUES ('CCXXI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 221);
+INSERT INTO T_COMPOSITION VALUES ('CCXXII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 222);
+INSERT INTO T_COMPOSITION VALUES ('CCXXIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 223);
+INSERT INTO T_COMPOSITION VALUES ('CCXXIV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 224);
+INSERT INTO T_COMPOSITION VALUES ('CCXXV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 225);
+INSERT INTO T_COMPOSITION VALUES ('CCXXVI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 226);
+INSERT INTO T_COMPOSITION VALUES ('CCXXVII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 227);
+INSERT INTO T_COMPOSITION VALUES ('CCXXVIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 228);
+INSERT INTO T_COMPOSITION VALUES ('CCXXIX', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 229);
+INSERT INTO T_COMPOSITION VALUES ('CCXXX', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 230);
+INSERT INTO T_COMPOSITION VALUES ('CCXXXI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 231);
+INSERT INTO T_COMPOSITION VALUES ('CCXXXII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 232);
+INSERT INTO T_COMPOSITION VALUES ('CCXXXIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 233);
+INSERT INTO T_COMPOSITION VALUES ('CCXXXIV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 234);
+INSERT INTO T_COMPOSITION VALUES ('CCXXXV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 235);
+INSERT INTO T_COMPOSITION VALUES ('CCXXXVI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 236);
+INSERT INTO T_COMPOSITION VALUES ('CCXXXVII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 237);
+INSERT INTO T_COMPOSITION VALUES ('CCXXXVIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 238);
+INSERT INTO T_COMPOSITION VALUES ('CCXXXIX', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 239);
+INSERT INTO T_COMPOSITION VALUES ('CCXL', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 240);
+INSERT INTO T_COMPOSITION VALUES ('CCXLI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 241);
+INSERT INTO T_COMPOSITION VALUES ('CCXLII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 242);
+INSERT INTO T_COMPOSITION VALUES ('CCXLIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 243);
+INSERT INTO T_COMPOSITION VALUES ('CCXLIV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 244);
+INSERT INTO T_COMPOSITION VALUES ('CCXLV', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 245);
+INSERT INTO T_COMPOSITION VALUES ('CCXLVI', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 246);
+INSERT INTO T_COMPOSITION VALUES ('CCXLVII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 247);
+INSERT INTO T_COMPOSITION VALUES ('CCXLVIII', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 248);
+INSERT INTO T_COMPOSITION VALUES ('CCXLIX', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 249);
+INSERT INTO T_COMPOSITION VALUES ('CCL', '0000000000', NULL, NULL, NULL, NULL, 'a', NULL, 250);
+INSERT INTO T_COMPOSITION VALUES ('I', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 001);
+INSERT INTO T_COMPOSITION VALUES ('II', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 002);
+INSERT INTO T_COMPOSITION VALUES ('III', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 003);
+INSERT INTO T_COMPOSITION VALUES ('IV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 004);
+INSERT INTO T_COMPOSITION VALUES ('V', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 005);
+INSERT INTO T_COMPOSITION VALUES ('VI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 006);
+INSERT INTO T_COMPOSITION VALUES ('VII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 007);
+INSERT INTO T_COMPOSITION VALUES ('VIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 008);
+INSERT INTO T_COMPOSITION VALUES ('IX', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 009);
+INSERT INTO T_COMPOSITION VALUES ('X', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 010);
+INSERT INTO T_COMPOSITION VALUES ('XI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 011);
+INSERT INTO T_COMPOSITION VALUES ('XII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 012);
+INSERT INTO T_COMPOSITION VALUES ('XIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 013);
+INSERT INTO T_COMPOSITION VALUES ('XIV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 014);
+INSERT INTO T_COMPOSITION VALUES ('XV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 015);
+INSERT INTO T_COMPOSITION VALUES ('XVI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 016);
+INSERT INTO T_COMPOSITION VALUES ('XVII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 017);
+INSERT INTO T_COMPOSITION VALUES ('XVIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 018);
+INSERT INTO T_COMPOSITION VALUES ('XIX', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 019);
+INSERT INTO T_COMPOSITION VALUES ('XX', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 020);
+INSERT INTO T_COMPOSITION VALUES ('XXI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 021);
+INSERT INTO T_COMPOSITION VALUES ('XXII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 022);
+INSERT INTO T_COMPOSITION VALUES ('XXIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 023);
+INSERT INTO T_COMPOSITION VALUES ('XXIV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 024);
+INSERT INTO T_COMPOSITION VALUES ('XXV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 025);
+INSERT INTO T_COMPOSITION VALUES ('XXVI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 026);
+INSERT INTO T_COMPOSITION VALUES ('XXVII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 027);
+INSERT INTO T_COMPOSITION VALUES ('XXVIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 028);
+INSERT INTO T_COMPOSITION VALUES ('XXIX', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 029);
+INSERT INTO T_COMPOSITION VALUES ('XXX', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 030);
+INSERT INTO T_COMPOSITION VALUES ('XXXI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 031);
+INSERT INTO T_COMPOSITION VALUES ('XXXII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 032);
+INSERT INTO T_COMPOSITION VALUES ('XXXIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 033);
+INSERT INTO T_COMPOSITION VALUES ('XXXIV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 034);
+INSERT INTO T_COMPOSITION VALUES ('XXXV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 035);
+INSERT INTO T_COMPOSITION VALUES ('XXXVI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 036);
+INSERT INTO T_COMPOSITION VALUES ('XXXVII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 037);
+INSERT INTO T_COMPOSITION VALUES ('XXXVIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 038);
+INSERT INTO T_COMPOSITION VALUES ('XXXIX', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 039);
+INSERT INTO T_COMPOSITION VALUES ('XL', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 040);
+INSERT INTO T_COMPOSITION VALUES ('XLI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 041);
+INSERT INTO T_COMPOSITION VALUES ('XLII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 042);
+INSERT INTO T_COMPOSITION VALUES ('XLIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 043);
+INSERT INTO T_COMPOSITION VALUES ('XLIV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 044);
+INSERT INTO T_COMPOSITION VALUES ('XLV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 045);
+INSERT INTO T_COMPOSITION VALUES ('XLVI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 046);
+INSERT INTO T_COMPOSITION VALUES ('XLVII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 047);
+INSERT INTO T_COMPOSITION VALUES ('XLVIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 048);
+INSERT INTO T_COMPOSITION VALUES ('XLIX', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 049);
+INSERT INTO T_COMPOSITION VALUES ('L', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 050);
+INSERT INTO T_COMPOSITION VALUES ('LI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 051);
+INSERT INTO T_COMPOSITION VALUES ('LII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 052);
+INSERT INTO T_COMPOSITION VALUES ('LIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 053);
+INSERT INTO T_COMPOSITION VALUES ('LIV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 054);
+INSERT INTO T_COMPOSITION VALUES ('LV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 055);
+INSERT INTO T_COMPOSITION VALUES ('LVI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 056);
+INSERT INTO T_COMPOSITION VALUES ('LVII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 057);
+INSERT INTO T_COMPOSITION VALUES ('LVIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 058);
+INSERT INTO T_COMPOSITION VALUES ('LIX', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 059);
+INSERT INTO T_COMPOSITION VALUES ('LX', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 060);
+INSERT INTO T_COMPOSITION VALUES ('LXI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 061);
+INSERT INTO T_COMPOSITION VALUES ('LXII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 062);
+INSERT INTO T_COMPOSITION VALUES ('LXIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 063);
+INSERT INTO T_COMPOSITION VALUES ('LXIV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 064);
+INSERT INTO T_COMPOSITION VALUES ('LXV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 065);
+INSERT INTO T_COMPOSITION VALUES ('LXVI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 066);
+INSERT INTO T_COMPOSITION VALUES ('LXVII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 067);
+INSERT INTO T_COMPOSITION VALUES ('LXVIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 068);
+INSERT INTO T_COMPOSITION VALUES ('LXIX', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 069);
+INSERT INTO T_COMPOSITION VALUES ('LXX', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 070);
+INSERT INTO T_COMPOSITION VALUES ('LXXI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 071);
+INSERT INTO T_COMPOSITION VALUES ('LXXII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 072);
+INSERT INTO T_COMPOSITION VALUES ('LXXIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 073);
+INSERT INTO T_COMPOSITION VALUES ('LXXIV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 074);
+INSERT INTO T_COMPOSITION VALUES ('LXXV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 075);
+INSERT INTO T_COMPOSITION VALUES ('LXXVI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 076);
+INSERT INTO T_COMPOSITION VALUES ('LXXVII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 077);
+INSERT INTO T_COMPOSITION VALUES ('LXXVIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 078);
+INSERT INTO T_COMPOSITION VALUES ('LXXIX', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 079);
+INSERT INTO T_COMPOSITION VALUES ('LXXX', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 080);
+INSERT INTO T_COMPOSITION VALUES ('LXXXI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 081);
+INSERT INTO T_COMPOSITION VALUES ('LXXXII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 082);
+INSERT INTO T_COMPOSITION VALUES ('LXXXIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 083);
+INSERT INTO T_COMPOSITION VALUES ('LXXXIV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 084);
+INSERT INTO T_COMPOSITION VALUES ('LXXXV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 085);
+INSERT INTO T_COMPOSITION VALUES ('LXXXVI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 086);
+INSERT INTO T_COMPOSITION VALUES ('LXXXVII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 087);
+INSERT INTO T_COMPOSITION VALUES ('LXXXVIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 088);
+INSERT INTO T_COMPOSITION VALUES ('LXXXIX', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 089);
+INSERT INTO T_COMPOSITION VALUES ('XC', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 090);
+INSERT INTO T_COMPOSITION VALUES ('XCI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 091);
+INSERT INTO T_COMPOSITION VALUES ('XCII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 092);
+INSERT INTO T_COMPOSITION VALUES ('XCIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 093);
+INSERT INTO T_COMPOSITION VALUES ('XCIV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 094);
+INSERT INTO T_COMPOSITION VALUES ('XCV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 095);
+INSERT INTO T_COMPOSITION VALUES ('XCVI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 096);
+INSERT INTO T_COMPOSITION VALUES ('XCVII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 097);
+INSERT INTO T_COMPOSITION VALUES ('XCVIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 098);
+INSERT INTO T_COMPOSITION VALUES ('XCIX', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 099);
+INSERT INTO T_COMPOSITION VALUES ('C', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 100);
+INSERT INTO T_COMPOSITION VALUES ('CI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 101);
+INSERT INTO T_COMPOSITION VALUES ('CII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 102);
+INSERT INTO T_COMPOSITION VALUES ('CIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 103);
+INSERT INTO T_COMPOSITION VALUES ('CIV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 104);
+INSERT INTO T_COMPOSITION VALUES ('CV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 105);
+INSERT INTO T_COMPOSITION VALUES ('CVI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 106);
+INSERT INTO T_COMPOSITION VALUES ('CVII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 107);
+INSERT INTO T_COMPOSITION VALUES ('CVIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 108);
+INSERT INTO T_COMPOSITION VALUES ('CIX', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 109);
+INSERT INTO T_COMPOSITION VALUES ('CX', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 110);
+INSERT INTO T_COMPOSITION VALUES ('CXI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 111);
+INSERT INTO T_COMPOSITION VALUES ('CXII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 112);
+INSERT INTO T_COMPOSITION VALUES ('CXIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 113);
+INSERT INTO T_COMPOSITION VALUES ('CXIV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 114);
+INSERT INTO T_COMPOSITION VALUES ('CXV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 115);
+INSERT INTO T_COMPOSITION VALUES ('CXVI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 116);
+INSERT INTO T_COMPOSITION VALUES ('CXVII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 117);
+INSERT INTO T_COMPOSITION VALUES ('CXVIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 118);
+INSERT INTO T_COMPOSITION VALUES ('CXIX', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 119);
+INSERT INTO T_COMPOSITION VALUES ('CXX', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 120);
+INSERT INTO T_COMPOSITION VALUES ('CXXI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 121);
+INSERT INTO T_COMPOSITION VALUES ('CXXII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 122);
+INSERT INTO T_COMPOSITION VALUES ('CXXIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 123);
+INSERT INTO T_COMPOSITION VALUES ('CXXIV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 124);
+INSERT INTO T_COMPOSITION VALUES ('CXXV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 125);
+INSERT INTO T_COMPOSITION VALUES ('CXXVI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 126);
+INSERT INTO T_COMPOSITION VALUES ('CXXVII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 127);
+INSERT INTO T_COMPOSITION VALUES ('CXXVIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 128);
+INSERT INTO T_COMPOSITION VALUES ('CXXIX', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 129);
+INSERT INTO T_COMPOSITION VALUES ('CXXX', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 130);
+INSERT INTO T_COMPOSITION VALUES ('CXXXI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 131);
+INSERT INTO T_COMPOSITION VALUES ('CXXXII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 132);
+INSERT INTO T_COMPOSITION VALUES ('CXXXIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 133);
+INSERT INTO T_COMPOSITION VALUES ('CXXXIV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 134);
+INSERT INTO T_COMPOSITION VALUES ('CXXXV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 135);
+INSERT INTO T_COMPOSITION VALUES ('CXXXVI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 136);
+INSERT INTO T_COMPOSITION VALUES ('CXXXVII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 137);
+INSERT INTO T_COMPOSITION VALUES ('CXXXVIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 138);
+INSERT INTO T_COMPOSITION VALUES ('CXXXIX', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 139);
+INSERT INTO T_COMPOSITION VALUES ('CXL', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 140);
+INSERT INTO T_COMPOSITION VALUES ('CXLI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 141);
+INSERT INTO T_COMPOSITION VALUES ('CXLII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 142);
+INSERT INTO T_COMPOSITION VALUES ('CXLIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 143);
+INSERT INTO T_COMPOSITION VALUES ('CXLIV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 144);
+INSERT INTO T_COMPOSITION VALUES ('CXLV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 145);
+INSERT INTO T_COMPOSITION VALUES ('CXLVI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 146);
+INSERT INTO T_COMPOSITION VALUES ('CXLVII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 147);
+INSERT INTO T_COMPOSITION VALUES ('CXLVIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 148);
+INSERT INTO T_COMPOSITION VALUES ('CXLIX', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 149);
+INSERT INTO T_COMPOSITION VALUES ('CL', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 150);
+INSERT INTO T_COMPOSITION VALUES ('CLI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 151);
+INSERT INTO T_COMPOSITION VALUES ('CLII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 152);
+INSERT INTO T_COMPOSITION VALUES ('CLIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 153);
+INSERT INTO T_COMPOSITION VALUES ('CLIV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 154);
+INSERT INTO T_COMPOSITION VALUES ('CLV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 155);
+INSERT INTO T_COMPOSITION VALUES ('CLVI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 156);
+INSERT INTO T_COMPOSITION VALUES ('CLVII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 157);
+INSERT INTO T_COMPOSITION VALUES ('CLVIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 158);
+INSERT INTO T_COMPOSITION VALUES ('CLIX', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 159);
+INSERT INTO T_COMPOSITION VALUES ('CLX', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 160);
+INSERT INTO T_COMPOSITION VALUES ('CLXI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 161);
+INSERT INTO T_COMPOSITION VALUES ('CLXII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 162);
+INSERT INTO T_COMPOSITION VALUES ('CLXIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 163);
+INSERT INTO T_COMPOSITION VALUES ('CLXIV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 164);
+INSERT INTO T_COMPOSITION VALUES ('CLXV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 165);
+INSERT INTO T_COMPOSITION VALUES ('CLXVI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 166);
+INSERT INTO T_COMPOSITION VALUES ('CLXVII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 167);
+INSERT INTO T_COMPOSITION VALUES ('CLXVIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 168);
+INSERT INTO T_COMPOSITION VALUES ('CLXIX', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 169);
+INSERT INTO T_COMPOSITION VALUES ('CLXX', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 170);
+INSERT INTO T_COMPOSITION VALUES ('CLXXI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 171);
+INSERT INTO T_COMPOSITION VALUES ('CLXXII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 172);
+INSERT INTO T_COMPOSITION VALUES ('CLXXIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 173);
+INSERT INTO T_COMPOSITION VALUES ('CLXXIV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 174);
+INSERT INTO T_COMPOSITION VALUES ('CLXXV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 175);
+INSERT INTO T_COMPOSITION VALUES ('CLXXVI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 176);
+INSERT INTO T_COMPOSITION VALUES ('CLXXVII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 177);
+INSERT INTO T_COMPOSITION VALUES ('CLXXVIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 178);
+INSERT INTO T_COMPOSITION VALUES ('CLXXIX', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 179);
+INSERT INTO T_COMPOSITION VALUES ('CLXXX', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 180);
+INSERT INTO T_COMPOSITION VALUES ('CLXXXI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 181);
+INSERT INTO T_COMPOSITION VALUES ('CLXXXII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 182);
+INSERT INTO T_COMPOSITION VALUES ('CLXXXIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 183);
+INSERT INTO T_COMPOSITION VALUES ('CLXXXIV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 184);
+INSERT INTO T_COMPOSITION VALUES ('CLXXXV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 185);
+INSERT INTO T_COMPOSITION VALUES ('CLXXXVI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 186);
+INSERT INTO T_COMPOSITION VALUES ('CLXXXVII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 187);
+INSERT INTO T_COMPOSITION VALUES ('CLXXXVIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 188);
+INSERT INTO T_COMPOSITION VALUES ('CLXXXIX', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 189);
+INSERT INTO T_COMPOSITION VALUES ('CXC', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 190);
+INSERT INTO T_COMPOSITION VALUES ('CXCI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 191);
+INSERT INTO T_COMPOSITION VALUES ('CXCII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 192);
+INSERT INTO T_COMPOSITION VALUES ('CXCIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 193);
+INSERT INTO T_COMPOSITION VALUES ('CXCIV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 194);
+INSERT INTO T_COMPOSITION VALUES ('CXCV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 195);
+INSERT INTO T_COMPOSITION VALUES ('CXCVI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 196);
+INSERT INTO T_COMPOSITION VALUES ('CXCVII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 197);
+INSERT INTO T_COMPOSITION VALUES ('CXCVIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 198);
+INSERT INTO T_COMPOSITION VALUES ('CXCIX', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 199);
+INSERT INTO T_COMPOSITION VALUES ('CC', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 200);
+INSERT INTO T_COMPOSITION VALUES ('CCI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 201);
+INSERT INTO T_COMPOSITION VALUES ('CCII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 202);
+INSERT INTO T_COMPOSITION VALUES ('CCIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 203);
+INSERT INTO T_COMPOSITION VALUES ('CCIV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 204);
+INSERT INTO T_COMPOSITION VALUES ('CCV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 205);
+INSERT INTO T_COMPOSITION VALUES ('CCVI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 206);
+INSERT INTO T_COMPOSITION VALUES ('CCVII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 207);
+INSERT INTO T_COMPOSITION VALUES ('CCVIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 208);
+INSERT INTO T_COMPOSITION VALUES ('CCIX', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 209);
+INSERT INTO T_COMPOSITION VALUES ('CCX', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 210);
+INSERT INTO T_COMPOSITION VALUES ('CCXI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 211);
+INSERT INTO T_COMPOSITION VALUES ('CCXII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 212);
+INSERT INTO T_COMPOSITION VALUES ('CCXIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 213);
+INSERT INTO T_COMPOSITION VALUES ('CCXIV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 214);
+INSERT INTO T_COMPOSITION VALUES ('CCXV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 215);
+INSERT INTO T_COMPOSITION VALUES ('CCXVI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 216);
+INSERT INTO T_COMPOSITION VALUES ('CCXVII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 217);
+INSERT INTO T_COMPOSITION VALUES ('CCXVIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 218);
+INSERT INTO T_COMPOSITION VALUES ('CCXIX', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 219);
+INSERT INTO T_COMPOSITION VALUES ('CCXX', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 220);
+INSERT INTO T_COMPOSITION VALUES ('CCXXI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 221);
+INSERT INTO T_COMPOSITION VALUES ('CCXXII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 222);
+INSERT INTO T_COMPOSITION VALUES ('CCXXIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 223);
+INSERT INTO T_COMPOSITION VALUES ('CCXXIV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 224);
+INSERT INTO T_COMPOSITION VALUES ('CCXXV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 225);
+INSERT INTO T_COMPOSITION VALUES ('CCXXVI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 226);
+INSERT INTO T_COMPOSITION VALUES ('CCXXVII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 227);
+INSERT INTO T_COMPOSITION VALUES ('CCXXVIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 228);
+INSERT INTO T_COMPOSITION VALUES ('CCXXIX', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 229);
+INSERT INTO T_COMPOSITION VALUES ('CCXXX', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 230);
+INSERT INTO T_COMPOSITION VALUES ('CCXXXI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 231);
+INSERT INTO T_COMPOSITION VALUES ('CCXXXII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 232);
+INSERT INTO T_COMPOSITION VALUES ('CCXXXIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 233);
+INSERT INTO T_COMPOSITION VALUES ('CCXXXIV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 234);
+INSERT INTO T_COMPOSITION VALUES ('CCXXXV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 235);
+INSERT INTO T_COMPOSITION VALUES ('CCXXXVI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 236);
+INSERT INTO T_COMPOSITION VALUES ('CCXXXVII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 237);
+INSERT INTO T_COMPOSITION VALUES ('CCXXXVIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 238);
+INSERT INTO T_COMPOSITION VALUES ('CCXXXIX', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 239);
+INSERT INTO T_COMPOSITION VALUES ('CCXL', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 240);
+INSERT INTO T_COMPOSITION VALUES ('CCXLI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 241);
+INSERT INTO T_COMPOSITION VALUES ('CCXLII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 242);
+INSERT INTO T_COMPOSITION VALUES ('CCXLIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 243);
+INSERT INTO T_COMPOSITION VALUES ('CCXLIV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 244);
+INSERT INTO T_COMPOSITION VALUES ('CCXLV', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 245);
+INSERT INTO T_COMPOSITION VALUES ('CCXLVI', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 246);
+INSERT INTO T_COMPOSITION VALUES ('CCXLVII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 247);
+INSERT INTO T_COMPOSITION VALUES ('CCXLVIII', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 248);
+INSERT INTO T_COMPOSITION VALUES ('CCXLIX', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 249);
+INSERT INTO T_COMPOSITION VALUES ('CCL', '0000000000', NULL, NULL, NULL, NULL, 't', NULL, 250);
+INSERT INTO T_COMPOSITION VALUES ('I', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 001);
+INSERT INTO T_COMPOSITION VALUES ('II', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 002);
+INSERT INTO T_COMPOSITION VALUES ('III', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 003);
+INSERT INTO T_COMPOSITION VALUES ('IV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 004);
+INSERT INTO T_COMPOSITION VALUES ('V', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 005);
+INSERT INTO T_COMPOSITION VALUES ('VI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 006);
+INSERT INTO T_COMPOSITION VALUES ('VII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 007);
+INSERT INTO T_COMPOSITION VALUES ('VIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 008);
+INSERT INTO T_COMPOSITION VALUES ('IX', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 009);
+INSERT INTO T_COMPOSITION VALUES ('X', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 010);
+INSERT INTO T_COMPOSITION VALUES ('XI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 011);
+INSERT INTO T_COMPOSITION VALUES ('XII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 012);
+INSERT INTO T_COMPOSITION VALUES ('XIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 013);
+INSERT INTO T_COMPOSITION VALUES ('XIV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 014);
+INSERT INTO T_COMPOSITION VALUES ('XV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 015);
+INSERT INTO T_COMPOSITION VALUES ('XVI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 016);
+INSERT INTO T_COMPOSITION VALUES ('XVII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 017);
+INSERT INTO T_COMPOSITION VALUES ('XVIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 018);
+INSERT INTO T_COMPOSITION VALUES ('XIX', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 019);
+INSERT INTO T_COMPOSITION VALUES ('XX', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 020);
+INSERT INTO T_COMPOSITION VALUES ('XXI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 021);
+INSERT INTO T_COMPOSITION VALUES ('XXII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 022);
+INSERT INTO T_COMPOSITION VALUES ('XXIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 023);
+INSERT INTO T_COMPOSITION VALUES ('XXIV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 024);
+INSERT INTO T_COMPOSITION VALUES ('XXV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 025);
+INSERT INTO T_COMPOSITION VALUES ('XXVI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 026);
+INSERT INTO T_COMPOSITION VALUES ('XXVII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 027);
+INSERT INTO T_COMPOSITION VALUES ('XXVIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 028);
+INSERT INTO T_COMPOSITION VALUES ('XXIX', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 029);
+INSERT INTO T_COMPOSITION VALUES ('XXX', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 030);
+INSERT INTO T_COMPOSITION VALUES ('XXXI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 031);
+INSERT INTO T_COMPOSITION VALUES ('XXXII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 032);
+INSERT INTO T_COMPOSITION VALUES ('XXXIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 033);
+INSERT INTO T_COMPOSITION VALUES ('XXXIV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 034);
+INSERT INTO T_COMPOSITION VALUES ('XXXV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 035);
+INSERT INTO T_COMPOSITION VALUES ('XXXVI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 036);
+INSERT INTO T_COMPOSITION VALUES ('XXXVII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 037);
+INSERT INTO T_COMPOSITION VALUES ('XXXVIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 038);
+INSERT INTO T_COMPOSITION VALUES ('XXXIX', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 039);
+INSERT INTO T_COMPOSITION VALUES ('XL', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 040);
+INSERT INTO T_COMPOSITION VALUES ('XLI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 041);
+INSERT INTO T_COMPOSITION VALUES ('XLII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 042);
+INSERT INTO T_COMPOSITION VALUES ('XLIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 043);
+INSERT INTO T_COMPOSITION VALUES ('XLIV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 044);
+INSERT INTO T_COMPOSITION VALUES ('XLV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 045);
+INSERT INTO T_COMPOSITION VALUES ('XLVI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 046);
+INSERT INTO T_COMPOSITION VALUES ('XLVII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 047);
+INSERT INTO T_COMPOSITION VALUES ('XLVIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 048);
+INSERT INTO T_COMPOSITION VALUES ('XLIX', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 049);
+INSERT INTO T_COMPOSITION VALUES ('L', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 050);
+INSERT INTO T_COMPOSITION VALUES ('LI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 051);
+INSERT INTO T_COMPOSITION VALUES ('LII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 052);
+INSERT INTO T_COMPOSITION VALUES ('LIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 053);
+INSERT INTO T_COMPOSITION VALUES ('LIV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 054);
+INSERT INTO T_COMPOSITION VALUES ('LV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 055);
+INSERT INTO T_COMPOSITION VALUES ('LVI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 056);
+INSERT INTO T_COMPOSITION VALUES ('LVII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 057);
+INSERT INTO T_COMPOSITION VALUES ('LVIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 058);
+INSERT INTO T_COMPOSITION VALUES ('LIX', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 059);
+INSERT INTO T_COMPOSITION VALUES ('LX', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 060);
+INSERT INTO T_COMPOSITION VALUES ('LXI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 061);
+INSERT INTO T_COMPOSITION VALUES ('LXII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 062);
+INSERT INTO T_COMPOSITION VALUES ('LXIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 063);
+INSERT INTO T_COMPOSITION VALUES ('LXIV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 064);
+INSERT INTO T_COMPOSITION VALUES ('LXV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 065);
+INSERT INTO T_COMPOSITION VALUES ('LXVI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 066);
+INSERT INTO T_COMPOSITION VALUES ('LXVII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 067);
+INSERT INTO T_COMPOSITION VALUES ('LXVIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 068);
+INSERT INTO T_COMPOSITION VALUES ('LXIX', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 069);
+INSERT INTO T_COMPOSITION VALUES ('LXX', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 070);
+INSERT INTO T_COMPOSITION VALUES ('LXXI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 071);
+INSERT INTO T_COMPOSITION VALUES ('LXXII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 072);
+INSERT INTO T_COMPOSITION VALUES ('LXXIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 073);
+INSERT INTO T_COMPOSITION VALUES ('LXXIV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 074);
+INSERT INTO T_COMPOSITION VALUES ('LXXV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 075);
+INSERT INTO T_COMPOSITION VALUES ('LXXVI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 076);
+INSERT INTO T_COMPOSITION VALUES ('LXXVII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 077);
+INSERT INTO T_COMPOSITION VALUES ('LXXVIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 078);
+INSERT INTO T_COMPOSITION VALUES ('LXXIX', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 079);
+INSERT INTO T_COMPOSITION VALUES ('LXXX', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 080);
+INSERT INTO T_COMPOSITION VALUES ('LXXXI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 081);
+INSERT INTO T_COMPOSITION VALUES ('LXXXII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 082);
+INSERT INTO T_COMPOSITION VALUES ('LXXXIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 083);
+INSERT INTO T_COMPOSITION VALUES ('LXXXIV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 084);
+INSERT INTO T_COMPOSITION VALUES ('LXXXV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 085);
+INSERT INTO T_COMPOSITION VALUES ('LXXXVI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 086);
+INSERT INTO T_COMPOSITION VALUES ('LXXXVII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 087);
+INSERT INTO T_COMPOSITION VALUES ('LXXXVIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 088);
+INSERT INTO T_COMPOSITION VALUES ('LXXXIX', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 089);
+INSERT INTO T_COMPOSITION VALUES ('XC', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 090);
+INSERT INTO T_COMPOSITION VALUES ('XCI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 091);
+INSERT INTO T_COMPOSITION VALUES ('XCII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 092);
+INSERT INTO T_COMPOSITION VALUES ('XCIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 093);
+INSERT INTO T_COMPOSITION VALUES ('XCIV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 094);
+INSERT INTO T_COMPOSITION VALUES ('XCV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 095);
+INSERT INTO T_COMPOSITION VALUES ('XCVI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 096);
+INSERT INTO T_COMPOSITION VALUES ('XCVII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 097);
+INSERT INTO T_COMPOSITION VALUES ('XCVIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 098);
+INSERT INTO T_COMPOSITION VALUES ('XCIX', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 099);
+INSERT INTO T_COMPOSITION VALUES ('C', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 100);
+INSERT INTO T_COMPOSITION VALUES ('CI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 101);
+INSERT INTO T_COMPOSITION VALUES ('CII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 102);
+INSERT INTO T_COMPOSITION VALUES ('CIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 103);
+INSERT INTO T_COMPOSITION VALUES ('CIV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 104);
+INSERT INTO T_COMPOSITION VALUES ('CV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 105);
+INSERT INTO T_COMPOSITION VALUES ('CVI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 106);
+INSERT INTO T_COMPOSITION VALUES ('CVII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 107);
+INSERT INTO T_COMPOSITION VALUES ('CVIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 108);
+INSERT INTO T_COMPOSITION VALUES ('CIX', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 109);
+INSERT INTO T_COMPOSITION VALUES ('CX', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 110);
+INSERT INTO T_COMPOSITION VALUES ('CXI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 111);
+INSERT INTO T_COMPOSITION VALUES ('CXII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 112);
+INSERT INTO T_COMPOSITION VALUES ('CXIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 113);
+INSERT INTO T_COMPOSITION VALUES ('CXIV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 114);
+INSERT INTO T_COMPOSITION VALUES ('CXV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 115);
+INSERT INTO T_COMPOSITION VALUES ('CXVI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 116);
+INSERT INTO T_COMPOSITION VALUES ('CXVII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 117);
+INSERT INTO T_COMPOSITION VALUES ('CXVIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 118);
+INSERT INTO T_COMPOSITION VALUES ('CXIX', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 119);
+INSERT INTO T_COMPOSITION VALUES ('CXX', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 120);
+INSERT INTO T_COMPOSITION VALUES ('CXXI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 121);
+INSERT INTO T_COMPOSITION VALUES ('CXXII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 122);
+INSERT INTO T_COMPOSITION VALUES ('CXXIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 123);
+INSERT INTO T_COMPOSITION VALUES ('CXXIV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 124);
+INSERT INTO T_COMPOSITION VALUES ('CXXV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 125);
+INSERT INTO T_COMPOSITION VALUES ('CXXVI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 126);
+INSERT INTO T_COMPOSITION VALUES ('CXXVII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 127);
+INSERT INTO T_COMPOSITION VALUES ('CXXVIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 128);
+INSERT INTO T_COMPOSITION VALUES ('CXXIX', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 129);
+INSERT INTO T_COMPOSITION VALUES ('CXXX', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 130);
+INSERT INTO T_COMPOSITION VALUES ('CXXXI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 131);
+INSERT INTO T_COMPOSITION VALUES ('CXXXII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 132);
+INSERT INTO T_COMPOSITION VALUES ('CXXXIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 133);
+INSERT INTO T_COMPOSITION VALUES ('CXXXIV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 134);
+INSERT INTO T_COMPOSITION VALUES ('CXXXV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 135);
+INSERT INTO T_COMPOSITION VALUES ('CXXXVI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 136);
+INSERT INTO T_COMPOSITION VALUES ('CXXXVII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 137);
+INSERT INTO T_COMPOSITION VALUES ('CXXXVIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 138);
+INSERT INTO T_COMPOSITION VALUES ('CXXXIX', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 139);
+INSERT INTO T_COMPOSITION VALUES ('CXL', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 140);
+INSERT INTO T_COMPOSITION VALUES ('CXLI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 141);
+INSERT INTO T_COMPOSITION VALUES ('CXLII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 142);
+INSERT INTO T_COMPOSITION VALUES ('CXLIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 143);
+INSERT INTO T_COMPOSITION VALUES ('CXLIV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 144);
+INSERT INTO T_COMPOSITION VALUES ('CXLV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 145);
+INSERT INTO T_COMPOSITION VALUES ('CXLVI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 146);
+INSERT INTO T_COMPOSITION VALUES ('CXLVII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 147);
+INSERT INTO T_COMPOSITION VALUES ('CXLVIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 148);
+INSERT INTO T_COMPOSITION VALUES ('CXLIX', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 149);
+INSERT INTO T_COMPOSITION VALUES ('CL', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 150);
+INSERT INTO T_COMPOSITION VALUES ('CLI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 151);
+INSERT INTO T_COMPOSITION VALUES ('CLII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 152);
+INSERT INTO T_COMPOSITION VALUES ('CLIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 153);
+INSERT INTO T_COMPOSITION VALUES ('CLIV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 154);
+INSERT INTO T_COMPOSITION VALUES ('CLV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 155);
+INSERT INTO T_COMPOSITION VALUES ('CLVI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 156);
+INSERT INTO T_COMPOSITION VALUES ('CLVII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 157);
+INSERT INTO T_COMPOSITION VALUES ('CLVIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 158);
+INSERT INTO T_COMPOSITION VALUES ('CLIX', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 159);
+INSERT INTO T_COMPOSITION VALUES ('CLX', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 160);
+INSERT INTO T_COMPOSITION VALUES ('CLXI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 161);
+INSERT INTO T_COMPOSITION VALUES ('CLXII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 162);
+INSERT INTO T_COMPOSITION VALUES ('CLXIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 163);
+INSERT INTO T_COMPOSITION VALUES ('CLXIV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 164);
+INSERT INTO T_COMPOSITION VALUES ('CLXV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 165);
+INSERT INTO T_COMPOSITION VALUES ('CLXVI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 166);
+INSERT INTO T_COMPOSITION VALUES ('CLXVII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 167);
+INSERT INTO T_COMPOSITION VALUES ('CLXVIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 168);
+INSERT INTO T_COMPOSITION VALUES ('CLXIX', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 169);
+INSERT INTO T_COMPOSITION VALUES ('CLXX', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 170);
+INSERT INTO T_COMPOSITION VALUES ('CLXXI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 171);
+INSERT INTO T_COMPOSITION VALUES ('CLXXII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 172);
+INSERT INTO T_COMPOSITION VALUES ('CLXXIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 173);
+INSERT INTO T_COMPOSITION VALUES ('CLXXIV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 174);
+INSERT INTO T_COMPOSITION VALUES ('CLXXV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 175);
+INSERT INTO T_COMPOSITION VALUES ('CLXXVI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 176);
+INSERT INTO T_COMPOSITION VALUES ('CLXXVII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 177);
+INSERT INTO T_COMPOSITION VALUES ('CLXXVIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 178);
+INSERT INTO T_COMPOSITION VALUES ('CLXXIX', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 179);
+INSERT INTO T_COMPOSITION VALUES ('CLXXX', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 180);
+INSERT INTO T_COMPOSITION VALUES ('CLXXXI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 181);
+INSERT INTO T_COMPOSITION VALUES ('CLXXXII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 182);
+INSERT INTO T_COMPOSITION VALUES ('CLXXXIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 183);
+INSERT INTO T_COMPOSITION VALUES ('CLXXXIV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 184);
+INSERT INTO T_COMPOSITION VALUES ('CLXXXV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 185);
+INSERT INTO T_COMPOSITION VALUES ('CLXXXVI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 186);
+INSERT INTO T_COMPOSITION VALUES ('CLXXXVII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 187);
+INSERT INTO T_COMPOSITION VALUES ('CLXXXVIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 188);
+INSERT INTO T_COMPOSITION VALUES ('CLXXXIX', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 189);
+INSERT INTO T_COMPOSITION VALUES ('CXC', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 190);
+INSERT INTO T_COMPOSITION VALUES ('CXCI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 191);
+INSERT INTO T_COMPOSITION VALUES ('CXCII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 192);
+INSERT INTO T_COMPOSITION VALUES ('CXCIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 193);
+INSERT INTO T_COMPOSITION VALUES ('CXCIV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 194);
+INSERT INTO T_COMPOSITION VALUES ('CXCV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 195);
+INSERT INTO T_COMPOSITION VALUES ('CXCVI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 196);
+INSERT INTO T_COMPOSITION VALUES ('CXCVII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 197);
+INSERT INTO T_COMPOSITION VALUES ('CXCVIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 198);
+INSERT INTO T_COMPOSITION VALUES ('CXCIX', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 199);
+INSERT INTO T_COMPOSITION VALUES ('CC', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 200);
+INSERT INTO T_COMPOSITION VALUES ('CCI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 201);
+INSERT INTO T_COMPOSITION VALUES ('CCII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 202);
+INSERT INTO T_COMPOSITION VALUES ('CCIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 203);
+INSERT INTO T_COMPOSITION VALUES ('CCIV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 204);
+INSERT INTO T_COMPOSITION VALUES ('CCV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 205);
+INSERT INTO T_COMPOSITION VALUES ('CCVI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 206);
+INSERT INTO T_COMPOSITION VALUES ('CCVII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 207);
+INSERT INTO T_COMPOSITION VALUES ('CCVIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 208);
+INSERT INTO T_COMPOSITION VALUES ('CCIX', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 209);
+INSERT INTO T_COMPOSITION VALUES ('CCX', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 210);
+INSERT INTO T_COMPOSITION VALUES ('CCXI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 211);
+INSERT INTO T_COMPOSITION VALUES ('CCXII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 212);
+INSERT INTO T_COMPOSITION VALUES ('CCXIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 213);
+INSERT INTO T_COMPOSITION VALUES ('CCXIV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 214);
+INSERT INTO T_COMPOSITION VALUES ('CCXV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 215);
+INSERT INTO T_COMPOSITION VALUES ('CCXVI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 216);
+INSERT INTO T_COMPOSITION VALUES ('CCXVII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 217);
+INSERT INTO T_COMPOSITION VALUES ('CCXVIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 218);
+INSERT INTO T_COMPOSITION VALUES ('CCXIX', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 219);
+INSERT INTO T_COMPOSITION VALUES ('CCXX', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 220);
+INSERT INTO T_COMPOSITION VALUES ('CCXXI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 221);
+INSERT INTO T_COMPOSITION VALUES ('CCXXII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 222);
+INSERT INTO T_COMPOSITION VALUES ('CCXXIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 223);
+INSERT INTO T_COMPOSITION VALUES ('CCXXIV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 224);
+INSERT INTO T_COMPOSITION VALUES ('CCXXV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 225);
+INSERT INTO T_COMPOSITION VALUES ('CCXXVI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 226);
+INSERT INTO T_COMPOSITION VALUES ('CCXXVII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 227);
+INSERT INTO T_COMPOSITION VALUES ('CCXXVIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 228);
+INSERT INTO T_COMPOSITION VALUES ('CCXXIX', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 229);
+INSERT INTO T_COMPOSITION VALUES ('CCXXX', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 230);
+INSERT INTO T_COMPOSITION VALUES ('CCXXXI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 231);
+INSERT INTO T_COMPOSITION VALUES ('CCXXXII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 232);
+INSERT INTO T_COMPOSITION VALUES ('CCXXXIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 233);
+INSERT INTO T_COMPOSITION VALUES ('CCXXXIV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 234);
+INSERT INTO T_COMPOSITION VALUES ('CCXXXV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 235);
+INSERT INTO T_COMPOSITION VALUES ('CCXXXVI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 236);
+INSERT INTO T_COMPOSITION VALUES ('CCXXXVII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 237);
+INSERT INTO T_COMPOSITION VALUES ('CCXXXVIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 238);
+INSERT INTO T_COMPOSITION VALUES ('CCXXXIX', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 239);
+INSERT INTO T_COMPOSITION VALUES ('CCXL', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 240);
+INSERT INTO T_COMPOSITION VALUES ('CCXLI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 241);
+INSERT INTO T_COMPOSITION VALUES ('CCXLII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 242);
+INSERT INTO T_COMPOSITION VALUES ('CCXLIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 243);
+INSERT INTO T_COMPOSITION VALUES ('CCXLIV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 244);
+INSERT INTO T_COMPOSITION VALUES ('CCXLV', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 245);
+INSERT INTO T_COMPOSITION VALUES ('CCXLVI', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 246);
+INSERT INTO T_COMPOSITION VALUES ('CCXLVII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 247);
+INSERT INTO T_COMPOSITION VALUES ('CCXLVIII', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 248);
+INSERT INTO T_COMPOSITION VALUES ('CCXLIX', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 249);
+INSERT INTO T_COMPOSITION VALUES ('CCL', '0000000000', NULL, NULL, NULL, NULL, 'c', NULL, 250);
+DELETE FROM T_REASON_TYPE WHERE F_REASON_TYPE BETWEEN 40 AND 66;
+DELETE FROM T_PENALITY_TYPE WHERE F_PENALITY_TYPE IN (75, 76, 77, 85, 86, 87, 88, 90, 91);
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 10000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 200 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 11000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 200 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 12000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 200 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 13000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 200 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 14000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 200 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 15000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 200 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 16000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 200 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 17000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 200 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 18000, 'Н'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 840 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 19000, 'Н'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 840 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 20000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 500 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 21000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 520 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 22000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 520 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 23000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 520 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 24000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 25000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 30000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 31000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 32000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 33000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 40000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 620 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 41000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 620 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 42000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 620 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 43000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 620 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 44000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 620 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 45000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 620 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 46000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 620 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 47000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 620 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 48000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 620 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 49000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 620 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 49100, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 620 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 49200, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 620 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 49300, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 620 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 50000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 1000 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 60000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 80000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 90000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 92000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 240000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 70000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 93000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 91000, 'Н'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 800 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 100000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 150 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 101000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 420 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 102000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 420 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 103000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 420 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 104000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 420 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 105000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 420 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 106000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 420 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 107000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 420 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 108000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 420 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 109000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 420 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 110000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 400 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 120000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 400 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 130000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 1100 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 140000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 141000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 142000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 143000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 144000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 145000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 150000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 151000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 152000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 153000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 154000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 155000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 160000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 161000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 162000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 163000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 164000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 170000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 730 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 200000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 730 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 210000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 730 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 220000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 730 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 230000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 700 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 300000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 300 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 310000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 300 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 320000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 300 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 400000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 1200 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 410000, 'Я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3200 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 420000, 'Я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3200 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 430000, 'Я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3200 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 440000, 'M'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 440000, 'n'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 500000, 'M'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 500000, 'n'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 510000, 'M'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 511000, 'M'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 520000, 'M'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 521000, 'M'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 522000, 'M'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 523000, 'M'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 530000, 'M'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 531000, 'M'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 532000, 'M'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 533000, 'M'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 534000, 'M'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 510000, 'n'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 511000, 'n'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 520000, 'n'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 521000, 'n'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 522000, 'n'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 523000, 'n'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 530000, 'n'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 531000, 'n'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 532000, 'n'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 533000, 'n'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 534000, 'n'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 535000, 'M'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 536000, 'M'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 537000, 'M'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 538000, 'M'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 539000, 'M'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 539100, 'M'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 539200, 'M'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 539300, 'M'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 540000, 'M'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 541000, 'M'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 542000, 'M'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 535000, 'n'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 536000, 'n'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 537000, 'n'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 538000, 'n'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 539000, 'n'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 539100, 'n'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 539200, 'n'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 539300, 'n'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 540000, 'n'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 541000, 'n'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 542000, 'n'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 543000, 'M'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 544000, 'M'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 545000, 'M'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 546000, 'M'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 546100, 'M'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 546200, 'M'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 546300, 'M'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 546400, 'M'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 547000, 'M'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 548000, 'M'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 550000, 'M'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 543000, 'n'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 544000, 'n'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 545000, 'n'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 546000, 'n'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 546100, 'n'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 546200, 'n'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 546300, 'n'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 546400, 'n'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 547000, 'n'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 548000, 'n'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 550000, 'n'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 560000, 'E'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3150 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 560000, 'z'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3150 AND F_TYPE = 't';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 60000, 'Z'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 100 AND F_TYPE = 'c';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 92000, 'Z'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 120 AND F_TYPE = 'c';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 100000, 'Z'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 150 AND F_TYPE = 'c';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 240000, 'N'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 980 AND F_TYPE = 't';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 26000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 34000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 81000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 156000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 165000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 166000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 167000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 600 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 539400, 'M'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 539400, 'n'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 61000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 900 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 450000, 'M'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 450000, 'n'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 410000, 'я'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 1200 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 430050, 'Ѕ'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3300 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 560050, 'Ѕ'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3150 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 90050, 'Н'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 800 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 450050, 'E'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 'a';
+INSERT INTO T_ARCHIVE_SUBJECT (F_ARCHIVE_INDEX, F_SUBJECT, F_KIND) SELECT F_ARCHIVE_INDEX, 450050, 'z'
+FROM T_OLD_ARCHIVE_SUBJECT WHERE F_SUBJECT = 3100 AND F_TYPE = 't';
+INSERT INTO T_USER VALUES ('0000000000', '__4INTERNAL_USE', NULL, NULL, NULL, 'i', 'я', 1, -514923617, NULL, '81acaaba24d8b00938cb9b985f17d6af', 100, NULL, NULL, 0, NULL, NULL);
+INSERT INTO T_USER VALUES ('0000000103', 'COURTA', 'A', 'M9DOqbQy', 'act', 'a', 'я', 1, -514923617, NULL, 'f0727595c51b828707036a9963be7610', 100, NULL, '*****', 0, NULL, NULL);
+INSERT INTO T_USER VALUES ('0000000206', 'RESERVED', NULL, NULL, NULL, 'o', 'я', 1, -514923617, NULL, '38e93ca8aaeec054d49036572ecad128', 100, NULL, NULL, 0, NULL, NULL);
+COMMIT WORK;
+INSERT INTO T_ADDRESS (F_UCN, F_UCN_TYPE, F_ADDRESS, F_UCLP, F_STREET) VALUES ('0000000001', 'B', 1, 10135, 06999);
+INSERT INTO T_ADDRESS (F_UCN, F_UCN_TYPE, F_ADDRESS, F_UCLP, F_STREET) VALUES ('0000000005', 's', 1, 10135, 06999);
+INSERT INTO T_SLC_REASON VALUES (10, 'c', 'За отстраняване на ОФГ', 'ЯMЅEnz', 3, 100);
+INSERT INTO T_SLC_REASON VALUES (20, 'c', 'За допълване на решение', 'ЯMЅEnz', 3, 200);
+INSERT INTO T_SLC_REASON VALUES (30, 'c', 'За допълване/изменение в частта за разноски', 'ЯMЅEnz', 3, 300);
+INSERT INTO T_SLC_REASON VALUES (40, 'c', 'За администриране на жалбата', 'ЯMЅEnz', 3, 400);
+INSERT INTO T_SLC_REASON VALUES (90, 'c', 'За изпълнение на други указания', 'ЯMЅEnz', 3, 900);
+INSERT INTO T_SLC_REASON VALUES (103, 's', 'По съгласие на страните /чл.229, ал.1, т.1 ГПК/', 'яНЯMЅEZnzN', 1, 1030);
+INSERT INTO T_SLC_REASON VALUES (104, 's', 'В случай на смърт на някоя от страните /чл.229, ал.1, т.2 ГПК/', 'яНЯMЅEZnzN', 1, 1040);
+INSERT INTO T_SLC_REASON VALUES (105, 's', 'За учредяване на настойничество/попечителство /чл.229, ал.1, т.3 ГПК/', 'яНЯMЅEZnzN', 1, 1050);
+INSERT INTO T_SLC_REASON VALUES (106, 's', 'В същия или друг съд се разглежда дело, решението по което ще има значение за правилно решаване на спора /чл.229, ал.1, т.4 ГПК/', 'яНЯMЅEZnzN', 1, 1060);
+INSERT INTO T_SLC_REASON VALUES (107, 's', 'Разкриване на престъпни обстоятелства, от установяването на които зависи изходът на гражданския спор /чл.229, ал.1, т.5 ГПК/', 'яНЯMЅEZnzN', 1, 1070);
+INSERT INTO T_SLC_REASON VALUES (190, 's', 'Други', 'яНЯMЅEZnzN', 1, 1900);
+INSERT INTO T_SLC_REASON VALUES (213, 'l', 'За събиране на доказателства', 'яНЯMЅEZnzN', 1, 2130);
+INSERT INTO T_SLC_REASON VALUES (214, 'l', 'Нередовно призоваване на страна, вещо лице, свидетел', 'яНЯMЅEZnzN', 1, 2140);
+INSERT INTO T_SLC_REASON VALUES (216, 'l', 'За изготвяне на съдебна експертиза', 'яНЯMЅEZnzN', 1, 2160);
+INSERT INTO T_SLC_REASON VALUES (217, 'l', 'За организиране на процесуална защита, вкл. и чл.36 ГПК', 'яНЯMЅEZnzN', 1, 2170);
+INSERT INTO T_SLC_REASON VALUES (218, 'l', 'За лично изслушване на страна по делото /запрещения, осиновявания/', 'яНЯMЅEZnzN', 1, 2180);
+INSERT INTO T_SLC_REASON VALUES (219, 'l', 'Неявяване на призован свидетел', 'яНЯMЅEZnzN', 1, 2190);
+INSERT INTO T_SLC_REASON VALUES (220, 'l', 'Неизготвена експертиза, изготвена извън срока по чл.199 ГПК, неявяване на вещо лице', 'яНЯMЅEZnzN', 1, 2200);
+INSERT INTO T_SLC_REASON VALUES (221, 'l', 'Отлагане на основания чл.142, ал.2 ГПК', 'яНЯMЅEZnzN', 1, 2210);
+INSERT INTO T_SLC_REASON VALUES (222, 'l', 'Изразяване на становище по доказателства, представени от другата страна', 'яНЯMЅEZnzN', 1, 2220);
+INSERT INTO T_SLC_REASON VALUES (223, 'l', 'Конституиране на трето лице-помагач', 'яНЯMЅEZnzN', 1, 2230);
+INSERT INTO T_SLC_REASON VALUES (224, 'l', 'Изпращане на делото в по-горен съд', 'яНЯMЅEZnzN', 1, 2240);
+INSERT INTO T_SLC_REASON VALUES (290, 'l', 'Други', 'яНЯMЅEZnzN', 1, 2900);
+INSERT INTO T_SLC_REASON VALUES (301, 'c', 'За изпълнение на указания', 'яНЯMЅEZnzN', 1, 3010);
+INSERT INTO T_SLC_REASON VALUES (302, 'c', 'За комплектоване', 'яНЯMЅEZnzN', 1, 3020);
+INSERT INTO T_SLC_REASON VALUES (306, 'c', 'Оттегляне на иска', 'яНЯMЅEZnzN', 1, 3060);
+INSERT INTO T_SLC_REASON VALUES (307, 'c', 'Постигната спогодба между страните', 'яНЯMЅEZnzN', 1, 3070);

@@ -1,0 +1,112 @@
+***_TITLE
+<html>
+<head>
+***_END
+***_FORMATTED_HEADER
+<title>СПИСЪК - #@ 248 255#</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<style>
+<!--
+body
+{
+	font-family:Arial;
+	font-size:10pt;
+	font-weight:normal;
+	color:black;
+	background-color:white
+}
+
+table
+{
+	border-right-width:0;
+	border-bottom-width:0;
+	color:black;
+	background-color:white;
+}
+
+td
+{
+	font-family:Arial;
+	font-size:10pt;
+	font-weight:normal;
+	color:black;
+	background-color:white;
+	border-left-width:0;
+	border-top-width:0;
+	vertical-align:top;
+}
+
+th
+{
+	font-family:Arial;
+	font-size:10pt;
+	color:black;
+	background-color:white;
+	border-left-width:0;
+	border-top-width:0;
+	vertical-align:top;
+}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF">
+<center>
+
+<h2>СПИСЪК</h2>
+<h3>#@ 248 255#</h3>
+<h3>#@ 247 255#</h3>
+<br>
+***_END
+
+***_HEADER
+<table cellSpacing=0 cellPadding=1 border=1 width="100%">
+<tr>
+<th width="5%">No</th>
+<th width="40%">Име</th>
+<th width="15%">ЕГН</th>
+<th width="40%">Адрес</th>
+</tr>
+
+***_END
+***_TABLE_ROW
+<tr>
+<td align="right">#@ 77001 255#</td>
+<td>#@ 77002 1000#</td>
+<td>#@ 77003   10#</td>
+<td>#@ 77004 1000#</td>
+</tr>
+***_END
+
+***_MEDIUM_LINE
+‘————†——————————————————————————————†——————————†——————————————————————————————’
+***_END
+***_WANT_KINDS
+NO
+***_END
+***_SUBJECTS
+***_END
+***_SUBJECT_RANGES
+***_END
+***_MERGED_KINDS
+***_END
+***_TAIL
+</table>
+</center>
+</body>
+</html>
+***_END
+***_PARAMETERS
+49 55 1 1
+***_END
+
+***_COLUMNS
+4 0
+77001   10 1 ; No
+77002 1000 1 ; Име
+77003   10 1 ; ЕГН
+77004 1000 1 ; Адрес
+***_END
+
+***_TITLE_UP_CASE
+YES
+***_END

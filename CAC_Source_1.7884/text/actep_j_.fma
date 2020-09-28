@@ -1,0 +1,156 @@
+Писмо да Бюро съдимост към препис от присъда
+***_TITLE
+***_END
+***_WINDOWS_TITLE
+
+
+***_END
+***_HEADER
+***_END
+***_WANT_ELECTRIC
+NO
+***_END
+***_WANT_REASON
+YES
+***_END
+***_WANT_RECEIVER
+NO
+***_END
+***_WANT_RECEIVER_ADDRESS
+YES
+***_END
+***_WANT_RECEIVER_UCN
+NO
+***_END
+***_WANT_AGAINST
+YES
+***_END
+***_WANT_AGAINST_ADDRESS
+NO
+***_END
+***_WANT_AGAINST_UCN
+NO
+***_END
+***_AUTO_AGAINST
+YES
+***_END
+;***_WANT_ACCOMPANY_LETTER
+;NO
+;***_END
+***_ACCOMPANY_LETTERS
+***_END
+***_FOCUS_SIDES
+NO
+***_END
+***_FOCUS_AGAINST_SIDES
+YES
+***_END
+***_WANT_MEDIUM_FORMATTED_TEXT
+YES
+***_END
+***_AUTO_RECEIVER
+NO
+***_END
+***_AUTO_AGAINST
+YES
+***_END
+***_RECEIVER
+РАЙОНЕН СЪД
+***_END
+***_RECEIVER_ADDRESS
+гр.
+***_END
+***_WINDOWS_DOC_NAME
+                             ББЮЮЛЛЕЕТТИИННАА
+***_END
+***_DOC_NAME
+                       ББЮЮЛЛЕЕТТИИННАА
+***_END
+***_WINDOWS_SALUTATION
+***_END
+***_SALUTATION
+***_END
+***_FORMATTED_HEADER
+#@ 6 38 1#    До #@ 51001 255#
+#@ 1 38 1#    #@ 51002 255#
+#@ 1061 38; отделение# 
+#@ 1011 38; състав# 
+#@ 1025 255# No #@ 1001 1#/#@ 1002 4#г.#
+#@ 13 255#г.#
+#@ 2 255#
+#
+#
+***_END
+***_FROM
+***_END
+***_TO
+***_END
+
+***_REASON
+1000
+Изпраща Ви се, за да бъде подреден в бюрото за съдимост при #@ 51001 255# #@ 51002 255#.#
+***_END
+***_MEDIUM_FORMATTED_TEXT
+
+#@ 51008 255#
+
+***_END
+***_FORMATTED_TEXT
+1000
+издаден на името на #@ 51004 255#.
+***_END
+***_FORMATTED_TAIL
+
+ПРЕДСЕДАТЕЛ(РАЙОНЕН СЪДИЯ):#
+                            /#@ 2171 255#/#
+#
+#
+#
+                              До#
+                              #@ 1 255#
+
+
+Получих на .......200..г. показания по-горе бюлетин и направих нужното#
+за подреждането му.#
+
+                         #@ 51002 255# .......200..г.#
+
+             РАЙОНЕН СЪДИЯ:...........................................#
+***_END
+***_MEDIUM_LINE
+‘———————————————————————†———————————————————————’
+***_END
+***_WANT_KINDS
+NO
+***_END
+***_SUBJECTS
+***_END
+***_SUBJECT_RANGES
+***_END
+***_MERGED_KINDS
+***_END
+***_TAIL
+
+***_END
+***_PARAMETERS
+78 55 1 1
+***_END
+
+***_COLUMNS
+3 2
+54001 71 3
+  255  1
+54002 71 3  ;
+
+54002 71 3
+  255  1
+***_END
+
+  spare new page symbols        (do not remove!)
+  spare condensed print symbols (do not remove!)
+  spare normal print symbols    (do not remove!)
+  spare back space symbols      (do not remove!)
+  spare wide print symbols      (do not remove!)
+***_DOC_NAME
+                       ББЮЮЛЛЕЕТТИИННАА
+***_END

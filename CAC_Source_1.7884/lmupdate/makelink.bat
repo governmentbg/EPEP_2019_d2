@@ -1,0 +1,9 @@
+mklink cactypes.h ..\common\cactypes.h
+mklink message.cpp ..\common\message.cpp
+mklink message.h ..\common\message.h
+mklink snprintf.c ..\common\snprintf.c
+mklink snprintf.h ..\common\snprintf.h
+mklink vmessage_orig.cpp ..\common\vmessage.cpp
+mklink vmessage_orig.h ..\common\vmessage.h
+mklink vprinter.h ..\common\vprinter.h
+mklink vprinter.c ..\common\vprinter.c

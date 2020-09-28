@@ -1,0 +1,126 @@
+***_TITLE
+***_END
+***_WINDOWS_TITLE
+
+
+***_END
+***_FORMATTED_HEADER
+***_END
+***_HEADER
+***_END
+***_WANT_ELECTRIC
+NO
+***_END
+***_WANT_REASON
+NO
+***_END
+***_WANT_RECEIVER
+YES
+***_END
+***_WANT_RECEIVER_ADDRESS
+YES
+***_END
+***_WANT_RECEIVER_UCN
+NO
+***_END
+***_WANT_AGAINST
+YES
+***_END
+***_WANT_AGAINST_ADDRESS
+YES
+***_END
+***_WANT_AGAINST_UCN
+YES
+***_END
+;***_WANT_ACCOMPANY_LETTER
+;NO
+;***_END
+***_ACCOMPANY_LETTERS
+***_END
+***_FOCUS_SIDES
+NO
+***_END
+***_FOCUS_AGAINST_SIDES
+YES
+***_END
+***_WANT_MEDIUM_FORMATTED_TEXT
+NO
+***_END
+***_RECEIVER
+ОБЩИНА ...
+***_END
+***_RECEIVER_ADDRESS
+ОРГАН ПО НАСТОЙНИЧЕСТВОТО И ПОПЕЧИТЕЛСТВОТО
+***_END
+***_FROM
+1000
+#@ 1 255#
+#@ 1061 255; отделение# #@ 1011 255; състав# 
+#@ 1026 255# #@ 20001 255#
+#@ 1025 255# No #@ 1001 1#/#@ 1002 4#
+***_END
+***_TO
+2000
+#@ 249 1 0 160#
+#@ 249 1 0 160#
+#@ 249 1 0 160#
+ДО
+#@ 51001 255#
+#@ 51002 255#
+#@ 249 1 0 160#
+***_END
+***_REASON
+***_END
+***_FORMATTED_TEXT
+2000
+#@ 249 1 0 160##@ 249 1 0 160##@ 249 1 0 160##@ 249 1 0 160##@ 249 1 0 160#ПРИЛОЖЕНО, изпращаме Ви препис от влязло в сила #@ 41004 255# от #@ 41006 255#г. по #@ 1025 255# No #@ 1001 1#/#@ 1002 4# на #@ 1 255#, #@ 1026 255# #@ 20001 255#, за ПОСТАВЯНЕ ПОД ПЪЛНО ЗАПРЕЩЕНИЕ на #@ 51004 255#, #@ 51013 255# #@ 51006 255#, от #@ 51005 255# на основание чл.5, ал.1 от ЗЛС.
+#@ 249 1 0 160#
+#@ 249 1 0 160##@ 249 1 0 160##@ 249 1 0 160##@ 249 1 0 160##@ 249 1 0 160#ПРИЛОЖЕНИЕ: съгласно текста
+***_END
+***_FORMATTED_TAIL
+
+             СЪДИЯ ПРИ #@  1 255#:#
+
+
+     АДМ. СЕКРЕТАР ПРИ #@  1 255#:#
+
+#
+***_END
+***_MEDIUM_LINE
+‘———————————————————————†———————————————————————’
+***_END
+***_WANT_KINDS
+NO
+***_END
+***_SUBJECTS
+***_END
+***_SUBJECT_RANGES
+***_END
+***_MERGED_KINDS
+***_END
+***_TAIL
+
+***_END
+***_PARAMETERS
+78 55 1 1
+***_END
+
+***_COLUMNS
+4 5
+54001 71 3
+  255  1
+54003 30 1  ;
+54005 32 1  ;
+
+    0  5
+54003 30 1
+    0  5
+54005 32 1
+  255  1
+***_END
+
+|  6   |   6  |   5 |    11     |               31              |                 32             |               32               |    8   |          21         |         17      |    9    |       17        |
+  spare new page symbols        (do not remove!)
+  spare condensed print symbols (do not remove!)
+  spare normal print symbols    (do not remove!)
+                       #@ 15 255#  /#@ 2171 255#/#

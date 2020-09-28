@@ -1,0 +1,121 @@
+#include "connect.rh"
+
+
+//
+// Version Information
+//
+1 VERSIONINFO
+FILEVERSION 1, 70, 7, 8
+PRODUCTVERSION 1, 69, 8, 8
+FILEFLAGSMASK 0
+FILEFLAGS VS_FFI_FILEFLAGSMASK
+FILEOS VOS__WINDOWS32
+FILETYPE VFT_APP
+{
+ BLOCK "StringFileInfo"
+ {
+  BLOCK "040904E4"
+  {
+   VALUE "CompanyName", "Information Services - Varna\000"
+   VALUE "FileDescription", "connect Executable File\000"
+   VALUE "FileVersion", "1.7078\000"
+   VALUE "InternalName", "CONNECT\000"
+   VALUE "LegalCopyright", "Copyright (C) 2006-2016 Information Services - Varna\000"
+   VALUE "OriginalFilename", "connect.exe\000"
+   VALUE "ProductName", "Lawsuit Management\000"
+   VALUE "ProductVersion", "1.6988\000"
+   VALUE "Special Build", "Release\000"
+  }
+
+ }
+
+ BLOCK "VarFileInfo"
+ {
+  VALUE "Translation", 0x0409, 0x04e4
+ }
+
+}
+
+
+// Application ICON
+//
+IDI_CONNECT ICON "connect.ico"
+
+
+IDD_CONNECT DIALOG 0, 0, 256, 64
+EXSTYLE WS_EX_DLGMODALFRAME
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "САС \"СЪДЕБНО ДЕЛОВОДСТВО\" - БАЗА ДАННИ"
+FONT 8, "MS Sans Serif"
+{
+ CONTROL "&Адрес", -1, "static", SS_LEFT | WS_CHILD | WS_VISIBLE, 8, 8, 48, 8, 0
+ CONTROL "", IDC_CONNECT_VALUE, "edit", ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 8, 16, 240, 12, 0
+ CONTROL "&Име", -1, "static", SS_LEFT | WS_CHILD | WS_VISIBLE, 152, 36, 48, 8, 0
+ CONTROL "Потвърждение", IDOK, "button", BS_DEFPUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 8, 42, 60, 15
+ CONTROL "Прекъсване", IDCANCEL, "button", BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 80, 42, 60, 15
+ CONTROL "", IDC_CONNECT_ALIAS, "combobox", CBS_DROPDOWNLIST | CBS_DISABLENOSCROLL | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_TABSTOP, 152, 44, 96, 100, 0
+}
+
+
+IDD_WAIT DIALOG 0, 0, 136, 22
+EXSTYLE WS_EX_DLGMODALFRAME
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "САС \"СЪДЕБНО ДЕЛОВОДСТВО\""
+FONT 8, "MS Sans Serif"
+{
+ CONTROL "Моля изчакайте...", IDC_WAIT_TEXT, "static", SS_CENTER | WS_CHILD | WS_VISIBLE | WS_GROUP, 8, 8, 120, 8
+}
+
+
+//
+// OWL string table
+//
+
+// Exception string resources (include/owl/except.rc)
+//
+STRINGTABLE
+BEGIN
+ IDS_OWLEXCEPTION, "Изключение в обектната библиотека"
+ IDS_UNHANDLEDXMSG, "Необработено изключение"
+ IDS_OKTORESUME, "Ще продължите ли работа с програмата?"
+ IDS_UNKNOWNEXCEPTION, "Неизвестно изключение"
+ IDS_UNKNOWNERROR, "Неизвестна грешка"
+ IDS_NOAPP, "Няма програмен обект"
+ IDS_OUTOFMEMORY, "Няма достатъчно памет"
+ IDS_INVALIDMODULE, "Невалиден модул указан за прозорец"
+ IDS_INVALIDMAINWINDOW, "Невалиден главен прозорец"
+ IDS_VBXLIBRARYFAIL, "Грешка при инициализация на библиотека"
+ IDS_INVALIDWINDOW, "Невалиден прозорец %s"
+ IDS_INVALIDCHILDWINDOW, "Невалиден подчинен прозорец %s"
+ IDS_INVALIDCLIENTWINDOW, "Невалиден клиент прозорец %s"
+ IDS_CLASSREGISTERFAIL, "Неуспешна регистрация на прозорец %s"
+ IDS_CHILDREGISTERFAIL, "Неуспешна подчинена регистрация на прозорец %s"
+ IDS_WINDOWCREATEFAIL, "Неуспешно създаване на прозорец %s"
+ IDS_WINDOWEXECUTEFAIL, "Неуспешно изпълнение на прозорец %s"
+ IDS_CHILDCREATEFAIL, "Неуспешно създаване на подчинен прозорец %s"
+ IDS_MENUFAILURE, "Неуспешно създаване на меню"
+ IDS_VALIDATORSYNTAX, "Синтактична грешка при валидизация"
+ IDS_PRINTERERROR, "Грешка на принтера"
+ IDS_LAYOUTINCOMPLETE, "Непълни данни за прозорец %s"
+ IDS_LAYOUTBADRELWIN, "Невалидни данни за прозорец %s"
+ IDS_GDIFAILURE, "Грешка в графичната подсистема"
+ IDS_GDIALLOCFAIL, "Грешка при заделяне на памет в графичната подсистема"
+ IDS_GDICREATEFAIL, "Грешка при създаване в графичната подсистема"
+ IDS_GDIRESLOADFAIL, "Грешка при зареждане на ресурс в графичната подсистема"
+ IDS_GDIFILEREADFAIL, "Грешка при четене на файл в графичната подсистема"
+ IDS_GDIDELETEFAIL, "Грешка при изтриване на графичен обект %X"
+ IDS_GDIDESTROYFAIL, "Грешка при унищожаване на графичен обект %X"
+ IDS_INVALIDDIBHANDLE, "Невалиден графичен указател %X"
+ IDS_FAILURE, "Текущата операция е прекратена поради грешка"
+END
+
+
+// Validator messages (include/owl/validate.rc)
+//
+STRINGTABLE
+BEGIN
+ IDS_VALPXPCONFORM, "Входа не отговяря на шаблона:\n""%s"""
+ IDS_VALINVALIDCHAR, "Невалиден символ във входа"
+ IDS_VALNOTINRANGE, "Стойност извън границите %ld до %ld"
+ IDS_VALNOTINLIST, "Входа е извън списъка от възможности"
+END

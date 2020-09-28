@@ -1,0 +1,78 @@
+***_CONVERT_CRLF_TO_<BR>
+YES
+***_END
+***_TITLE
+<html>
+***_END
+***_FORMATTED_HEADER
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>#@ 1 255# - НАСРОЧЕНИ ДЕЛА</title>
+</head>
+<body>
+<center>
+<font face="MS Sans Serif">
+<h4>
+#@ 1 255#<br>
+Справка за <b>насрочените дела #@ 42004 255#</b><br>
+за периода от #@ 42001 255#г. до #@ 42002 255#г.<br>
+</h4>
+<table border cellspacing=0 celpadding=2 width="100%">
+<tr>
+<th valign=top><font face="MS Sans Serif" size=-1>No по ред</font></th>
+<th valign=top><font face="MS Sans Serif" size=-1>Вид дело, No и година</font></th>
+<th valign=top><font face="MS Sans Serif" size=-1>Предмет</font></th>
+<th valign=top><font face="MS Sans Serif" size=-1>#@ 42005 255#</font></th>
+<th valign=top><font face="MS Sans Serif" size=-1>#@ 42006 255#</font></th>
+<th valign=top><font face="MS Sans Serif" size=-1>#@ 42009 255#</font></th>
+<th valign=top><font face="MS Sans Serif" size=-1>Насрочване на делото</font></th>
+</tr>
+***_END
+***_HEADER
+***_END
+***_ROW
+<tr>
+<td valign=top><font face="MS Sans Serif" size=-1>#@ 43001 255#</font></td>
+<td valign=top><font face="MS Sans Serif" size=-1>#@ 43002 255#</font></td>
+<td valign=top><font face="MS Sans Serif" size=-1>#@ 43003 255#</font></td>
+<td valign=top><font face="MS Sans Serif" size=-1>#@ 43004 255#</font></td>
+<td valign=top><font face="MS Sans Serif" size=-1>#@ 43005 255#</font></td>
+<td valign=top><font face="MS Sans Serif" size=-1>#@ 43010 255#</font></td>
+<td valign=top><font face="MS Sans Serif" size=-1>#@ 43006 255#</font></td>
+</tr>
+***_END
+***_FOOTHER
+</table>
+***_END
+***_TAIL
+</font>
+</center>
+</body>
+</html>
+***_END
+***_WANT_KINDS
+NO
+***_END
+***_SUBJECTS
+***_END
+***_SUBJECT_RANGES
+***_END
+***_MERGED_KINDS
+***_END
+***_MEDIUM_LINE
+***_END
+***_PARAMETERS
+50 55 1 1
+***_END
+
+***_COLUMNS
+0 0
+***_END
+
+|  6   |   6  |   5 |    11     |               31              |                 32             |               32               |    8   |          21         |         17      |    9    |       17        |
+  spare new page symbols        (do not remove!)
+  spare condensed print symbols (do not remove!)
+  spare normal print symbols    (do not remove!)
+<!doctype html public "-//w3c//dtd html 3.2 transitional//en">
+Справка за <b>насрочените</b> от #@ 42001 255# до #@ 42002 255#<br>
+#@ 42003 255#<br>

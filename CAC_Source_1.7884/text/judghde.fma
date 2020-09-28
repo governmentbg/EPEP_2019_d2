@@ -1,0 +1,99 @@
+***_TRUNC_NAMES
+NO
+***_END
+***_BODY_BGCOLOR
+#FFFFFF
+***_END
+;#00005F
+***_BODY_FONT_FACE
+Arial Narrow
+***_END
+***_BODY_FONT_COLOR
+#6F6F7F
+***_END
+;#FFFF00
+***_BODY_FONT_SIZE
+-1
+***_END
+***_CENTER
+YES
+***_END
+***_TABLE_WIDTH
+95%
+***_END
+***_CHECK_UP_TABLE_BGCOLOR
+#FFFFFF
+***_END
+***_CHECK_UP_TABLE_HEADER_BGCOLOR
+#E4E4E4
+***_END
+***_HISTORY_TABLE_BGCOLOR
+#FFFFFF
+***_END
+***_HISTORY_TABLE_HEADER_BGCOLOR
+#E4E4E4
+***_END
+***_SUMMARY_ROW_BOLD
+YES
+***_END
+***_SUMMARY_ROW_BGCOLOR
+#F7F7F7
+***_END
+***_SMALLEST_NUMBER_COLOR
+#007F00
+***_END
+;#FFFFFF
+***_FOR_DISTRIBUTE_COLUMN_BGCOLOR
+#F0F0F0
+***_END
+***_BIGGEST_NUMBER_COLOR
+#7F0000
+***_END
+;#FFAF00
+***_SHOW_ZEROES_IN_CHECK_UP
+NO
+***_END
+***_SHOW_ZEROES_IN_HISTORY
+NO
+***_END
+***_PAGE_WIDTH
+79
+***_END
+***_NUMBER_COLUMN_MIN_WIDTH
+3
+***_END
+***_TITLE
+Разпределение на Фирмени дела и Заявления за промяна в обстоятелствата
+***_END
+***_FORMATTED_HEADER
+
+<h4>
+#@ 1 255#<br>
+#@ 17016 255#<br>
+#@ 17019 255#<br>
+#@ 17008 255#<br>
+#@ 17028 255#<br>
+#@ 17007 255#<br>
+</h4>
+***_END
+***_HEADER
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+***_END
+***_MEDIUM_LINE
+‘—†—’
+***_END
+***_TAIL
+
+***_END
+***_PARAMETERS
+79 -1000 1 1 69 10
+***_END
+***_COLUMNS
+0 0
+***_END
+
+#@ 17011 254 2#
+;***_HISTORY_LEN
+;4
+;***_END

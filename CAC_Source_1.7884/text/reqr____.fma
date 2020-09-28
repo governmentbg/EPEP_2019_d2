@@ -1,0 +1,98 @@
+***_WANT_CENTER
+NO
+***_END
+***_TWO_SURFACES
+NO
+***_END
+***_OUT_NO_DIALOG
+YES
+***_END
+***_TITLE
+***_END
+***_HEADER
+***_END
+***_FORMATTED_HEADER
+#@ 6 255#
+***_END
+***_FILLING
+10
+ #
+***_END
+***_FILLING_BACK
+10
+ #
+***_END
+***_FMT_TEXT_ABOVE
+100
+#@ 249 1 0 160#
+***_END
+***_FORMATTED_TEXT
+4000
+#@ 53008 255#
+#@ 52005 255# No #@ 52001 1#/#@ 52002 1# γ.#
+#@ 53007 255#
+***_END
+***_FMT_TEXT_BELOW
+100
+#@ 249 1 0 160#
+***_END
+***_FROM
+2000
+#@ 1 255#
+#@ 52010 255# #@ 20001 255#
+Θηυ. No #@ 51004 255#
+***_END
+***_TO
+2000
+Δξ
+#@ 51001 255#
+#@ 51002 255#
+***_END
+***_FORMATTED_TAIL
+
+
+                   Ηΰμ. οπεδρεδΰςελ #@ 1 255#:#
+
+
+                       #@ 15 255#ΐδμ. ρεκπεςΰπ:#
+***_END
+***_SKIP_MARK
+NO
+***_END
+***_MEDIUM_LINE
+‘———————————————————————†———————————————————————’
+***_END
+***_WANT_KINDS
+NO
+***_END
+***_SUBJECTS
+***_END
+***_SUBJECT_RANGES
+***_END
+***_MERGED_KINDS
+***_END
+***_TAIL
+
+***_END
+***_PARAMETERS
+49 -59 1 1
+***_END
+***_WINDOWS_PARAMETERS
+49 -109 1 1
+***_END
+
+***_COLUMNS
+4 4
+50002  79 1
+  255   1
+50004  37 1
+50006  37 1
+
+50004  37 1
+    0   5
+50006  37 1
+  255   1
+***_END
+
+
+#@ 52022 255#

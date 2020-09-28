@@ -1,0 +1,1409 @@
+[MISSING_FILES]
+text\tbt_t_.fma  = text\tbc_t_.fma  ;  20050316
+text\tbd_t_.fma  = text\tbc_t_.fmt  ;  20050316
+text\tbt_t_.fmd  = text\tba_t_.fma  ; 2009.Nov.12 LK
+
+text\tbc_t_2.fma = text\tb__t_2.fma ;  tbccol2.fma   20050316
+text\tbt_t_2.fma = text\tb__t_2.fma ;  tbccol2.fma   20050316
+text\tba_t_2.fma = text\tb__t_2.fma ;  tbccol2.fma   20050316
+text\tbp_t_2.fma = text\tb__t_2.fma ;  tbpcol2.fma   20050316
+text\tbp_t_3.fma = text\tb__t_2.fma ;  tbpcol2.fma   20050316
+
+text\tbtcol2.fmp = text\tbccol2.fmp ; .jun.2004
+
+text\tbacol2.fmp = text\tbccol2.fmp ;  20070926    АС СР.Кн. Гр.Д (K) стар ф. txt
+text\tsacol2.fmp = text\tsccol2.fmp ;  20070926    АС СР.Кн. Гр.Д (K) стар ф. txt
+text\tbdcol2.fmp = text\tbccol2.fmp ;  20070926    АС СР.Кн. Тр.Д (K) стар ф. txt
+text\tsdcol2.fmp = text\tsccol2.fmp ;  20070926    АС СР.Кн. Тр.Д (K) стар ф. txt summ
+
+text\tbp_t_2.fmp = text\tb__t_2.fma ;  20050826    АС СР.Кн. НД   нов ф.  txt
+text\tsp_t_2.fmp = text\tspcol2.fma ;  20050826    АС СР.Кн. НД   нов ф.  txt summ
+text\tbc_t_2.fmp = text\tb__t_2.fma ;  20050826    АС СР.Кн. Гр.Д нов ф.  txt
+text\tsc_t_2.fmp = text\tsccol2.fma ;  20050826    АС СР.Кн. Гр.Д нов ф.  txt summ
+text\tbt_t_2.fmp = text\tb__t_2.fma ;  20050826    АС СР.Кн. Тр.Д нов ф.  txt
+text\tst_t_2.fmp = text\tsccol2.fma ;  20050826    АС СР.Кн. Тр.Д нов ф.  txt summ
+
+text\tba_t_2.fmp = text\tb__t_2.fma ;  20070926    АС СР.Кн. Гр.Д (K) нов ф.  txt
+text\tsa_t_2.fmp = text\tsccol2.fma ;  20070926    АС СР.Кн. Гр.Д (K) нов ф.  txt summ
+text\tbd_t_2.fmp = text\tb__t_2.fma ;  20070926    АС СР.Кн. Тр.Д (K) нов ф.  txt
+text\tsd_t_2.fmp = text\tsccol2.fma ;  20070926    АС СР.Кн. Тр.Д (K) нов ф.  txt summ
+
+text\tbacol.fma  = text\tbccol.fma
+text\tbtcol.fma  = text\tbccol.fma
+text\tbdcol.fma  = text\tbccol.fma
+
+text\tb__t_2.fmd = text\tb__t_2.fma ;  20070214
+
+text\tbacol.fmd  = text\tbccol.fma  ;  20070214
+text\tba_t_.fmd  = text\tba_t_.fma  ;  20070214
+text\tba_t_2.fmd = text\tb__t_2.fma ;  20070214 
+text\TBACOL2.fmd = text\TBACOL2.FMA ;  20070214
+text\s_acol.fmd  = text\s_ccol.fma  ;  20070214 ADM фиш ср.к OF
+text\s_acol2.fmd = text\s_ccol2.fma ;  20070214
+text\s_a_t_.fmd  = text\s_ccol.fma ;   20060327 ADM фиш ср.к.Адм.Д NF
+text\s_a_t_2.fmd = text\s_ccol2.fma ;  20060327 ADM фиш ср.к.Адм.Д NF
+
+text\tbccol.fmd  = text\tbccol.fma  ;  20070830
+text\tbc_t_.fmd  = text\tbc_t_.fma  ;  20070830
+text\tbc_t_2.fmd = text\tb__t_2.fma ;  20070830 
+text\TBCCOL2.fmd = text\TBACOL2.FMA ;  20070830
+text\s_ccol.fmd  = text\s_ccol.fma  ;  20070830 ADM фиш ср.к OF
+text\s_ccol2.fmd = text\s_ccol2.fma ;  20070830
+text\s_c_t_.fmd  = text\s_ccol.fma ;   20060830 ADM фиш ср.к.Гр.Д NF
+text\s_c_t_2.fmd = text\s_ccol2.fma ;  20060830 ADM фиш ср.к.Гр.Д NF
+
+text\tbtcol.fmd  = text\tbpcol.fma  ;  20070830   ;  Наказателни първоинстанционни дела
+text\tbt_t_3.fmd = text\tb__t_2.fma ; TBTCOL3.fmd ;  tb__t_2.fma ;  tbpcol2.fma   20050316
+text\s_tcol2.fmd = text\s_pcol2.fma ;  20070830
+text\s_t_t_2.fmd = text\s_pcol2.fma ;  20060830 ADM фиш ср.к.Н.Д NF
+
+text\tbpcol3.fma = text\tbpcol2.fma
+
+text\tbtcol2.fma = text\tbccol2.fma
+
+text\tbm_t_.fmt = text\tbc_t_.fmt   ; .feb.2005
+text\tbmcol.fmt = text\tbccol.fmt   ; .feb.2005
+text\tba_t_.fmt = text\tbc_t_.fmt   ; 20140407
+text\tbacol.fmt = text\tbccol.fmt   ; 20140407
+
+
+text\s_acol.fma  = text\s_ccol.fma
+text\s_tcol.fma  = text\s_ccol.fma
+text\s_dcol.fma  = text\s_ccol.fma  ;  20060413 OС фиш ср.к.Ф.Д OF
+
+text\s_pcol3.fma = text\s_pcol2.fma
+text\s_acol2.fma = text\s_ccol2.fma
+text\s_tcol2.fma = text\s_ccol2.fma
+
+text\s_p_t_2.fmp = text\s_pcol2.fma ;  20060413 AС фиш ср.к.Н.Д NF
+text\s_c_t_2.fmp = text\s_ccol2.fma ;  20060414 AС фиш ср.к.Гр.Д NF
+text\s_t_t_2.fmp = text\s_ccol2.fma ;  20060414 AС фиш ср.к.Т.Д NF
+text\s_a_t_2.fmp = text\s_ccol2.fma ;  20070926 AС фиш ср.к.Гр.Д NF (K)
+text\s_d_t_2.fmp = text\s_ccol2.fma ;  20070926 AС фиш ср.к.Т.Д NF (K)
+
+text\s_p_t_.fma  = text\s_pcol.fma  ;  20060327 OС фиш ср.к.Н.Д NF
+text\s_p_t_2.fma = text\s_pcol2.fma ;  20060327 OС фиш ср.к.Н.Д NF
+text\s_p_t_3.fma = text\s_pcol2.fma ;  20060327 OС фиш ср.к.Н.Д NF
+
+text\s_c_t_.fma  = text\s_ccol.fma ;   20060327 OС фиш ср.к.Гр.Д NF
+text\s_a_t_.fma  = text\s_ccol.fma ;   20060327 OС фиш ср.к.Адм.Д NF
+text\s_t_t_.fma  = text\s_ccol.fma ;   20060327 OС фиш ср.к.Т.Д NF
+text\s_d_t_.fma  = text\s_ccol.fma ;   20060413 OС фиш ср.к.Ф.Д NF
+
+text\s_c_t_2.fma = text\s_ccol2.fma ;  20060327 OС фиш ср.к.Гр.Д NF
+text\s_a_t_2.fma = text\s_ccol2.fma ;  20060327 OС фиш ср.к.Адм.Д NF
+text\s_t_t_2.fma = text\s_ccol2.fma ;  20060327 OС фиш ср.к.Т.Д NF
+
+text\s_p_t_.fmt = text\s_pcol.fmt   ;  20060327 РС фиш ср.к.Н.Д	 NF
+text\s_c_t_.fmt = text\s_ccol.fmt   ;  20060327 РС фиш ср.к.Гр.Д NF
+text\s_m_t_.fmt = text\s_mcol.fmt   ;  20060327 РС фиш ср.к.Бр.Д NF
+
+text\s_tcol2.fmp = text\s_ccol2.fmp ; .sep.2004
+text\s_acol2.fmp = text\s_ccol2.fmp ;  20070926
+text\s_dcol2.fmp = text\s_ccol2.fmp ;  20070926
+
+text\tsa_t_.fma  = text\tsacol.fma  ;  20050316
+text\tsa_t_2.fma = text\tsacol2.fma ;  20050316
+
+text\tsacol.fmd  = text\tsacol.fma  ;  20070215
+text\tsa_t_.fmd  = text\tsacol.fma  ;  20070214
+text\tsa_t_2.fmd = text\tsacol2.fma ;  20070214
+
+text\tsccol.fmd  = text\tsccol.fma  ;  20070830
+text\tsc_t_.fmd  = text\tsccol.fma  ;  20070830
+text\tsc_t_2.fmd = text\tsccol2.fma ;  20070830
+
+text\tstcol.fmd  = text\tspcol.fma  ;  20070830
+text\tst_t_.fmd  = text\tspcol.fma  ;  20070830
+text\tst_t_2.fmd = text\tstcol2.fmd ;  
+text\tstcol3.fmd = text\tstcol2.fmd
+text\tst_t_3.fmd = text\tstcol2.fmd ;  text\tstcol3.fmd ;  20050316
+
+text\tsc_t_.fma  = text\tsccol.fma  ;  20050316
+text\tsc_x_.fma  = text\tsccol.fma  ; .feb.2005
+text\tsc_t_2.fma = text\tsccol2.fma ;  20050316
+
+text\tsdcol.fma  = text\empty.fmt
+
+text\tstcol.fma  = text\tsccol.fma
+text\tstcol2.fma = text\tsccol2.fma
+text\tst_t_.fma  = text\tsccol.fma  ;  20050316
+text\tst_t_2.fma = text\tsccol2.fma ;  20050316
+
+text\tstcol2.fmp = text\tsccol2.fmp ; .jun.2004
+text\tsacol2.fmp = text\tsccol2.fmp ; .20070926
+text\tsdcol2.fmp = text\tsccol2.fmp ; .20070926
+
+text\tspcol3.fma = text\tspcol2.fma
+text\tsp_t_.fma  = text\tspcol.fma  ;  20050316
+text\tsp_t_2.fma = text\tspcol2.fma ;  20050316
+text\tsp_t_3.fma = text\tspcol2.fma ;  20050316
+
+text\tsmcol.fmt = text\tsccol.fmt
+text\tsacol.fmt = text\tsccol.fmt   ; 20140407
+text\tsc_x_.fmt = text\tsccol.fmt   ; .feb.2005
+text\tsc_t_.fmt = text\tsccol.fmt   ; .feb.2005
+text\tsccx_.fmt = text\tsccol.fmt   ; .feb.2005
+text\tsm_x_.fmt = text\tsccol.fmt   ; .feb.2005
+text\tsm_t_.fmt = text\tsccol.fmt   ; .feb.2005
+text\tsmcx_.fmt = text\tsccol.fmt   ; .feb.2005
+text\tsa_x_.fmt = text\tsccol.fmt   ; 20140407
+text\tsa_t_.fmt = text\tsccol.fmt   ; 20140407
+text\tsacx_.fmt = text\tsccol.fmt   ; 20140407
+text\tsp_x_.fmt = text\tspcol.fmt   ; .feb.2005
+text\tsp_t_.fmt = text\tspcol.fmt   ; .feb.2005
+text\tspcx_.fmt = text\tspcol.fmt   ; .feb.2005
+
+text\tjccol.fma = text\tj_col.fma
+text\tjtcol.fma = text\tj_col.fma
+text\tjdcol.fma = text\empty.fmt
+
+; 20070226 text\tjacol.fmd  = text\tjacol.fma   ; 20070214
+; 20070226 text\tjacol2.fmd = text\tjacol2.fma  ; 20070214
+text\tjacol3.fmd = text\tjacol2.fmd  ; 20070226 ; 20070226 text\tjacol3.fmd = text\tjacol2.fma ; 20070214 
+
+text\tjccol.fmd  = text\tjacol.fmd  ; 20070830
+text\tjtcol.fmd  = text\tjacol.fmd  ; 2009.Nov.12 LK
+; text\tjccol2.fmd = text\tjacol2.fmd ; 20070830
+; text\tjccol3.fmd = text\tjacol2.fmd ; 20070830
+
+; text\tjtcol.fmd  = text\tjpcol.fma  ; 20070830
+; text\tjtcol2.fmd = text\tjpcol2.fma ; 20070830
+; text\tjtcol3.fmd = text\tjpcol2.fma ; 20070830
+
+text\tjccol2.fma = text\tj_col2.fma
+text\tjtcol2.fma = text\tj_col2.fma
+text\tjpcol3.fma = text\tjpcol2.fma
+
+text\tjtcol2.fmp  = text\tjccol2.fmp  ; .jun.2004
+text\tjacol2.fmp  = text\tjccol2.fmp  ; .20070926
+text\tjdcol2.fmp  = text\tjccol2.fmp  ; .20070926
+
+text\tjccol.fmt = text\tj_col.fmt
+text\tjmcol.fmt = text\tj_col.fmt
+text\tjacol.fmt = text\tj_col.fmt ; 20140407
+text\tjpcol.fmt = text\tj_col.fmt
+
+text\clsbccol.fmp = text\clsb_col.fmp  
+text\clsbpcol.fmp = text\clsb_col.fmp
+text\clsbtcol.fmp = text\clsb_col.fmp ; .jun.2004
+text\clsbacol.fmp = text\clsb_col.fmp ;  20070926
+text\clsbdcol.fmp = text\clsb_col.fmp ;  20070926
+
+text\clsbc_x_.fmp = text\clsb_col.fmp ; .jan.2005
+text\clsbp_x_.fmp = text\clsb_col.fmp ; .jan.2005
+text\clsbt_x_.fmp = text\clsb_col.fmp ; .jan.2005
+text\clsba_x_.fmp = text\clsb_col.fmp ; .20070926
+text\clsbd_x_.fmp = text\clsb_col.fmp ; .20070926
+
+text\clsbc_t_.fmp = text\clsb_col.fmp ; .jan.2005
+text\clsbp_t_.fmp = text\clsb_col.fmp ; .jan.2005
+text\clsbt_t_.fmp = text\clsb_col.fmp ; .jan.2005
+text\clsba_t_.fmp = text\clsb_col.fmp ; .20070926
+text\clsbd_t_.fmp = text\clsb_col.fmp ; .20070926
+
+text\clsbccx_.fmp = text\clsb_col.fmp ; .jan.2005
+text\clsbpcx_.fmp = text\clsb_col.fmp ; .jan.2005
+text\clsbtcx_.fmp = text\clsb_col.fmp ; .jan.2005
+text\clsbacx_.fmp = text\clsb_col.fmp ; .20070926
+text\clsbdcx_.fmp = text\clsb_col.fmp ; .20070926
+
+text\clsbacol.fma = text\clsbccol.fma
+text\clsbpcol.fma = text\clsbccol.fma
+text\clsbtcol.fma = text\clsbccol.fma
+text\clsba_x_.fma = text\clsbccol.fma ; .jan.2005
+text\clsbc_x_.fma = text\clsbccol.fma ; .jan.2005
+text\clsbp_x_.fma = text\clsbccol.fma ; .jan.2005
+text\clsbt_x_.fma = text\clsbccol.fma ; .jan.2005
+text\clsba_t_.fma = text\clsb__t_.fma ; .jan.2005  clsbccol.fma
+text\clsbc_t_.fma = text\clsb__t_.fma ; .jan.2005  clsbccol.fma
+                                      ;  text\clsbd_t_.fma = text\clsb__t_.fma ; .jan.2005  clsbdcol.fma
+text\clsbp_t_.fma = text\clsb__t_.fma ; .jan.2005  clsbccol.fma
+text\clsbt_t_.fma = text\clsb__t_.fma ; .jan.2005  clsbccol.fma
+text\clsbacx_.fma = text\clsbccol.fma ; .jan.2005
+text\clsbccx_.fma = text\clsbccol.fma ; .jan.2005
+text\clsbpcx_.fma = text\clsbccol.fma ; .jan.2005
+text\clsbtcx_.fma = text\clsbccol.fma ; .jan.2005
+text\clsbd_x_.fma = text\clsbdcol.fma ; .jan.2005
+text\clsbdcx_.fma = text\clsbdcol.fma ; .jan.2005
+
+text\clsed_x_.fma = text\clsedcol.fma ; .jan.2005
+text\clsed_t_.fma = text\clsedcol.fma ; .jan.2005
+text\clsedcx_.fma = text\clsedcol.fma ; .jan.2005
+
+text\clsb__t_.fmd = text\clsb__t_.fma ;  20070214
+
+text\clsbacol.fmd = text\clsbccol.fma ;  20070215
+text\clsba_x_.fmd = text\clsbccol.fma ;  20070214
+text\clsbacx_.fmd = text\clsbccol.fma ;  20070214
+text\clsba_t_.fmd = text\clsb__t_.fma ;  20070214 
+
+text\clsbccol.fmd = text\clsbccol.fma ;  20070830
+text\clsbc_x_.fmd = text\clsbccol.fma ;  20070830
+text\clsbccx_.fmd = text\clsbccol.fma ;  20070830
+text\clsbc_t_.fmd = text\clsb__t_.fma ;  20070830 
+                                              
+text\clsbtcol.fmd = text\clsbccol.fma ;  20070830
+text\clsbt_x_.fmd = text\clsbccol.fma ;  20070830
+text\clsbtcx_.fmd = text\clsbccol.fma ;  20070830
+text\clsbt_t_.fmd = text\clsb__t_.fma ;  20070830 
+
+text\clsbccol.fmt = text\clsbccol.fma
+text\clsbmcol.fmt = text\clsbccol.fma
+text\clsbacol.fmt = text\clsbccol.fma ; 20140407
+text\clsbpcol.fmt = text\clsbccol.fma
+text\clsbm_x_.fmt = text\clsbc_x_.fmt ; .jan.2005
+text\clsba_x_.fmt = text\clsbc_x_.fmt ; 20140407
+text\clsbp_x_.fmt = text\clsbc_x_.fmt ; .jan.2005
+text\clsbm_t_.fmt = text\clsbc_t_.fmt ; .jan.2005
+text\clsba_t_.fmt = text\clsbc_t_.fmt ; 20140407
+text\clsbp_t_.fmt = text\clsbc_t_.fmt ; .jan.2005
+text\clsbccx_.fmt = text\clsbccol.fma ; .jan.2005
+text\clsbmcx_.fmt = text\clsbccol.fma ; .jan.2005
+text\clsbacx_.fmt = text\clsbccol.fma ; 20140407
+text\clsbpcx_.fmt = text\clsbccol.fma ; .jan.2005
+
+text\clssdcol.fma = text\empty.fmt
+text\clssa_x_.fma = text\clssacol.fma ; .jan.2005
+text\clssa_t_.fma = text\clssacol.fma ; .jan.2005
+text\clssacx_.fma = text\clssacol.fma ; .jan.2005
+text\clssc_x_.fma = text\clssccol.fma ; .jan.2005
+text\clssc_t_.fma = text\clssccol.fma ; .jan.2005
+text\clssccx_.fma = text\clssccol.fma ; .jan.2005
+                                      ;  20050329  text\clssp_x_.fma = text\clsspcol.fma ; .jan.2005
+text\clssp_t_.fma = text\clsspcol.fma ; .jan.2005
+text\clsspcx_.fma = text\clsspcol.fma ; .jan.2005
+text\clsst_x_.fma = text\clsstcol.fma ; .jan.2005
+text\clsst_t_.fma = text\clsstcol.fma ; .jan.2005
+text\clsstcx_.fma = text\clsstcol.fma ; .jan.2005
+
+text\clssa_t_.fmd = text\clssacol.fma ;  20070907
+
+text\clssacol.fmd = text\clssacol.fma ;  20070907
+
+text\clssc_x_.fmd = text\clssacol.fma ;  20070830
+text\clssc_t_.fmd = text\clssacol.fma ;  20070830
+text\clssccx_.fmd = text\clssacol.fma ;  20070830
+text\clssccol.fmd = text\clssacol.fma ;  20070830  
+
+text\clsst_x_.fmd = text\clssacol.fma ;  20070830
+text\clsst_t_.fmd = text\clssacol.fma ;  20070830
+text\clsstcx_.fmd = text\clssacol.fma ;  20070830
+text\clsstcol.fmd = text\clssacol.fma ;  20070830  
+
+text\clssc_x_.fmp = text\clssccol.fmp ; .jan.2005
+text\clssc_t_.fmp = text\clssccol.fmp ; .jan.2005
+text\clssccx_.fmp = text\clssccol.fmp ; .jan.2005
+text\clssp_x_.fmp = text\clsspcol.fmp ; .jan.2005
+text\clssp_t_.fmp = text\clsspcol.fmp ; .jan.2005
+text\clsspcx_.fmp = text\clsspcol.fmp ; .jan.2005
+text\clsst_x_.fmp = text\clssccol.fmp ; .jan.2005
+text\clsst_t_.fmp = text\clssccol.fmp ; .jan.2005
+text\clsstcx_.fmp = text\clssccol.fmp ; .jan.2005
+text\clsstcol.fmp = text\clssccol.fmp ; .jun.2004
+text\clssa_x_.fmp = text\clssccol.fmp ; .20070926
+text\clssa_t_.fmp = text\clssccol.fmp ; .20070926
+text\clssacx_.fmp = text\clssccol.fmp ; .20070926
+text\clssacol.fmp = text\clssccol.fmp ; .20070926
+text\clssd_x_.fmp = text\clssccol.fmp ; .20070926
+text\clssd_t_.fmp = text\clssccol.fmp ; .20070926
+text\clssdcx_.fmp = text\clssccol.fmp ; .20070926
+text\clssdcol.fmp = text\clssccol.fmp ; .20070926
+
+
+text\clssc_x_.fmt = text\clssccol.fmt ; .jan.2005
+text\clssc_t_.fmt = text\clssccol.fmt ; .jan.2005
+text\clssccx_.fmt = text\clssccol.fmt ; .jan.2005
+text\clssm_x_.fmt = text\clssccol.fmt ; .jan.2005
+text\clssm_t_.fmt = text\clssccol.fmt ; .jan.2005
+text\clssmcx_.fmt = text\clssccol.fmt ; .jan.2005
+text\clssmcol.fmt = text\clssccol.fmt
+text\clssa_x_.fmt = text\clssccol.fmt ; 20140407
+text\clssa_t_.fmt = text\clssccol.fmt ; 20140407
+text\clssacx_.fmt = text\clssccol.fmt ; 20140407
+text\clssacol.fmt = text\clssccol.fmt ; 20140407
+text\clssp_x_.fmt = text\clsspcol.fmt ; .jan.2005
+text\clssp_t_.fmt = text\clsspcol.fmt ; .jan.2005
+text\clsspcx_.fmt = text\clsspcol.fmt ; .jan.2005
+
+text\reportcb.fma = text\reportgb.fma
+text\reportbb.fma = text\reportab.fma
+text\reportdb.fma = text\reporttb.fma
+
+text\reportai.fma = text\report_e.fma
+text\reportci.fma = text\report_e.fma
+text\reportgi.fma = text\report_e.fma
+text\reportti.fma = text\report_e.fma
+text\reportdi.fma = text\report_e.fma
+
+text\reportae.fma = text\report_e.fma
+text\reportce.fma = text\report_e.fma
+text\reportge.fma = text\report_e.fma
+text\reportte.fma = text\report_e.fma
+text\reportde.fma = text\report_e.fma
+
+text\reportci.fmt = text\report_i.fmt
+text\reportgi.fmt = text\report_i.fmt
+text\reportmi.fmt = text\report_i.fmt
+text\reportai.fmt = text\report_i.fmt ; 20140404
+
+text\reportce.fmt = text\report_e.fmt
+text\reportge.fmt = text\report_e.fmt
+text\reportme.fmt = text\report_e.fmt
+
+text\reportcc.fmt = text\report_c.fmt
+text\reportgc.fmt = text\report_c.fmt
+text\reportmc.fmt = text\report_c.fmt
+
+text\reporsai.fma = text\reporsci.fma ; .mar.2002
+text\reporsdi.fma = text\reporsgi.fma ; .mar.2002
+text\reporsti.fma = text\reporsci.fma ; .mar.2002
+text\reporsbi.fma = text\reporsgi.fma ; .mar.2002
+
+text\reporsae.fma = text\reporsge.fma ; .may.2002
+;text\reporsce.fma = text\reporsge.fma ; .may.2002   ; 20070602 commented 
+text\reporsde.fma = text\reporsge.fma ; .may.2002
+text\reporste.fma = text\reporsge.fma ; .may.2002
+text\reporsbe.fma = text\reporsge.fma ; .may.2002
+
+text\reporsgb.fma = text\reporsdb.fma ; .mar.2002
+text\reporsbb.fma = text\reporsdb.fma ; .mar.2002
+
+text\reporscc.fmt = text\reporsci.fmt ; .may.2004
+text\reporsce.fmt = text\reporsci.fmt ; .may.2004
+text\reporsgc.fmt = text\reporsgi.fmt ; .may.2004
+text\reporsge.fmt = text\reporsgi.fmt ; .may.2004
+text\reporsmc.fmt = text\reporsmi.fmt ; .may.2004
+text\reporsme.fmt = text\reporsmi.fmt ; .may.2004
+text\reporspc.fmt = text\reporspi.fmt ; .may.2004
+text\reporsai.fmt = text\reporsmi.fmt ; 20140404
+
+text\repo2sti.fma = text\repo2sci.fma ; .apr.2002
+text\repo2ste.fma = text\repo2sce.fma ; .may.2002
+text\repo2sai.fma = text\repo2sae.fma ; .apr.2002
+
+text\repo2_ab.fma = text\repo2_gb.fma ; .mar.2002
+text\repo2_cb.fma = text\repo2_gb.fma ; .mar.2002
+text\repo2_tb.fma = text\repo2_gb.fma ; .mar.2002
+
+text\repo2sgb.fma = text\repo2sab.fma ; .mar.2002
+
+; text\repo2_ce.fmp = text\repo2__e.fma ;  .jan.2004 commented
+text\repo2_ge.fmp = text\repo2_ce.fmp ; .jun.2004
+text\repo2_te.fmp = text\repo2_ce.fmp ; .jun.2004
+text\repo2_ae.fmp = text\repo2_ce.fmp ;  20070926
+text\repo2_de.fmp = text\repo2_ce.fmp ;  20070926
+text\repo2_pe.fmp = text\repo2_pe.fma
+
+text\repo2_ai.fma = text\repo2__e.fma
+text\repo2_ci.fma = text\repo2__e.fma
+text\repo2_gi.fma = text\repo2__e.fma
+text\repo2_ti.fma = text\repo2__e.fma
+
+text\repo2_ae.fma = text\repo2__e.fma
+text\repo2_ce.fma = text\repo2__e.fma
+text\repo2_ge.fma = text\repo2__e.fma
+text\repo2_te.fma = text\repo2__e.fma
+
+text\repo2_pi.fmp = text\repo2_pe.fma ;  20060330 
+text\repo2_ti.fmp = text\repo2_ci.fmp ;  20060329
+text\repo2_gi.fmp = text\repo2_ci.fmp ;  20060417
+text\repo2_ai.fmp = text\repo2_ci.fmp ;  20070926
+text\repo2_di.fmp = text\repo2_ci.fmp ;  20070926
+
+text\repo2sti.fmp = text\repo2sci.fmp ;  20060329
+text\repo2spi.fmp = text\repo2spe.fmp ;  20060329
+text\repo2sgi.fmp = text\repo2sci.fmp ;  20060417
+text\repo2sai.fmp = text\repo2sci.fmp ;  20070926
+text\repo2sdi.fmp = text\repo2sci.fmp ;  20070926
+
+text\repo2sce.fmp = text\repo2sci.fma ;  text\repo2sce.fma ; .may.2002, .sep.2003
+text\repo2sge.fmp = text\repo2sci.fma ; .jun.2004
+text\repo2ste.fmp = text\repo2sci.fma ; .jun.2004
+text\repo2sae.fmp = text\repo2sci.fma ; .20070926
+text\repo2sde.fmp = text\repo2sci.fma ; .20070926
+
+; Отчет Административен съд I инстанция
+text\reportai.fmd = text\report_i.fmd  ;   20070214 ; 20070216
+text\reportae.fmd = text\report_e.fmd  ;   20070214 ; 20070216
+text\reportab.fmd = text\reportab.fma  ;   20070809
+text\reportav.fmd = text\REPORT_V.FMD  ;   20070809
+text\reporsav.fmd = text\REPORS_V.FMD  ;   20080710
+text\reporsai.fmd = text\reporsci.fma  ;   20070214
+text\reporsae.fmd = text\reporsae.fma  ;   20070214
+text\reporsab.fmd = text\reporsae.fma  ;   20070809
+text\reporsav.fmd = text\reporsae.fma  ;   20070809
+
+text\reportci.fmd = text\report_i.fmd  ;   20070809
+text\reportce.fmd = text\report_e.fmd  ;   20070809
+text\reportcb.fmd = text\reportab.fma  ;   20070214
+text\reportcv.fmd = text\REPORT_V.FMD  ;   20070809
+text\reporscv.fmd = text\REPORS_V.FMD  ;   20080710
+text\reporsci.fmd = text\reporsci.fma  ;   20070809
+text\reporsce.fmd = text\reporsae.fma  ;   20070809
+text\reporscb.fmd = text\reporsae.fma  ;   20070809
+text\reporscv.fmd = text\reporsae.fma  ;   20070809
+
+text\reportti.fmd = text\report_i.fmd  ;   20070809
+text\reportte.fmd = text\report_e.fmd  ;   20070809
+text\reporttb.fmd = text\reportab.fma  ;   20070214
+text\reporttv.fmd = text\REPORT_V.FMD  ;   20070809
+text\reporstv.fmd = text\REPORS_V.FMD  ;   20080710
+text\reporsti.fmd = text\reporsci.fma  ;   20070809
+text\reporste.fmd = text\reporsae.fma  ;   20070809
+text\reporstb.fmd = text\reporsae.fma  ;   20070809
+text\reporstv.fmd = text\reporsae.fma  ;   20070809
+
+text\reportgi.fmd = text\report_i.fmd  ;   20070809
+text\reportge.fmd = text\report_e.fmd  ;   20070809
+text\reportgb.fmd = text\reportab.fma  ;   20070214
+text\reportgv.fmd = text\REPORT_V.FMD  ;   20070809
+text\reporsgv.fmd = text\REPORS_V.FMD  ;   20080710
+text\reporsgi.fmd = text\reporsci.fma  ;   20070809
+text\reporsge.fmd = text\reporsae.fma  ;   20070809
+text\reporsgb.fmd = text\reporsae.fma  ;   20070809
+text\reporsgv.fmd = text\reporsae.fma  ;   20070809
+
+                                       ;   Отчет Административен съд II инстанция
+text\repo2sae.fmd = text\repo2s_e.fmd  ;   20070214  ; 20070216;  20070923
+text\repo2ste.fmd = text\repo2s_e.fmd  ;   20070809  ; 20070923
+text\repo2spe.fmd = text\repo2s_e.fmd  ;
+text\repo2sce.fmd = text\repo2s_e.fmd  ;
+text\repo2sge.fmd = text\repo2s_e.fmd  ;
+
+text\repo2sai.fmd = text\repo2s_i.fmd  ;   text\repo2sae.fmd  ; 20070214
+text\repo2sti.fmd = text\repo2s_i.fmd  ;   text\repo2sce.fmd  ; 20070809
+text\repo2spi.fmd = text\repo2s_i.fmd  ;   text\repo2ste.fmd  ; 20070809
+text\repo2sci.fmd = text\repo2s_i.fmd  ;   text\repo2sae.fmd  ; 20070809
+text\repo2sgi.fmd = text\repo2s_i.fmd  ;
+
+text\repo2sab.fmd = text\repo2s_b.fmd  ;   20070214
+text\repo2scb.fmd = text\repo2s_b.fmd  ;   20070809
+text\repo2stb.fmd = text\repo2s_b.fmd  ;   20070809
+text\repo2sgb.fmd = text\repo2s_b.fmd  ;   20070809
+;
+text\repo2_ab.fmd = text\repo2_gb.fma  ;   20070214
+text\repo2_ai.fmd = text\repo2__e.fma  ;   20070214
+text\repo2_ae.fmd = text\repo2__e.fma  ;   20070214
+
+text\repo2_cb.fmd = text\repo2_gb.fma  ;   20070809
+text\repo2_ci.fmd = text\repo2__e.fma  ;   20070809
+text\repo2_ce.fmd = text\repo2__e.fma  ;   20070809
+
+text\repo2_tb.fmd = text\repo2_gb.fma  ;   20070809
+text\repo2_ti.fmd = text\repo2__e.fma  ;   20070809
+text\repo2_te.fmd = text\repo2__e.fma  ;   20070809
+
+text\repo2_gb.fmd = text\repo2_gb.fma  ;   20070809
+text\repo2_gi.fmd = text\repo2__e.fma  ;   20070809
+text\repo2_ge.fmd = text\repo2__e.fma  ;   20070809
+;
+;
+text\judgeci.fmt = text\judge_i.fmt   ; 
+text\judgegi.fmt = text\judge_i.fmt   ; 
+text\judgemi.fmt = text\judge_i.fmt   ; 
+text\judgepi.fmt = text\judge_i.fmt
+text\judgeai.fmt = text\judge_i.fmt   ;  20140404
+
+;
+text\judgece.fmt = text\judge_i.fmt   ;  20071203
+text\judgege.fmt = text\judge_i.fmt   ;  20071203
+text\judgeme.fmt = text\judge_i.fmt   ;  20071203
+text\judgepe.fmt = text\judge_i.fmt
+;
+text\judgeNci.fmt = text\judgeN_i.fmt   ;   20061207 ver after 1.3014
+text\judgeNgi.fmt = text\judgeN_i.fmt   ;   20061207 
+text\judgeNmi.fmt = text\judgeN_i.fmt   ;   20061207 
+text\judgeNpi.fmt = text\judge_i.fmt    ;   20061207 the same as judgepi.fmt
+text\judgeNai.fmt = text\judgeN_i.fmt   ;   20140404
+;
+text\judgeNce.fmt = text\judgeN_i.fmt   ;   20071203
+text\judgeNge.fmt = text\judgeN_i.fmt   ;   20071203
+text\judgeNme.fmt = text\judgeN_i.fmt   ;   20071203
+text\judgeNpe.fmt = text\judge_i.fmt    ;   20071203
+;
+text\judgeai.fmp = text\judgeci.fmp   ;  20070926
+text\judgeti.fmp = text\judgeci.fmp   ;  20070926
+text\judgedi.fmp = text\judgeci.fmp   ;  20070926
+
+text\judghde.fmd = text\judghde.fma     ;   20070214 
+text\judgede.fmd = text\judgede.fma     ;   20070214 
+text\judgepe.fmd = text\judgepe.fma     ;   20070214  
+
+text\judgeae.fmd = text\judge_e.fma     ;   20070214 
+text\judgeaed.fmd = text\judge_e.fma    ;   20070214
+;text\judgeai.fmd = text\judgeai.fma    ;   20070214  code 25032
+
+text\judgete.fmd = text\judge_e.fma     ;   20070928 
+text\judgeted.fmd= text\judge_e.fma     ;   20070928
+text\judgeti.fmd = text\judgepi.fma     ;   20070928 
+text\judgece.fmd = text\judge_e.fma     ;   20070928 
+text\judgeced.fmd= text\judge_e.fma     ;   20070928
+text\judgeci.fmd = text\judgeci.fma     ;   20070928 
+text\judgege.fmd = text\judge_e.fma     ;   20070928 
+text\judgeged.fmd= text\judge_e.fma     ;   20070928
+text\judgegi.fmd = text\judgegi.fma     ;   20070928 
+text\judgegi.fmp = text\judgegi.fma     ;   20080605
+
+text\judgeti.fma = text\judge_i.fma
+
+text\judgeae.fma = text\judge_e.fma
+text\judgece.fma = text\judge_e.fma
+text\judgede.fma = text\judge_e.fma
+;  text\judgepe.fma = text\judge_e.fma;  in comment 20060518 
+text\judgete.fma = text\judge_e.fma
+text\judgege.fma = text\judge_e.fma
+
+text\judgeaed.fma = text\judge_e.fma
+text\judgeced.fma = text\judge_e.fma
+text\judgeded.fma = text\judge_e.fma
+text\judgeged.fma = text\judge_e.fma
+text\judgeped.fma = text\judge_e.fma
+text\judgeted.fma = text\judge_e.fma
+
+text\invbccol.fmp = text\invb_col.fmp ;              АС Оп.кн.      Стар ф.
+text\invbpcol.fmp = text\invb_col.fmp ;
+text\invbtcol.fmp = text\invb_col.fmp ; .jun.2004
+text\invbacol.fmp = text\invb_col.fmp ; .20070926
+text\invbdcol.fmp = text\invb_col.fmp ; .20070926
+
+text\invstcol.fmp = text\invsccol.fmp ; .jun.2004
+text\invsacol.fmp = text\invsccol.fmp ;  20070926
+text\invsdcol.fmp = text\invsccol.fmp ;  20070926
+
+text\invbacol.fma = text\invb_col.fma
+text\invbaco1.fma = text\invb_col.fma
+text\invbaco2.fma = text\invb_col.fma
+text\invba_tl.fma = text\invba_t_.fma ; 20050607 ОС Оп.кн. АД  I+II Нов ф.      txt
+text\invba_t1.fma = text\invba_t_.fma ; 20050312 ОС Оп.кн. АД  I    Нов ф.      txt
+text\invba_t2.fma = text\invba_t_.fma ; 20050312 ОС Оп.кн. АД II    Нов ф.      txt
+
+text\invbccol.fma = text\invb_col.fma
+text\invbcco1.fma = text\invb_col.fma
+text\invbcco2.fma = text\invb_col.fma
+text\invbc_t1.fma = text\invb__tl.fma ; .feb.2005
+;text\invbc_t2.fma                    ;              ОС Оп.кн. Гр.Д II нов формат 
+
+text\invbc_tl.fmp = text\invbc_t2.fma ;  20050826    АС Оп.кн. Гр.Д Нов ф. 
+text\invsc_tl.fmp = text\invsccol.fmp ;  20050826    АС Оп.кн. Гр.Д Нов ф. 
+
+text\invba_tl.fmp = text\invbc_t2.fma ;  20050826    АС Оп.кн. Гр.Д Нов ф. 
+text\invsa_tl.fmp = text\invsccol.fmp ;  20050826    АС Оп.кн. Гр.Д Нов ф. 
+
+text\invbpcol.fma = text\invb_col.fma
+text\invbpco1.fma = text\invb_col.fma
+;text\invbpco2.fma = text\invb_col.fma ; 20050302    ОС Оп.кн. НД II стар ф. 
+;text\invbp_t1.fma = text\invb__tl.fma ; 20050302    ОС Оп.кн. НД I Нов Ф. txt ; 20060320 - new format 
+;text\invbp_t2.fma
+
+;text\invbp_tl.fmp = text\invbp_t2.fma ;  20050826    АС Оп.кн. НД Нов ф. 200700502 kol.3
+text\invsp_tl.fmp = text\invspcol.fmp ;  20050826    АС Оп.кн. НД Нов ф. 
+
+text\invbtcol.fma = text\invb_col.fma
+text\invbtco1.fma = text\invb_col.fma
+text\invbtco2.fma = text\invb_col.fma
+text\invbt_t1.fma = text\invb__tl.fma ;  20050311 
+text\invbt_t2.fma = text\invbc_t2.fma ;  20050311 
+
+text\invbt_tl.fmp = text\invbc_t2.fma ;  20050826    АС Оп.кн. ТД  Нов Ф.
+text\invst_tl.fmp = text\invsccol.fmp ;  20050826    АС Оп.кн. ТД  Нов ф. 
+text\invbd_tl.fmp = text\invbc_t2.fma ;  20050826    АС Оп.кн  TД K Нов ф. 
+text\invsd_tl.fmp = text\invsccol.fmp ;  20050826    АС Оп.кн. TД K Нов ф. 
+
+text\invbdco1.fma = text\invbdcol.fma
+text\invbd_t1.fma = text\invbdcol.fma ;  20050315    ОС Оп.кн. ФД I Нов ф. txt
+
+text\invsacol.fma = text\invs_col.fma ;  А.Д.
+text\invsaco1.fma = text\invs_col.fma
+text\invsaco2.fma = text\invs_col.fma
+text\invsa_tl.fma = text\invs_col.fma ;  20050607    ОС Оп.кн. АД  I+II Нов ф. txt summ
+text\invsa_t1.fma = text\invs_col.fma ;  20050312    ОС Оп.кн. АД  I    Нов ф. txt summ
+text\invsa_t2.fma = text\invs_col.fma ;  20050312    ОС Оп.кн. АД II    Нов ф. txt summ
+
+text\invstcol.fma = text\invs_col.fma
+text\invstco1.fma = text\invs_col.fma
+text\invstco2.fma = text\invs_col.fma
+text\invsdco1.fma = text\invsdcol.fma ;  Ф.Д. 
+text\invsd_t1.fma = text\invsdcol.fma ;  20050315    ОС Оп.кн. ФД  I Нов ф. txt summ 
+text\invsp_t1.fma = text\invspco1.fma ;  20050302    ОС Оп.кн. НД  I Нов Ф. txt summ 
+text\invsp_t2.fma = text\invspco2.fma ;  20050302    ОС Оп.кн. НД II Нов Ф. txt summ 
+text\invsc_t1.fma = text\invscco1.fma ; .feb.2005    ОС Оп.кн. ГД  I Нов Ф. txt summ 
+text\invsc_t2.fma = text\invscco2.fma ;  20050224    ОС Оп.кн. ГД II Нов Ф. txt summ 
+text\invst_t1.fma = text\invs_col.fma ;  20050311    ОС Оп.кн. ТД  I Нов Ф. txt summ 
+text\invst_t2.fma = text\invs_col.fma ;  20050311    ОС Оп.кн. ТД II Нов Ф. txt summ 
+
+
+// Описна книга - Административен съд - inv*.fmd - само пренасочени файлове
+text\invbacol.fmd = text\invb_col.fma ; 20070214
+text\invbaco1.fmd = text\invb_col.fma ; 20070214
+text\invbaco2.fmd = text\invb_col.fma ; 20070214
+text\invba_tl.fmd = text\invba_t_.fma ; 20070214 AD Оп.кн. АД  I+II Нов ф.      txt
+text\invba_t1.fmd = text\invba_t_.fma ; 20070214 AD Оп.кн. АД  I    Нов ф.      txt
+text\invba_t2.fmd = text\invba_t_.fma ; 20070214 AD Оп.кн. АД II    Нов ф.      txt
+text\invsacol.fmd = text\invs_col.fma ; 20070214 ;  А.Д.
+text\invsaco1.fmd = text\invs_col.fma ; 20070214
+text\invsaco2.fmd = text\invs_col.fma ; 20070214
+text\invsa_tl.fmd = text\invs_col.fma ; 20070214    ОС Оп.кн. АД  I+II Нов ф. txt summ
+text\invsa_t1.fmd = text\invs_col.fma ; 20070214    ОС Оп.кн. АД  I    Нов ф. txt summ
+text\invsa_t2.fmd = text\invs_col.fma ; 20070214    ОС Оп.кн. АД II    Нов ф. txt summ
+text\invba_t_.fmd = text\invba_t_.fma ; 20070214
+
+text\invbccol.fmd = text\invb_col.fma ; 20070830
+text\invbcco1.fmd = text\invb_col.fma ; 20070830
+text\invbc_tl.fmd = text\invb__tl.fma ; 20070830
+text\invbc_t1.fmd = text\invb__tl.fma ; 20070830
+text\invsccol.fmd = text\invs_col.fmd ; 20070930
+text\invscco1.fmd = text\invs_col.fmd ; 20070930
+text\invsc_tl.fmd = text\invs_col.fmd ; 20070930
+text\invsc_t1.fmd = text\invs_col.fmd ; 20070930
+
+text\invbtco1.fmd = text\invbpcol.fmt ; 20070830
+text\invbtcol.fmd = text\invbpcol.fmt ; 20070830
+text\invbtco2.fmd = text\invbpco2.fma ; 20070830
+text\invbt_tl.fmd = text\invbp_t1.fma ; 20070830
+text\invbt_t1.fmd = text\invbp_t1.fma ; 20070830
+text\invbt_t2.fmd = text\invbp_t2.fma ; 20070830
+text\invstcol.fmd = text\invs_col.fma ; 20070830
+text\invstco1.fmd = text\invs_col.fma ; 20070830
+text\invstco2.fmd = text\invs_col.fma ; 20070830
+text\invst_tl.fmd = text\invs_col.fma ; 20070830
+text\invst_t1.fmd = text\invs_col.fma ; 20070830
+text\invst_t2.fmd = text\invs_col.fma ; 20070830
+text\invbt_t_.fmd = text\invbp_t2.fma ; 20070830
+
+
+text\i_jct.fmp    = text\i_jcc.fmp    ; .jun.2004
+text\i_jcg.fmp    = text\i_jcc.fmp    ; .jun.2004
+
+text\invbmcol.fmt = text\invbccol.fmt
+text\invbacol.fmt = text\invbccol.fmt ; 20140407
+
+;text\invbc_tl.fmt = text\invb__tl.fmt ; .feb.2005 
+text\invbm_tl.fmt = text\invbc_tl.fmt ; 20070214    ;\invb__tl.fmt ; .feb.2005
+text\invbp_tl.fmt = text\invb__tl.fmt ; .feb.2005  
+text\invba_tl.fmt = text\invbc_tl.fmt ; 20140407
+
+text\invsccol.fmt = text\invs_col.fmt
+text\invsc_tl.fmt = text\invs_col.fmt ; .feb.2005
+text\invsmcol.fmt = text\invs_col.fmt
+text\invsacol.fmt = text\invs_col.fmt ; 20140407
+text\invsm_tl.fmt = text\invs_col.fmt ; .feb.2005
+text\invsa_tl.fmt = text\invs_col.fmt ; 20140407
+text\invsp_tl.fmt = text\invspcol.fmt ; .feb.2005
+
+text\bosle_43.fmt = text\boslet43.fmt
+text\bosle_48.fmt = text\boslet48.fmt
+
+text\boslet42.fma = text\boslet42.fmt
+text\boslet43.fma = text\boslet43.fmt
+text\boslet45.fma = text\boslet45.fmt
+text\boslet48.fma = text\boslet48.fmt
+text\boslet4a.fma = text\boslet4a.fmt
+text\bosle_43.fma = text\boslet43.fmt
+text\bosle_48.fma = text\boslet48.fmt
+
+text\boslet42.fmd = text\boslet42.fmt   ; 20070214
+text\boslet43.fmd = text\boslet43.fmt   ; 20070214
+text\boslet45.fmd = text\boslet45.fmt   ; 20070214
+text\boslet48.fmd = text\boslet48.fmt   ; 20070214
+text\boslet4a.fmd = text\boslet4a.fmt   ; 20070214
+text\bosle_43.fmd = text\boslet43.fmt
+text\bosle_48.fmd = text\boslet48.fmt
+
+text\boslet42.fmp = text\boslet42.fmt
+text\boslet43.fmp = text\boslet43.fmt
+text\boslet45.fmp = text\boslet45.fmt
+text\boslet48.fmp = text\boslet48.fmt
+text\boslet4a.fmp = text\boslet4a.fmt
+text\bosle_43.fmp = text\boslet43.fmt
+text\bosle_48.fmp = text\boslet48.fmt
+
+text\telegr67.fmt = text\telegr67.fma
+text\telegr67.fmp = text\telegr67.fma
+text\telegr67.fmd = text\telegr67.fma  ; 20070214
+
+text\paper16f.fmt = text\paper16f.fma
+                                      ; 20070226 text\paper16f.fmd = text\paper16f.fma  ; 20070214
+
+text\paper26f.fmp = text\paper26f.fma
+                                      ; 20070226 text\paper26f.fmd = text\paper26f.fma  ; 20070214
+
+text\announcc.fmp = text\announce.fmt
+text\announcp.fmp = text\announ2p.fma
+text\announct.fmp = text\announce.fmt ; .jun.2004
+text\announca.fmp = text\announce.fmt ; .20070926  
+text\announcd.fmp = text\announce.fmt ; .20070926
+
+text\announ1a.fma = text\announce.fmt
+text\announ1c.fma = text\announce.fmt
+text\announ1p.fma = text\announce.fmt
+text\announ1t.fma = text\announce.fmt
+text\announ2a.fma = text\announce.fmt
+text\announ2c.fma = text\announce.fmt
+text\announ2t.fma = text\announce.fmt
+
+                                      ; text\announ1a.fmd = text\announce.fmt  ; 20070226 ; 20070731
+text\announ1c.fmd = text\announ1a.fmd ; 20070803
+text\announ1p.fmd = text\announ1a.fmd ; 20070803
+text\announ1t.fmd = text\announ1a.fmd ; 20070830
+text\announ2a.fmd = text\announ1a.fmd ; text\announce.fmt  ; 20070226 ; 20070731
+text\announ2c.fmd = text\announ1a.fmd ; 20070803
+text\announ2p.fmd = text\announ1a.fmd ; 20070803
+text\announ2t.fmd = text\announ1a.fmd ; 20070830
+; text\announVS.fmd  
+
+text\announcc.fmt = text\announce.fmt
+text\announcm.fmt = text\announce.fmt
+
+text\summp1fa.fmp = text\summp1fa.fmt
+text\summp1fe.fmp = text\summp1fe.fmt
+text\summp1fs.fmp = text\summp1fs.fmt ;
+text\summp1fw.fmp = text\summp1fw.fmt
+text\summp2fa.fmp = text\summp2fa.fmt
+text\summp2fs.fmp = text\summp2fs.fmt
+text\summ__oa.fmp = text\summonfa.fmt
+text\summ__os.fmp = text\summonfs.fmt
+text\summ__fa.fmp = text\summonfs.fmt
+text\summ__fe.fmp = text\summonfe.fmt
+text\summ__fs.fmp = text\summonfs.fmt
+text\summ__fw.fmp = text\summonfw.fmt
+text\summ__cs.fmp = text\summoncs.fmt
+text\summ__ss.fmp = text\summonss.fmt
+text\summ__us.fmp = text\summonus.fmt
+text\summc_bs.fmp = text\summg_bs.fmt
+text\summt_bs.fmp = text\summg_bs.fmt ; .jun.2004
+text\summa_bs.fmp = text\summg_bs.fmt ; .20070926
+text\summd_bs.fmp = text\summg_bs.fmt ; .20070926
+
+text\summp1fa.fma = text\summp1fa.fmt
+text\summp1fe.fma = text\summp1fe.fmt
+text\summp1fs.fma = text\summp1fs.fmt
+text\summp1fw.fma = text\summp1fw.fmt
+text\summp2fa.fma = text\summp2fa.fmt
+text\summp2fs.fma = text\summp2fs.fmt
+text\summp_os.fma = text\summp2fs.fmt ; съобщение
+text\summ__oa.fma = text\summonfa.fmt
+text\summ__os.fma = text\summonos.fmt
+text\summ__fa.fma = text\summonfs.fmt
+text\summ__fe.fma = text\summonfe.fmt
+text\summ__fs.fma = text\summonfs.fmt
+text\summ__fw.fma = text\summonfw.fmt
+text\summ__cs.fma = text\summoncs.fmt
+text\summ__ss.fma = text\summonss.fmt
+text\summ__us.fma = text\summonus.fmt
+text\summa_cs.fma = text\summa_cs.fmt
+text\summa_fs.fma = text\summa_fs.fmt
+text\summa_ss.fma = text\summa_ss.fmt
+text\summa_us.fma = text\summa_us.fmt
+text\summa_os.fma = text\summa_os.fmt
+text\summa_bs.fma = text\summa_bs.fmt
+text\summd1as.fma = text\summd1as.fmt
+text\summd1cs.fma = text\summd1cs.fmt
+text\summd1fs.fma = text\summd1fs.fmt
+text\summd1ss.fma = text\summd1ss.fmt
+text\summd1us.fma = text\summd1us.fmt
+text\summc_bs.fma = text\summg_bs.fmt
+text\summt_bs.fma = text\summg_bs.fmt
+text\summp_bs.fma = text\summp_bs.fmt
+
+text\summc_bs.fmt = text\summg_bs.fmt
+text\summm_bs.fmt = text\summg_bs.fmt
+text\summ__fa.fmt = text\summonfa.fmt
+text\summ__fe.fmt = text\summonfe.fmt
+text\summ__fw.fmt = text\summonfw.fmt
+text\summ__fs.fmt = text\summonfs.fmt
+text\summ__cs.fmt = text\summoncs.fmt
+text\summ__ss.fmt = text\summonss.fmt
+text\summ__us.fmt = text\summonus.fmt
+text\summ__os.fmt = text\summonos.fmt
+text\summ__oa.fmt = text\summonfa.fmt
+text\summp_os.fmt = text\summp2fs.fmt ; .jan.2005
+
+// 20070830 SmFmtNam.fmt - за Адм.съд - 
+;  text\summ__fa.fmd = text\summonfs.fmt ;  20070214  ; няма участие "подсъдим"
+;  text\summ__fe.fmd = text\summonfe.fmt ;  20070214  ; 20070711 GPK
+;  text\summ__fw.fmd = text\summonfw.fmt ;  20070214  ; 20070711 GPK
+;  text\summa_fs.fmd = text\summa_fs.fmt ;  20070214  ; 
+;  text\summa_cs.fmd = text\summa_cs.fmt ;  20070214  ;
+;  text\summa_ss.fmd = text\summa_ss.fmt ;  20070214  ;
+;  text\summa_us.fmd = text\summa_us.fmt ;  20070214  ;
+;  text\summa_bs.fmd = text\summa_bs.fmt ;  20070214  ; 20070711 GPK
+;  text\summa_os.fmd = text\summa_os.fmt ;  20070214  ;
+;  text\summ__fs.fmd = text\summonfs.fmt ;  20070214  ; 20070711 created
+
+text\slstccol.fmp = text\slst_col.fmp
+text\slstpcol.fmp = text\slst_col.fmp
+text\slsttcol.fmp = text\slst_col.fmp
+text\slstacol.fmp = text\slst_col.fmp  ;  20070926
+text\slstdcol.fmp = text\slst_col.fmp  ;  20070926
+
+text\abcbccol.fmp = text\abcb_col.fma
+text\abcbpcol.fmp = text\abcb_col.fma
+text\abcbtcol.fmp = text\abcb_col.fma ; .jun.2004
+text\abcbacol.fmp = text\abcb_col.fma ; .20070926
+text\abcbdcol.fmp = text\abcb_col.fma ; .20070926
+
+text\abcbp_t_.fmp = text\abcb__t_.fmt ;  20050826    АС Азб. НД     Нов Ф
+text\abcbc_t_.fmp = text\abcb__t_.fmt ;  20050826    АС Азб. Гр.Д   Нов 
+text\abcbt_t_.fmp = text\abcb__t_.fmt ;  20050826    АС Азб. Тр.Д   Нов 
+text\abcba_t_.fmp = text\abcb__t_.fmt ;  20070926    АС Азб. Гр.Д К Нов 
+text\abcbd_t_.fmp = text\abcb__t_.fmt ;  20070926    АС Азб. Тр.Д К Нов 
+
+
+text\abcbacol.fma = text\abcb_col.fma
+text\abcbccol.fma = text\abcb_col.fma
+text\abcbtcol.fma = text\abcb_col.fma
+text\abcba_t_.fma = text\abcb__t_.fmt ;  20050315  
+text\abcbc_t_.fma = text\abcb__t_.fmt ;  20050315  
+text\abcbp_t_.fma = text\abcb__t_.fmt ;  20050315  
+text\abcbt_t_.fma = text\abcb__t_.fmt ;  20050315  
+text\abcbd_t_.fma = text\abcb__t_.fmt ;  20050315  
+
+text\abcbacol.fmd = text\abcb_col.fma ;  20070214
+text\abcba_t_.fmd = text\abcb__t_.fmt ;  20070214  
+text\abcbccol.fmd = text\abcb_col.fma ;  20070830
+text\abcbc_t_.fmd = text\abcb__t_.fmt ;  20070830  
+text\abcbtcol.fmd = text\abcb_col.fma ;  20070830
+text\abcbt_t_.fmd = text\abcb__t_.fmt ;  20070830  
+
+text\abcbmcol.fmt = text\abcbccol.fmt
+text\abcbacol.fmt = text\abcbccol.fmt ; 20140407
+text\abcbc_t_.fmt = text\abcb__t_.fmt ; .feb.2005  
+text\abcbm_t_.fmt = text\abcb__t_.fmt ; .feb.2005  
+text\abcba_t_.fmt = text\abcb__t_.fmt ; 20140407
+text\abcbp_t_.fmt = text\abcb__t_.fmt ; .feb.2005  
+
+
+text\inpdiap.fma  = text\inpdia_.fma
+text\inpdiac.fma  = text\inpdia_.fma
+text\inpdiaa.fma  = text\inpdia_.fma
+text\inpdiat.fma  = text\inpdia_.fma
+text\inpdiad.fma  = text\inpdia_.fma
+text\inpdiag.fma  = text\inpdia_.fma
+
+text\inpdiap.fmt  = text\inpdia_.fmt
+text\inpdiac.fmt  = text\inpdia_.fmt
+text\inpdiam.fmt  = text\inpdia_.fmt
+text\inpdiag.fmt  = text\inpdia_.fmt
+
+text\inpdiap.fmp  = text\inpdia_.fmt
+text\inpdiac.fmp  = text\inpdia_.fmt
+text\inpdiat.fmp  = text\inpdia_.fmt   ; 20070926
+text\inpdiaa.fmp  = text\inpdia_.fmt   ; 20070926
+text\inpdiad.fmp  = text\inpdia_.fmt   ; 20070926
+
+text\aplinreg.fmp = text\aplinreg.fma
+text\aplinreg.fmt = text\aplinreg.fma
+text\aplinreg.fmd = text\aplinreg.fma  ; 20070214
+
+text\aploutrg.fmp = text\aploutrg.fma
+text\aploutrg.fmt = text\aploutrg.fma
+text\aploutrg.fmd = text\aploutrg.fma  ; 20070214
+
+text\apsoutrg.fmp = text\apsoutrg.fma
+text\apsoutrg.fmt = text\apsoutrg.fma
+text\apsoutrg.fmd = text\apsoutrg.fma  ; 20070214
+
+text\apsinsm.fmt  = text\aplinsm.fmt
+
+text\apsinsm.fma  = text\aplinsm.fma
+text\apsinsm.fmd  = text\aplinsm.fma   ; 20070214
+text\aplinsm.fmd  = text\aplinsm.fma   ; 20070214
+text\apsinbk.fmd  = text\apsinbk.fma   ; 20070214  ОБЖАЛВАНЕ НА ..
+; text\aplinbk.fmd  = text\aplinbk.fmp   ; 20070214 ; 
+
+text\apsinsm.fmp  = text\aplinsm.fmp
+
+text\rsetatbk.fma = text\rset_tbk.fmp
+text\rsetctbk.fma = text\rset_tbk.fmp
+text\rsetptbk.fma = text\rset_tbk.fmp
+text\rsetttbk.fma = text\rset_tbk.fmp
+text\rsetdtbk.fma = text\rset_tbk.fmp
+
+text\rsetatbk.fmd = text\rset_tbk.fmp  ; 20070214
+text\rsetctbk.fmd = text\rset_tbk.fmp  ; 20070830
+text\rsetttbk.fmd = text\rset_tbk.fmp  ; 20070830   НД 
+
+text\rsetctbk.fmt = text\rset_tbk.fmp
+text\rsetmtbk.fmt = text\rset_tbk.fmp
+text\rsetatbk.fmt = text\rset_tbk.fmp  ; 20140407
+text\rsetptbk.fmt = text\rset_tbk.fmp
+
+text\rsetctbk.fmp = text\rset_tbk.fmp
+text\rsetptbk.fmp = text\rset_tbk.fmp
+text\rsetttbk.fmp = text\rset_tbk.fmp ; .jun.2004
+text\rsetatbk.fmp = text\rset_tbk.fmp ; .20070926
+text\rsetdtbk.fmp = text\rset_tbk.fmp ; .20070926
+
+// Справка по резултати към книга ЗЗ/РЗ
+text\rsetacbk.fma = text\rset_cbk.fmp
+text\rsetccbk.fma = text\rset_cbk.fmp
+text\rsetpcbk.fma = text\rset_cbk.fmp
+text\rsettcbk.fma = text\rset_cbk.fmp
+text\rsetdcbk.fma = text\rset_cbk.fmp
+
+text\rsetacbk.fmd = text\rset_cbk.fmp  ;  20070907
+text\rsetccbk.fmd = text\rset_cbk.fmp  ;  20070907
+text\rsettcbk.fmd = text\rset_cbk.fmp  ;  20070907 НД
+
+text\rsetccbk.fmt = text\rset_cbk.fmp
+text\rsetmcbk.fmt = text\rset_cbk.fmp
+text\rsetacbk.fmt = text\rset_cbk.fmp  ; 20140407
+text\rsetpcbk.fmt = text\rset_cbk.fmp
+
+text\rsetccbk.fmp = text\rset_cbk.fmp
+text\rsetpcbk.fmp = text\rset_cbk.fmp
+text\rsettcbk.fmp = text\rset_cbk.fmp ; .jun.2004
+text\rsetacbk.fmp = text\rset_cbk.fmp ; .20070926
+text\rsetdcbk.fmp = text\rset_cbk.fmp ; .20070926
+
+text\sidelstc.fmp = text\sidelist.fmt
+text\sidelstp.fmp = text\sidelist.fmt
+text\sidelstt.fmp = text\sidelist.fmt
+text\sidelstr.fmp = text\sidelist.fmt
+text\sidelsti.fmp = text\sidelist.fmt
+text\sidelsta.fmp = text\sidelist.fmt ; 20070926
+text\sidelstd.fmp = text\sidelist.fmt ; 20070926
+
+text\sidelshc.fmp = text\sidelish.fmt
+text\sidelshp.fmp = text\sidelish.fmt
+text\sidelsht.fmp = text\sidelish.fmt
+text\sidelshr.fmp = text\sidelish.fmt
+text\sidelshi.fmp = text\sidelish.fmt
+text\sidelsha.fmp = text\sidelish.fmt ; 20070926
+text\sidelshd.fmp = text\sidelish.fmt ; 20070926
+
+text\sidelsta.fma = text\sidelist.fmt
+text\sidelstc.fma = text\sidelist.fmt
+text\sidelstd.fma = text\sidelist.fmt
+text\sidelstp.fma = text\sidelist.fmt
+text\sidelstt.fma = text\sidelist.fmt
+text\sidelstr.fma = text\sidelist.fmt
+text\sidelsti.fma = text\sidelist.fmt
+
+text\sidelsha.fma = text\sidelish.fmt
+text\sidelshc.fma = text\sidelish.fmt
+text\sidelshd.fma = text\sidelish.fmt
+text\sidelshp.fma = text\sidelish.fmt
+text\sidelsht.fma = text\sidelish.fmt
+text\sidelshr.fma = text\sidelish.fmt
+text\sidelshi.fma = text\sidelish.fmt
+
+text\sidelsta.fmd = text\sidelist.fmt
+text\sidelstc.fmd = text\sidelist.fmt
+text\sidelstd.fmd = text\sidelist.fmt
+text\sidelstp.fmd = text\sidelist.fmt
+text\sidelstt.fmd = text\sidelist.fmt
+text\sidelstr.fmd = text\sidelist.fmt
+text\sidelsti.fmd = text\sidelist.fmt
+
+text\sidelsha.fmd = text\sidelish.fmt
+text\sidelshc.fmd = text\sidelish.fmt
+text\sidelshd.fmd = text\sidelish.fmt
+text\sidelshp.fmd = text\sidelish.fmt
+text\sidelsht.fmd = text\sidelish.fmt
+text\sidelshr.fmd = text\sidelish.fmt
+text\sidelshi.fmd = text\sidelish.fmt
+
+text\sidelstc.fmt = text\sidelist.fmt
+text\sidelstm.fmt = text\sidelist.fmt
+text\sidelstp.fmt = text\sidelist.fmt
+text\sidelstr.fmt = text\sidelist.fmt
+text\sidelsti.fmt = text\sidelist.fmt
+
+text\sidelshc.fmt = text\sidelish.fmt
+text\sidelshm.fmt = text\sidelish.fmt
+text\sidelshp.fmt = text\sidelish.fmt
+text\sidelshr.fmt = text\sidelish.fmt
+text\sidelshi.fmt = text\sidelish.fmt
+
+text\aplanpu_.fmp = text\aplan_u_.fmp
+text\aplanp__.fmp = text\aplan___.fmp
+text\aplanps_.fmp = text\aplan_s_.fma
+text\aplan_s_.fmp = text\aplan_s_.fma
+
+text\aplanpu_.fma = text\aplan_u_.fma
+text\aplanp__.fma = text\aplan___.fmp
+text\aplan___.fma = text\aplan___.fmp
+text\aplanps_.fma = text\aplan_s_.fma
+
+text\aplan___.fmd = text\aplan___.fmp   ; 20070214
+                                        ; 20070806  text\aplan_s_.fmd = text\aplan_s_.fma   ; 20070214
+text\aplan_u_.fmd = text\aplan_u_.fma   ; 20070214
+
+
+text\aplanpu_.fmt = text\aplan_u_.fma
+text\aplanp__.fmt = text\aplan___.fmp
+text\aplan_u_.fmt = text\aplan_u_.fma
+text\aplan___.fmt = text\aplan___.fmp
+text\aplanps_.fmt = text\aplan_s_.fma
+text\aplan_s_.fmt = text\aplan_s_.fma
+
+text\webfix.fma   = text\webfix.fmt
+text\webdec.fma   = text\webdec.fmt
+text\webfix.fmd   = text\webfix.fmt   ; 20070214
+text\webdec.fmd   = text\webdec.fmt   ; 20070214
+
+
+text\reqr__u_.fma = text\reqr____.fma
+text\reqr__r_.fma = text\reqr____.fma
+text\reqr__s_.fma = text\reqr____.fma
+
+; text\reqr__a_.fmd = text\reqr__a_.fma ; 20070214  ; 20070711 GPK
+; text\reqr_1u_.fmd = text\reqr_1u_.fma ; 20070214  ; 20070711 GPK
+; text\reqr_1r_.fmd = text\reqr_1r_.fma ; 20070214  ; 20070711 GPK
+text\reqr_2r_.fmd = text\reqr_2r_.fma   ; 20070214  ;
+text\reqr_1s_.fmd = text\reqr_1s_.fma   ; 20070214  ;
+text\reqr____.fmd = text\reqr____.fma   ; 20070214  ;
+text\reqr__u_.fmd = text\reqr____.fma   ; 20070214  ;
+text\reqr__r_.fmd = text\reqr____.fma   ; 20070214  ;
+text\reqr__s_.fmd = text\reqr____.fma   ; 20070214  ;
+
+
+text\reqr_1u_.fmt = text\reqr_1u_.fma
+text\reqr_1r_.fmt = text\reqr_1r_.fma
+text\reqr_1s_.fmt = text\reqr_1s_.fma
+text\reqr____.fmt = text\reqr____.fma
+
+text\reqr__u_.fmp = text\reqr____.fma
+text\reqr_2r_.fmp = text\reqr_2r_.fma
+text\reqr__s_.fmp = text\reqr____.fma
+text\reqr__a_.fmp = text\reqr__a_.fma
+text\reqr____.fmp = text\reqr____.fma
+
+text\actec_s_.fmp = text\actec_s_.fma
+text\actec_c_.fmp = text\actec_c_.fma
+text\actec_t_.fmp = text\actec_t_.fma
+text\actec_b_.fmp = text\actec_b_.fma
+text\actec_e_.fmp = text\actec_e_.fma
+text\actec_p_.fmp = text\actec_p_.fma
+text\actec_a_.fmp = text\actec_a_.fma
+text\acte__z_.fmp = text\acte__z_.fma
+text\actea_i_.fmp = text\actea_i_.fma
+text\actea_m_.fmp = text\actea_m_.fma
+text\actea_l_.fmp = text\actea_l_.fma
+text\actep_h_.fmp = text\actep_h_.fma
+text\actep_p_.fmp = text\actep_p_.fma
+text\actep_b_.fmp = text\actep_b_.fma
+text\actep_c_.fmp = text\actep_c_.fma
+text\actep_j_.fmp = text\actep_j_.fma
+text\actep_a_.fmp = text\actep_a_.fma
+text\actea_p_.fmp = text\actea_p_.fma
+text\actep_x_.fmp = text\actep_x_.fma
+
+text\actec_s_.fmt = text\actec_s_.fma
+text\actec_c_.fmt = text\actec_c_.fma
+text\actec_t_.fmt = text\actec_t_.fma
+text\actec_b_.fmt = text\actec_b_.fma
+text\actec_e_.fmt = text\actec_e_.fma
+text\actec_p_.fmt = text\actec_p_.fma
+text\actec_a_.fmt = text\actec_a_.fma
+text\acte__z_.fmt = text\acte__z_.fma
+text\actea_i_.fmt = text\actea_i_.fma
+text\actea_m_.fmt = text\actea_m_.fma
+text\actea_l_.fmt = text\actea_l_.fma
+text\actep_h_.fmt = text\actep_h_.fma
+text\actep_p_.fmt = text\actep_p_.fma
+text\actep_b_.fmt = text\actep_b_.fma
+text\actep_c_.fmt = text\actep_c_.fma
+text\actep_j_.fmt = text\actep_j_.fma
+text\actep_a_.fmt = text\actep_a_.fma
+text\actea_p_.fmt = text\actea_p_.fma
+text\actep_x_.fmt = text\actep_x_.fma
+
+text\actec_s_.fmd = text\actec_s_.fma   ; 20070214  ;
+text\actec_c_.fmd = text\actec_c_.fma   ; 20070214  ;
+text\actec_t_.fmd = text\actec_t_.fma   ; 20070214  ;
+text\actec_b_.fmd = text\actec_b_.fma   ; 20070214  ;  -
+text\actec_e_.fmd = text\actec_e_.fma   ; 20070214  ;
+text\actec_p_.fmd = text\actec_p_.fma   ; 20070214  ;  -
+text\actec_a_.fmd = text\actec_a_.fma   ; 20070214  ;
+text\acte__z_.fmd = text\acte__z_.fma   ; 20070214  ;
+text\actea_i_.fmd = text\actea_i_.fma   ; 20070214  ;
+text\actea_m_.fmd = text\actea_m_.fma   ; 20070214  ; 
+text\actea_l_.fmd = text\actea_l_.fma   ; 20070214  ;
+text\actep_h_.fmd = text\actep_h_.fma   ; 20070214  ;
+text\actep_p_.fmd = text\actep_p_.fma   ; 20070214  ;
+text\actep_b_.fmd = text\actep_b_.fma   ; 20070214  ;
+text\actep_c_.fmd = text\actep_c_.fma   ; 20070214  ;
+text\actep_j_.fmd = text\actep_j_.fma   ; 20070214  ;
+text\actep_a_.fmd = text\actep_a_.fma   ; 20070214  ;
+text\actea_p_.fmd = text\actea_p_.fma   ; 20070214  ; -
+text\actep_x_.fmd = text\actep_x_.fma   ; 20070214  ;
+text\acte____.fmd = text\acte____.fma   ; 20070214  ;
+
+text\archbk.fmp   = text\archbk.fma
+text\archbk_n.fmp = text\archbk_n.fma   ; 20060302
+text\archbk.fmt   = text\archbk.fma
+text\archbk_n.fmt = text\archbk_n.fma   ; 20060302
+text\archbk.fmd   = text\archbk.fma     ; 20070214 
+text\archbk_n.fmd = text\archbk_n.fma   ; 20070214
+
+text\poldec.fmp   = text\poldec.fma
+text\poldec.fmt   = text\poldec.fma
+text\poldec.fmd   = text\poldec.fma     ; 20070214 
+
+text\provbk.fmp   = text\provbk.fma
+text\provbk_n.fmp = text\provbk_n.fma    ; 20060208
+text\provbk.fmt   = text\provbk.fma
+text\provbk_n.fmt = text\provbk_n.fma    ; 20060208
+
+text\provbk.fmd   = text\provbk.fma      ; 20070214
+text\provbk_n.fmd = text\provbk_n.fma    ; 20070214
+
+text\sesdistr.fmp = text\sesdistr.fma
+text\sesdistr.fmt = text\sesdistr.fma
+text\sesdistr.fmd = text\sesdistr.fma    ; 20070214
+
+text\outrglet.fmt = text\outrglet.fma
+text\outrglfk.fmt = text\outrglfk.fma
+
+; text\outrglet.fmd = text\outrglet.fma   ; 20070214
+; text\outrglfk.fmd = text\outrglfk.fma   ; 20070214
+
+text\retlower.fmt = text\retlower.fmp
+text\retlowfk.fmt = text\retlowfk.fmp
+
+text\disthisb.fmt = text\disthisb.fma
+text\disthisu.fmt = text\disthisu.fma
+
+text\disthisb.fmp = text\disthisb.fma
+text\disthisu.fmp = text\disthisu.fma
+
+text\DisFHisB.fmd = text\DisFHisB.fma   ; 20070214  ? 
+text\DisFHisU.fmd = text\DisFHisU.fma   ; 20070214  ?
+text\DistHisU.fmd = text\DistHisU.fma   ; 20070214
+text\DistHisB.fmd = text\DistHisB.fma   ; 20070214
+
+
+text\penaltya.fma = text\penaltyg.fma
+text\penaltyc.fma = text\penaltyg.fma
+text\penaltyd.fma = text\penaltyg.fma
+text\penaltyp.fma = text\penaltyg.fma
+text\penaltyt.fma = text\penaltyg.fma
+
+text\penaltya.fmd = text\penaltyg.fma  ; 20070214
+text\penaltyc.fmd = text\penaltyg.fma
+text\penaltyd.fmd = text\penaltyg.fma
+text\penaltyp.fmd = text\penaltyg.fma
+text\penaltyt.fmd = text\penaltyg.fma
+text\penaltyg.fmd = text\penaltyg.fma ; 20071106
+
+text\penaltyc.fmp = text\penaltyg.fma
+text\penaltyp.fmp = text\penaltyg.fma
+text\penaltyg.fmp = text\penaltyg.fma ; .jun.2004
+text\penaltyt.fmp = text\penaltyg.fma ; .jun.2004
+text\penaltya.fmp = text\penaltyg.fma ; .20070926  
+text\penaltyd.fmp = text\penaltyg.fma ; .20070926
+
+text\penaltyc.fmt = text\penaltyg.fma
+text\penaltym.fmt = text\penaltyg.fma
+text\penaltyp.fmt = text\penaltyg.fma
+text\penaltyg.fmt = text\penaltyg.fma
+
+text\penalt_a.fma = text\penalt_g.fma
+text\penalt_c.fma = text\penalt_g.fma
+text\penalt_d.fma = text\penalt_g.fma
+text\penalt_p.fma = text\penalt_g.fma
+text\penalt_t.fma = text\penalt_g.fma
+
+text\penalt_a.fmd = text\penalt_g.fma  ; 20070214
+
+
+text\penalt_c.fmp = text\penalt_g.fma
+text\penalt_p.fmp = text\penalt_g.fma
+text\penalt_t.fmp = text\penalt_g.fma ; .jun.2004
+text\penalt_a.fmp = text\penalt_g.fma ; .20070926 
+text\penalt_d.fmp = text\penalt_g.fma ; .20070926 
+
+text\penalt_c.fmt = text\penalt_g.fma
+text\penalt_m.fmt = text\penalt_g.fma
+text\penalt_p.fmt = text\penalt_g.fma
+
+text\cashwarr.fmp = text\cashwarr.fma
+text\cashwarr.fmt = text\cashwarr.fma
+
+text\omaillst.fmp = text\omaillst.fma
+text\omaillst.fmt = text\omaillst.fma
+text\omaillst.fmd = text\omaillst.fma  ;  20070214
+
+text\subplist.fmt = text\subplist.fma
+text\subplst1.fmt = text\subplst1.fma
+text\subplst2.fmt = text\subplst2.fma
+text\subplst3.fmt = text\subplst3.fma
+
+text\subplist.fmp = text\subplist.fma
+text\subplst1.fmp = text\subplst1.fma
+text\subplst2.fmp = text\subplst2.fma
+text\subplst3.fmp = text\subplst3.fma
+
+text\subplist.fmd = text\subplist.fma  ;  20070214
+text\subplst1.fmd = text\subplst1.fma  ;  20070214
+text\subplst2.fmd = text\subplst2.fma  ;  20070214
+text\subplst3.fmd = text\subplst3.fma  ;  20070214
+
+text\ecashwar.fmt = text\ecashwar.fma
+text\ecashwar.fmp = text\ecashwar.fma
+text\ecashwar.fmd = text\ecashwar.fma  ;  20070214
+
+text\knplisth.fmp = text\knplisth.fma
+text\knplist.fmp  = text\knplist.fma
+
+text\knplisth.fmt = text\knplisth.fma
+text\knplist.fmt  = text\knplist.fma
+
+text\knplisth.fmd = text\knplisth.fma  ; 20070214
+text\knplist.fmd  = text\knplist.fma   ; 20070214
+
+text\wholein.fmp = text\wholein.fma
+text\wholein.fmt = text\wholein.fma
+
+text\slow_bk.fma = text\slowcbk.fma ; 20060207  кн.жалби за бавност - ГрД+ТрД  ОС
+text\slowtbk.fma = text\slowcbk.fma ; 20060207  кн.жалби за бавност - ТрД      ОС
+text\slow_bk.fmp = text\slowcbk.fmp ; 20060207  кн.жалби за бавност - ГрД+ТрД  AС
+text\slowtbk.fmp = text\slowcbk.fmp ; 20060207  кн.жалби за бавност - ТрД      AС
+text\slowdbk.fmp = text\slowcbk.fmp ; 20070926  кн.жалби за бавност - ТрД K    AС
+text\slowabk.fmp = text\slowcbk.fmp ; 20070926  кн.жалби за бавност - ГрД K    AС
+
+text\slowabk.fmd = text\slowcbk.fma ; 20070214  кн.жалби за бавност ?
+
+text\execsbk.fmd = text\execsbk.fma ; 20070214
+text\exec_bk.fmd = text\exec_bk.fma ; 20070214
+
+text\Ju001pi.fmd = text\Ju001pi.fma ; 20070214
+text\Ju001ci.fmd = text\Ju001ci.fma ; 20070214
+text\Ju002ci.fmd = text\Ju002ci.fma ; 20070214
+
+text\Slst0var.fmd = text\Slst0var.fma ; 20070214
+text\slst1var.fmd = text\slst1var.fma ; 20070214
+text\Slst2var.fmd = text\Slst2var.fma ; 20070214
+text\Slst4var.fmd = text\Slst4var.fmt ; 20080310
+
+text\Slst4var.fma = text\Slst4var.fmt ; 20080310
+
+; text\Slst4var.fmp = text\Slst4var.fmt 
+text\634TLaw.fmd = text\634TLaw.fma ;  20070214
+
+text\clsjpcol.fmd = text\clsjpcol.fma ; 20070214
+
+text\WholeIn.fmd  = text\WholeIn.fma ; 20070214
+
+text\RetLowFK.fmd  = text\RetLowFK.fma ; 20070223
+text\RetLower.fmd  = text\RetLower.fma ; 20070223
+
+;text\reportpi.fma = text\reportpe.fma
+;text\reportgs.fma = text\report_s.fma
+;text\reportps.fma = text\reporeps.fma
+;text\repo2_pi.fma = text\repo2_pe.fma
+;text\announ1d.fma = text\announce.fmt
+;text\abcbpcol.fma = text\abcb_col.fma
+;text\aplinbk.fmp  = text\aplinbk.fma
+;text\apsinbk.fmp  = text\apsinbk.fma
+;text\exec_bk.fmt  = text\exec_bk.fma
+;text\execsbk.fmt  = text\execsbk.fma
+;text\summ__os.fmt = text\summonfs.fmt
+;text\slstacol.fma = text\slst_col.fma
+;text\slstccol.fma = text\slst_col.fma
+;text\slsttcol.fma = text\slst_col.fma
+;text\slstdcol.fma = text\slst_col.fma
+;text\reportcc.fmt = text\report_i.fmt
+;text\reportgc.fmt = text\report_i.fmt
+;text\reportmc.fmt = text\report_i.fmt
+;text\slstmcol.fmt = text\slstccol.fmt
+;text\aplan_u_.fmp = text\aplan_u_.fmp
+;text\perslstc.fmp = text\perslst_.fmt ;.jul.2001
+;text\perslstp.fmp = text\perslst_.fmt
+;text\perslsta.fma = text\perslst_.fmt
+;text\perslstc.fma = text\perslst_.fmt
+;text\perslstd.fma = text\perslst_.fmt
+;text\perslstt.fma = text\perslst_.fmt
+;text\perslstc.fmt = text\perslst_.fmt
+;text\perslstm.fmt = text\perslst_.fmt
+;text\perslstp.fmt = text\perslst_.fmt
+;text\invsccol.fma = text\invs_col.fma ;.oct.2001
+;text\aplanpu_.fma = text\aplan_u_.fmp
+;text\aplan_u_.fma = text\aplan_u_.fmp
+;text\aplanpu_.fmt = text\aplan_u_.fmp
+;text\aplan_u_.fmt = text\aplan_u_.fmp
+;text\slowcbk.fmp  = text\slowcbk.fma
+;text\summp_bs.fma = text\summg_bs.fmt ;.nov.2001
+
+;text\repo2_as.fma = text\repo2eas.fma ; .mar.2002 commented
+;text\repo2_ts.fma = text\repo2_cs.fma ; .mar.2002 commented
+;text\repo2ets.fma = text\repo2ecs.fma ; .mar.2002 commented
+
+;text\repo2ecs.fmp = text\repo2ecs.fma ; .mar.2002 commented
+
+;text\reporecs.fmt = text\reportcs.fmt ; .mar.2002 commented
+;text\reporems.fmt = text\reportms.fmt ; .mar.2002 commented
+;text\reporegs.fmt = text\reportgs.fmt ; .mar.2002 commented
+
+;text\reportcs.fma = text\report_s.fma ; .mar.2002 commented
+;text\reportgs.fma = text\repore_s.fma ; .mar.2002 commented
+;text\reportts.fma = text\report_s.fma ; .mar.2002 commented
+;text\reportds.fma = text\repore_s.fma ; .mar.2002 commented
+
+;text\reportas.fma = text\reporeas.fma ; .mar.2002 commented
+
+;text\reporecs.fma = text\repore_s.fma ; .mar.2002 commented
+;text\reporegs.fma = text\repore_s.fma ; .mar.2002 commented
+;text\reporets.fma = text\repore_s.fma ; .mar.2002 commented
+;text\reporeds.fma = text\repore_s.fma ; .mar.2002 commented
+
+;text\reportab.fma = text\report_b.fma ; .mar.2002 commented
+;text\reportcb.fma = text\report_b.fma ; .mar.2002 commented
+;text\reportgb.fma = text\report_b.fma ; .mar.2002 commented
+;text\reportpb.fma = text\report_b.fma ; .mar.2002 commented
+;text\reporttb.fma = text\report_b.fma ; .mar.2002 commented
+
+;text\repo2_ab.fma = text\repo2__b.fma ; .mar.2002 commented
+;text\repo2_cb.fma = text\repo2__b.fma ; .mar.2002 commented
+;text\repo2_gb.fma = text\repo2__b.fma ; .mar.2002 commented
+;text\repo2_pb.fma = text\repo2__b.fma ; .mar.2002 commented
+;text\repo2_tb.fma = text\repo2__b.fma ; .mar.2002 commented
+
+;text\repo2_ab.fma = text\repo2__b.fma ; .mar.2002 commented
+;text\repo2_cb.fma = text\repo2__b.fma ; .mar.2002 commented
+;text\repo2_gb.fma = text\repo2__b.fma ; .mar.2002 commented
+;text\repo2_pb.fma = text\repo2__b.fma ; .mar.2002 commented
+;text\repo2_tb.fma = text\repo2__b.fma ; .mar.2002 commented
+
+;text\reportcs.fma = text\reporsgi.fma ; .may.2002 commented
+;text\reportgs.fma = text\reporsge.fma ; .may.2002 commented
+;text\reportts.fma = text\reporsgi.fma ; .may.2002 commented
+;text\reportds.fma = text\reporsge.fma ; .may.2002 commented
+
+;text\reportas.fma = text\reporsae.fma ; .may.2002 commented
+
+;text\reporecs.fma = text\reporsge.fma ; .may.2002 commented
+;text\reporegs.fma = text\reporsge.fma ; .may.2002 commented
+;text\reporets.fma = text\reporsge.fma ; .may.2002 commented
+;text\reporeds.fma = text\reporsge.fma ; .may.2002 commented
+
+;text\repo2_as.fma = text\repo2sae.fma ; .may.2002 commented
+;text\repo2_ts.fma = text\repo2sci.fma ; .may.2002 commented
+;text\repo2ets.fma = text\repo2sce.fma ; .may.2002 commented
+
+;text\repo2ecs.fmp = text\repo2sce.fma ; .may.2002 commented
+
+;text\reporecs.fmt = text\reporsci.fmt ; .may.2002 commented
+;text\reporems.fmt = text\reporsmi.fmt ; .may.2002 commented
+;text\reporegs.fmt = text\reporsgi.fmt ; .may.2002 commented
+
+;text\reporttb.fma = text\reportab.fma ; .may.2002 commented (bugfix)
+
+;text\judgege.fma = text\judge_e.fma
+;text\judgeae.fma = text\judge_e.fma
+
+;text\retlower.fma = text\retlower.fmp
+;text\retlowfk.fma = text\retlowfk.fmp
+
+;text\aplan___.fmp = text\aplan___.fmp
+
+text\webfix.fmp   = text\webfix.fmt
+text\webdec.fmp   = text\webdec.fmt
+
+;text\perslist.fmp = text\perslist.fma
+;text\perslist.fmt = text\perslist.fma
+
+***_END

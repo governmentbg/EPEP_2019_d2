@@ -1,0 +1,42 @@
+#include "shared.pre"
+#include "appname.pre"
+
+INSERT INTO T_EISPP_DEPART VALUES (1101, 1900001770, 'С-р БОП - Враца,Монтана', 'БЦЛ', 1, 'str_bvrm');
+INSERT INTO T_EISPP_DEPART VALUES (1101, 1900001771, 'С-р БОП - Плевен,Ловеч', 'БЦМ', 1, 'str_bpll');
+INSERT INTO T_EISPP_DEPART VALUES (1101, 1900001772, 'С-р БОП - Силистра,Добрич', 'БЦН', 1, 'str_bssd');
+INSERT INTO T_EISPP_DEPART VALUES (1101, 1900001773, 'С-р 04 "Каналджийство" - Отдел 03 - ГДБОП', 'АЕП', 1, 'str_aep');
+INSERT INTO T_EISPP_DEPART VALUES (1101, 1900001774, 'С-р 03 "Корупция в терит.органи на държавната власт и измами с фондове на ЕС" - Отдел 04 - ГДБОП', 'АЕР', 1, 'str_aer');
+INSERT INTO T_EISPP_DEPART VALUES (1101, 1900001775, 'С-р 03 "Дигитални анализи и открити източници" - Отдел 10 - ГДБОП', 'АЕС', 1, 'str_aes');
+INSERT INTO T_EISPP_DEPART VALUES (1101, 1900001776, 'С-р 02 "Противоправно съдържание в Интернет" - Отдел 10 - ГДБОП', 'АЕТ', 1, 'str_aet');
+INSERT INTO T_EISPP_DEPART VALUES (1101, 1900001777, 'С-р 01 "Кибератаки" - Отдел 10 - ГДБОП', 'АЕУ', 1, 'str_aeu');
+
+UPDATE T_EISPP_DEPART SET F_NAME = 'Следствен отдел в ОП Благоевград' WHERE F_CODE = 9064;
+UPDATE T_EISPP_DEPART SET F_NAME = 'Следствен отдел в ОП Бургас' WHERE F_CODE = 9065;
+UPDATE T_EISPP_DEPART SET F_NAME = 'Следствен отдел в ОП В.Търново' WHERE F_CODE = 9067;
+UPDATE T_EISPP_DEPART SET F_NAME = 'Следствен отдел в ОП Варна' WHERE F_CODE = 9066;
+UPDATE T_EISPP_DEPART SET F_NAME = 'Следствен отдел в ОП Видин' WHERE F_CODE = 9068;
+UPDATE T_EISPP_DEPART SET F_NAME = 'Следствен отдел в ОП Враца' WHERE F_CODE = 9069;
+UPDATE T_EISPP_DEPART SET F_NAME = 'Следствен отдел в ОП Габрово' WHERE F_CODE = 9070;
+UPDATE T_EISPP_DEPART SET F_NAME = 'Следствен отдел в ОП Добрич' WHERE F_CODE = 9071;
+UPDATE T_EISPP_DEPART SET F_NAME = 'Следствен отдел в ОП Кърджали' WHERE F_CODE = 9072;
+UPDATE T_EISPP_DEPART SET F_NAME = 'Следствен отдел в ОП Кюстендил' WHERE F_CODE = 9073;
+UPDATE T_EISPP_DEPART SET F_NAME = 'Следствен отдел в ОП Ловеч' WHERE F_CODE = 9074;
+UPDATE T_EISPP_DEPART SET F_NAME = 'Следствен отдел в ОП Монтана' WHERE F_CODE = 9075;
+UPDATE T_EISPP_DEPART SET F_NAME = 'Следствен отдел в ОП Пазарджик' WHERE F_CODE = 9076;
+UPDATE T_EISPP_DEPART SET F_NAME = 'Следствен отдел в ОП Перник' WHERE F_CODE = 9077;
+UPDATE T_EISPP_DEPART SET F_NAME = 'Следствен отдел в ОП Плевен' WHERE F_CODE = 9078;
+UPDATE T_EISPP_DEPART SET F_NAME = 'Следствен отдел в ОП Пловдив' WHERE F_CODE = 9079;
+UPDATE T_EISPP_DEPART SET F_NAME = 'Следствен отдел в ОП Разград' WHERE F_CODE = 9080;
+UPDATE T_EISPP_DEPART SET F_NAME = 'Следствен отдел в ОП Русе' WHERE F_CODE = 9081;
+UPDATE T_EISPP_DEPART SET F_NAME = 'Следствен отдел в ОП Силистра' WHERE F_CODE = 9082;
+UPDATE T_EISPP_DEPART SET F_NAME = 'Следствен отдел в ОП Сливен' WHERE F_CODE = 9083;
+UPDATE T_EISPP_DEPART SET F_NAME = 'Следствен отдел в ОП Смолян' WHERE F_CODE = 9084;
+UPDATE T_EISPP_DEPART SET F_NAME = 'Следствен отдел в ОП София' WHERE F_CODE = 9085;
+UPDATE T_EISPP_DEPART SET F_NAME = 'Следствен отдел в ОП Ст.Загора' WHERE F_CODE = 9086;
+UPDATE T_EISPP_DEPART SET F_NAME = 'Следствен отдел в ОП Търговище' WHERE F_CODE = 9087;
+UPDATE T_EISPP_DEPART SET F_NAME = 'Следствен отдел в ОП Хасково' WHERE F_CODE = 9088;
+UPDATE T_EISPP_DEPART SET F_NAME = 'Следствен отдел в ОП Шумен' WHERE F_CODE = 9089;
+UPDATE T_EISPP_DEPART SET F_NAME = 'Следствен отдел в ОП Ямбол' WHERE F_CODE = 9090;
+UPDATE T_EISPP_DEPART SET F_NAME = 'Следствен отдел в ОП, определен служебно' WHERE F_CODE = 14455;
+UPDATE T_EISPP_DEPART SET F_NAME = 'Следствен отдел в СГП' WHERE F_CODE = 12661;
+UPDATE T_EISPP_DEPART SET F_NAME = 'Отдел 10 "Киберпрестъпност" - ГДБОП' WHERE F_CODE = 14425;

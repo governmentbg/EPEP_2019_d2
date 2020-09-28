@@ -1,0 +1,36 @@
+#include "cac.h"
+
+#include "AliasFace.cpp"
+#include "StringAliasFace.cpp"
+#include "LongAliasFace.cpp"
+#include "CharAliasFace.cpp"
+
+#include "ArticleAliasFace.cpp"
+#include "DangerAliasFace.cpp"
+#include "FindLongAliasFace.cpp"
+#include "ReceiverAliasFace.cpp"
+#include "NIATDepAliasFace.cpp"
+
+#include "AreaAliasFace.cpp"
+#include "RegionAliasFace.cpp"
+#include "UCLPAliasFace.cpp"
+#include "SenderAliasFace.cpp"
+#include "SLCReasonAliasFace.cpp"
+
+#include "JurorAliasFace.cpp"
+#include "KnownAliasFace.cpp"
+#include "PersonAliasFace.cpp"
+#include "UserAliasFace.cpp"
+#include "CurrencyAliasFace.cpp"
+
+#include "ConnectKindAliasFace.cpp"
+#include "CompositionAliasFace.cpp"
+#include "PersonDistribAliasFace.cpp"
+#include "XferKindAliasFace.cpp"
+#include "VSSIndexAliasFace.cpp"
+
+#include "GetContainerAliasFace.cpp"
+#include "FindAddrAliasFace.cpp"
+#include "FindUCLPAliasFace.cpp"
+#include "FindStreetAliasFace.cpp"
+#include "SubjectAliasFace.cpp"

@@ -1,0 +1,119 @@
+***_TITLE
+<html>
+<head>
+<title>Списък на страните</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<style>
+<!--
+body
+{
+	font-family:Arial;
+	font-size:10pt;
+	font-weight:normal;
+	color:black;
+	background-color:white
+}
+
+table
+{
+	border-right-width:0;
+	border-bottom-width:0;
+	color:black;
+	background-color:white;
+}
+
+td
+{
+	font-family:Arial;
+	font-size:10pt;
+	font-weight:normal;
+	color:black;
+	background-color:white;
+	border-left-width:0;
+	border-top-width:0;
+	vertical-align:top;
+}
+
+th
+{
+	font-family:Arial;
+	font-size:10pt;
+	color:black;
+	background-color:white;
+	border-left-width:0;
+	border-top-width:0;
+	vertical-align:top;
+}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF">
+<center>
+***_END
+***_FORMATTED_HEADER
+<h2>СПИСЪК НА СТРАНИТЕ</h2>
+по #@ 76003 255# <br>
+No #@ 76001 1#/#@ 76002 4# г.<br><br>#
+***_END
+***_HEADER
+<table cellSpacing=0 cellPadding=1 border=1 width="100%">
+<thead>
+<tr>
+<th width="5%">No по ред</th>
+<th width="12%">Участие</th>
+<th width="29%">Име на лицето</th>
+<th width="39%">Местожителство и адрес</th>
+<th width="15%">Забележка</th>
+</tr>
+</thead>
+
+<tbody>
+***_END
+***_TABLE_ROW
+<tr>
+<td align="right">#@ 24001 255#</td>
+<td>#@ 24002 1000#</td>
+<td>#@ 24007 1000#</td>
+<td>#@ 24008 1000#</td>
+<td>#@ 24005 1000#</td>
+</tr>
+***_END
+***_MEDIUM_LINE
+‘———————————————————————†———————————————————————’
+***_END
+***_WANT_KINDS
+NO
+***_END
+***_SUBJECTS
+***_END
+***_SUBJECT_RANGES
+***_END
+***_MERGED_KINDS
+***_END
+***_TAIL
+</tbody>
+</table>
+</center>
+</body>
+</html>
+***_END
+***_PARAMETERS
+49 55 1 1
+***_END
+
+***_COLUMNS
+5 0
+24001  1000
+24002  1000 
+24007  1000   ; 24003 34 1
+24008  1000   ; 24004 42 1
+24005  1000
+***_END
+
+|  6   |   6  |   5 |    11     |               31              |                 32             |               32               |    8   |          21         |         17      |    9    |       17        |
+  spare new page symbols        (do not remove!)
+  spare condensed print symbols (do not remove!)
+  spare normal print symbols    (do not remove!)
+<h2>СПИСЪК НА СТРАНИТЕ</h2>
+по #@ 1003 255# <br>
+No #@ 1001 1#/#@ 1002 4# г.<br><br>#

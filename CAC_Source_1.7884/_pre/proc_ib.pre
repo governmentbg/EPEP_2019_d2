@@ -1,0 +1,12 @@
+SET TERM ^ ;
+
+#define PROCEDURE PROCEDURE
+#define BEGIN AS BEGIN
+#define ENDPROC END ^
+#define qa(id) :id
+#define EXECUTE EXECUTE PROCEDURE
+#define ENDIF
+
+#include "proc_.pre"
+
+SET TERM ; ^

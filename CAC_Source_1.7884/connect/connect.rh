@@ -1,0 +1,94 @@
+#if !defined(connect_rh)   // Sentry use file only if it's not already included.
+#define connect_rh
+
+
+#define IDD_CONNECT	24003
+
+#define IDC_CONNECT_ALIAS	101
+#define IDC_CONNECT_VALUE	102
+
+#define IDD_WAIT	23162
+
+#define IDC_WAIT_TEXT	101
+
+//
+// General & application exception messages (include/owl/except.rh)
+//
+#define IDS_UNKNOWNEXCEPTION    32767
+#define IDS_OWLEXCEPTION        32766
+#define IDS_OKTORESUME          32765
+#define IDS_UNHANDLEDXMSG       32764
+#define IDS_UNKNOWNERROR        32763
+#define IDS_NOAPP               32762
+#define IDS_OUTOFMEMORY         32761
+#define IDS_INVALIDMODULE       32760
+#define IDS_INVALIDMAINWINDOW   32759
+#define IDS_VBXLIBRARYFAIL      32758
+
+//
+// Owl 1 compatibility messages
+//
+#define IDS_INVALIDWINDOW       32709
+#define IDS_INVALIDCHILDWINDOW  32708
+#define IDS_INVALIDCLIENTWINDOW 32707
+
+//
+// TXWindow messages
+//
+#define IDS_CLASSREGISTERFAIL   32749
+#define IDS_CHILDREGISTERFAIL   32748
+#define IDS_WINDOWCREATEFAIL    32747
+#define IDS_WINDOWEXECUTEFAIL   32746
+#define IDS_CHILDCREATEFAIL     32745
+
+#define IDS_MENUFAILURE         32744
+#define IDS_VALIDATORSYNTAX     32743
+#define IDS_PRINTERERROR        32742
+
+#define IDS_LAYOUTINCOMPLETE    32741
+#define IDS_LAYOUTBADRELWIN     32740
+
+//
+// TXGdi messages
+//
+#define IDS_GDIFAILURE          32739
+#define IDS_GDIALLOCFAIL        32738
+#define IDS_GDICREATEFAIL       32737
+#define IDS_GDIRESLOADFAIL      32736
+#define IDS_GDIFILEREADFAIL     32735
+#define IDS_GDIDELETEFAIL       32734
+#define IDS_GDIDESTROYFAIL      32733
+#define IDS_INVALIDDIBHANDLE    32732
+
+//
+// TXFailure message
+//
+#define IDS_FAILURE	25000
+
+
+//
+// Validation messages (include/owl/validate.rh)
+//
+#define IDS_VALPXPCONFORM       32520
+#define IDS_VALINVALIDCHAR      32521
+#define IDS_VALNOTINRANGE       32522
+#define IDS_VALNOTINLIST        32523
+
+
+// Commands
+//
+#define CM_EXIT             24310
+#define CM_EDITPASTE        24324
+
+
+//
+// Default ObjectWindows app icon ID (include/owl/window.rh)
+//
+#define IDI_OWLAPP          32000
+#define IDI_OWLAPPSM        32001
+
+
+#define IDI_CONNECT	100
+
+
+#endif  // appnameapp_rh

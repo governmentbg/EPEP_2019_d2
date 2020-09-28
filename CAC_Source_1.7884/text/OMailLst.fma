@@ -1,0 +1,151 @@
+***_TITLE
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="Abc_B_fi___filelist.xml">
+<style>
+<!--
+table
+{
+	border-right-width:0;
+	border-bottom-width:0;
+}
+
+th
+{
+	border-left-width:0;
+	border-top-width:0;
+	font-family:"Arial";
+}
+
+td
+{
+	border-left-width:0;
+	border-top-width:0;
+	font-family:"Arial";
+}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF">
+<font face="Arial" color="#000000" size=3>
+***_END
+***_FORMATTED_HEADER
+<center>#
+<h3>#@ 1 255 ; 7063 - крайната дата, 13 - днешна дата#<br>#
+СПИСЪК НА ИЗХОДЯЩИТЕ ПИСМА<br>#
+#@ 7069 255 ; 7068 255 - период на подготвяне#
+</h3>#
+</center>#
+***_END
+***_HEADER
+***_END
+***_START_OF_ORDINARY
+<br>#
+<table border=1 cellspacing=0>#
+<tr>#
+<td colspan=2><b>ОБИКНОВЕНИ</b></td>#
+</tr>#
+***_END
+***_ORDINARY_ROW
+<tr>#
+<td>#@ 70006 255 ; Вид обикновена поща#</td>#
+<td align="right">#@ 70007 100 ; Количество обикновена поща#</td>#
+</tr>#
+***_END
+***_ORDINARY_TOTAL_ROW
+<tr>#
+<td><b>#@ 70006 255 ; Вид обикновена поща#</b></td>#
+<td align="right"><b>#@ 70007 100 ; Количество обикновена поща#</b></td>#
+</tr>#
+***_END
+***_END_OF_ORDINARY
+</table>#
+***_END
+***_START_OF_REGISTERED
+<br>#
+<table width="100%" border=1 cellspacing=0>
+<tr>#
+<td colspan=6><b>ПРЕПОРЪЧАНИ</b></td>#
+</tr>#
+***_END
+***_REGISTERED_ROW
+<tr>#
+<td align="right" valign="top">#@ 70001 255 ; No#</td>#
+<td valign="top">#@ 70002 255 ; Изх. No#</td>#
+<td valign="top"><b>#@ 70003 255 ; Изпращане#</b></td>#
+<td valign="top">#@ 70004 255 ; Получател - нас. място#</td>#
+<td valign="top">#@ 70008 600 ; Получател - адрес + забележка ; 70005 400#</td>#
+<td valign="top">#@ 70014 255 ; Баркод#</td>#
+</tr>#
+***_END
+***_REGISTERED_ROW_START_OF_GROUP
+<tr>#
+<td align="right" valign="top" #@70010 255 ; No - rowspan#>#@ 70001 255 ; No#</td>#
+<td valign="top">#@ 70002 255 ; Изх. No#</td>#
+<td valign="top" #@ 70011 255 ; Изпращане - rowspan#><b>#@ 70003 255 ; Изпращане#</b></td>#
+<td valign="top" #@ 70012 255 ; Получател - нас. място - rowspan#>#@ 70004 255 ; Получател - нас. място#</td>#
+<td valign="top" width="25%"#@ 70013 255 ; Получател - адрес - rowspan#>#@ 70005 300 ; Получател - адрес#</td>#
+<td valign="top">#@ 70009 300 ; Забележка#</td>#
+</tr>#
+***_END
+***_REGISTERED_ROW_REST_OF_GROUP
+<tr>#
+<td valign="top">#@ 70002 255 ; Изх. No#</td>#
+<td valign="top">#@ 70009 300 ; Забележка#</td>#
+</tr>#
+***_END
+***_END_OF_REGISTERED
+</table>#
+***_END
+***_HTML_PAGE_BREAK
+<br style='page-break-before:always'>
+***_END
+***_COLUMNS
+14 0
+70001 100 ; No
+70002 200 ; Изх. No
+70003 100 ; Изпращане
+70004 200 ; Получател - нас. място
+70008 600 ; Получател - адрес + забележка ; 70005 400
+70006 100 ; Вид обикновена поща
+70007 100 ; Количество обикновена поща
+70005 400 ; Получател - адрес
+70009 300 ; Забележка
+70010 100 ; No - rowspan
+70011 100 ; Изпращане - rowspan
+70012 100 ; Получател - нас. място - rowspan
+70013 100 ; Получател - адрес - rowspan
+70014 200 ; Баркод
+***_END
+***_MEDIUM_LINE
+‘—†—’
+***_END
+***_WANT_KINDS
+NO
+***_END
+***_SUBJECTS
+***_END
+***_SUBJECT_RANGES
+***_END
+***_MERGED_KINDS
+***_END
+***_FORMATTED_TAIL
+***_END
+***_TAIL
+</font>
+</body>
+</html>
+***_END
+
+***_PARAMETERS
+127 55 1 1 0 3
+***_END
+

@@ -1,0 +1,47 @@
+***_IE6_XSL
+text\wholeina.fm6
+***_END
+***_IE5_XSL
+text\wholeina.fm5
+***_END
+***_TITLE
+***_END
+***_FORMATTED_HEADER
+Входящ дневник#
+#@ 7065 255 ; @ 7053 129 2# дела#
+#@ 7066 255#
+#
+***_END
+***_HEADER
+***_END
+***_MEDIUM_LINE
+‘———————————————————————†———————————————————————’
+***_END
+***_WANT_KINDS
+NO
+***_END
+***_SUBJECTS
+***_END
+***_SUBJECT_RANGES
+***_END
+***_MERGED_KINDS
+***_END
+***_TAIL
+
+***_END
+***_PARAMETERS
+49 -59 1 1
+***_END
+
+***_COLUMNS
+5 0
+78001   8   2 ; Входящ номер
+78002  12   2 ; Дата и час на постъпване
+78003  30   1 ; Описание на документа
+78004  24   1 ; Подател
+78005  24   1 ; Направление
+***_END
+
+  spare new page symbols        (do not remove!)
+  spare condensed print symbols (do not remove!)
+  spare normal print symbols    (do not remove!)

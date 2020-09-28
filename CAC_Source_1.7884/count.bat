@@ -1,0 +1,1 @@
+make -f count.mak %*

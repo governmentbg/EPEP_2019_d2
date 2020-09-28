@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<!--
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+-->
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/TR/WD-xsl">
+<xsl:template match="/">
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=windows-1251"/>
+<title>Книга за разпоредителни и закрити заседания</title>
+<style>
+body
+{
+	font-family:Arial;
+	font-size:10pt;
+	font-weight:normal;
+	color:black;
+	background-color:white
+}
+
+table
+{
+	border-right-width:0;
+	border-bottom-width:0;
+	color:black;
+	background-color:white;
+}
+
+td
+{
+	font-family:Arial;
+	font-size:10pt;
+	font-weight:normal;
+	color:black;
+	border-left-width:0;
+	border-top-width:0;
+	vertical-align:top;
+}
+
+td.narrow
+{
+	font-family:Arial Narrow;
+	font-size:10pt;
+	font-weight:normal;
+	color:black;
+	border-left-width:0;
+	border-top-width:0;
+	vertical-align:top;
+}
+
+td.month
+{
+	font-family:Arial;
+	font-size:10pt;
+	font-weight:bold;
+	color:black;
+	border-left-width:0;
+	border-top-width:0;
+	vertical-align:top;
+	text-align:center;
+	background-color:LightYellow;
+}
+
+th
+{
+	font-family:Arial;
+	font-size:10pt;
+	color:White;
+	background-color:Blue;
+	border-left-width:0;
+	border-top-width:0;
+	vertical-align:top;
+}
+
+</style>
+</head>
+<body>
+<center>
+<xsl:apply-templates select="closedSessionsBook"/>
+</center>
+</body>
+</html>
+</xsl:template>
+
+<xsl:template match="closedSessionsBook">
+<xsl:apply-templates select="header"/>
+<xsl:apply-templates select="data"/>
+</xsl:template>
+
+<xsl:template match="data">
+<xsl:apply-templates select="page[@no=1]"/>
+<xsl:apply-templates select="page[@no &gt; 1]"/>
+</xsl:template>
+
+<xsl:template match="header">
+<h2>
+<xsl:for-each select="item[@no=1]">
+<xsl:value-of select="."/>
+</xsl:for-each>
+</h2>
+<h3>
+<xsl:for-each select="item[@no=2]">
+<xsl:value-of select="."/>
+</xsl:for-each>
+<xsl:for-each select="item[@no &gt; 2]">
+<br/>
+<xsl:value-of select="."/>
+</xsl:for-each>
+</h3>
+</xsl:template>
+
+<xsl:template match="page[@no=1]">
+<table width="100%" border="1" cellspacing="0">
+<tr>
+<th>Поре-<br/>ден номер</th>
+<th>Номер на делото</th>
+<th>Състав на съда</th>
+<th>Докладчик</th>
+<th>Резултат от заседанието</th>
+<th>Номер на съдебния акт</th>
+<th>Дата на обявяване на съдебния акт</th>
+</tr>
+<xsl:apply-templates select="row"/>
+</table>
+</xsl:template>
+
+<xsl:template match="page[@no &gt; 1]">
+<font size="1"><p style="page-break-after:always"></p></font>
+<table width="100%" border="1" cellspacing="0">
+<tr>
+<th>Поре-<br/>ден номер</th>
+<th>Номер на делото</th>
+<th>Състав на съда</th>
+<th>Докладчик</th>
+<th>Резултат от заседанието</th>
+<th>Номер на съдебния акт</th>
+<th>Дата на обявяване на съдебния акт</th>
+</tr>
+<xsl:apply-templates select="row"/>
+</table>
+</xsl:template>
+
+<xsl:template match="row">
+<xsl:apply-templates select="month"/>
+<xsl:apply-templates select="session"/>
+</xsl:template>
+
+<xsl:template match="month">
+<tr>
+<td class="month" colspan="7">
+<xsl:value-of select="."/>
+</td>
+</tr>
+</xsl:template>
+
+<xsl:template match="session">
+<tr>
+<xsl:apply-templates select="c18001"/>
+<xsl:apply-templates select="c18004"/>
+<xsl:apply-templates select="c18026"/>
+<xsl:apply-templates select="c18007"/>
+<xsl:apply-templates select="c18011"/>
+<xsl:apply-templates select="c18027"/>
+<xsl:apply-templates select="c18028"/>
+</tr>
+</xsl:template>
+
+<xsl:template match="c18001">
+<td align="right">
+<xsl:apply-templates select="item"/>
+</td>
+</xsl:template>
+
+<xsl:template match="c18004">
+<td align="center">
+<xsl:apply-templates select="item[@no=1]"/>
+<xsl:for-each select="item[@no &gt; 1]">
+<br/>
+<xsl:value-of select="."/>
+</xsl:for-each>
+</td>
+</xsl:template>
+
+<xsl:template match="c18026">
+<td class="narrow">
+<span>
+<xsl:apply-templates select="item[@no=1]"/>
+<xsl:for-each select="item[@no &gt; 1]">
+<br/>
+<xsl:value-of select="."/>
+</xsl:for-each>
+  </span>
+</td>
+</xsl:template>
+
+<xsl:template match="c18007">
+<td class="narrow">
+<xsl:apply-templates select="item"/>
+</td>
+</xsl:template>
+
+<xsl:template match="c18011">
+<td>
+<xsl:apply-templates select="item[@no=1]"/>
+<xsl:for-each select="item[@no &gt; 1]">
+<br/>
+<xsl:value-of select="."/>
+</xsl:for-each>
+</td>
+</xsl:template>
+
+<xsl:template match="c18027">
+<td>
+<span><xsl:apply-templates select="item"/>  </span>
+</td>
+</xsl:template>
+
+<xsl:template match="c18028">
+<td>
+<span><xsl:apply-templates select="item"/>  </span>
+</td>
+</xsl:template>
+
+<xsl:template match="item">
+<xsl:value-of select="."/>
+</xsl:template>
+
+</xsl:stylesheet>

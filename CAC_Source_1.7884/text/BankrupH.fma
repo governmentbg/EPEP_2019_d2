@@ -1,0 +1,129 @@
+***_TITLE
+***_END
+***_FORMATTED_HEADER
+<html>
+<head>
+<title>СПРАВКА ЗА НЕСВЪРШЕНИТЕ ДЕЛА ПО НЕСЪСТОЯТЕЛНОСТ</title>#
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">#
+</head>
+<body bgcolor="#@249 1 0 35#00007F">#
+<font face="Arial" color="#@ 249 1 0 35#FFFFFF">#
+<center>
+<h3>
+#@ 1 255#<br>
+ДЕЛА ПО НЕСЪСТОЯТЕЛНОСТ - НЕСВЪРШЕНИ,<br>#
+#@ 59014 255#<br>
+</h3>
+<table border cellspacing=0>#
+<tr>
+<th><font face="Arial" color="#@ 249 1 0 35#FFFFFF">Номер на<br>делото</th>#
+<th><font face="Arial" color="#@ 249 1 0 35#FFFFFF">Длъжник</th>#
+<th><font face="Arial" color="#@ 249 1 0 35#FFFFFF">По чия молба е образувано</th>#
+<th><font face="Arial" color="#@ 249 1 0 35#FFFFFF">Дата на<br>образуване</th>#
+</tr>#
+***_END
+***_FORMATTED_HEADER_COMPLETED
+<html>
+<head>
+<title>СПРАВКА ЗА СВЪРШЕНИТЕ ДЕЛА ПО НЕСЪСТОЯТЕЛНОСТ</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+</head>
+<body bgcolor="#@249 1 0 35#00007F">
+<font face="Arial" color="#@ 249 1 0 35#FFFFFF">
+<center>
+<h3>
+#@ 1 255#<br>
+ДЕЛА ПО НЕСЪСТОЯТЕЛНОСТ - СВЪРШЕНИ,<br>
+#@ 59020 255 ; 59008 255#<br>
+</h3>
+<br>#
+<table border cellspacing=0>#
+<tr>
+<th><font face="Arial" color="#@ 249 1 0 35#FFFFFF">Номер на<br>делото</font></th>
+<th><font face="Arial" color="#@ 249 1 0 35#FFFFFF">Длъжник</font></th>#
+<th><font face="Arial" color="#@ 249 1 0 35#FFFFFF">По чия молба е образувано</font></th>
+<th><font face="Arial" color="#@ 249 1 0 35#FFFFFF">Дата на <br>образуване</font></th>#
+<th><font face="Arial" color="#@ 249 1 0 35#FFFFFF">Дата на<br>свършване</font></th>
+<th><font face="Arial" color="#@ 249 1 0 35#FFFFFF">Решение</font></th>
+</tr>#
+***_END
+***_TABLE_ROW
+<tr>
+<td align="center" valign="top"><font face="Arial" color="#@ 249 1 0 35#FFFFFF">#@ 56001   100  1   ; Номер на делото#</font></td>
+<td align="center" valign="top"><font face="Arial" color="#@ 249 1 0 35#FFFFFF">#@ 56002 10000  1   ; Длъжник#</font></td>
+<td align="center" valign="top"><font face="Arial" color="#@ 249 1 0 35#FFFFFF">#@ 56003 10000  1   ; По чия молба е образувано#</font></td>
+<td align="center" valign="top"><font face="Arial" color="#@ 249 1 0 35#FFFFFF">#@ 56004   100  1   ; Дата на образуване#</font></td>
+</tr>#
+***_END
+***_TABLE_ROW_COMPLETED
+<tr>
+<td align="center" valign="top"><font face="Arial" color="#@ 249 1 0 35#FFFFFF">#@ 56001   100  1   ; Номер на делото#</font></td>
+<td align="center" valign="top"><font face="Arial" color="#@ 249 1 0 35#FFFFFF">#@ 56002 10000  1   ; Длъжник#</font></td>
+<td align="center" valign="top"><font face="Arial" color="#@ 249 1 0 35#FFFFFF">#@ 56003 10000  1   ; По чия молба е образувано#</font></td>
+<td align="center" valign="top"><font face="Arial" color="#@ 249 1 0 35#FFFFFF">#@ 56004   100  1   ; Дата на образуване#</font></td>
+<td align="center" valign="top"><font face="Arial" color="#@ 249 1 0 35#FFFFFF">#@ 56015    10  1   ; Дата на свършване#</font></td>
+<td align="center" valign="top"><font face="Arial" color="#@ 249 1 0 35#FFFFFF">#@ 56016   100  1   ; Решение#</font></td>
+</tr>#
+***_END
+***_HEADER
+***_END
+***_MEDIUM_LINE
+‘———————————†———————————————————————’
+***_END
+***_WANT_KINDS
+NO
+***_END
+***_SUBJECTS
+***_END
+***_SUBJECT_RANGES
+***_END
+***_MERGED_KINDS
+***_END
+***_FORMATTED_TAIL
+***_END
+***_TAIL
+</table>
+</center>
+</font>
+</body>
+</html>
+***_END
+
+***_PARAMETERS
+127 55 1 1 0 3
+***_END
+
+***_WINDOWS_A3_PARAMETERS
+127 -55 1 1 0 3 1 700
+***_END
+
+***_COLUMNS
+14 0
+  253  1
+56001 11 2  ;
+  253  1
+56002 1000 2  ;
+  253  1
+56003 10000 2  ;
+  253  1
+56004 10 2  ;
+  253  1
+56015 10 2  ;
+  253  1
+56016 100 2  ;
+  253  1
+  255  1
+***_END
+
+<th><font face="Arial" color="#@ 249 1 0 35#FFFFFF">Дата на<br>последното<br>решение</th>
+<th><font face="Arial" color="#@ 249 1 0 35#FFFFFF">Последно<br>решение</th>
+
+<td align="center" valign="top"><font face="Arial" color="#@ 249 1 0 35#FFFFFF">#@ 56017    10  1   ; Дата на последното решение#</font></td>
+<td align="center" valign="top"><font face="Arial" color="#@ 249 1 0 35#FFFFFF">#@ 56018   100  1   ; Последно решение#</font></td>
+
+18 0
+
+  253  1
+56017 10 2  ;
+  253  1
+56018 100 2  ;

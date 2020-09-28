@@ -1,0 +1,9 @@
+#define PROCEDURE FUNCTION
+#define BEGIN RETURNS INTEGER AS $$ BEGIN
+#define ENDPROC RETURN 0; END; $$ LANGUAGE PLPGSQL;
+#define qa(id) id
+#define SEQUENCE(id) SEQUENCE id MINVALUE 1 MAXVALUE 2147483640;
+#define EXECUTE SELECT
+#define ENDIF END IF;
+
+#include "proc_.pre"

@@ -1,0 +1,11 @@
+﻿Извличане на описанието:
+	iexplore https://ecase.justice.bg/Service/eCaseService.svc?singleWsdl
+	запис в "eCaseService.wsdl"
+	"C:\Program Files\Microsoft SDKs\Windows\v6.0A\Bin\svcutil.exe" eCaseService.wsdl
+
+останалите файлове - за http тест
+	чрез AddReference
+
+Някои от обработките (WriteSuccess, SendElement -> catch -> Log.Error) биха
+могли да се комбинират на горно ниво, но е по-важно да се изпълнят преди
+останалите операции, специфични за долното ниво.

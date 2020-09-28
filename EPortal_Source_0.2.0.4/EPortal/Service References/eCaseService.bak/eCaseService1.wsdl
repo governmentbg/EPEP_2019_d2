@@ -1,0 +1,1861 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:i0="http://www.abbaty.com/eCase/v2" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://tempuri.org/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="eCaseService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://www.abbaty.com/eCase/v2" location="http://service.ecase.abbaty.com/eCaseService.svc?wsdl=wsdl0" />
+  <wsdl:types />
+  <wsdl:binding name="BasicHttpBinding_IeCaseService" type="i0:IeCaseService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPersonRegistrationById">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetPersonRegistrationById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonRegistrationIdentifierByPersonAssignmentId">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetPersonRegistrationIdentifierByPersonAssignmentId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetSummonById">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetSummonById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetSummonIdentifiersByParentId">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetSummonIdentifiersByParentId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetScannedDocumentById">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetScannedDocumentById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetScannedDocumentIdentifiersByCaseId">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetScannedDocumentIdentifiersByCaseId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssignmentFileById">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetAssignmentFileById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssignmentFileIdentifiersByAssignmentId">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetAssignmentFileIdentifiersByAssignmentId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPrivateProtocolFileById">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetPrivateProtocolFileById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPrivateProtocolFileIdentifierByHearingId">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetPrivateProtocolFileIdentifierByHearingId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPublicProtocolFileById">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetPublicProtocolFileById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPublicProtocolFileIdentifierByHearingId">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetPublicProtocolFileIdentifierByHearingId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetIncomingDocumentFileById">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetIncomingDocumentFileById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetIncomingDocumentFileIdentifierByIncomingDocumentId">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetIncomingDocumentFileIdentifierByIncomingDocumentId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetOutgoingDocumentFileById">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetOutgoingDocumentFileById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetOutgoingDocumentFileIdentifierByOutgoingDocumentId">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetOutgoingDocumentFileIdentifierByOutgoingDocumentId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetSummonFileById">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetSummonFileById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetSummonFileIdentifierBySummonId">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetSummonFileIdentifierBySummonId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPrivateActFileById">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetPrivateActFileById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPrivateActFileIdentifiersByActId">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetPrivateActFileIdentifiersByActId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPublicActFileById">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetPublicActFileById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPublicActFileIdentifierByActId">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetPublicActFileIdentifierByActId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPrivateMotiveFileById">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetPrivateMotiveFileById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPrivateMotiveFileIdentifierByActId">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetPrivateMotiveFileIdentifierByActId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPublicMotiveFileById">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetPublicMotiveFileById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPublicMotiveFileIdentifierByActId">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetPublicMotiveFileIdentifierByActId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="InsertIncomingDocument">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/InsertIncomingDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateIncomingDocument">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateIncomingDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="InsertIncomingDocumentFile">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/InsertIncomingDocumentFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateIncomingDocumentFile">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateIncomingDocumentFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="InsertOutgoingDocument">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/InsertOutgoingDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOutgoingDocument">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateOutgoingDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="InsertOutgoingDocumentFile">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/InsertOutgoingDocumentFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOutgoingDocumentFile">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateOutgoingDocumentFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCase">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/InsertCase" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCase">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateCase" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="InsertConnectedCase">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/InsertConnectedCase" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateConnectedCase">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateConnectedCase" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="InsertReporter">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/InsertReporter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateReporter">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateReporter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="InsertAssignment">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/InsertAssignment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAssignment">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateAssignment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="InsertAssignmentFile">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/InsertAssignmentFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAssignmentFile">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateAssignmentFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="InsertHearing">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/InsertHearing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateHearing">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateHearing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPrivateProtocolFile">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/InsertPrivateProtocolFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePrivateProtocolFile">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/UpdatePrivateProtocolFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPublicProtocolFile">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/InsertPublicProtocolFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePublicProtocolFile">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/UpdatePublicProtocolFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="InsertHearingParticipant">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/InsertHearingParticipant" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateHearingParticipant">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateHearingParticipant" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="InsertAct">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/InsertAct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAct">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateAct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPublicActFile">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/InsertPublicActFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePublicActFile">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/UpdatePublicActFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPrivateActFile">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/InsertPrivateActFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePrivateActFile">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/UpdatePrivateActFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPublicMotiveFile">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/InsertPublicMotiveFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePublicMotiveFile">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/UpdatePublicMotiveFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPrivateMotiveFile">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/InsertPrivateMotiveFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePrivateMotiveFile">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/UpdatePrivateMotiveFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="InsertActPreparator">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/InsertActPreparator" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateActPreparator">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateActPreparator" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="InsertAppeal">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/InsertAppeal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAppeal">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateAppeal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCaseRuling">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/InsertCaseRuling" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCaseRuling">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateCaseRuling" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSide">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/InsertSide" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSide">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateSide" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="InsertLawyerAssignment">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/InsertLawyerAssignment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLawyerAssignment">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateLawyerAssignment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSummon">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/InsertSummon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSummon">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateSummon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSummonFile">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/InsertSummonFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSummonFile">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateSummonFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllLawyers">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetAllLawyers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllNewLawyers">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetAllNewLawyers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLawyerByNumber">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetLawyerByNumber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllReadSummons">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetAllReadSummons" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetReadSummonsForCertainDay">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetReadSummonsForCertainDay" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetSummonReportDocument">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetSummonReportDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ActivateSummonsAccess">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/ActivateSummonsAccess" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeactivateSummonsAccess">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/DeactivateSummonsAccess" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPersonAssignment">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/InsertPersonAssignment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePersonAssignment">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/UpdatePersonAssignment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="InsertScannedDocument">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/InsertScannedDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateScannedDocument">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateScannedDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="InsertLawyerRegistration">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/InsertLawyerRegistration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ActivateLawyerRegistration">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/ActivateLawyerRegistration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeactivateLawyerRegistration">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/DeactivateLawyerRegistration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPersonRegistration">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/InsertPersonRegistration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ActivatePersonRegistration">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/ActivatePersonRegistration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeactivatePersonRegistration">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/DeactivatePersonRegistration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUsername">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateUsername" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCaseIdentifiers">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetCaseIdentifiers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteIncomingDocument">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteIncomingDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteOutgoingDocument">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteOutgoingDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCase">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteCase" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteConnectedCase">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteConnectedCase" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteReporter">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteReporter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAssignment">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteAssignment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteHearing">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteHearing" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteHearingParticipant">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteHearingParticipant" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAct">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteAct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteActPreparator">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteActPreparator" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAppeal">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteAppeal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCaseRuling">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteCaseRuling" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSide">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteSide" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteLawyerAssignment">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteLawyerAssignment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSummon">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteSummon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePersonAssignment">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/DeletePersonAssignment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteScannedDocument">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteScannedDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAssignmentFile">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteAssignmentFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePrivateProtocolFile">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/DeletePrivateProtocolFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePublicProtocolFile">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/DeletePublicProtocolFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteIncomingDocumentFile">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteIncomingDocumentFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteOutgoingDocumentFile">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteOutgoingDocumentFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSummonFile">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteSummonFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePrivateActFile">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/DeletePrivateActFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePublicActFile">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/DeletePublicActFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePrivateMotiveFile">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/DeletePrivateMotiveFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePublicMotiveFile">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/DeletePublicMotiveFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetIncomingDocumentById">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetIncomingDocumentById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetIncomingDocumentIdentifiersByCaseId">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetIncomingDocumentIdentifiersByCaseId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetOutgoingDocumentById">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetOutgoingDocumentById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetOutgoingDocumentIdentifiersByCaseId">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetOutgoingDocumentIdentifiersByCaseId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCaseById">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetCaseById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetConnectedCaseById">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetConnectedCaseById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetConnectedCaseIdentifiersByCaseId">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetConnectedCaseIdentifiersByCaseId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetReporterById">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetReporterById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetReporterIdentifiersByCaseId">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetReporterIdentifiersByCaseId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssignmentById">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetAssignmentById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssignmentIdentifiersByCaseId">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetAssignmentIdentifiersByCaseId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetHearingById">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetHearingById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetHearingIdentifiersByCaseId">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetHearingIdentifiersByCaseId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetHearingParticipantById">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetHearingParticipantById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetHearingParticipantIdentifiersByHearingId">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetHearingParticipantIdentifiersByHearingId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetActById">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetActById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetActIdentifiersByCaseId">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetActIdentifiersByCaseId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetActPreparatorById">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetActPreparatorById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetActPreparatorIdentifiersByActId">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetActPreparatorIdentifiersByActId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAppealById">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetAppealById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAppealIdentifiersByActId">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetAppealIdentifiersByActId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCaseRulingById">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetCaseRulingById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCaseRulingIdentifiersByCaseId">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetCaseRulingIdentifiersByCaseId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetSideById">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetSideById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetSideIdentifiersByCaseId">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetSideIdentifiersByCaseId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLawyerAssignmentById">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetLawyerAssignmentById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLawyerAssignmentIdentifiersBySideId">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetLawyerAssignmentIdentifiersBySideId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonAssignmentById">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetPersonAssignmentById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonAssignmentIdentifiersBySideId">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetPersonAssignmentIdentifiersBySideId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLawyerRegistrationById">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetLawyerRegistrationById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLawyerRegistrationIdentifiersByLawyerId">
+      <soap:operation soapAction="http://www.abbaty.com/eCase/v2/IeCaseService/GetLawyerRegistrationIdentifiersByLawyerId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InfocaseFaultFault">
+        <soap:fault use="literal" name="InfocaseFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="eCaseService">
+    <wsdl:port name="BasicHttpBinding_IeCaseService" binding="tns:BasicHttpBinding_IeCaseService">
+      <soap:address location="http://service.ecase.abbaty.com/eCaseService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

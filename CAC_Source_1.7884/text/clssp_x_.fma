@@ -1,0 +1,217 @@
+***_IS_HTML
+YES
+***_END
+***_FORMATTED_HEADER
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=windows-1251"/>
+<title>Рекапитулация към Книга закрити заседания наказателни дела</title>
+<style>
+<!--
+body
+{
+	font-family:Arial;
+	font-size:10pt;
+	font-weight:normal;
+	color:black;
+	background-color:white
+}
+
+table
+{
+	color:black;
+	background-color:white;
+}
+
+td
+{
+	font-family:Arial;
+	font-size:10pt;
+	font-weight:normal;
+	color:black;
+	vertical-align:top;
+}
+
+td.narrow
+{
+	font-family:Arial Narrow;
+	font-size:10pt;
+	font-weight:normal;
+	color:black;
+	vertical-align:top;
+}
+
+td.total
+{
+	font-family:Arial;
+	font-size:14pt;
+	font-weight:bold;
+	color:black;
+	vertical-align:top;
+}
+
+td.subtotal
+{
+	font-family:Arial;
+	font-size:12pt;
+	font-weight:bold;
+	color:black;
+	vertical-align:top;
+}
+
+td.detail
+{
+	font-family:Arial;
+	font-size:12pt;
+	font-weight:normal;
+	color:black;
+	vertical-align:top;
+}
+
+td.empty
+{
+	font-family:Arial;
+	font-size:8pt;
+	font-weight:normal;
+	color:black;
+	vertical-align:top;
+}
+
+span.subtotal
+{
+	margin-left: 10pt;
+}
+
+span.detail
+{
+	margin-left: 20pt;
+}
+
+span.number
+{
+	margin-left: 10pt;
+	margin-right: 10pt;
+}
+
+-->
+</style>
+</head>
+<body>
+<center>
+<h2>КНИГА ЗАКРИТИ ЗАСЕДАНИЯ #@ 8178 255# #@ 8188 255#</h2>
+<h3>Рекапитулация за периода от #@ 8173 10#@ 251 1#. до #@ 8174 10#@ 251 1#.</h3>
+<br>
+<table>
+<tr>
+  <td class="total">Общ брой заседания:</td>
+  <td align="right"><span class="number">#@ 10456 10#</span></td>
+  <td><img src="image\Red.bmp" alt="image\Red.bmp" border="1" height="10" width="#@ 10598 1#"></img></td>
+</tr>
+<tr>
+  <td class="empty">&nbsp;</td>
+  <td class="empty" align="right"><span class="number">&nbsp;</span></td>
+  <td class="empty">&nbsp;</td>
+</tr>
+<tr>
+  <td class="subtotal"><span class="subtotal">Свършени дела I инстанция - общо, в т. ч.:</span></td>
+  <td align="right"><span class="number">#@ 10445 10#</span></td>
+  <td><img src="image\Green.bmp" alt="image\Green.bmp" border="1" height="10" width="#@ 10599 1#"></img></td>
+</tr>
+<tr>
+  <td class="detail"><span class="detail">Решени дела - без досъдебни и без "Пост. по чл.243":</span></td>
+  <td align="right"><span class="number">#@ 10450 10#</span></td>
+  <td><img src="image\MedSeaGr.bmp" alt="image\MedSeaGr.bmp" border="1" height="10" width="#@ 10600 1#"></img></td>
+</tr>
+<tr>
+  <td class="detail"><span class="detail">Прекратени дела - без досъдебни и без "Пост. по чл.243":</span></td>
+  <td align="right"><span class="number">#@ 10451 10#</span></td>
+  <td><img src="image\MedSeaGr.bmp" alt="image\MedSeaGr.bmp" border="1" height="10" width="#@ 10601 1#"></img></td>
+</tr>
+<tr>
+  <td class="detail"><span class="detail">Свършени дела - досъдебни (чл.64, чл.65 и др.):</span></td>
+  <td align="right"><span class="number">#@ 10446 10#</span></td>
+  <td><img src="image\MedSeaGr.bmp" alt="image\MedSeaGr.bmp" border="1" height="10" width="#@ 10602 1#"></img></td>
+</tr>
+<tr>
+  <td class="detail"><span class="detail">Свършени дела по "Постановление по чл.243 от НПК":</span></td>
+  <td align="right"><span class="number">#@ 10389 10#</span></td>
+  <td><img src="image\MedSeaGr.bmp" alt="image\MedSeaGr.bmp" border="1" height="10" width="#@ 10608 1#"></img></td>
+</tr>
+<tr>
+  <td class="subtotal"><span class="subtotal">С определение и разпореждане I инстанция:</span></td>
+  <td align="right"><span class="number">#@ 10454 10#</span></td>
+  <td><img src="image\Green.bmp" alt="image\Green.bmp" border="1" height="10" width="#@ 10603 1#"></img></td>
+</tr>
+<tr>
+  <td class="empty">&nbsp;</td>
+  <td class="empty" align="right"><span class="number">&nbsp;</span></td>
+  <td class="empty">&nbsp;</td>
+</tr>
+<tr>
+  <td class="subtotal"><span class="subtotal">Свършени дела II инстанция и касационни - общо, в т. ч.:</span></td>
+  <td align="right"><span class="number">#@ 10447 10#</span></td>
+  <td><img src="image\Blue.bmp" alt="image\Blue.bmp" border="1" height="10" width="#@ 10604 1#"></img></td>
+</tr>
+<tr>
+  <td class="detail"><span class="detail">Свършени дела по жалби и протести - без досъдебни:</span></td>
+  <td align="right"><span class="number">#@ 10452 10#</span></td>
+  <td><img src="image\DSkyBlue.bmp" alt="image\DSkyBlue.bmp" border="1" height="10" width="#@ 10605 1#"></img></td>
+</tr>
+  <td class="detail"><span class="detail">Свършени дела по ч. жалби и ч. протести - без досъдебни:</span></td>
+  <td align="right"><span class="number">#@ 10453 10#</span></td>
+  <td><img src="image\DSkyBlue.bmp" alt="image\DSkyBlue.bmp" border="1" height="10" width="#@ 10606 1#"></img></td>
+</tr>
+<tr>
+  <td class="detail"><span class="detail">Свършени дела - досъдебни (чл.64, чл.65, други):</span></td>
+  <td align="right"><span class="number">#@ 10448 10#</span></td>
+  <td><img src="image\DSkyBlue.bmp" alt="image\DSkyBlue.bmp" border="1" height="10" width="#@ 10607 1#"></img></td>
+</tr>
+<tr>
+  <td class="subtotal"><span class="subtotal">С определение и разпореждане II инстанция:</span></td>
+  <td align="right"><span class="number">#@ 10455 10#</span></td>
+  <td><img src="image\Blue.bmp" alt="image\Blue.bmp" border="1" height="10" width="#@ 10609 1#"></img></td>
+</tr>
+</table>
+</center>
+</body>
+</html>
+***_END
+***_BAR_NORMAL_LEN
+100
+***_END
+***_TITLE
+***_END
+TED_HEADER
+***_END
+***_HEADER
+***_END
+***_MEDIUM_LINE
+***_END
+***_FOOTHER_LINE
+***_END
+***_PARAMETERS
+***_END
+***_COLUMNS
+***_END
+***_TAIL
+***_END
+
+  spare new page symbols        (do not remove!)
+  spare condensed print symbols (do not remove!)
+  spare normal print symbols    (do not remove!)
+
+      Прекратени I инстанция:                          #@ 10249 10##@ 10305 10#
+      Прекратени II инстанция:                         #@ 10250 10##@ 10306 10#
+      Прекратени за доразследване:                     #@ 10251 10##@ 10307 10#
+      С определение, приключващо делото I инстанция:   #@ 10252 10##@ 10308 10#
+      С определение, приключващо делото II инстанция:  #@ 10253 10##@ 10309 10#
+
+      Общ брой заседания:                              #@ 10256 10#
+      Прекратени I инстанция:                          #@ 10305 10#
+      Прекратени II инстанция:                         #@ 10306 10#
+      Прекратени за доразследване:                     #@ 10307 10#
+      С определение, приключващо делото I инстанция:   #@ 10308 10#
+      С определение, приключващо делото II инстанция:  #@ 10309 10#
+      С решение:                                       #@ 10254 10#
+      С определение:                                   #@ 10255 10#
+

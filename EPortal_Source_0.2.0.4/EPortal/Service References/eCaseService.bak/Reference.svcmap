@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="fa4cc83e-621d-4464-ae24-9f0e5ca07029" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://service.ecase.abbaty.com/eCaseService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="eCaseService.disco" MetadataType="Disco" ID="c267d632-adea-4ce2-b6b6-6d33470833c7" SourceId="1" SourceUrl="http://service.ecase.abbaty.com/eCaseService.svc?disco" />
+    <MetadataFile FileName="eCaseService.wsdl" MetadataType="Wsdl" ID="42b7fad3-d972-436f-bd5b-04c1a5350ecc" SourceId="1" SourceUrl="http://service.ecase.abbaty.com/eCaseService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="eCaseService.xsd" MetadataType="Schema" ID="fc743084-8ec1-4570-8dfd-3e8823b6fa1a" SourceId="1" SourceUrl="http://service.ecase.abbaty.com/eCaseService.svc?xsd=xsd1" />
+    <MetadataFile FileName="eCaseService1.xsd" MetadataType="Schema" ID="f32caced-fdae-4c8f-82de-711ea9adecb3" SourceId="1" SourceUrl="http://service.ecase.abbaty.com/eCaseService.svc?xsd=xsd0" />
+    <MetadataFile FileName="eCaseService2.xsd" MetadataType="Schema" ID="18950602-e4b7-4469-89aa-45334a501f8a" SourceId="1" SourceUrl="http://service.ecase.abbaty.com/eCaseService.svc?xsd=xsd3" />
+    <MetadataFile FileName="eCaseService3.xsd" MetadataType="Schema" ID="87ddebcb-82b6-4fdd-a5c4-e7b50d552220" SourceId="1" SourceUrl="http://service.ecase.abbaty.com/eCaseService.svc?xsd=xsd2" />
+    <MetadataFile FileName="eCaseService1.wsdl" MetadataType="Wsdl" ID="366048c8-a4db-4a2b-8767-7663c45a06b8" SourceId="1" SourceUrl="http://service.ecase.abbaty.com/eCaseService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

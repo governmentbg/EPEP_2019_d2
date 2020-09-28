@@ -1,0 +1,2169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://www.abbaty.com/eCase/v2" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" targetNamespace="http://www.abbaty.com/eCase/v2" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.abbaty.com/eCase/v2/Imports">
+      <xsd:import schemaLocation="http://service.ecase.abbaty.com/eCaseService.svc?xsd=xsd0" namespace="http://www.abbaty.com/eCase/v2" />
+      <xsd:import schemaLocation="http://service.ecase.abbaty.com/eCaseService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://service.ecase.abbaty.com/eCaseService.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://service.ecase.abbaty.com/eCaseService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IeCaseService_GetPersonRegistrationById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPersonRegistrationById" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPersonRegistrationById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPersonRegistrationByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPersonRegistrationById_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPersonRegistrationIdentifierByPersonAssignmentId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPersonRegistrationIdentifierByPersonAssignmentId" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPersonRegistrationIdentifierByPersonAssignmentId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPersonRegistrationIdentifierByPersonAssignmentIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPersonRegistrationIdentifierByPersonAssignmentId_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetSummonById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSummonById" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetSummonById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSummonByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetSummonById_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetSummonIdentifiersByParentId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSummonIdentifiersByParentId" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetSummonIdentifiersByParentId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSummonIdentifiersByParentIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetSummonIdentifiersByParentId_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetScannedDocumentById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetScannedDocumentById" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetScannedDocumentById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetScannedDocumentByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetScannedDocumentById_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetScannedDocumentIdentifiersByCaseId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetScannedDocumentIdentifiersByCaseId" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetScannedDocumentIdentifiersByCaseId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetScannedDocumentIdentifiersByCaseIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetScannedDocumentIdentifiersByCaseId_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetAssignmentFileById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssignmentFileById" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetAssignmentFileById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssignmentFileByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetAssignmentFileById_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetAssignmentFileIdentifiersByAssignmentId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssignmentFileIdentifiersByAssignmentId" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetAssignmentFileIdentifiersByAssignmentId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssignmentFileIdentifiersByAssignmentIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetAssignmentFileIdentifiersByAssignmentId_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPrivateProtocolFileById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrivateProtocolFileById" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPrivateProtocolFileById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrivateProtocolFileByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPrivateProtocolFileById_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPrivateProtocolFileIdentifierByHearingId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrivateProtocolFileIdentifierByHearingId" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPrivateProtocolFileIdentifierByHearingId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrivateProtocolFileIdentifierByHearingIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPrivateProtocolFileIdentifierByHearingId_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPublicProtocolFileById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPublicProtocolFileById" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPublicProtocolFileById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPublicProtocolFileByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPublicProtocolFileById_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPublicProtocolFileIdentifierByHearingId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPublicProtocolFileIdentifierByHearingId" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPublicProtocolFileIdentifierByHearingId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPublicProtocolFileIdentifierByHearingIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPublicProtocolFileIdentifierByHearingId_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetIncomingDocumentFileById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIncomingDocumentFileById" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetIncomingDocumentFileById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIncomingDocumentFileByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetIncomingDocumentFileById_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetIncomingDocumentFileIdentifierByIncomingDocumentId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIncomingDocumentFileIdentifierByIncomingDocumentId" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetIncomingDocumentFileIdentifierByIncomingDocumentId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIncomingDocumentFileIdentifierByIncomingDocumentIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetIncomingDocumentFileIdentifierByIncomingDocumentId_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetOutgoingDocumentFileById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOutgoingDocumentFileById" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetOutgoingDocumentFileById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOutgoingDocumentFileByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetOutgoingDocumentFileById_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetOutgoingDocumentFileIdentifierByOutgoingDocumentId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOutgoingDocumentFileIdentifierByOutgoingDocumentId" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetOutgoingDocumentFileIdentifierByOutgoingDocumentId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOutgoingDocumentFileIdentifierByOutgoingDocumentIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetOutgoingDocumentFileIdentifierByOutgoingDocumentId_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetSummonFileById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSummonFileById" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetSummonFileById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSummonFileByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetSummonFileById_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetSummonFileIdentifierBySummonId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSummonFileIdentifierBySummonId" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetSummonFileIdentifierBySummonId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSummonFileIdentifierBySummonIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetSummonFileIdentifierBySummonId_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPrivateActFileById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrivateActFileById" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPrivateActFileById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrivateActFileByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPrivateActFileById_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPrivateActFileIdentifiersByActId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrivateActFileIdentifiersByActId" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPrivateActFileIdentifiersByActId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrivateActFileIdentifiersByActIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPrivateActFileIdentifiersByActId_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPublicActFileById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPublicActFileById" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPublicActFileById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPublicActFileByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPublicActFileById_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPublicActFileIdentifierByActId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPublicActFileIdentifierByActId" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPublicActFileIdentifierByActId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPublicActFileIdentifierByActIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPublicActFileIdentifierByActId_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPrivateMotiveFileById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrivateMotiveFileById" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPrivateMotiveFileById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrivateMotiveFileByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPrivateMotiveFileById_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPrivateMotiveFileIdentifierByActId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrivateMotiveFileIdentifierByActId" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPrivateMotiveFileIdentifierByActId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrivateMotiveFileIdentifierByActIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPrivateMotiveFileIdentifierByActId_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPublicMotiveFileById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPublicMotiveFileById" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPublicMotiveFileById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPublicMotiveFileByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPublicMotiveFileById_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPublicMotiveFileIdentifierByActId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPublicMotiveFileIdentifierByActId" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPublicMotiveFileIdentifierByActId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPublicMotiveFileIdentifierByActIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPublicMotiveFileIdentifierByActId_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertIncomingDocument_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertIncomingDocument" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertIncomingDocument_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertIncomingDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertIncomingDocument_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateIncomingDocument_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateIncomingDocument" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateIncomingDocument_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateIncomingDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateIncomingDocument_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertIncomingDocumentFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertIncomingDocumentFile" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertIncomingDocumentFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertIncomingDocumentFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertIncomingDocumentFile_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateIncomingDocumentFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateIncomingDocumentFile" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateIncomingDocumentFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateIncomingDocumentFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateIncomingDocumentFile_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertOutgoingDocument_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertOutgoingDocument" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertOutgoingDocument_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertOutgoingDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertOutgoingDocument_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateOutgoingDocument_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateOutgoingDocument" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateOutgoingDocument_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateOutgoingDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateOutgoingDocument_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertOutgoingDocumentFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertOutgoingDocumentFile" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertOutgoingDocumentFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertOutgoingDocumentFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertOutgoingDocumentFile_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateOutgoingDocumentFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateOutgoingDocumentFile" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateOutgoingDocumentFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateOutgoingDocumentFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateOutgoingDocumentFile_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertCase_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCase" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertCase_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertCase_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateCase_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCase" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateCase_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateCase_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertConnectedCase_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertConnectedCase" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertConnectedCase_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertConnectedCaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertConnectedCase_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateConnectedCase_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateConnectedCase" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateConnectedCase_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateConnectedCaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateConnectedCase_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertReporter_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertReporter" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertReporter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertReporterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertReporter_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateReporter_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateReporter" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateReporter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateReporterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateReporter_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertAssignment_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAssignment" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertAssignment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAssignmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertAssignment_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateAssignment_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAssignment" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateAssignment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAssignmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateAssignment_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertAssignmentFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAssignmentFile" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertAssignmentFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAssignmentFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertAssignmentFile_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateAssignmentFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAssignmentFile" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateAssignmentFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAssignmentFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateAssignmentFile_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertHearing_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertHearing" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertHearing_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertHearingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertHearing_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateHearing_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateHearing" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateHearing_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateHearingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateHearing_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertPrivateProtocolFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPrivateProtocolFile" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertPrivateProtocolFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPrivateProtocolFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertPrivateProtocolFile_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdatePrivateProtocolFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePrivateProtocolFile" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdatePrivateProtocolFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePrivateProtocolFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdatePrivateProtocolFile_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertPublicProtocolFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPublicProtocolFile" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertPublicProtocolFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPublicProtocolFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertPublicProtocolFile_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdatePublicProtocolFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePublicProtocolFile" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdatePublicProtocolFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePublicProtocolFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdatePublicProtocolFile_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertHearingParticipant_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertHearingParticipant" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertHearingParticipant_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertHearingParticipantResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertHearingParticipant_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateHearingParticipant_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateHearingParticipant" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateHearingParticipant_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateHearingParticipantResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateHearingParticipant_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertAct_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAct" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertAct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertActResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertAct_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateAct_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAct" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateAct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateActResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateAct_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertPublicActFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPublicActFile" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertPublicActFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPublicActFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertPublicActFile_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdatePublicActFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePublicActFile" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdatePublicActFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePublicActFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdatePublicActFile_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertPrivateActFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPrivateActFile" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertPrivateActFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPrivateActFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertPrivateActFile_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdatePrivateActFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePrivateActFile" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdatePrivateActFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePrivateActFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdatePrivateActFile_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertPublicMotiveFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPublicMotiveFile" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertPublicMotiveFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPublicMotiveFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertPublicMotiveFile_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdatePublicMotiveFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePublicMotiveFile" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdatePublicMotiveFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePublicMotiveFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdatePublicMotiveFile_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertPrivateMotiveFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPrivateMotiveFile" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertPrivateMotiveFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPrivateMotiveFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertPrivateMotiveFile_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdatePrivateMotiveFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePrivateMotiveFile" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdatePrivateMotiveFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePrivateMotiveFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdatePrivateMotiveFile_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertActPreparator_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertActPreparator" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertActPreparator_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertActPreparatorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertActPreparator_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateActPreparator_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateActPreparator" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateActPreparator_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateActPreparatorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateActPreparator_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertAppeal_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAppeal" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertAppeal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAppealResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertAppeal_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateAppeal_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAppeal" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateAppeal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateAppealResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateAppeal_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertCaseRuling_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCaseRuling" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertCaseRuling_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCaseRulingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertCaseRuling_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateCaseRuling_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCaseRuling" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateCaseRuling_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCaseRulingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateCaseRuling_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertSide_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertSide" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertSide_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertSideResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertSide_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateSide_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSide" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateSide_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSideResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateSide_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertLawyerAssignment_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertLawyerAssignment" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertLawyerAssignment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertLawyerAssignmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertLawyerAssignment_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateLawyerAssignment_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateLawyerAssignment" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateLawyerAssignment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateLawyerAssignmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateLawyerAssignment_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertSummon_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertSummon" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertSummon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertSummonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertSummon_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateSummon_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSummon" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateSummon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSummonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateSummon_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertSummonFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertSummonFile" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertSummonFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertSummonFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertSummonFile_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateSummonFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSummonFile" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateSummonFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSummonFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateSummonFile_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetAllLawyers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllLawyers" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetAllLawyers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllLawyersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetAllLawyers_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetAllNewLawyers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllNewLawyers" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetAllNewLawyers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllNewLawyersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetAllNewLawyers_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetLawyerByNumber_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLawyerByNumber" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetLawyerByNumber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLawyerByNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetLawyerByNumber_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetAllReadSummons_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllReadSummons" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetAllReadSummons_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllReadSummonsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetAllReadSummons_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetReadSummonsForCertainDay_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReadSummonsForCertainDay" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetReadSummonsForCertainDay_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReadSummonsForCertainDayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetReadSummonsForCertainDay_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetSummonReportDocument_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSummonReportDocument" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetSummonReportDocument_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSummonReportDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetSummonReportDocument_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_ActivateSummonsAccess_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActivateSummonsAccess" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_ActivateSummonsAccess_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActivateSummonsAccessResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_ActivateSummonsAccess_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeactivateSummonsAccess_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeactivateSummonsAccess" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeactivateSummonsAccess_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeactivateSummonsAccessResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeactivateSummonsAccess_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertPersonAssignment_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPersonAssignment" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertPersonAssignment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPersonAssignmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertPersonAssignment_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdatePersonAssignment_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePersonAssignment" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdatePersonAssignment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePersonAssignmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdatePersonAssignment_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertScannedDocument_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertScannedDocument" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertScannedDocument_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertScannedDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertScannedDocument_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateScannedDocument_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateScannedDocument" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateScannedDocument_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateScannedDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateScannedDocument_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertLawyerRegistration_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertLawyerRegistration" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertLawyerRegistration_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertLawyerRegistrationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertLawyerRegistration_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_ActivateLawyerRegistration_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActivateLawyerRegistration" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_ActivateLawyerRegistration_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActivateLawyerRegistrationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_ActivateLawyerRegistration_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeactivateLawyerRegistration_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeactivateLawyerRegistration" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeactivateLawyerRegistration_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeactivateLawyerRegistrationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeactivateLawyerRegistration_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertPersonRegistration_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPersonRegistration" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertPersonRegistration_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPersonRegistrationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_InsertPersonRegistration_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_ActivatePersonRegistration_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActivatePersonRegistration" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_ActivatePersonRegistration_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActivatePersonRegistrationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_ActivatePersonRegistration_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeactivatePersonRegistration_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeactivatePersonRegistration" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeactivatePersonRegistration_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeactivatePersonRegistrationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeactivatePersonRegistration_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateUsername_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUsername" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateUsername_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUsernameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_UpdateUsername_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetCaseIdentifiers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCaseIdentifiers" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetCaseIdentifiers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCaseIdentifiersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetCaseIdentifiers_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteIncomingDocument_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteIncomingDocument" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteIncomingDocument_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteIncomingDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteIncomingDocument_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteOutgoingDocument_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteOutgoingDocument" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteOutgoingDocument_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteOutgoingDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteOutgoingDocument_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteCase_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCase" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteCase_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteCase_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteConnectedCase_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteConnectedCase" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteConnectedCase_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteConnectedCaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteConnectedCase_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteReporter_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteReporter" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteReporter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteReporterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteReporter_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteAssignment_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAssignment" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteAssignment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAssignmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteAssignment_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteHearing_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteHearing" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteHearing_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteHearingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteHearing_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteHearingParticipant_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteHearingParticipant" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteHearingParticipant_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteHearingParticipantResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteHearingParticipant_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteAct_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAct" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteAct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteActResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteAct_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteActPreparator_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteActPreparator" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteActPreparator_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteActPreparatorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteActPreparator_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteAppeal_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAppeal" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteAppeal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAppealResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteAppeal_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteCaseRuling_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCaseRuling" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteCaseRuling_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCaseRulingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteCaseRuling_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteSide_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSide" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteSide_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSideResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteSide_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteLawyerAssignment_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteLawyerAssignment" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteLawyerAssignment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteLawyerAssignmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteLawyerAssignment_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteSummon_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSummon" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteSummon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSummonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteSummon_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeletePersonAssignment_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePersonAssignment" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeletePersonAssignment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePersonAssignmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeletePersonAssignment_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteScannedDocument_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteScannedDocument" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteScannedDocument_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteScannedDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteScannedDocument_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteAssignmentFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAssignmentFile" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteAssignmentFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAssignmentFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteAssignmentFile_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeletePrivateProtocolFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePrivateProtocolFile" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeletePrivateProtocolFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePrivateProtocolFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeletePrivateProtocolFile_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeletePublicProtocolFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePublicProtocolFile" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeletePublicProtocolFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePublicProtocolFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeletePublicProtocolFile_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteIncomingDocumentFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteIncomingDocumentFile" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteIncomingDocumentFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteIncomingDocumentFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteIncomingDocumentFile_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteOutgoingDocumentFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteOutgoingDocumentFile" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteOutgoingDocumentFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteOutgoingDocumentFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteOutgoingDocumentFile_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteSummonFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSummonFile" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteSummonFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSummonFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeleteSummonFile_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeletePrivateActFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePrivateActFile" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeletePrivateActFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePrivateActFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeletePrivateActFile_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeletePublicActFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePublicActFile" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeletePublicActFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePublicActFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeletePublicActFile_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeletePrivateMotiveFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePrivateMotiveFile" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeletePrivateMotiveFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePrivateMotiveFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeletePrivateMotiveFile_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeletePublicMotiveFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePublicMotiveFile" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeletePublicMotiveFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePublicMotiveFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_DeletePublicMotiveFile_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetIncomingDocumentById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIncomingDocumentById" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetIncomingDocumentById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIncomingDocumentByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetIncomingDocumentById_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetIncomingDocumentIdentifiersByCaseId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIncomingDocumentIdentifiersByCaseId" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetIncomingDocumentIdentifiersByCaseId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIncomingDocumentIdentifiersByCaseIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetIncomingDocumentIdentifiersByCaseId_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetOutgoingDocumentById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOutgoingDocumentById" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetOutgoingDocumentById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOutgoingDocumentByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetOutgoingDocumentById_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetOutgoingDocumentIdentifiersByCaseId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOutgoingDocumentIdentifiersByCaseId" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetOutgoingDocumentIdentifiersByCaseId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOutgoingDocumentIdentifiersByCaseIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetOutgoingDocumentIdentifiersByCaseId_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetCaseById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCaseById" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetCaseById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCaseByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetCaseById_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetConnectedCaseById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetConnectedCaseById" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetConnectedCaseById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetConnectedCaseByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetConnectedCaseById_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetConnectedCaseIdentifiersByCaseId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetConnectedCaseIdentifiersByCaseId" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetConnectedCaseIdentifiersByCaseId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetConnectedCaseIdentifiersByCaseIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetConnectedCaseIdentifiersByCaseId_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetReporterById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReporterById" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetReporterById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReporterByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetReporterById_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetReporterIdentifiersByCaseId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReporterIdentifiersByCaseId" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetReporterIdentifiersByCaseId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReporterIdentifiersByCaseIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetReporterIdentifiersByCaseId_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetAssignmentById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssignmentById" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetAssignmentById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssignmentByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetAssignmentById_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetAssignmentIdentifiersByCaseId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssignmentIdentifiersByCaseId" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetAssignmentIdentifiersByCaseId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAssignmentIdentifiersByCaseIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetAssignmentIdentifiersByCaseId_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetHearingById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHearingById" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetHearingById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHearingByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetHearingById_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetHearingIdentifiersByCaseId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHearingIdentifiersByCaseId" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetHearingIdentifiersByCaseId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHearingIdentifiersByCaseIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetHearingIdentifiersByCaseId_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetHearingParticipantById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHearingParticipantById" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetHearingParticipantById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHearingParticipantByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetHearingParticipantById_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetHearingParticipantIdentifiersByHearingId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHearingParticipantIdentifiersByHearingId" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetHearingParticipantIdentifiersByHearingId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHearingParticipantIdentifiersByHearingIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetHearingParticipantIdentifiersByHearingId_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetActById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetActById" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetActById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetActByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetActById_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetActIdentifiersByCaseId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetActIdentifiersByCaseId" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetActIdentifiersByCaseId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetActIdentifiersByCaseIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetActIdentifiersByCaseId_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetActPreparatorById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetActPreparatorById" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetActPreparatorById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetActPreparatorByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetActPreparatorById_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetActPreparatorIdentifiersByActId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetActPreparatorIdentifiersByActId" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetActPreparatorIdentifiersByActId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetActPreparatorIdentifiersByActIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetActPreparatorIdentifiersByActId_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetAppealById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAppealById" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetAppealById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAppealByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetAppealById_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetAppealIdentifiersByActId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAppealIdentifiersByActId" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetAppealIdentifiersByActId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAppealIdentifiersByActIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetAppealIdentifiersByActId_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetCaseRulingById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCaseRulingById" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetCaseRulingById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCaseRulingByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetCaseRulingById_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetCaseRulingIdentifiersByCaseId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCaseRulingIdentifiersByCaseId" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetCaseRulingIdentifiersByCaseId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCaseRulingIdentifiersByCaseIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetCaseRulingIdentifiersByCaseId_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetSideById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSideById" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetSideById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSideByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetSideById_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetSideIdentifiersByCaseId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSideIdentifiersByCaseId" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetSideIdentifiersByCaseId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSideIdentifiersByCaseIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetSideIdentifiersByCaseId_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetLawyerAssignmentById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLawyerAssignmentById" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetLawyerAssignmentById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLawyerAssignmentByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetLawyerAssignmentById_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetLawyerAssignmentIdentifiersBySideId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLawyerAssignmentIdentifiersBySideId" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetLawyerAssignmentIdentifiersBySideId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLawyerAssignmentIdentifiersBySideIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetLawyerAssignmentIdentifiersBySideId_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPersonAssignmentById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPersonAssignmentById" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPersonAssignmentById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPersonAssignmentByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPersonAssignmentById_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPersonAssignmentIdentifiersBySideId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPersonAssignmentIdentifiersBySideId" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPersonAssignmentIdentifiersBySideId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPersonAssignmentIdentifiersBySideIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetPersonAssignmentIdentifiersBySideId_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetLawyerRegistrationById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLawyerRegistrationById" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetLawyerRegistrationById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLawyerRegistrationByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetLawyerRegistrationById_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetLawyerRegistrationIdentifiersByLawyerId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLawyerRegistrationIdentifiersByLawyerId" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetLawyerRegistrationIdentifiersByLawyerId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLawyerRegistrationIdentifiersByLawyerIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IeCaseService_GetLawyerRegistrationIdentifiersByLawyerId_InfocaseFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InfocaseFault" />
+  </wsdl:message>
+  <wsdl:portType name="IeCaseService">
+    <wsdl:operation name="GetPersonRegistrationById">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPersonRegistrationById" message="tns:IeCaseService_GetPersonRegistrationById_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPersonRegistrationByIdResponse" message="tns:IeCaseService_GetPersonRegistrationById_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPersonRegistrationByIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetPersonRegistrationById_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonRegistrationIdentifierByPersonAssignmentId">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPersonRegistrationIdentifierByPersonAssignmentId" message="tns:IeCaseService_GetPersonRegistrationIdentifierByPersonAssignmentId_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPersonRegistrationIdentifierByPersonAssignmentIdResponse" message="tns:IeCaseService_GetPersonRegistrationIdentifierByPersonAssignmentId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPersonRegistrationIdentifierByPersonAssignmentIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetPersonRegistrationIdentifierByPersonAssignmentId_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSummonById">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetSummonById" message="tns:IeCaseService_GetSummonById_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetSummonByIdResponse" message="tns:IeCaseService_GetSummonById_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetSummonByIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetSummonById_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSummonIdentifiersByParentId">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetSummonIdentifiersByParentId" message="tns:IeCaseService_GetSummonIdentifiersByParentId_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetSummonIdentifiersByParentIdResponse" message="tns:IeCaseService_GetSummonIdentifiersByParentId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetSummonIdentifiersByParentIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetSummonIdentifiersByParentId_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetScannedDocumentById">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetScannedDocumentById" message="tns:IeCaseService_GetScannedDocumentById_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetScannedDocumentByIdResponse" message="tns:IeCaseService_GetScannedDocumentById_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetScannedDocumentByIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetScannedDocumentById_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetScannedDocumentIdentifiersByCaseId">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetScannedDocumentIdentifiersByCaseId" message="tns:IeCaseService_GetScannedDocumentIdentifiersByCaseId_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetScannedDocumentIdentifiersByCaseIdResponse" message="tns:IeCaseService_GetScannedDocumentIdentifiersByCaseId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetScannedDocumentIdentifiersByCaseIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetScannedDocumentIdentifiersByCaseId_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssignmentFileById">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetAssignmentFileById" message="tns:IeCaseService_GetAssignmentFileById_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetAssignmentFileByIdResponse" message="tns:IeCaseService_GetAssignmentFileById_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetAssignmentFileByIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetAssignmentFileById_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssignmentFileIdentifiersByAssignmentId">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetAssignmentFileIdentifiersByAssignmentId" message="tns:IeCaseService_GetAssignmentFileIdentifiersByAssignmentId_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetAssignmentFileIdentifiersByAssignmentIdResponse" message="tns:IeCaseService_GetAssignmentFileIdentifiersByAssignmentId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetAssignmentFileIdentifiersByAssignmentIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetAssignmentFileIdentifiersByAssignmentId_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPrivateProtocolFileById">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPrivateProtocolFileById" message="tns:IeCaseService_GetPrivateProtocolFileById_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPrivateProtocolFileByIdResponse" message="tns:IeCaseService_GetPrivateProtocolFileById_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPrivateProtocolFileByIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetPrivateProtocolFileById_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPrivateProtocolFileIdentifierByHearingId">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPrivateProtocolFileIdentifierByHearingId" message="tns:IeCaseService_GetPrivateProtocolFileIdentifierByHearingId_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPrivateProtocolFileIdentifierByHearingIdResponse" message="tns:IeCaseService_GetPrivateProtocolFileIdentifierByHearingId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPrivateProtocolFileIdentifierByHearingIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetPrivateProtocolFileIdentifierByHearingId_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPublicProtocolFileById">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPublicProtocolFileById" message="tns:IeCaseService_GetPublicProtocolFileById_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPublicProtocolFileByIdResponse" message="tns:IeCaseService_GetPublicProtocolFileById_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPublicProtocolFileByIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetPublicProtocolFileById_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPublicProtocolFileIdentifierByHearingId">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPublicProtocolFileIdentifierByHearingId" message="tns:IeCaseService_GetPublicProtocolFileIdentifierByHearingId_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPublicProtocolFileIdentifierByHearingIdResponse" message="tns:IeCaseService_GetPublicProtocolFileIdentifierByHearingId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPublicProtocolFileIdentifierByHearingIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetPublicProtocolFileIdentifierByHearingId_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIncomingDocumentFileById">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetIncomingDocumentFileById" message="tns:IeCaseService_GetIncomingDocumentFileById_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetIncomingDocumentFileByIdResponse" message="tns:IeCaseService_GetIncomingDocumentFileById_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetIncomingDocumentFileByIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetIncomingDocumentFileById_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIncomingDocumentFileIdentifierByIncomingDocumentId">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetIncomingDocumentFileIdentifierByIncomingDocumentId" message="tns:IeCaseService_GetIncomingDocumentFileIdentifierByIncomingDocumentId_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetIncomingDocumentFileIdentifierByIncomingDocumentIdResponse" message="tns:IeCaseService_GetIncomingDocumentFileIdentifierByIncomingDocumentId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetIncomingDocumentFileIdentifierByIncomingDocumentIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetIncomingDocumentFileIdentifierByIncomingDocumentId_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOutgoingDocumentFileById">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetOutgoingDocumentFileById" message="tns:IeCaseService_GetOutgoingDocumentFileById_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetOutgoingDocumentFileByIdResponse" message="tns:IeCaseService_GetOutgoingDocumentFileById_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetOutgoingDocumentFileByIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetOutgoingDocumentFileById_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOutgoingDocumentFileIdentifierByOutgoingDocumentId">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetOutgoingDocumentFileIdentifierByOutgoingDocumentId" message="tns:IeCaseService_GetOutgoingDocumentFileIdentifierByOutgoingDocumentId_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetOutgoingDocumentFileIdentifierByOutgoingDocumentIdResponse" message="tns:IeCaseService_GetOutgoingDocumentFileIdentifierByOutgoingDocumentId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetOutgoingDocumentFileIdentifierByOutgoingDocumentIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetOutgoingDocumentFileIdentifierByOutgoingDocumentId_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSummonFileById">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetSummonFileById" message="tns:IeCaseService_GetSummonFileById_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetSummonFileByIdResponse" message="tns:IeCaseService_GetSummonFileById_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetSummonFileByIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetSummonFileById_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSummonFileIdentifierBySummonId">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetSummonFileIdentifierBySummonId" message="tns:IeCaseService_GetSummonFileIdentifierBySummonId_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetSummonFileIdentifierBySummonIdResponse" message="tns:IeCaseService_GetSummonFileIdentifierBySummonId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetSummonFileIdentifierBySummonIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetSummonFileIdentifierBySummonId_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPrivateActFileById">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPrivateActFileById" message="tns:IeCaseService_GetPrivateActFileById_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPrivateActFileByIdResponse" message="tns:IeCaseService_GetPrivateActFileById_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPrivateActFileByIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetPrivateActFileById_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPrivateActFileIdentifiersByActId">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPrivateActFileIdentifiersByActId" message="tns:IeCaseService_GetPrivateActFileIdentifiersByActId_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPrivateActFileIdentifiersByActIdResponse" message="tns:IeCaseService_GetPrivateActFileIdentifiersByActId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPrivateActFileIdentifiersByActIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetPrivateActFileIdentifiersByActId_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPublicActFileById">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPublicActFileById" message="tns:IeCaseService_GetPublicActFileById_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPublicActFileByIdResponse" message="tns:IeCaseService_GetPublicActFileById_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPublicActFileByIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetPublicActFileById_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPublicActFileIdentifierByActId">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPublicActFileIdentifierByActId" message="tns:IeCaseService_GetPublicActFileIdentifierByActId_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPublicActFileIdentifierByActIdResponse" message="tns:IeCaseService_GetPublicActFileIdentifierByActId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPublicActFileIdentifierByActIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetPublicActFileIdentifierByActId_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPrivateMotiveFileById">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPrivateMotiveFileById" message="tns:IeCaseService_GetPrivateMotiveFileById_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPrivateMotiveFileByIdResponse" message="tns:IeCaseService_GetPrivateMotiveFileById_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPrivateMotiveFileByIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetPrivateMotiveFileById_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPrivateMotiveFileIdentifierByActId">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPrivateMotiveFileIdentifierByActId" message="tns:IeCaseService_GetPrivateMotiveFileIdentifierByActId_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPrivateMotiveFileIdentifierByActIdResponse" message="tns:IeCaseService_GetPrivateMotiveFileIdentifierByActId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPrivateMotiveFileIdentifierByActIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetPrivateMotiveFileIdentifierByActId_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPublicMotiveFileById">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPublicMotiveFileById" message="tns:IeCaseService_GetPublicMotiveFileById_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPublicMotiveFileByIdResponse" message="tns:IeCaseService_GetPublicMotiveFileById_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPublicMotiveFileByIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetPublicMotiveFileById_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPublicMotiveFileIdentifierByActId">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPublicMotiveFileIdentifierByActId" message="tns:IeCaseService_GetPublicMotiveFileIdentifierByActId_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPublicMotiveFileIdentifierByActIdResponse" message="tns:IeCaseService_GetPublicMotiveFileIdentifierByActId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPublicMotiveFileIdentifierByActIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetPublicMotiveFileIdentifierByActId_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertIncomingDocument">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertIncomingDocument" message="tns:IeCaseService_InsertIncomingDocument_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertIncomingDocumentResponse" message="tns:IeCaseService_InsertIncomingDocument_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertIncomingDocumentInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_InsertIncomingDocument_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateIncomingDocument">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateIncomingDocument" message="tns:IeCaseService_UpdateIncomingDocument_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateIncomingDocumentResponse" message="tns:IeCaseService_UpdateIncomingDocument_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateIncomingDocumentInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_UpdateIncomingDocument_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertIncomingDocumentFile">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertIncomingDocumentFile" message="tns:IeCaseService_InsertIncomingDocumentFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertIncomingDocumentFileResponse" message="tns:IeCaseService_InsertIncomingDocumentFile_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertIncomingDocumentFileInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_InsertIncomingDocumentFile_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateIncomingDocumentFile">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateIncomingDocumentFile" message="tns:IeCaseService_UpdateIncomingDocumentFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateIncomingDocumentFileResponse" message="tns:IeCaseService_UpdateIncomingDocumentFile_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateIncomingDocumentFileInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_UpdateIncomingDocumentFile_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertOutgoingDocument">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertOutgoingDocument" message="tns:IeCaseService_InsertOutgoingDocument_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertOutgoingDocumentResponse" message="tns:IeCaseService_InsertOutgoingDocument_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertOutgoingDocumentInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_InsertOutgoingDocument_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOutgoingDocument">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateOutgoingDocument" message="tns:IeCaseService_UpdateOutgoingDocument_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateOutgoingDocumentResponse" message="tns:IeCaseService_UpdateOutgoingDocument_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateOutgoingDocumentInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_UpdateOutgoingDocument_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertOutgoingDocumentFile">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertOutgoingDocumentFile" message="tns:IeCaseService_InsertOutgoingDocumentFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertOutgoingDocumentFileResponse" message="tns:IeCaseService_InsertOutgoingDocumentFile_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertOutgoingDocumentFileInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_InsertOutgoingDocumentFile_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOutgoingDocumentFile">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateOutgoingDocumentFile" message="tns:IeCaseService_UpdateOutgoingDocumentFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateOutgoingDocumentFileResponse" message="tns:IeCaseService_UpdateOutgoingDocumentFile_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateOutgoingDocumentFileInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_UpdateOutgoingDocumentFile_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCase">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertCase" message="tns:IeCaseService_InsertCase_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertCaseResponse" message="tns:IeCaseService_InsertCase_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertCaseInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_InsertCase_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCase">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateCase" message="tns:IeCaseService_UpdateCase_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateCaseResponse" message="tns:IeCaseService_UpdateCase_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateCaseInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_UpdateCase_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertConnectedCase">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertConnectedCase" message="tns:IeCaseService_InsertConnectedCase_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertConnectedCaseResponse" message="tns:IeCaseService_InsertConnectedCase_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertConnectedCaseInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_InsertConnectedCase_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateConnectedCase">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateConnectedCase" message="tns:IeCaseService_UpdateConnectedCase_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateConnectedCaseResponse" message="tns:IeCaseService_UpdateConnectedCase_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateConnectedCaseInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_UpdateConnectedCase_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertReporter">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertReporter" message="tns:IeCaseService_InsertReporter_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertReporterResponse" message="tns:IeCaseService_InsertReporter_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertReporterInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_InsertReporter_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateReporter">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateReporter" message="tns:IeCaseService_UpdateReporter_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateReporterResponse" message="tns:IeCaseService_UpdateReporter_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateReporterInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_UpdateReporter_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertAssignment">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertAssignment" message="tns:IeCaseService_InsertAssignment_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertAssignmentResponse" message="tns:IeCaseService_InsertAssignment_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertAssignmentInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_InsertAssignment_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAssignment">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateAssignment" message="tns:IeCaseService_UpdateAssignment_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateAssignmentResponse" message="tns:IeCaseService_UpdateAssignment_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateAssignmentInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_UpdateAssignment_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertAssignmentFile">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertAssignmentFile" message="tns:IeCaseService_InsertAssignmentFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertAssignmentFileResponse" message="tns:IeCaseService_InsertAssignmentFile_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertAssignmentFileInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_InsertAssignmentFile_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAssignmentFile">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateAssignmentFile" message="tns:IeCaseService_UpdateAssignmentFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateAssignmentFileResponse" message="tns:IeCaseService_UpdateAssignmentFile_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateAssignmentFileInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_UpdateAssignmentFile_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertHearing">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertHearing" message="tns:IeCaseService_InsertHearing_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertHearingResponse" message="tns:IeCaseService_InsertHearing_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertHearingInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_InsertHearing_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateHearing">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateHearing" message="tns:IeCaseService_UpdateHearing_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateHearingResponse" message="tns:IeCaseService_UpdateHearing_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateHearingInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_UpdateHearing_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertPrivateProtocolFile">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertPrivateProtocolFile" message="tns:IeCaseService_InsertPrivateProtocolFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertPrivateProtocolFileResponse" message="tns:IeCaseService_InsertPrivateProtocolFile_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertPrivateProtocolFileInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_InsertPrivateProtocolFile_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePrivateProtocolFile">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdatePrivateProtocolFile" message="tns:IeCaseService_UpdatePrivateProtocolFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdatePrivateProtocolFileResponse" message="tns:IeCaseService_UpdatePrivateProtocolFile_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdatePrivateProtocolFileInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_UpdatePrivateProtocolFile_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertPublicProtocolFile">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertPublicProtocolFile" message="tns:IeCaseService_InsertPublicProtocolFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertPublicProtocolFileResponse" message="tns:IeCaseService_InsertPublicProtocolFile_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertPublicProtocolFileInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_InsertPublicProtocolFile_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePublicProtocolFile">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdatePublicProtocolFile" message="tns:IeCaseService_UpdatePublicProtocolFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdatePublicProtocolFileResponse" message="tns:IeCaseService_UpdatePublicProtocolFile_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdatePublicProtocolFileInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_UpdatePublicProtocolFile_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertHearingParticipant">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertHearingParticipant" message="tns:IeCaseService_InsertHearingParticipant_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertHearingParticipantResponse" message="tns:IeCaseService_InsertHearingParticipant_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertHearingParticipantInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_InsertHearingParticipant_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateHearingParticipant">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateHearingParticipant" message="tns:IeCaseService_UpdateHearingParticipant_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateHearingParticipantResponse" message="tns:IeCaseService_UpdateHearingParticipant_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateHearingParticipantInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_UpdateHearingParticipant_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertAct">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertAct" message="tns:IeCaseService_InsertAct_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertActResponse" message="tns:IeCaseService_InsertAct_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertActInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_InsertAct_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAct">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateAct" message="tns:IeCaseService_UpdateAct_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateActResponse" message="tns:IeCaseService_UpdateAct_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateActInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_UpdateAct_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertPublicActFile">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertPublicActFile" message="tns:IeCaseService_InsertPublicActFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertPublicActFileResponse" message="tns:IeCaseService_InsertPublicActFile_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertPublicActFileInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_InsertPublicActFile_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePublicActFile">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdatePublicActFile" message="tns:IeCaseService_UpdatePublicActFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdatePublicActFileResponse" message="tns:IeCaseService_UpdatePublicActFile_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdatePublicActFileInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_UpdatePublicActFile_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertPrivateActFile">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertPrivateActFile" message="tns:IeCaseService_InsertPrivateActFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertPrivateActFileResponse" message="tns:IeCaseService_InsertPrivateActFile_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertPrivateActFileInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_InsertPrivateActFile_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePrivateActFile">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdatePrivateActFile" message="tns:IeCaseService_UpdatePrivateActFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdatePrivateActFileResponse" message="tns:IeCaseService_UpdatePrivateActFile_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdatePrivateActFileInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_UpdatePrivateActFile_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertPublicMotiveFile">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertPublicMotiveFile" message="tns:IeCaseService_InsertPublicMotiveFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertPublicMotiveFileResponse" message="tns:IeCaseService_InsertPublicMotiveFile_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertPublicMotiveFileInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_InsertPublicMotiveFile_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePublicMotiveFile">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdatePublicMotiveFile" message="tns:IeCaseService_UpdatePublicMotiveFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdatePublicMotiveFileResponse" message="tns:IeCaseService_UpdatePublicMotiveFile_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdatePublicMotiveFileInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_UpdatePublicMotiveFile_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertPrivateMotiveFile">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertPrivateMotiveFile" message="tns:IeCaseService_InsertPrivateMotiveFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertPrivateMotiveFileResponse" message="tns:IeCaseService_InsertPrivateMotiveFile_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertPrivateMotiveFileInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_InsertPrivateMotiveFile_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePrivateMotiveFile">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdatePrivateMotiveFile" message="tns:IeCaseService_UpdatePrivateMotiveFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdatePrivateMotiveFileResponse" message="tns:IeCaseService_UpdatePrivateMotiveFile_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdatePrivateMotiveFileInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_UpdatePrivateMotiveFile_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertActPreparator">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertActPreparator" message="tns:IeCaseService_InsertActPreparator_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertActPreparatorResponse" message="tns:IeCaseService_InsertActPreparator_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertActPreparatorInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_InsertActPreparator_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateActPreparator">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateActPreparator" message="tns:IeCaseService_UpdateActPreparator_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateActPreparatorResponse" message="tns:IeCaseService_UpdateActPreparator_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateActPreparatorInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_UpdateActPreparator_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertAppeal">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertAppeal" message="tns:IeCaseService_InsertAppeal_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertAppealResponse" message="tns:IeCaseService_InsertAppeal_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertAppealInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_InsertAppeal_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAppeal">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateAppeal" message="tns:IeCaseService_UpdateAppeal_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateAppealResponse" message="tns:IeCaseService_UpdateAppeal_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateAppealInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_UpdateAppeal_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCaseRuling">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertCaseRuling" message="tns:IeCaseService_InsertCaseRuling_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertCaseRulingResponse" message="tns:IeCaseService_InsertCaseRuling_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertCaseRulingInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_InsertCaseRuling_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCaseRuling">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateCaseRuling" message="tns:IeCaseService_UpdateCaseRuling_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateCaseRulingResponse" message="tns:IeCaseService_UpdateCaseRuling_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateCaseRulingInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_UpdateCaseRuling_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertSide">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertSide" message="tns:IeCaseService_InsertSide_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertSideResponse" message="tns:IeCaseService_InsertSide_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertSideInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_InsertSide_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSide">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateSide" message="tns:IeCaseService_UpdateSide_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateSideResponse" message="tns:IeCaseService_UpdateSide_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateSideInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_UpdateSide_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertLawyerAssignment">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertLawyerAssignment" message="tns:IeCaseService_InsertLawyerAssignment_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertLawyerAssignmentResponse" message="tns:IeCaseService_InsertLawyerAssignment_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertLawyerAssignmentInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_InsertLawyerAssignment_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLawyerAssignment">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateLawyerAssignment" message="tns:IeCaseService_UpdateLawyerAssignment_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateLawyerAssignmentResponse" message="tns:IeCaseService_UpdateLawyerAssignment_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateLawyerAssignmentInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_UpdateLawyerAssignment_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertSummon">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertSummon" message="tns:IeCaseService_InsertSummon_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertSummonResponse" message="tns:IeCaseService_InsertSummon_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertSummonInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_InsertSummon_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSummon">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateSummon" message="tns:IeCaseService_UpdateSummon_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateSummonResponse" message="tns:IeCaseService_UpdateSummon_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateSummonInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_UpdateSummon_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertSummonFile">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertSummonFile" message="tns:IeCaseService_InsertSummonFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertSummonFileResponse" message="tns:IeCaseService_InsertSummonFile_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertSummonFileInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_InsertSummonFile_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSummonFile">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateSummonFile" message="tns:IeCaseService_UpdateSummonFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateSummonFileResponse" message="tns:IeCaseService_UpdateSummonFile_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateSummonFileInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_UpdateSummonFile_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllLawyers">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetAllLawyers" message="tns:IeCaseService_GetAllLawyers_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetAllLawyersResponse" message="tns:IeCaseService_GetAllLawyers_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetAllLawyersInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetAllLawyers_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllNewLawyers">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetAllNewLawyers" message="tns:IeCaseService_GetAllNewLawyers_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetAllNewLawyersResponse" message="tns:IeCaseService_GetAllNewLawyers_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetAllNewLawyersInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetAllNewLawyers_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLawyerByNumber">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetLawyerByNumber" message="tns:IeCaseService_GetLawyerByNumber_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetLawyerByNumberResponse" message="tns:IeCaseService_GetLawyerByNumber_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetLawyerByNumberInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetLawyerByNumber_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllReadSummons">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetAllReadSummons" message="tns:IeCaseService_GetAllReadSummons_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetAllReadSummonsResponse" message="tns:IeCaseService_GetAllReadSummons_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetAllReadSummonsInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetAllReadSummons_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReadSummonsForCertainDay">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetReadSummonsForCertainDay" message="tns:IeCaseService_GetReadSummonsForCertainDay_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetReadSummonsForCertainDayResponse" message="tns:IeCaseService_GetReadSummonsForCertainDay_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetReadSummonsForCertainDayInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetReadSummonsForCertainDay_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSummonReportDocument">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetSummonReportDocument" message="tns:IeCaseService_GetSummonReportDocument_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetSummonReportDocumentResponse" message="tns:IeCaseService_GetSummonReportDocument_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetSummonReportDocumentInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetSummonReportDocument_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActivateSummonsAccess">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/ActivateSummonsAccess" message="tns:IeCaseService_ActivateSummonsAccess_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/ActivateSummonsAccessResponse" message="tns:IeCaseService_ActivateSummonsAccess_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/ActivateSummonsAccessInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_ActivateSummonsAccess_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeactivateSummonsAccess">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeactivateSummonsAccess" message="tns:IeCaseService_DeactivateSummonsAccess_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeactivateSummonsAccessResponse" message="tns:IeCaseService_DeactivateSummonsAccess_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeactivateSummonsAccessInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_DeactivateSummonsAccess_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertPersonAssignment">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertPersonAssignment" message="tns:IeCaseService_InsertPersonAssignment_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertPersonAssignmentResponse" message="tns:IeCaseService_InsertPersonAssignment_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertPersonAssignmentInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_InsertPersonAssignment_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePersonAssignment">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdatePersonAssignment" message="tns:IeCaseService_UpdatePersonAssignment_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdatePersonAssignmentResponse" message="tns:IeCaseService_UpdatePersonAssignment_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdatePersonAssignmentInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_UpdatePersonAssignment_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertScannedDocument">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertScannedDocument" message="tns:IeCaseService_InsertScannedDocument_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertScannedDocumentResponse" message="tns:IeCaseService_InsertScannedDocument_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertScannedDocumentInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_InsertScannedDocument_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateScannedDocument">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateScannedDocument" message="tns:IeCaseService_UpdateScannedDocument_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateScannedDocumentResponse" message="tns:IeCaseService_UpdateScannedDocument_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateScannedDocumentInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_UpdateScannedDocument_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertLawyerRegistration">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertLawyerRegistration" message="tns:IeCaseService_InsertLawyerRegistration_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertLawyerRegistrationResponse" message="tns:IeCaseService_InsertLawyerRegistration_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertLawyerRegistrationInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_InsertLawyerRegistration_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActivateLawyerRegistration">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/ActivateLawyerRegistration" message="tns:IeCaseService_ActivateLawyerRegistration_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/ActivateLawyerRegistrationResponse" message="tns:IeCaseService_ActivateLawyerRegistration_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/ActivateLawyerRegistrationInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_ActivateLawyerRegistration_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeactivateLawyerRegistration">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeactivateLawyerRegistration" message="tns:IeCaseService_DeactivateLawyerRegistration_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeactivateLawyerRegistrationResponse" message="tns:IeCaseService_DeactivateLawyerRegistration_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeactivateLawyerRegistrationInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_DeactivateLawyerRegistration_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertPersonRegistration">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertPersonRegistration" message="tns:IeCaseService_InsertPersonRegistration_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertPersonRegistrationResponse" message="tns:IeCaseService_InsertPersonRegistration_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/InsertPersonRegistrationInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_InsertPersonRegistration_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActivatePersonRegistration">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/ActivatePersonRegistration" message="tns:IeCaseService_ActivatePersonRegistration_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/ActivatePersonRegistrationResponse" message="tns:IeCaseService_ActivatePersonRegistration_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/ActivatePersonRegistrationInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_ActivatePersonRegistration_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeactivatePersonRegistration">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeactivatePersonRegistration" message="tns:IeCaseService_DeactivatePersonRegistration_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeactivatePersonRegistrationResponse" message="tns:IeCaseService_DeactivatePersonRegistration_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeactivatePersonRegistrationInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_DeactivatePersonRegistration_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUsername">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateUsername" message="tns:IeCaseService_UpdateUsername_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateUsernameResponse" message="tns:IeCaseService_UpdateUsername_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/UpdateUsernameInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_UpdateUsername_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCaseIdentifiers">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetCaseIdentifiers" message="tns:IeCaseService_GetCaseIdentifiers_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetCaseIdentifiersResponse" message="tns:IeCaseService_GetCaseIdentifiers_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetCaseIdentifiersInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetCaseIdentifiers_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteIncomingDocument">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteIncomingDocument" message="tns:IeCaseService_DeleteIncomingDocument_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteIncomingDocumentResponse" message="tns:IeCaseService_DeleteIncomingDocument_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteIncomingDocumentInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_DeleteIncomingDocument_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteOutgoingDocument">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteOutgoingDocument" message="tns:IeCaseService_DeleteOutgoingDocument_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteOutgoingDocumentResponse" message="tns:IeCaseService_DeleteOutgoingDocument_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteOutgoingDocumentInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_DeleteOutgoingDocument_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCase">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteCase" message="tns:IeCaseService_DeleteCase_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteCaseResponse" message="tns:IeCaseService_DeleteCase_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteCaseInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_DeleteCase_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteConnectedCase">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteConnectedCase" message="tns:IeCaseService_DeleteConnectedCase_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteConnectedCaseResponse" message="tns:IeCaseService_DeleteConnectedCase_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteConnectedCaseInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_DeleteConnectedCase_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteReporter">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteReporter" message="tns:IeCaseService_DeleteReporter_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteReporterResponse" message="tns:IeCaseService_DeleteReporter_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteReporterInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_DeleteReporter_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAssignment">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteAssignment" message="tns:IeCaseService_DeleteAssignment_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteAssignmentResponse" message="tns:IeCaseService_DeleteAssignment_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteAssignmentInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_DeleteAssignment_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteHearing">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteHearing" message="tns:IeCaseService_DeleteHearing_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteHearingResponse" message="tns:IeCaseService_DeleteHearing_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteHearingInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_DeleteHearing_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteHearingParticipant">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteHearingParticipant" message="tns:IeCaseService_DeleteHearingParticipant_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteHearingParticipantResponse" message="tns:IeCaseService_DeleteHearingParticipant_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteHearingParticipantInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_DeleteHearingParticipant_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAct">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteAct" message="tns:IeCaseService_DeleteAct_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteActResponse" message="tns:IeCaseService_DeleteAct_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteActInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_DeleteAct_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteActPreparator">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteActPreparator" message="tns:IeCaseService_DeleteActPreparator_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteActPreparatorResponse" message="tns:IeCaseService_DeleteActPreparator_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteActPreparatorInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_DeleteActPreparator_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAppeal">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteAppeal" message="tns:IeCaseService_DeleteAppeal_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteAppealResponse" message="tns:IeCaseService_DeleteAppeal_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteAppealInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_DeleteAppeal_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCaseRuling">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteCaseRuling" message="tns:IeCaseService_DeleteCaseRuling_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteCaseRulingResponse" message="tns:IeCaseService_DeleteCaseRuling_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteCaseRulingInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_DeleteCaseRuling_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSide">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteSide" message="tns:IeCaseService_DeleteSide_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteSideResponse" message="tns:IeCaseService_DeleteSide_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteSideInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_DeleteSide_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteLawyerAssignment">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteLawyerAssignment" message="tns:IeCaseService_DeleteLawyerAssignment_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteLawyerAssignmentResponse" message="tns:IeCaseService_DeleteLawyerAssignment_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteLawyerAssignmentInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_DeleteLawyerAssignment_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSummon">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteSummon" message="tns:IeCaseService_DeleteSummon_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteSummonResponse" message="tns:IeCaseService_DeleteSummon_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteSummonInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_DeleteSummon_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePersonAssignment">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeletePersonAssignment" message="tns:IeCaseService_DeletePersonAssignment_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeletePersonAssignmentResponse" message="tns:IeCaseService_DeletePersonAssignment_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeletePersonAssignmentInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_DeletePersonAssignment_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteScannedDocument">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteScannedDocument" message="tns:IeCaseService_DeleteScannedDocument_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteScannedDocumentResponse" message="tns:IeCaseService_DeleteScannedDocument_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteScannedDocumentInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_DeleteScannedDocument_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAssignmentFile">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteAssignmentFile" message="tns:IeCaseService_DeleteAssignmentFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteAssignmentFileResponse" message="tns:IeCaseService_DeleteAssignmentFile_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteAssignmentFileInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_DeleteAssignmentFile_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePrivateProtocolFile">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeletePrivateProtocolFile" message="tns:IeCaseService_DeletePrivateProtocolFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeletePrivateProtocolFileResponse" message="tns:IeCaseService_DeletePrivateProtocolFile_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeletePrivateProtocolFileInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_DeletePrivateProtocolFile_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePublicProtocolFile">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeletePublicProtocolFile" message="tns:IeCaseService_DeletePublicProtocolFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeletePublicProtocolFileResponse" message="tns:IeCaseService_DeletePublicProtocolFile_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeletePublicProtocolFileInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_DeletePublicProtocolFile_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteIncomingDocumentFile">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteIncomingDocumentFile" message="tns:IeCaseService_DeleteIncomingDocumentFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteIncomingDocumentFileResponse" message="tns:IeCaseService_DeleteIncomingDocumentFile_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteIncomingDocumentFileInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_DeleteIncomingDocumentFile_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteOutgoingDocumentFile">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteOutgoingDocumentFile" message="tns:IeCaseService_DeleteOutgoingDocumentFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteOutgoingDocumentFileResponse" message="tns:IeCaseService_DeleteOutgoingDocumentFile_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteOutgoingDocumentFileInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_DeleteOutgoingDocumentFile_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSummonFile">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteSummonFile" message="tns:IeCaseService_DeleteSummonFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteSummonFileResponse" message="tns:IeCaseService_DeleteSummonFile_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeleteSummonFileInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_DeleteSummonFile_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePrivateActFile">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeletePrivateActFile" message="tns:IeCaseService_DeletePrivateActFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeletePrivateActFileResponse" message="tns:IeCaseService_DeletePrivateActFile_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeletePrivateActFileInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_DeletePrivateActFile_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePublicActFile">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeletePublicActFile" message="tns:IeCaseService_DeletePublicActFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeletePublicActFileResponse" message="tns:IeCaseService_DeletePublicActFile_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeletePublicActFileInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_DeletePublicActFile_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePrivateMotiveFile">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeletePrivateMotiveFile" message="tns:IeCaseService_DeletePrivateMotiveFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeletePrivateMotiveFileResponse" message="tns:IeCaseService_DeletePrivateMotiveFile_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeletePrivateMotiveFileInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_DeletePrivateMotiveFile_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePublicMotiveFile">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeletePublicMotiveFile" message="tns:IeCaseService_DeletePublicMotiveFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeletePublicMotiveFileResponse" message="tns:IeCaseService_DeletePublicMotiveFile_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/DeletePublicMotiveFileInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_DeletePublicMotiveFile_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIncomingDocumentById">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetIncomingDocumentById" message="tns:IeCaseService_GetIncomingDocumentById_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetIncomingDocumentByIdResponse" message="tns:IeCaseService_GetIncomingDocumentById_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetIncomingDocumentByIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetIncomingDocumentById_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIncomingDocumentIdentifiersByCaseId">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetIncomingDocumentIdentifiersByCaseId" message="tns:IeCaseService_GetIncomingDocumentIdentifiersByCaseId_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetIncomingDocumentIdentifiersByCaseIdResponse" message="tns:IeCaseService_GetIncomingDocumentIdentifiersByCaseId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetIncomingDocumentIdentifiersByCaseIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetIncomingDocumentIdentifiersByCaseId_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOutgoingDocumentById">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetOutgoingDocumentById" message="tns:IeCaseService_GetOutgoingDocumentById_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetOutgoingDocumentByIdResponse" message="tns:IeCaseService_GetOutgoingDocumentById_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetOutgoingDocumentByIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetOutgoingDocumentById_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOutgoingDocumentIdentifiersByCaseId">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetOutgoingDocumentIdentifiersByCaseId" message="tns:IeCaseService_GetOutgoingDocumentIdentifiersByCaseId_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetOutgoingDocumentIdentifiersByCaseIdResponse" message="tns:IeCaseService_GetOutgoingDocumentIdentifiersByCaseId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetOutgoingDocumentIdentifiersByCaseIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetOutgoingDocumentIdentifiersByCaseId_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCaseById">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetCaseById" message="tns:IeCaseService_GetCaseById_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetCaseByIdResponse" message="tns:IeCaseService_GetCaseById_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetCaseByIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetCaseById_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetConnectedCaseById">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetConnectedCaseById" message="tns:IeCaseService_GetConnectedCaseById_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetConnectedCaseByIdResponse" message="tns:IeCaseService_GetConnectedCaseById_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetConnectedCaseByIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetConnectedCaseById_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetConnectedCaseIdentifiersByCaseId">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetConnectedCaseIdentifiersByCaseId" message="tns:IeCaseService_GetConnectedCaseIdentifiersByCaseId_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetConnectedCaseIdentifiersByCaseIdResponse" message="tns:IeCaseService_GetConnectedCaseIdentifiersByCaseId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetConnectedCaseIdentifiersByCaseIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetConnectedCaseIdentifiersByCaseId_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReporterById">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetReporterById" message="tns:IeCaseService_GetReporterById_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetReporterByIdResponse" message="tns:IeCaseService_GetReporterById_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetReporterByIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetReporterById_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReporterIdentifiersByCaseId">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetReporterIdentifiersByCaseId" message="tns:IeCaseService_GetReporterIdentifiersByCaseId_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetReporterIdentifiersByCaseIdResponse" message="tns:IeCaseService_GetReporterIdentifiersByCaseId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetReporterIdentifiersByCaseIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetReporterIdentifiersByCaseId_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssignmentById">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetAssignmentById" message="tns:IeCaseService_GetAssignmentById_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetAssignmentByIdResponse" message="tns:IeCaseService_GetAssignmentById_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetAssignmentByIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetAssignmentById_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssignmentIdentifiersByCaseId">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetAssignmentIdentifiersByCaseId" message="tns:IeCaseService_GetAssignmentIdentifiersByCaseId_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetAssignmentIdentifiersByCaseIdResponse" message="tns:IeCaseService_GetAssignmentIdentifiersByCaseId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetAssignmentIdentifiersByCaseIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetAssignmentIdentifiersByCaseId_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHearingById">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetHearingById" message="tns:IeCaseService_GetHearingById_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetHearingByIdResponse" message="tns:IeCaseService_GetHearingById_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetHearingByIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetHearingById_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHearingIdentifiersByCaseId">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetHearingIdentifiersByCaseId" message="tns:IeCaseService_GetHearingIdentifiersByCaseId_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetHearingIdentifiersByCaseIdResponse" message="tns:IeCaseService_GetHearingIdentifiersByCaseId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetHearingIdentifiersByCaseIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetHearingIdentifiersByCaseId_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHearingParticipantById">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetHearingParticipantById" message="tns:IeCaseService_GetHearingParticipantById_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetHearingParticipantByIdResponse" message="tns:IeCaseService_GetHearingParticipantById_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetHearingParticipantByIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetHearingParticipantById_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHearingParticipantIdentifiersByHearingId">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetHearingParticipantIdentifiersByHearingId" message="tns:IeCaseService_GetHearingParticipantIdentifiersByHearingId_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetHearingParticipantIdentifiersByHearingIdResponse" message="tns:IeCaseService_GetHearingParticipantIdentifiersByHearingId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetHearingParticipantIdentifiersByHearingIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetHearingParticipantIdentifiersByHearingId_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetActById">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetActById" message="tns:IeCaseService_GetActById_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetActByIdResponse" message="tns:IeCaseService_GetActById_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetActByIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetActById_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetActIdentifiersByCaseId">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetActIdentifiersByCaseId" message="tns:IeCaseService_GetActIdentifiersByCaseId_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetActIdentifiersByCaseIdResponse" message="tns:IeCaseService_GetActIdentifiersByCaseId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetActIdentifiersByCaseIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetActIdentifiersByCaseId_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetActPreparatorById">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetActPreparatorById" message="tns:IeCaseService_GetActPreparatorById_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetActPreparatorByIdResponse" message="tns:IeCaseService_GetActPreparatorById_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetActPreparatorByIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetActPreparatorById_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetActPreparatorIdentifiersByActId">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetActPreparatorIdentifiersByActId" message="tns:IeCaseService_GetActPreparatorIdentifiersByActId_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetActPreparatorIdentifiersByActIdResponse" message="tns:IeCaseService_GetActPreparatorIdentifiersByActId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetActPreparatorIdentifiersByActIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetActPreparatorIdentifiersByActId_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAppealById">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetAppealById" message="tns:IeCaseService_GetAppealById_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetAppealByIdResponse" message="tns:IeCaseService_GetAppealById_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetAppealByIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetAppealById_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAppealIdentifiersByActId">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetAppealIdentifiersByActId" message="tns:IeCaseService_GetAppealIdentifiersByActId_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetAppealIdentifiersByActIdResponse" message="tns:IeCaseService_GetAppealIdentifiersByActId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetAppealIdentifiersByActIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetAppealIdentifiersByActId_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCaseRulingById">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetCaseRulingById" message="tns:IeCaseService_GetCaseRulingById_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetCaseRulingByIdResponse" message="tns:IeCaseService_GetCaseRulingById_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetCaseRulingByIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetCaseRulingById_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCaseRulingIdentifiersByCaseId">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetCaseRulingIdentifiersByCaseId" message="tns:IeCaseService_GetCaseRulingIdentifiersByCaseId_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetCaseRulingIdentifiersByCaseIdResponse" message="tns:IeCaseService_GetCaseRulingIdentifiersByCaseId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetCaseRulingIdentifiersByCaseIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetCaseRulingIdentifiersByCaseId_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSideById">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetSideById" message="tns:IeCaseService_GetSideById_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetSideByIdResponse" message="tns:IeCaseService_GetSideById_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetSideByIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetSideById_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSideIdentifiersByCaseId">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetSideIdentifiersByCaseId" message="tns:IeCaseService_GetSideIdentifiersByCaseId_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetSideIdentifiersByCaseIdResponse" message="tns:IeCaseService_GetSideIdentifiersByCaseId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetSideIdentifiersByCaseIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetSideIdentifiersByCaseId_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLawyerAssignmentById">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetLawyerAssignmentById" message="tns:IeCaseService_GetLawyerAssignmentById_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetLawyerAssignmentByIdResponse" message="tns:IeCaseService_GetLawyerAssignmentById_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetLawyerAssignmentByIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetLawyerAssignmentById_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLawyerAssignmentIdentifiersBySideId">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetLawyerAssignmentIdentifiersBySideId" message="tns:IeCaseService_GetLawyerAssignmentIdentifiersBySideId_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetLawyerAssignmentIdentifiersBySideIdResponse" message="tns:IeCaseService_GetLawyerAssignmentIdentifiersBySideId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetLawyerAssignmentIdentifiersBySideIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetLawyerAssignmentIdentifiersBySideId_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonAssignmentById">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPersonAssignmentById" message="tns:IeCaseService_GetPersonAssignmentById_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPersonAssignmentByIdResponse" message="tns:IeCaseService_GetPersonAssignmentById_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPersonAssignmentByIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetPersonAssignmentById_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonAssignmentIdentifiersBySideId">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPersonAssignmentIdentifiersBySideId" message="tns:IeCaseService_GetPersonAssignmentIdentifiersBySideId_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPersonAssignmentIdentifiersBySideIdResponse" message="tns:IeCaseService_GetPersonAssignmentIdentifiersBySideId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetPersonAssignmentIdentifiersBySideIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetPersonAssignmentIdentifiersBySideId_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLawyerRegistrationById">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetLawyerRegistrationById" message="tns:IeCaseService_GetLawyerRegistrationById_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetLawyerRegistrationByIdResponse" message="tns:IeCaseService_GetLawyerRegistrationById_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetLawyerRegistrationByIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetLawyerRegistrationById_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLawyerRegistrationIdentifiersByLawyerId">
+      <wsdl:input wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetLawyerRegistrationIdentifiersByLawyerId" message="tns:IeCaseService_GetLawyerRegistrationIdentifiersByLawyerId_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetLawyerRegistrationIdentifiersByLawyerIdResponse" message="tns:IeCaseService_GetLawyerRegistrationIdentifiersByLawyerId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.abbaty.com/eCase/v2/IeCaseService/GetLawyerRegistrationIdentifiersByLawyerIdInfocaseFaultFault" name="InfocaseFaultFault" message="tns:IeCaseService_GetLawyerRegistrationIdentifiersByLawyerId_InfocaseFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

@@ -1,0 +1,603 @@
+#define IDD_PRINT_REPORT_BOOK_ADMIN	22795
+#define IDD_DLG_REORDER	2
+#define IDC_SESS_LIST_MOVE_DOWN	103
+#define IDC_SESS_LIST_MOVE_UP	102
+#define IDC_SESS_LIST_REORDER	101
+#define IDD_PRINT_BOOK_ZZDN	22789
+#define IDC_GROUPBOX4	107
+#define IDC_PRINT_RB_FACE_FOR_VSS	180
+#define IDC_PRINT_RB_FACE_CORRUPT	181
+#define IDC_RB_FACE_INCOMING_EXTEND	182
+#define IDC_PSL_ORD_ARL	101
+#define IDC_RADIOBUTTON1	103
+#define IDC_PSL_ORD_REG	101
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#define IDD_PRINT_DESC_BOOK 22701
+#define IDC_PRINT_DB_NO_BEGIN 101
+#define IDC_PRINT_DB_NO_END 102
+#define IDC_PRINT_DB_YEAR 103
+#define IDC_PRINT_DB_COLLEGE 104
+// 105 .. 107 used by IDD_PRINT_DESK_BOOK_AREAL
+// 108 .. 111 used by IDD_PRINT_ABC_BOOK
+#define IDC_PRINT_DB_NEW_FORMAT 112
+#define IDC_PRINT_ABC_NEW_FORMAT	112
+#define IDC_PRINT_ABC_COLLEGE	104
+#define IDC_PRINT_ABC_YEAR	103
+#define IDC_PRINT_ABC_NO_END	102
+#define IDC_PRINT_ABC_NO_BEGIN	101
+#define IDC_PRINT_DB_SPLIT_IN_2 113
+#define IDC_RADIOBUTTON2	105
+#define IDC_RADIOBUTTON3	106
+#define IDC_RB_DB_BY_DATE	106
+#define IDC_CHECKBOX1	108
+#define IDC_CHECKBOX2	109
+#define IDC_PRINT_DB_WANT_2ND_LAWS	109
+#define IDC_PRINT_DB_WANT_1ST_LAWS	108
+#define IDC_EDIT4	110
+#define IDC_GROUPBOX6	114
+#define IDC_EDIT5	115
+#define IDC_EDIT6	116
+#define IDC_RADIOBUTTON5	117
+#define IDC_RB_DB_BY_NO	105
+#define IDC_E_LAST_DATE	115
+#define IDC_E_DB_LDATE	115
+#define IDC_RADIOBUTTON6	108
+#define IDC_GR_BOX_DBK	114
+#define IDC_E_DB_FDATE	110
+#define IDC_E_FDATE	110
+#define IDC_GR_BOX_DB	114
+#define IDC_DB_GR_BOX	114
+#define IDC_E_FIRST_DATE	110
+#define IDC_FIRST_DATE	110
+#define IDC_RB_NUMBER	105
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#define IDD_SUMMONS_TEXT 22703
+#define IDC_SUMM_TXT 101  // used also by IDD_SHORT_TEXT and
+				  // IDD_SUMM_PUSH_GET_BN_TEXT
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#define IDD_PRINT_ABC_BOOK 22704
+#define IDC_PRINT_ABCB_LETT_BEGIN 105
+#define IDC_PRINT_ABCB_LETT_END 106
+#define IDC_PRINT_ABCB_WANT_CHECKUP 107
+#define IDC_PRINT_ABCB_PRINTING 111
+#define IDC_PRINT_ABCB_NORMAL_PRINT 108
+#define IDC_PRINT_ABCB_BROKEN_PRINT	109
+#define IDC_PRINT_ABCB_PRINT_BY_PG 110
+// 112 .. 113 used by IDD_PRINT_DESC_BOOK
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#define IDD_PRINT_TIME_BOOK 22705
+#define IDC_PRINT_TB_COLLEGE 105
+#define IDC_PRINT_TB_COMPOSIT 101
+#define IDC_PRINT_TB_DATE_BEGIN 102
+#define IDC_PRINT_TB_DATE_END 103
+#define IDC_PRINT_TB_NO_BEGIN 104
+//#define IDC_WANT_CLOSED_SESSIONS 110 // see IDD_PRINT_REPORT_BOOK_AREAL
+# define IDC_PRINT_TB_HEAPING_DATE 111
+# define IDC_PRINT_TB_WANT_BOOK 112
+# define IDC_PRINT_TB_WANT_SUMMARY 113
+# define IDC_PRINT_TB_WANT_JUDGE_SUMMARY 114
+# define IDC_PRINT_TB_PSEUDO_GROUP 115
+// 116 .. 120   see IDD_PRINT_TIME_BOOK_AREAL
+# define IDC_PRINT_TB_WANT_RESULTS_SET 121
+#define IDC_RB_1	127
+#define IDC_RB_2	128
+#define IDC_GR_BOX_ORGER	110
+// 122   see IDD_PRINT_TIME_BOOK_AREAL
+# define IDC_PRINT_TB_NEW_FORMAT 123
+# define IDC_PRINT_TB_SPLIT_IN_2 124
+#define IDC_GROUPBOX2	108
+#define IDC_RADIOBUTTON4	109
+#define IDC_EDIT1	110
+#define IDC_EDIT2	111
+#define IDC_EDIT3	114
+#define IDC_RBA2	122
+#define IDC_RB_ORDER_2	107
+#define IDC_RB_ORDER_1_ARL	106
+#define IDC_RB_ORDER_1_AR	106
+#define IDC_PRINT_RB_FACE_FOR_MINISTRY_A	110
+#define IDC_PRINT_RB_INTERNAL_USE_A	108
+#define IDC_PRINT_RB_INTERNAL_USE_APP	108
+#define IDC_RBA1	110
+#define IDC_RB_ORDER_1	106
+# define IDC_PRINT_TB_DATE_BEGIN_UPDN 125
+# define IDC_PRINT_TB_DATE_END_UPDN 126
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#define IDD_PRINT_REPORT_BOOK 22706
+#define IDC_PRINT_RB_BEG_MONTH 101
+#define IDC_PRINT_RB_BEG_YEAR 102
+#define IDC_PRINT_RB_END_MONTH 103
+#define IDC_PRINT_RB_END_YEAR 104
+#define IDC_PRINT_RB_LAW_TYPE 105
+#define IDC_PRINT_RB_COMPOSIT 106
+#define IDC_PRINT_RB_INTERNAL_USE 107
+#define IDC_PRINT_RB_ADMIN_LOW_RANGE 108
+#define IDC_PRINT_RB_ADMIN_HIGH_RANGE 109
+// 110 .. 112, 119 used by PRINT_REPORT_BOOK_AREAL
+#define IDC_PRINT_RB_FACE 117
+#define IDC_PRINT_RB_FACE_FOR_MINISTRY 118
+#define IDC_PRINT_RB_FACE_COMBINED 120
+// 121 used by IDD_PRT_JUDGE_CHKUP_BK_REGIONAL
+// 122 used by IDD_PRT_JUDGE_CHKUP_BK_APPEAL
+// 123, 124 used by IDD_PRT_JUDGE_CHECKUP_BOOK
+#define IDC_PRINT_RB_FOR_VSS 190
+#define IDC_PRINT_RB_FOR_VSS_APPEAL 191
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#define IDD_PRINT_CLOSED_SESS_BOOK	22707
+#define IDC_PRINT_CSB_BEG_DATE	101
+#define IDC_PRINT_CSB_END_DATE	102
+#define IDC_PRINT_CSB_BEG_NUMBER	103
+#define IDC_PRINT_CSB_COLLEGE	104
+#define IDC_PRINT_CSB_WANT_ALL_RES 105
+// 106 .. 109 used by IDD_PRINT_CLOSED_SESS_BOOK_AREAL
+#define IDC_PRINT_CSB_COMPOSITION 110
+#define IDC_PRINT_CSB_WANT_RESULTS_SET 111
+#define IDC_PRINT_CSB_NEW_FORMAT 112
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#define IDD_PRINT_TIME_BOOK_AREAL 22708
+#define IDC_LAWS_BY_INSTANCE	106
+#define IDC_1ST_INSTANCE_LAWS	107
+#define IDC_2ND_INSTANCE_LAWS	108
+#define IDC_3RD_INSTANCE_LAWS_PAC 109
+//#define IDC_WANT_CLOSED_SESSIONS 110
+// 111 - 115 :  see IDD_PRINT_TIME_BOOK
+# define IDC_PRINT_TB_NOON 116
+# define IDC_PRINT_TB_WHOLE_DAY 118
+# define IDC_PRINT_TB_MORNING 119
+# define IDC_PRINT_TB_AFTERNOON 120
+// 121 :  see IDD_PRINT_TIME_BOOK
+# define IDC_ALL_2ND_INSTANCE_LAWS 122
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#define IDD_PRINT_REPORT_BOOK_AREAL 22709
+#define IDC_REPORT_BY_INSTANCE	110
+#define IDC_1ST_INSTANCE_REPORT	111
+#define IDC_2ND_INSTANCE_REPORT	112
+// 113 .. 118 used by PRINT_REPORT_BOOK
+#define IDC_PRINT_RB_FACE_FOR_BOSS 119
+// 120 used by PRINT_REPORT_BOOK
+// 121 used by IDD_PRT_JUDGE_CHKUP_BK_REGIONAL
+// 122 used by IDD_PRT_JUDGE_CHKUP_BK_APPEAL
+// 123, 124 used by IDD_PRT_JUDGE_CHECKUP_BOOK
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#define IDD_SUMMONS_TEXTS	22712
+#define IDC_SUMMONS_T0	101
+#define IDC_SUMMONS_T1	102
+#define IDC_SUMMONS_T2	103
+#define IDC_SUMMONS_T3	104
+#define IDC_SUMMONS_T4	105
+# define IDC_PUT_TEXTS  106
+# define IDC_GET_TEXTS  107
+// 108 used by IDD_SUMM_PUSH_GET_BN_TEXT
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#define IDD_EDT_NFB_2ND_PUNI_ADM   22715
+#define IDC_ENFB2_PUNI_ADM_COUNT     101
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# define IDD_PRT_JUDGE_CHECKUP_BOOK 22717
+// Uses IDD_PRINT_REPORT_BOOK's IDC_s
+# define IDC_PRT_JCHKUP_NOON 123
+# define IDC_PRT_JCHKUP_SESS_DISTRIB 124
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# define IDD_PRINT_LETTER_TO_BOSS 22718
+# define IDC_TO_WHO                 101
+# define IDC_TO_BOSS_OF_PRISON      102
+# define IDC_TO_BOSS_OF_DETECTION   103
+# define IDC_TO_COMMANDER           104
+# define IDC_TO_BOSS_OF_POL_DEP     105
+# define IDC_TO_BOSS_OF_RPG         106
+# define IDC_TO_BOSS_OF_POL_DEP_SUMMONS     107
+# define IDC_TO_BOSS_OF_RPG_SUMMONS         108
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#define IDD_PRINT_CLOSED_SESS_BOOK_AREAL 22719
+#define IDC_PRINT_CSB_ORDER 106
+#define IDC_PRINT_CSB_ORDER_BY_DATE 107
+#define IDC_PRINT_CSB_ORDER_BY_DATE_RET 108
+# define IDC_PRINT_CSB_DAMN_SHORT_FORMAT 109
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# define IDD_INPUT_DIARY 22722
+# define IDC_INP_DIA_LAW_TYPE 101
+# define IDC_INP_DIA_BEG_NO 102
+# define IDC_INP_DIA_END_NO 103
+# define IDC_INP_DIA_YEAR 104
+// 105 ... 115 used by IDD_INPUT_DIARY_AREAL
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# define IDD_PRT_JUDGE_CHKUP_BK_REGIONAL 22723
+// Uses IDD_PRINT_REPORT_BOOK's IDC_s
+# define IDC_SUBJECT_LB 121
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#define IDD_PRINT_TIME_BOOK_APPEAL 22724
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#define IDD_PRINT_CLOSED_SESS_BOOK_APPEAL 22725
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#define IDD_PRINT_ABC_BOOK_APPEAL 22726
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#define IDD_PRINT_REPORT_BOOK_APPEAL 22728
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# define IDD_PRT_JUDGE_CHKUP_BK_APPEAL 22730
+// Uses IDD_PRINT_REPORT_BOOK's IDC_s
+# define IDC_PRT_JCHKUP_DECIDED_LAWS 122
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# define IDD_APL_LAWS_INPUT_DIARY 22731
+// Uses IDD_INPUT_DIARY's IDC_s
+# define IDC_ALL_COLUMNS 105
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Uses IDD_APL_LAWS_INPUT_DIARY's IDC_s
+# define IDC_ALB_BEG_DATE 106
+# define IDC_ALB_END_DATE 107
+# define IDC_ALB_BEG_SERIAL_NO 108
+#define IDC_SDBK_BEG_SERIALNO	108
+# define IDC_ALB_PSEUDO_GROUP 109
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#define IDD_PRINT_DESK_BOOK_AREAL 22733
+// Uses IDD_PRINT_DESK_BOOC's IDC_s
+#define IDC_PRINT_DB_LAWS_BY_INST_PSEUDO 107
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# define IDD_PRINT_EXECUTION_BOOK 22734
+# define IDC_PRINT_EXEC_BK_PSEUDO 101
+# define IDC_PRINT_EXEC_BK_BEG_DATE 102
+# define IDC_PRINT_EXEC_BK_END_DATE 103
+# define IDC_PRINT_EXEC_BK_SERIAL_NO 104
+# define IDC_PRINT_EXEC_BK_ALL_COLUMNS 105
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# define IDD_PRINT_TRADE_634_BOOK 22735
+# define IDC_634BK_BEG_DATE 101
+# define IDC_634BK_BEG_DATE_UPDN 102
+# define IDC_634BK_END_DATE 103
+# define IDC_634BK_END_DATE_UPDN 104
+# define IDC_634BK_TYPE 105
+# define IDC_634BK_NO 106
+# define IDC_634BK_YEAR 107
+# define IDC_634BK_SEARCH 107
+# define IDC_634BK_BEG_SERIAL_NO 108
+# define IDC_634BK_CHAIN 109
+# define IDC_634BK_USE_LAW_TEXT 110
+# define IDC_634BK_LAW_TEXT 111
+# define IDC_634BK_NEW_FORMAT 112
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# define IDD_PRINT_WEB_CHECKUP_BOOK 22736
+# define IDC_PR_WCB_KIND_GRP_BOX 101
+# define IDC_PR_WCB_KIND_FIXED 102
+# define IDC_PR_WCB_KIND_DECIDED 103
+# define IDC_PR_WCB_LAW_KINDS 104
+# define IDC_PR_WCB_BEG_DATE 105
+# define IDC_PR_WCB_END_DATE 106
+# define IDC_PR_WCB_OUT_FILE_NAME 107
+# define IDC_PR_WCB_SOCIALINTEREST 108
+# define IDC_PR_WCB_WITHJUDGENAMES 109
+# define IDC_PR_WCB_ORDER_BY_TYPE 110
+# define IDC_PR_WCB_ORDER_BY_DATE 111
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# define IDD_PRINT_PERSON_LIST 22740
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# define IDD_CHOOSE_LINK 22741
+# define IDC_LINK 101
+# define IDC_LINK_PROMPT 102
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#define IDD_SLOWDOWN_BOOK	22793
+#define IDC_SDBK_LAW_TYPE	107
+# define IDC_SDBK_BEG_DATE 101
+# define IDC_SDBK_BEG_DATE_UPDN 102
+# define IDC_SDBK_END_DATE 103
+# define IDC_SDBK_END_DATE_UPDN 104
+# define IDC_SDBK_BEG_SERIAL_NO 105
+#define IDC_GROUPBOX5	106
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# define IDD_SHORT_TEXT 22747
+// uses IDC_SUMM_TXT from IDD_SUMMONS_TEXT
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# define IDD_SUMM_PUSH_GET_BN_TEXT 22748
+// uses IDC_SUMM_TXT from IDD_SUMMONS_TEXT
+// uses IDC_PUT_TEXTS and IDC_GET_TEXTS from IDD_SUMMONS_TEXTS
+# define IDC_SUMM_EXTRACT 108
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# define IDD_2_CHK_BOXES 22751
+# define IDC_2CB_1 101
+# define IDC_2CB_2 102
+# define IDC_2CB_GRP 103
+// 104 is used by IDD_3_CHK_BOXES
+// 105 .. 108 are used by IDD_ZDRAVKOVA_DISTRIBUTION
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# define IDD_BANKRUPTCY_WIDE 22753
+# define IDC_BANKRUPTCY_WIDE_COMPLETED_DATE_BEG 101
+# define IDC_BANKRUPTCY_WIDE_COMPLETED_DATE_END 102
+# define IDC_BANKRUPTCY_WIDE_COMPLETED 103
+# define IDC_BANKRUPTCY_WIDE_NONCOMPLETED 104
+# define IDC_BANKRUPTCY_WIDE_PSEUDOGROUP 105
+# define IDC_BANKRUPTCY_WIDE_LAW_DATE_BEG 106
+# define IDC_BANKRUPTCY_WIDE_LAW_DATE_END 107
+# define IDC_BANKRUPTCY_WIDE_EXTRA_TITLE 108
+# define IDC_BANKRUPTCY_WIDE_EXTRA_TITLE_NO 109
+# define IDC_BANKRUPTCY_WIDE_COMPLETED_WEB 110
+# define IDC_BANKRUPTCY_WIDE_NONCOMPLETED_WEB 111
+# define IDC_BANKRUPTCY_WIDE_COMPLETED_WEB_PATH 112
+# define IDC_BANKRUPTCY_WIDE_NONCOMPLETED_WEB_PATH 113
+// used by IDD_BANKRUPTCY_WIDE_WEB, too
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# define IDC_PROGRESS_BAR_STATIC_0  101
+# define IDC_PROGRESS_BAR_STATIC_1  102
+# define IDC_PROGRESS_BAR_BAR_1 103
+# define IDC_PROGRESS_BAR_BREAK 104
+# define IDC_PROGRESS_BAR_BAR_1_PLACE 105
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// 105 .. 108 are used by IDD_ZDRAVKOVA_DISTRIBUTION
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#define IDD_PROVE_BOOK 22757
+# define IDC_PROVE_BK_BY_NO_OR_DATE_GROUP 101
+# define IDC_PROVE_BK_BY_NO 102
+#define IDC_PROVE_NEW_FORMAT	112
+# define IDC_PROVE_BK_BY_DATE 103
+# define IDC_PROVE_BK_BEG_NO 104
+# define IDC_PROVE_BK_END_NO 105
+# define IDC_PROVE_BK_YEAR 106
+# define IDC_PROVE_BK_BEG_DATE 107
+# define IDC_PROVE_BK_END_DATE 108
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#define IDD_TWO_RADIOS 22760
+#define IDC_2R_GROUP 101
+#define IDC_2R_RADIO1 102
+#define IDC_2R_RADIO2 103
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# define IDD_ZDRAVKOVA_DISTRIBUTION 22761
+# define IDC_LAST_DATE 105
+# define IDC_LAST_DATE_UPDN 106
+# define IDC_LAST_DATE_LABEL 107
+# define IDC_ZD_USE_SUBJ_RANGES 108
+// 101 .. 103 are used by IDD_2_CHK_BOXES
+// 104 is used by IDD_3_CHK_BOXES
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# define IDD_PREPARE_FIRM_DISTRIBUTION 22766
+# define IDC_PREPF_ITEMS_LABEL 101
+# define IDC_PREPF_ITEMS_LIST 102
+# define IDC_PREPF_DISTRIBUTORS 103
+# define IDC_PREPF_OFFER_GRP 104
+# define IDC_PREPF_NO_OFFER 105
+# define IDC_PREPF_OFFER 106
+# define IDC_PREPF_DISTRIBS_STATIC 107
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# define IDD_PERFORM_FIRM_DISTRIBUTION 22767
+# define IDC_PERFF_ITEMS_LABEL 101
+# define IDC_PERFF_ITEMS_LIST 102
+# define IDC_PERFF_JUDGES 103
+# define IDC_PERFF_CHECKUP_LABEL 104
+# define IDC_PERFF_CHECKUP_LIST 105
+# define IDC_PERFF_X_TO_1 106
+# define IDC_PERFF_CHECKUP_LN0 107
+# define IDC_PERFF_CHECKUP_LN1 108
+# define IDC_PERFF_SWITCH_VIEW 111
+# define IDC_PERFF_ITEMS_PLAIN_LIST 112
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# define IDD_FAKE_RET_LAW 22768
+# define IDC_FRL_NO 101
+# define IDC_FRL_YEAR 102
+# define IDC_FRL_TYPE 103
+# define IDC_FRL_LAWSUIT_KIND 104
+# define IDC_FRL_CLAIMANT 105
+# define IDC_FRL_DEFENDANT 106
+# define IDC_FRL_DATE 107
+# define IDC_FRL_TEXT 108
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# define IDD_BANKRUPTCY_WIDE_WEB 22769
+// Uses the IDCs of IDD_BANKRUPTCY_WIDE
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# define IDD_CHOOSE_ACCOMPLY 22770
+# define IDC_CA_ACCOMPLY 101
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# define IDD_CONVICTION_BULLETIN 22771
+# define IDC_CB_NAMES 101
+# define IDC_CB_BIRTH_DATE 102
+# define IDC_CB_BIRTH_PLACE 103
+# define IDC_CB_NATIONALITY 104
+# define IDC_CB_CITIZENSHIP 105
+# define IDC_CB_UCN 106
+# define IDC_CB_FATHER_NAMES 107
+# define IDC_CB_MOTHER_NAMES 108
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# define IDD_PENALTY_BOOK 22772
+# define IDC_PENALTY_LAW_TYPES 101
+# define IDC_PENALTY_COMPOSITION 102
+# define IDC_PENALTY_BEG_DATE 103
+# define IDC_PENALTY_BEG_DATE_UPDN 104
+# define IDC_PENALTY_END_DATE 105
+# define IDC_PENALTY_END_DATE_UPDN 106
+# define IDC_PENALTY_BEG_SERIAL_NO 107
+# define IDC_CHECKBOX_ALL_ITEMS	108
+# define IDC_PENALTY_INVERT_TYPES 109
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# define IDD_SELECT_ACCOMPLYS 22773
+# define IDC_SA_ACCOMPLYS 101
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# define IDD_DISTRIB_HISTORY_CRIT 22774
+# define IDC_DISTRIB_HISTORY_LAW_KIND_LST 101
+# define IDC_DISTRIB_HISTORY_INVERT_LK_LST 102
+# define IDC_DISTRIB_HISTORY_DATE_GRP 103
+# define IDC_DISTRIB_HISTORY_FROM_DATE 104
+# define IDC_DISTRIB_HISTORY_FROM_DATE_UPDN 105
+# define IDC_DISTRIB_HISTORY_TO_DATE 106
+# define IDC_DISTRIB_HISTORY_TO_DATE_UPDN 107
+# define IDC_DISTRIB_HISTORY_DAYS_INFO 108
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# define IDD_HISTORY_ASK_DIALOG 22775
+#	define IDC_HISTORY_ASK_TEXT 101
+# define IDC_HISTORY_ASK_ICON 102
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# define IDD_MAIL_LIST_DIALOG 22776 
+#	define IDC_MAIL_LIST_ORDINARY 101
+# define IDC_MAIL_LIST_REGISTERED 102
+# define IDC_MAIL_LIST_DESCR_STATIC 106
+# define IDC_MAIL_LIST_ORDINARY_LABEL 107
+# define IDC_MAIL_LIST_REGISTERED_LABEL 108
+# define IDC_MAIL_LIST_ENVELOPE 110
+# define IDC_MAIL_LIST_DATE_SENT 111
+# define IDC_MAIL_LIST_SEARCHTEXT 112
+# define IDC_MAIL_LIST_SEARCH 113
+# define IDC_MAIL_LIST_SEARCHMARK 114
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# define IDD_MAIL_LIST_CRIT 22777
+# define IDC_MLC_LAW_TYPES 101
+# define IDC_MLC_INVERT_LT_LST 102
+# define IDC_MLC_DATE_GRP 103
+# define IDC_MLC_BEG_DATE 104
+# define IDC_MLC_BEG_DATE_UPDN 105
+# define IDC_MLC_END_DATE 106
+# define IDC_MLC_END_DATE_UPDN 107
+# define IDC_MLC_ACTION_GRP 108
+# define IDC_MLC_PREPARE 109
+# define IDC_MLC_CHECKUP 110
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#define IDD_THREE_RADIOS 22778
+#define IDC_3R_RADIO3 104
+// Uses IDD_TWO_RADIOS' IDCs
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# define IDD_CHS_CHAR_ALIAS_GRP_S_DIALOG 22786
+# define IDC_CCAG_PSEUDOSTATUS 103
+// Uses by IDD_CHS_CHAR_ALIAS_GRP_DIALOG's, IDCs
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# define IDD_PRINT_TIME_BOOK_PATCH 22789
+# define IDC_PTBP_METHOD_GRP 101
+# define IDC_PTBP_MATRIX_PRINTER 102
+# define IDC_PTBP_WINDOWS_TEXT 103
+# define IDC_PTBP_HTML_A3 104
+# define IDC_PTBP_HTML_A4 105
+# define IDC_PTBP_JAN_2005_GRP 106
+# define IDC_PTBP_JAN_2005_FORMAT 107
+# define IDC_PTBP_OLD_FORMAT 108
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+#define IDI_ICONBLANK	1030
+#define IDI_ICONLAW	1031
+#define IDI_ICONREQUEST	1032
+#define IDI_ICONRETLAW	1033
+#define IDI_ICONBIGENVELOPE	1034
+#define IDI_ICONBIGENVELOPEA	1035
+#define IDI_ICONSMALLENVELOPE	1036
+#define IDI_ICONSMALLENVELOPEA	1037
+#define IDI_ICONMIDDLECONTENT	1038
+#define IDI_ICONLASTCONTENT	1039
+#define IDI_ICONPARCEL	1040
+#define IDI_ICONUNCHECK	1041
+#define IDI_ICONCHECK	1042
+#define IDI_ICONGREYUNCHECK	1043
+#define IDI_ICONGREYCHECK	1044
+#define IDI_ICONBIGENVELOPEDIS	1045
+#define IDI_ICONBIGENVELOPEADIS	1046
+#define IDI_ICONSMALLENVELOPEDIS	1047
+#define IDI_ICONSMALLENVELOPEADIS	1048
+#define IDI_ICONMIDDLECONTENTDIS	1049
+#define IDI_ICONLASTCONTENTDIS	1050
+#define IDI_ICONPARCELDIS	1051
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# define IDB__BOOK_BEGIN 1
+# define BOOK_BITMAPS_TOTAL 18
+#define IDB_BOOK17	18
+#define IDB_BOOK16	17
+#define IDB_BOOK15	16
+#define IDB_BOOK14	15
+#define IDB_BOOK13	14
+#define IDB_BOOK12	13
+#define IDB_BOOK11	12
+#define IDB_BOOK10	11
+#define IDB_BOOK9	10
+#define IDB_BOOK8	9
+#define IDB_BOOK7	8
+#define IDB_BOOK6	7
+#define IDB_BOOK5	6
+#define IDB_BOOK4	5
+#define IDB_BOOK3	4
+#define IDB_BOOK2	3
+#define IDB_BOOK1	2
+#define IDB_BOOK0	1
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// ----- IDC_PRINT_BOOK_ZZDN -------------------------------------------------
+#define IDC_PRINT_BOOK_ZZDN_TYPE		101
+#define IDC_PRINT_BOOK_ZZDN_FIND_BY		102
+#define IDC_PRINT_BOOK_ZZDN_BY_NO_YEAR	103
+#define IDC_PRINT_BOOK_ZZDN_NO_MIN		104
+#define IDC_PRINT_BOOK_ZZDN_NO_MAX		105
+#define IDC_PRINT_BOOK_ZZDN_YEAR		106
+#define IDC_PRINT_BOOK_ZZDN_BY_DATE		107
+#define IDC_PRINT_BOOK_ZZDN_MIN_DATE	108
+#define IDC_PRINT_BOOK_ZZDN_MIN_DATE_UPDN	109
+#define IDC_PRINT_BOOK_ZZDN_MAX_DATE	110
+#define IDC_PRINT_BOOK_ZZDN_MAX_DATE_UPDN	111
+#define IDC_PRINT_BOOK_ZZDN_START_NO	112

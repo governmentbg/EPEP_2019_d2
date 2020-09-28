@@ -1,0 +1,30 @@
+$checksum = '89A85D0519141163FD8F6BA04BDAFE7D'
+$ErrorActionPreference = 'Stop'
+$AppNameName = 'САС "СЪДЕБНО ДЕЛОВОДСТВО" - АКТУАЛИЗАЦИЯ'
+Function set_title($title) { (Get-Host).UI.RawUI.WindowTitle = $title }
+Function file_exists($name) { return Test-Path -Type Leaf $name }
+Function log($en, $bg, $ext) { Write-Host ($en + ' ' + $ext) ; $logfile.WriteLine($bg + ' ' + $ext) }
+Function mk_subdir($subdir) { $target = $path + '\' + $subdir ; log 'mkdir' 'създаване на' $target ; if (!(Test-Path -Type Container $target)) { $x = New-Item -ItemType directory $target } }
+Function copy_all($spec, $subdir) { log 'copy' 'Копиране на' $spec ; if ($subdir) { Copy-Item $spec ($path + '\' + $subdir) } else { Copy-Item $spec $path } }
+Function fresh_all($spec, $subdir) { $target = $path + '\' + $subdir + '\' + $spec ; log 'delete' 'Изтриване на' $target ; Remove-Item $target ; copy_all $spec $subdir }
+set_title $AppNameName
+Start-Sleep -s $wait
+$logfile = [System.IO.StreamWriter] ($path + '\reclient.log')
+set_title 'Актуализация на САС - моля изчакайте...'
+log 'update' 'Актуализация на' $path
+if (file_exists('connect.exe')) { copy_all 'connect.exe' }
+fresh_all '*.fm?' 'text'
+mk_subdir 'htm'
+fresh_all '*.htm' 'htm'
+fresh_all '*.xml' 'htm'
+fresh_all '*.png' 'htm'
+mk_subdir 'image'
+copy_all '*.bmp' 'image'
+mk_subdir 'image\court'
+copy_all 'logo.*' 'image\court'
+copy_all appname.exe
+set_title 'Рестартиране на САС - моля изчакайте...'
+Set-Location $path
+.\appname.exe /chdir
+$logfile.Close()
+Remove-Item ($path + '\reclient.log')

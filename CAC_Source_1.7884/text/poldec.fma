@@ -1,0 +1,82 @@
+***_CONVERT_CRLF_TO_<BR>
+YES
+***_END
+***_TITLE
+<html>
+***_END
+***_FORMATTED_HEADER
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>#@ 1 255# - СВЪРШЕНИ ДЕЛА (за РДВР)</title>
+</head>
+<body bgcolor="#00007F">
+<font face="MS Sans Serif" color="#@ 249 1 0 35#FFFFFF">
+<h4>
+#@ 1 255#<br>
+Справка за свършените от #@ 42001 255#г. до #@ 42002 255#г.<br>
+#@ 42003 255#<br>
+(за РДВР)<br>
+</h4>
+***_END
+***_HEADER
+<table border cellspacing=0 celpadding=2 width="100%">
+<tr>
+<th valign=top><font face="MS Sans Serif" color="#FFFFFF" size=-1>No по ред</font></th>
+<th valign=top><font face="MS Sans Serif" color="#FFFFFF" size=-1>Вид дело, No и година</font></th>
+<th valign=top><font face="MS Sans Serif" color="#FFFFFF" size=-1>Предмет</font></th>
+<th valign=top><font face="MS Sans Serif" color="#FFFFFF" size=-1>Обвинител, ищец, жалбо - подател</font></th>
+<th valign=top><font face="MS Sans Serif" color="#FFFFFF" size=-1>Обвиняем, ответник или ответник на жалбата</font></th>
+<th valign=top><font face="MS Sans Serif" color="#FFFFFF" size=-1>ЕГН на осъденото лице</font></th>
+<th valign=top><font face="MS Sans Serif" color="#FFFFFF" size=-1>Име, презиме, фамилия на осъденото лице</font></th>
+<th valign=top><font face="MS Sans Serif" color="#FFFFFF" size=-1>                     Резултат                     </font></th>
+</tr>
+***_END
+***_ROW
+<tr>
+<td valign=top><font face="MS Sans Serif" color="#@ 249 1 0 35#FFFFFF" size=-1>#@ 43001 255#</font></td>
+<td valign=top><font face="MS Sans Serif" color="#@ 249 1 0 35#FFFFFF" size=-1>#@ 43002 255#</font></td>
+<td valign=top><font face="MS Sans Serif" color="#@ 249 1 0 35#FFFFFF" size=-1>#@ 43003 255#</font></td>
+<td valign=top><font face="MS Sans Serif" color="#@ 249 1 0 35#FFFFFF" size=-1>#@ 43004 255#</font></td>
+<td valign=top><font face="MS Sans Serif" color="#@ 249 1 0 35#FFFFFF" size=-1>#@ 43005 255#</font></td>
+<td valign=top><font face="MS Sans Serif" color="#@ 249 1 0 35#FFFFFF" size=-1>#@ 43014 255#</font></td>
+<td valign=top><font face="MS Sans Serif" color="#@ 249 1 0 35#FFFFFF" size=-1>#@ 43015 255#</font></td>
+<td valign=top><font face="MS Sans Serif" color="#@ 249 1 0 35#FFFFFF" size=-1>#@ 43016 255#</font></td>
+</tr>
+***_END
+***_FOOTHER
+</table>
+***_END
+***_TAIL
+</font>
+</body>
+</html>
+***_END
+***_WANT_KINDS
+NO
+***_END
+***_SUBJECTS
+***_END
+***_SUBJECT_RANGES
+***_END
+***_MERGED_KINDS
+***_END
+***_MEDIUM_LINE
+***_END
+***_PARAMETERS
+50 55 1 1
+***_END
+
+***_COLUMNS
+0 0
+***_END
+
+|  6   |   6  |   5 |    11     |               31              |                 32             |               32               |    8   |          21         |         17      |    9    |       17        |
+  spare new page symbols        (do not remove!)
+  spare condensed print symbols (do not remove!)
+  spare normal print symbols    (do not remove!)
+<!doctype html public "-//w3c//dtd html 3.2 transitional//en">
+<th valign=top><font face="MS Sans Serif" color="#FFFFFF" size=-1>Съдия - докладчик и председател на съдебния състав</font></th>
+<td valign=top><font face="MS Sans Serif" color="#@ 249 1 0 35#FFFFFF" size=-1>#@ 43010 255#</font></td>
+<td valign=top><font face="MS Sans Serif" color="#@ 249 1 0 35#FFFFFF" size=-1>#@ 43009 255#</font></td>
+Справка за <font color=#@ 249 1 0 35#00FF00">свършените</font> от #@ 42001 255#г. до #@ 42002 255#г.<br>
+<td valign=top><font face="MS Sans Serif" color="#@ 249 1 0 35#FFFFFF" size=-1>#@ 43013 255#</font></td>

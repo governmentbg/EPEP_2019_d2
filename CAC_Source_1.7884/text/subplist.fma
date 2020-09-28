@@ -1,0 +1,157 @@
+***_TITLE
+<html>
+<head>
+<title>Списък на лицата за призоваване</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<style>
+<!--
+body
+{
+	font-family:Arial;
+	font-size:10pt;
+	font-weight:normal;
+	color:black;
+	background-color:white
+}
+
+table
+{
+	border-right-width:0;
+	border-bottom-width:0;
+	color:black;
+	background-color:white;
+}
+
+td
+{
+	font-family:Arial;
+	font-size:10pt;
+	font-weight:normal;
+	color:black;
+	background-color:white;
+	border-left-width:0;
+	border-top-width:0;
+	vertical-align:top;
+}
+
+th
+{
+	font-family:Arial;
+	font-size:10pt;
+	color:black;
+	background-color:white;
+	border-left-width:0;
+	border-top-width:0;
+	vertical-align:top;
+}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF">
+<center>
+***_END
+***_FORMATTED_HEADER
+***_END
+***_HEADER
+***_END
+***_START_HEADER_TABLE
+<table width="100%">
+<tr><th>&nbsp;</th><th><font size=+2>СПИСЪК</font></th></tr>
+***_END
+***_HEADER_ROW
+<tr>
+<td>#@ 72005 1000#</td>
+<td align="right">#@ 72006 1000#</td>
+</tr>
+***_END
+***_NO_SENT_LIST_HEADER_ROW
+<tr>
+<td>#@ 72007 1000#</td>
+<td align="right">#@ 72006 1000#</td>
+</tr>
+***_END
+***_END_HEADER_TABLE
+</table>
+***_END
+***_START_MAIN_TABLE
+<table cellSpacing=0 cellPadding=1 border=1 width="100%">
+<tr>
+<th width="5%">No по ред</th>
+<th width="10%">В какво качество са призовани</th>
+<th width="25%">Име на призованото лице</th>
+<th width="35%">Местожителство и адрес</th>
+<th width="15%">Забележка</th>
+<th width="10%">Дата на изпращане</th>
+</tr>
+***_END
+***_SIDE_ROW
+<tr>
+<td #@ 72010 255# align="right">#@ 72001 255#</td>
+<td #@ 72011 255#>#@ 72003 255#</td>
+<td #@ 72012 255#>#@ 72008 255#</td>
+<td>#@ 72009 255#</td>
+<td>#@ 72004 255#</td>
+<td>#@ 72002 255#</td>
+</tr>
+***_END
+***_NAME_ROW
+<tr>
+<td #@ 72012 255#>#@ 72008 255#</td>
+<td>#@ 72009 255#</td>
+<td>#@ 72004 255#</td>
+<td>#@ 72002 255#</td>
+</tr>
+***_END
+***_ADDRESS_ROW
+<tr>
+<td>#@ 72009 255#</td>
+<td>#@ 72004 255#</td>
+<td>#@ 72002 255#</td>
+</tr>
+***_END
+***_END_MAIN_TABLE
+</table>
+***_END
+***_HTML_PAGE_BREAK
+<br style='page-break-before:always'>
+***_END
+***_COLUMNS
+12 0
+72001 1000 ; No по ред
+72002 1000 ; Дата на изпращане
+72003 1000 ; В какво качество са призовани
+72004 1000 ; Забележка
+72005 1000 ; Кога и кому са изпратени призовките
+72006 1000 ; Данни за събитието
+72007 1000 ; Празен списък "Кога и кому са изпратени призовките"
+72008 1000 ; Име на призованото лице
+72009 1000 ; Местожителство и адрес
+72010 1000 ; No по ред - rowspan
+72011 1000 ; В какво качество са призовани - rowspan
+72012 1000 ; Име на призованото лице - rowspan
+***_END
+
+***_MEDIUM_LINE
+‘—†—’
+***_END
+***_WANT_KINDS
+NO
+***_END
+***_SUBJECTS
+***_END
+***_SUBJECT_RANGES
+***_END
+***_MERGED_KINDS
+***_END
+***_FORMATTED_TAIL
+***_END
+***_TAIL
+</center>
+</body>
+</html>
+***_END
+
+***_PARAMETERS
+127 55 1 1 0 3
+***_END
+

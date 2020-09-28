@@ -1,0 +1,30 @@
+#ifndef _SERVPROV_H
+#define _SERVPROV_H
+#define _OLEIDL_H
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+EXTERN_C const IID IID_IServiceProvider;
+#undef INTERFACE
+#define INTERFACE IServiceProvider
+DECLARE_INTERFACE_(IServiceProvider,IUnknown)
+{
+	STDMETHOD(QueryInterface)(THIS_ REFIID,PVOID*) PURE;
+	STDMETHOD_(ULONG,AddRef)(THIS) PURE;
+	STDMETHOD_(ULONG,Release)(THIS) PURE;
+	STDMETHOD(QueryService)(THIS_ REFGUID,REFIID,void**) PURE;
+};
+
+#ifdef COBJMACROS
+#define IServiceProvider_QueryInterface(T,a,b) (T)->lpVtbl->QueryInterface(T,a,b)
+#define IServiceProvider_AddRef(T) (T)->lpVtbl->AddRef(T)
+#define IServiceProvider_Release(T) (T)->lpVtbl->Release(T)
+#define IServiceProvider_QueryService(T,a,b,c) (T)->lpVtbl->QueryService(T,a,b,c)
+#endif
+
+#ifdef __cplusplus
+}
+#endif
+#endif

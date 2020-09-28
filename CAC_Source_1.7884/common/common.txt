@@ -1,0 +1,8 @@
+﻿? message buffer in stack
+	; 5KB is not worth alloc
+
+: print_vmessage(buffer, size, format, va_list)
+
+: drive letters: isaplha() -> islatin() or direct letter check
+
+: new modules

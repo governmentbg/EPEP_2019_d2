@@ -1,0 +1,6 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\App Paths\AppName.exe]
+"Path"="C:\\Program Files\\IS - Varna\\Lawsuit Management"
+@="C:\\Program Files\\IS - Varna\\...\\AppName.exe"
+

@@ -1,0 +1,40 @@
+Functions called:
+ fflush (4 times)
+ delete (2 times)
+ free (8 times)
+ FreeLibrary (1 times)
+ delete[] (8 times)
+ printf (1 times)
+ fprintf (3 times)
+ time (815 times)
+ strcat (2 times)
+ sprintf (1 times)
+ new[] (8 times)
+ strchr (2 times)
+ stat (1 times)
+ LoadLibraryA (1 times)
+ SearchPathA (1 times)
+ FindFirstFileA (1 times)
+ GetCurrentDirectoryA (1 times)
+ new (2 times)
+ GetFileType (3 times)
+ calloc (1 times)
+ memcpy (4 times)
+ strlen (74 times)
+ realloc (1 times)
+ GetModuleFileNameA (1 times)
+ malloc (6 times)
+ GetProcAddress (23 times)
+Resource types used:
+ object array (8 allocs, 8 max)
+ Windows module (1 allocs, 1 max)
+ object (2 allocs, 2 max)
+ memory block (8 allocs, 8 max)
+Modules used:
+ C:\WINDOWS\system32\ADVAPI32.dll 00000000 02/09/109 14:10:48
+ C:\WINDOWS\system32\GDI32.dll 00000000 10/23/108 14:36:14
+ C:\WINDOWS\system32\USER32.dll 00000000 04/14/108 04:42:10
+ C:\WINDOWS\CG32.dll 00430000 07/24/96 04:01:00
+ C:\WINDOWS\system32\kernel32.dll 00000000 03/21/109 16:06:58
+ D:\jimmy\court\AppName\copier.exe 00400000 02/28/112 11:22:32
+==========================================
